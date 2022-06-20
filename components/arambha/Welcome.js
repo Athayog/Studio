@@ -22,7 +22,6 @@ import React from 'react';
 
 function Welcome() {
      const buttonSize = useBreakpointValue(['sm', 'md']);
-
      const toast = new useToast();
 
      function shareNative() {
