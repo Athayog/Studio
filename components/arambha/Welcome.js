@@ -36,7 +36,6 @@ function Welcome() {
                resolve();
           });
      }
-
      function shareFallback() {
           return new Promise(async (resolve) => {
                const shareUrl = `${window.location.href}`;
