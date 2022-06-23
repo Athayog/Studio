@@ -57,18 +57,16 @@ function RegisterButton() {
                     direction={['column', 'column']}
                     justifyContent="center"
                >
-                    <Link href="https://forms.gle/3nLbjhEYi2CqcxMKA" passHref>
-                         <a target="_blank">
-                              <Button
-                                   size={buttonSize}
-                                   colorScheme="aygreen"
-                                   rounded="none"
-                                   maxW="max-content"
-                              >
-                                   REGISTER NOW! - FREE AND OPEN TO ALL
-                              </Button>
-                         </a>
-                    </Link>
+                    <Button
+                         size={buttonSize}
+                         colorScheme="aygreen"
+                         rounded="none"
+                         maxW="max-content"
+                         disabled="disabled"
+                    >
+                         REGISTER NOW! - FREE AND OPEN TO ALL
+                    </Button>
+
                     <Flex
                          alignItems="center"
                          borderColor="gray.200"

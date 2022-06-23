@@ -10,8 +10,8 @@ import kidsDesktop from 'public/kids-summer-desktop.png';
 import kidsMobile from 'public/kids-summer-mobile.png';
 import retreatDesktop from 'public/retreat-dekstop.png';
 import retreatMobile from 'public/retreat-mobile.png';
-import heroDesktop from 'public/arambha_desktop.png';
-import heroMobile from 'public/arambha_mobile.png';
+import heroDesktop from 'public/hero_desk_1.jpg';
+import heroMobile from 'public/hero_mobile_1.jpg';
 import { useRouter } from 'next/router';
 SwiperCore.use([Navigation, Pagination]);
 import { isMobile } from 'react-device-detect';
@@ -30,7 +30,7 @@ const HeroCarousel = () => {
                id: 0,
                alt: 'Athayog Living',
                imageUrl: heroDesktop,
-               url: '/yoga-day'
+               url: null
           }
 
           // {
@@ -46,7 +46,7 @@ const HeroCarousel = () => {
                id: 0,
                alt: 'Athayog Living',
                imageUrl: heroMobile,
-               url: '/yoga-day'
+               url: null
           }
 
           // {
