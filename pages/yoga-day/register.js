@@ -1,6 +1,5 @@
-import HomeLayout from '@/components/layout/HomeLayout';
-import React from 'react';
 import EventRegister from '@/components/arambha/EventRegister';
+import HomeLayout from '@/components/layout/HomeLayout';
 import Head from 'next/head';
 import Script from 'next/script';
 

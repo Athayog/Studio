@@ -4,8 +4,21 @@ const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache');
 const withVideos = require('next-videos');
 
+const redirects = {
+     async redirects() {
+          return [
+               {
+                    source: '/yoga-day/register',
+                    destination: '/',
+                    permanent: true
+               }
+          ];
+     }
+};
+
 module.exports = withPlugins(
      [
+          [redirects],
           [withVideos],
           [
                (withPWA,
