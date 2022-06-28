@@ -174,13 +174,13 @@ const Online = ({ offers, notFound }) => {
                                                        6.00 AM - 7.00 AM
                                                   </Text>
                                              </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Sivananda</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -192,13 +192,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   7.00 AM - 8.00 AM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
                                         </Tr>
 
                                         <Tr>
@@ -211,13 +211,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   8:00 AM - 9:00 AM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -247,13 +247,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   4:00 PM - 5:00 PM
                                              </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -265,13 +265,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -283,13 +283,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -301,13 +301,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   7:00 PM - 8:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Deep Space</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Inner World</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                    </Tbody>
                               </Table>

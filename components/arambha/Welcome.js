@@ -22,7 +22,6 @@ import React from 'react';
 
 function Welcome() {
      const buttonSize = useBreakpointValue(['sm', 'md']);
-
      const toast = new useToast();
 
      function shareNative() {
@@ -37,7 +36,6 @@ function Welcome() {
                resolve();
           });
      }
-
      function shareFallback() {
           return new Promise(async (resolve) => {
                const shareUrl = `${window.location.href}`;
@@ -229,21 +227,16 @@ function Welcome() {
                          gap={5}
                          direction={['column', 'column']}
                     >
-                         <Link
-                              href="https://forms.gle/3nLbjhEYi2CqcxMKA"
-                              passHref
+                         <Button
+                              size={buttonSize}
+                              colorScheme="aygreen"
+                              rounded="none"
+                              maxW="max-content"
+                              disabled="disabled"
                          >
-                              <a target="_blank">
-                                   <Button
-                                        size={buttonSize}
-                                        colorScheme="aygreen"
-                                        rounded="none"
-                                        maxW="max-content"
-                                   >
-                                        REGISTER NOW! - FREE AND OPEN TO ALL
-                                   </Button>
-                              </a>
-                         </Link>
+                              REGISTER NOW! - FREE AND OPEN TO ALL
+                         </Button>
+
                          <Flex
                               alignItems="center"
                               borderColor="gray.200"

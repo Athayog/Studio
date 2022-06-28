@@ -145,13 +145,6 @@ export const EmployeeData = {
                image: spandhana,
                visible: true,
                designation: 'Teacher'
-          },
-          {
-               name: 'Prashant Chahal',
-               info: `Prashant started his Yogic journey after visiting and experiencing a Yoga course at SVYASA. Practising yoga, chanting and studying ancient scriptures in a relaxing and chaos-free location is what led to him deciding that he wanted to do this for the rest of his life. Without looking back, he went on to further study BSc in yoga therapy, MSc in yoga and YTTC in ashtanga yoga.\n \nThroughout his journey, Prashant realised that yoga gave him immense bliss and he is forever happy to share this precious knowledge with the help of AthaYog Living.`,
-               image: prashant,
-               visible: true,
-               designation: 'Teacher'
           }
      ]
 };
