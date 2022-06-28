@@ -57,9 +57,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              {/* Schedule For {monthNames[d.getMonth()]}{' '}
-                              {d.getFullYear()} (Indiranagar) */}
-                              Schedule For Yoga Arambha Sadhana (Indiranagar)
+                              AthaYog Offline Class July 2022 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -100,13 +98,13 @@ function Schedule() {
                                                        6.00 AM - 7.00 AM
                                                   </Text>
                                              </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -118,13 +116,13 @@ function Schedule() {
                                              >
                                                   7.00 AM - 8.00 AM
                                              </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Sivananda</Td>
+                                             <Td>Rhythm Of Being </Td>
                                         </Tr>
 
                                         <Tr>
@@ -137,13 +135,13 @@ function Schedule() {
                                              >
                                                   8:00 AM - 9:00 AM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -173,13 +171,13 @@ function Schedule() {
                                              >
                                                   4:00 PM - 5:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -191,13 +189,13 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -209,13 +207,13 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Deep Space</Td>
+                                             <Td>YIN Yoga</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -227,13 +225,13 @@ function Schedule() {
                                              >
                                                   7:00 PM - 8:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Inner World</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                    </Tbody>
                               </Table>
@@ -250,9 +248,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              {/* Schedule For {monthNames[d.getMonth()]}{' '}
-                              {d.getFullYear()} (KR Puram) */}
-                              Schedule For Yoga Arambha Sadhana (KR Puram)
+                              AthaYog Offline Class July 2022 (KR Puram)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -293,13 +289,13 @@ function Schedule() {
                                                        6.00 AM - 7.00 AM
                                                   </Text>
                                              </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -311,14 +307,15 @@ function Schedule() {
                                              >
                                                   7.00 AM - 8.00 AM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
                                         </Tr>
+
                                         <Tr>
                                              <Td
                                                   bg="aygreen.100"
@@ -329,13 +326,13 @@ function Schedule() {
                                              >
                                                   8:00 AM - 9:00 AM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Ashtanga</Td>
+                                             <Td>Universal Harmony </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -365,13 +362,13 @@ function Schedule() {
                                              >
                                                   4:00 PM - 5:00 PM
                                              </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td>Kids Yoga</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -383,13 +380,13 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -401,13 +398,13 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Sivananda</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -419,13 +416,13 @@ function Schedule() {
                                              >
                                                   7:00 PM - 8:00 PM
                                              </Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
-                                             <Td>Sadhana</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Deep Space</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Inner World</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                    </Tbody>
                               </Table>
@@ -451,15 +448,15 @@ function Schedule() {
                                    <Flex gap={10} my={2} direction="row">
                                         <Flex direction="column" gap={1}>
                                              <Box>Monday - Sunday</Box>
-                                             {/* <Box>Saturday - Sunday</Box> */}
+                                             <Box>Saturday - Sunday</Box>
                                         </Flex>
                                         <Flex direction="column" gap={1}>
                                              <Box>06:00 AM - 08:00 PM</Box>
-                                             {/* <Box>07:00 AM - 08:00 PM</Box> */}
+                                             <Box>07:00 AM - 08:00 PM</Box>
                                         </Flex>
                                    </Flex>
                               </Box>
-                              {/* <List mt={3}>
+                              <List mt={3}>
                                    <ListItem>
                                         <ListIcon
                                              as={BsFillArrowRightCircleFill}
@@ -476,9 +473,9 @@ function Schedule() {
                                         2nd May - 13th May: Sadhana Camp - 11:00
                                         AM - 1:00 PM
                                    </ListItem>
-                              </List> */}
+                              </List>
 
-                              {/* <Badge
+                              <Badge
                                    whiteSpace="pre-wrap"
                                    fontWeight="medium"
                                    mt={3}
@@ -486,7 +483,7 @@ function Schedule() {
                                    Note: 108 Surya Namaskara will be practiced
                                    on 1st Saturday of every month, 7am - 9am
                                    batch.{' '}
-                              </Badge> */}
+                              </Badge>
                          </Box>
                     </Flex>
                </Flex>
