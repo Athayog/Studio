@@ -40,20 +40,22 @@ const Chikitsa = ({ offers }) => {
      };
      const apiPricing = [];
      offers.map((data) => {
-          apiPricing.push({
-               id: data.id,
-               courseName: data.name,
-               description: data.description,
-               duration: data.isTrial
-                    ? data.days + ' Trial'
-                    : data.days == 0
-                    ? 'No Duration'
-                    : data.days + ' Days',
-               durationNum: data.days,
-               isTrial: data.isTrial,
-               isGeneral: data.isGeneral,
-               price: data.price
-          });
+          if (data.isActive) {
+               apiPricing.push({
+                    id: data.id,
+                    courseName: data.name,
+                    description: data.description,
+                    duration: data.isTrial
+                         ? data.days + ' Trial'
+                         : data.days == 0
+                         ? 'No Duration'
+                         : data.days + ' Days',
+                    durationNum: data.days,
+                    isTrial: data.isTrial,
+                    isGeneral: data.isGeneral,
+                    price: data.price
+               });
+          }
      });
      return (
           <motion.div
