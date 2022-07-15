@@ -26,6 +26,10 @@ export default function HookForm() {
           formState: { errors }
      } = useForm();
      const onSubmit = async (data) => {
+          if (data.resume[0].size > 300000) {
+               toast.error('File size should be less than 300kb');
+               return;
+          }
           setIsLoading(true);
           await uploadPDF('career', data.resume[0])
                .then((response) => {
