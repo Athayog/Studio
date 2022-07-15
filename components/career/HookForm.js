@@ -13,18 +13,59 @@ import {
      Divider,
      Flex
 } from '@chakra-ui/react';
+import { registerCareer, uploadPDF } from '@/lib/db/forms';
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function HookForm() {
+     const [isLoading, setIsLoading] = useState(false);
      const {
           register,
           handleSubmit,
           watch,
           formState: { errors }
      } = useForm();
-     const onSubmit = (data) => console.log(data);
+     const onSubmit = async (data) => {
+          console.log(data);
+          setIsLoading(true);
+          await uploadPDF('career', data.resume[0])
+               .then((response) => {
+                    console.log(data, response);
+                    registerCareerForm(data, response);
+               })
+               .catch((error) => {
+                    toast.error('Something Happend Try Again');
+                    setIsLoading(false);
+               });
+     };
 
-     console.log(errors);
-     console.log(watch('name'));
+     const registerCareerForm = async (data, pdf_url) => {
+          await registerCareer(
+               data.current_company,
+               data.current_ctc,
+               data.desigation,
+               data.email,
+               data.expected_ctc,
+               data.experience,
+               data.flexible,
+               data.location,
+               data.name,
+               data.notice_period,
+               data.number,
+               data.offer,
+               data.questions,
+               data.relocate,
+               pdf_url
+          )
+               .then((response) => {
+                    setIsLoading(true);
+                    toast.success('Submission Successfull');
+               })
+               .catch((error) => {
+                    setIsLoading(false);
+                    toast.error('Something Happend Try Again 2');
+               });
+     };
 
      return (
           <Box
@@ -37,6 +78,7 @@ export default function HookForm() {
                margin="0 auto"
                id="apply"
           >
+               <Toaster />
                <Box as="form" onSubmit={handleSubmit(onSubmit)}>
                     <Stack spacing={5}>
                          <Text fontSize="lg" textColor="black">
@@ -391,6 +433,7 @@ export default function HookForm() {
                                    maxW="fit-content"
                                    colorScheme="facebook"
                                    type="submit"
+                                   isLoading={isLoading}
                               >
                                    Submit
                               </Button>

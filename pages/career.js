@@ -14,18 +14,9 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 
-import React from 'react';
-import * as Scroll from 'react-scroll';
-import {
-     Link,
-     Button as ScrollButton,
-     Element,
-     Events,
-     animateScroll as scroll,
-     scrollSpy,
-     scroller
-} from 'react-scroll';
-
+import career1 from 'public/career1.jpg';
+import career2 from 'public/career2.jpg';
+import { Link } from 'react-scroll';
 function Career() {
      const buttonSize = useBreakpointValue(['md', 'md']);
 
@@ -153,10 +144,11 @@ function Career() {
                                    order={{ base: '0', md: '0', lg: '1' }}
                               >
                                    <Image
-                                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                                        src={career1}
                                         alt=""
                                         layout="fill"
                                         objectFit="cover"
+                                        placeholder="blur"
                                    />
                               </Box>
                          </Grid>
@@ -178,10 +170,11 @@ function Career() {
                          >
                               <Box position="relative">
                                    <Image
-                                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                        src={career2}
                                         alt=""
                                         layout="fill"
                                         objectFit="cover"
+                                        placeholder="blur"
                                    />
                               </Box>
                               <Stack spacing={10}>

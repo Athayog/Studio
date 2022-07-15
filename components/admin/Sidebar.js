@@ -22,6 +22,7 @@ import {
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import { VscFeedback, VscPreview } from 'react-icons/vsc';
 import { ChevronDownIcon } from '@chakra-ui/icons';
+import { MdWork, MdWorkOutline } from 'react-icons/md';
 
 function Sidebar() {
      const router = useRouter();
@@ -231,6 +232,24 @@ function Sidebar() {
                          </MenuItem>
                     </MenuList>
                </Menu>
+               <Link href="/admin/career" width="100%" passHref>
+                    <Button
+                         colorScheme="teal"
+                         variant="ghost"
+                         isActive={
+                              router.pathname == '/admin/career' ? true : ''
+                         }
+                         width="100%"
+                         fontSize="sm"
+                         maxW="max-content"
+                         rounded="base"
+                         d="flex"
+                         justifyContent="flex-start"
+                         leftIcon={<MdWorkOutline />}
+                    >
+                         Job Applications
+                    </Button>
+               </Link>
           </Flex>
      );
 }
