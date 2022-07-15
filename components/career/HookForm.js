@@ -26,7 +26,6 @@ export default function HookForm() {
           formState: { errors }
      } = useForm();
      const onSubmit = async (data) => {
-          console.log(data);
           setIsLoading(true);
           await uploadPDF('career', data.resume[0])
                .then((response) => {
@@ -58,13 +57,31 @@ export default function HookForm() {
                pdf_url
           )
                .then((response) => {
-                    setIsLoading(true);
+                    setIsLoading(false);
                     toast.success('Submission Successfull');
+                    sendEmailAlert(data);
                })
                .catch((error) => {
                     setIsLoading(false);
                     toast.error('Something Happend Try Again 2');
                });
+     };
+
+     const sendEmailAlert = async (data) => {
+          const emailToSend = 'info@athayogliving.com';
+          await fetch(`https://formsubmit.co/ajax/${emailToSend}`, {
+               method: 'POST',
+               headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+               },
+               body: JSON.stringify({
+                    FormType: 'New Job Application',
+                    name: data.name,
+                    designation: data.desigation,
+                    email: data.email
+               })
+          });
      };
 
      return (

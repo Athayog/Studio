@@ -62,6 +62,9 @@ const Footer = () => {
                          <Link href="/terms" passHref>
                               <Text cursor="pointer">Terms & Conditions</Text>
                          </Link>
+                         <Link href="/career" passHref>
+                              <Text cursor="pointer">Career</Text>
+                         </Link>
                     </Stack>
                     <Stack spacing={4} color="white">
                          <Text
