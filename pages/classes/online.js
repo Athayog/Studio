@@ -133,7 +133,7 @@ const Online = ({ offers, notFound }) => {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              Online Schedule For Yoga Arambha Sadhana
+                              Online Group Class Schedule July
                          </Heading>
                          <Box
                               overflowX="auto"
