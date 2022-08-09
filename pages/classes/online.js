@@ -192,13 +192,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   7.00 AM - 8.00 AM
                                              </Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Rhythm Of Being </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
 
                                         <Tr>
@@ -219,24 +219,7 @@ const Online = ({ offers, notFound }) => {
                                              <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony </Td>
                                         </Tr>
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  11:00 AM - 4:00 PM
-                                             </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                        </Tr>
+
                                         <Tr>
                                              <Td
                                                   bg="aygreen.100"
@@ -283,13 +266,13 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm Of Being</Td>
-                                             <Td>Rhythm Of Being</Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -301,11 +284,11 @@ const Online = ({ offers, notFound }) => {
                                              >
                                                   7:00 PM - 8:00 PM
                                              </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Deep Space</Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Inner World</Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
+                                             <Td> - </Td>
                                              <Td> - </Td>
                                              <Td> - </Td>
                                         </Tr>

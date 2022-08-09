@@ -57,7 +57,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class July 2022 (Indiranagar)
+                              AthaYog Offline Class August 2022 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -153,12 +153,12 @@ function Schedule() {
                                              >
                                                   11:00 AM - 4:00 PM
                                              </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td> - </Td>
                                         </Tr>
                                         <Tr>
@@ -248,7 +248,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class July 2022 (KR Puram)
+                              AthaYog Offline Class August 2022 (KR Puram)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -330,8 +330,8 @@ function Schedule() {
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Universal Harmony </Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Ashtanga</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony </Td>
                                         </Tr>
                                         <Tr>
@@ -342,16 +342,17 @@ function Schedule() {
                                                   padding="0px"
                                                   paddingLeft="10px"
                                              >
-                                                  11:00 AM - 4:00 PM
+                                                  9:00 AM - 10:00 AM
                                              </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td></Td>
                                         </Tr>
+
                                         <Tr>
                                              <Td
                                                   bg="aygreen.100"
@@ -380,7 +381,7 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Transcending Transitions</Td>
+                                             <Td>Ashtanga</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
@@ -401,7 +402,7 @@ function Schedule() {
                                              <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being</Td>
-                                             <Td>Sivananda</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Universal Harmony</Td>
@@ -416,7 +417,7 @@ function Schedule() {
                                              >
                                                   7:00 PM - 8:00 PM
                                              </Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td>Deep Space</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Deep Space</Td>
                                              <Td>Transcending Transitions</Td>
@@ -457,6 +458,15 @@ function Schedule() {
                                    </Flex>
                               </Box>
                               <List mt={3}>
+                                   <ListItem>
+                                        <ListIcon
+                                             as={BsFillArrowRightCircleFill}
+                                             color="green.500"
+                                        />
+                                        Batch Exclusively for Women Time: 9-10
+                                        AM
+                                   </ListItem>
+
                                    <ListItem>
                                         <ListIcon
                                              as={BsFillArrowRightCircleFill}
