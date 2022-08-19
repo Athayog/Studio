@@ -10,6 +10,7 @@ import HomeLayout from '@/components/layout/HomeLayout';
 import Schedule from '@/components/shared/Schedule';
 import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
+import ClassesLayout from '@/components/shared/ClassesLayout';
 
 export async function getStaticProps(context) {
      const { offers } = await getOffer('personal');
@@ -61,10 +62,12 @@ const Personal = ({ offers, notFound }) => {
                animate={{ opacity: 1 }}
           >
                <Hero pageData={pageData} />
-               <BreadCrumb subLinks="classes" currentPage="Personal" />
-               <InformationSplit pageData={pageData} />
-               <Schedule schedule="personal" />
-               <Pricing pricing={apiPricing} registerTo="personal" />
+               <ClassesLayout>
+                    <BreadCrumb subLinks="classes" currentPage="Personal" />
+                    <InformationSplit pageData={pageData} />
+                    <Schedule schedule="personal" />
+                    <Pricing pricing={apiPricing} registerTo="personal" />
+               </ClassesLayout>
           </motion.div>
      );
 };

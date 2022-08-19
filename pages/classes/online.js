@@ -30,6 +30,7 @@ import ProsAndCons from '@/components/shared/ProsAndCons';
 import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import ClassesLayout from '@/components/shared/ClassesLayout';
 export async function getStaticProps(context) {
      const { offers } = await getOffer('online');
 
@@ -114,142 +115,172 @@ const Online = ({ offers, notFound }) => {
                <Hero pageData={pageData} />
                {/* <Information pageData={pageData} /> */}
                {/* <OnlineCourses /> */}
-               <BreadCrumb subLinks="classes" currentPage="Online" />
-               <Flex
-                    margin="auto"
-                    padding={{ base: '2rem 0', md: '3rem 0', lg: '5rem 0' }}
-                    justifyContent="center"
-                    alignItems="center"
-                    width="100vw"
-                    bg="primaryWhite"
-               >
+               <ClassesLayout>
+                    <BreadCrumb subLinks="classes" currentPage="Online" />
                     <Flex
+                         margin="auto"
+                         padding={{
+                              base: '2rem 0',
+                              md: '3rem 0',
+                              lg: '5rem 0'
+                         }}
                          justifyContent="center"
-                         direction="column"
                          alignItems="center"
-                         width={{ base: '95%', md: '90%', lg: '90%' }}
+                         width="100vw"
+                         bg="primaryWhite"
                     >
-                         <Heading
-                              fontWeight="normal"
-                              fontSize={{ base: '2xl', md: '3xl' }}
+                         <Flex
+                              justifyContent="center"
+                              direction="column"
+                              alignItems="center"
+                              width={{ base: '95%', md: '90%', lg: '90%' }}
                          >
-                              Online Group Class Schedule July
-                         </Heading>
-                         <Box
-                              overflowX="auto"
-                              width="100%"
-                              boxShadow="base"
-                              rounded="lg"
-                              mt={10}
-                         >
-                              <Table
-                                   variant="simple"
-                                   size="sm"
-                                   bg="white"
-                                   colorScheme="aygreen"
-                                   className="scheduleTable"
+                              <Heading
+                                   fontWeight="normal"
+                                   fontSize={{ base: '2xl', md: '3xl' }}
                               >
-                                   <Thead>
-                                        <Tr>
-                                             <Th bg="aygreen.200">Time</Th>
-                                             <Th bg="aygreen.200">Monday</Th>
-                                             <Th bg="aygreen.200">Tuesday</Th>
-                                             <Th bg="aygreen.200">Wednesday</Th>
-                                             <Th bg="aygreen.200">Thursday</Th>
-                                             <Th bg="aygreen.200">Friday</Th>
-                                             <Th bg="aygreen.200">Saturday</Th>
-                                             <Th bg="aygreen.200">Sunday</Th>
-                                        </Tr>
-                                   </Thead>
-                                   <Tbody>
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  <Text width="150px">
-                                                       6.00 AM - 7.00 AM
-                                                  </Text>
-                                             </Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Sivananda</Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                        </Tr>
+                                   Online Group Class Schedule July
+                              </Heading>
+                              <Box
+                                   overflowX="auto"
+                                   width="100%"
+                                   boxShadow="base"
+                                   rounded="lg"
+                                   mt={10}
+                              >
+                                   <Table
+                                        variant="simple"
+                                        size="sm"
+                                        bg="white"
+                                        colorScheme="aygreen"
+                                        className="scheduleTable"
+                                   >
+                                        <Thead>
+                                             <Tr>
+                                                  <Th bg="aygreen.200">Time</Th>
+                                                  <Th bg="aygreen.200">
+                                                       Monday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Tuesday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Wednesday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Thursday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Friday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Saturday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Sunday
+                                                  </Th>
+                                             </Tr>
+                                        </Thead>
+                                        <Tbody>
+                                             <Tr>
+                                                  <Td
+                                                       bg="aygreen.100"
+                                                       borderBottom="1px"
+                                                       borderColor="aygreen.200"
+                                                       padding="0px"
+                                                       paddingLeft="10px"
+                                                  >
+                                                       <Text width="150px">
+                                                            6.00 AM - 7.00 AM
+                                                       </Text>
+                                                  </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>Sivananda</Td>
+                                                  <Td> - </Td>
+                                                  <Td> - </Td>
+                                             </Tr>
 
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  8:00 AM - 9:00 AM
-                                             </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Universal Harmony </Td>
-                                        </Tr>
+                                             <Tr>
+                                                  <Td
+                                                       bg="aygreen.100"
+                                                       borderBottom="1px"
+                                                       borderColor="aygreen.200"
+                                                       padding="0px"
+                                                       paddingLeft="10px"
+                                                  >
+                                                       8:00 AM - 9:00 AM
+                                                  </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>Universal Harmony </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>Universal Harmony </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Universal Harmony </Td>
+                                             </Tr>
 
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  4:00 PM - 5:00 PM
-                                             </Td>
-                                             <Td>Kids Yoga</Td>
-                                             <Td>Kids Yoga</Td>
-                                             <Td>Kids Yoga</Td>
-                                             <Td>Kids Yoga</Td>
-                                             <Td>Kids Yoga</Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                        </Tr>
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  5:00 PM - 6:00 PM
-                                             </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm Of Being</Td>
-                                        </Tr>
-                                   </Tbody>
-                              </Table>
-                         </Box>
+                                             <Tr>
+                                                  <Td
+                                                       bg="aygreen.100"
+                                                       borderBottom="1px"
+                                                       borderColor="aygreen.200"
+                                                       padding="0px"
+                                                       paddingLeft="10px"
+                                                  >
+                                                       4:00 PM - 5:00 PM
+                                                  </Td>
+                                                  <Td>Kids Yoga</Td>
+                                                  <Td>Kids Yoga</Td>
+                                                  <Td>Kids Yoga</Td>
+                                                  <Td>Kids Yoga</Td>
+                                                  <Td>Kids Yoga</Td>
+                                                  <Td> - </Td>
+                                                  <Td> - </Td>
+                                             </Tr>
+                                             <Tr>
+                                                  <Td
+                                                       bg="aygreen.100"
+                                                       borderBottom="1px"
+                                                       borderColor="aygreen.200"
+                                                       padding="0px"
+                                                       paddingLeft="10px"
+                                                  >
+                                                       5:00 PM - 6:00 PM
+                                                  </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Rhythm Of Being</Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>Rhythm Of Being</Td>
+                                             </Tr>
+                                        </Tbody>
+                                   </Table>
+                              </Box>
+                         </Flex>
                     </Flex>
-               </Flex>
 
-               <Pricing
-                    pricing={apiPricing}
-                    registerTo={pageData.name.toLocaleLowerCase()}
-               />
+                    <Pricing
+                         pricing={apiPricing}
+                         registerTo={pageData.name.toLocaleLowerCase()}
+                    />
 
-               <ProsAndCons data={pageData.prosAndCons} name="Online" />
+                    <ProsAndCons data={pageData.prosAndCons} name="Online" />
+               </ClassesLayout>
           </motion.div>
      );
 };
