@@ -66,7 +66,11 @@ const Onsite = ({ offers, notFound }) => {
                     <BreadCrumb subLinks="classes" currentPage="Onsite" />
                     {/* <Information pageData={pageData} /> */}
 
-                    <Pricing pricing={apiPricing} toRegister={true} />
+                    <Pricing
+                         pricing={apiPricing}
+                         toRegister={true}
+                         registerTo="onsite"
+                    />
 
                     <Register registerTo={pageData.name.toLocaleLowerCase()} />
                </ClassesLayout>
