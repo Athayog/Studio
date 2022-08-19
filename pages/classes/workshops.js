@@ -65,7 +65,7 @@ const Workshops = ({ offers, notFound }) => {
                <BreadCrumb subLinks="classes" currentPage="Workshop" />
                <InformationSplit pageData={pageData} />
                <WorkShopCourse />
-               <WorkShopTable />
+               {/* <WorkShopTable /> */}
                <Pricing
                     pricing={apiPricing}
                     registerTo={pageData.name.toLocaleLowerCase()}

@@ -182,24 +182,6 @@ const Online = ({ offers, notFound }) => {
                                              <Td> - </Td>
                                              <Td> - </Td>
                                         </Tr>
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  7.00 AM - 8.00 AM
-                                             </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                        </Tr>
 
                                         <Tr>
                                              <Td
@@ -256,102 +238,8 @@ const Online = ({ offers, notFound }) => {
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                         </Tr>
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  6:00 PM - 7:00 PM
-                                             </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                        </Tr>
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  7:00 PM - 8:00 PM
-                                             </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
-                                        </Tr>
                                    </Tbody>
                               </Table>
-                         </Box>
-
-                         <Box
-                              mt={10}
-                              textAlign="left"
-                              width="100%"
-                              boxShadow="base"
-                              bg="white"
-                              rounded="md"
-                              p={3}
-                         >
-                              <Box>
-                                   <Text
-                                        fontWeight="medium"
-                                        textTransform="uppercase"
-                                   >
-                                        Timings Information
-                                   </Text>
-
-                                   <Flex gap={10} my={2} direction="row">
-                                        <Flex direction="column" gap={1}>
-                                             <Box>Monday - Sunday</Box>
-                                             {/* <Box>Saturday - Sunday</Box> */}
-                                        </Flex>
-                                        <Flex direction="column" gap={1}>
-                                             <Box>06:00 AM - 08:00 PM</Box>
-                                             {/* <Box>07:00 AM - 08:00 PM</Box> */}
-                                        </Flex>
-                                   </Flex>
-                              </Box>
-                              {/* <List mt={3}>
-                                   <ListItem>
-                                        <ListIcon
-                                             as={BsFillArrowRightCircleFill}
-                                             color="green.500"
-                                        />
-                                        Athayog living will be closed on 2nd
-                                        Saturday of every Month.
-                                   </ListItem>
-                                   <ListItem>
-                                        <ListIcon
-                                             as={BsFillArrowRightCircleFill}
-                                             color="green.500"
-                                        />
-                                        2nd May - 13th May: Sadhana Camp - 11:00
-                                        AM - 1:00 PM
-                                   </ListItem>
-                              </List>
-
-                              <Badge
-                                   whiteSpace="pre-wrap"
-                                   fontWeight="medium"
-                                   mt={3}
-                              >
-                                   Note: 108 Surya Namaskara will be practiced
-                                   on 1st Saturday of every month, 7am - 9am
-                                   batch.{' '}
-                              </Badge> */}
                          </Box>
                     </Flex>
                </Flex>

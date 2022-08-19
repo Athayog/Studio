@@ -448,11 +448,11 @@ function Schedule() {
 
                                    <Flex gap={10} my={2} direction="row">
                                         <Flex direction="column" gap={1}>
-                                             <Box>Monday - Sunday</Box>
+                                             <Box>Monday - Friday</Box>
                                              <Box>Saturday - Sunday</Box>
                                         </Flex>
                                         <Flex direction="column" gap={1}>
-                                             <Box>06:00 AM - 08:00 PM</Box>
+                                             <Box>06:00 AM - 09:00 PM</Box>
                                              <Box>07:00 AM - 08:00 PM</Box>
                                         </Flex>
                                    </Flex>
@@ -463,8 +463,8 @@ function Schedule() {
                                              as={BsFillArrowRightCircleFill}
                                              color="green.500"
                                         />
-                                        Batch Exclusively for Women Time: 9-10
-                                        AM
+                                        Exclusive Women&apos;s Batch Time 9:00
+                                        AM to 10:00 AM
                                    </ListItem>
 
                                    <ListItem>
@@ -474,14 +474,6 @@ function Schedule() {
                                         />
                                         Athayog living will be closed on 2nd
                                         Saturday of every Month.
-                                   </ListItem>
-                                   <ListItem>
-                                        <ListIcon
-                                             as={BsFillArrowRightCircleFill}
-                                             color="green.500"
-                                        />
-                                        2nd May - 13th May: Sadhana Camp - 11:00
-                                        AM - 1:00 PM
                                    </ListItem>
                               </List>
 
