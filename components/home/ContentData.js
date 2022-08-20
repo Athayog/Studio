@@ -138,13 +138,6 @@ export const EmployeeData = {
                image: deepak,
                visible: true,
                designation: 'Teacher'
-          },
-          {
-               name: 'Spandhana Motupalli',
-               info: `Yoga was introduced to Spandhana’s life back in her school days. It was during her schooling that she was formally introduced to Surya Namaskar, and that was yoga for her. She knew that her life would revolve around yoga. Spandhana has studied yoga and understood the deep essense of it under the guidance of his grace, Swami Vishnudevananda and Swami Sivananda from Sivananda yoga and vedanta ashram in Kerala.\n \nBeing a teacher was never on her cards, yet life comes to a full circle. Spandhana’s keen interest in healing techniques such as pranic healing and sound meditation has helped elevate her understanding of human mind, body and spirituality.`,
-               image: spandhana,
-               visible: true,
-               designation: 'Teacher'
           }
      ]
 };
