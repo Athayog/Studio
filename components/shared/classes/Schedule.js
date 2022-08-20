@@ -151,15 +151,33 @@ function Schedule() {
                                                   padding="0px"
                                                   paddingLeft="10px"
                                              >
+                                                  9:00 AM - 10:00 AM
+                                             </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td></Td>
+                                        </Tr>
+                                        <Tr>
+                                             <Td
+                                                  bg="aygreen.100"
+                                                  borderBottom="1px"
+                                                  borderColor="aygreen.200"
+                                                  padding="0px"
+                                                  paddingLeft="10px"
+                                             >
                                                   11:00 AM - 4:00 PM
                                              </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td> - </Td>
+                                             <Td>Shikshanapada</Td>
+                                             <Td>Shikshanapada </Td>
+                                             <Td>Shikshanapada </Td>
+                                             <Td>Shikshanapada</Td>
+                                             <Td>Shikshanapada</Td>
+                                             <Td> Shikshanapada </Td>
+                                             <Td> Shikshanapada</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
