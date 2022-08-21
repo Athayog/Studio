@@ -10,10 +10,12 @@ export default function PriceBox({
      handleUserPayment,
      courses
 }) {
-     console.log(courses);
      return (
           <Grid
-               gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
+               gridTemplateColumns={{
+                    sm: 'repeat(1,1fr)',
+                    md: 'repeat(2,1fr)'
+               }}
                gap={5}
                width="100%"
                mt={10}

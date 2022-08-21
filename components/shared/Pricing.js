@@ -120,11 +120,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      const generalCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
-          .filter(
-               (data) =>
-                    data.description.toLowerCase() != 'limited' &&
-                    data.description.toLowerCase() != 'unlimited'
-          )
+          .filter((data) => !data.description.toLowerCase().includes('limited'))
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
      const specialCourses = pricing
@@ -137,7 +133,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           )
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
-
+     console.log(generalCourses);
      return (
           <Flex
                margin="auto"
@@ -155,7 +151,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     justifyContent="center"
                     direction="column"
                     alignItems="center"
-                    width={{ base: '90%', md: '75%', lg: '70%' }}
+                    width={{ base: '90%', md: '85%', lg: '80%' }}
                >
                     <Heading fontWeight="normal">Pricing</Heading>{' '}
                     <PriceBox
