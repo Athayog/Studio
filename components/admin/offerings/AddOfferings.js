@@ -35,6 +35,7 @@ import { createOffering } from '@/lib/db/offerings';
 const AddOfferings = ({ type }) => {
      const { isOpen, onOpen, onClose } = useDisclosure();
      const [trial, setTrial] = useState(false);
+     const [general, setGeneral] = useState(false);
      const [loading, setLoading] = useState(false);
      const toast = useToast();
 
@@ -44,13 +45,17 @@ const AddOfferings = ({ type }) => {
      const setTrialChange = () => {
           setTrial(!trial);
      };
+     const setGeneralChange = () => {
+          setGeneral(!trial);
+     };
 
      const onCreateOffering = async ({
           name,
           description,
           days,
           old_price,
-          price
+          price,
+          isGeneral
      }) => {
           setLoading(true);
           await createOffering(
@@ -60,7 +65,8 @@ const AddOfferings = ({ type }) => {
                old_price,
                price,
                trial,
-               type
+               type,
+               general
           )
                .then((response) => {
                     onClose();
@@ -199,6 +205,16 @@ const AddOfferings = ({ type }) => {
                                              name="isTrial"
                                              isChecked={trial}
                                              onChange={(e) => setTrialChange()}
+                                        />
+                                   </FormControl>
+                                   <FormControl id="isGeneral">
+                                        <FormLabel>Is General</FormLabel>
+                                        <Switch
+                                             name="isGeneral"
+                                             isChecked={general}
+                                             onChange={(e) =>
+                                                  setGeneralChange()
+                                             }
                                         />
                                    </FormControl>
                               </Stack>
