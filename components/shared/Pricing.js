@@ -131,7 +131,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           )
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
-     console.log(generalCourses);
+     console.log(limitCourses);
      return (
           <Flex
                margin="auto"
