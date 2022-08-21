@@ -103,13 +103,14 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      const limitCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.description.toLowerCase().includes('limited'))
+
+          .sort((a, b) => a.durationNum - b.durationNum)
           .sort(
                (a, b) =>
                     (a.description.toLowerCase() ==
                          'limited' > b.description.toLowerCase()) ==
                     'unlimited'
-          )
-          .sort((a, b) => a.durationNum - b.durationNum);
+          );
      const trialCourses = pricing
           .filter((data) => data.isTrial == true)
           .sort((a, b) => a.durationNum - b.durationNum);
