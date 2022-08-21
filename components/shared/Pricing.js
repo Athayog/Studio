@@ -102,15 +102,12 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
 
      const limitCourses = pricing
           .filter((data) => data.isTrial == false)
-          .filter((data) => data.description.toLowerCase().includes('limited'))
-
-          .sort((a, b) => a.durationNum - b.durationNum)
-          .sort(
-               (a, b) =>
-                    (a.description.toLowerCase() ==
-                         'limited' - b.description.toLowerCase()) ==
-                    'unlimited'
-          );
+          .filter((data) => data.description.includes('Limited'))
+          .sort((a, b) => a.durationNum - b.durationNum);
+     const unlimitCourses = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.description.includes('Unlimited'))
+          .sort((a, b) => a.durationNum - b.durationNum);
 
      const trialCourses = pricing
           .filter((data) => data.isTrial == true)
@@ -131,7 +128,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           )
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
-     console.log(limitCourses);
+
      return (
           <Flex
                margin="auto"
@@ -143,7 +140,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                justifyContent="center"
                alignItems="center"
                width="100vw"
-               bg="#fff"
+               bg="gray.50"
           >
                <Flex
                     justifyContent="center"
@@ -154,6 +151,8 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     <Heading fontWeight="normal">Pricing</Heading>{' '}
                     <PriceBox
                          courses={limitCourses}
+                         limited={limitCourses}
+                         unlimited={unlimitCourses}
                          data={data}
                          user={user}
                          toRegister={toRegister}
