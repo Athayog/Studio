@@ -102,11 +102,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
 
      const limitCourses = pricing
           .filter((data) => data.isTrial == false)
-          .filter(
-               (data) =>
-                    data.description.toLowerCase() == 'unlimited' ||
-                    data.description.toLowerCase() == 'limited'
-          )
+          .filter((data) => data.description.toLowerCase().includes('limited'))
           .sort(
                (a, b) =>
                     (a.description.toLowerCase() ==
