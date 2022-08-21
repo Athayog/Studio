@@ -1,6 +1,6 @@
 import { getImageLinkFromFirebase } from '@/lib/db/db-admin';
 
-export default async (req, res) => {
+export default async function (req, res) {
      try {
           const imageType = req.query.imageType;
           const mobile = req.query.mobile ? true : false;
@@ -11,4 +11,4 @@ export default async (req, res) => {
      } catch (error) {
           res.status(500).json(error);
      }
-};
+}
