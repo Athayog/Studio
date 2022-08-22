@@ -60,7 +60,7 @@ const GlobalStyle = ({ children }) => {
 
                     <meta
                          name="keywords"
-                         content="yoga studio in bangalore, yoga classes in bangalore, yoga teacher in bangalore, safe yoga, online yoga classes, yoga workshops in bangalore, yoga treatment in bangalore, yoga for weight loss, yoga course in bangalore"
+                         content="yoga studio in bangalore, yoga classes in bangalore, yoga teacher in bangalore, safe yoga, online yoga classes, yoga workshops in bangalore, yoga treatment in bangalore, yoga for weight loss, yoga course in bangalore,yoga living,yogic studio"
                     ></meta>
                </Head>
                <CSSReset />
