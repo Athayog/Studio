@@ -4,6 +4,7 @@ const description = 'yoga studio in banglore';
 const SEO = {
      title,
      description,
+
      canonical: 'https://athayogliving.com/',
      openGraph: {
           type: 'website',

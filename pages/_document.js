@@ -19,7 +19,7 @@ class RootDocument extends Document {
                          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap"
                          data-noprefix
                     />
-                    <meta charSet="utf-8" />
+
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta
                          name="viewport"
@@ -31,8 +31,6 @@ class RootDocument extends Document {
                     />
 
                     <meta name="description" content="Description" />
-                    <meta name="keywords" content="Keywords" />
-                    <title>Athayog Living</title>
 
                     <link rel="manifest" href="/manifest.json" />
                     <link

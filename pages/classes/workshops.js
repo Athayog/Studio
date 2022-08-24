@@ -10,6 +10,7 @@ import WorkShopTable from '@/components/shared/WorkShopTable';
 import WorkShopCourse from '@/components/shared/WorkShopCourse';
 import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
+import ClassesLayout from '@/components/shared/ClassesLayout';
 
 export async function getStaticProps(context) {
      const { offers } = await getOffer('workshops');
@@ -62,15 +63,16 @@ const Workshops = ({ offers, notFound }) => {
                animate={{ opacity: 1 }}
           >
                <Hero pageData={pageData} />
-               <BreadCrumb subLinks="classes" currentPage="Workshop" />
-               <InformationSplit pageData={pageData} />
-               <WorkShopCourse />
-               <WorkShopTable />
-               <Pricing
-                    pricing={apiPricing}
-                    registerTo={pageData.name.toLocaleLowerCase()}
-               />
-
+               <ClassesLayout>
+                    <BreadCrumb subLinks="classes" currentPage="Workshop" />
+                    <InformationSplit pageData={pageData} />
+                    <WorkShopCourse />
+                    {/* <WorkShopTable /> */}
+                    <Pricing
+                         pricing={apiPricing}
+                         registerTo={pageData.name.toLocaleLowerCase()}
+                    />
+               </ClassesLayout>
                {/* <Register registerTo={pageData.name.toLocaleLowerCase()} /> */}
           </motion.div>
      );

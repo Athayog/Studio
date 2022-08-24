@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { capitalizeFirstLetter } from '@/components/helper/Capitalize';
+import { useAuth } from '@/lib/auth';
+import fetcher from '@/utils/fetcher';
 import {
      Box,
      Button,
@@ -7,17 +9,15 @@ import {
      Heading,
      SimpleGrid,
      Text,
-     toast,
      useToast
 } from '@chakra-ui/react';
-import { capitalizeFirstLetter } from '@/components/helper/Capitalize';
-import { useAuth } from '@/lib/auth';
-import { useRouter } from 'next/router';
 import cookie from 'js-cookie';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import useSWR from 'swr';
-import fetcher from '@/utils/fetcher';
-import { chakra } from '@chakra-ui/system';
+import ContactMore from './ContactMore';
 import CTA from './CTA';
+import PriceBox from './PriceBox';
 
 const Pricing = ({ pricing, registerTo, toRegister }) => {
      const { user, signout, loading } = useAuth();
@@ -32,32 +32,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      );
 
      if (pricing.length === 0) {
-          return (
-               <Flex
-                    margin="auto"
-                    padding={{
-                         base: '2rem 0',
-                         md: '3rem 0',
-                         lg: '5rem 0'
-                    }}
-                    justifyContent="center"
-                    alignItems="center"
-                    width="100vw"
-                    bg="#fbfbfb"
-               >
-                    <Flex
-                         justifyContent="center"
-                         direction="column"
-                         alignItems="center"
-                         width="60%"
-                    >
-                         <Text mb={3} fontSize="xl" fontWeight="semibold">
-                              Contact us for more information
-                         </Text>
-                         <CTA registerTo={registerTo} />
-                    </Flex>
-               </Flex>
-          );
+          return <ContactMore />;
      }
 
      let coursePurchased = [];
@@ -122,38 +97,37 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      };
 
      if (pricing === 'Contact For More') {
-          return (
-               <Flex
-                    margin="auto"
-                    padding={{
-                         base: '2rem 0',
-                         md: '3rem 0',
-                         lg: '5rem 0'
-                    }}
-                    justifyContent="center"
-                    alignItems="center"
-                    width="100vw"
-                    bg="#fbfbfb"
-               >
-                    <Flex
-                         justifyContent="center"
-                         direction="column"
-                         alignItems="center"
-                         width="60%"
-                    >
-                         <Heading
-                              fontWeight="normal"
-                              fontSize="xl"
-                              fontStyle="italic"
-                         >
-                              Contact us for more information on customized
-                              plans.
-                         </Heading>
-                         <CTA registerTo={registerTo} />
-                    </Flex>
-               </Flex>
-          );
+          return <ContactMore />;
      }
+
+     const limitCourses = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.description.includes('Limited'))
+          .sort((a, b) => a.durationNum - b.durationNum);
+     const unlimitCourses = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.description.includes('Unlimited'))
+          .sort((a, b) => a.durationNum - b.durationNum);
+
+     const trialCourses = pricing
+          .filter((data) => data.isTrial == true)
+          .sort((a, b) => a.durationNum - b.durationNum);
+     const generalCourses = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => !data.description.toLowerCase().includes('limited'))
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
+     const specialCourses = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == false)
+          .filter(
+               (data) =>
+                    data.description.toLowerCase() != 'limited' &&
+                    data.description.toLowerCase() != 'unlimited'
+          )
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
 
      return (
           <Flex
@@ -166,464 +140,59 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                justifyContent="center"
                alignItems="center"
                width="100vw"
-               bg="#fff"
+               bg="gray.50"
           >
                <Flex
                     justifyContent="center"
                     direction="column"
                     alignItems="center"
-                    width={{ base: '90%', md: '75%', lg: '70%' }}
+                    width={{ base: '90%', md: '85%', lg: '80%' }}
                >
-                    <Heading fontWeight="normal">Pricing</Heading>
-
-                    <SimpleGrid
-                         minChildWidth={{
-                              base: '250px',
-                              md: '300px',
-                              lg: '350px'
-                         }}
-                         spacing="20px"
-                         width="100%"
-                         mt={10}
-                    >
-                         {pricing
-                              .filter((data) => data.isTrial == false)
-                              .filter((data) => data.isGeneral == true)
-                              .sort(
-                                   (a, b) =>
-                                        a.description.length -
-                                        b.description.length
-                              )
-                              .sort((a, b) => a.durationNum - b.durationNum)
-                              .map((data, index) => {
-                                   return (
-                                        <Box
-                                             bg={
-                                                  index % 2 == 0
-                                                       ? 'aygreen.100'
-                                                       : 'aygreen.200'
-                                             }
-                                             height="auto"
-                                             rounded="lg"
-                                             padding={{
-                                                  base: '6',
-                                                  md: '8',
-                                                  lg: '8'
-                                             }}
-                                             textAlign="center"
-                                             d="flex"
-                                             boxShadow="base"
-                                             flexDirection="column"
-                                             key={data.id}
-                                             justifyContent="space-between"
-                                        >
-                                             <Box>
-                                                  <Heading
-                                                       fontSize={{
-                                                            base: 'xl',
-                                                            md: 'xl',
-                                                            lg: '2xl'
-                                                       }}
-                                                       fontWeight="normal"
-                                                       textAlign="left"
-                                                  >
-                                                       {capitalizeFirstLetter(
-                                                            data.courseName
-                                                       )}
-                                                  </Heading>
-                                                  <Text
-                                                       mt={5}
-                                                       fontWeight="light"
-                                                       textAlign="left"
-                                                       fontSize={{
-                                                            base: 'base',
-                                                            md: 'md',
-                                                            lg: 'lg'
-                                                       }}
-                                                  >
-                                                       {data.description}
-                                                  </Text>
-                                             </Box>
-                                             <Box>
-                                                  <Flex
-                                                       justifyContent="space-between"
-                                                       align="center"
-                                                       mt={5}
-                                                  >
-                                                       <Text
-                                                            fontSize={{
-                                                                 base: 'md',
-                                                                 md: 'lg',
-                                                                 lg: 'xl'
-                                                            }}
-                                                       >
-                                                            {data.duration}
-                                                       </Text>
-                                                       <Flex>
-                                                            {data.old_price &&
-                                                                 data?.old_price !==
-                                                                      '0' && (
-                                                                      <Text
-                                                                           fontSize={{
-                                                                                base: 'xl',
-                                                                                md: '2xl',
-                                                                                lg: '3xl'
-                                                                           }}
-                                                                           mr={
-                                                                                3
-                                                                           }
-                                                                           textColor="#555"
-                                                                           textDecoration="line-through"
-                                                                           style={{
-                                                                                textDecorationThickness:
-                                                                                     '3px'
-                                                                           }}
-                                                                      >
-                                                                           {toRegister !==
-                                                                           false
-                                                                                ? '₹'
-                                                                                : null}{' '}
-                                                                           {
-                                                                                data.old_price
-                                                                           }
-                                                                      </Text>
-                                                                 )}
-
-                                                            <Text
-                                                                 fontSize={{
-                                                                      base: 'xl',
-                                                                      md: '2xl',
-                                                                      lg: '3xl'
-                                                                 }}
-                                                            >
-                                                                 {toRegister !==
-                                                                 false
-                                                                      ? '₹'
-                                                                      : null}{' '}
-                                                                 {data.price}
-                                                            </Text>
-                                                       </Flex>
-                                                  </Flex>
-                                                  {toRegister !== false ? (
-                                                       <Button
-                                                            colorScheme="aygreen"
-                                                            width="8rem"
-                                                            size="sm"
-                                                            mt={4}
-                                                            isDisabled={coursePurchased.find(
-                                                                 (element) =>
-                                                                      element ==
-                                                                      data.id
-                                                            )}
-                                                            onClick={() =>
-                                                                 handleUserPayment(
-                                                                      data.price,
-                                                                      data.durationNum,
-                                                                      data.description,
-                                                                      data.courseName,
-                                                                      data.id,
-                                                                      data.isTrial
-                                                                 )
-                                                            }
-                                                            isLoading={
-                                                                 buttonId ===
-                                                                 data.id
-                                                            }
-                                                       >
-                                                            {user
-                                                                 ? coursePurchased.find(
-                                                                        (
-                                                                             element
-                                                                        ) =>
-                                                                             element ==
-                                                                             data.id
-                                                                   ) !==
-                                                                   undefined
-                                                                      ? 'Purchased'
-                                                                      : 'Register'
-                                                                 : 'Register'}
-                                                       </Button>
-                                                  ) : null}
-                                             </Box>
-                                        </Box>
-                                   );
-                              })}
-                    </SimpleGrid>
-                    <SimpleGrid
-                         minChildWidth={{
-                              base: '250px',
-                              md: '300px',
-                              lg: '350px'
-                         }}
-                         spacing="20px"
-                         width="100%"
-                         mt={20}
-                    >
-                         {pricing
-                              .filter((data) => data.isTrial == false)
-                              .filter((data) => data.isGeneral == false)
-                              .sort((a, b) => a.durationNum - b.durationNum)
-                              .map((data, index) => {
-                                   return (
-                                        <Box
-                                             bg={
-                                                  index % 2 == 0
-                                                       ? 'aygreen.100'
-                                                       : 'aygreen.200'
-                                             }
-                                             height="auto"
-                                             rounded="lg"
-                                             padding={{
-                                                  base: '6',
-                                                  md: '8',
-                                                  lg: '8'
-                                             }}
-                                             textAlign="center"
-                                             d="flex"
-                                             boxShadow="base"
-                                             flexDirection="column"
-                                             key={data.id}
-                                             justifyContent="space-between"
-                                        >
-                                             <Box>
-                                                  <Heading
-                                                       fontSize={{
-                                                            base: 'xl',
-                                                            md: 'xl',
-                                                            lg: '2xl'
-                                                       }}
-                                                       fontWeight="normal"
-                                                       textAlign="left"
-                                                  >
-                                                       {capitalizeFirstLetter(
-                                                            data.courseName
-                                                       )}
-                                                  </Heading>
-                                                  <Text
-                                                       mt={5}
-                                                       fontWeight="light"
-                                                       textAlign="left"
-                                                       fontSize={{
-                                                            base: 'base',
-                                                            md: 'md',
-                                                            lg: 'lg'
-                                                       }}
-                                                  >
-                                                       {data.description}
-                                                  </Text>
-                                             </Box>
-                                             <Box>
-                                                  <Flex
-                                                       justifyContent="space-between"
-                                                       align="center"
-                                                       mt={5}
-                                                  >
-                                                       <Text
-                                                            fontSize={{
-                                                                 base: 'md',
-                                                                 md: 'lg',
-                                                                 lg: 'xl'
-                                                            }}
-                                                       >
-                                                            {data.duration}
-                                                       </Text>
-                                                       <Flex>
-                                                            {data.old_price &&
-                                                                 data?.old_price !==
-                                                                      '0' && (
-                                                                      <Text
-                                                                           fontSize={{
-                                                                                base: 'xl',
-                                                                                md: '2xl',
-                                                                                lg: '3xl'
-                                                                           }}
-                                                                           mr={
-                                                                                3
-                                                                           }
-                                                                           textColor="#555"
-                                                                           textDecoration="line-through"
-                                                                           style={{
-                                                                                textDecorationThickness:
-                                                                                     '3px'
-                                                                           }}
-                                                                      >
-                                                                           {toRegister !==
-                                                                           false
-                                                                                ? '₹'
-                                                                                : null}{' '}
-                                                                           {
-                                                                                data.old_price
-                                                                           }
-                                                                      </Text>
-                                                                 )}
-
-                                                            <Text
-                                                                 fontSize={{
-                                                                      base: 'xl',
-                                                                      md: '2xl',
-                                                                      lg: '3xl'
-                                                                 }}
-                                                            >
-                                                                 {toRegister !==
-                                                                 false
-                                                                      ? '₹'
-                                                                      : null}{' '}
-                                                                 {data.price}
-                                                            </Text>
-                                                       </Flex>
-                                                  </Flex>
-                                                  {toRegister !== false ? (
-                                                       <Button
-                                                            colorScheme="aygreen"
-                                                            width="8rem"
-                                                            size="sm"
-                                                            mt={4}
-                                                            isDisabled={coursePurchased.find(
-                                                                 (element) =>
-                                                                      element ==
-                                                                      data.id
-                                                            )}
-                                                            onClick={() =>
-                                                                 handleUserPayment(
-                                                                      data.price,
-                                                                      data.durationNum,
-                                                                      data.description,
-                                                                      data.courseName,
-                                                                      data.id,
-                                                                      data.isTrial
-                                                                 )
-                                                            }
-                                                            isLoading={
-                                                                 buttonId ===
-                                                                 data.id
-                                                            }
-                                                       >
-                                                            {user
-                                                                 ? coursePurchased.find(
-                                                                        (
-                                                                             element
-                                                                        ) =>
-                                                                             element ==
-                                                                             data.id
-                                                                   ) !==
-                                                                   undefined
-                                                                      ? 'Purchased'
-                                                                      : 'Register'
-                                                                 : 'Register'}
-                                                       </Button>
-                                                  ) : null}
-                                             </Box>
-                                        </Box>
-                                   );
-                              })}
-                    </SimpleGrid>
-                    <SimpleGrid
-                         minChildWidth={{
-                              base: '250px',
-                              md: '300px',
-                              lg: '350px'
-                         }}
-                         spacing="20px"
-                         width="100%"
-                         mt={20}
-                    >
-                         {pricing
-                              .filter((data) => data.isTrial == true)
-                              .sort((a, b) => a.durationNum - b.durationNum)
-                              .map((data, index) => {
-                                   return (
-                                        <Box
-                                             bg={
-                                                  index % 2 == 0
-                                                       ? 'aygreen.100'
-                                                       : 'aygreen.200'
-                                             }
-                                             height="auto"
-                                             rounded="lg"
-                                             padding={{
-                                                  base: '6',
-                                                  md: '8',
-                                                  lg: '8'
-                                             }}
-                                             textAlign="center"
-                                             d="flex"
-                                             flexDirection="column"
-                                             boxShadow="base"
-                                             key={data.id}
-                                             justifyContent="space-between"
-                                        >
-                                             <Box>
-                                                  <Heading
-                                                       fontSize={{
-                                                            base: 'xl',
-                                                            md: 'xl',
-                                                            lg: '2xl'
-                                                       }}
-                                                       fontWeight="normal"
-                                                       textAlign="left"
-                                                  >
-                                                       {capitalizeFirstLetter(
-                                                            data.courseName
-                                                       )}
-                                                  </Heading>
-                                                  <Text
-                                                       mt={5}
-                                                       fontWeight="light"
-                                                       textAlign="left"
-                                                       fontSize={{
-                                                            base: 'base',
-                                                            md: 'md',
-                                                            lg: 'lg'
-                                                       }}
-                                                  >
-                                                       {data.description}
-                                                  </Text>
-                                             </Box>
-                                             <Box>
-                                                  <Flex
-                                                       justifyContent="space-between"
-                                                       align="center"
-                                                       mt={5}
-                                                  >
-                                                       <Text
-                                                            fontSize={{
-                                                                 base: 'md',
-                                                                 md: 'lg',
-                                                                 lg: 'xl'
-                                                            }}
-                                                       >
-                                                            {data.duration}
-                                                       </Text>
-                                                       <Text
-                                                            fontSize={{
-                                                                 base: 'xl',
-                                                                 md: '2xl',
-                                                                 lg: '3xl'
-                                                            }}
-                                                       >
-                                                            Free
-                                                       </Text>
-                                                  </Flex>
-                                             </Box>
-                                        </Box>
-                                   );
-                              })}
-                    </SimpleGrid>
+                    <Heading fontWeight="normal">Pricing</Heading>{' '}
+                    <PriceBox
+                         courses={limitCourses}
+                         limited={limitCourses}
+                         unlimited={unlimitCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={generalCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={specialCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={trialCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
                     <Text textAlign="left" mt={8} width="100%">
                          *Terms and conditions apply
                     </Text>
                     <Text width="100%" textAlign="left">
                          *All price inclusive of 18% GST
                     </Text>
-
-                    {/* <Text mt={8} fontSize="lg" mb={3}>
-                         {registerTo == 'space'
-                              ? ' *Connect with us to know more about our ongoing offers.'
-                              : null}
-                         {registerTo == 'shikshana'
-                              ? '*Get in touch with us for our early bird offer. Valid for a limited time only'
-                              : null}
-                    </Text> */}
                     {!toRegister && (
                          <>
                               <Text mb={3} fontSize="xl" fontWeight="semibold">

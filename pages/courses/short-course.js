@@ -139,7 +139,7 @@ function ShortCourses() {
                name: 'Short Courses',
                data: shortCourses
           },
-          { name: 'Short Courses Online Indiranagar', data: SummerCourse },
+
           {
                name: 'Spiritual Practices',
                data: spiritualPractices

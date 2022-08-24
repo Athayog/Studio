@@ -43,6 +43,7 @@ const ShikshanaCourses = () => {
                image: s3
           }
      ];
+     console.log(courses);
      return (
           <Flex
                margin="auto"
@@ -101,7 +102,7 @@ const ShikshanaCourses = () => {
                                                   overflow: 'hidden'
                                              }}
                                              key="1"
-                                             src={image}
+                                             src={image.src}
                                              alt="space"
                                         />
 

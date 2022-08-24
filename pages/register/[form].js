@@ -441,8 +441,6 @@ const Register = () => {
                                              <FormLabel>Full Name</FormLabel>
                                              <Input
                                                   type="name"
-                                                  value={user.name}
-                                                  readOnly
                                                   name="name"
                                                   ref={register({
                                                        required:
@@ -475,8 +473,6 @@ const Register = () => {
                                              <Input
                                                   type="email"
                                                   name="email"
-                                                  value={user.email}
-                                                  readOnly
                                                   ref={register({
                                                        required:
                                                             'Please enter your email.'

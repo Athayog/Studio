@@ -1,7 +1,7 @@
 import Hero from '@/components/shared/Hero';
 import { motion } from 'framer-motion';
 import React from 'react';
-import athayogSpace from 'public/athayogSpace.jpg';
+import athayogSpace from 'public/Athayog_space_home.jpg';
 import Information from '@/components/shared/Information';
 import Classes from '@/components/shared/Classes';
 import Pricing from '@/components/shared/Pricing';
@@ -12,6 +12,7 @@ import ProsAndCons from '@/components/shared/ProsAndCons';
 import Schedule from '@/components/shared/classes/Schedule';
 import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
+import ClassesLayout from '@/components/shared/ClassesLayout';
 
 export async function getStaticProps(context) {
      const { offers } = await getOffer('space');
@@ -160,18 +161,19 @@ const Space = ({ offers, notFound }) => {
                animate={{ opacity: 1 }}
           >
                <Hero pageData={pageData} />
+               <ClassesLayout>
+                    <BreadCrumb subLinks="classes" currentPage="Space" />
+                    <Classes classes={pageData.classes} />
+                    <IntensityTable />
+                    {/* <Schedule schedule="general" /> */}
+                    <Schedule />
+                    <Pricing
+                         registerTo={pageData.name.toLocaleLowerCase()}
+                         pricing={apiPricing}
+                    />
 
-               <BreadCrumb subLinks="classes" currentPage="Space" />
-               <Classes classes={pageData.classes} />
-               <IntensityTable />
-               {/* <Schedule schedule="general" /> */}
-               <Schedule />
-               <Pricing
-                    registerTo={pageData.name.toLocaleLowerCase()}
-                    pricing={apiPricing}
-               />
-
-               <ProsAndCons data={pageData.prosAndCons} name="Space" />
+                    <ProsAndCons data={pageData.prosAndCons} name="Space" />
+               </ClassesLayout>
           </motion.div>
      );
 };
