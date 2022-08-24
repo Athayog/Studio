@@ -16,9 +16,19 @@ import Image from 'next/image';
 
 import career1 from 'public/career1.jpg';
 import career2 from 'public/career2.jpg';
+import { useState } from 'react';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 function Career() {
      const buttonSize = useBreakpointValue(['md', 'md']);
+
+     const positions = [
+          { id: 1, name: 'Yoga Teacher', department: 'Teacher' },
+          { id: 2, name: 'Center Manager', department: 'Manager' },
+          { id: 3, name: 'Sales Executive', department: 'Sales' },
+          { id: 4, name: 'Graphic Designer', department: 'Creative' }
+     ];
+     const [defaultPosition, setdefaultPosition] = useState(positions[0].name);
 
      return (
           <div>
@@ -74,7 +84,59 @@ function Career() {
                          </Link>
                     </Stack>
                </Container>
+               <Box mt={10} bg="gray.100" height="full" py={5}>
+                    <Text textAlign="center" fontWeight="light" fontSize="2xl">
+                         Open Positions In Bengaluru
+                    </Text>
 
+                    <Grid
+                         gridTemplateColumns="repeat(2,1fr)"
+                         justifyContent="center"
+                         gap={5}
+                         maxW="container.md"
+                         margin="0 auto"
+                         pt={5}
+                    >
+                         {positions.map((position) => {
+                              return (
+                                   <Link
+                                        activeClass="active"
+                                        to="apply"
+                                        key={position.id}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-100}
+                                        duration={500}
+                                   >
+                                        <Flex
+                                             margin="0 auto"
+                                             width="100% "
+                                             border="1px solid "
+                                             borderColor="gray.300"
+                                             padding={5}
+                                             boxShadow="sm"
+                                             cursor="pointer"
+                                             maxW="sm"
+                                             alignItems="center"
+                                             justifyContent="space-between"
+                                             onClick={() =>
+                                                  setdefaultPosition(
+                                                       position.name
+                                                  )
+                                             }
+                                             bg="white"
+                                             href="#apply"
+                                             _hover={{ bg: 'teal.50' }}
+                                        >
+                                             <Text>{position.name}</Text>
+
+                                             <BsFillArrowRightCircleFill />
+                                        </Flex>
+                                   </Link>
+                              );
+                         })}
+                    </Grid>
+               </Box>
                <Box bg="gray.50" py={20} width="100%" px={5}>
                     <Heading
                          textAlign="center"
@@ -215,7 +277,11 @@ function Career() {
                     </Flex>
                </Box>
                <Box bg="gray.100" py={10}>
-                    <HookForm />
+                    <HookForm
+                         positions={positions}
+                         defaultPosition={defaultPosition}
+                         setdefaultPosition={setdefaultPosition}
+                    />
                </Box>
           </div>
      );

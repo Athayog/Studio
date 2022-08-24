@@ -17,7 +17,11 @@ import { registerCareer, uploadPDF } from '@/lib/db/forms';
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
-export default function HookForm() {
+export default function HookForm({
+     positions,
+     defaultPosition,
+     setdefaultPosition
+}) {
      const [isLoading, setIsLoading] = useState(false);
      const {
           register,
@@ -205,16 +209,21 @@ export default function HookForm() {
                                    ref={register({
                                         required: 'This is required'
                                    })}
+                                   value={defaultPosition}
+                                   onChange={(e) =>
+                                        setdefaultPosition(e.target.value)
+                                   }
                               >
-                                   <option
-                                        value="Yoga Teacher
-"
-                                   >
-                                        Yoga Teacher
-                                   </option>
-                                   <option value="Center Manager">
-                                        Center Manager
-                                   </option>
+                                   {positions.map((position) => {
+                                        return (
+                                             <option
+                                                  key={position.id}
+                                                  value={position.name}
+                                             >
+                                                  {position.name}
+                                             </option>
+                                        );
+                                   })}
                               </Select>
                               <FormErrorMessage>
                                    {errors.designation &&
