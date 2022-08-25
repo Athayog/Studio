@@ -228,6 +228,29 @@ const Navbar = () => {
                                              Courses
                                         </Button>
                                    </Link>
+                                   <Link href="/career">
+                                        <Button
+                                             fontWeight="normal"
+                                             fontSize="md"
+                                             variant="ghost"
+                                             bg="transparent"
+                                             _hover={{
+                                                  bg: 'aygreen.100'
+                                             }}
+                                             _active={{
+                                                  bg: 'aygreen.100',
+                                                  transform: 'scale(0.98)',
+                                                  borderColor: '#bec3c9'
+                                             }}
+                                             isActive={
+                                                  router.pathname == '/career'
+                                                       ? true
+                                                       : ''
+                                             }
+                                        >
+                                             Career
+                                        </Button>
+                                   </Link>
 
                                    {/* <SMenu
                                         menuButton={
@@ -516,6 +539,23 @@ const Navbar = () => {
                                                   justifyContent="left"
                                              >
                                                   Athayog Courses
+                                             </Button>
+                                        </Link>
+                                        <Link passHref href="/career">
+                                             <Button
+                                                  onClick={onClose}
+                                                  isActive={
+                                                       router.pathname ==
+                                                       '/career'
+                                                            ? true
+                                                            : ''
+                                                  }
+                                                  rounded="md"
+                                                  variant="ghost"
+                                                  colorScheme="aygreen"
+                                                  justifyContent="left"
+                                             >
+                                                  Career
                                              </Button>
                                         </Link>
                                    </VStack>
