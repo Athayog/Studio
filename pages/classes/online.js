@@ -139,7 +139,7 @@ const Online = ({ offers, notFound }) => {
                                    fontWeight="normal"
                                    fontSize={{ base: '2xl', md: '3xl' }}
                               >
-                                   Online Group Class Schedule July
+                                   Online Group Class Schedule August
                               </Heading>
                               <Box
                                    overflowX="auto"

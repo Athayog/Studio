@@ -1,7 +1,7 @@
 import Hero from '@/components/shared/Hero';
 import { motion } from 'framer-motion';
 import React from 'react';
-import athayogSpace from 'public/athayogSpace.jpg';
+import athayogSpace from 'public/Athayog_space_home.jpg';
 import Information from '@/components/shared/Information';
 import Classes from '@/components/shared/Classes';
 import Pricing from '@/components/shared/Pricing';
