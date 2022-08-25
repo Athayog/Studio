@@ -443,8 +443,9 @@ export default function HookForm({
                                    Upload Resume
                               </FormLabel>
 
-                              <input
-                                   boxShadow="sm"
+                              <Input
+                                   boxShadow="none"
+                                   border="none"
                                    name="resume"
                                    type="file"
                                    ref={register({

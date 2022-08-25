@@ -90,12 +90,16 @@ function Career() {
                     </Text>
 
                     <Grid
-                         gridTemplateColumns="repeat(2,1fr)"
+                         gridTemplateColumns={{
+                              base: 'repeat(1,1fr)',
+                              md: 'repeat(2,1fr)'
+                         }}
                          justifyContent="center"
                          gap={5}
                          maxW="container.md"
                          margin="0 auto"
                          pt={5}
+                         px={5}
                     >
                          {positions.map((position) => {
                               return (
@@ -116,7 +120,7 @@ function Career() {
                                              padding={5}
                                              boxShadow="sm"
                                              cursor="pointer"
-                                             maxW="sm"
+                                             maxW={{ base: '100%', md: 'sm' }}
                                              alignItems="center"
                                              justifyContent="space-between"
                                              onClick={() =>
