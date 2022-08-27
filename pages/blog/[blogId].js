@@ -27,6 +27,10 @@ const Blog = ({ currentBlog }) => {
           <>
                <Head>
                     <title>{currentBlog?.seo_title}</title>
+                    <meta
+                         name="keywords"
+                         content="yoga therapy, yoga for therapy, yoga therapy course, yoga therapy near me, what is yoga therapist, yoga therapy pdf, how does yoga therapy work, yoga therapy book, yoga therapy online course, yoga therapy course online, yoga therapy benefits, yoga therapy for diabetes, yoga therapy definition, yoga therapy diploma, yoga therapy for anxiety, yoga therapy training, yoga therapy poses, yoga therapy centre, yoga therapy course in bangalore, yoga therapy exercises, yoga therapy back pain, yoga therapy for diseases pdf, yoga therapy book pdf, yoga therapy for back pain"
+                    ></meta>
                </Head>
                <Flex
                     position="relative"
@@ -76,6 +80,7 @@ const Blog = ({ currentBlog }) => {
                          >
                               {' '}
                               <Heading
+                                   as="h1"
                                    color="white"
                                    fontSize={{
                                         base: '2xl',
@@ -397,7 +402,7 @@ const Blog = ({ currentBlog }) => {
                                                             style={{
                                                                  color: 'blue'
                                                             }}
-                                                            href="/offerings/chikitsa"
+                                                            href="/courses/chikitsa"
                                                        >
                                                             Yoga therapy
                                                        </a>{' '}
