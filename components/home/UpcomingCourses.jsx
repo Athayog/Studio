@@ -59,8 +59,7 @@ function UpcomingCourses() {
                               timings,
                               duration,
                               title,
-                              type,
-                              additional
+                              type
                          }) => {
                               return (
                                    <Link
@@ -78,8 +77,8 @@ function UpcomingCourses() {
                                         >
                                              <Image
                                                   src={img}
-                                                  height="450"
-                                                  width="450"
+                                                  height="300"
+                                                  width="300"
                                                   alt={alt}
                                              />
                                              <Box
