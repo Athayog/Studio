@@ -86,6 +86,7 @@ function UpcomingCourses() {
                                                   p={5}
                                                   borderLeft="1px solid"
                                                   borderColor="gray.300"
+                                                  bg="gray.50"
                                              >
                                                   <Flex gap={2}>
                                                        <Text
