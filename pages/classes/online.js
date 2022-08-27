@@ -31,6 +31,7 @@ import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import ClassesLayout from '@/components/shared/ClassesLayout';
+import Head from 'next/head';
 export async function getStaticProps(context) {
      const { offers } = await getOffer('online');
 
@@ -112,6 +113,16 @@ const Online = ({ offers, notFound }) => {
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
           >
+               {' '}
+               <Head>
+                    <title>Online | AthayogLiving</title>
+
+                    <meta
+                         name="keywords"
+                         content="yoga online course, online yoga class, online yoga classes, yoga online classes, online yoga classes near me, online yoga class near me, near yoga classes, near yoga centre, yoga class online india, near yoga center, yoga online courses, online yoga certification course by government of india, online yoga class india, online yoga classes india, who online courses, online yoga classes bangalore, yoga online teacher training, online yoga classes best, online yoga classes weight loss, online yoga classes for weight loss, online yoga classes for kids, online yoga class live, online yoga class beginners, yoga online course certification, online yoga classes for beginners, online yoga class for beginners, yoga online classes for beginners, yoga online classes near me, yoga online courses india, yoga online classes india, online yoga courses india,
+"
+                    ></meta>
+               </Head>
                <Hero pageData={pageData} />
                {/* <Information pageData={pageData} /> */}
                {/* <OnlineCourses /> */}
