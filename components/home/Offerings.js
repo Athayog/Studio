@@ -39,7 +39,12 @@ const Offerings = () => {
                          >
                               {offeringsData.offering.map((offer, index) => {
                                    return (
-                                        <Link href={offer.link} key={uuidv4()}>
+                                        <Link
+                                             href={offer.link}
+                                             passHref
+                                             key={uuidv4()}
+                                             index={index}
+                                        >
                                              <Flex
                                                   direction="column"
                                                   justifyContent="center"
@@ -73,9 +78,15 @@ const Offerings = () => {
                                                   <Text
                                                        mt={10}
                                                        fontSize="lg"
-                                                       color="primaryDarkGray"
+                                                       color="black"
                                                   >
                                                        Athayog {offer.name}
+                                                  </Text>
+                                                  <Text
+                                                       color="gray.600"
+                                                       fontSize="md"
+                                                  >
+                                                       {offer.simple}
                                                   </Text>
                                                   <Text
                                                        mt={5}
