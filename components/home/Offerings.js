@@ -15,12 +15,13 @@ const Offerings = () => {
                     direction="column"
                     height="100%"
                     width="100%"
-                    padding={{ base: '2rem 0', md: '5rem 0', lg: '5rem 0' }}
+                    padding={{ base: '2rem 0', md: '3rem 0', lg: '3rem 0' }}
                >
                     <Heading
                          textAlign="center"
                          fontWeight="normal"
                          color="primaryDarkGray"
+                         as="h2"
                     >
                          Our Offerings
                     </Heading>
