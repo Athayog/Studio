@@ -60,7 +60,7 @@ const GlobalStyle = ({ children }) => {
 
                     <meta
                          name="keywords"
-                         content="yoga studio in bangalore, yoga classes in bangalore, yoga teacher in bangalore, safe yoga, online yoga classes, yoga workshops in bangalore, yoga treatment in bangalore, yoga for weight loss, yoga course in bangalore,yoga living,yogic studio"
+                         content="yoga classes near me,nearest yoga class to me,yoga class near me,yoga classes,yoga class,yoga classes online,when yoga day,yoga classes near me only for ladies,yoga classes near me with fees,nearest yoga studio to me,near yoga classes,yoga class nearby,yoga classes online free,nearby yoga classes,yoga class near,nearby yoga class,near yoga class,near yoga centre,near yoga center,bangalore yoga classes,yoga studio in bangalore, yoga classes in bangalore, yoga teacher in bangalore, safe yoga, online yoga classes, yoga workshops in bangalore, yoga treatment in bangalore, yoga for weight loss, yoga course in bangalore,yoga living,yogic studio"
                     ></meta>
                </Head>
                <CSSReset />
