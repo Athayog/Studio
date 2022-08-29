@@ -1,21 +1,25 @@
 import {
      Box,
      Flex,
+     Grid,
      Heading,
-     Text,
-     chakra,
-     ListItem,
-     OrderedList,
-     UnorderedList,
      List,
-     ListIcon
+     ListIcon,
+     ListItem,
+     Text
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import CreativeTwo from 'public/TTC.png';
 import CreativeOne from 'public/yoga_intensive.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.min.css';
+import { v4 as uuidv4 } from 'uuid';
+SwiperCore.use([Navigation, Pagination]);
 
 function UpcomingCourses() {
      const upcomingData = [
@@ -46,10 +50,24 @@ function UpcomingCourses() {
 
      return (
           <Box py={10} maxW="90vw" margin="0 auto">
-               <Heading fontWeight="medium" display="flex" gap={5}>
+               <Heading
+                    fontWeight="medium"
+                    display="flex"
+                    gap={5}
+                    fontSize={['2xl', '3xl']}
+               >
                     Our Upcoming Courses <BsArrowRightCircleFill />
                </Heading>
-               <Flex gap={10} flexWrap="wrap" mt={6}>
+               <Grid
+                    mt={6}
+                    justifyContent="flex-start"
+                    gap={10}
+                    gridTemplateColumns={{
+                         base: 'repeat(1,1fr)',
+                         md: 'repeat(2,400px)',
+                         lg: 'repeat(3,450px)'
+                    }}
+               >
                     {upcomingData.map(
                          ({
                               id,
@@ -64,111 +82,124 @@ function UpcomingCourses() {
                               return (
                                    <Link
                                         href={url}
-                                        passHref
                                         key={id}
+                                        passHref
                                         target="_blank"
                                    >
-                                        <Flex
-                                             border="1px solid"
-                                             maxW="fit-content"
-                                             cursor="pointer"
-                                             // boxShadow="base"
-                                             borderColor="gray.300"
+                                        <a
+                                             target="_blank"
+                                             rel="noopener noreferrer"
                                         >
-                                             <Image
-                                                  src={img}
-                                                  height="300"
-                                                  width="300"
-                                                  alt={alt}
-                                             />
-                                             <Box
-                                                  p={5}
-                                                  borderLeft="1px solid"
+                                             <Flex
+                                                  border="1px solid"
+                                                  cursor="pointer"
                                                   borderColor="gray.300"
-                                                  bg="gray.50"
+                                                  flexDir="column"
+                                                  boxShadow="sm"
                                              >
-                                                  <Flex gap={2}>
-                                                       <Text
-                                                            fontWeight="bold"
-                                                            fontSize="xl"
-                                                            textColor="aygreen.600"
-                                                       >
-                                                            {title}
-                                                       </Text>
-                                                  </Flex>
-                                                  <Flex gap={2}>
-                                                       <Text
-                                                            fontWeight="medium"
-                                                            textDecor="underline"
-                                                       >
-                                                            Timings:
-                                                       </Text>
-                                                       <Text
-                                                            fontWeight="normal"
-                                                            textDecor="none"
-                                                       >
-                                                            {timings}
-                                                       </Text>
-                                                  </Flex>
-                                                  <Flex gap={2}>
-                                                       <Text
-                                                            fontWeight="medium"
-                                                            textDecor="underline"
-                                                       >
-                                                            Type:
-                                                       </Text>
-                                                       <Text
-                                                            fontWeight="normal"
-                                                            textDecor="none"
-                                                       >
-                                                            {type}
-                                                       </Text>
-                                                  </Flex>
-                                                  <Flex
-                                                       gap={1}
-                                                       mt={5}
-                                                       flexDirection="column"
+                                                  <Box
+                                                       display="block"
+                                                       height="100%"
+                                                       width="100%"
                                                   >
-                                                       <Text
-                                                            fontWeight="medium"
-                                                            textDecor="underline"
+                                                       <Image
+                                                            src={img}
+                                                            alt={alt}
+                                                            height="100%"
+                                                            width="100%"
+                                                            layout="responsive"
+                                                       />
+                                                  </Box>
+                                                  <Box
+                                                       p={5}
+                                                       borderTop="1px solid"
+                                                       borderColor="gray.300"
+                                                       bg="green.50"
+                                                       minH="220px"
+                                                  >
+                                                       <Flex gap={2}>
+                                                            <Text
+                                                                 fontWeight="bold"
+                                                                 fontSize="xl"
+                                                                 textColor="aygreen.600"
+                                                            >
+                                                                 {title}
+                                                            </Text>
+                                                       </Flex>
+                                                       <Flex gap={2}>
+                                                            <Text
+                                                                 fontWeight="medium"
+                                                                 textDecor="underline"
+                                                            >
+                                                                 Timings:
+                                                            </Text>
+                                                            <Text
+                                                                 fontWeight="normal"
+                                                                 textDecor="none"
+                                                            >
+                                                                 {timings}
+                                                            </Text>
+                                                       </Flex>
+                                                       <Flex gap={2}>
+                                                            <Text
+                                                                 fontWeight="medium"
+                                                                 textDecor="underline"
+                                                            >
+                                                                 Type:
+                                                            </Text>
+                                                            <Text
+                                                                 fontWeight="normal"
+                                                                 textDecor="none"
+                                                            >
+                                                                 {type}
+                                                            </Text>
+                                                       </Flex>
+                                                       <Flex
+                                                            gap={1}
+                                                            mt={5}
+                                                            flexDirection="column"
                                                        >
-                                                            Batch Details
-                                                       </Text>
-                                                       <List>
-                                                            {duration?.map(
-                                                                 (
-                                                                      items,
-                                                                      idx
-                                                                 ) => {
-                                                                      return (
-                                                                           <ListItem
-                                                                                key={
-                                                                                     idx
-                                                                                }
-                                                                           >
-                                                                                <ListIcon
-                                                                                     as={
-                                                                                          MdCheckCircle
+                                                            <Text
+                                                                 fontWeight="medium"
+                                                                 textDecor="underline"
+                                                            >
+                                                                 Batch Details
+                                                            </Text>
+                                                            <List>
+                                                                 {duration?.map(
+                                                                      (
+                                                                           items,
+                                                                           idx
+                                                                      ) => {
+                                                                           return (
+                                                                                <ListItem
+                                                                                     key={
+                                                                                          idx
                                                                                      }
-                                                                                     color="green.500"
-                                                                                />
-                                                                                {
-                                                                                     items
-                                                                                }
-                                                                           </ListItem>
-                                                                      );
-                                                                 }
-                                                            )}
-                                                       </List>
-                                                  </Flex>
-                                             </Box>
-                                        </Flex>
+                                                                                >
+                                                                                     <ListIcon
+                                                                                          as={
+                                                                                               MdCheckCircle
+                                                                                          }
+                                                                                          color="green.500"
+                                                                                     />
+                                                                                     {
+                                                                                          items
+                                                                                     }
+                                                                                </ListItem>
+                                                                           );
+                                                                      }
+                                                                 )}
+                                                            </List>
+                                                       </Flex>
+                                                  </Box>
+                                             </Flex>
+                                        </a>
                                    </Link>
                               );
                          }
                     )}
-               </Flex>
+               </Grid>
           </Box>
      );
 }
