@@ -21,13 +21,13 @@ module.exports = withPlugins(
           [redirects],
           [withVideos],
           [
-               (withPWA,
+               withPWA,
                {
                     pwa: {
                          dest: 'public',
                          runtimeCaching
                     }
-               })
+               }
           ]
      ],
      {
