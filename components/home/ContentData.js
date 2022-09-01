@@ -17,35 +17,40 @@ export const offeringsData = {
                information:
                     'Elevate your Yogic practice by instilling transformation with a strong hold on your lifestyle.',
                link: '/classes/space',
-               image: athayogSpace
+               image: athayogSpace,
+               simple: 'Studio Classes'
           },
           {
                name: 'Shikshana Pada',
                information:
                     'Upskill yourself with certificate programs and teachers’ training courses.',
                link: '/courses/shikshana',
-               image: athayogShikshana
+               image: athayogShikshana,
+               simple: 'Teacher Training Course'
           },
           {
                name: 'Online',
                information:
                     'Continue your Yoga practice at a steady pace from the comfort of your own space.',
                link: '/classes/online',
-               image: athayogOnline
+               image: athayogOnline,
+               simple: 'Online Class'
           },
           {
                name: 'Personal',
                information:
                     'Engage in one-on-one, personalized Yoga sessions without any distractions.',
                link: '/classes/personal',
-               image: athayogPersonal
+               image: athayogPersonal,
+               simple: 'Personal Training'
           },
           {
                name: 'Workshops',
                information:
                     ' Deepen your Yogic knowledge and gain a more comprehensive insight on Yoga.',
                link: '/classes/workshops',
-               image: athayogWorkshop
+               image: athayogWorkshop,
+               simple: 'Short Courses'
           }
      ]
 };

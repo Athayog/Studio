@@ -6,6 +6,7 @@ import GuideBook from '@/components/home/GuideBook';
 import HeroCarousel from '@/components/home/HeroCarousel';
 import Offerings from '@/components/home/Offerings';
 import RecentBlogs from '@/components/home/RecentBlogs';
+import UpcomingCourses from '@/components/home/UpcomingCourses';
 import VideoTestimonials from '@/components/home/VideoTestimonials';
 import HomeLayout from '@/components/layout/HomeLayout';
 import Testimonials from '@/components/shared/Testimonials';
@@ -39,6 +40,7 @@ export default function Home({ gallery, testimonials }) {
                <HeroCarousel />
                <Certificate />
                <Offerings />
+               <UpcomingCourses />
                <Gallery images={gallery} />
                <VideoTestimonials />
                <Testimonials testimonials={testimonials} />

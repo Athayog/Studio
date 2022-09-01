@@ -47,7 +47,7 @@ const ShikshanaCourses = () => {
      return (
           <Box>
                <Head>
-                    <title>Shikshana Pada | AthayogLiving</title>
+                    <title>Shikshana Pada | Athayog Living</title>
                     <meta
                          name="viewport"
                          content="initial-scale=1.0, width=device-width"
