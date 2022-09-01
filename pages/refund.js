@@ -9,11 +9,15 @@ import {
      UnorderedList,
      VStack
 } from '@chakra-ui/layout';
+import Head from 'next/head';
 import React from 'react';
 
 function Refund(props) {
      return (
           <Box maxW="container.xl" margin="auto" py={20} mt={10} px={5}>
+               <Head>
+                    <title>Refund - AthayogLiving</title>
+               </Head>
                <Heading textAlign="center">REFUND POLICY</Heading>
                <Divider my={6} />
 

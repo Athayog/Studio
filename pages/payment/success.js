@@ -16,6 +16,7 @@ import Image from 'next/image';
 import HomeLayout from '@/components/layout/HomeLayout';
 import paymentSuccess from 'public/paymentSuccess.svg';
 import NavbarHelper from '@/components/shared/NavbarHelper';
+import Head from 'next/head';
 
 const success = () => {
      const { user, signout, loading } = useAuth();
@@ -35,6 +36,10 @@ const success = () => {
 
      return (
           <>
+               {' '}
+               <Head>
+                    <title>Success - AthayogLiving</title>
+               </Head>
                <NavbarHelper />
                <Grid placeItems="center" bg="primaryWhite">
                     <Box margin={{ base: '0', md: '5rem 0', lg: '5rem 0' }}>

@@ -12,6 +12,7 @@ import {
      Text,
      useBreakpointValue
 } from '@chakra-ui/react';
+import Head from 'next/head';
 import Image from 'next/image';
 
 import career1 from 'public/career1.jpg';
@@ -32,6 +33,9 @@ function Career() {
 
      return (
           <div>
+               <Head>
+                    <title>Career - AthayogLiving</title>
+               </Head>
                <Hero />
                <Container
                     maxW="container.xl"

@@ -36,6 +36,7 @@ const Account = () => {
                          `
                               }}
                          />
+                         <title>Account - AthayogLiving</title>
                     </Head>
                     <Grid placeItems="center" height="100vh">
                          <Text>

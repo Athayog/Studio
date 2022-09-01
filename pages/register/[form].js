@@ -34,6 +34,7 @@ import logo from 'public/og.png';
 import HomeLayout from '@/components/layout/HomeLayout';
 import { registerForm, registerFormFree } from '@/lib/db/forms';
 import cookie from 'js-cookie';
+import Head from 'next/head';
 
 const Register = () => {
      const router = useRouter();
@@ -385,6 +386,9 @@ const Register = () => {
 
      return (
           <>
+               <Head>
+                    <title>{capitalizeFirstLetter(form)} - AthayogLiving</title>
+               </Head>
                <motion.div
                     exit={{ opacity: 0 }}
                     initial={{ opacity: 0 }}

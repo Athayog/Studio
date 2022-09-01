@@ -1,10 +1,14 @@
 import { Box, Grid, Heading, Text, Button } from '@chakra-ui/react';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import notFound from 'public/404.svg';
 export default function Custom404() {
      return (
           <Grid height="80vh" placeItems="center">
+               <Head>
+                    <title>404 - AthayogLiving</title>
+               </Head>
                <Box padding={5}>
                     <Image
                          src={notFound}

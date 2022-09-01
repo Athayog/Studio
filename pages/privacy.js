@@ -2,9 +2,13 @@ import HomeLayout from '@/components/layout/HomeLayout';
 import { Box, Divider, Heading, Text, VStack } from '@chakra-ui/layout';
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 function Privacy(props) {
      return (
           <Box maxW="container.xl" margin="auto" py={20} mt={10} px={5}>
+               <Head>
+                    <title>Privacy Policy - AthayogLiving</title>
+               </Head>
                <Heading textAlign="center">PRIVACY POLICY</Heading>
                <Divider my={6} />
 

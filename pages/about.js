@@ -5,6 +5,7 @@ import Employee from '@/components/shared/Employee';
 import Hero from '@/components/shared/Hero';
 import SubEmployee from '@/components/shared/SubEmployee';
 import { Box, Divider, Flex, Grid, Heading, Text } from '@chakra-ui/react';
+import Head from 'next/head';
 import athayogAbout from 'public/athayogAbout.jpg';
 import React from 'react';
 
@@ -18,6 +19,9 @@ const About = () => {
      };
      return (
           <>
+               <Head>
+                    <title>About US - AthayogLiving</title>
+               </Head>
                <Hero pageData={pageData} />
                <Flex
                     margin="auto"
