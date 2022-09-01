@@ -10,6 +10,7 @@ import { getOffer } from '@/lib/db/offerings';
 import { Box, Button } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export async function getStaticProps(context) {
      const { offers } = await getOffer('chikitsa');
@@ -63,6 +64,9 @@ const Chikitsa = ({ offers }) => {
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
           >
+               <Head>
+                    <title>Chikitsa - AthayogLiving</title>
+               </Head>
                <Hero pageData={pageData} />
                <Box
                     margin="auto"

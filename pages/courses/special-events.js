@@ -5,6 +5,7 @@ import CTA from '@/components/shared/CTA';
 import HeaderLayout from '@/components/shared/offerings/HeaderLayout';
 import ShikshanaCalendarTable from '@/components/shared/ShikshanaCalendarTable';
 import { Heading, Stack, Text } from '@chakra-ui/layout';
+import Head from 'next/head';
 import React from 'react';
 
 function SpecialEvent() {
@@ -61,6 +62,9 @@ function SpecialEvent() {
      ];
      return (
           <>
+               <Head>
+                    <title>Special Event - AthayogLiving</title>
+               </Head>
                <CoursesLayout>
                     <Heading>Special Events</Heading>
                     <Stack spacing={2} my={5}>

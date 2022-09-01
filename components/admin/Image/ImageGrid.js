@@ -146,7 +146,6 @@ const ImageGrid = ({ imageType, isMobile }) => {
      };
 
      const updatePosition = async () => {
-          console.log(imageOrder);
           let key = Object.keys(imageOrder)[0];
           let val = imageOrder[key];
           setIsActiveLoading({ imageId: key, status: true });

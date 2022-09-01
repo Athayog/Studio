@@ -37,7 +37,6 @@ export default function HookForm({
           setIsLoading(true);
           await uploadPDF('career', data.resume[0])
                .then((response) => {
-                    console.log(data, response);
                     registerCareerForm(data, response);
                })
                .catch((error) => {

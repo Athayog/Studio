@@ -65,6 +65,7 @@ const Hero = (props) => {
                               color="white"
                               fontWeight="medium"
                               textAlign="center"
+                              as="h1"
                          >
                               <Text d="inline-block" mr={4} fontWeight="light">
                                    ATHAYOG

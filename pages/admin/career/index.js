@@ -27,7 +27,7 @@ const Career = () => {
                </Grid>
           );
      }
-     console.log(data.submissions);
+
      return (
           <>
                <JobTable

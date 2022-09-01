@@ -61,7 +61,7 @@ const YogaDayData = ({ forms, latestDoc, setDocs }) => {
 
                Object.entries(fields).forEach(([key, value]) => {
                     let index = fieldTypes.indexOf(key);
-                    console.log(key, index);
+
                     if (index != -1) {
                          values[index] = value;
                     }

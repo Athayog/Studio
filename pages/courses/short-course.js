@@ -5,6 +5,7 @@ import CTA from '@/components/shared/CTA';
 import HeaderLayout from '@/components/shared/offerings/HeaderLayout';
 import ShikshanaCalendarTable from '@/components/shared/ShikshanaCalendarTable';
 import { Heading, Stack, Text } from '@chakra-ui/layout';
+import Head from 'next/head';
 import React from 'react';
 function ShortCourses() {
      const shortCourses = [
@@ -147,6 +148,9 @@ function ShortCourses() {
      ];
      return (
           <>
+               <Head>
+                    <title>Short Courses - AthayogLiving</title>
+               </Head>
                <CoursesLayout>
                     <Heading>Short Courses</Heading>
                     <Stack spacing={2} my={5}>

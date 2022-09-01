@@ -11,6 +11,7 @@ import WorkShopCourse from '@/components/shared/WorkShopCourse';
 import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
 import ClassesLayout from '@/components/shared/ClassesLayout';
+import Head from 'next/head';
 
 export async function getStaticProps(context) {
      const { offers } = await getOffer('workshops');
@@ -62,6 +63,14 @@ const Workshops = ({ offers, notFound }) => {
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
           >
+               <Head>
+                    <title>Workshops - AthayogLiving</title>
+
+                    <meta
+                         name="keywords"
+                         content="yoga classes near me, nearest yoga class to me, yoga class near me, yoga classes, yoga class, yoga classes online, when yoga day, yoga classes near me only for ladies, yoga classes near me with fees, yoga course, yoga courses, nearest yoga studio to me, near yoga classes, yoga teacher training course, yoga course certificate, near yoga classes, yoga class nearby, yoga classes online free, nearby yoga classes, yoga class near, nearby yoga class, near yoga class, near yoga centre, near yoga center, yoga classes in bangalore, bangalore yoga classes, yoga classes bangalore"
+                    ></meta>
+               </Head>
                <Hero pageData={pageData} />
                <ClassesLayout>
                     <BreadCrumb subLinks="classes" currentPage="Workshop" />

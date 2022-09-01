@@ -3,6 +3,7 @@ import HeroSub from '@/components/shared/HeroSub';
 const { Box, Heading, Text, Flex, Button } = require('@chakra-ui/react');
 import s3 from 'public/shi_3-min.jpg';
 import Link from 'next/link';
+import Head from 'next/head';
 
 function Courses() {
      const data = [
@@ -39,6 +40,9 @@ function Courses() {
      };
      return (
           <Box bg="primaryWhite">
+               <Head>
+                    <title>Courses - AthayogLiving</title>
+               </Head>
                <HeroSub pageData={pageData} />
                <Box maxW="container.xl" margin="auto" py={10} px={5}>
                     <Flex
@@ -48,9 +52,10 @@ function Courses() {
                          gridGap={5}
                          flexWrap="wrap"
                     >
-                         {data.map((current) => {
+                         {data.map((current, idx) => {
                               return (
                                    <Flex
+                                        key={idx}
                                         bg="white"
                                         boxShadow="base"
                                         padding={6}

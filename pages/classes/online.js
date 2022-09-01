@@ -113,9 +113,8 @@ const Online = ({ offers, notFound }) => {
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
           >
-               {' '}
                <Head>
-                    <title>Online | AthayogLiving</title>
+                    <title>Online - AthayogLiving</title>
 
                     <meta
                          name="keywords"

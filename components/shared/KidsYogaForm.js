@@ -22,7 +22,6 @@ function KidsYogaForm() {
      const [loading, setLoading] = useState(false);
      const handleData = (data) => {
           setLoading(true);
-          console.log(data);
      };
 
      useEffect(() => {

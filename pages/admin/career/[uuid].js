@@ -56,7 +56,6 @@ function ApplicationID() {
                </Grid>
           );
      }
-     console.log(data.user);
 
      return (
           <>
