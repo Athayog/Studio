@@ -54,7 +54,7 @@ function UpcomingCourses() {
                title: 'RPYT Course',
                img: CreativeThree,
                timings: '11am - 4pm',
-               type: 'Online / Offline',
+               type: 'Offline',
                duration: ['October 3rd to 28th']
           }
      ];
