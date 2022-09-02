@@ -149,7 +149,7 @@ const Online = ({ offers, notFound }) => {
                                    fontWeight="normal"
                                    fontSize={{ base: '2xl', md: '3xl' }}
                               >
-                                   Online Group Class Schedule August
+                                   Online Group Class Schedule September 2022
                               </Heading>
                               <Box
                                    overflowX="auto"
@@ -269,12 +269,12 @@ const Online = ({ offers, notFound }) => {
                                                   <Td>
                                                        Transcending Transitions
                                                   </Td>
+                                                  <Td>Universal Harmony</Td>
                                                   <Td>Rhythm Of Being</Td>
                                                   <Td>Universal Harmony</Td>
                                                   <Td>
                                                        Transcending Transitions
                                                   </Td>
-                                                  <Td>Universal Harmony</Td>
                                                   <Td>Universal Harmony</Td>
                                                   <Td>Rhythm Of Being</Td>
                                              </Tr>
@@ -291,6 +291,7 @@ const Online = ({ offers, notFound }) => {
 
                     <ProsAndCons data={pageData.prosAndCons} name="Online" />
                </ClassesLayout>
+               -10 AM is Women's Batch
           </motion.div>
      );
 };
