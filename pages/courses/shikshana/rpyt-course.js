@@ -21,18 +21,25 @@ function RPYTCourses() {
                     <Heading>RPYT Course</Heading>
                     <Box mt={5}>
                          <Text>
-                              <strong>Course date : </strong>4th April - 29th
-                              April 2022
+                              <strong>Course date : </strong>3rd October - 28th
+                              October 2022 (Weekday Batch)
                          </Text>
                          <Text>
-                              <strong>Time:</strong> 11am - 3pm
+                              <strong>Time:</strong> 11am - 4pm
                          </Text>
                          <Text>
-                              <strong>Total hours:</strong> 100 hours
+                              <strong>Total hours:</strong> 85 hours / 1 Month
                          </Text>
                     </Box>
+                    <Heading mt={10} fontSize="xl">
+                         Eligibility
+                    </Heading>
+                    <Box mt={5}>
+                         <Text>Certified RYT200 / YIC /any</Text>
+                         <Text>Other certification Graduates</Text>
+                    </Box>
                </HeaderLayout>
-               <ContactMore registerTo="rpyt_200" />
+               <ContactMore registerTo="RPYT" />
           </>
      );
 }

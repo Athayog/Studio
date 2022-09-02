@@ -13,6 +13,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CreativeTwo from 'public/TTC.png';
 import CreativeOne from 'public/yoga_intensive.png';
+import CreativeThree from 'public/RPYT.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -45,6 +46,16 @@ function UpcomingCourses() {
                     'October 3rd for Weekday (Offline)',
                     'September 1st Weekday (Online)'
                ]
+          },
+          {
+               id: '3',
+               url: 'https://athayogliving.com/courses/shikshana/rpyt-course',
+               alt: 'RPYT Course',
+               title: 'RPYT Course',
+               img: CreativeThree,
+               timings: '11am - 4pm',
+               type: 'Online / Offline',
+               duration: ['October 3rd to 28th']
           }
      ];
 
@@ -62,11 +73,7 @@ function UpcomingCourses() {
                     mt={6}
                     justifyContent="flex-start"
                     gap={10}
-                    gridTemplateColumns={{
-                         base: 'repeat(1,1fr)',
-                         md: 'repeat(2,400px)',
-                         lg: 'repeat(3,450px)'
-                    }}
+                    gridTemplateColumns=" repeat(auto-fit, minmax(250px, 1fr));"
                >
                     {upcomingData.map(
                          ({
