@@ -32,7 +32,7 @@ function UpcomingCourses() {
                title: 'Navaratri Sadhana',
                timings: ' 6am - 7am',
                type: 'Online',
-               duration: ['Sepetember 26th to October 4th']
+               duration: ['September 26th to October 4th']
           },
           {
                id: '2',
