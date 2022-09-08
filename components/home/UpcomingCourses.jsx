@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import CreativeTwo from 'public/TTC.png';
-import CreativeOne from 'public/yoga_intensive.png';
+import CreativeOne from 'public/navratri.png';
 import CreativeThree from 'public/RPYT.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
@@ -26,13 +26,13 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: 'https://forms.gle/6dd6QbjPPfaAEmqt9',
-               alt: 'Yoga Intensive Course',
+               url: 'https://forms.gle/6nEeibCFwVzi3H6H9',
+               alt: 'Navaratri Sadhana',
                img: CreativeOne,
-               title: 'Yoga Intensive Course',
-               timings: ' 7am - 8am',
+               title: 'Navaratri Sadhana',
+               timings: ' 6am - 7am',
                type: 'Online',
-               duration: ['1st Sepetember to 30th September']
+               duration: ['Sepetember 26th to October 4th']
           },
           {
                id: '2',
