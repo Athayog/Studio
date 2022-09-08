@@ -30,7 +30,7 @@ function UpcomingCourses() {
                alt: 'Navaratri Sadhana',
                img: CreativeOne,
                title: 'Navaratri Sadhana',
-               timings: ' 6am - 7am',
+               timings: ' 6 - 7pm',
                type: 'Online',
                duration: ['September 26th to October 4th']
           },
