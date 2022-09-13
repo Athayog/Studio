@@ -30,8 +30,6 @@ class RootDocument extends Document {
                          content="bw81gzyylakimr31tun0bxtc5pbop0"
                     />
 
-                    <meta name="description" content="Description" />
-
                     <link rel="manifest" href="/manifest.json" />
                     <link
                          href="/favicons/favicon-16x16.png"
