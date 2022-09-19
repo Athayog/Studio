@@ -1,46 +1,264 @@
-import React, { useState } from 'react';
+import { capitalizeFirstLetter } from '@/components/helper/Capitalize';
+import HomeLayout from '@/components/layout/HomeLayout';
+import NavbarHelper from '@/components/shared/NavbarHelper';
+import { registerFormTrial } from '@/lib/db/forms';
 import {
      Box,
-     Flex,
-     Heading,
-     FormControl,
-     FormLabel,
-     FormErrorMessage,
-     SimpleGrid,
-     Input,
-     Textarea,
-     Divider,
-     Select,
-     Stack,
-     RadioGroup,
-     Radio,
      Button,
-     CheckboxGroup,
      Checkbox,
-     useCheckboxGroup,
-     useToast,
-     Spinner,
-     Grid,
-     Text
+     CheckboxGroup,
+     Divider,
+     Flex,
+     FormControl,
+     FormErrorMessage,
+     FormLabel,
+     Heading,
+     Input,
+     Radio,
+     RadioGroup,
+     Select,
+     SimpleGrid,
+     Stack,
+     Textarea,
+     useToast
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import NavbarHelper from '@/components/shared/NavbarHelper';
-import { capitalizeFirstLetter } from '@/components/helper/Capitalize';
-import { useAuth } from '@/lib/auth';
-import { useForm } from 'react-hook-form';
-import axios from 'axios';
-import { logo } from 'public/og.png';
-import HomeLayout from '@/components/layout/HomeLayout';
-import { registerForm, registerFormTrial } from '@/lib/db/forms';
-import cookie from 'js-cookie';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
+const dayjs = require('dayjs');
 
 function Trial() {
      const [loading, setLoading] = useState(false);
      const { handleSubmit, register, errors, reset } = useForm();
+     const [currentSchedule, setCurrentSchedule] = useState();
+     const [selectedweek, setSelectedWeek] = useState();
+     const [location, setLocation] = useState('Indiranagar');
+     const [selectedDate, setSelectedDate] = useState();
+     const [calendar, setCalendar] = useState([
+          {
+               id: 1,
+               name: 'space',
+               location: 'Indiranagar',
+               times: [
+                    {
+                         time: '6:00 AM - 7:00 AM',
+                         monday: 'Rythm Of Being',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Transcending Transition',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    },
+                    {
+                         time: '7:00 AM - 8:00 AM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Transcending Transition',
+                         wednesday: 'Rythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transition',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Rythm Of Being'
+                    },
+                    {
+                         time: '8:00 AM - 9:00 AM',
+                         monday: 'Transcending Transition',
+                         tuesday: 'Rythm Of Being',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'Transcending Transition',
+                         sunday: 'Universal Harmony'
+                    },
+                    {
+                         time: '9:00 AM - 10:00 AM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Transcending Transition',
+                         wednesday: 'Rythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transition',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Rythm Of Being'
+                    },
+                    {
+                         time: '11:00 AM - 4:00 PM',
+                         monday: 'Shikshanapada',
+                         tuesday: 'Rythm Of Being',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'Transcending Transition',
+                         sunday: 'Universal Harmony'
+                    },
+                    {
+                         time: '5:00 PM - 6:00 PM',
+                         monday: 'Kids Yoga',
+                         tuesday: 'Kids Yoga',
+                         wednesday: 'Kids Yoga',
+                         thursday: 'Kids Yoga',
+                         friday: 'Kids Yoga',
+                         saturday: 'Kids Yoga',
+                         sunday: 'Kids Yoga'
+                    },
+                    {
+                         time: '6:00 PM - 7:00 PM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Transcending Transition',
+                         wednesday: 'YIN Yoga',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Rythm Of Being',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    }
+               ]
+          },
+          {
+               id: 2,
+               name: 'space',
+               location: 'KR Puram',
+               times: [
+                    {
+                         time: '6:00 AM - 7:00 AM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Transcending Transition',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    },
+                    {
+                         time: '7:00 AM - 8:00 AM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Transcending Transition',
+                         wednesday: 'Rythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transition',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Rythm Of Being'
+                    },
+                    {
+                         time: '8:00 AM - 9:00 AM',
+                         monday: 'Transcending Transition',
+                         tuesday: 'Rythm Of Being',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'Transcending Transition',
+                         sunday: 'Universal Harmony'
+                    },
+                    {
+                         time: '9:00 AM - 10:00 AM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Transcending Transition',
+                         wednesday: 'Rythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transition',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Rythm Of Being'
+                    },
+                    {
+                         time: '11:00 AM - 4:00 PM',
+                         monday: 'Shikshanapada',
+                         tuesday: 'Rythm Of Being',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'Transcending Transition',
+                         sunday: 'Universal Harmony'
+                    },
+                    {
+                         time: '5:00 PM - 6:00 PM',
+                         monday: 'Kids Yoga',
+                         tuesday: 'Kids Yoga',
+                         wednesday: 'Kids Yoga',
+                         thursday: 'Kids Yoga',
+                         friday: 'Kids Yoga',
+                         saturday: 'Kids Yoga',
+                         sunday: 'Kids Yoga'
+                    },
+                    {
+                         time: '6:00 PM - 7:00 PM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Transcending Transition',
+                         wednesday: 'YIN Yoga',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Rythm Of Being',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    }
+               ]
+          },
+          {
+               id: 3,
+               name: 'online',
+               location: 'Online',
+               times: [
+                    {
+                         time: '6:00 AM - 7:00 AM',
+                         monday: 'Transcending Transition',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Transcending Transition',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    },
+
+                    {
+                         time: '8:00 AM - 9:00 AM',
+                         monday: 'Transcending Transition',
+                         tuesday: 'Rythm Of Being',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Universal Harmony',
+                         saturday: 'Transcending Transition',
+                         sunday: 'Universal Harmony'
+                    },
+
+                    {
+                         time: '4:00 PM - 5:00 PM',
+                         monday: 'Kids Yoga',
+                         tuesday: 'Kids Yoga',
+                         wednesday: 'Kids Yoga',
+                         thursday: 'Kids Yoga',
+                         friday: 'Kids Yoga',
+                         saturday: 'Kids Yoga',
+                         sunday: 'Kids Yoga'
+                    },
+                    {
+                         time: '5:00 PM - 6:00 PM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Transcending Transition',
+                         wednesday: 'YIN Yoga',
+                         thursday: 'Rythm Of Being',
+                         friday: 'Rythm Of Being',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    }
+               ]
+          }
+     ]);
      const toast = useToast();
      const router = useRouter();
+     const weekdays = [
+          'sunday',
+          'monday',
+          'tuesday',
+          'wednesday',
+          'thursday',
+          'friday',
+          'saturday'
+     ];
+     function today() {
+          return new Date();
+     }
+     function tomorrow() {
+          return dayjs().add(1, 'day').format('YYYY-MM-DD');
+     }
 
+     console.log(tomorrow());
      const submitForm = async ({
           name,
           email,
@@ -132,6 +350,51 @@ function Trial() {
                     reset();
                });
      };
+
+     const onDateChange = (e) => {
+          const todayWeek = weekdays[dayjs(e.target.value).day()];
+          setSelectedWeek(todayWeek);
+
+          getTodaysClass(todayWeek);
+     };
+
+     const onLocationChange = (e) => {
+          setLocation(e.target.value);
+          console.log(e.target.value);
+          getTodaysClass(selectedweek, e.target.value);
+     };
+
+     const getTodaysClass = (week, paramLocation) => {
+          const activeCalendar = calendar;
+          let periods = [];
+
+          let locationPassed =
+               paramLocation !== undefined ? paramLocation : location;
+
+          activeCalendar.map((data) => {
+               if (data.location == locationPassed) {
+                    console.log(data.location, locationPassed);
+
+                    data.times.map((each) => {
+                         if (each[week] !== 'No Class') {
+                              periods.push([each.time, each[week]]);
+                         }
+                    });
+               }
+          });
+
+          setCurrentSchedule(periods);
+     };
+
+     const capitalizeFirstLowercaseRest = (str) => {
+          return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+     };
+     useEffect(() => {
+          const todayWeek = weekdays[dayjs().day()];
+          setSelectedWeek(todayWeek);
+          getTodaysClass(todayWeek);
+     }, []);
+
      return (
           <div>
                {' '}
@@ -165,6 +428,107 @@ function Trial() {
                               >
                                    Register For Trial Classes
                               </Heading>
+                              <Box
+                                   bg="white"
+                                   rounded="lg"
+                                   textAlign="center"
+                                   mt={{ base: 2, md: 5, lg: 10 }}
+                                   padding={8}
+                                   width={{ base: '95%', md: '90%', lg: '75%' }}
+                                   as="form"
+                                   boxshadow="base"
+                                   onSubmit={handleSubmit((data) =>
+                                        submitForm(data)
+                                   )}
+                              >
+                                   <Stack spacing={5}>
+                                        <SimpleGrid
+                                             minChildWidth={{
+                                                  base: '200px',
+                                                  md: '300px',
+                                                  lg: '400px'
+                                             }}
+                                             spacing="20px"
+                                             width="100%"
+                                        >
+                                             <FormControl id="date">
+                                                  <FormLabel>Date</FormLabel>
+                                                  <Input
+                                                       type="date"
+                                                       name="date"
+                                                       onChange={(e) =>
+                                                            onDateChange(e)
+                                                       }
+                                                       value={tomorrow()}
+                                                       min={
+                                                            new Date()
+                                                                 .toISOString()
+                                                                 .split('T')[0]
+                                                       }
+                                                  />
+                                                  <FormErrorMessage>
+                                                       {errors.name &&
+                                                            errors.name.message}
+                                                  </FormErrorMessage>
+                                             </FormControl>
+                                             <FormControl>
+                                                  {' '}
+                                                  <FormLabel>
+                                                       Location
+                                                  </FormLabel>
+                                                  <Select
+                                                       onChange={(e) =>
+                                                            onLocationChange(e)
+                                                       }
+                                                  >
+                                                       <option value="Indiranagar">
+                                                            Indiranagar
+                                                       </option>
+                                                       <option value="KR Puram">
+                                                            KR Puram
+                                                       </option>
+                                                       <option value="Online">
+                                                            Online
+                                                       </option>
+                                                  </Select>
+                                             </FormControl>
+                                             <FormControl>
+                                                  <FormLabel>
+                                                       Classes On{' '}
+                                                       {capitalizeFirstLowercaseRest(
+                                                            selectedweek
+                                                                 ? selectedweek
+                                                                 : 'monday'
+                                                       )}
+                                                  </FormLabel>
+                                                  <Select>
+                                                       {currentSchedule && (
+                                                            <>
+                                                                 {currentSchedule.map(
+                                                                      (
+                                                                           day,
+                                                                           idx
+                                                                      ) => {
+                                                                           return (
+                                                                                <option
+                                                                                     key={
+                                                                                          idx
+                                                                                     }
+                                                                                >
+                                                                                     {day[0] +
+                                                                                          '  -  ' +
+                                                                                          day[1]}
+                                                                                </option>
+                                                                           );
+                                                                      }
+                                                                 )}
+                                                            </>
+                                                       )}
+                                                  </Select>
+                                             </FormControl>
+                                        </SimpleGrid>
+                                   </Stack>
+                              </Box>
                               <Box
                                    bg="white"
                                    rounded="lg"
