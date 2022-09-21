@@ -331,13 +331,6 @@ function Trial() {
      });
 
      let updatedValues;
-     updatedValues = {
-          name: 'GHarsimra',
-          email: 'harsimransingh@gmail.com',
-          date: '23-23-2022',
-          selected_calendar: 'Offline asd',
-          location: 'Indiranagr'
-     };
 
      const submitWithoutPayment = async ({
           name,
