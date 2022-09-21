@@ -26,6 +26,7 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 const dayjs = require('dayjs');
 
 function Trial() {
@@ -43,10 +44,10 @@ function Trial() {
                times: [
                     {
                          time: '6:00 AM - 7:00 AM',
-                         monday: 'Rythm Of Being',
-                         tuesday: 'Universal Harmony',
-                         wednesday: 'Transcending Transition',
-                         thursday: 'Rythm Of Being',
+                         monday: 'Rhythm Of Being',
+                         tuesday: 'Universal Harmony / Sivananda',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Rhythm Of Being',
                          friday: 'Universal Harmony',
                          saturday: 'No Class',
                          sunday: 'No Class'
@@ -54,42 +55,42 @@ function Trial() {
                     {
                          time: '7:00 AM - 8:00 AM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transition',
-                         wednesday: 'Rythm Of Being',
+                         tuesday: 'Transcending Transitions',
+                         wednesday: 'Rhythm Of Being',
                          thursday: 'Universal Harmony',
-                         friday: 'Transcending Transition',
+                         friday: 'Transcending Transitions',
                          saturday: 'Universal Harmony',
-                         sunday: 'Rythm Of Being'
+                         sunday: 'Rhythm Of Being'
                     },
                     {
                          time: '8:00 AM - 9:00 AM',
-                         monday: 'Transcending Transition',
-                         tuesday: 'Rythm Of Being',
+                         monday: 'Transcending Transitions',
+                         tuesday: 'Rhythm Of Being',
                          wednesday: 'Universal Harmony',
-                         thursday: 'Rythm Of Being',
+                         thursday: 'Rhythm Of Being',
                          friday: 'Universal Harmony',
-                         saturday: 'Transcending Transition',
+                         saturday: 'Transcending Transitions',
                          sunday: 'Universal Harmony'
                     },
                     {
                          time: '9:00 AM - 10:00 AM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transition',
-                         wednesday: 'Rythm Of Being',
+                         tuesday: 'Rhythm Of Being',
+                         wednesday: 'Transcending Transitions',
                          thursday: 'Universal Harmony',
-                         friday: 'Transcending Transition',
+                         friday: 'Rhythm Of Being',
                          saturday: 'Universal Harmony',
-                         sunday: 'Rythm Of Being'
+                         sunday: 'No Class'
                     },
                     {
                          time: '11:00 AM - 4:00 PM',
                          monday: 'Shikshanapada',
-                         tuesday: 'Rythm Of Being',
-                         wednesday: 'Universal Harmony',
-                         thursday: 'Rythm Of Being',
-                         friday: 'Universal Harmony',
-                         saturday: 'Transcending Transition',
-                         sunday: 'Universal Harmony'
+                         tuesday: 'Shikshanapada',
+                         wednesday: 'Shikshanapada',
+                         thursday: 'Shikshanapada',
+                         friday: 'Shikshanapada',
+                         saturday: 'Shikshanapada',
+                         sunday: 'Shikshanapada'
                     },
                     {
                          time: '5:00 PM - 6:00 PM',
@@ -98,16 +99,36 @@ function Trial() {
                          wednesday: 'Kids Yoga',
                          thursday: 'Kids Yoga',
                          friday: 'Kids Yoga',
-                         saturday: 'Kids Yoga',
-                         sunday: 'Kids Yoga'
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    },
+                    {
+                         time: '5:00 PM - 6:00 PM',
+                         monday: 'Transcending Transitions',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Rhythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transitions',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Rhythm Of Being'
                     },
                     {
                          time: '6:00 PM - 7:00 PM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transition',
+                         tuesday: 'Transcending Transitions',
                          wednesday: 'YIN Yoga',
-                         thursday: 'Rythm Of Being',
-                         friday: 'Rythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Rhythm Of Being',
+                         saturday: 'Rhythm Of Being',
+                         sunday: 'Universal Harmony'
+                    },
+                    {
+                         time: '7:00 PM - 8:00 PM',
+                         monday: 'Rhythm Of Being',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Deep Space',
+                         thursday: 'Transcending Transitions',
+                         friday: 'Inner World',
                          saturday: 'No Class',
                          sunday: 'No Class'
                     }
@@ -120,10 +141,10 @@ function Trial() {
                times: [
                     {
                          time: '6:00 AM - 7:00 AM',
-                         monday: 'Universal Harmony',
+                         monday: 'Rhythm Of Being',
                          tuesday: 'Universal Harmony',
-                         wednesday: 'Transcending Transition',
-                         thursday: 'Rythm Of Being',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Rhythm Of Being',
                          friday: 'Universal Harmony',
                          saturday: 'No Class',
                          sunday: 'No Class'
@@ -131,43 +152,34 @@ function Trial() {
                     {
                          time: '7:00 AM - 8:00 AM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transition',
-                         wednesday: 'Rythm Of Being',
+                         tuesday: 'Transcending Transitions',
+                         wednesday: 'Rhythm Of Being',
                          thursday: 'Universal Harmony',
-                         friday: 'Transcending Transition',
+                         friday: 'Transcending Transitions',
                          saturday: 'Universal Harmony',
-                         sunday: 'Rythm Of Being'
+                         sunday: 'Rhythm Of Being'
                     },
                     {
                          time: '8:00 AM - 9:00 AM',
-                         monday: 'Transcending Transition',
-                         tuesday: 'Rythm Of Being',
+                         monday: 'Transcending Transitions /Ashtanga',
+                         tuesday: 'Rhythm Of Being',
                          wednesday: 'Universal Harmony',
-                         thursday: 'Rythm Of Being',
+                         thursday: 'Rhythm Of Being',
                          friday: 'Universal Harmony',
-                         saturday: 'Transcending Transition',
-                         sunday: 'Universal Harmony'
+                         saturday: 'Transcending Transitions',
+                         sunday: 'Universal Harmony / Sivananda'
                     },
                     {
                          time: '9:00 AM - 10:00 AM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transition',
-                         wednesday: 'Rythm Of Being',
+                         tuesday: 'Rhythm Of Being',
+                         wednesday: 'Transcending Transitions',
                          thursday: 'Universal Harmony',
-                         friday: 'Transcending Transition',
+                         friday: 'Rhythm Of Being',
                          saturday: 'Universal Harmony',
-                         sunday: 'Rythm Of Being'
+                         sunday: 'No Class'
                     },
-                    {
-                         time: '11:00 AM - 4:00 PM',
-                         monday: 'Shikshanapada',
-                         tuesday: 'Rythm Of Being',
-                         wednesday: 'Universal Harmony',
-                         thursday: 'Rythm Of Being',
-                         friday: 'Universal Harmony',
-                         saturday: 'Transcending Transition',
-                         sunday: 'Universal Harmony'
-                    },
+
                     {
                          time: '5:00 PM - 6:00 PM',
                          monday: 'Kids Yoga',
@@ -175,16 +187,36 @@ function Trial() {
                          wednesday: 'Kids Yoga',
                          thursday: 'Kids Yoga',
                          friday: 'Kids Yoga',
-                         saturday: 'Kids Yoga',
-                         sunday: 'Kids Yoga'
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    },
+                    {
+                         time: '5:00 PM - 6:00 PM',
+                         monday: ' Transcending Transitions/Ashtanga',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Rhythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transitions',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Rhythm Of Being'
                     },
                     {
                          time: '6:00 PM - 7:00 PM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transition',
-                         wednesday: 'YIN Yoga',
-                         thursday: 'Rythm Of Being',
-                         friday: 'Rythm Of Being',
+                         tuesday: 'Transcending Transitions',
+                         wednesday: 'Rhythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Rhythm Of Being',
+                         saturday: 'Rhythm Of Being',
+                         sunday: 'Universal Harmony'
+                    },
+                    {
+                         time: '7:00 PM - 8:00 PM',
+                         monday: 'Deep Space',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Deep Space',
+                         thursday: 'Transcending Transitions',
+                         friday: 'Inner World',
                          saturday: 'No Class',
                          sunday: 'No Class'
                     }
@@ -197,23 +229,23 @@ function Trial() {
                times: [
                     {
                          time: '6:00 AM - 7:00 AM',
-                         monday: 'Transcending Transition',
+                         monday: 'Rhythm Of Being',
                          tuesday: 'Universal Harmony',
-                         wednesday: 'Transcending Transition',
-                         thursday: 'Rythm Of Being',
-                         friday: 'Universal Harmony',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Rhythm Of Being',
+                         friday: 'Sivananda',
                          saturday: 'No Class',
                          sunday: 'No Class'
                     },
 
                     {
                          time: '8:00 AM - 9:00 AM',
-                         monday: 'Transcending Transition',
-                         tuesday: 'Rythm Of Being',
+                         monday: 'Transcending Transitions',
+                         tuesday: 'Rhythm Of Being',
                          wednesday: 'Universal Harmony',
-                         thursday: 'Rythm Of Being',
+                         thursday: 'Rhythm Of Being',
                          friday: 'Universal Harmony',
-                         saturday: 'Transcending Transition',
+                         saturday: 'Transcending Transitions',
                          sunday: 'Universal Harmony'
                     },
 
@@ -224,22 +256,23 @@ function Trial() {
                          wednesday: 'Kids Yoga',
                          thursday: 'Kids Yoga',
                          friday: 'Kids Yoga',
-                         saturday: 'Kids Yoga',
-                         sunday: 'Kids Yoga'
+                         saturday: 'No Class',
+                         sunday: 'No Class'
                     },
                     {
                          time: '5:00 PM - 6:00 PM',
-                         monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transition',
-                         wednesday: 'YIN Yoga',
-                         thursday: 'Rythm Of Being',
-                         friday: 'Rythm Of Being',
-                         saturday: 'No Class',
-                         sunday: 'No Class'
+                         monday: 'Transcending Transitions',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Rhythm Of Being',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transitions',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Rhythm Of Being'
                     }
                ]
           }
      ]);
+     const [customer, setCustomer] = useState({});
      const toast = useToast();
      const router = useRouter();
      const weekdays = [
@@ -258,7 +291,6 @@ function Trial() {
           return dayjs().add(1, 'day').format('YYYY-MM-DD');
      }
 
-     console.log(tomorrow());
      const submitForm = async ({
           name,
           email,
@@ -267,9 +299,13 @@ function Trial() {
           experience,
           style,
           referral,
-          conditions
+          conditions,
+          date,
+          selected_calendar,
+          location
      }) => {
           setLoading(true);
+
           submitWithoutPayment({
                name,
                email,
@@ -278,10 +314,15 @@ function Trial() {
                experience,
                style,
                referral,
-               conditions
+               conditions,
+               date,
+               selected_calendar,
+               location
           });
           return;
      };
+
+     let updatedValues;
 
      const submitWithoutPayment = async ({
           name,
@@ -291,9 +332,25 @@ function Trial() {
           experience,
           style,
           referral,
-          conditions
+          conditions,
+          date,
+          selected_calendar,
+          location
      }) => {
+          console.log(date, selected_calendar, location);
           setLoading(true);
+
+          setCustomer((prevState) => {
+               updatedValues = {
+                    name: name,
+                    email: email,
+                    date: date,
+                    selected_calendar: selected_calendar,
+                    location: location
+               };
+               // Object.assign would also work
+               return { ...prevState, ...updatedValues };
+          });
           await registerFormTrial(
                name,
                email,
@@ -304,7 +361,10 @@ function Trial() {
                capitalizeFirstLetter('trial'),
                referral,
                conditions,
-               capitalizeFirstLetter('trial')
+               capitalizeFirstLetter('trial'),
+               date,
+               selected_calendar,
+               location
           )
                .then((response) => {
                     reset();
@@ -315,6 +375,8 @@ function Trial() {
                          duration: 5000,
                          isClosable: true
                     });
+
+                    sendCustomerEmail();
                     // Send Email
                     fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
                          method: 'POST',
@@ -330,12 +392,13 @@ function Trial() {
                               gender: gender,
                               experience: experience,
                               style: style,
-
                               referral: referral,
-                              conditions: conditions.toString()
+                              conditions: conditions.toString(),
+                              date: date,
+                              selected_class: selected_calendar,
+                              location: location
                          })
                     });
-                    router.push('/');
                })
                .catch((error) => {
                     setLoading(false);
@@ -349,6 +412,40 @@ function Trial() {
                     setLoading(false);
                     reset();
                });
+     };
+
+     const sendCustomerEmail = async () => {
+          await emailjs
+               .send(
+                    'service_5d1bzlp',
+                    'template_mnbmufr',
+                    {
+                         name: updatedValues.name,
+                         date: updatedValues.date,
+                         selected_calendar: updatedValues.selected_calendar,
+                         location: updatedValues.location,
+                         email: updatedValues.email
+                    },
+                    'user_Zp6dTdYGxn4E5rxeiLLCh'
+               )
+               .then(
+                    (result) => {
+                         setLoading(false);
+                         toast({
+                              title: 'Success',
+                              description:
+                                   'A confirmation has been sent to your email',
+                              status: 'success',
+                              duration: 9000,
+                              isClosable: true
+                         });
+                         router.push('/');
+                    },
+                    (error) => {
+                         setLoading(false);
+                         console.log(error.text);
+                    }
+               );
      };
 
      const onDateChange = (e) => {
@@ -399,10 +496,12 @@ function Trial() {
           <div>
                {' '}
                <>
-                    <motion.div
+                    <Box
                          exit={{ opacity: 0 }}
                          initial={{ opacity: 0 }}
                          animate={{ opacity: 1 }}
+                         as="form"
+                         onSubmit={handleSubmit((data) => submitForm(data))}
                     >
                          <NavbarHelper />
 
@@ -435,11 +534,7 @@ function Trial() {
                                    mt={{ base: 2, md: 5, lg: 10 }}
                                    padding={8}
                                    width={{ base: '95%', md: '90%', lg: '75%' }}
-                                   as="form"
                                    boxshadow="base"
-                                   onSubmit={handleSubmit((data) =>
-                                        submitForm(data)
-                                   )}
                               >
                                    <Stack spacing={5}>
                                         <SimpleGrid
@@ -454,6 +549,10 @@ function Trial() {
                                              <FormControl id="date">
                                                   <FormLabel>Date</FormLabel>
                                                   <Input
+                                                       ref={register({
+                                                            required:
+                                                                 'Please enter your name.'
+                                                       })}
                                                        type="date"
                                                        name="date"
                                                        onChange={(e) =>
@@ -477,6 +576,12 @@ function Trial() {
                                                        Location
                                                   </FormLabel>
                                                   <Select
+                                                       name="location"
+                                                       id="location"
+                                                       ref={register({
+                                                            required:
+                                                                 'Please select your location.'
+                                                       })}
                                                        onChange={(e) =>
                                                             onLocationChange(e)
                                                        }
@@ -501,7 +606,14 @@ function Trial() {
                                                                  : 'monday'
                                                        )}
                                                   </FormLabel>
-                                                  <Select>
+                                                  <Select
+                                                       name="selected_calendar"
+                                                       id="selected_calendar"
+                                                       ref={register({
+                                                            required:
+                                                                 'Please select your schedule.'
+                                                       })}
+                                                  >
                                                        {currentSchedule && (
                                                             <>
                                                                  {currentSchedule.map(
@@ -511,6 +623,11 @@ function Trial() {
                                                                       ) => {
                                                                            return (
                                                                                 <option
+                                                                                     value={
+                                                                                          day[0] +
+                                                                                          '  -  ' +
+                                                                                          day[1]
+                                                                                     }
                                                                                      key={
                                                                                           idx
                                                                                      }
@@ -536,11 +653,7 @@ function Trial() {
                                    mt={{ base: 2, md: 5, lg: 10 }}
                                    padding={8}
                                    width={{ base: '95%', md: '90%', lg: '75%' }}
-                                   as="form"
                                    boxshadow="base"
-                                   onSubmit={handleSubmit((data) =>
-                                        submitForm(data)
-                                   )}
                               >
                                    <Stack spacing={5}>
                                         <SimpleGrid
@@ -784,7 +897,7 @@ function Trial() {
                                                        How did you hear about
                                                        us?
                                                   </FormLabel>
-                                                  <RadioGroup>
+                                                  <RadioGroup defaultValue="Word of Mouth">
                                                        <Stack
                                                             direction={{
                                                                  base: 'column',
@@ -814,7 +927,7 @@ function Trial() {
                                                                  Instagram
                                                             </Radio>
                                                             <Radio
-                                                                 value=" Word of Mouth"
+                                                                 value="Word of Mouth"
                                                                  name="referral"
                                                                  ref={register}
                                                             >
@@ -849,7 +962,7 @@ function Trial() {
                                    </Button>
                               </Box>
                          </Flex>
-                    </motion.div>
+                    </Box>
                </>
           </div>
      );
