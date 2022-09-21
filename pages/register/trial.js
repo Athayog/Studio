@@ -354,10 +354,7 @@ function Trial() {
                selected_calendar: selected_calendar,
                location: location
           };
-          setCustomer((prevState) => {
-               // Object.assign would also work
-               return { ...prevState, ...updatedValues };
-          });
+
           await registerFormTrial(
                name,
                email,
@@ -423,6 +420,13 @@ function Trial() {
 
      const sendCustomerEmail = async () => {
           setConfirm(false);
+          setCustomer({
+               name: updatedValues.name,
+               date: updatedValues.date,
+               selected_calendar: updatedValues.selected_calendar,
+               location: updatedValues.location,
+               email: updatedValues.email
+          });
           await emailjs
                .send(
                     'service_5d1bzlp',
@@ -1040,7 +1044,7 @@ function Trial() {
                                         Hello{' '}
                                         <chakra.span fontWeight="medium">
                                              {' '}
-                                             {updatedValues.name},
+                                             {customer.name},
                                         </chakra.span>
                                    </Text>
                                    <Text>
@@ -1052,15 +1056,15 @@ function Trial() {
                                         </chakra.span>{' '}
                                         on{' '}
                                         <chakra.span fontWeight="medium">
-                                             {updatedValues.date}
+                                             {customer.date}
                                         </chakra.span>{' '}
                                         for{' '}
                                         <chakra.span fontWeight="medium">
-                                             {updatedValues.selected_calendar}{' '}
+                                             {customer.selected_calendar}{' '}
                                         </chakra.span>
                                         at{' '}
                                         <chakra.span fontWeight="medium">
-                                             {updatedValues.location}
+                                             {customer.location}
                                         </chakra.span>
                                    </Text>
                                    <Text>
