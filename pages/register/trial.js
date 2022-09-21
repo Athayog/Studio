@@ -455,7 +455,6 @@ function Trial() {
                               duration: 9000,
                               isClosable: true
                          });
-                         router.push('/');
                     },
                     (error) => {
                          setLoading(false);
