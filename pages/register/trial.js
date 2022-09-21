@@ -346,16 +346,15 @@ function Trial() {
           location
      }) => {
           console.log(date, selected_calendar, location);
-          setLoading(true);
 
+          updatedValues = {
+               name: name,
+               email: email,
+               date: date,
+               selected_calendar: selected_calendar,
+               location: location
+          };
           setCustomer((prevState) => {
-               updatedValues = {
-                    name: name,
-                    email: email,
-                    date: date,
-                    selected_calendar: selected_calendar,
-                    location: location
-               };
                // Object.assign would also work
                return { ...prevState, ...updatedValues };
           });
