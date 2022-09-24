@@ -289,7 +289,7 @@ function Trial() {
           'saturday'
      ];
      function today() {
-          return new Date();
+          return dayjs().format('YYYY-MM-DD');
      }
      function tomorrow() {
           return dayjs().add(1, 'day').format('YYYY-MM-DD');
@@ -577,7 +577,7 @@ function Trial() {
                                                             onChange={(e) =>
                                                                  onDateChange(e)
                                                             }
-                                                            value={tomorrow()}
+                                                            defaultValue={today()}
                                                             min={
                                                                  new Date()
                                                                       .toISOString()
