@@ -91,7 +91,8 @@ function App({ Component, pageProps }) {
           '/yoga-retreat',
           '/admin',
           '/yoga-day',
-          '/yoga-day/register'
+          '/yoga-day/register',
+          '/register/trial'
      ];
 
      useEffect(() => {

@@ -1,7 +1,7 @@
 import { capitalizeFirstLetter } from '@/components/helper/Capitalize';
 import HomeLayout from '@/components/layout/HomeLayout';
 import NavbarHelper from '@/components/shared/NavbarHelper';
-import { registerFormTrial } from '@/lib/db/forms';
+import { checkForTrial, registerFormTrial } from '@/lib/db/forms';
 import {
      Box,
      Button,
@@ -345,8 +345,6 @@ function Trial() {
           selected_calendar,
           location
      }) => {
-          console.log(date, selected_calendar, location);
-
           updatedValues = {
                name: name,
                email: email,
@@ -355,6 +353,60 @@ function Trial() {
                location: location
           };
 
+          await checkForTrial(email, phone)
+               .then((response) => {
+                    if (response.code == 200) {
+                         postRegister(
+                              name,
+                              email,
+                              phone,
+                              gender,
+                              experience,
+                              style,
+                              referral,
+                              conditions,
+                              date,
+                              selected_calendar,
+                              location
+                         );
+                    } else {
+                         toast({
+                              title: 'Cannot Register',
+                              description: 'Already registered for trial class',
+                              status: 'error',
+                              duration: 5000,
+                              isClosable: true
+                         });
+                         setLoading(false);
+                         reset();
+                    }
+               })
+               .catch((error) => {
+                    toast({
+                         title: 'An error occurred.',
+                         description: error.message,
+                         status: 'error',
+                         duration: 5000,
+                         isClosable: true
+                    });
+                    setLoading(false);
+                    reset();
+               });
+     };
+
+     const postRegister = async (
+          name,
+          email,
+          phone,
+          gender,
+          experience,
+          style,
+          referral,
+          conditions,
+          date,
+          selected_calendar,
+          location
+     ) => {
           await registerFormTrial(
                name,
                email,
