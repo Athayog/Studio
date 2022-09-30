@@ -49,7 +49,7 @@ function Trial() {
                     {
                          time: '6:00 AM - 7:00 AM',
                          monday: 'Rhythm Of Being',
-                         tuesday: 'Universal Harmony / Sivananda',
+                         tuesday: 'Universal Harmony / Sivanandha',
                          wednesday: 'Transcending Transitions',
                          thursday: 'Rhythm Of Being',
                          friday: 'Universal Harmony',
@@ -58,36 +58,36 @@ function Trial() {
                     },
                     {
                          time: '7:00 AM - 8:00 AM',
-                         monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transitions',
-                         wednesday: 'Rhythm Of Being',
-                         thursday: 'Universal Harmony',
-                         friday: 'Transcending Transitions',
-                         saturday: 'Universal Harmony',
+                         monday: 'Transcending Transitions',
+                         tuesday: 'Rhythm Of Being',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Transcending Transitions',
+                         friday: 'Universal Harmony / Sivanandha',
+                         saturday: 'Transcending Transitions',
                          sunday: 'Rhythm Of Being'
                     },
                     {
                          time: '8:00 AM - 9:00 AM',
-                         monday: 'Transcending Transitions',
-                         tuesday: 'Rhythm Of Being',
-                         wednesday: 'Universal Harmony',
-                         thursday: 'Rhythm Of Being',
-                         friday: 'Universal Harmony',
-                         saturday: 'Transcending Transitions',
-                         sunday: 'Universal Harmony'
-                    },
-                    {
-                         time: '9:00 AM - 10:00 AM',
                          monday: 'Universal Harmony',
                          tuesday: 'Rhythm Of Being',
-                         wednesday: 'Transcending Transitions',
-                         thursday: 'Universal Harmony',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Transcending Transitions',
                          friday: 'Rhythm Of Being',
+                         saturday: 'Rhythm Of Being',
+                         sunday: 'Universal Harmony / Sivanandha'
+                    },
+                    {
+                         time: "9:00 AM - 10:00 AM (Women's Batch)",
+                         monday: 'Rhythm Of Being',
+                         tuesday: 'Transcending Transitions',
+                         wednesday: 'Universal Harmony / Sivanandha',
+                         thursday: 'Universal Harmony',
+                         friday: 'Transcending Transitions',
                          saturday: 'Universal Harmony',
                          sunday: 'No Class'
                     },
                     {
-                         time: '11:00 AM - 4:00 PM',
+                         time: '11:00 AM - 3:00 PM',
                          monday: 'Shikshanapada',
                          tuesday: 'Shikshanapada',
                          wednesday: 'Shikshanapada',
@@ -111,7 +111,8 @@ function Trial() {
                          monday: 'Transcending Transitions',
                          tuesday: 'Universal Harmony',
                          wednesday: 'Rhythm Of Being',
-                         thursday: 'Universal Harmony',
+
+                         thursday: 'Universal Harmony / Sivanandha ',
                          friday: 'Transcending Transitions',
                          saturday: 'Universal Harmony',
                          sunday: 'Rhythm Of Being'
@@ -119,20 +120,30 @@ function Trial() {
                     {
                          time: '6:00 PM - 7:00 PM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transitions',
-                         wednesday: 'YIN Yoga',
-                         thursday: 'Universal Harmony',
-                         friday: 'Rhythm Of Being',
+                         tuesday: 'Rhythm Of Being',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Rhythm Of Being',
+                         friday: 'Universal Harmony / Sivanandha',
                          saturday: 'Rhythm Of Being',
                          sunday: 'Universal Harmony'
                     },
                     {
                          time: '7:00 PM - 8:00 PM',
-                         monday: 'Rhythm Of Being',
+                         monday: 'Deep Space',
                          tuesday: 'Universal Harmony',
-                         wednesday: 'Deep Space',
-                         thursday: 'Transcending Transitions',
-                         friday: 'Inner World',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Universal Harmony',
+                         friday: 'Rhythm Of Being',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    },
+                    {
+                         time: '8:00 PM - 9:00 PM',
+                         monday: 'Rhythm Of Being',
+                         tuesday: 'Deep Space',
+                         wednesday: 'Rhythm Of Being',
+                         thursday: 'Inner World',
+                         friday: 'Transcending Transitions',
                          saturday: 'No Class',
                          sunday: 'No Class'
                     }
@@ -156,11 +167,11 @@ function Trial() {
                     {
                          time: '7:00 AM - 8:00 AM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transitions',
-                         wednesday: 'Rhythm Of Being',
-                         thursday: 'Universal Harmony',
-                         friday: 'Transcending Transitions',
-                         saturday: 'Universal Harmony',
+                         tuesday: 'Rhythm Of Being',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Transcending Transitions',
+                         friday: 'Universal Harmony',
+                         saturday: 'Transcending Transitions /Ashtanga',
                          sunday: 'Rhythm Of Being'
                     },
                     {
@@ -168,18 +179,18 @@ function Trial() {
                          monday: 'Transcending Transitions /Ashtanga',
                          tuesday: 'Rhythm Of Being',
                          wednesday: 'Universal Harmony',
-                         thursday: 'Rhythm Of Being',
-                         friday: 'Universal Harmony',
-                         saturday: 'Transcending Transitions',
+                         thursday: 'Transcending Transitions /Ashtanga',
+                         friday: 'Rhythm Of Being',
+                         saturday: 'Rhythm Of Being',
                          sunday: 'Universal Harmony / Sivananda'
                     },
                     {
-                         time: '9:00 AM - 10:00 AM',
-                         monday: 'Universal Harmony',
-                         tuesday: 'Rhythm Of Being',
-                         wednesday: 'Transcending Transitions',
+                         time: "9:00 AM - 10:00 AM (Women's Batch)",
+                         monday: 'Rhythm Of Being',
+                         tuesday: 'Transcending Transitions',
+                         wednesday: 'Universal Harmony / Sivanandha',
                          thursday: 'Universal Harmony',
-                         friday: 'Rhythm Of Being',
+                         friday: 'Transcending Transitions',
                          saturday: 'Universal Harmony',
                          sunday: 'No Class'
                     },
@@ -196,7 +207,7 @@ function Trial() {
                     },
                     {
                          time: '5:00 PM - 6:00 PM',
-                         monday: ' Transcending Transitions/Ashtanga',
+                         monday: 'Transcending Transitions/Ashtanga',
                          tuesday: 'Universal Harmony',
                          wednesday: 'Rhythm Of Being',
                          thursday: 'Universal Harmony',
@@ -207,10 +218,10 @@ function Trial() {
                     {
                          time: '6:00 PM - 7:00 PM',
                          monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transitions',
-                         wednesday: 'Rhythm Of Being',
-                         thursday: 'Universal Harmony',
-                         friday: 'Rhythm Of Being',
+                         tuesday: 'Rhythm Of Being',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Rhythm Of Being',
+                         friday: 'Universal Harmony',
                          saturday: 'Rhythm Of Being',
                          sunday: 'Universal Harmony'
                     },
@@ -218,9 +229,19 @@ function Trial() {
                          time: '7:00 PM - 8:00 PM',
                          monday: 'Deep Space',
                          tuesday: 'Universal Harmony',
-                         wednesday: 'Deep Space',
-                         thursday: 'Transcending Transitions',
-                         friday: 'Inner World',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Universal Harmony',
+                         friday: 'Rythm Of Being',
+                         saturday: 'No Class',
+                         sunday: 'No Class'
+                    },
+                    {
+                         time: '8:00 PM - 9:00 PM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Deep Space',
+                         wednesday: 'Rythm Of Being',
+                         thursday: 'Inner World',
+                         friday: 'Transcending Transitions',
                          saturday: 'No Class',
                          sunday: 'No Class'
                     }
@@ -244,12 +265,12 @@ function Trial() {
 
                     {
                          time: '8:00 AM - 9:00 AM',
-                         monday: 'Transcending Transitions',
+                         monday: 'Universal Harmony',
                          tuesday: 'Rhythm Of Being',
                          wednesday: 'Universal Harmony',
-                         thursday: 'Rhythm Of Being',
-                         friday: 'Universal Harmony',
-                         saturday: 'Transcending Transitions',
+                         thursday: 'Transcending Transitions',
+                         friday: 'Rhythm Of Being',
+                         saturday: 'Rhythm Of Being',
                          sunday: 'Universal Harmony'
                     },
 
@@ -268,7 +289,7 @@ function Trial() {
                          monday: 'Transcending Transitions',
                          tuesday: 'Universal Harmony',
                          wednesday: 'Rhythm Of Being',
-                         thursday: 'Universal Harmony',
+                         thursday: 'Universal Harmony / Sivanandha',
                          friday: 'Transcending Transitions',
                          saturday: 'Universal Harmony',
                          sunday: 'Rhythm Of Being'
@@ -510,17 +531,50 @@ function Trial() {
                     }
                );
      };
+     function getWeekOfMonth(date) {
+          const startWeekDayIndex = 1; // 1 MonthDay 0 Sundays
+          const firstDate = new Date(date.getFullYear(), date.getMonth(), 1);
+          const firstDay = firstDate.getDay();
+
+          let weekNumber = Math.ceil((date.getDate() + firstDay) / 7);
+          if (startWeekDayIndex === 1) {
+               if (date.getDay() === 0 && date.getDate() > 1) {
+                    weekNumber -= 1;
+               }
+
+               if (
+                    firstDate.getDate() === 1 &&
+                    firstDay === 0 &&
+                    date.getDate() > 1
+               ) {
+                    weekNumber += 1;
+               }
+          }
+          return weekNumber;
+     }
 
      const onDateChange = (e) => {
           const todayWeek = weekdays[dayjs(e.target.value).day()];
           setSelectedWeek(todayWeek);
 
           getTodaysClass(todayWeek);
+          let isSecond = getWeekOfMonth(new Date(e.target.value));
+          if (isSecond == 2) {
+               toast({
+                    title: 'We are closed on this day',
+                    description: 'We are closed on every second saturday',
+                    status: 'warning',
+                    duration: 5000,
+                    isClosable: true
+               });
+               setLoading(false);
+               reset();
+          }
      };
 
      const onLocationChange = (e) => {
           setLocation(e.target.value);
-          console.log(e.target.value);
+
           getTodaysClass(selectedweek, e.target.value);
      };
 
@@ -533,8 +587,6 @@ function Trial() {
 
           activeCalendar.map((data) => {
                if (data.location == locationPassed) {
-                    console.log(data.location, locationPassed);
-
                     data.times.map((each) => {
                          if (each[week] !== 'No Class') {
                               periods.push([each.time, each[week]]);

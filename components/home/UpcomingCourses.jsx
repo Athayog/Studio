@@ -14,6 +14,8 @@ import Link from 'next/link';
 import CreativeTwo from 'public/TTC.png';
 import CreativeOne from 'public/navratri.png';
 import CreativeThree from 'public/RPYT.png';
+import CreativeFour from 'public/Anniversary.png';
+import CreativeFive from 'public/Anniversary2.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -24,6 +26,22 @@ SwiperCore.use([Navigation, Pagination]);
 
 function UpcomingCourses() {
      const upcomingData = [
+          {
+               id: '4',
+               url: 'https://www.instagram.com/p/Ci-L8bIJ_2C/',
+               alt: 'Anniversary Celebration',
+               title: 'Anniversary Celebration',
+               img: CreativeFour,
+               timings: '10am - 1pm',
+               type: 'Offline (KR.Puram)',
+               duration: [
+                    '10:00 AM - 11:00 AM - Special Yoga Education Session',
+                    '11:00 AM - 11:30 AM - Journey Of Athayog Living',
+                    '11:30 AM - 12:00 PM - Talent Showcasing',
+                    '12:00 PM - 12:30 PM - Celebration',
+                    '12:30 PM Onwards - Refreshments'
+               ]
+          },
           {
                id: '1',
                url: 'https://forms.gle/6nEeibCFwVzi3H6H9',
@@ -67,7 +85,7 @@ function UpcomingCourses() {
                     gap={5}
                     fontSize={['2xl', '3xl']}
                >
-                    Our Upcoming Courses <BsArrowRightCircleFill />
+                    Our Upcoming Events & Courses <BsArrowRightCircleFill />
                </Heading>
                <Grid
                     mt={6}
