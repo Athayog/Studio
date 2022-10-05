@@ -7,13 +7,13 @@ import HeroCarousel from '@/components/home/HeroCarousel';
 import Offerings from '@/components/home/Offerings';
 import RecentBlogs from '@/components/home/RecentBlogs';
 import UpcomingCourses from '@/components/home/UpcomingCourses';
-import VideoTestimonials from '@/components/home/VideoTestimonials';
 import HomeLayout from '@/components/layout/HomeLayout';
 import Testimonials from '@/components/shared/Testimonials';
 import { getImages, getTestimonials } from '@/lib/db/db-admin';
 import { motion } from 'framer-motion';
 import WhatsAppWidget from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
+import VideoSection from './VideoSection';
 
 export async function getStaticProps() {
      // const reqCarousel = await getImages('carousel');
@@ -42,7 +42,7 @@ export default function Home({ gallery, testimonials }) {
                <Offerings />
                <UpcomingCourses />
                <Gallery images={gallery} />
-               <VideoTestimonials />
+               <VideoSection />
                <Testimonials testimonials={testimonials} />
                <GuideBook />
                <RecentBlogs />

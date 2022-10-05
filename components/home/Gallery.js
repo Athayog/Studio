@@ -105,7 +105,7 @@ const Gallery = ({ images }) => {
 
      return (
           <Box
-               padding={{ base: '1rem', md: '2rem', lg: '5rem' }}
+               padding={{ base: '1rem', md: '2rem', lg: '3rem' }}
                height="100%"
                margin="auto"
                bg="gray.200"
@@ -124,7 +124,7 @@ const Gallery = ({ images }) => {
                          .map((image) => {
                               return (
                                    <Box
-                                        rounded="lg"
+                                        rounded="base"
                                         overflow="hidden"
                                         key={image.id}
                                    >
