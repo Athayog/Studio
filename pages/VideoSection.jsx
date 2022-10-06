@@ -13,7 +13,7 @@ function VideoSection() {
                     width="full"
                     justifyContent="space-evenly"
                     padding={{ base: '5', md: '10', lg: '16' }}
-                    gridTemplateColumns="repeat(auto-fit, minmax(400px, 1fr))"
+                    gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
                     gap={10}
                >
                     <Box>
@@ -24,7 +24,7 @@ function VideoSection() {
                               width="max-content"
                               fontWeight="medium"
                               display="flex"
-                              fontSize={['2xl', '2xl']}
+                              fontSize={['xl', '2xl']}
                          >
                               Our 2 Years Journey
                          </Heading>
@@ -36,7 +36,7 @@ function VideoSection() {
                     <Box>
                          <Heading
                               fontWeight="medium"
-                              fontSize={['2xl', '2xl']}
+                              fontSize={['xl', '2xl']}
                               mb={5}
                               borderBottom="3px solid"
                               borderColor="aygreen.500"

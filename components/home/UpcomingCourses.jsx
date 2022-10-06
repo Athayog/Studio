@@ -8,49 +8,31 @@ import {
      ListItem,
      Text
 } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeTwo from 'public/TTC.png';
-import CreativeOne from 'public/navratri.png';
-import CreativeThree from 'public/RPYT.png';
-import CreativeFour from 'public/Anniversary.png';
-import CreativeFive from 'public/Anniversary2.png';
+import CreativeOne from 'public/sound_meditation.png';
+import CreativeTwo from 'public/ttc_nov.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
-import { v4 as uuidv4 } from 'uuid';
 SwiperCore.use([Navigation, Pagination]);
 
 function UpcomingCourses() {
      const upcomingData = [
           {
-               id: '4',
-               url: 'https://www.instagram.com/p/Ci-L8bIJ_2C/',
-               alt: 'Anniversary Celebration',
-               title: 'Anniversary Celebration',
-               img: CreativeFour,
-               timings: '10am - 1pm',
-               type: 'Offline (KR.Puram)',
-               duration: [
-                    '10:00 AM - 11:00 AM - Special Yoga Education Session',
-                    '11:00 AM - 11:30 AM - Journey Of Athayog Living',
-                    '11:30 AM - 12:00 PM - Talent Showcasing',
-                    '12:00 PM - 12:30 PM - Celebration',
-                    '12:30 PM Onwards - Refreshments'
-               ]
-          },
-          {
                id: '1',
-               url: 'https://forms.gle/6nEeibCFwVzi3H6H9',
-               alt: 'Navaratri Sadhana',
+               url: 'https://www.instagram.com/p/CjF-fytsHoE/',
+               alt: 'Sound Meditation',
                img: CreativeOne,
-               title: 'Navaratri Sadhana',
-               timings: ' 6 - 7pm',
-               type: 'Online',
-               duration: ['September 26th to October 4th']
+               title: 'Sound Meditation',
+               timings: '10am - 12pm',
+               type: 'Offline (KR Puram)',
+               duration: [
+                    '15th October Saturday',
+                    'Eligibility 7+ Year',
+                    '600 Rupees'
+               ]
           },
           {
                id: '2',
@@ -58,22 +40,12 @@ function UpcomingCourses() {
                alt: 'Teacher Training Program',
                title: 'Traditional Hatha Yoga',
                img: CreativeTwo,
-               timings: '6am - 8am (Online) / 11am - 4pm (Offline)',
+               timings: '6am - 8:30am (Online) / 11am - 4pm (Offline)',
                type: 'Online / Offline',
                duration: [
-                    'October 3rd for Weekday (Offline)',
-                    'September 1st Weekday (Online)'
+                    'Weekend Batch November 2nd 2022',
+                    '2-3 Months | RYT 200 Hours'
                ]
-          },
-          {
-               id: '3',
-               url: 'https://athayogliving.com/courses/shikshana/rpyt-course',
-               alt: 'RPYT Course',
-               title: 'RPYT Course',
-               img: CreativeThree,
-               timings: '11am - 4pm',
-               type: 'Offline',
-               duration: ['October 3rd to 28th']
           }
      ];
 
@@ -91,6 +63,7 @@ function UpcomingCourses() {
                     mt={6}
                     justifyContent="flex-start"
                     gap={10}
+                    maxW="container.md"
                     gridTemplateColumns=" repeat(auto-fit, minmax(250px, 1fr));"
                >
                     {upcomingData.map(
