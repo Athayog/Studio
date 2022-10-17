@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeOne from 'public/sound_meditation.png';
+import CreativeOne from 'public/creative_one.jpg';
 import CreativeTwo from 'public/ttc_nov.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
@@ -22,17 +22,13 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: 'https://www.instagram.com/p/CjF-fytsHoE/',
-               alt: 'Sound Meditation',
+               url: 'https://forms.gle/HWSamMc1wxhXMzeeA',
+               alt: 'Advanced Yoga Sadhana',
                img: CreativeOne,
-               title: 'Sound Meditation',
-               timings: '10am - 12pm',
-               type: 'Offline (KR Puram)',
-               duration: [
-                    '15th October Saturday',
-                    'Eligibility 7+ Year',
-                    '600 Rupees'
-               ]
+               title: 'Advanced Yoga Sadhana',
+               timings: '9am - 11am',
+               type: 'Offline (Indiranagar)',
+               duration: ['6th November 2022', '700 Rupees']
           },
           {
                id: '2',
