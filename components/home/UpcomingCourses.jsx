@@ -59,7 +59,7 @@ function UpcomingCourses() {
                     mt={6}
                     justifyContent="flex-start"
                     gap={10}
-                    maxW="container.md"
+                    maxW="container.lg"
                     gridTemplateColumns=" repeat(auto-fit, minmax(250px, 1fr));"
                >
                     {upcomingData.map(
