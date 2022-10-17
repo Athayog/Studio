@@ -23,9 +23,9 @@ function UpcomingCourses() {
           {
                id: '1',
                url: 'https://forms.gle/HWSamMc1wxhXMzeeA',
-               alt: 'Advanced Yoga Sadhana',
+               alt: 'Advance Yoga Sadhana',
                img: CreativeOne,
-               title: 'Advanced Yoga Sadhana',
+               title: 'Advance Yoga Sadhana',
                timings: '9am - 11am',
                type: 'Offline (Indiranagar)',
                duration: ['6th November 2022', '700 Rupees']
