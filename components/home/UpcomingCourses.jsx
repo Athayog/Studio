@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeOne from 'public/creative_one.jpg';
+import CreativeOne from 'public/creative_one.png';
 import CreativeTwo from 'public/ttc_nov.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
