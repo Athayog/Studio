@@ -210,7 +210,7 @@ const Online = ({ offers, notFound }) => {
                                                        Transcending Transitions
                                                   </Td>
                                                   <Td>Rhythm Of Being </Td>
-                                                  <Td>Sivananda</Td>
+                                                  <Td>Universal Harmony</Td>
                                                   <Td> - </Td>
                                                   <Td> - </Td>
                                              </Tr>
@@ -226,11 +226,12 @@ const Online = ({ offers, notFound }) => {
                                                        8:00 AM - 9:00 AM
                                                   </Td>
                                                   <Td>Universal Harmony </Td>
-                                                  <Td>Rhythm Of Being </Td>
-                                                  <Td>Universal Harmony </Td>
                                                   <Td>
                                                        Transcending Transitions
                                                   </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>Universal Harmony </Td>
+
                                                   <Td>Rhythm Of Being </Td>
                                                   <Td>Rhythm Of Being </Td>
                                                   <Td>Universal Harmony </Td>
@@ -270,8 +271,8 @@ const Online = ({ offers, notFound }) => {
                                                   <Td>Universal Harmony</Td>
                                                   <Td>Rhythm Of Being</Td>
                                                   <Td>
-                                                       Universal Harmony /
-                                                       Sivanandha
+                                                       Sivanandha / Universal
+                                                       Harmony
                                                   </Td>
                                                   <Td>
                                                        Transcending Transitions
