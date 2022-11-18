@@ -112,7 +112,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      const trialCourses = pricing
           .filter((data) => data.isTrial == true)
           .sort((a, b) => a.durationNum - b.durationNum);
-     const generalCourses = pricing
+     let generalCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => !data.description.toLowerCase().includes('limited'))
@@ -129,6 +129,27 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
 
+     if (router.pathname == '/classes/personal') {
+          let space = [];
+          let onsite = [];
+          let online = [];
+
+          for (let i = 0; i < generalCourses.length; i++) {
+               if (generalCourses[i].courseName.includes('Space')) {
+                    space.push(generalCourses[i]);
+               }
+               if (generalCourses[i].courseName.includes('Onsite')) {
+                    onsite.push(generalCourses[i]);
+               }
+               if (generalCourses[i].courseName.includes('Online')) {
+                    online.push(generalCourses[i]);
+               }
+          }
+          space = space.sort((a, b) => a.durationNum - b.durationNum);
+          onsite = onsite.sort((a, b) => a.durationNum - b.durationNum);
+          online = online.sort((a, b) => a.durationNum - b.durationNum);
+          generalCourses = [...space, ...onsite, ...online];
+     }
      return (
           <Flex
                margin="auto"
