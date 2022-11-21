@@ -26,8 +26,8 @@ function UpcomingCourses() {
                alt: 'Traditional Hata Yoga',
                img: CreativeOne,
                title: 'Traditional Hata Yoga',
-               timings: 'Enquire (Online / Offline)',
-               type: 'Offline (Indiranagar)',
+               timings: 'Enquire',
+               type: 'Online / Offline',
                duration: [
                     'January 2nd for Weekday',
                     'January 7th for Weekend',
