@@ -12,7 +12,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CreativeOne from 'public/creative_one.png';
 import CreativeTwo from 'public/ttc_nov.png';
-import CreativeThree from 'public/Course5.jpeg';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -23,38 +22,30 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: 'https://forms.gle/HWSamMc1wxhXMzeeA',
-               alt: 'Advance Yoga Sadhana',
+               url: 'https://forms.gle/Hy8NaEvR7rhyFDdM6',
+               alt: 'Traditional Hata Yoga',
                img: CreativeOne,
-               title: 'Advance Yoga Sadhana',
-               timings: '9am - 11am',
+               title: 'Traditional Hata Yoga',
+               timings: 'Enquire (Online / Offline)',
                type: 'Offline (Indiranagar)',
-               duration: ['6th November 2022', '700 Rupees']
-          },
-          {
-               id: '2',
-               url: 'https://athayogliving.com/courses/shikshana/ryt-200-course',
-               alt: 'Teacher Training Program',
-               title: 'Traditional Hatha Yoga',
-               img: CreativeTwo,
-               timings: '6am - 8:30am (Online) / 11am - 4pm (Offline)',
-               type: 'Online / Offline',
                duration: [
-                    'Weekend Batch November 2nd 2022',
+                    'January 2nd for Weekday',
+                    'January 7th for Weekend',
                     '2-3 Months | RYT 200 Hours'
                ]
           },
           {
-               id: '3',
-               url: 'https://forms.gle/PnTix51RyuVDZjGr9',
-               alt: 'Aroma Therapy Workshop',
-               title: 'Aroma Therapy Workshop',
-               img: CreativeThree,
-               timings: '10:00am - 12:20pm',
-               type: 'Offline (Indiranagar & K.R Puram)',
+               id: '2',
+               url: 'https://forms.gle/4pFoenMaSfCjgEWw6',
+               alt: 'Sound Meditation Workshop',
+               title: 'Sound Meditation Workshop',
+               img: CreativeTwo,
+               timings: '10am - 12:00pm (Indirangar)',
+               type: 'Offline',
                duration: [
-                    '19th November 2022 Indiranagar',
-                    '20th November 2022 K.R Puram'
+                    '3rd December (Saturday)',
+                    'Eligibility 7+ Years',
+                    'INR 600'
                ]
           }
      ];
@@ -73,7 +64,7 @@ function UpcomingCourses() {
                     mt={6}
                     justifyContent="flex-start"
                     gap={10}
-                    gridTemplateColumns=" repeat(auto-fit, minmax(250px, 1fr));"
+                    gridTemplateColumns=" repeat(auto-fit, minmax(250px, 500px));"
                >
                     {upcomingData.map(
                          ({
