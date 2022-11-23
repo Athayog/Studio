@@ -1,5 +1,5 @@
 import fetcher from '@/utils/fetcher';
-import { Box, Heading, Skeleton } from '@chakra-ui/react';
+import { Box, Flex, Heading, Skeleton } from '@chakra-ui/react';
 import React from 'react';
 import useSWR from 'swr';
 import Image from 'next/image';
@@ -51,7 +51,7 @@ const Gallery = ({ images }) => {
           (sm = 1), (vs = 1);
      } else {
           sliderPerView = sliderPerView;
-          xl = 3;
+          xl = 4;
           md = 3;
           (sm = 2), (vs = 1);
      }
@@ -121,22 +121,22 @@ const Gallery = ({ images }) => {
      ];
 
      return (
-          <>
+          <Box spacing={5} py="2rem" bg="gray.200" height="100%">
                <Box
-                    padding={{ base: '1rem', md: '2rem', lg: '3rem' }}
+                    padding={{ base: '1rem', md: '1rem', lg: '1rem' }}
                     height="100%"
                     margin="auto"
-                    bg="gray.200"
                >
                     <Heading
-                         fontWeight="normal"
-                         textAlign="left"
-                         fontSize={{ base: 'xl', md: '2xl' }}
+                         fontWeight="bold"
+                         textAlign="center"
+                         fontSize={{ base: '2xl', md: '3xl' }}
                          mb={{ base: '2', md: '5', lg: '10' }}
-                         borderBottom="2px solid green"
-                         maxW="max-content"
+                         borderBottom="2px solid"
+                         width="max-content"
+                         margin="0 auto"
                     >
-                         Gallery
+                         Events & Studio
                     </Heading>
                     <Swiper {...params} key={uuidv4()}>
                          {activeImage
@@ -162,18 +162,18 @@ const Gallery = ({ images }) => {
                     </Swiper>
                </Box>
                <Box
-                    padding={{ base: '1rem', md: '2rem', lg: '3rem' }}
+                    padding={{ base: '1rem', md: '1rem', lg: '1rem' }}
                     height="100%"
                     margin="auto"
-                    bg="gray.200"
                >
                     <Heading
-                         fontWeight="normal"
-                         textAlign="left"
-                         fontSize={{ base: 'xl', md: '2xl' }}
+                         fontWeight="bold"
+                         textAlign="center"
+                         fontSize={{ base: '2xl', md: '3xl' }}
                          mb={{ base: '2', md: '5', lg: '10' }}
-                         borderBottom="2px solid green"
-                         maxW="max-content"
+                         borderBottom="2px solid"
+                         width="max-content"
+                         margin="0 auto"
                     >
                          Sound Meditation
                     </Heading>
@@ -201,18 +201,18 @@ const Gallery = ({ images }) => {
                     </Swiper>
                </Box>
                <Box
-                    padding={{ base: '1rem', md: '2rem', lg: '3rem' }}
+                    padding={{ base: '1rem', md: '1rem', lg: '1rem' }}
                     height="100%"
                     margin="auto"
-                    bg="gray.200"
                >
                     <Heading
-                         fontWeight="normal"
-                         textAlign="left"
-                         fontSize={{ base: 'xl', md: '2xl' }}
+                         fontWeight="bold"
+                         textAlign="center"
+                         fontSize={{ base: '2xl', md: '3xl' }}
                          mb={{ base: '2', md: '5', lg: '10' }}
-                         borderBottom="2px solid green"
-                         maxW="max-content"
+                         borderBottom="2px solid"
+                         width="max-content"
+                         margin="0 auto"
                     >
                          Aroma Therapy
                     </Heading>
@@ -239,7 +239,7 @@ const Gallery = ({ images }) => {
                               })}
                     </Swiper>
                </Box>
-          </>
+          </Box>
      );
 };
 
