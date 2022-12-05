@@ -149,7 +149,7 @@ const Online = ({ offers, notFound }) => {
                                    fontWeight="normal"
                                    fontSize={{ base: '2xl', md: '3xl' }}
                               >
-                                   Online Group Class Schedule September 2022
+                                   Online Group Class Schedule December 2022
                               </Heading>
                               <Box
                                    overflowX="auto"
@@ -227,7 +227,7 @@ const Online = ({ offers, notFound }) => {
                                                        padding="0px"
                                                        paddingLeft="10px"
                                                   >
-                                                       8:00 AM - 9:00 AM
+                                                       7:00 AM - 8:00 AM
                                                   </Td>
                                                   <Td>--</Td>
                                                   <Td>--</Td>
