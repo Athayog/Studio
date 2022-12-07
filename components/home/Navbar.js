@@ -57,9 +57,7 @@ const Navbar = () => {
      return (
           <Box zIndex={3} position="fixed" width="100%">
                <Center
-                    boxShadow="sm"
-                    bg="primaryWhite"
-                    shadow="base"
+                    bg="white"
                     transition="linear"
                     transform="initial"
                     style={{ backdropFilter: 'blur(5px)' }}
@@ -118,7 +116,6 @@ const Navbar = () => {
                               </Link>
 
                               <HStack
-                                   ml="5rem"
                                    ml={{ base: '3rem', md: '3rem', lg: '5rem' }}
                                    variant="ghost"
                                    spacing="6"
@@ -131,7 +128,7 @@ const Navbar = () => {
                                    }}
                                    mr="1rem"
                               >
-                                   <Link href="/">
+                                   <Link href="/" passHref>
                                         <MotionButton
                                              fontWeight="normal"
                                              fontSize="md"
@@ -159,7 +156,7 @@ const Navbar = () => {
                                         </MotionButton>
                                    </Link>
 
-                                   <Link href="/about" as="about">
+                                   <Link href="/about" as="about" passHref>
                                         <Button
                                              fontWeight="normal"
                                              fontSize="md"
@@ -251,137 +248,6 @@ const Navbar = () => {
                                              Career
                                         </Button>
                                    </Link>
-
-                                   {/* <SMenu
-                                        menuButton={
-                                             <SMenuButton>
-                                                  Offerings <ChevronDownIcon />
-                                             </SMenuButton>
-                                        }
-                                        transition
-                                   >
-                                        <SMenuItem
-                                             onClick={() =>
-                                                  router.push(
-                                                       '/offerings/space'
-                                                  )
-                                             }
-                                        >
-                                             AthaYog Space
-                                        </SMenuItem>
-
-                                        <SMenuItem
-                                             onClick={() =>
-                                                  router.push(
-                                                       '/offerings/online'
-                                                  )
-                                             }
-                                        >
-                                             AthaYog Online
-                                        </SMenuItem>
-                                        <SMenuItem
-                                             onClick={() =>
-                                                  router.push(
-                                                       '/offerings/personal'
-                                                  )
-                                             }
-                                        >
-                                             AthaYog Personal
-                                        </SMenuItem>
-                                        <SMenuItem
-                                             onClick={() =>
-                                                  router.push(
-                                                       '/offerings/workshops'
-                                                  )
-                                             }
-                                        >
-                                             AthaYog Workshops
-                                        </SMenuItem>
-                                        <SMenuItem
-                                             onClick={() =>
-                                                  router.push(
-                                                       '/offerings/chikitsa'
-                                                  )
-                                             }
-                                        >
-                                             AthaYog Chikitsa
-                                        </SMenuItem>
-                                        <SMenuItem
-                                             onClick={() =>
-                                                  router.push(
-                                                       '/offerings/onsite'
-                                                  )
-                                             }
-                                        >
-                                             AthaYog Onsite
-                                        </SMenuItem>
-                                        <SSubMenu label="AthaYog Shikshana Pada">
-                                             <SMenuItem
-                                                  onClick={() =>
-                                                       router.push(
-                                                            '/offerings/shikshana'
-                                                       )
-                                                  }
-                                             >
-                                                  Shikshana Pada
-                                             </SMenuItem>
-                                            
-                                             <SMenuItem
-                                                  onClick={() =>
-                                                       router.push(
-                                                            '/offerings/shikshana/yic-yoga-instructor-course'
-                                                       )
-                                                  }
-                                             >
-                                                  YIC - Yoga Instructor course
-                                             </SMenuItem>
-                                             <SMenuItem
-                                                  onClick={() =>
-                                                       router.push(
-                                                            '/offerings/shikshana/ryt-200-course'
-                                                       )
-                                                  }
-                                             >
-                                                  RYT - 200 courses
-                                             </SMenuItem>
-                                             <SMenuItem
-                                                  onClick={() =>
-                                                       router.push(
-                                                            '/offerings/shikshana/short-course'
-                                                       )
-                                                  }
-                                             >
-                                                  Short courses
-                                             </SMenuItem>
-                                             <SMenuItem
-                                                  onClick={() =>
-                                                       router.push(
-                                                            '/offerings/shikshana/special-events'
-                                                       )
-                                                  }
-                                             >
-                                                  Special Events
-                                             </SMenuItem>
-                                             <SMenuItem
-                                                  onClick={() =>
-                                                       router.push(
-                                                            '/offerings/shikshana/athayog-sadhana'
-                                                       )
-                                                  }
-                                             >
-                                                  Athayog Sadhana
-                                             </SMenuItem>
-                                             <SMenuItem
-                                                  onClick={() =>
-                                                       router.push(
-                                                            '/offerings/shikshana/graduates'
-                                                       )
-                                                  }
-                                             >
-                                                  RYT 200 Graduates
-                                             </SMenuItem>
-                                        </SSubMenu>
-                                   </SMenu> */}
                               </HStack>
 
                               <HStack
@@ -408,6 +274,7 @@ const Navbar = () => {
                                         fontSize="md"
                                         color="gray.700"
                                         mr={10}
+                                        boxShadow="base"
                                         rounded="md"
                                         px={8}
                                         py={4}
@@ -418,7 +285,7 @@ const Navbar = () => {
 
                               {user ? (
                                    <Menu>
-                                        <MenuButton size="sm">
+                                        <MenuButton size="sm" boxShadow="base">
                                              <Avatar
                                                   name={user?.name}
                                                   size="sm"
@@ -449,6 +316,7 @@ const Navbar = () => {
                                    >
                                         <Button
                                              bg="aygray.100"
+                                             boxShadow="base"
                                              color="primaryDarkGray"
                                              variant="solid"
                                              size="sm"
