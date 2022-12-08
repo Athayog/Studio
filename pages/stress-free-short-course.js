@@ -92,7 +92,7 @@ function StreeFreeShourtCourse() {
                                    use your potential and succeed for higher
                                    goals and dreams.{' '}
                               </Text>
-                              <Link passHref href="/">
+                              <Link passHref href="https://rzp.io/l/HRgLdkEn">
                                    <Button
                                         mt={10}
                                         backgroundColor="#a13146"
@@ -297,7 +297,7 @@ function StreeFreeShourtCourse() {
                               moment of their life! Best wishes.
                          </Text>
                     </Box>
-                    <Link passHref href="/">
+                    <Link passHref href="https://rzp.io/l/HRgLdkEn">
                          <Button
                               _hover={{
                                    backgroundColor: '#a15146'
