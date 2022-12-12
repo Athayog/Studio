@@ -11,7 +11,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import CreativeOne from 'public/creative_one.png';
-import CreativeTwo from 'public/ttc_nov.png';
+import CreativeTwo from 'public/short.jpeg';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -36,16 +36,16 @@ function UpcomingCourses() {
           },
           {
                id: '2',
-               url: 'https://forms.gle/4pFoenMaSfCjgEWw6',
-               alt: 'Sound Meditation Workshop',
-               title: 'Sound Meditation Workshop',
+               url: 'https://athayogliving.com/stress-free-short-course',
+               alt: 'Stress Free Short Course',
+               title: 'Stress Free Short Course',
                img: CreativeTwo,
-               timings: '10am - 12:00pm (Indirangar)',
+               timings: '4:00pm - 5:30pm (Indiranagar)',
                type: 'Offline',
                duration: [
-                    '3rd December (Saturday)',
-                    'Eligibility 7+ Years',
-                    'INR 600'
+                    '7th Jan - 29th Jan (Sat & Sun)',
+                    'Eligibility Grade 8th to 10th',
+                    'INR 3000'
                ]
           }
      ];
