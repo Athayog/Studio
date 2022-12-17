@@ -147,6 +147,7 @@ function JayantiHero() {
                               width="max-content"
                               margin="0 auto"
                               variant="outline"
+                              colorScheme="ayorange"
                          >
                               Register Now
                          </Button>
@@ -170,7 +171,13 @@ function JayantiHero() {
                                         participate. Here is the schedule for
                                         the full day program
                                    </Text>
-                                   <Text color="#4c0605">
+                                   <Text
+                                        color="#4c0605"
+                                        borderColor="#4c0605"
+                                        border="1px solid"
+                                        p={5}
+                                        fontWeight="normal"
+                                   >
                                         We are also conducting a Donation
                                         Campaign for NGOs from January 1st to
                                         10th and we look forward for all

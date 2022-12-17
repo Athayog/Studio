@@ -162,7 +162,6 @@ function EventRegister() {
                               email,
                               phone,
                               age,
-
                               tshirt,
                               gender,
                               ticketID,
@@ -175,7 +174,6 @@ function EventRegister() {
                          email,
                          phone,
                          age,
-
                          tshirt,
                          gender,
                          ticketID,
@@ -201,7 +199,6 @@ function EventRegister() {
           email,
           phone,
           age,
-
           tshirt,
           gender,
           ticketID,
@@ -235,7 +232,6 @@ function EventRegister() {
                                    email,
                                    phone,
                                    age,
-
                                    tshirt,
                                    gender,
                                    ticketID,
@@ -255,7 +251,6 @@ function EventRegister() {
           email,
           phone,
           age,
-
           tshirt,
           gender,
           ticketID,
