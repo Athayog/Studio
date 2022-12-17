@@ -22,7 +22,7 @@ function Schedule() {
                     <Box>
                          <TableContainer
                               border="1px solid"
-                              borderColor="gray.100"
+                              borderColor="gray.500"
                               boxShadow="none"
                               bg="white"
                          >

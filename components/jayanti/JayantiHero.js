@@ -10,11 +10,13 @@ import {
      Text
 } from '@chakra-ui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import swamiImage from 'public/swami.png';
 import NavbarHelper from '../shared/NavbarHelper';
+import Gallery from './Gallery';
 import Schedule from './Schedule';
 
-function JayantiHero() {
+function JayantiHero({ images }) {
      return (
           <>
                <NavbarHelper />
@@ -143,14 +145,29 @@ function JayantiHero() {
                                    </chakra.span>
                               </Text>
                          </Box>
+                         <Link
+                              passHref
+                              href="swami-vivekananda-jayanti/register"
+                         >
+                              <Button
+                                   width="max-content"
+                                   margin="0 auto"
+                                   variant="outline"
+                                   colorScheme="ayorange"
+                              >
+                                   Register Now
+                              </Button>
+                         </Link>
+
                          <Button
+                              variant="link"
                               width="max-content"
                               margin="0 auto"
-                              variant="outline"
-                              colorScheme="ayorange"
+                              colorScheme="black"
                          >
-                              Register Now
+                              Already Registred? Downlaod Your Ticket Here
                          </Button>
+
                          <Divider />
                          <Flex>
                               {' '}
