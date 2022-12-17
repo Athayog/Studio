@@ -158,15 +158,16 @@ function JayantiHero({ images }) {
                                    Register Now
                               </Button>
                          </Link>
-
-                         <Button
-                              variant="link"
-                              width="max-content"
-                              margin="0 auto"
-                              colorScheme="black"
-                         >
-                              Already Registred? Downlaod Your Ticket Here
-                         </Button>
+                         <Link passHref href="swami-vivekananda-jayanti/ticket">
+                              <Button
+                                   variant="link"
+                                   width="max-content"
+                                   margin="0 auto"
+                                   colorScheme="black"
+                              >
+                                   Already Registred? Downlaod Your Ticket Here
+                              </Button>
+                         </Link>
 
                          <Divider />
                          <Flex>

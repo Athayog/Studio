@@ -22,14 +22,31 @@ import {
      Tr
 } from '@chakra-ui/react';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast, { Toaster } from 'react-hot-toast';
 import { v4 as uuidv4 } from 'uuid';
 import { IoArrowBackCircle } from 'react-icons/io5';
+import { useReactToPrint } from 'react-to-print';
 function EventRegister() {
      const [loading, setLoading] = useState(false);
-     const [fields, setFields] = useState({});
+     const [fields, setFields] = useState({
+          ticketID: 'ATHAY-01',
+          name: 'Harsimran Singh Barki',
+          email: 'harsimran.barki@gmail.com',
+          phone: '(555) 555-5555',
+          age: 30,
+          tshirt: '2xl',
+          gender: 'Male',
+          location: 'Bangalore',
+          member: 'Yes',
+          events: ['Yogathon', 'Marathon']
+     });
+
+     const componentRef = useRef();
+     const handlePrint = useReactToPrint({
+          content: () => componentRef.current
+     });
      const {
           register,
           handleSubmit,
@@ -121,19 +138,20 @@ function EventRegister() {
                          </Button>
                     </Link>
                     {Object.keys(fields).length != 0 ? (
-                         <Box bg="#fdf6ee" minHeight="100vh">
+                         <Box bg="#fdf6ee" minHeight="100vh" width="100%">
                               {' '}
-                              <Flex w="100%" justifyContent="center" py={16}>
+                              <Flex w="100%" py={16}>
                                    <Box
                                         bg="white"
                                         boxShadow="base"
                                         rounded="sm"
                                         p={5}
+                                        width="100%"
                                    >
                                         <Stack
                                              textAlign="left"
                                              spacing={6}
-                                             // ref={componentRef}
+                                             ref={componentRef}
                                              width="100%"
                                              py={2}
                                              px={2}
@@ -186,7 +204,23 @@ function EventRegister() {
                                                                  January 2023
                                                             </Td>
                                                             <Td>
-                                                                 {fields.events}
+                                                                 {fields.events.map(
+                                                                      (
+                                                                           event
+                                                                      ) => {
+                                                                           return (
+                                                                                <chakra.span
+                                                                                     mr={
+                                                                                          2
+                                                                                     }
+                                                                                >
+                                                                                     {
+                                                                                          event
+                                                                                     }
+                                                                                </chakra.span>
+                                                                           );
+                                                                      }
+                                                                 )}
                                                             </Td>
                                                        </Tr>
                                                   </Tbody>
@@ -199,6 +233,22 @@ function EventRegister() {
                                              </Text>
                                              <Text>From Athayog Living.</Text>
                                         </Stack>
+                                        <Flex
+                                             justifyContent="flex-end"
+                                             width="full"
+                                             alignItems="center"
+                                             gap={5}
+                                        >
+                                             <Button
+                                                  colorScheme="green"
+                                                  size="sm"
+                                                  onClick={handlePrint}
+                                                  rounded="base"
+                                                  mt={5}
+                                             >
+                                                  PRINT TICKET
+                                             </Button>
+                                        </Flex>
                                    </Box>
                               </Flex>
                          </Box>
