@@ -25,7 +25,13 @@ function JayantiHero({ images }) {
                     justifyContent="center"
                     alignItems="center"
                >
-                    <Box bg="#fdf6ee" py={20} width="100%" height="100%">
+                    <Box
+                         bg="#fdf6ee"
+                         py={20}
+                         width="100%"
+                         height="100%"
+                         px={10}
+                    >
                          {' '}
                          <Flex
                               alignItems="center"
@@ -33,10 +39,19 @@ function JayantiHero({ images }) {
                               gap={10}
                               width="100%"
                               height="100%"
+                              direction={{ sm: 'column', md: 'row' }}
                          >
                               <Box
-                                   width="400px"
-                                   height="400px"
+                                   width={{
+                                        sm: '300px',
+                                        md: '300px',
+                                        lg: '400px'
+                                   }}
+                                   height={{
+                                        sm: '300px',
+                                        md: '300px',
+                                        lg: '400px'
+                                   }}
                                    position="relative"
                                    borderRadius="full"
                                    overflow="hidden"
@@ -54,7 +69,11 @@ function JayantiHero({ images }) {
                                         as="h1"
                                         textAlign="center"
                                         mb={10}
-                                        fontSize="4xl"
+                                        fontSize={{
+                                             sm: '2xl',
+                                             md: '3xl',
+                                             lg: '4xl'
+                                        }}
                                         position="relative"
                                         width="max-content"
                                         _after={{
@@ -73,7 +92,11 @@ function JayantiHero({ images }) {
                                    </Heading>
                                    <Text
                                         mb={10}
-                                        fontSize="2xl"
+                                        fontSize={{
+                                             sm: 'xl',
+                                             md: '2xl',
+                                             lg: '2xl'
+                                        }}
                                         maxW="md"
                                         fontWeight="light"
                                    >
@@ -114,6 +137,7 @@ function JayantiHero({ images }) {
                          gap={10}
                          my={20}
                          textAlign="center"
+                         px={10}
                     >
                          <Heading
                               as="h2"
@@ -170,7 +194,7 @@ function JayantiHero({ images }) {
                          </Link>
 
                          <Divider />
-                         <Flex>
+                         <Flex direction="column" gap={10}>
                               {' '}
                               <Flex
                                    gap={10}
@@ -178,32 +202,31 @@ function JayantiHero({ images }) {
                                    justifyContent="start"
                                    alignItems="start"
                                    fontSize="2xl"
-                                   maxW="5xl"
-                                   px={10}
+                                   maxW="full"
                                    fontWeight="light"
-                                   textAlign="left"
+                                   textAlign="center"
                               >
-                                   <Text>
+                                   <Text w="full">
                                         We have curated a line-up of events for
                                         the day and welcome all youth to
                                         participate. Here is the schedule for
                                         the full day program
                                    </Text>
-                                   <Text
-                                        color="#4c0605"
-                                        borderColor="#4c0605"
-                                        border="1px solid"
-                                        p={5}
-                                        fontWeight="normal"
-                                   >
-                                        We are also conducting a Donation
-                                        Campaign for NGOs from January 1st to
-                                        10th and we look forward for all
-                                        interested individuals to unite for a
-                                        great cause.
-                                   </Text>
                               </Flex>
                               <Schedule />
+                              <Text
+                                   color="#4c0605"
+                                   borderColor="#4c0605"
+                                   border="1px solid"
+                                   p={5}
+                                   fontSize="2xl"
+                                   fontWeight="normal"
+                              >
+                                   We are also conducting a Donation Campaign
+                                   for NGOs from January 1st to 10th and we look
+                                   forward for all interested individuals to
+                                   unite for a great cause.
+                              </Text>
                          </Flex>
                     </Flex>
                </Flex>
