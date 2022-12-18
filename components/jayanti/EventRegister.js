@@ -30,7 +30,7 @@ import { IoArrowBackCircle } from 'react-icons/io5';
 import { useReactToPrint } from 'react-to-print';
 function EventRegister() {
      const [loading, setLoading] = useState(false);
-     const [fields, setFields] = useState();
+     const [fields, setFields] = useState({});
 
      // {
      //      ticketID: 'ATHAY-01',
