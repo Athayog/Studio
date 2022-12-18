@@ -30,18 +30,20 @@ import { IoArrowBackCircle } from 'react-icons/io5';
 import { useReactToPrint } from 'react-to-print';
 function EventRegister() {
      const [loading, setLoading] = useState(false);
-     const [fields, setFields] = useState({
-          ticketID: 'ATHAY-01',
-          name: 'Harsimran Singh Barki',
-          email: 'harsimran.barki@gmail.com',
-          phone: '(555) 555-5555',
-          age: 30,
-          tshirt: '2xl',
-          gender: 'Male',
-          location: 'Bangalore',
-          member: 'Yes',
-          events: ['Yogathon', 'Marathon']
-     });
+     const [fields, setFields] = useState();
+
+     // {
+     //      ticketID: 'ATHAY-01',
+     //      name: 'Harsimran Singh Barki',
+     //      email: 'harsimran.barki@gmail.com',
+     //      phone: '(555) 555-5555',
+     //      age: 30,
+     //      tshirt: '2xl',
+     //      gender: 'Male',
+     //      location: 'Bangalore',
+     //      member: 'Yes',
+     //      events: ['Yogathon', 'Marathon']
+     // }
 
      const componentRef = useRef();
      const handlePrint = useReactToPrint({
