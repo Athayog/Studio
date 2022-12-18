@@ -19,6 +19,7 @@ import firebase from '@/lib/firebase';
 import * as gtag from '@/lib/gtag';
 import { useRouter } from 'next/router';
 import Leads from '@/components/seo/Leads';
+import { Analytics } from '@vercel/analytics/react';
 
 NProgress.configure({
      showSpinner: true,
@@ -116,6 +117,7 @@ function App({ Component, pageProps }) {
                          </Layout>
                     </AnimatePresence>
                </AuthProvider>
+               <Analytics />
           </ChakraProvider>
      );
 }
