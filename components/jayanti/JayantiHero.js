@@ -16,7 +16,7 @@ import NavbarHelper from '../shared/NavbarHelper';
 import Gallery from './Gallery';
 import Schedule from './Schedule';
 
-function JayantiHero({ images }) {
+function JayantiHero() {
      return (
           <>
                <NavbarHelper />
@@ -212,21 +212,16 @@ function JayantiHero({ images }) {
                               {' '}
                               <Link
                                    passHref
-                                   href="swami-vivekananda-jayanti/ticket"
+                                   href="/swami-vivekananda-jayanti/ticket"
                               >
-                                   <>
-                                        <chakra.span>
-                                             {' '}
-                                             Already Registred?
-                                        </chakra.span>
-                                        <Button
-                                             variant="solid"
-                                             colorScheme="gray"
-                                             size="sm"
-                                        >
-                                             Downlaod Your Ticket Here
-                                        </Button>
-                                   </>
+                                   <Button
+                                        variant="solid"
+                                        colorScheme="gray"
+                                        size="sm"
+                                   >
+                                        Already Registred? Downlaod Your Ticket
+                                        Here
+                                   </Button>
                               </Link>
                          </Flex>
 

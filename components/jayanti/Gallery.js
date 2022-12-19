@@ -5,7 +5,7 @@ import React from 'react';
 function Gallery({ images }) {
      return (
           <div>
-               <Grid gridTemplateColumns=" repeat(auto-fit, minmax(500px, 1fr))">
+               <Grid gridTemplateColumns=" repeat(auto-fit, minmax(300px, 1fr))">
                     {' '}
                     {images.map((image) => {
                          return (
