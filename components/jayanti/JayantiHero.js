@@ -82,12 +82,13 @@ function JayantiHero() {
                                              lg: 10
                                         }}
                                         fontSize={{
-                                             base: '3xl',
+                                             base: '2xl',
                                              sm: '3xl',
                                              md: '3xl',
                                              lg: '4xl'
                                         }}
                                         position="relative"
+                                        textTransform="uppercase"
                                         width={{
                                              base: '100%',
                                              sm: '100%',
@@ -107,7 +108,8 @@ function JayantiHero() {
                                    >
                                         Young by Heart ❤️
                                    </Heading>
-                                   <Text
+                                   <Flex
+                                        direction="column"
                                         mb={10}
                                         fontSize={{
                                              base: 'xl',
@@ -126,14 +128,24 @@ function JayantiHero() {
                                         }}
                                         fontWeight="light"
                                    >
-                                        <q>
-                                             My faith is in the younger
-                                             generation, the modern generation.
-                                             They will work out the whole
-                                             problem, like lions.
-                                        </q>
-                                        - Swami Vivekananda.
-                                   </Text>
+                                        <Text>
+                                             {' '}
+                                             <q>
+                                                  My faith is in the younger
+                                                  generation, the modern
+                                                  generation. They will work out
+                                                  the whole problem, like lions.
+                                             </q>
+                                        </Text>
+
+                                        <Text
+                                             fontWeight="normal"
+                                             textAlign="center"
+                                        >
+                                             {' '}
+                                             - Swami Vivekananda
+                                        </Text>
+                                   </Flex>
                               </Box>
                          </Flex>
                          <Text
