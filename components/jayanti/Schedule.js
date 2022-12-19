@@ -22,8 +22,8 @@ function Schedule() {
                     <Box>
                          <TableContainer
                               border="1px solid"
-                              borderColor="gray.500"
-                              boxShadow="none"
+                              borderColor="gray.200"
+                              boxShadow="sm"
                               bg="white"
                          >
                               <Table variant="striped" colorScheme="gray">

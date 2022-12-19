@@ -11,6 +11,8 @@ function Gallery({ images }) {
                          return (
                               <Image
                                    key={image.id}
+                                   placeholder="blur"
+                                   blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
                                    layout="responsive"
                                    height="200"
                                    width="300"

@@ -39,15 +39,21 @@ function JayantiHero({ images }) {
                               gap={10}
                               width="100%"
                               height="100%"
-                              direction={{ sm: 'column', md: 'row' }}
+                              direction={{
+                                   base: 'column',
+                                   sm: 'column',
+                                   md: 'row'
+                              }}
                          >
                               <Box
                                    width={{
+                                        base: '300px',
                                         sm: '300px',
                                         md: '300px',
                                         lg: '400px'
                                    }}
                                    height={{
+                                        base: '300px',
                                         sm: '300px',
                                         md: '300px',
                                         lg: '400px'
@@ -61,6 +67,7 @@ function JayantiHero({ images }) {
                                         src={swamiImage}
                                         layout="responsive"
                                         objectFit="cover"
+                                        placeholder="blur"
                                         alt="Swami"
                                    />
                               </Box>
@@ -68,21 +75,31 @@ function JayantiHero({ images }) {
                                    <Heading
                                         as="h1"
                                         textAlign="center"
-                                        mb={10}
+                                        mb={{
+                                             base: 10,
+                                             sm: 10,
+                                             md: 10,
+                                             lg: 10
+                                        }}
                                         fontSize={{
-                                             sm: '2xl',
+                                             base: '3xl',
+                                             sm: '3xl',
                                              md: '3xl',
                                              lg: '4xl'
                                         }}
                                         position="relative"
-                                        width="max-content"
+                                        width={{
+                                             base: '100%',
+                                             sm: '100%',
+                                             md: 'max-content'
+                                        }}
                                         _after={{
                                              content: '""',
                                              position: 'absolute',
                                              top: '100%',
                                              width: '100%',
                                              left: '0',
-                                             height: '6px',
+                                             height: '3px',
                                              borderRadius: '2px',
                                              background:
                                                   'linear-gradient(to right,#e45727,#b12623)'
@@ -93,11 +110,20 @@ function JayantiHero({ images }) {
                                    <Text
                                         mb={10}
                                         fontSize={{
+                                             base: 'xl',
                                              sm: 'xl',
                                              md: '2xl',
                                              lg: '2xl'
                                         }}
-                                        maxW="md"
+                                        textAlign={{
+                                             base: 'center',
+                                             sm: 'center',
+                                             md: 'left'
+                                        }}
+                                        maxW={{
+                                             base: '100%',
+                                             sm: 'md'
+                                        }}
                                         fontWeight="light"
                                    >
                                         <q>
@@ -113,17 +139,13 @@ function JayantiHero({ images }) {
                          <Text
                               textAlign="center"
                               color="#4c0605"
-                              fontSize="3xl"
-                              mt={20}
+                              fontSize={{ base: 'xl', sm: '3xl' }}
+                              mt={{ base: 5, lg: 10 }}
                          >
                               <chakra.span>
                                    5:00 am onwards, 12th January 2023
                               </chakra.span>
-                              <chakra.span
-                                   mx={3}
-                                   fontWeight="light"
-                                   fontSize="2rem"
-                              >
+                              <chakra.span mx={3} fontWeight="light">
                                    at
                               </chakra.span>
                               <chakra.span fontWeight="light">
@@ -142,7 +164,7 @@ function JayantiHero({ images }) {
                          <Heading
                               as="h2"
                               fontWeight="normal"
-                              fontSize="4xl"
+                              fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
                               maxW="5xl"
                               margin="0 auto"
                          >
@@ -176,22 +198,37 @@ function JayantiHero({ images }) {
                               <Button
                                    width="max-content"
                                    margin="0 auto"
-                                   variant="outline"
+                                   variant="solid"
                                    colorScheme="ayorange"
                               >
                                    Register Now
                               </Button>
                          </Link>
-                         <Link passHref href="swami-vivekananda-jayanti/ticket">
-                              <Button
-                                   variant="link"
-                                   width="max-content"
-                                   margin="0 auto"
-                                   colorScheme="black"
+                         <Flex
+                              justifyContent="center"
+                              alignItems="center"
+                              gap={5}
+                         >
+                              {' '}
+                              <Link
+                                   passHref
+                                   href="swami-vivekananda-jayanti/ticket"
                               >
-                                   Already Registred? Downlaod Your Ticket Here
-                              </Button>
-                         </Link>
+                                   <>
+                                        <chakra.span>
+                                             {' '}
+                                             Already Registred?
+                                        </chakra.span>
+                                        <Button
+                                             variant="solid"
+                                             colorScheme="gray"
+                                             size="sm"
+                                        >
+                                             Downlaod Your Ticket Here
+                                        </Button>
+                                   </>
+                              </Link>
+                         </Flex>
 
                          <Divider />
                          <Flex direction="column" gap={10}>
