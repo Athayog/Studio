@@ -117,6 +117,18 @@ function EventRegister() {
                               member,
                               events
                          });
+                         sendToAthayog(
+                              name,
+                              email,
+                              phone,
+                              age,
+                              tshirt,
+                              gender,
+                              ticketID,
+                              location,
+                              member,
+                              events
+                         );
                     }
                })
                .catch((error) => {
@@ -125,6 +137,41 @@ function EventRegister() {
                });
      };
 
+     const sendToAthayog = async (
+          name,
+          email,
+          phone,
+          age,
+          tshirt,
+          gender,
+          ticketID,
+          location,
+          member,
+          events
+     ) => {
+          // Send Email
+
+          await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
+               method: 'POST',
+               headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+               },
+               body: JSON.stringify({
+                    FormType: 'Registration For Swami Vivekananda Jayanti',
+                    name,
+                    email,
+                    phone,
+                    age,
+                    tshirt,
+                    gender,
+                    ticketID,
+                    location,
+                    member,
+                    events
+               })
+          });
+     };
      return (
           <Box
                bg="#fdf6ee"
