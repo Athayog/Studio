@@ -88,7 +88,7 @@ function JayantiHero({ images }) {
                                                   'linear-gradient(to right,#e45727,#b12623)'
                                         }}
                                    >
-                                        Swami Vivekananda Jayanti
+                                        Young by Heart ❤️
                                    </Heading>
                                    <Text
                                         mb={10}
@@ -101,10 +101,10 @@ function JayantiHero({ images }) {
                                         fontWeight="light"
                                    >
                                         <q>
-                                             Young by Heart ❤️ My faith is in
-                                             the younger generation, the modern
-                                             generation. They will work out the
-                                             whole problem, like lions.
+                                             My faith is in the younger
+                                             generation, the modern generation.
+                                             They will work out the whole
+                                             problem, like lions.
                                         </q>
                                         - Swami Vivekananda.
                                    </Text>

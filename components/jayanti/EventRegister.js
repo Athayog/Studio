@@ -99,20 +99,25 @@ function EventRegister() {
                events
           )
                .then((response) => {
-                    setLoading(false);
-                    toast.success('Submission Successfull');
-                    setFields({
-                         name,
-                         email,
-                         phone,
-                         age,
-                         tshirt,
-                         gender,
-                         ticketID,
-                         location,
-                         member,
-                         events
-                    });
+                    if (response.status === 400) {
+                         setLoading(false);
+                         toast.error('Email Already Exist!');
+                    } else {
+                         setLoading(false);
+                         toast.success('Submission Successfull');
+                         setFields({
+                              name,
+                              email,
+                              phone,
+                              age,
+                              tshirt,
+                              gender,
+                              ticketID,
+                              location,
+                              member,
+                              events
+                         });
+                    }
                })
                .catch((error) => {
                     setLoading(false);
