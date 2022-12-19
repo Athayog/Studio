@@ -17,7 +17,7 @@ import React from 'react';
 
 function Schedule() {
      return (
-          <Container maxW="90vw" position="relative">
+          <Container maxW="90vw" position="relative" width="max-content">
                <TableContainer
                     border="1px solid"
                     borderColor="gray.200"
