@@ -76,10 +76,10 @@ function JayantiHero() {
                                         as="h1"
                                         textAlign="center"
                                         mb={{
-                                             base: 10,
-                                             sm: 10,
-                                             md: 10,
-                                             lg: 10
+                                             base: 8,
+                                             sm: 8,
+                                             md: 8,
+                                             lg: 8
                                         }}
                                         fontSize={{
                                              base: '2xl',
