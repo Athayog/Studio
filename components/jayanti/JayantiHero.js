@@ -27,7 +27,7 @@ function JayantiHero() {
                >
                     <Box
                          bg="#fdf6ee"
-                         py={20}
+                         py={{ base: 10, sm: 10, md: 20, lg: 20 }}
                          width="100%"
                          height="100%"
                          px={10}
@@ -205,7 +205,7 @@ function JayantiHero() {
                          </Box>
                          <Link
                               passHref
-                              href="swami-vivekananda-jayanti/register"
+                              href="/swami-vivekananda-jayanti/register"
                          >
                               <Button
                                    width="max-content"

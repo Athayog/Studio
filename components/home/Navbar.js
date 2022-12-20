@@ -56,6 +56,15 @@ const Navbar = () => {
 
      return (
           <Box zIndex={3} position="fixed" width="100%">
+               {router.pathname !== '/swami-vivekananda-jayanti' && (
+                    <Box bg="#890d0e" color="white" p={1} textAlign="center">
+                         <Link href="/swami-vivekananda-jayanti">
+                              Swami Vivekananda Jayanti Registrations Open!
+                              Click Here
+                         </Link>
+                    </Box>
+               )}
+
                <Center
                     bg="white"
                     transition="linear"
@@ -156,7 +165,7 @@ const Navbar = () => {
                                         </MotionButton>
                                    </Link>
 
-                                   <Link href="/about" as="about" passHref>
+                                   <Link href="/about" passHref>
                                         <Button
                                              fontWeight="normal"
                                              fontSize="md"
@@ -179,7 +188,7 @@ const Navbar = () => {
                                              About
                                         </Button>
                                    </Link>
-                                   <Link href="/classes">
+                                   <Link href="/classes" passHref>
                                         <Button
                                              fontWeight="normal"
                                              fontSize="md"
