@@ -73,18 +73,10 @@ function EventRegister() {
                (
                     name.substring(0, 1) + uuidv4().toString().substring(0, 6)
                ).toUpperCase();
-          console.log(
-               name,
-               email,
-               phone,
-               age,
-               tshirt,
-               gender,
-               ticketID,
-               location,
-               member,
-               events
-          );
+          if (events.length === 0) {
+               setLoading(false);
+               return toast.error('Please select at least one event');
+          }
 
           await registerForJayanti(
                name,
