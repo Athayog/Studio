@@ -81,6 +81,7 @@ function Ticket() {
                                         variant="solid"
                                         colorScheme="ayorange"
                                         mb={6}
+                                        mt={5}
                                    >
                                         Back
                                    </Button>
@@ -241,6 +242,7 @@ function Ticket() {
                                    variant="solid"
                                    colorScheme="ayorange"
                                    mb={6}
+                                   mt={5}
                               >
                                    Back
                               </Button>
