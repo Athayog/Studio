@@ -211,7 +211,7 @@ const Navbar = () => {
                                              Classes
                                         </Button>
                                    </Link>
-                                   <Link href="/courses">
+                                   <Link href="/courses" passHref>
                                         <Button
                                              fontWeight="normal"
                                              fontSize="md"
@@ -234,7 +234,7 @@ const Navbar = () => {
                                              Courses
                                         </Button>
                                    </Link>
-                                   <Link href="/career">
+                                   <Link href="/career" passHref>
                                         <Button
                                              fontWeight="normal"
                                              fontSize="md"
@@ -272,7 +272,7 @@ const Navbar = () => {
                          <Flex
                               display={{ base: 'none', md: 'none', lg: 'flex' }}
                          >
-                              <Link href="/register/trial">
+                              <Link href="/register/trial" passHref>
                                    <Button
                                         bg="aygreen.100"
                                         _hover={{
@@ -294,7 +294,7 @@ const Navbar = () => {
 
                               {user ? (
                                    <Menu>
-                                        <MenuButton size="sm" boxShadow="base">
+                                        <MenuButton size="sm" boxShadow="none">
                                              <Avatar
                                                   name={user?.name}
                                                   size="sm"

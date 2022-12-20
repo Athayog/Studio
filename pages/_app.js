@@ -94,7 +94,9 @@ function App({ Component, pageProps }) {
           '/yoga-day',
           '/yoga-day/register',
           '/register/trial',
-          '/swami-vivekananda-jayanti'
+          '/swami-vivekananda-jayanti',
+          '/swami-vivekananda-jayanti/register',
+          '/swami-vivekananda-jayanti/ticket'
      ];
 
      useEffect(() => {
