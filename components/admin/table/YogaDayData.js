@@ -2,12 +2,15 @@ import { FirebaseToDate } from '@/components/helper/FirebaseToDate';
 import firebase from '@/lib/firebase';
 import { TriangleDownIcon, TriangleUpIcon } from '@chakra-ui/icons';
 import {
+     Badge,
      Box,
      Button,
      ButtonGroup,
      chakra,
      Flex,
      Input,
+     ListItem,
+     OrderedList,
      Select,
      Table,
      Tbody,
@@ -35,6 +38,23 @@ const firestore = firebase.firestore();
 export const DateCreated = ({ values }) => {
      // Loop through the array and create a badge-like component instead of a comma-separated string
      return <>{FirebaseToDate(values)}</>;
+};
+
+export const Events = ({ values }) => {
+     console.log(values);
+     // Loop through the array and create a badge-like component instead of a comma-separated string
+
+     return (
+          <>
+               <OrderedList>
+                    {values.map((value, index) => (
+                         <ListItem key={index}>{value}</ListItem>
+                    ))}
+               </OrderedList>
+          </>
+     );
+
+     // return {values.map((value) => <Badge ml={2}>{value}</Badge>)}
 };
 
 const YogaDayData = ({ forms, latestDoc, setDocs }) => {
@@ -116,6 +136,14 @@ const YogaDayData = ({ forms, latestDoc, setDocs }) => {
                {
                     Header: 'member',
                     accessor: 'member',
+                    Filter: ColumnFilter
+               },
+               {
+                    Header: 'events',
+                    accessor: 'events',
+                    Cell: ({ cell: { value } }) => (
+                         <Events values={value} key={uuidv4()} />
+                    ),
                     Filter: ColumnFilter
                },
                {
