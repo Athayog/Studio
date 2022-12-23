@@ -39,13 +39,14 @@ function ShortCourses() {
                                         <Td>January </Td>
                                         <Td>7th - 29th, Sat &amp; Sun</Td>
                                         <Td>
-                                             Young adults STress free Exam - 8th
+                                             Young adults Stress free Exam - 8th
                                              - 10th Standard
                                         </Td>
                                         <Td>Aarti</Td>
                                         <Td>Indiranagar</Td>
                                         <Td>4:00 PM - 5:30 PM</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>February </Td>
                                         <Td></Td>
@@ -54,6 +55,7 @@ function ShortCourses() {
                                         <Td></Td>
                                         <Td></Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>March</Td>
                                         <Td>22nd - 31st</Td>
@@ -65,16 +67,17 @@ function ShortCourses() {
                                    <Tr>
                                         <Td>March</Td>
                                         <Td>22nd - 31st</Td>
-                                        <Td>ChaiTra NavaraTri</Td>
+                                        <Td>Chaitra Navaratri</Td>
                                         <Td>Sharath</Td>
                                         <Td>Online</Td>
                                         <Td>6:00 PM - 7:00 PM</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>April</Td>
                                         <Td>10th - 21st </Td>
                                         <Td>Ashtanga - Level 1</Td>
-                                        <Td>GayaTri </Td>
+                                        <Td>Gayatri </Td>
                                         <Td>Online</Td>
                                         <Td>
                                              7:00 AM - 8:30 AM / 6:00 AM - 7:30
@@ -97,6 +100,7 @@ function ShortCourses() {
                                         <Td>KR Puram</Td>
                                         <Td>10:00 AM - 12:00 PM</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>May</Td>
                                         <Td>8th - 12th </Td>
@@ -105,6 +109,7 @@ function ShortCourses() {
                                         <Td>Indiranagar</Td>
                                         <Td>10:00 AM - 11:30 AM</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>June</Td>
                                         <Td>1st - 20th</Td>
@@ -121,6 +126,7 @@ function ShortCourses() {
                                         <Td>Indiranagar</Td>
                                         <Td>10:00 AM - 11:30 AM</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>July</Td>
                                         <Td>3rd - 14th</Td>
@@ -132,14 +138,16 @@ function ShortCourses() {
                                              AM
                                         </Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>August </Td>
                                         <Td>21st - 25th</Td>
-                                        <Td bg="green.100">Shravana-Manana</Td>
+                                        <Td>Shravana-Manana</Td>
                                         <Td>Shreeram Kasturi</Td>
                                         <Td>KR Puram</Td>
                                         <Td>6:00 PM - 7:00 PM</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>September</Td>
                                         <Td></Td>
@@ -148,14 +156,16 @@ function ShortCourses() {
                                         <Td></Td>
                                         <Td></Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>October </Td>
                                         <Td>15th - 24th </Td>
-                                        <Td>Sharad NavaraTri</Td>
+                                        <Td>Sharad Navaratri</Td>
                                         <Td>Sharath</Td>
                                         <Td>Online</Td>
                                         <Td>6:00 PM - 7:00 PM</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>November </Td>
                                         <Td>15th - 1st January</Td>
@@ -164,6 +174,7 @@ function ShortCourses() {
                                         <Td>KR Puram</Td>
                                         <Td>6:00 PM - 7:00 PM (Sunday)</Td>
                                    </Tr>
+
                                    <Tr>
                                         <Td>November </Td>
                                         <Td>15th - 1st January</Td>
