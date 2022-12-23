@@ -12,72 +12,19 @@ import {
      Stack,
      Text
 } from '@chakra-ui/layout';
+import {
+     Table,
+     TableCaption,
+     TableContainer,
+     Tbody,
+     Td,
+     Th,
+     Thead,
+     Tr
+} from '@chakra-ui/table';
 import React from 'react';
 
 function RYT200Courses() {
-     const rytEvents = [
-          {
-               time: '6am - 8:30am (Weekday, Mon-Fri)',
-               location: 'KR Puram',
-               months: ['January', 'May', 'September'],
-               courseName: null,
-               details: [
-                    {
-                         date: '3rd January 2022 - 12th April 2022'
-                    },
-                    {
-                         date: '2nd May 2022 - 5th August 2022'
-                    },
-                    {
-                         date: '5th September 2022 - 13th December 2022'
-                    }
-               ]
-          },
-          {
-               time: '11am - 4pm (Weekday, Mon-Fri)',
-               location: 'Indiranagar',
-               months: ['January', 'February', 'April', 'July', 'October'],
-               courseName: null,
-               details: [
-                    {
-                         date: '3rd January 2022 - 3rd March 2022'
-                    },
-                    {
-                         date: '7th February 2022 - 1st April 2022'
-                    },
-                    {
-                         date: '4th April 2022 - 2nd June 2022'
-                    },
-                    {
-                         date: '4th July 2022 - 2nd September 2022'
-                    },
-                    {
-                         date: '3rd Oct 2022 - 2nd December 2022'
-                    }
-               ]
-          },
-          {
-               time: '11am - 4pm (Weekend, Sat-Sun)',
-               location: 'Indiranagar',
-               months: ['February', 'August'],
-               courseName: null,
-               details: [
-                    {
-                         date: '5th February 2022 - 18th June 2022 (Indiranagar) '
-                    },
-                    {
-                         date: '6th August 2022 - 11th December 2022 (KR Puram)'
-                    }
-               ]
-          }
-     ];
-     const events = [
-          {
-               name: 'RYT',
-               data: rytEvents
-          }
-     ];
-
      return (
           <>
                <HeaderLayout>
@@ -125,7 +72,6 @@ function RYT200Courses() {
                               </Text>
                          </Stack>
                     </Stack>
-
                     <Box mt={10}>
                          <Heading
                               fontWeight="normal"
@@ -260,11 +206,97 @@ function RYT200Courses() {
                                    </HStack>
                               </OrderedList>
                          </Flex>
-                    </Box>
-                    <Box width="100%">
-                         {' '}
-                         <ShikshanaCalendarTable calendar={events} />
-                    </Box>
+                    </Box>{' '}
+                    <Heading fontSize="2xl">TTC Schedule</Heading>
+                    <TableContainer mb={10}>
+                         <Table
+                              variant="striped"
+                              border="1px solid #ddd"
+                              mt={6}
+                              size="sm"
+                         >
+                              <Thead>
+                                   <Tr>
+                                        <Th>Time</Th>
+                                        <Th>Course</Th>
+                                        <Th>January </Th>
+                                        <Th>February </Th>
+                                        <Th>March</Th>
+                                        <Th>April</Th>
+                                        <Th>May</Th>
+                                        <Th>June</Th>
+                                        <Th>July</Th>
+                                        <Th>August </Th>
+                                        <Th>September</Th>
+                                        <Th>October</Th>
+                                        <Th>November</Th>
+                                        <Th>December</Th>
+                                   </Tr>
+                              </Thead>
+                              <Tbody>
+                                   <Tr>
+                                        <Td>
+                                             6am - 8:30am (Weekday, Mon-Fri) -
+                                             (Online)
+                                        </Td>
+                                        <Td>RYT 200 / YIC</Td>
+                                        <Td>
+                                             2nd January 2023 - 31st March 2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>3rd April 2023 - 30th June 2023</Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             3rd July 2023 - 29th September 2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             2nd October 2023 - 22nd December
+                                             2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+
+                                   <Tr>
+                                        <Td>
+                                             11:00am - 4pm (Weekday, Mon-Fri)
+                                        </Td>
+                                        <Td>RYT 200 / YIC </Td>
+                                        <Td>
+                                             2nd January 2023 - 28th Feb 2023.
+                                             Indiranagar{' '}
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             3rd April 2023 - 31st May 2023, KR
+                                             puram
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             3rd July 2023 - 29th August 2023,
+                                             Indiranagar{' '}
+                                        </Td>
+                                        <Td></Td>
+                                        <Td>
+                                             4th September 2023 - 30th October
+                                             2023, KR puram
+                                        </Td>
+                                        <Td></Td>
+                                        <Td>
+                                             1st November 2023 - 22nd December
+                                             2023 Indiranagar
+                                        </Td>
+                                        <Td></Td>
+                                   </Tr>
+                              </Tbody>
+                         </Table>
+                    </TableContainer>
                </HeaderLayout>
                <ContactMore registerTo="ryt_200" />
           </>
