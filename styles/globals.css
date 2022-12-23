@@ -36,6 +36,9 @@ body {
 .szh-menu {
      background-color: #d7e0ce !important;
 }
+.yic_table td {
+     width: max-content !important;
+}
 
 .eventCalendard:first-child {
      position: -webkit-sticky;

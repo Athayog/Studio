@@ -1,151 +1,20 @@
 import HomeLayout from '@/components/layout/HomeLayout';
 import ContactMore from '@/components/shared/ContactMore';
 import CoursesLayout from '@/components/shared/CoursesLayout';
-import CTA from '@/components/shared/CTA';
-import HeaderLayout from '@/components/shared/offerings/HeaderLayout';
-import ShikshanaCalendarTable from '@/components/shared/ShikshanaCalendarTable';
-import { Heading, Stack, Text } from '@chakra-ui/layout';
+import { Heading } from '@chakra-ui/layout';
 import Head from 'next/head';
-import React from 'react';
+import {
+     Table,
+     Thead,
+     Tbody,
+     Tfoot,
+     Tr,
+     Th,
+     Td,
+     TableCaption,
+     TableContainer
+} from '@chakra-ui/react';
 function ShortCourses() {
-     const shortCourses = [
-          {
-               time: '6am - 7:30am',
-               months: ['April', 'August'],
-               courseName: null,
-               details: [
-                    {
-                         name: 'Advance Hata',
-                         date: '4th April 2022 - 25th April 2022'
-                    },
-                    {
-                         name: 'Ashtanga Vinyasa',
-                         date: '1st August 2022 - 22nd August 2022'
-                    }
-               ]
-          },
-          {
-               time: '6pm - 7:30pm',
-               months: ['February', 'June', 'October'],
-               courseName: null,
-               details: [
-                    {
-                         name: 'Ashtanga Vinyasa',
-                         date: '2nd Feb 2022 - 22nd Feb 2022 '
-                    },
-                    {
-                         name: 'Yoga for Holistic Health',
-                         date: '6th June 2022 - 24th June 2022'
-                    },
-                    {
-                         name: 'Ashtanga Vinyasa',
-                         date: '3rd Oct 2022 - 21st Oct 2022'
-                    }
-               ]
-          },
-          {
-               time: '10am - 11:30am',
-               courseName: null,
-               months: ['March', 'May', 'June', 'September', 'November'],
-               details: [
-                    {
-                         name: 'Chakra Meditation',
-                         date: '7th March 2022 - 11th March 2022'
-                    },
-                    {
-                         name: 'Kids Yoga Camp',
-                         date: '2nd May 2022 - 13th May 2022'
-                    },
-                    {
-                         name: 'Anatomy',
-                         date: '7th June 2022 - 25th June 2022'
-                    },
-                    {
-                         name: 'Yoga Nidra',
-                         date: '5th Sep 2022 - 9th Sep 2022'
-                    },
-                    {
-                         name: 'Chakra Meditation',
-                         date: '7th Nov 2022 - 11th Nov 2022'
-                    }
-               ]
-          }
-     ];
-
-     const SummerCourse = [
-          {
-               time: '9am - 1:00pm',
-               courseName: null,
-               months: ['February'],
-               details: [
-                    {
-                         name: 'YinYoga ',
-                         date: '26th Feb 2021'
-                    }
-               ]
-          },
-          {
-               time: '10am - 1:00pm',
-               courseName: null,
-               months: ['March', 'March', 'April', 'April'],
-               details: [
-                    {
-                         name: 'Rest & Repair ',
-                         date: '19th & 20th March'
-                    },
-                    {
-                         name: 'Fight and Flight',
-                         date: '26th & 27th March'
-                    },
-                    {
-                         name: 'Breath is the Key',
-                         date: '2nd & 3rd April'
-                    },
-                    {
-                         name: 'Action Relaxation',
-                         date: '9th & 10th April'
-                    }
-               ]
-          }
-     ];
-
-     const spiritualPractices = [
-          {
-               time: null,
-               months: ['January  ', 'April', 'August', 'September'],
-               courseName: null,
-               details: [
-                    {
-                         name: 'Yoga spiritual retreat',
-                         date: ' 14th Jan(eve) 2022 - 17th Jan(Mng) 2022'
-                    },
-                    {
-                         name: 'Chaitra Navaratri Sadhana',
-                         date: '2nd April 2022 - 11th April (6pm - 7pm) 2022'
-                    },
-                    {
-                         name: 'Yoga spiritual retreat',
-                         date: '12th Aug(eve) 2022 - 15th Aug(Mng) 2022'
-                    },
-                    {
-                         name: 'Sharad Navaratri Sadhana',
-                         date: ' 26th Sep 2022 - 5th Oct 2022 (6pm - 7pm)'
-                    }
-               ]
-          }
-     ];
-
-     const events = [
-          {
-               name: 'Short Courses',
-               data: shortCourses
-          },
-
-          {
-               name: 'Spiritual Practices',
-               data: spiritualPractices
-          }
-     ];
      return (
           <>
                <Head>
@@ -153,32 +22,159 @@ function ShortCourses() {
                </Head>
                <CoursesLayout>
                     <Heading>Short Courses</Heading>
-                    <Stack spacing={2} my={5}>
-                         {/* <Text>
-                         Lorem ipsum dolor sit amet consectetur adipisicing
-                         elit. Reiciendis sint, eos delectus sed reprehenderit
-                         itaque. Eveniet consequuntur nobis veniam debitis at,
-                         sit doloribus ipsum ea adipisci quos unde ad! Nihil.
-                         Excepturi quaerat eaque debitis tempore dolorum
-                         assumenda voluptatem modi quibusdam minima ipsum minus
-                         suscipit porro, ex sunt quas iusto? Possimus,
-                         recusandae labore? Dolorum corporis optio, earum totam
-                         nisi numquam ipsa. Tempora sed nam laborum consequuntur
-                         neque laboriosam est in totam officia veritatis ipsam
-                         doloribus accusamus nostrum iste aliquid adipisci,
-                         dolorum dolorem velit enim necessitatibus quaerat
-                         tenetur, excepturi repellendus numquam. Perferendis!
-                         Explicabo et similique officia ex eos, sit optio totam
-                         dolor voluptatum inventore. Id iusto nam accusantium,
-                         nesciunt aliquid doloribus eveniet quo laborum eligendi
-                         quos tempora provident vitae numquam voluptates modi?
-                         Magnam laudantium possimus, dignissimos quisquam cumque
-                         animi ipsam hic totam. Dolorum quasi a recusandae minus
-                         magni rerum, neque maiores, veniam deserunt aspernatur
-                         porro ipsa enim modi nemo! Atque, architecto et.
-                    </Text> */}
-                    </Stack>
-                    <ShikshanaCalendarTable calendar={events} />
+                    <TableContainer mt={6}>
+                         <Table variant="striped" border="1px solid #ddd">
+                              <Thead>
+                                   <Tr>
+                                        <Th>Month</Th>
+                                        <Th>Dates</Th>
+                                        <Th>Course</Th>
+                                        <Th>Teacher</Th>
+                                        <Th>Location</Th>
+                                        <Th>Time</Th>
+                                   </Tr>
+                              </Thead>
+                              <Tbody>
+                                   <Tr>
+                                        <Td>January </Td>
+                                        <Td>7th - 29th, Sat &amp; Sun</Td>
+                                        <Td>
+                                             Young adults STress free Exam - 8th
+                                             - 10th Standard
+                                        </Td>
+                                        <Td>Aarti</Td>
+                                        <Td>Indiranagar</Td>
+                                        <Td>4:00 PM - 5:30 PM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>February </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>March</Td>
+                                        <Td>22nd - 31st</Td>
+                                        <Td>Pranyama</Td>
+                                        <Td>Srinath</Td>
+                                        <Td>Indiranagar</Td>
+                                        <Td>10:00 AM - 11:30 AM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>March</Td>
+                                        <Td>22nd - 31st</Td>
+                                        <Td>ChaiTra NavaraTri</Td>
+                                        <Td>Sharath</Td>
+                                        <Td>Online</Td>
+                                        <Td>6:00 PM - 7:00 PM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>April</Td>
+                                        <Td>10th - 21st </Td>
+                                        <Td>Ashtanga - Level 1</Td>
+                                        <Td>GayaTri </Td>
+                                        <Td>Online</Td>
+                                        <Td>
+                                             7:00 AM - 8:30 AM / 6:00 AM - 7:30
+                                             AM
+                                        </Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>April</Td>
+                                        <Td>10th - 21st</Td>
+                                        <Td>Kids camp</Td>
+                                        <Td>Harsha</Td>
+                                        <Td>Indiranagar</Td>
+                                        <Td>10:00 AM - 12:00 PM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>April</Td>
+                                        <Td>10th - 21st</Td>
+                                        <Td>Kids camp</Td>
+                                        <Td>Anjali</Td>
+                                        <Td>KR Puram</Td>
+                                        <Td>10:00 AM - 12:00 PM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>May</Td>
+                                        <Td>8th - 12th </Td>
+                                        <Td>Anthar Mouna Level - 1</Td>
+                                        <Td>Srinath</Td>
+                                        <Td>Indiranagar</Td>
+                                        <Td>10:00 AM - 11:30 AM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>June</Td>
+                                        <Td>1st - 20th</Td>
+                                        <Td>IDY Sadhana</Td>
+                                        <Td>Sharath</Td>
+                                        <Td>All</Td>
+                                        <Td>All time</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>June</Td>
+                                        <Td>26th - 30th </Td>
+                                        <Td>Anthar Mouna Level - 2</Td>
+                                        <Td>Srinath</Td>
+                                        <Td>Indiranagar</Td>
+                                        <Td>10:00 AM - 11:30 AM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>July</Td>
+                                        <Td>3rd - 14th</Td>
+                                        <Td>Advance Hata yoga</Td>
+                                        <Td>Shreeram / Madhusudhan</Td>
+                                        <Td>KR Puram</Td>
+                                        <Td>
+                                             7:00 AM - 8:30 AM / 6:00 AM - 7:30
+                                             AM
+                                        </Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>August </Td>
+                                        <Td>21st - 25th</Td>
+                                        <Td bg="green.100">Shravana-Manana</Td>
+                                        <Td>Shreeram Kasturi</Td>
+                                        <Td>KR Puram</Td>
+                                        <Td>6:00 PM - 7:00 PM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>September</Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>October </Td>
+                                        <Td>15th - 24th </Td>
+                                        <Td>Sharad NavaraTri</Td>
+                                        <Td>Sharath</Td>
+                                        <Td>Online</Td>
+                                        <Td>6:00 PM - 7:00 PM</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>November </Td>
+                                        <Td>15th - 1st January</Td>
+                                        <Td>Sankalpa Sadhana - </Td>
+                                        <Td>Sharath</Td>
+                                        <Td>KR Puram</Td>
+                                        <Td>6:00 PM - 7:00 PM (Sunday)</Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>November </Td>
+                                        <Td>15th - 1st January</Td>
+                                        <Td>Sankalpa Sadhana</Td>
+                                        <Td>Sharath</Td>
+                                        <Td>Indiranagar</Td>
+                                        <Td>6:00 PM - 7:00 PM ( Saturday)</Td>
+                                   </Tr>
+                              </Tbody>
+                         </Table>
+                    </TableContainer>
                </CoursesLayout>
                <ContactMore registerTo="short_course" />
           </>

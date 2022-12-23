@@ -19,6 +19,7 @@ import { chakra } from '@chakra-ui/system';
 import {
      Table,
      TableCaption,
+     TableContainer,
      Tbody,
      Td,
      Th,
@@ -253,11 +254,97 @@ function YicYoga() {
                                    </HStack>
                               </OrderedList>
                          </Flex>
-                    </Box>
-                    <Box width="100%">
-                         {' '}
-                         <ShikshanaCalendarTable calendar={events} />
-                    </Box>
+                    </Box>{' '}
+                    <Heading fontSize="2xl">TTC Schedule</Heading>
+                    <TableContainer mb={10} className="yic_table">
+                         <Table
+                              variant="striped"
+                              border="1px solid #ddd"
+                              mt={6}
+                              size="sm"
+                         >
+                              <Thead>
+                                   <Tr>
+                                        <Th>Time</Th>
+                                        <Th>Course</Th>
+                                        <Th>January </Th>
+                                        <Th>February </Th>
+                                        <Th>March</Th>
+                                        <Th>April</Th>
+                                        <Th>May</Th>
+                                        <Th>June</Th>
+                                        <Th>July</Th>
+                                        <Th>August </Th>
+                                        <Th>September</Th>
+                                        <Th>October</Th>
+                                        <Th>November</Th>
+                                        <Th>December</Th>
+                                   </Tr>
+                              </Thead>
+                              <Tbody>
+                                   <Tr>
+                                        <Td>
+                                             6am - 8:30am (Weekday, Mon-Fri) -
+                                             (Online)
+                                        </Td>
+                                        <Td>RYT 200 / YIC</Td>
+                                        <Td>
+                                             2nd January 2023 - 31st March 2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>3rd April 2023 - 30th June 2023</Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             3rd July 2023 - 29th September 2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             2nd October 2023 - 22nd December
+                                             2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+
+                                   <Tr>
+                                        <Td>
+                                             11:00am - 4pm (Weekday, Mon-Fri)
+                                        </Td>
+                                        <Td>RYT 200 / YIC </Td>
+                                        <Td>
+                                             2nd January 2023 - 28th Feb 2023.
+                                             Indiranagar{' '}
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             3rd April 2023 - 31st May 2023, KR
+                                             puram
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             3rd July 2023 - 29th August 2023,
+                                             Indiranagar{' '}
+                                        </Td>
+                                        <Td></Td>
+                                        <Td>
+                                             4th September 2023 - 30th October
+                                             2023, KR puram
+                                        </Td>
+                                        <Td></Td>
+                                        <Td>
+                                             1st November 2023 - 22nd December
+                                             2023 Indiranagar
+                                        </Td>
+                                        <Td></Td>
+                                   </Tr>
+                              </Tbody>
+                         </Table>
+                    </TableContainer>
                </HeaderLayout>
                <ContactMore registerTo="yic" />
           </>
