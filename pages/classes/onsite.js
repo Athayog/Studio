@@ -51,7 +51,7 @@ const Onsite = ({ offers, notFound }) => {
                     durationNum: data.days,
                     isGeneral: data.isGeneral,
                     price: data.price,
-                    sub_category: sub_category
+                    sub_category: data.sub_category
                });
           }
      });

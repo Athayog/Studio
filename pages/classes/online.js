@@ -87,7 +87,7 @@ const Online = ({ offers, notFound }) => {
                     isGeneral: data.isGeneral,
                     durationNum: data.days,
                     price: data.price,
-                    sub_category: sub_category
+                    sub_category: data.sub_category
                });
           }
      });
