@@ -31,7 +31,7 @@ export default function PriceBox({
                     gap={5}
                     width="100%"
                     mt={10}
-                    display={limited === undefined && 'none'}
+                    display={courses === undefined ? 'none' : 'grid'}
                >
                     {' '}
                     <Grid gap={5}>
@@ -286,7 +286,7 @@ export default function PriceBox({
                     gap={5}
                     width="100%"
                     mt={12}
-                    display={courses === undefined && 'none'}
+                    display={courses === undefined ? 'none' : 'grid'}
                >
                     {' '}
                     {courses.map((data, index) => {
