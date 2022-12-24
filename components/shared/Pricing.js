@@ -237,6 +237,9 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                     />
+                    <Heading mt={10} fontSize="2xl">
+                         Premium Packages
+                    </Heading>
                     <PriceBox
                          courses={couple_package}
                          data={data}
