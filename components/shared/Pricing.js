@@ -140,14 +140,14 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'couple_package')
-          .sort((a, b) => a.courseName - b.courseName)
-          .sort((a, b) => a.durationNum - b.durationNum);
+          .sort((a, b) => a.courseName - b.courseName);
+
      const group_studio_class = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'group_studio_class')
-          .sort((a, b) => a.courseName - b.courseName)
-          .sort((a, b) => a.durationNum - b.durationNum);
+          .sort((a, b) => a.courseName - b.courseName);
+
      const senior = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
