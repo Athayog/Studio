@@ -156,6 +156,13 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
 
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
+     const workshop = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.sub_category == 'workshop')
+
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
      const specialCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == false)
@@ -237,9 +244,11 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                     />
-                    <Heading mt={10} fontSize="2xl">
-                         Premium Packages
-                    </Heading>
+                    {(couple_package || group_studio_class || workshop) && (
+                         <Heading mt={10} fontSize="2xl">
+                              Premium Packages
+                         </Heading>
+                    )}
                     <PriceBox
                          courses={couple_package}
                          data={data}
@@ -260,6 +269,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     />
                     <PriceBox
                          courses={senior}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={workshop}
                          data={data}
                          user={user}
                          toRegister={toRegister}
