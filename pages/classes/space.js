@@ -29,7 +29,7 @@ export async function getStaticProps(context) {
                offers: JSON.parse(JSON.stringify(offers)),
                notFound: false
           },
-          revalidate: 1
+          revalidate: 60
      };
 }
 
