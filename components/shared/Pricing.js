@@ -256,6 +256,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
+                         courses={senior}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
                          courses={specialCourses}
                          data={data}
                          user={user}
