@@ -52,6 +52,7 @@ const EditOfferings = ({
      const { isOpen, onOpen, onClose } = useDisclosure();
      const [trial, setTrial] = useState(ogIsTrial);
      const [loading, setLoading] = useState(false);
+     const [general, setGeneral] = useState(false);
      const toast = useToast();
 
      const { handleSubmit, register, errors } = useForm();
@@ -84,7 +85,8 @@ const EditOfferings = ({
                old_price,
                price,
                trial,
-               type
+               type,
+               general
           )
                .then((response) => {
                     toast({
@@ -242,6 +244,16 @@ const EditOfferings = ({
                                                   isChecked={trial}
                                                   onChange={(e) =>
                                                        setTrialChange()
+                                                  }
+                                             />
+                                        </FormControl>
+                                        <FormControl id="isGeneral">
+                                             <FormLabel>Is General</FormLabel>
+                                             <Switch
+                                                  name="isGeneral"
+                                                  isChecked={general}
+                                                  onChange={(e) =>
+                                                       setGeneralChange()
                                                   }
                                              />
                                         </FormControl>

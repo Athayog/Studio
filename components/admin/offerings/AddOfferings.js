@@ -55,7 +55,8 @@ const AddOfferings = ({ type }) => {
           days,
           old_price,
           price,
-          isGeneral
+          isGeneral,
+          subCategory
      }) => {
           setLoading(true);
           await createOffering(
@@ -66,7 +67,8 @@ const AddOfferings = ({ type }) => {
                price,
                trial,
                type,
-               general
+               general,
+               subCategory
           )
                .then((response) => {
                     onClose();
@@ -148,7 +150,7 @@ const AddOfferings = ({ type }) => {
                                    <FormControl id="days">
                                         <FormLabel>Days</FormLabel>
                                         <NumberInput>
-                                             <NumberInputField
+                                             <Input
                                                   name="days"
                                                   ref={register({
                                                        required:
@@ -167,7 +169,7 @@ const AddOfferings = ({ type }) => {
                                         <FormControl id="old_price">
                                              <FormLabel>Old Price</FormLabel>
                                              <NumberInput>
-                                                  <NumberInputField
+                                                  <Input
                                                        name="old_price"
                                                        ref={register({
                                                             required:
@@ -184,7 +186,7 @@ const AddOfferings = ({ type }) => {
                                         <FormControl id="price">
                                              <FormLabel>Price</FormLabel>
                                              <NumberInput>
-                                                  <NumberInputField
+                                                  <Input
                                                        name="price"
                                                        ref={register({
                                                             required:
@@ -199,6 +201,23 @@ const AddOfferings = ({ type }) => {
                                              </FormErrorMessage>
                                         </FormControl>
                                    </HStack>
+                                   <FormControl id="subCategory">
+                                        <FormLabel>Sub Category</FormLabel>
+                                        <Input
+                                             type="text"
+                                             aria-label="subCategory"
+                                             name="subCategory"
+                                             ref={register({
+                                                  required:
+                                                       'Please enter the subCategory.'
+                                             })}
+                                        />
+
+                                        <FormErrorMessage>
+                                             {errors.name &&
+                                                  errors.name.message}
+                                        </FormErrorMessage>
+                                   </FormControl>
                                    <FormControl id="isTrial">
                                         <FormLabel>Is it Trial?</FormLabel>
                                         <Switch
