@@ -250,6 +250,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          </Heading>
                     )}
                     <PriceBox
+                         courses={workshop}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
                          courses={couple_package}
                          data={data}
                          user={user}
@@ -269,15 +278,6 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     />
                     <PriceBox
                          courses={senior}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
-                         courses={workshop}
                          data={data}
                          user={user}
                          toRegister={toRegister}
