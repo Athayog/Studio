@@ -123,28 +123,28 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'personal_training')
-          .filter((data) => !data.description.toLowerCase().includes('limited'))
+
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
      const kids = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'kids')
-          .filter((data) => !data.description.toLowerCase().includes('limited'))
+
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
      const couple_package = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'couple_package')
-          .filter((data) => !data.description.toLowerCase().includes('limited'))
+
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
      const group_studio_class = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'group_studio_class')
-          .filter((data) => !data.description.toLowerCase().includes('limited'))
+
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
 
