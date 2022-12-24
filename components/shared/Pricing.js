@@ -111,6 +111,17 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           return 0;
      }
 
+     var order = [
+          'Group Studio Class + 5 Benefits',
+          'Group Studio Class + 10 Benefits',
+          'Group Studio Class + 15 Benefits'
+     ];
+     function sortingGroup(arr) {
+          return _.sortBy(arr, function (obj) {
+               return _.indexOf(order, obj.key);
+          });
+     }
+
      const limitCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.description.includes('Limited'))
@@ -150,7 +161,6 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'couple_package')
-
           .sort(compare);
 
      const couple_package_limited = pricing
@@ -174,23 +184,25 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.sub_category == 'group_studio_class')
           .sort(compare);
 
-     const group_studio_class_limited = pricing
-          .filter((data) => data.isTrial == false)
-          .filter((data) => data.isGeneral == true)
-          .filter((data) => data.description.includes('Limited'))
-          .filter((data) => data.sub_category == 'group_studio_class')
-          .sort((a, b) => a.courseName.length - b.courseName.length)
-          .sort(compare)
-          .reverse();
+     const group_studio_class_limited = sortingGroup(
+          pricing
+               .filter((data) => data.isTrial == false)
+               .filter((data) => data.isGeneral == true)
+               .filter((data) => data.description.includes('Limited'))
+               .filter((data) => data.sub_category == 'group_studio_class')
+               .sort((a, b) => a.courseName.length - b.courseName.length)
+               .sort(compare)
+     );
 
-     const group_studio_class_unlimited = pricing
-          .filter((data) => data.isTrial == false)
-          .filter((data) => data.isGeneral == true)
-          .filter((data) => data.description.includes('Unlimited'))
-          .filter((data) => data.sub_category == 'group_studio_class')
-          .sort((a, b) => a.courseName.length - b.courseName.length)
-          .sort(compare)
-          .reverse();
+     const group_studio_class_unlimited = sortingGroup(
+          pricing
+               .filter((data) => data.isTrial == false)
+               .filter((data) => data.isGeneral == true)
+               .filter((data) => data.description.includes('Unlimited'))
+               .filter((data) => data.sub_category == 'group_studio_class')
+               .sort((a, b) => a.courseName.length - b.courseName.length)
+               .sort(compare)
+     );
 
      const senior = pricing
           .filter((data) => data.isTrial == false)
