@@ -101,6 +101,16 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           return <ContactMore />;
      }
 
+     function compare(a, b) {
+          if (a.courseName < b.courseName) {
+               return -1;
+          }
+          if (a.courseName > b.courseName) {
+               return 1;
+          }
+          return 0;
+     }
+
      const limitCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.description.includes('Limited'))
@@ -146,7 +156,8 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'group_studio_class')
-          .sort((a, b) => a.courseName - b.courseName);
+          .sort((a, b) => a.courseName - b.courseName)
+          .sort(compare);
 
      const senior = pricing
           .filter((data) => data.isTrial == false)
@@ -154,14 +165,16 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.sub_category == 'senior')
 
           .sort((a, b) => a.description.length - b.description.length)
-          .sort((a, b) => a.durationNum - b.durationNum);
+          .sort((a, b) => a.durationNum - b.durationNum)
+          .sort(compare);
      const workshop = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'workshop')
 
           .sort((a, b) => a.description.length - b.description.length)
-          .sort((a, b) => a.durationNum - b.durationNum);
+          .sort((a, b) => a.durationNum - b.durationNum)
+          .sort(compare);
      const specialCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == false)
