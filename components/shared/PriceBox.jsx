@@ -20,7 +20,9 @@ export default function PriceBox({
      limited,
      unlimited
 }) {
-     console.log(limited, courses);
+     if (courses == undefined) {
+          courses = [];
+     }
      if (limited && unlimited) {
           return (
                <Grid
@@ -31,7 +33,7 @@ export default function PriceBox({
                     gap={5}
                     width="100%"
                     mt={10}
-                    display={courses === undefined ? 'none' : 'grid'}
+                    display={courses.length === 0 ? 'none' : 'grid'}
                >
                     {' '}
                     <Grid gap={5}>
@@ -286,7 +288,7 @@ export default function PriceBox({
                     gap={5}
                     width="100%"
                     mt={12}
-                    display={courses === undefined ? 'none' : 'grid'}
+                    display={courses.length === 0 ? 'none' : 'grid'}
                >
                     {' '}
                     {courses.map((data, index) => {
