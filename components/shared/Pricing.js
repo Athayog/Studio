@@ -103,12 +103,12 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      const limitCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.description.includes('Limited'))
-          .filter((data) => data.sub_category == 'membership')
+          .filter((data) => data.sub_category == 'general')
           .sort((a, b) => a.durationNum - b.durationNum);
      const unlimitCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.description.includes('Unlimited'))
-          .filter((data) => data.sub_category == 'membership')
+          .filter((data) => data.sub_category == 'general')
           .sort((a, b) => a.durationNum - b.durationNum);
 
      const trialCourses = pricing
@@ -214,15 +214,6 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
-                         courses={generalCourses}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
                          courses={kids}
                          data={data}
                          user={user}
@@ -269,6 +260,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     />
                     <PriceBox
                          courses={trialCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={generalCourses}
                          data={data}
                          user={user}
                          toRegister={toRegister}
