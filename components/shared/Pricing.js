@@ -112,7 +112,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      const trialCourses = pricing
           .filter((data) => data.isTrial == true)
           .sort((a, b) => a.durationNum - b.durationNum);
-     const generalCourses = pricing
+     let generalCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == undefined)
@@ -240,6 +240,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     />
                     <PriceBox
                          courses={couple_package}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={group_studio_class}
                          data={data}
                          user={user}
                          toRegister={toRegister}
