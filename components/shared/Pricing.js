@@ -254,9 +254,12 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          handleUserPayment={handleUserPayment}
                     />
                     {(couple_package || group_studio_class || workshop) && (
-                         <Heading mt={10} fontSize="2xl">
-                              Premium Packages
-                         </Heading>
+                         <>
+                              <Divider />
+                              <Heading mt={10} fontSize="2xl">
+                                   Premium Packages
+                              </Heading>
+                         </>
                     )}
                     {workshop && (
                          <PriceBox
