@@ -405,6 +405,6 @@ export default function PriceBox({
                </Grid>
           );
      } else {
-          return <></>;
+          return null;
      }
 }

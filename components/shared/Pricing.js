@@ -4,6 +4,7 @@ import fetcher from '@/utils/fetcher';
 import {
      Box,
      Button,
+     Divider,
      Flex,
      Grid,
      Heading,
@@ -276,6 +277,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                     />
+                    <Divider />
                     <PriceBox
                          courses={senior}
                          data={data}
