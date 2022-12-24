@@ -1,18 +1,8 @@
-import { capitalizeFirstLetter } from '@/components/helper/Capitalize';
 import { useAuth } from '@/lib/auth';
 import fetcher from '@/utils/fetcher';
-import {
-     Box,
-     Button,
-     Divider,
-     Flex,
-     Grid,
-     Heading,
-     SimpleGrid,
-     Text,
-     useToast
-} from '@chakra-ui/react';
+import { Flex, Heading, Text, useToast } from '@chakra-ui/react';
 import cookie from 'js-cookie';
+import _ from 'lodash';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import useSWR from 'swr';
