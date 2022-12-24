@@ -149,7 +149,13 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
 
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
+     const senior = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.sub_category == 'senior')
 
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
      const specialCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == false)
