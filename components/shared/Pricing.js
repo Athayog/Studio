@@ -150,11 +150,39 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'couple_package')
+
+          .sort(compare);
+
+     const couple_package_limited = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.description.includes('Limited'))
+          .filter((data) => data.sub_category == 'couple_package')
+          .sort(compare);
+     const couple_package_unlimited = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.description.includes('Unlimited'))
+          .filter((data) => data.sub_category == 'couple_package')
           .sort(compare);
 
      const group_studio_class = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
+          .filter((data) => data.sub_category == 'group_studio_class')
+          .sort(compare);
+
+     const group_studio_class_limited = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.description.includes('Limited'))
+          .filter((data) => data.sub_category == 'group_studio_class')
+          .sort(compare);
+
+     const group_studio_class_unlimited = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.description.includes('Unlimited'))
           .filter((data) => data.sub_category == 'group_studio_class')
           .sort(compare);
 
@@ -311,7 +339,9 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     )}
                     {couple_package && (
                          <PriceBox
-                              courses={couple_package}
+                              courses={couple_package_limited}
+                              limited={couple_package_limited}
+                              unlimited={couple_package_unlimited}
                               data={data}
                               user={user}
                               toRegister={toRegister}
@@ -322,7 +352,9 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     )}
                     {group_studio_class && (
                          <PriceBox
-                              courses={group_studio_class}
+                              courses={group_studio_class_limited}
+                              limited={group_studio_class_limited}
+                              unlimited={group_studio_class_unlimited}
                               data={data}
                               user={user}
                               toRegister={toRegister}
