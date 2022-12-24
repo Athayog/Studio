@@ -253,10 +253,47 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                     />
-                    {(couple_package || group_studio_class || workshop) && (
+                    <PriceBox
+                         courses={senior}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={specialCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={trialCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={generalCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    {(couple_package.length !== 0 ||
+                         group_studio_class.length !== 0 ||
+                         workshop.length !== 0) && (
                          <>
-                              <Divider />
-                              <Heading mt={10} fontSize="2xl">
+                              <Heading mt={20} fontSize="2xl">
                                    Premium Packages
                               </Heading>
                          </>
@@ -294,43 +331,6 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                               handleUserPayment={handleUserPayment}
                          />
                     )}
-                    <Divider />
-                    <PriceBox
-                         courses={senior}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
-                         courses={specialCourses}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
-                         courses={trialCourses}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
-                         courses={generalCourses}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
                     <Text textAlign="left" mt={8} width="100%">
                          *Terms and conditions apply
                     </Text>
