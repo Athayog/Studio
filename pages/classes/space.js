@@ -150,7 +150,8 @@ const Space = ({ offers, notFound }) => {
                     isTrial: data.isTrial,
                     old_price: data.old_price,
                     isGeneral: data.isGeneral,
-                    price: data.price
+                    price: data.price,
+                    sub_category: data.sub_category
                });
           }
      });
