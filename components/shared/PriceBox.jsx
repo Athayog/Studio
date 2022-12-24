@@ -97,37 +97,6 @@ export default function PriceBox({
                                                        {data.duration}
                                                   </Text>
                                                   <Flex>
-                                                       {data.old_price !==
-                                                            null &&
-                                                            parseInt(
-                                                                 data.old_price
-                                                            ) !== 0 &&
-                                                            data.old_price !==
-                                                                 '0' && (
-                                                                 <Text
-                                                                      fontSize={{
-                                                                           base: 'xl',
-                                                                           md: '2xl',
-                                                                           lg: '3xl'
-                                                                      }}
-                                                                      mr={3}
-                                                                      textColor="#555"
-                                                                      textDecoration="line-through"
-                                                                      style={{
-                                                                           textDecorationThickness:
-                                                                                '3px'
-                                                                      }}
-                                                                 >
-                                                                      {toRegister !==
-                                                                      false
-                                                                           ? '₹'
-                                                                           : null}{' '}
-                                                                      {
-                                                                           data.old_price
-                                                                      }
-                                                                 </Text>
-                                                            )}
-
                                                        <Text
                                                             fontSize={{
                                                                  base: 'xl',
@@ -247,35 +216,6 @@ export default function PriceBox({
                                                        {data.duration}
                                                   </Text>
                                                   <Flex>
-                                                       {data.old_price !==
-                                                            null &&
-                                                            parseInt(
-                                                                 data.old_price
-                                                            ) !== 0 && (
-                                                                 <Text
-                                                                      fontSize={{
-                                                                           base: 'xl',
-                                                                           md: '2xl',
-                                                                           lg: '3xl'
-                                                                      }}
-                                                                      mr={3}
-                                                                      textColor="#555"
-                                                                      textDecoration="line-through"
-                                                                      style={{
-                                                                           textDecorationThickness:
-                                                                                '3px'
-                                                                      }}
-                                                                 >
-                                                                      {toRegister !==
-                                                                      false
-                                                                           ? '₹'
-                                                                           : null}{' '}
-                                                                      {
-                                                                           data.old_price
-                                                                      }
-                                                                 </Text>
-                                                            )}
-
                                                        <Text
                                                             fontSize={{
                                                                  base: 'xl',
@@ -335,7 +275,7 @@ export default function PriceBox({
                     </Grid>
                </Grid>
           );
-     } else {
+     } else if (courses) {
           return (
                <Grid
                     gridTemplateColumns={{
@@ -408,34 +348,6 @@ export default function PriceBox({
                                                   {data.duration}
                                              </Text>
                                              <Flex>
-                                                  {data.old_price !== null &&
-                                                       parseInt(
-                                                            data.old_price
-                                                       ) !== 0 && (
-                                                            <Text
-                                                                 fontSize={{
-                                                                      base: 'xl',
-                                                                      md: '2xl',
-                                                                      lg: '3xl'
-                                                                 }}
-                                                                 mr={3}
-                                                                 textColor="#555"
-                                                                 textDecoration="line-through"
-                                                                 style={{
-                                                                      textDecorationThickness:
-                                                                           '3px'
-                                                                 }}
-                                                            >
-                                                                 {toRegister !==
-                                                                 false
-                                                                      ? '₹'
-                                                                      : null}{' '}
-                                                                 {
-                                                                      data.old_price
-                                                                 }
-                                                            </Text>
-                                                       )}
-
                                                   <Text
                                                        fontSize={{
                                                             base: 'xl',
@@ -492,5 +404,7 @@ export default function PriceBox({
                     })}
                </Grid>
           );
+     } else {
+          return <></>;
      }
 }
