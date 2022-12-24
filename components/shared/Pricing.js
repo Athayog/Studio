@@ -136,34 +136,32 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'personal_training')
-
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
+
      const kids = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'kids')
-
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
+
      const couple_package = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'couple_package')
-          .sort((a, b) => a.courseName - b.courseName);
+          .sort(compare);
 
      const group_studio_class = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'group_studio_class')
-          .sort((a, b) => a.courseName - b.courseName)
           .sort(compare);
 
      const senior = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'senior')
-
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum)
           .sort(compare);
@@ -171,7 +169,6 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'workshop')
-
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum)
           .sort(compare);
