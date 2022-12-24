@@ -265,7 +265,9 @@ const Schedule = ({ schedule }) => {
                                                                  width="200px"
                                                                  fontWeight="normal"
                                                                  bg="aygreen.100"
-                                                                 borderBottom="1px" borderColor="aygreen.200" textAlign='center' 
+                                                                 borderBottom="1px"
+                                                                 borderColor="aygreen.200"
+                                                                 textAlign="center"
                                                             >
                                                                  <Text width="max-content">
                                                                       {
@@ -510,7 +512,7 @@ const Schedule = ({ schedule }) => {
 
 export async function getStaticProps(context) {
      const schedule = await fetcher('/api/schedule/generalSchedule');
-     return { props: { schedule }, revalidate: 1 };
+     return { props: { schedule } };
 }
 
 export default Schedule;

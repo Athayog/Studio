@@ -21,7 +21,7 @@ export default function PriceBox({
      unlimited
 }) {
      console.log(limited);
-     if (limited && unlimited) {
+     if (limited.length !== 0 && unlimited.length !== 0) {
           return (
                <Grid
                     gridTemplateColumns={{
@@ -275,7 +275,7 @@ export default function PriceBox({
                     </Grid>
                </Grid>
           );
-     } else if (courses) {
+     } else if (courses.length !== 0) {
           return (
                <Grid
                     gridTemplateColumns={{

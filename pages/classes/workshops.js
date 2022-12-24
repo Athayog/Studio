@@ -26,8 +26,7 @@ export async function getStaticProps(context) {
           props: {
                offers: JSON.parse(JSON.stringify(offers)),
                notFound: false
-          },
-          revalidate: 1
+          }
      };
 }
 

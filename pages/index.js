@@ -24,8 +24,7 @@ export async function getStaticProps() {
      const testimonials = JSON.parse(JSON.stringify(reqTestimonials));
 
      return {
-          props: { gallery, testimonials },
-          revalidate: 60
+          props: { gallery, testimonials }
      };
 }
 
