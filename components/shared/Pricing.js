@@ -158,12 +158,14 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Limited'))
           .filter((data) => data.sub_category == 'couple_package')
+          .sort((a, b) => a.description.length - b.description.length)
           .sort(compare);
      const couple_package_unlimited = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Unlimited'))
           .filter((data) => data.sub_category == 'couple_package')
+          .sort((a, b) => a.description.length - b.description.length)
           .sort(compare);
 
      const group_studio_class = pricing
@@ -177,14 +179,16 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Limited'))
           .filter((data) => data.sub_category == 'group_studio_class')
-          .sort(compare);
+          .sort(compare)
+          .reverse();
 
      const group_studio_class_unlimited = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Unlimited'))
           .filter((data) => data.sub_category == 'group_studio_class')
-          .sort(compare);
+          .sort(compare)
+          .reverse();
 
      const senior = pricing
           .filter((data) => data.isTrial == false)
