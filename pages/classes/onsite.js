@@ -50,7 +50,8 @@ const Onsite = ({ offers, notFound }) => {
                     old_price: data.old_price,
                     durationNum: data.days,
                     isGeneral: data.isGeneral,
-                    price: data.price
+                    price: data.price,
+                    sub_category: sub_category
                });
           }
      });

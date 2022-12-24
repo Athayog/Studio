@@ -54,7 +54,8 @@ const Workshops = ({ offers, notFound }) => {
                durationNum: data.days,
                isTrial: data.isTrial,
                isGeneral: data.isGeneral,
-               price: data.price
+               price: data.price,
+               sub_category: sub_category
           });
      });
      return (
