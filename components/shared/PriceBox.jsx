@@ -242,8 +242,9 @@ export default function PriceBox({
                                                   </Text>
                                                   <Flex>
                                                        {data.old_price &&
-                                                            data.old_price !==
-                                                                 '0' && (
+                                                            Number(
+                                                                 data.old_price
+                                                            ) !== 0 && (
                                                                  <Text
                                                                       fontSize={{
                                                                            base: 'xl',
@@ -401,8 +402,9 @@ export default function PriceBox({
                                              </Text>
                                              <Flex>
                                                   {data.old_price &&
-                                                       data.old_price !==
-                                                            '0' && (
+                                                       Number(
+                                                            data.old_price
+                                                       ) !== 0 && (
                                                             <Text
                                                                  fontSize={{
                                                                       base: 'xl',
