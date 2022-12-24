@@ -20,6 +20,7 @@ export default function PriceBox({
      limited,
      unlimited
 }) {
+     console.log(limited);
      if (limited && unlimited) {
           return (
                <Grid
@@ -34,6 +35,8 @@ export default function PriceBox({
                     {' '}
                     <Grid gap={5}>
                          {limited.map((data, index) => {
+                              console.log(data.price);
+
                               return (
                                    <GridItem
                                         bg={'aygreen.100'}
@@ -94,10 +97,13 @@ export default function PriceBox({
                                                        {data.duration}
                                                   </Text>
                                                   <Flex>
-                                                       {data.old_price &&
-                                                            Number(
+                                                       {data.old_price !==
+                                                            null &&
+                                                            parseInt(
                                                                  data.old_price
-                                                            ) !== 0 && (
+                                                            ) !== 0 &&
+                                                            data.old_price !==
+                                                                 '0' && (
                                                                  <Text
                                                                       fontSize={{
                                                                            base: 'xl',
@@ -241,8 +247,9 @@ export default function PriceBox({
                                                        {data.duration}
                                                   </Text>
                                                   <Flex>
-                                                       {data.old_price &&
-                                                            Number(
+                                                       {data.old_price !==
+                                                            null &&
+                                                            parseInt(
                                                                  data.old_price
                                                             ) !== 0 && (
                                                                  <Text
@@ -401,8 +408,8 @@ export default function PriceBox({
                                                   {data.duration}
                                              </Text>
                                              <Flex>
-                                                  {data.old_price &&
-                                                       Number(
+                                                  {data.old_price !== null &&
+                                                       parseInt(
                                                             data.old_price
                                                        ) !== 0 && (
                                                             <Text
