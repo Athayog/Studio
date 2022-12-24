@@ -258,33 +258,39 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                               Premium Packages
                          </Heading>
                     )}
-                    <PriceBox
-                         courses={workshop}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
-                         courses={couple_package}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
-                         courses={group_studio_class}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
+                    {workshop && (
+                         <PriceBox
+                              courses={workshop}
+                              data={data}
+                              user={user}
+                              toRegister={toRegister}
+                              coursePurchased={coursePurchased}
+                              buttonId={buttonId}
+                              handleUserPayment={handleUserPayment}
+                         />
+                    )}
+                    {couple_package && (
+                         <PriceBox
+                              courses={couple_package}
+                              data={data}
+                              user={user}
+                              toRegister={toRegister}
+                              coursePurchased={coursePurchased}
+                              buttonId={buttonId}
+                              handleUserPayment={handleUserPayment}
+                         />
+                    )}
+                    {group_studio_class && (
+                         <PriceBox
+                              courses={group_studio_class}
+                              data={data}
+                              user={user}
+                              toRegister={toRegister}
+                              coursePurchased={coursePurchased}
+                              buttonId={buttonId}
+                              handleUserPayment={handleUserPayment}
+                         />
+                    )}
                     <Divider />
                     <PriceBox
                          courses={senior}
