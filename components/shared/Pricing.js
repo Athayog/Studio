@@ -179,6 +179,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Limited'))
           .filter((data) => data.sub_category == 'group_studio_class')
+          .sort((a, b) => a.courseName.length - b.courseName.length)
           .sort(compare)
           .reverse();
 
@@ -187,6 +188,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Unlimited'))
           .filter((data) => data.sub_category == 'group_studio_class')
+          .sort((a, b) => a.courseName.length - b.courseName.length)
           .sort(compare)
           .reverse();
 
