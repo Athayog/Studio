@@ -108,7 +108,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      ];
      function sortingGroup(arr) {
           return _.sortBy(arr, function (obj) {
-               return _.indexOf(order, obj.key);
+               return _.indexOf(order, obj.courseName);
           });
      }
 
