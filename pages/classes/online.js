@@ -205,9 +205,9 @@ const Online = ({ offers, notFound }) => {
                </Head>
                <Hero pageData={pageData} />
                {/* <Information pageData={pageData} /> */}
-               <Classes classes={pageData.classes} />
                <ClassesLayout>
                     <BreadCrumb subLinks="classes" currentPage="Online" />
+                    <Classes classes={pageData.classes} />
                     <Flex
                          margin="auto"
                          padding={{
