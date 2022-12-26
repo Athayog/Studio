@@ -32,6 +32,7 @@ import CTA from '@/components/shared/CTA';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import ClassesLayout from '@/components/shared/ClassesLayout';
 import Head from 'next/head';
+import Classes from '@/components/shared/Classes';
 export async function getStaticProps(context) {
      const { offers } = await getOffer('online');
 
@@ -68,6 +69,86 @@ const Online = ({ offers, notFound }) => {
                     'Lack of physical correction.',
                     'Need for space and phone support for better angle/ visibility.'
                ]
+          ],
+          classes: [
+               {
+                    className: 'Universal Harmony',
+                    classInfo: `Find the harmony between your BODY, BREATH & MIND. Restore the balance and explore your inner universe in this hour-long journey!`,
+                    structure: [
+                         'Grounding',
+                         '35 minutes of Asana Practice',
+                         'Relaxation',
+                         'Breathing (Pranayama) & Meditation'
+                    ]
+               },
+               {
+                    className: 'Transcending Transitions ',
+                    classInfo: `Find your flow in a class combining Hatha Yoga with Vinyasa flow that lasts 60 minutes. Transcend the body and mind as you transition from one pose to another with ease.`,
+                    structure: [
+                         'Grounding',
+                         '45 minutes of Hatha Vinyasa Flow',
+                         'Relaxation'
+                    ]
+               },
+               {
+                    className: 'Rhythm of Being',
+                    classInfo: `Move to the rhythm of your breath for 60 minutes. Reconnect with your body with a dynamic Hatha yoga practice.`,
+                    structure: [
+                         'Grounding',
+                         '45 minutes of Asana Practice',
+                         'Relaxation'
+                    ]
+               },
+               {
+                    className: 'Inner World',
+                    classInfo: `Slow down the inner chaos of your restless mind in the span of 60 minutes. Unwind and effortlessly rest your body and mind with the relaxation technique of Yoga Nidra or “Yogic Sleep”.`,
+                    structure: [
+                         'Grounding',
+                         'Yoga Nidra - 45 minutes of Guided Relaxation'
+                    ]
+               },
+               {
+                    className: 'Deep Space',
+                    classInfo: `Delve deeper into the space beyond your body and mind with this hour-long guided meditation class. Reconnect with your true self in the deep state of conscious relaxation.`,
+                    structure: [
+                         'Grounding',
+                         '15 minutes of Warm-Up & Surya Namaskar',
+                         'Guided Relaxation',
+                         'Breathing (Pranayama) & Meditation'
+                    ]
+               },
+               {
+                    className: 'Kids Yoga',
+                    classInfo: `Let the little ones start their Yoga practice when the mind is still fresh and young with this fun-filled and interactive 60 minutes class.`,
+                    structure: [
+                         'Grounding',
+                         'Warm Up - Engaging & Interactive Activities',
+                         'Asana Practice',
+                         'Relaxation'
+                    ]
+               },
+               {
+                    className: 'Ashtanga',
+                    classInfo: `This rigorous hour-long practice synchronizes breath with movement. Immerse and feel the body heat up with dynamic movement.`,
+                    structure: [
+                         'Grounding',
+                         'Ashtanga Surya Namaskar',
+                         'Ashtanga Primary Series Asanas',
+                         'Relaxation'
+                    ]
+               },
+               {
+                    className: 'Sivananda',
+                    classInfo: `In the span of 60 minutes, find a relaxed and meditative state of mind as you practise Hatha yoga in Sivananda style. Founded by Vishnudevananda, this deep Yogic breathing and relaxation-focused practice is fit for all levels.`,
+                    structure: [
+                         'Grounding',
+                         '15 minutes of Warm-Up',
+                         'Breathing (Pranayama)',
+                         'Surya Namaskar',
+                         'Asana Practice',
+                         'Guided Relaxation'
+                    ]
+               }
           ]
      };
 
@@ -124,7 +205,7 @@ const Online = ({ offers, notFound }) => {
                </Head>
                <Hero pageData={pageData} />
                {/* <Information pageData={pageData} /> */}
-               {/* <OnlineCourses /> */}
+               <Classes classes={pageData.classes} />
                <ClassesLayout>
                     <BreadCrumb subLinks="classes" currentPage="Online" />
                     <Flex
