@@ -14,25 +14,12 @@ import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
 import ClassesLayout from '@/components/shared/ClassesLayout';
 import Head from 'next/head';
+import { Box, Button, Flex, Grid, Heading, Text } from '@chakra-ui/react';
+import Image from 'next/image';
+import CTAImage from 'public/athayogWorkshop.jpg';
+import Link from 'next/link';
 
-export async function getStaticProps(context) {
-     const { offers } = await getOffer('space');
-
-     if (!offers) {
-          return {
-               notFound: true
-          };
-     }
-
-     return {
-          props: {
-               offers: JSON.parse(JSON.stringify(offers)),
-               notFound: false
-          }
-     };
-}
-
-const Space = ({ offers, notFound }) => {
+const Space = ({ notFound }) => {
      const pageData = {
           name: 'Space',
           heroImage: athayogSpace,
@@ -135,26 +122,6 @@ const Space = ({ offers, notFound }) => {
           ]
      };
 
-     const apiPricing = [];
-     offers.map((data) => {
-          if (data.isActive) {
-               apiPricing.push({
-                    id: data.id,
-                    courseName: data.name,
-                    description: data.description,
-                    duration: data.isTrial
-                         ? data.days + ' Days Trial'
-                         : data.days + ' Days',
-                    durationNum: data.days,
-                    isTrial: data.isTrial,
-                    old_price: data.old_price,
-                    isGeneral: data.isGeneral,
-                    price: data.price,
-                    sub_category: data.sub_category
-               });
-          }
-     });
-
      return (
           <motion.div
                exit={{ opacity: 0 }}
@@ -176,10 +143,75 @@ const Space = ({ offers, notFound }) => {
                     <IntensityTable />
                     {/* <Schedule schedule="general" /> */}
                     <Schedule />
-                    <Pricing
-                         registerTo={pageData.name.toLocaleLowerCase()}
-                         pricing={apiPricing}
-                    />
+                    <Box height="sm" width="100%">
+                         <Flex
+                              height="100%"
+                              width="100%"
+                              justifyContent="center"
+                              alignItems="center"
+                              direction="column"
+                              position="relative"
+                         >
+                              <Box
+                                   height="100%"
+                                   bg={{
+                                        sm: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%)',
+                                        base: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%)',
+                                        md: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%)'
+                                   }}
+                                   width="100%"
+                                   zIndex={1}
+                              ></Box>
+                              <Box
+                                   position="absolute"
+                                   top="0"
+                                   left="0"
+                                   height="100%"
+                                   width="100%"
+                                   zIndex="1"
+                                   color="white"
+                              >
+                                   <Flex
+                                        justifyContent="center"
+                                        alignItems="center"
+                                        direction="column"
+                                        height="100%"
+                                        py={10}
+                                        gap={5}
+                                   >
+                                        <Heading
+                                             fontSize="5xl"
+                                             fontWeight="bold"
+                                        >
+                                             Checkout Our Offerings
+                                        </Heading>
+                                        <Text fontSize="xl">
+                                             Elevate your Yogic practice at the
+                                             AthaYog Space peaceful and hygienic
+                                             environment to practice.
+                                        </Text>
+                                        <Link
+                                             href="/classes/space/offerings"
+                                             passHref={true}
+                                        >
+                                             <Button
+                                                  colorScheme="aygreen"
+                                                  size="lg"
+                                             >
+                                                  SEE OUR OFFERINGS
+                                             </Button>
+                                        </Link>
+                                   </Flex>
+                              </Box>
+                              <Image
+                                   src={CTAImage}
+                                   layout="fill"
+                                   objectFit="cover"
+                                   alt="hero"
+                                   placeholder="blur"
+                              />
+                         </Flex>
+                    </Box>
 
                     <ProsAndCons data={pageData.prosAndCons} name="Space" />
                </ClassesLayout>

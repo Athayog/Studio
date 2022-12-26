@@ -240,6 +240,8 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           online = online.sort((a, b) => a.durationNum - b.durationNum);
           generalCourses = [...space, ...onsite, ...online];
      }
+
+     console.log(limitCourses);
      return (
           <Flex
                margin="auto"
