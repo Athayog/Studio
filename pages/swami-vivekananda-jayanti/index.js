@@ -4,6 +4,7 @@ import JayantiHero from '@/components/jayanti/JayantiHero';
 import HomeLayout from '@/components/layout/HomeLayout';
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
+import Script from 'next/script';
 
 function SwamiVivekanandaJayanti() {
      const idyImages = [
@@ -69,6 +70,34 @@ function SwamiVivekanandaJayanti() {
                     'https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/gallery%2F290744278_520217336515051_9188597379435712362_n.jpg?alt=media&token=3e2aaea1-9d30-4c80-9eb6-a9af1443983b'
           }
      ];
+
+     const fbScript = () => {
+          !(function (f, b, e, v, n, t, s) {
+               if (f.fbq) return;
+               n = f.fbq = function () {
+                    n.callMethod
+                         ? n.callMethod.apply(n, arguments)
+                         : n.queue.push(arguments);
+               };
+               if (!f._fbq) f._fbq = n;
+               n.push = n;
+               n.loaded = !0;
+               n.version = '2.0';
+               n.queue = [];
+               t = b.createElement(e);
+               t.async = !0;
+               t.src = v;
+               s = b.getElementsByTagName(e)[0];
+               s.parentNode.insertBefore(t, s);
+          })(
+               window,
+               document,
+               'script',
+               'https://connect.facebook.net/en_US/fbevents.js'
+          );
+          fbq('init', '341795334013939');
+          fbq('track', 'PageView');
+     };
      return (
           <Box overflow="hidden">
                <Head>
@@ -78,6 +107,15 @@ function SwamiVivekanandaJayanti() {
                          content="swami vivekananda jayanti, national youth day, register, free registration, marathon, yogathon, cultural activities, chanting, pooja, yoga for differently abled, talent showcasing, swami vivekananda, free event"
                     ></meta>
                </Head>
+               <Script id="page-view" src={fbScript}></Script>
+               <noscript>
+                    <img
+                         height="1"
+                         width="1"
+                         src="https://www.facebook.com/tr?id=407786137819809&ev=PageView
+                                   &noscript=1"
+                    />
+               </noscript>
                <JayantiHero images={idyImages} />
                <Gallery images={idyImages} />
           </Box>
