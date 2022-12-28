@@ -1,4 +1,3 @@
-import EventRegister from '@/components/jayanti/EventRegister';
 import Gallery from '@/components/jayanti/Gallery';
 import JayantiHero from '@/components/jayanti/JayantiHero';
 import HomeLayout from '@/components/layout/HomeLayout';
@@ -71,33 +70,6 @@ function SwamiVivekanandaJayanti() {
           }
      ];
 
-     const fbScript = () => {
-          !(function (f, b, e, v, n, t, s) {
-               if (f.fbq) return;
-               n = f.fbq = function () {
-                    n.callMethod
-                         ? n.callMethod.apply(n, arguments)
-                         : n.queue.push(arguments);
-               };
-               if (!f._fbq) f._fbq = n;
-               n.push = n;
-               n.loaded = !0;
-               n.version = '2.0';
-               n.queue = [];
-               t = b.createElement(e);
-               t.async = !0;
-               t.src = v;
-               s = b.getElementsByTagName(e)[0];
-               s.parentNode.insertBefore(t, s);
-          })(
-               window,
-               document,
-               'script',
-               'https://connect.facebook.net/en_US/fbevents.js'
-          );
-          fbq('init', '341795334013939');
-          fbq('track', 'PageView');
-     };
      return (
           <Box overflow="hidden">
                <Head>
@@ -107,15 +79,18 @@ function SwamiVivekanandaJayanti() {
                          content="swami vivekananda jayanti, national youth day, register, free registration, marathon, yogathon, cultural activities, chanting, pooja, yoga for differently abled, talent showcasing, swami vivekananda, free event"
                     ></meta>
                </Head>
-               <Script id="page-view" src={fbScript}></Script>
-               <noscript>
-                    <img
-                         height="1"
-                         width="1"
-                         src="https://www.facebook.com/tr?id=407786137819809&ev=PageView
-                                   &noscript=1"
-                    />
-               </noscript>
+               <Script id="page-view">
+                    {`!function(f,b,e,v,n,t,s)
+                              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                              n.queue=[];t=b.createElement(e);t.async=!0;
+                              t.src=v;s=b.getElementsByTagName(e)[0];
+                              s.parentNode.insertBefore(t,s)}(window,document,'script',
+                              'https://connect.facebook.net/en_US/fbevents.js');
+                              fbq('init', '341795334013939'); 
+                              fbq('track', 'PageView');`}
+               </Script>
                <JayantiHero images={idyImages} />
                <Gallery images={idyImages} />
           </Box>
