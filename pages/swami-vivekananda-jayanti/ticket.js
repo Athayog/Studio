@@ -45,7 +45,6 @@ function Ticket() {
           setLoading(true);
           await getJayantiTicket(email)
                .then((res) => {
-                    console.log(res);
                     if (res.code == 200) {
                          setLoading(false);
                          toast.success('Email Found!');

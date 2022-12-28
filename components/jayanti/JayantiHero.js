@@ -231,7 +231,7 @@ function JayantiHero() {
                                         colorScheme="gray"
                                         size="sm"
                                    >
-                                        Already Registred? Downlaod Your Ticket
+                                        Already Registered? Download Your Ticket
                                         Here
                                    </Button>
                               </Link>
