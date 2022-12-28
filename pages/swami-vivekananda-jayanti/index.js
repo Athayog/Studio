@@ -3,6 +3,7 @@ import Gallery from '@/components/jayanti/Gallery';
 import JayantiHero from '@/components/jayanti/JayantiHero';
 import HomeLayout from '@/components/layout/HomeLayout';
 import { Box } from '@chakra-ui/react';
+import Head from 'next/head';
 
 function SwamiVivekanandaJayanti() {
      const idyImages = [
@@ -70,6 +71,13 @@ function SwamiVivekanandaJayanti() {
      ];
      return (
           <Box overflow="hidden">
+               <Head>
+                    <title>Swami Vivekananda Jayanti</title>
+                    <meta
+                         name="keywords"
+                         content="swami vivekananda jayanti, national youth day, register, free registration, marathon, yogathon, cultural activities, chanting, pooja, yoga for differently abled, talent showcasing, swami vivekananda, free event"
+                    ></meta>
+               </Head>
                <JayantiHero images={idyImages} />
                <Gallery images={idyImages} />
           </Box>
