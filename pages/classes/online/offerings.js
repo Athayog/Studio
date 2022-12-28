@@ -5,7 +5,7 @@ import Pricing from '@/components/shared/Pricing';
 import { getOffer } from '@/lib/db/offerings';
 
 export async function getStaticProps(context) {
-     const { offers } = await getOffer('space');
+     const { offers } = await getOffer('online');
 
      if (!offers) {
           return {
@@ -45,7 +45,7 @@ function Offerings({ offers }) {
      return (
           <div>
                <NavbarHelper />
-               <Pricing registerTo="Space" pricing={apiPricing} />
+               <Pricing registerTo="Online" pricing={apiPricing} />
           </div>
      );
 }

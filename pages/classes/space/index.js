@@ -183,13 +183,9 @@ const Space = ({ notFound }) => {
                                              fontSize="5xl"
                                              fontWeight="bold"
                                         >
-                                             Checkout Our Offerings
+                                             Check our Pricing
                                         </Heading>
-                                        <Text fontSize="xl">
-                                             Elevate your Yogic practice at the
-                                             AthaYog Space peaceful and hygienic
-                                             environment to practice.
-                                        </Text>
+
                                         <Link
                                              href="/classes/space/offerings"
                                              passHref={true}
@@ -198,7 +194,7 @@ const Space = ({ notFound }) => {
                                                   colorScheme="aygreen"
                                                   size="lg"
                                              >
-                                                  SEE OUR OFFERINGS
+                                                  Check Now
                                              </Button>
                                         </Link>
                                    </Flex>

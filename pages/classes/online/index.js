@@ -1,55 +1,30 @@
-import Hero from '@/components/shared/Hero';
-import { motion } from 'framer-motion';
-import React from 'react';
-import athayogOnline from 'public/athayogOnline.jpg';
-import Information from '@/components/shared/Information';
-import Pricing from '@/components/shared/Pricing';
-import { getOffer } from '@/lib/db/offerings';
 import HomeLayout from '@/components/layout/HomeLayout';
-import Schedule from '@/components/shared/Schedule';
-import {
-     Table,
-     Thead,
-     Tbody,
-     Tfoot,
-     Tr,
-     Th,
-     Td,
-     TableCaption,
-     Heading,
-     Flex,
-     Box,
-     Text,
-     List,
-     ListItem,
-     ListIcon,
-     Badge
-} from '@chakra-ui/react';
-import OnlineCourses from '@/components/shared/OnlineCourses';
-import ProsAndCons from '@/components/shared/ProsAndCons';
-import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
-import CTA from '@/components/shared/CTA';
-import { BsFillArrowRightCircleFill } from 'react-icons/bs';
-import ClassesLayout from '@/components/shared/ClassesLayout';
-import Head from 'next/head';
 import Classes from '@/components/shared/Classes';
-export async function getStaticProps(context) {
-     const { offers } = await getOffer('online');
+import ClassesLayout from '@/components/shared/ClassesLayout';
+import Hero from '@/components/shared/Hero';
+import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
+import ProsAndCons from '@/components/shared/ProsAndCons';
+import {
+     Box,
+     Button,
+     Flex,
+     Heading,
+     Table,
+     Tbody,
+     Td,
+     Text,
+     Th,
+     Thead,
+     Tr
+} from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import athayogOnline from 'public/athayogOnline.jpg';
+import CTAImage from 'public/athayogWorkshop.jpg';
 
-     if (!offers) {
-          return {
-               notFound: true
-          };
-     }
-     return {
-          props: {
-               offers: JSON.parse(JSON.stringify(offers)),
-               notFound: false
-          }
-     };
-}
-
-const Online = ({ offers, notFound }) => {
+const Online = () => {
      const pageData = {
           name: 'Online',
           heroImage: athayogOnline,
@@ -152,25 +127,6 @@ const Online = ({ offers, notFound }) => {
           ]
      };
 
-     const apiPricing = [];
-     offers.map((data) => {
-          if (data.isActive) {
-               apiPricing.push({
-                    id: data.id,
-                    courseName: data.name,
-                    description: data.description,
-                    duration: data.isTrial
-                         ? data.days + ' Days Trial'
-                         : data.days + ' Days',
-                    isTrial: data.isTrial,
-                    old_price: data.old_price,
-                    isGeneral: data.isGeneral,
-                    durationNum: data.days,
-                    price: data.price,
-                    sub_category: data.sub_category
-               });
-          }
-     });
      const d = new Date();
 
      const monthNames = [
@@ -204,10 +160,11 @@ const Online = ({ offers, notFound }) => {
                     ></meta>
                </Head>
                <Hero pageData={pageData} />
-               {/* <Information pageData={pageData} /> */}
+
                <ClassesLayout>
                     <BreadCrumb subLinks="classes" currentPage="Online" />
                     <Classes classes={pageData.classes} />
+
                     <Flex
                          margin="auto"
                          padding={{
@@ -363,15 +320,73 @@ const Online = ({ offers, notFound }) => {
                               </Box>
                          </Flex>
                     </Flex>
+                    <Box height="sm" width="100%">
+                         <Flex
+                              height="100%"
+                              width="100%"
+                              justifyContent="center"
+                              alignItems="center"
+                              direction="column"
+                              position="relative"
+                         >
+                              <Box
+                                   height="100%"
+                                   bg={{
+                                        sm: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%)',
+                                        base: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%)',
+                                        md: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%)'
+                                   }}
+                                   width="100%"
+                                   zIndex={1}
+                              ></Box>
+                              <Box
+                                   position="absolute"
+                                   top="0"
+                                   left="0"
+                                   height="100%"
+                                   width="100%"
+                                   zIndex="1"
+                                   color="white"
+                              >
+                                   <Flex
+                                        justifyContent="center"
+                                        alignItems="center"
+                                        direction="column"
+                                        height="100%"
+                                        py={10}
+                                        gap={5}
+                                   >
+                                        <Heading
+                                             fontSize="5xl"
+                                             fontWeight="bold"
+                                        >
+                                             Check our Pricing
+                                        </Heading>
 
-                    <Pricing
-                         pricing={apiPricing}
-                         registerTo={pageData.name.toLocaleLowerCase()}
-                    />
-
+                                        <Link
+                                             href="/classes/online/offerings"
+                                             passHref={true}
+                                        >
+                                             <Button
+                                                  colorScheme="aygreen"
+                                                  size="lg"
+                                             >
+                                                  Check Now
+                                             </Button>
+                                        </Link>
+                                   </Flex>
+                              </Box>
+                              <Image
+                                   src={CTAImage}
+                                   layout="fill"
+                                   objectFit="cover"
+                                   alt="hero"
+                                   placeholder="blur"
+                              />
+                         </Flex>
+                    </Box>
                     <ProsAndCons data={pageData.prosAndCons} name="Online" />
                </ClassesLayout>
-               -10 AM is Women's Batch
           </motion.div>
      );
 };
