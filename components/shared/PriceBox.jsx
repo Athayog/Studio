@@ -38,8 +38,6 @@ export default function PriceBox({
                     {' '}
                     <Grid gap={5}>
                          {limited.map((data, index) => {
-                              console.log(data.price);
-
                               return (
                                    <GridItem
                                         bg={'aygreen.100'}

@@ -41,7 +41,6 @@ export const DateCreated = ({ values }) => {
 };
 
 export const Events = ({ values }) => {
-     console.log(values);
      // Loop through the array and create a badge-like component instead of a comma-separated string
 
      return (

@@ -119,7 +119,7 @@ const Gallery = ({ images }) => {
           'https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/aroma%2F_DSC1770.JPG?alt=media&token=0c78d178-305b-4d1b-b7b5-fd36b5cb708f',
           'https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/aroma%2F_DSC1771.JPG?alt=media&token=73c01757-249d-488c-83df-79144ff16dac'
      ];
-     console.log(data.images);
+
      return (
           <Box spacing={5} py="2rem" bg="gray.200" height="100%">
                <Box

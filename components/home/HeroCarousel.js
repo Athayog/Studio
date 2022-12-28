@@ -8,8 +8,8 @@ import 'swiper/swiper.min.css';
 import { v4 as uuidv4 } from 'uuid';
 import kidsDesktop from 'public/kids-summer-desktop.png';
 import kidsMobile from 'public/kids-summer-mobile.png';
-import retreatDesktop from 'public/retreat-dekstop.png';
-import retreatMobile from 'public/retreat-mobile.png';
+import jayantiDesktop from 'public/jayanti_dekstop.png';
+import jayantiMobile from 'public/jayanti_mobile.png';
 import heroDesktop from 'public/hero_desk_1.jpg';
 import heroMobile from 'public/hero_mobile_1.jpg';
 import { useRouter } from 'next/router';
@@ -29,14 +29,14 @@ const HeroCarousel = () => {
           {
                id: 0,
                alt: 'Athayog Living',
-               imageUrl: heroDesktop,
-               url: null
+               imageUrl: jayantiDesktop,
+               url: '/swami-vivekananda-jayanti'
           }
 
           // {
           //      id: 3,
           //      alt: 'Yoga retreat',
-          //      imageUrl: retreatDesktop,
+          //      imageUrl: jayantiDesktop,
           //      url: '/yoga-retreat'
           // }
      ];
@@ -45,14 +45,14 @@ const HeroCarousel = () => {
           {
                id: 0,
                alt: 'Athayog Living',
-               imageUrl: heroMobile,
-               url: null
+               imageUrl: jayantiMobile,
+               url: '/swami-vivekananda-jayanti'
           }
 
           // {
           //      id: 4,
           //      alt: 'Yoga retreat',
-          //      imageUrl: retreatMobile,
+          //      imageUrl: jayantiMobile,
           //      url: '/yoga-retreat'
           // }
      ];
