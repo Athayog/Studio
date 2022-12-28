@@ -89,7 +89,8 @@ function SwamiVivekanandaJayanti() {
                               s.parentNode.insertBefore(t,s)}(window,document,'script',
                               'https://connect.facebook.net/en_US/fbevents.js');
                               fbq('init', '341795334013939'); 
-                              fbq('track', 'PageView');`}
+                              fbq('track', 'PageView');
+                              fbq('track', 'Lead');`}
                </Script>
                <JayantiHero images={idyImages} />
                <Gallery images={idyImages} />
