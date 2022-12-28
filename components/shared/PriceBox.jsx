@@ -86,6 +86,9 @@ export default function PriceBox({
                                                        >
                                                             {capitalizeFirstLetter(
                                                                  data.courseName
+                                                            ).replace(
+                                                                 'Membership',
+                                                                 ''
                                                             )}
                                                        </Heading>
                                                        <Text
@@ -225,6 +228,9 @@ export default function PriceBox({
                                                        >
                                                             {capitalizeFirstLetter(
                                                                  data.courseName
+                                                            ).replace(
+                                                                 'Membership',
+                                                                 ''
                                                             )}
                                                        </Heading>
                                                        <Text
@@ -360,7 +366,7 @@ export default function PriceBox({
                                         >
                                              {capitalizeFirstLetter(
                                                   data.courseName
-                                             )}
+                                             ).replace('Membership', '')}
                                         </Heading>
                                         <Text
                                              mt={5}
