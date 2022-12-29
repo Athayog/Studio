@@ -57,7 +57,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class December 2022 (Indiranagar)
+                              AthaYog Offline Class January 2022 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -294,7 +294,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class December 2022 (KR Puram)
+                              AthaYog Offline Class January 2022 (KR Puram)
                          </Heading>
                          <Box
                               overflowX="auto"
