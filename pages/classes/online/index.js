@@ -246,13 +246,12 @@ const Online = () => {
                                                   <Td>
                                                        Transcending Transitions
                                                   </Td>
-                                                  <Td>
-                                                       Sivanandha/Universal
-                                                       Harmony
-                                                  </Td>
-
                                                   <Td>Rhythm Of Being </Td>
+
                                                   <Td>Universal Harmony</Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
                                                   <Td> - </Td>
                                                   <Td> - </Td>
                                              </Tr>
@@ -285,7 +284,7 @@ const Online = () => {
                                                        padding="0px"
                                                        paddingLeft="10px"
                                                   >
-                                                       5:00 PM - 6:00 PM
+                                                       4:00 PM - 5:00 PM
                                                   </Td>
                                                   <Td>Kids Yoga</Td>
                                                   <Td>Kids Yoga</Td>
@@ -303,15 +302,16 @@ const Online = () => {
                                                        padding="0px"
                                                        paddingLeft="10px"
                                                   >
-                                                       5:00 PM - 6:00 PM
+                                                       6:00 PM - 7:00 PM
                                                   </Td>
-                                                  <Td>Universal Harmony</Td>
-                                                  <Td>Rhythm Of Being</Td>
-                                                  <Td>Universal Harmony</Td>
                                                   <Td>Rhythm Of Being</Td>
                                                   <Td>
                                                        Transcending Transitions
                                                   </Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>Rhythm Of Being</Td>
+                                                  <Td>Universal Harmony</Td>
+
                                                   <Td>Rhythm Of Being</Td>
                                                   <Td>Universal Harmony</Td>
                                              </Tr>

@@ -100,11 +100,13 @@ function Schedule() {
                                              </Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being </Td>
+                                             <Td>
+                                                  Sivanandha / Universal Harmony
+                                             </Td>
                                              <Td>Hata Vinyasa</Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -124,7 +126,9 @@ function Schedule() {
                                                   Sivanandha / Universal Harmony
                                              </Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>
+                                                  Sivanandha / Universal Harmony
+                                             </Td>
                                         </Tr>
 
                                         <Tr>
@@ -140,9 +144,9 @@ function Schedule() {
                                              <Td>
                                                   Sivanandha / Universal Harmony
                                              </Td>
-                                             <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Universal Harmony </Td>
                                              <Td>Transcending Transitions</Td>
@@ -160,10 +164,10 @@ function Schedule() {
                                              </Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being </Td>
                                              <Td></Td>
                                         </Tr>
                                         <Tr>
@@ -181,8 +185,8 @@ function Schedule() {
                                              <Td>Shikshanapada</Td>
                                              <Td>Shikshanapada</Td>
                                              <Td>Shikshanapada</Td>
-                                             <Td>Shikshanapada</Td>
-                                             <Td>Shikshanapada</Td>
+                                             <Td></Td>
+                                             <Td></Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -212,11 +216,11 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Rhythm Of Being</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony</Td>
-                                             <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                         </Tr>
@@ -230,13 +234,12 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm Of Being</Td>
-                                             <Td>Yin Yoga</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Transcending Transitions</Td>
+                                             <Td>Yin Yoga</Td>
                                              <Td>Rhythm Of Being</Td>
-
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being</Td>
                                              <Td>Universal Harmony</Td>
                                         </Tr>
                                         <Tr>
@@ -250,10 +253,11 @@ function Schedule() {
                                                   7:00 PM - 8:00 PM
                                              </Td>
                                              <Td>Deep Space</Td>
-                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Inner World</Td>
-                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Transcending Transitions</Td>
+
                                              <Td></Td>
                                              <Td></Td>
                                         </Tr>
@@ -268,10 +272,10 @@ function Schedule() {
                                                   8:00 PM - 9:00 PM
                                              </Td>
                                              <Td>Rhythm Of Being</Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td>Inner World</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>Inner World</Td>
+                                             <Td>Deep Space</Td>
                                              <Td></Td>
                                              <Td></Td>
                                         </Tr>
@@ -333,13 +337,11 @@ function Schedule() {
                                              </Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Transcending Transitions</Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>
-                                                  Sivananda / Universal Harmony
-                                             </Td>
-                                             <Td> - </Td>
-                                             <Td> - </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -357,7 +359,9 @@ function Schedule() {
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Universal Harmony </Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>
+                                                  Sivananda / Universal Harmony
+                                             </Td>
                                         </Tr>
 
                                         <Tr>
@@ -370,14 +374,12 @@ function Schedule() {
                                              >
                                                   8:00 AM - 9:00 AM
                                              </Td>
-                                             <Td>
-                                                  Sivananda / Universal Harmony
-                                             </Td>
+                                             <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony </Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
                                         </Tr>
                                         <Tr>
@@ -393,11 +395,29 @@ function Schedule() {
                                              </Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm Of Being </Td>
                                              <Td></Td>
+                                        </Tr>
+                                        <Tr>
+                                             <Td
+                                                  bg="aygreen.100"
+                                                  borderBottom="1px"
+                                                  borderColor="aygreen.200"
+                                                  padding="0px"
+                                                  paddingLeft="10px"
+                                             >
+                                                  11:00 AM - 4:00 AM
+                                             </Td>
+                                             <Td></Td>
+                                             <Td> </Td>
+                                             <Td></Td>
+                                             <Td> </Td>
+                                             <Td></Td>
+                                             <Td>Shikshanapada </Td>
+                                             <Td>Shikshanapada</Td>
                                         </Tr>
 
                                         <Tr>
@@ -428,13 +448,13 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Rhythm Of Being</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>
                                                   Sivananda / Universal Harmony
                                              </Td>
-                                             <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                         </Tr>
@@ -448,13 +468,11 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>
-                                                  Sivananda / Universal Harmony
-                                             </Td>
-                                             <Td>Rhythm Of Being</Td>
-                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Transcending Transitions</Td>
+                                             <Td>Inner World</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>
                                                   Sivananda / Universal Harmony
@@ -471,10 +489,11 @@ function Schedule() {
                                                   7:00 PM - 8:00 PM
                                              </Td>
                                              <Td>Deep Space</Td>
-                                             <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Inner World</Td>
-                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Transcending Transitions</Td>
+
                                              <Td> - </Td>
                                              <Td> - </Td>
                                         </Tr>
@@ -489,12 +508,11 @@ function Schedule() {
                                                   8:00 PM - 9:00 PM
                                              </Td>
                                              <Td>Rhythm Of Being</Td>
-                                             <Td>
-                                                  Sivananda / Universal Harmony
-                                             </Td>
-                                             <Td>Deep Space</Td>
+                                             <Td>Inner World</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Deep Space</Td>
+
                                              <Td> - </Td>
                                              <Td> - </Td>
                                         </Tr>
