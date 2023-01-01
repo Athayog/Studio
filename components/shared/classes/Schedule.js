@@ -554,6 +554,16 @@ function Schedule() {
                                              as={BsFillArrowRightCircleFill}
                                              color="green.500"
                                         />
+                                        Note: 14th (Makar Sankrati) and 26th
+                                        (Republic Holiday) the classes will be
+                                        happening from 6 AM - 10 AM (No evening
+                                        classes)
+                                   </ListItem>
+                                   <ListItem>
+                                        <ListIcon
+                                             as={BsFillArrowRightCircleFill}
+                                             color="green.500"
+                                        />
                                         Exclusive Women&apos;s Batch Time - 9:00
                                         AM to 10:00 AM
                                    </ListItem>
