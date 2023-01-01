@@ -9,6 +9,9 @@ import {
      Button,
      Flex,
      Heading,
+     List,
+     ListIcon,
+     ListItem,
      Table,
      Tbody,
      Td,
@@ -23,6 +26,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import athayogOnline from 'public/athayogOnline.jpg';
 import CTAImage from 'public/athayogWorkshop.jpg';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 const Online = () => {
      const pageData = {
@@ -176,6 +180,7 @@ const Online = () => {
                          alignItems="center"
                          width="100vw"
                          bg="primaryWhite"
+                         direction="column"
                     >
                          <Flex
                               justifyContent="center"
@@ -319,7 +324,30 @@ const Online = () => {
                                    </Table>
                               </Box>
                          </Flex>
+                         <Box
+                              mt={10}
+                              textAlign="left"
+                              boxShadow="base"
+                              bg="white"
+                              rounded="md"
+                              p={3}
+                              width={{ base: '95%', md: '90%', lg: '90%' }}
+                         >
+                              <List>
+                                   <ListItem>
+                                        <ListIcon
+                                             as={BsFillArrowRightCircleFill}
+                                             color="green.500"
+                                        />
+                                        Note: 14th (Makar Sankrati) and 26th
+                                        (Republic Holiday) the classes will be
+                                        happening from 6 AM - 10 AM (No evening
+                                        classes)
+                                   </ListItem>
+                              </List>
+                         </Box>
                     </Flex>
+
                     <Box height="sm" width="100%">
                          <Flex
                               height="100%"
