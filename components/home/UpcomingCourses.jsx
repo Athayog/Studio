@@ -11,7 +11,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import CreativeOne from 'public/creative_one.png';
-import CreativeTwo from 'public/short.jpeg';
+import CreativeTwo from 'public/short.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -22,31 +22,27 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: 'https://forms.gle/Hy8NaEvR7rhyFDdM6',
-               alt: 'Traditional Hata Yoga',
+               url: '/',
+               alt: 'RPYT Course (Pre and Post Natal)',
                img: CreativeOne,
-               title: 'Traditional Hata Yoga',
-               timings: 'Enquire',
-               type: 'Online / Offline',
+               title: 'RPYT Course (Pre and Post Natal)',
+               timings: 'Given Below',
+               type: 'Offline',
                duration: [
-                    'January 2nd for Weekday',
-                    'January 7th for Weekend',
-                    '2-3 Months | RYT 200 Hours'
+                    'Feb 9th to April 9th - (10:00am - 4:00pm)',
+                    'March 6th to March 31st - (11:00am - 3:00pm)',
+                    '85 Hours / Month'
                ]
           },
           {
                id: '2',
-               url: 'https://athayogliving.com/stress-free-short-course',
-               alt: 'Stress Free Short Course',
-               title: 'Stress Free Short Course',
+               url: '/',
+               alt: 'Mental Health In Women',
+               title: 'Mental Health In Women',
                img: CreativeTwo,
-               timings: '4:00pm - 5:30pm (Indiranagar)',
+               timings: '10:00am - 12:30pm (KR Puram)',
                type: 'Offline',
-               duration: [
-                    '7th Jan - 29th Jan (Sat & Sun)',
-                    'Eligibility Grade 8th to 10th',
-                    'INR 3000'
-               ]
+               duration: ['28th Jan 2023']
           }
      ];
 
