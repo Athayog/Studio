@@ -116,7 +116,7 @@ function RPYTCourses() {
                               variant="striped"
                               border="1px solid #ddd"
                               mt={6}
-                              size="sm"
+                              size="md"
                          >
                               <Thead>
                                    <Tr>
