@@ -32,6 +32,7 @@ function ShortCourses() {
                                         <Th>Teacher</Th>
                                         <Th>Location</Th>
                                         <Th>Time</Th>
+                                        <Th>Fee</Th>
                                    </Tr>
                               </Thead>
                               <Tbody>
@@ -45,6 +46,7 @@ function ShortCourses() {
                                         <Td>Aarti</Td>
                                         <Td>Indiranagar</Td>
                                         <Td>4:00 PM - 5:30 PM</Td>
+                                        <Td>3000</Td>
                                    </Tr>
 
                                    <Tr>
@@ -63,6 +65,7 @@ function ShortCourses() {
                                         <Td>Srinath</Td>
                                         <Td>Indiranagar</Td>
                                         <Td>10:00 AM - 11:30 AM</Td>
+                                        <Td>2000</Td>
                                    </Tr>
                                    <Tr>
                                         <Td>March</Td>
@@ -71,6 +74,7 @@ function ShortCourses() {
                                         <Td>Sharath</Td>
                                         <Td>Online</Td>
                                         <Td>6:00 PM - 7:00 PM</Td>
+                                        <Td>900</Td>
                                    </Tr>
 
                                    <Tr>
@@ -83,6 +87,7 @@ function ShortCourses() {
                                              7:00 AM - 8:30 AM / 6:00 AM - 7:30
                                              AM
                                         </Td>
+                                        <Td>2000</Td>
                                    </Tr>
                                    <Tr>
                                         <Td>April</Td>
@@ -91,6 +96,7 @@ function ShortCourses() {
                                         <Td>Harsha</Td>
                                         <Td>Indiranagar</Td>
                                         <Td>10:00 AM - 12:00 PM</Td>
+                                        <Td>2000</Td>
                                    </Tr>
                                    <Tr>
                                         <Td>April</Td>
@@ -99,6 +105,7 @@ function ShortCourses() {
                                         <Td>Anjali</Td>
                                         <Td>KR Puram</Td>
                                         <Td>10:00 AM - 12:00 PM</Td>
+                                        <Td>2000</Td>
                                    </Tr>
 
                                    <Tr>
@@ -108,6 +115,7 @@ function ShortCourses() {
                                         <Td>Srinath</Td>
                                         <Td>Indiranagar</Td>
                                         <Td>10:00 AM - 11:30 AM</Td>
+                                        <Td>1000</Td>
                                    </Tr>
 
                                    <Tr>
@@ -117,6 +125,7 @@ function ShortCourses() {
                                         <Td>Sharath</Td>
                                         <Td>All</Td>
                                         <Td>All time</Td>
+                                        <Td>FREE</Td>
                                    </Tr>
                                    <Tr>
                                         <Td>June</Td>
@@ -125,6 +134,7 @@ function ShortCourses() {
                                         <Td>Srinath</Td>
                                         <Td>Indiranagar</Td>
                                         <Td>10:00 AM - 11:30 AM</Td>
+                                        <Td>1000</Td>
                                    </Tr>
 
                                    <Tr>
@@ -137,6 +147,7 @@ function ShortCourses() {
                                              7:00 AM - 8:30 AM / 6:00 AM - 7:30
                                              AM
                                         </Td>
+                                        <Td>2000</Td>
                                    </Tr>
 
                                    <Tr>
@@ -146,6 +157,7 @@ function ShortCourses() {
                                         <Td>Shreeram Kasturi</Td>
                                         <Td>KR Puram</Td>
                                         <Td>6:00 PM - 7:00 PM</Td>
+                                        <Td>1000</Td>
                                    </Tr>
 
                                    <Tr>
@@ -164,6 +176,7 @@ function ShortCourses() {
                                         <Td>Sharath</Td>
                                         <Td>Online</Td>
                                         <Td>6:00 PM - 7:00 PM</Td>
+                                        <Td>900</Td>
                                    </Tr>
 
                                    <Tr>
@@ -173,6 +186,7 @@ function ShortCourses() {
                                         <Td>Sharath</Td>
                                         <Td>KR Puram</Td>
                                         <Td>6:00 PM - 7:00 PM (Sunday)</Td>
+                                        <Td>1500</Td>
                                    </Tr>
 
                                    <Tr>
@@ -182,6 +196,7 @@ function ShortCourses() {
                                         <Td>Sharath</Td>
                                         <Td>Indiranagar</Td>
                                         <Td>6:00 PM - 7:00 PM ( Saturday)</Td>
+                                        <Td>1500</Td>
                                    </Tr>
                               </Tbody>
                          </Table>

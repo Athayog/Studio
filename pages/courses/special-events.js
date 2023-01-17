@@ -13,7 +13,8 @@ function SpecialEvent() {
           {
                time: null,
                months: [
-                    'January  ',
+                    'January',
+                    'February',
                     'March',
                     'June',
                     'July',
@@ -25,31 +26,35 @@ function SpecialEvent() {
                details: [
                     {
                          name: 'Swami Vivekananda Birthday',
-                         date: '12th Jan 2022'
+                         date: 'Thu, 12th Jan 2023'
+                    },
+                    {
+                         name: 'Rata Saptami',
+                         date: 'Sat, 28th Jan 2023 '
                     },
                     {
                          name: 'Maha Shivratri Homam',
-                         date: '1st Mar 2022'
+                         date: 'Sat, 18th Feb 2023'
                     },
                     {
-                         name: 'International Day of Yoga',
-                         date: '21st June 2022'
+                         name: 'International Day of Yoga ',
+                         date: 'Wed, 21st June 2023 '
                     },
                     {
-                         name: 'Guru Purnima',
-                         date: '13th July 2022'
+                         name: 'Guru Purnima ',
+                         date: 'Mon, 3rd July 2023 '
                     },
                     {
                          name: 'Teachers Day',
-                         date: '5th Sep 2022'
+                         date: 'Tue, 5th Sep 2023'
                     },
                     {
-                         name: 'KR Puram 2nd Anniversary',
-                         date: '4th October 2022'
+                         name: 'KR Puram 3rd Anniversary',
+                         date: 'Wed, 4th October 2023'
                     },
                     {
-                         name: 'Indiranagar 1st Anniversary',
-                         date: '2nd December 2022'
+                         name: 'Indiranagar Sat, 2nd Anniversary',
+                         date: '2nd December 2023'
                     }
                ]
           }

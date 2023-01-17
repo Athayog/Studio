@@ -7,14 +7,18 @@ import {
      ListItem,
      OrderedList,
      Stack,
+     Text
+} from '@chakra-ui/layout';
+import {
      Table,
+     TableCaption,
+     TableContainer,
      Tbody,
      Td,
-     Text,
      Th,
      Thead,
      Tr
-} from '@chakra-ui/layout';
+} from '@chakra-ui/table';
 import React from 'react';
 
 function RPYTCourses() {
@@ -104,6 +108,140 @@ function RPYTCourses() {
                               <Text>Other certification Graduates</Text>
                          </Box> */}
                     </Box>
+                    <TableContainer mb={10} className="yic_table">
+                         <Heading fontSize="2xl" mt={10}>
+                              Shikshana Pada{' '}
+                         </Heading>
+                         <Table
+                              variant="striped"
+                              border="1px solid #ddd"
+                              mt={6}
+                              size="sm"
+                         >
+                              <Thead>
+                                   <Tr>
+                                        <Th>Time</Th>
+                                        <Th>Course</Th>
+                                        <Th>January </Th>
+                                        <Th>February </Th>
+                                        <Th>March</Th>
+                                        <Th>April</Th>
+                                        <Th>May</Th>
+                                        <Th>June</Th>
+                                        <Th>July</Th>
+                                        <Th>August </Th>
+                                        <Th>September</Th>
+                                        <Th>October</Th>
+                                        <Th>November</Th>
+                                        <Th>December</Th>
+                                   </Tr>
+                              </Thead>
+                              <Tbody>
+                                   <Tr>
+                                        <Td>
+                                             11:00am - 3:00pm (Weekday, Mon-Fri)
+                                             - Indiranagar
+                                        </Td>
+                                        <Td>RPYT</Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             6th March 2023 - 31st March 2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>
+                                             10am - 4pm (Weekend, Sat-Sun) -
+                                             Indiranagar
+                                        </Td>
+                                        <Td>RPYT</Td>
+                                        <Td></Td>
+                                        <Td>
+                                             5th February 2023 - 9th April 2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+
+                                   <Tr>
+                                        <Td>
+                                             11:00am - 3:00pm (Weekday, Mon-Fri)
+                                             - Indiranagar
+                                        </Td>
+                                        <Td>Yin Yoga </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>1st June 2023 - 20th June 2023</Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>
+                                             11:00am - 3:00pm (Weekday, Mon-Fri)
+                                             - Indiranagar
+                                        </Td>
+                                        <Td>RCYT </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>3rd July 2023 - 25th July 2023</Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>
+                                             11:00am - 4pm (Weekday, Mon-Fri) -
+                                             Indiranagar
+                                        </Td>
+                                        <Td>RYT 300 </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             2nd August 2023 - 30th October 2023
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                   </Tr>
+                              </Tbody>
+                         </Table>
+                    </TableContainer>
                </HeaderLayout>
                <ContactMore registerTo="RPYT" />
           </>

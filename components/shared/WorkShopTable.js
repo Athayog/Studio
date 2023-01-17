@@ -42,6 +42,7 @@ const WorkShopTable = () => {
                               <Th>Teacher</Th>
                               <Th>Location</Th>
                               <Th>Time</Th>
+                              <Th>Price</Th>
                          </Tr>
                     </Thead>
                     <Tbody>
@@ -51,6 +52,7 @@ const WorkShopTable = () => {
                               <Td>Aarthi</Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 AM - 12:00 PM</Td>
+                              <Td>600</Td>
                          </Tr>
                          <Tr>
                               <Td>1st, 2nd January</Td>
@@ -58,6 +60,7 @@ const WorkShopTable = () => {
                               <Td>Sharath</Td>
                               <Td></Td>
                               <Td></Td>
+                              <Td>5000</Td>
                          </Tr>
 
                          <Tr>
@@ -66,6 +69,7 @@ const WorkShopTable = () => {
                               <Td>Aarthi</Td>
                               <Td>Kr puram</Td>
                               <Td>10:00 AM - 12:30 PM</Td>
+                              <Td>800</Td>
                          </Tr>
                          <Tr>
                               <Td>Sun, Jan 22, 2023</Td>
@@ -73,6 +77,7 @@ const WorkShopTable = () => {
                               <Td>Srinath</Td>
                               <Td>Indiranagar</Td>
                               <Td>9:00 AM - 11:00 AM</Td>
+                              <Td>700</Td>
                          </Tr>
 
                          <Tr>
@@ -81,6 +86,7 @@ const WorkShopTable = () => {
                               <Td>Aarthi / Anjali</Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 AM - 12:30 PM</Td>
+                              <Td>800</Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, Feb 25, 2023</Td>
@@ -88,6 +94,7 @@ const WorkShopTable = () => {
                               <Td>Aarthi</Td>
                               <Td>KR puram</Td>
                               <Td>5:00 PM - 7:00 PM</Td>
+                              <Td>700</Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, Feb 11, 2023</Td>
@@ -95,6 +102,7 @@ const WorkShopTable = () => {
                               <Td>Sharath</Td>
                               <Td></Td>
                               <Td></Td>
+                              <Td>2500</Td>
                          </Tr>
 
                          <Tr>
@@ -103,6 +111,7 @@ const WorkShopTable = () => {
                               <Td>Aarthi</Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 AM - 12:00 PM</Td>
+                              <Td>800</Td>
                          </Tr>
                          <Tr>
                               <Td>Sun, Mar 19, 2023</Td>
@@ -110,10 +119,12 @@ const WorkShopTable = () => {
                               <Td>Srinath</Td>
                               <Td>Indrianagar</Td>
                               <Td>9:00 AM - 11:00 AM</Td>
+                              <Td>600</Td>
                          </Tr>
 
                          <Tr>
                               <Td>April</Td>
+                              <Td></Td>
                               <Td></Td>
                               <Td></Td>
                               <Td></Td>
@@ -126,6 +137,7 @@ const WorkShopTable = () => {
                               <Td>Anjali</Td>
                               <Td>KR Puram</Td>
                               <Td>10:00 AM - 11:30 AM</Td>
+                              <Td>1000</Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, May 13, 2023</Td>
@@ -133,6 +145,7 @@ const WorkShopTable = () => {
                               <Td>Sharath</Td>
                               <Td></Td>
                               <Td></Td>
+                              <Td>2500</Td>
                          </Tr>
 
                          <Tr>
@@ -141,6 +154,7 @@ const WorkShopTable = () => {
                               <Td>Shreeram Kasturi</Td>
                               <Td>KR Puram</Td>
                               <Td>10:00 AM - 11:00 AM</Td>
+                              <Td>900</Td>
                          </Tr>
 
                          <Tr>
@@ -149,6 +163,7 @@ const WorkShopTable = () => {
                               <Td>Shreeram Kasturi</Td>
                               <Td>KR Puram</Td>
                               <Td>10:00 AM - 11:00 AM</Td>
+                              <Td>900</Td>
                          </Tr>
                          <Tr>
                               <Td>15th , 16th July</Td>
@@ -156,6 +171,7 @@ const WorkShopTable = () => {
                               <Td>Sharath</Td>
                               <Td></Td>
                               <Td></Td>
+                              <Td>5000</Td>
                          </Tr>
 
                          <Tr>
@@ -164,6 +180,7 @@ const WorkShopTable = () => {
                               <Td>Madhusudan </Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 AM - 11:00 AM</Td>
+                              <Td>500</Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, Aug 19, 2023</Td>
@@ -171,6 +188,7 @@ const WorkShopTable = () => {
                               <Td>Sharath</Td>
                               <Td></Td>
                               <Td></Td>
+                              <Td>2500</Td>
                          </Tr>
 
                          <Tr>
@@ -179,6 +197,7 @@ const WorkShopTable = () => {
                               <Td>Madhusudan</Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 AM - 11:00 AM</Td>
+                              <Td>500</Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, Sep 16, 2023</Td>
@@ -186,6 +205,7 @@ const WorkShopTable = () => {
                               <Td>Madhusudan </Td>
                               <Td>KR Puram</Td>
                               <Td>4:00 PM - 5:00 PM</Td>
+                              <Td>500</Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, Sep 23, 2023</Td>
@@ -193,6 +213,7 @@ const WorkShopTable = () => {
                               <Td>GayaTri</Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 Am - 11:00 AM</Td>
+                              <Td>500</Td>
                          </Tr>
 
                          <Tr>
@@ -201,6 +222,7 @@ const WorkShopTable = () => {
                               <Td>Harsha</Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 AM - 11:00 AM</Td>
+                              <Td>500</Td>
                          </Tr>
                          <Tr>
                               <Td>Sun, Oct 29, 2023</Td>
@@ -208,6 +230,7 @@ const WorkShopTable = () => {
                               <Td>Madhusudhan</Td>
                               <Td>KR puram</Td>
                               <Td>10:00 AM - 10:30 AM</Td>
+                              <Td>300</Td>
                          </Tr>
 
                          <Tr>
@@ -216,6 +239,7 @@ const WorkShopTable = () => {
                               <Td>Any senior Teacher </Td>
                               <Td>Both</Td>
                               <Td>7:00 AM - 9:00 AM</Td>
+                              <Td>700</Td>
                          </Tr>
 
                          <Tr>
@@ -224,6 +248,7 @@ const WorkShopTable = () => {
                               <Td>GayaTri </Td>
                               <Td>KR Puram</Td>
                               <Td>10:00 AM - 11:00 AM</Td>
+                              <Td>700</Td>
                          </Tr>
                          <Tr>
                               <Td>4, 5 November 2023</Td>
@@ -231,6 +256,7 @@ const WorkShopTable = () => {
                               <Td>Shreeram Kasturi</Td>
                               <Td>Indiranagar</Td>
                               <Td>10:00 AM - 11:00 AM</Td>
+                              <Td>900</Td>
                          </Tr>
 
                          <Tr>
@@ -239,6 +265,31 @@ const WorkShopTable = () => {
                               <Td>Shreeram Kasturi</Td>
                               <Td>KR Puram</Td>
                               <Td>9:00 AM - 10:00 AM</Td>
+                              <Td>600</Td>
+                         </Tr>
+                         <Tr>
+                              <Td>March 22nd - 31st</Td>
+                              <Td>Pranyama</Td>
+                              <Td>Srinath</Td>
+                              <Td>Indiranagar</Td>
+                              <Td>10:00 AM - 11:30 AM</Td>
+                              <Td>2000</Td>
+                         </Tr>
+                         <Tr>
+                              <Td>May 8th - 12th </Td>
+                              <Td>Anthar Mouna Level - 1</Td>
+                              <Td>Srinath</Td>
+                              <Td>Indiranagar</Td>
+                              <Td>10:00 AM - 11:30 AM</Td>
+                              <Td>1000</Td>
+                         </Tr>
+                         <Tr>
+                              <Td>June 26th - 30th </Td>
+                              <Td>Anthar Mouna Level - 2</Td>
+                              <Td>Srinath</Td>
+                              <Td>Indiranagar</Td>
+                              <Td>10:00 AM - 11:30 AM</Td>
+                              <Td>1000</Td>
                          </Tr>
                     </Tbody>
                </Table>

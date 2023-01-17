@@ -208,7 +208,7 @@ function RYT200Courses() {
                          </Flex>
                     </Box>{' '}
                     <Heading fontSize="2xl">TTC Schedule</Heading>
-                    <TableContainer mb={10}>
+                    <TableContainer mb={10} className="yic_table">
                          <Table
                               variant="striped"
                               border="1px solid #ddd"
@@ -292,6 +292,35 @@ function RYT200Courses() {
                                              1st November 2023 - 22nd December
                                              2023 Indiranagar
                                         </Td>
+                                        <Td></Td>
+                                   </Tr>
+                                   <Tr>
+                                        <Td>
+                                             11:00am - 4pm (Weekday,
+                                             Mon-Fri)11:00am - 4pm (Weekend,
+                                             Sat-Sun)
+                                        </Td>
+                                        <Td>RYT 200 / YIC </Td>
+                                        <Td>
+                                             7th January 2023 - 30th April 2023,
+                                             KR puram
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             6th May 2023 - 27th August 2023,
+                                             Indiranagar
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td>
+                                             2nd September 2023 - 4th December
+                                             2023, KR puram
+                                        </Td>
+                                        <Td></Td>
+                                        <Td></Td>
                                         <Td></Td>
                                    </Tr>
                               </Tbody>
