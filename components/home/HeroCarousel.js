@@ -29,8 +29,8 @@ const HeroCarousel = () => {
           {
                id: 0,
                alt: 'Athayog Living',
-               imageUrl: jayantiDesktop,
-               url: '/swami-vivekananda-jayanti'
+               imageUrl: heroDesktop,
+               url: null
           }
 
           // {
@@ -45,8 +45,8 @@ const HeroCarousel = () => {
           {
                id: 0,
                alt: 'Athayog Living',
-               imageUrl: jayantiMobile,
-               url: '/swami-vivekananda-jayanti'
+               imageUrl: heroMobile,
+               url: null
           }
 
           // {

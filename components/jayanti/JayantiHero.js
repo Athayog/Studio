@@ -212,6 +212,7 @@ function JayantiHero() {
                                    margin="0 auto"
                                    variant="solid"
                                    colorScheme="ayorange"
+                                   disabled={true}
                               >
                                    Register Now
                               </Button>
@@ -229,6 +230,7 @@ function JayantiHero() {
                                    <Button
                                         variant="solid"
                                         colorScheme="gray"
+                                        disabled={true}
                                         size="sm"
                                    >
                                         Already Registered? Download Your Ticket

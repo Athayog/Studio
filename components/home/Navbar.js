@@ -56,15 +56,6 @@ const Navbar = () => {
 
      return (
           <Box zIndex={3} position="fixed" width="100%">
-               {router.pathname !== '/swami-vivekananda-jayanti' && (
-                    <Box bg="#890d0e" color="white" p={1} textAlign="center">
-                         <Link href="/swami-vivekananda-jayanti">
-                              Swami Vivekananda Jayanti Registrations Open!
-                              Click Here
-                         </Link>
-                    </Box>
-               )}
-
                <Center
                     bg="white"
                     transition="linear"
