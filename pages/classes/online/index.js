@@ -192,7 +192,7 @@ const Online = () => {
                                    fontWeight="normal"
                                    fontSize={{ base: '2xl', md: '3xl' }}
                               >
-                                   Online Group Class Schedule January 2022
+                                   Online Group Class Schedule January 2023
                               </Heading>
                               <Box
                                    overflowX="auto"
