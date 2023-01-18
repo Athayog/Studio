@@ -24,12 +24,31 @@ import {
 } from '@chakra-ui/table';
 import { chakra } from '@chakra-ui/react';
 import React from 'react';
+import RPYT from 'public/RYT.jpg';
+import Image from 'next/image';
 
 function RYT200Courses() {
      return (
           <>
                <HeaderLayout>
-                    <Heading>RYT 200 Course</Heading>
+                    <Flex
+                         width="100%"
+                         height="100%"
+                         position="relative"
+                         alignItems="end"
+                         gap={5}
+                    >
+                         <Heading>RYT 200 Course </Heading>
+                         <Box position="relative " height={50} width={50}>
+                              <Image
+                                   src={RPYT}
+                                   height={50}
+                                   width={50}
+                                   alt="RPYT Logo"
+                                   layout="responsive"
+                              />
+                         </Box>
+                    </Flex>
                     <Stack spacing={2} my={5}>
                          <Stack spacing={5}>
                               {' '}

@@ -21,13 +21,31 @@ import {
      Thead,
      Tr
 } from '@chakra-ui/table';
+import Image from 'next/image';
 import React from 'react';
-
+import RPYT from 'public/RPYT-logo.png';
 function RPYTCourses() {
      return (
           <>
                <HeaderLayout>
-                    <Heading>RPYT Course</Heading>
+                    <Flex
+                         width="100%"
+                         height="100%"
+                         position="relative"
+                         alignItems="end"
+                         gap={5}
+                    >
+                         <Heading>RPYT Course </Heading>
+                         <Box position="relative " height={50} width={50}>
+                              <Image
+                                   src={RPYT}
+                                   height={50}
+                                   width={50}
+                                   alt="RPYT Logo"
+                                   layout="responsive"
+                              />
+                         </Box>
+                    </Flex>
                     <Box fontSize="xl">
                          <Stack spacing={5} mt={10}>
                               <Text fontWeight="medium" fontSize="3xl">
