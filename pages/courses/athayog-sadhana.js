@@ -114,7 +114,7 @@ function AthayogSadhana() {
                               transformed from within.
                          </Text>
                     </Stack>
-                    <ShikshanaCalendarTable calendar={events} />
+                    {/* <ShikshanaCalendarTable calendar={events} /> */}
                </CoursesLayout>
                <ContactMore registerTo="athayog-sadhana" />
           </>
