@@ -25,7 +25,7 @@ function ShikshanaCalendarTable({ calendar }) {
                                         textAlign="left"
                                         mb={5}
                                    >
-                                        {name} Calendar 2022
+                                        {name} Calendar 2023
                                    </Heading>
                                    {data.map(
                                         ({
@@ -38,13 +38,12 @@ function ShikshanaCalendarTable({ calendar }) {
                                                   <Box
                                                        overflowX="auto"
                                                        mb={5}
-                                                       minWidth="min-content"
+                                                       className="yic_table"
                                                        key={uuidv4()}
                                                   >
                                                        <Table
                                                             bg="white"
                                                             borderWidth="1px"
-                                                            width="min-content"
                                                             boxShadow="sm"
                                                             rounded="sm"
                                                        >
