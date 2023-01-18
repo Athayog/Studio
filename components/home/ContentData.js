@@ -136,13 +136,6 @@ export const EmployeeData = {
                image: anjali,
                visible: true,
                designation: 'Teacher'
-          },
-          {
-               name: 'Deepak Mani',
-               info: `With rather early beginnings into the Yogic cosmos, Deepak was first introduced to Yog in middle school when he turned to it as a tool for self-help and growth. Over the years, he started to observe the change in his disposition and started to notice how his personality developed and how it affected his innate nature. What he witnessed reinforced his belief in the potential of Yoga. That is when he decided that he would dedicate his life to teaching the secrets of Yog.\n \nDeepak’s teaching experience has taken him places, entrusting him with a strong foundation in Ashtanga Yoga, Vinyasa and Hatha Yoga. His mantra is that “Yoga isn’t going to turn everyone's life around, but it has the potential to do so, you just need to be open to receiving it.”\n \nHe looks up to Swami Vivekananda, Paramahamsa Yogananda, Swami Shivananda and T Krishnamacharya for their teachings and discourses in Yoga and aspires to develop his teaching skills following in their footsteps.`,
-               image: deepak,
-               visible: true,
-               designation: 'Teacher'
           }
      ]
 };
