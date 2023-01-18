@@ -104,7 +104,7 @@ function RPYTCourses() {
                               <Thead bg="gray.200">
                                    <Tr>
                                         <Th>Course</Th>
-                                        <Th>Time & Location</Th>
+                                        <Th>Time</Th>
                                         <Th>Date</Th>
                                    </Tr>
                               </Thead>
@@ -112,9 +112,9 @@ function RPYTCourses() {
                                    <Tr>
                                         <Td fontWeight="bold">RPYT</Td>
                                         <Td>
-                                             11:00am - 3:00pm (Weekday, Mon-Fri)
+                                             11:00am - 3:00pm
                                              <chakra.span display="block">
-                                                  Indiranagar
+                                                  (Weekday, Mon-Fri)
                                              </chakra.span>
                                         </Td>
                                         <Td>
@@ -154,7 +154,7 @@ function RPYTCourses() {
                               <Thead bg="gray.200">
                                    <Tr>
                                         <Th>Course</Th>
-                                        <Th>Time & Location</Th>
+                                        <Th>Time</Th>
                                         <Th>Date</Th>
                                    </Tr>
                               </Thead>
@@ -162,9 +162,9 @@ function RPYTCourses() {
                                    <Tr>
                                         <Td fontWeight="bold">RPYT</Td>
                                         <Td>
-                                             10am - 4pm (Weekend, Sat-Sun)
+                                             10am - 4:00pm
                                              <chakra.span display="block">
-                                                  Indiranagar
+                                                  (Weekend, Sat-Sun)
                                              </chakra.span>
                                         </Td>
                                         <Td>
