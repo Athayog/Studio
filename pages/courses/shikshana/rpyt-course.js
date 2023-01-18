@@ -3,12 +3,14 @@ import ContactMore from '@/components/shared/ContactMore';
 import HeaderLayout from '@/components/shared/offerings/HeaderLayout';
 import {
      Box,
+     Flex,
      Heading,
      ListItem,
      OrderedList,
      Stack,
      Text
 } from '@chakra-ui/layout';
+import { chakra } from '@chakra-ui/react';
 import {
      Table,
      TableCaption,
@@ -90,154 +92,112 @@ function RPYTCourses() {
                          </Stack>
                          <Box mt={5}>
                               <Text>
-                                   <strong>Dates of Training: </strong>3rd Oct
-                                   to 31st Oct
-                              </Text>
-                              <Text>
-                                   <strong>Time:</strong> 11am to 3pm
-                              </Text>
-                              <Text>
                                    <strong>Place:</strong> Indiranagar studio
                               </Text>
                          </Box>
-                         {/* <Heading mt={10} fontSize="xl">
-                              Eligibility
-                         </Heading>
-                         <Box mt={5}>
-                              <Text>Certified RYT200 / YIC /any</Text>
-                              <Text>Other certification Graduates</Text>
-                         </Box> */}
                     </Box>
                     <TableContainer mb={10} className="yic_table">
                          <Heading fontSize="2xl" mt={10}>
-                              Shikshana Pada{' '}
+                              ShikshanaPada Schedule
                          </Heading>
-                         <Table
-                              variant="striped"
-                              border="1px solid #ddd"
-                              mt={6}
-                              size="md"
-                         >
-                              <Thead>
+                         <Table border="1px solid #ddd" mt={6} size="md">
+                              <Thead bg="gray.200">
                                    <Tr>
-                                        <Th>Time</Th>
                                         <Th>Course</Th>
-                                        <Th>January </Th>
-                                        <Th>February </Th>
-                                        <Th>March</Th>
-                                        <Th>April</Th>
-                                        <Th>May</Th>
-                                        <Th>June</Th>
-                                        <Th>July</Th>
-                                        <Th>August </Th>
-                                        <Th>September</Th>
-                                        <Th>October</Th>
-                                        <Th>November</Th>
-                                        <Th>December</Th>
+                                        <Th>Time & Location</Th>
+                                        <Th>Date</Th>
                                    </Tr>
                               </Thead>
                               <Tbody>
                                    <Tr>
+                                        <Td fontWeight="bold">RPYT</Td>
                                         <Td>
                                              11:00am - 3:00pm (Weekday, Mon-Fri)
-                                             - Indiranagar
+                                             <chakra.span display="block">
+                                                  Indiranagar
+                                             </chakra.span>
                                         </Td>
-                                        <Td>RPYT</Td>
-                                        <Td></Td>
-                                        <Td></Td>
                                         <Td>
-                                             6th March 2023 - 31st March 2023
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>6th March 2023</Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            31st March 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
                                         </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
                                    </Tr>
+                              </Tbody>
+                         </Table>
+                         <Table border="1px solid #ddd" mt={6} size="md">
+                              <Thead bg="gray.200">
                                    <Tr>
-                                        <Td>
-                                             10am - 4pm (Weekend, Sat-Sun) -
-                                             Indiranagar
-                                        </Td>
-                                        <Td>RPYT</Td>
-                                        <Td></Td>
-                                        <Td>
-                                             5th February 2023 - 9th April 2023
-                                        </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
+                                        <Th>Course</Th>
+                                        <Th>Time & Location</Th>
+                                        <Th>Date</Th>
                                    </Tr>
-
+                              </Thead>
+                              <Tbody>
                                    <Tr>
+                                        <Td fontWeight="bold">RPYT</Td>
                                         <Td>
-                                             11:00am - 3:00pm (Weekday, Mon-Fri)
-                                             - Indiranagar
+                                             10am - 4pm (Weekend, Sat-Sun)
+                                             <chakra.span display="block">
+                                                  Indiranagar
+                                             </chakra.span>
                                         </Td>
-                                        <Td>Yin Yoga </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>1st June 2023 - 20th June 2023</Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                   </Tr>
-                                   <Tr>
                                         <Td>
-                                             11:00am - 3:00pm (Weekday, Mon-Fri)
-                                             - Indiranagar
+                                             <Flex gap={3}>
+                                                  {' '}
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            5th February 2023
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>9th April 2023</Box>
+                                                  </Box>
+                                             </Flex>
                                         </Td>
-                                        <Td>RCYT </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>3rd July 2023 - 25th July 2023</Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                   </Tr>
-                                   <Tr>
-                                        <Td>
-                                             11:00am - 4pm (Weekday, Mon-Fri) -
-                                             Indiranagar
-                                        </Td>
-                                        <Td>RYT 300 </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>
-                                             2nd August 2023 - 30th October 2023
-                                        </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
                                    </Tr>
                               </Tbody>
                          </Table>
