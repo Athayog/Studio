@@ -22,6 +22,7 @@ import {
      Thead,
      Tr
 } from '@chakra-ui/table';
+import { chakra } from '@chakra-ui/react';
 import React from 'react';
 
 function RYT200Courses() {
@@ -208,124 +209,488 @@ function RYT200Courses() {
                          </Flex>
                     </Box>{' '}
                     <Heading fontSize="2xl">TTC Schedule</Heading>
-                    <TableContainer mb={10} className="yic_table">
-                         <Table
-                              variant="striped"
-                              border="1px solid #ddd"
-                              mt={6}
-                              size="md"
-                         >
-                              <Thead>
+                    <Box
+                         overflowX="auto"
+                         mb={5}
+                         className="yic_table"
+                         width="100%"
+                    >
+                         {' '}
+                         <Table border="1px solid #ddd" mt={6} size="md">
+                              <Thead bg="gray.200">
                                    <Tr>
-                                        <Th>Time</Th>
                                         <Th>Course</Th>
+                                        <Th>Time</Th>
                                         <Th>January </Th>
-                                        <Th>February </Th>
-                                        <Th>March</Th>
-                                        <Th>April</Th>
-                                        <Th>May</Th>
-                                        <Th>June</Th>
-                                        <Th>July</Th>
-                                        <Th>August </Th>
-                                        <Th>September</Th>
-                                        <Th>October</Th>
-                                        <Th>November</Th>
-                                        <Th>December</Th>
+                                        <Th>April </Th>
+                                        <Th>July </Th>
+                                        <Th>October </Th>
                                    </Tr>
                               </Thead>
                               <Tbody>
                                    <Tr>
+                                        <Td fontWeight="bold">RYT 200 / YIC</Td>
                                         <Td>
-                                             6am - 8:30am (Weekday, Mon-Fri) -
-                                             (Online)
+                                             6am - 8:30am
+                                             <chakra.span display="block">
+                                                  (Weekday, Mon-Fri) - (Online)
+                                             </chakra.span>
                                         </Td>
-                                        <Td>RYT 200 / YIC</Td>
                                         <Td>
-                                             2nd January 2023 - 31st March 2023
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            2nd January 2023
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            31st March 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
                                         </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>3rd April 2023 - 30th June 2023</Td>
-                                        <Td></Td>
-                                        <Td></Td>
                                         <Td>
-                                             3rd July 2023 - 29th September 2023
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            3rd April 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>30th June 2023</Box>
+                                                  </Box>
+                                             </Flex>
                                         </Td>
-                                        <Td></Td>
-                                        <Td></Td>
                                         <Td>
-                                             2nd October 2023 - 22nd December
-                                             2023
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            3rd July 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            29th September 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
                                         </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                   </Tr>
-
-                                   <Tr>
                                         <Td>
-                                             11:00am - 4pm (Weekday, Mon-Fri)
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            2nd October 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            22nd December 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
                                         </Td>
-                                        <Td>RYT 200 / YIC </Td>
-                                        <Td>
-                                             2nd January 2023 - 28th Feb 2023.
-                                             Indiranagar{' '}
-                                        </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>
-                                             3rd April 2023 - 31st May 2023, KR
-                                             puram
-                                        </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>
-                                             3rd July 2023 - 29th August 2023,
-                                             Indiranagar{' '}
-                                        </Td>
-                                        <Td></Td>
-                                        <Td>
-                                             4th September 2023 - 30th October
-                                             2023, KR puram
-                                        </Td>
-                                        <Td></Td>
-                                        <Td>
-                                             1st November 2023 - 22nd December
-                                             2023 Indiranagar
-                                        </Td>
-                                        <Td></Td>
-                                   </Tr>
-                                   <Tr>
-                                        <Td>
-                                             11:00am - 4pm (Weekday,
-                                             Mon-Fri)11:00am - 4pm (Weekend,
-                                             Sat-Sun)
-                                        </Td>
-                                        <Td>RYT 200 / YIC </Td>
-                                        <Td>
-                                             7th January 2023 - 30th April 2023,
-                                             KR puram
-                                        </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>
-                                             6th May 2023 - 27th August 2023,
-                                             Indiranagar
-                                        </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td>
-                                             2nd September 2023 - 4th December
-                                             2023, KR puram
-                                        </Td>
-                                        <Td></Td>
-                                        <Td></Td>
-                                        <Td></Td>
                                    </Tr>
                               </Tbody>
                          </Table>
-                    </TableContainer>
+                    </Box>
+                    <Box
+                         overflowX="auto"
+                         mb={5}
+                         className="yic_table"
+                         width="100%"
+                    >
+                         <Table border="1px solid #ddd" mt={6} size="md">
+                              <Thead bg="gray.200">
+                                   <Tr>
+                                        <Th>Course</Th>
+                                        <Th>Time</Th>
+                                        <Th>January - (Indiranagar)</Th>
+                                        <Th>April - (KR puram)</Th>
+                                        <Th>July - (Indiranagar)</Th>
+                                        <Th>September - (KR puram)</Th>
+                                        <Th>November - (Indiranagar)</Th>
+                                   </Tr>
+                              </Thead>
+                              <Tbody>
+                                   <Tr>
+                                        <Td fontWeight="bold">RYT 200 / YIC</Td>
+                                        <Td>
+                                             11:00am - 4pm
+                                             <chakra.span display="block">
+                                                  (Weekday, Mon-Fri)
+                                             </chakra.span>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            2nd January 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>28th Feb 2023</Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            3rd April 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>31st May 2023</Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            3rd July 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            29th August 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            4th September 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            30th October 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            1st November 2023
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            22nd December 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                   </Tr>
+                              </Tbody>
+                         </Table>
+                    </Box>
+                    <Box
+                         overflowX="auto"
+                         mb={5}
+                         className="yic_table"
+                         width="100%"
+                    >
+                         {' '}
+                         <Table border="1px solid #ddd" mt={6} size="md">
+                              <Thead bg="gray.200">
+                                   <Tr>
+                                        <Th>Course</Th>
+                                        <Th>Time</Th>
+                                        <Th>January - (KR puram)</Th>
+                                        <Th>May - (Indiranagar)</Th>
+                                        <Th>September - (KR puram)</Th>
+                                   </Tr>
+                              </Thead>
+                              <Tbody>
+                                   <Tr>
+                                        <Td fontWeight="bold">RYT 200 / YIC</Td>
+                                        <Td>
+                                             {' '}
+                                             11:00am - 4pm
+                                             <chakra.span display="block">
+                                                  (Weekend, Sat-Sun)
+                                             </chakra.span>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            7th January 2023{' '}
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            30th April 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box> 6th May 2023</Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            27th August 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                        <Td>
+                                             <Flex gap={3}>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            From
+                                                       </Box>
+                                                       <Box>
+                                                            {' '}
+                                                            2nd September 2023
+                                                       </Box>
+                                                  </Box>
+                                                  <Box
+                                                       borderRight="1px solid"
+                                                       borderColor="gray.100"
+                                                  >
+                                                       {' '}
+                                                  </Box>
+                                                  <Box>
+                                                       <Box
+                                                            color="gray.600"
+                                                            fontWeight="light"
+                                                       >
+                                                            To
+                                                       </Box>
+                                                       <Box>
+                                                            4th December 2023
+                                                       </Box>
+                                                  </Box>
+                                             </Flex>
+                                        </Td>
+                                   </Tr>
+                              </Tbody>
+                         </Table>
+                    </Box>
                </HeaderLayout>
                <ContactMore registerTo="ryt_200" />
           </>
