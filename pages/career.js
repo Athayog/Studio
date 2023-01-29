@@ -15,7 +15,7 @@ import {
 import Head from 'next/head';
 import Image from 'next/image';
 
-import career1 from 'public/career1.jpg';
+import career1 from 'public/athayogWorkshop.jpg';
 import career2 from 'public/career2.jpg';
 import { useState } from 'react';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';

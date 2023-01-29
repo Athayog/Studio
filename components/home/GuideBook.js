@@ -29,7 +29,7 @@ function GuideBook() {
                          on Postures
                     </Heading>
                     <a
-                         href="/GuideBookPostures.pdf"
+                         href="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/GuideBookPostures.pdf?alt=media&token=df0bb820-79bd-474d-8674-d2f55226f0fd"
                          downlaod="true"
                          target="_blank"
                     >
