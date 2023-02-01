@@ -11,7 +11,9 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import CreativeOne from 'public/creative_one.png';
-import CreativeTwo from 'public/short.png';
+import CreativeTwo from 'public/up_1.png';
+import CreativeThree from 'public/up_2.png';
+import CreativeFour from 'public/up_3.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -37,12 +39,32 @@ function UpcomingCourses() {
           {
                id: '2',
                url: '/',
-               alt: 'Mental Health In Women',
-               title: 'Mental Health In Women',
+               alt: 'Therapy For Diabetes',
+               title: 'Therapy For Diabetes',
                img: CreativeTwo,
-               timings: '10:00am - 12:30pm (KR Puram)',
+               timings: '10:00am - 12:30pm (Indiranagar)',
                type: 'Offline',
-               duration: ['28th Jan 2023']
+               duration: ['4th Feb 2023', 'Fee: ₹800']
+          },
+          {
+               id: '3',
+               url: '/',
+               alt: 'Yoga Nidra - An Introduction',
+               title: 'Yoga Nidra - An Introduction',
+               img: CreativeThree,
+               timings: '9:00am - 12:00pm (Indiranagar)',
+               type: 'Offline',
+               duration: ['19th Feb 2023', 'Fee: ₹800']
+          },
+          {
+               id: '4',
+               url: '/',
+               alt: 'Sound Meditation Workshop',
+               title: 'Sound Meditation Workshop',
+               img: CreativeFour,
+               timings: '5:00pm - 7:00pm (KR Puram)',
+               type: 'Offline',
+               duration: ['25th Feb (Saturday)', 'Fee: ₹700']
           }
      ];
 
