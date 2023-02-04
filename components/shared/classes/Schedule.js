@@ -286,7 +286,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class January 2023 (KR Puram)
+                              AthaYog Offline Class February 2023 (KR Puram)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -366,10 +366,12 @@ function Schedule() {
                                              >
                                                   8:00 AM - 9:00 AM
                                              </Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>
+                                                  Sivananda / Universal Harmony
+                                             </Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>Universal Harmony </Td>
                                              <Td>Transcending Transitions</Td>
+                                             <Td>Universal Harmony </Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
@@ -385,10 +387,10 @@ function Schedule() {
                                                   9:00 AM - 10:00 AM
                                                   (Women&apos;s Batch)
                                              </Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being </Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td></Td>
@@ -441,9 +443,7 @@ function Schedule() {
                                                   5:00 PM - 6:00 PM
                                              </Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>
-                                                  Sivananda / Universal Harmony
-                                             </Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
@@ -466,9 +466,7 @@ function Schedule() {
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
-                                             <Td>
-                                                  Sivananda / Universal Harmony
-                                             </Td>
+                                             <Td>Rhythm Of Being</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
