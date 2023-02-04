@@ -57,7 +57,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class January 2023 (Indiranagar)
+                              AthaYog Offline Class February 2023 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -101,10 +101,8 @@ function Schedule() {
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>
-                                                  Sivanandha / Universal Harmony
-                                             </Td>
-                                             <Td>Hata Vinyasa</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Universal Harmony </Td>
                                              <Td>Rhythm Of Being </Td>
                                         </Tr>
@@ -122,13 +120,9 @@ function Schedule() {
                                              <Td>Universal Harmony </Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>
-                                                  Sivanandha / Universal Harmony
-                                             </Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being </Td>
-                                             <Td>
-                                                  Sivanandha / Universal Harmony
-                                             </Td>
+                                             <Td>Universal Harmony</Td>
                                         </Tr>
 
                                         <Tr>
@@ -141,9 +135,7 @@ function Schedule() {
                                              >
                                                   8:00 AM - 9:00 AM
                                              </Td>
-                                             <Td>
-                                                  Sivanandha / Universal Harmony
-                                             </Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Universal Harmony </Td>
                                              <Td>Transcending Transitions</Td>
@@ -236,7 +228,7 @@ function Schedule() {
                                              </Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>Yin Yoga</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
@@ -554,10 +546,9 @@ function Schedule() {
                                              as={BsFillArrowRightCircleFill}
                                              color="green.500"
                                         />
-                                        Note: 14th (Makar Sankrati) and 26th
-                                        (Republic Holiday) the classes will be
-                                        happening from 6 AM - 10 AM (No evening
-                                        classes)
+                                        Note: 18th (Maha Shivaratari) classes
+                                        will be happening from 6 AM - 10 AM (No
+                                        evening classes)
                                    </ListItem>
                                    <ListItem>
                                         <ListIcon
