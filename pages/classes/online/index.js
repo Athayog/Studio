@@ -192,7 +192,7 @@ const Online = () => {
                                    fontWeight="normal"
                                    fontSize={{ base: '2xl', md: '3xl' }}
                               >
-                                   Online Group Class Schedule January 2023
+                                   Online Group Class Schedule February 2023
                               </Heading>
                               <Box
                                    overflowX="auto"
@@ -278,7 +278,10 @@ const Online = () => {
 
                                                   <Td>-- </Td>
                                                   <Td>Rhythm Of Being </Td>
-                                                  <Td>Universal Harmony </Td>
+                                                  <Td>
+                                                       Sivanandha / Universal
+                                                       Harmony{' '}
+                                                  </Td>
                                              </Tr>
 
                                              <Tr>
@@ -339,10 +342,9 @@ const Online = () => {
                                              as={BsFillArrowRightCircleFill}
                                              color="green.500"
                                         />
-                                        Note: 14th (Makar Sankrati) and 26th
-                                        (Republic Holiday) the classes will be
-                                        happening from 6 AM - 10 AM (No evening
-                                        classes)
+                                        Note: 18th (Maha Shivaratari) classes
+                                        will be happening from 6 AM - 10 AM (No
+                                        evening classes)
                                    </ListItem>
                               </List>
                          </Box>
