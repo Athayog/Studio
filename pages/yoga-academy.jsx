@@ -2,9 +2,8 @@ import Gallery from '@/components/lakshayan/Gallery';
 import Hero from '@/components/lakshayan/Hero';
 import Register from '@/components/lakshayan/Register';
 import HomeLayout from '@/components/layout/HomeLayout';
-import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Link } from 'react-scroll';
 
 function YogaAcademy() {
      const images = [
@@ -23,8 +22,8 @@ function YogaAcademy() {
           <Box>
                <section>
                     <Hero heroImage={images[1]} />
-               </section>
-               <Box bg="blackAlpha.900" color="whiteAlpha.900">
+               </section>{' '}
+               <Box bg="white" color="gray.900" id="main-section">
                     {' '}
                     <Flex
                          gap={10}
@@ -66,7 +65,6 @@ function YogaAcademy() {
                          </Box>
                     </Flex>
                </Box>
-
                <Gallery />
                <Register heroImage={images[2]} />
           </Box>

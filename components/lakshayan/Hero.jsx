@@ -6,7 +6,6 @@ import {
      Divider,
      Flex,
      Heading,
-     Link,
      Stack,
      Text
 } from '@chakra-ui/react';
@@ -14,6 +13,8 @@ import Image from 'next/image';
 import RetreatHero from 'public/retreat-hero.jpg';
 import React from 'react';
 import NavbarHelper from '../shared/NavbarHelper';
+import { Link } from 'react-scroll';
+
 function Hero({ heroImage }) {
      return (
           <>
@@ -91,16 +92,27 @@ function Hero({ heroImage }) {
                               - Marathahalli Rd, Bengaluru, Karnataka 562125
                          </Flex>
                          <Flex gap={5} justifyContent="center">
-                              <Button
-                                   leftIcon={<ChevronDownIcon />}
-                                   variant="solid"
-                                   mt={10}
-                                   bg="white"
-                                   color="black"
-                                   rounded="none"
+                              <Link
+                                   activeClass="active"
+                                   to="main-section"
+                                   spy={true}
+                                   smooth={true}
+                                   duration={500}
+                                   offset={-100}
                               >
-                                   Scroll For Details
-                              </Button>
+                                   <Button
+                                        leftIcon={<ChevronDownIcon />}
+                                        variant="solid"
+                                        mt={10}
+                                        bg="white"
+                                        color="black"
+                                        rounded="none"
+                                        href="#main-section"
+                                   >
+                                        Scroll For Details
+                                   </Button>
+                              </Link>
+
                               <a
                                    href=" https://goo.gl/maps/AbosMZFrKEvEgueV7"
                                    target="_blank"

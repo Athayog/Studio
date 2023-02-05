@@ -48,12 +48,11 @@ const Gallery = ({ images }) => {
      const [indexPhotos, setIndexPhotos] = React.useState(-1);
 
      return (
-          <Box spacing={5} bg="blackAlpha.800" height="100%">
-               <Box
-                    padding={{ base: '1rem', md: '1rem', lg: '1rem' }}
-                    height="100%"
-                    margin="auto"
-               >
+          <Box spacing={5} py={10} bg="blackAlpha.50" color="gray.900">
+               <Box maxW="80vw" height="100%" margin="auto" pb={20}>
+                    <Heading fontSize="3xl" mb={5}>
+                         Gallery
+                    </Heading>
                     <PhotoAlbum
                          photos={photos}
                          layout="masonry"
