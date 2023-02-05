@@ -114,13 +114,16 @@ function Register({ heroImage }) {
                     textColor="gray.900"
                     position="relative"
                     py={10}
-                    bg="white"
+                    bg="blackAlpha.100"
                >
                     <Box
                          width={{ base: '100%', lg: 'container.lg' }}
                          position={{ base: 'relative' }}
                          textAlign="center"
                          p={{ base: '5', md: '10' }}
+                         bg="white"
+                         rounded="md"
+                         shadow="base"
                     >
                          <Stack spacing={5}>
                               <Heading
