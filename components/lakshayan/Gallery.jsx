@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import PhotoAlbum from 'react-photo-album';
-import NextJsImage from './NextJSImages.tsx';
+import NextJsImage from './NextJsImage.tsx';
 import photos from './photos.tsx';
 
 SwiperCore.use([Navigation, Pagination, EffectFade]);
