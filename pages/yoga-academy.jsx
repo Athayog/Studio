@@ -1,5 +1,7 @@
 import Hero from '@/components/lakshayan/Hero';
+import Register from '@/components/lakshayan/Register';
 import HomeLayout from '@/components/layout/HomeLayout';
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 
 function YogaAcademy() {
      const images = [
@@ -15,9 +17,55 @@ function YogaAcademy() {
           'https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/lakshay_academy%2Facademy_9.jpg?alt=media&token=e9f7c68d-c154-466c-a91f-b25284e6ad84'
      ];
      return (
-          <section>
-               <Hero heroImage={images[1]} />
-          </section>
+          <Box>
+               <section>
+                    <Hero heroImage={images[1]} />
+               </section>
+               <Box bg="blackAlpha.900" color="whiteAlpha.900">
+                    {' '}
+                    <Flex
+                         gap={10}
+                         direction="column"
+                         maxW="80vw"
+                         margin="0 auto"
+                         py={20}
+                    >
+                         <Box>
+                              <Heading fontSize="3xl">About Athayog</Heading>
+                              <Text mt={3} fontSize="xl">
+                                   AthaYog Living is an institution of Yog,
+                                   devoted to preserving the long-standing
+                                   legacy of Yoga by propagating the true
+                                   purpose, philosophies and practices
+                                   associated with Yogic wisdom. Our academy and
+                                   teachers are certified with Yoga Alliance,
+                                   which is a globally recognised certification!
+                              </Text>
+                         </Box>
+                         <Box fontSize="xl">
+                              <Text>
+                                   AthaYog Living is launching a Yoga academy in
+                                   Lakshyan Academy of Sports! Lakshyan Academy
+                                   of Sports offers world-class sports
+                                   facilities, with the goal of producing
+                                   tomorrow&apos;s champions. They are located
+                                   in Sarjapur, Bangalore.
+                              </Text>
+                              <Text mt={5}>
+                                   Regular classes by AthaYog will take place at{' '}
+                                   <u> 7AM, 8AM, 9AM, 5 PM and 6 PM</u>. These
+                                   sessions are open to all with flexible
+                                   timings, skillful teachers, hygienic
+                                   environment, best infrastructure, authentic
+                                   yoga practices, holistic yoga hall and
+                                   spacious parking facility.
+                              </Text>
+                         </Box>
+                    </Flex>
+               </Box>
+
+               <Register heroImage={images[2]} />
+          </Box>
      );
 }
 export default YogaAcademy;
