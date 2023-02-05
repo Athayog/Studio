@@ -3,6 +3,8 @@ import Hero from '@/components/lakshayan/Hero';
 import Register from '@/components/lakshayan/Register';
 import HomeLayout from '@/components/layout/HomeLayout';
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 function YogaAcademy() {
      const images = [
@@ -65,8 +67,8 @@ function YogaAcademy() {
                     </Flex>
                </Box>
 
-               <Register heroImage={images[2]} />
                <Gallery />
+               <Register heroImage={images[2]} />
           </Box>
      );
 }
