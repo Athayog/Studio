@@ -1,3 +1,4 @@
+import Gallery from '@/components/lakshayan/Gallery';
 import Hero from '@/components/lakshayan/Hero';
 import Register from '@/components/lakshayan/Register';
 import HomeLayout from '@/components/layout/HomeLayout';
@@ -65,6 +66,7 @@ function YogaAcademy() {
                </Box>
 
                <Register heroImage={images[2]} />
+               <Gallery />
           </Box>
      );
 }
