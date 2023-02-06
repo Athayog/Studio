@@ -48,7 +48,7 @@ const Gallery = ({ images }) => {
      const [indexPhotos, setIndexPhotos] = React.useState(-1);
 
      return (
-          <Box spacing={5} py={10} bg="blackAlpha.50" color="gray.900">
+          <Box spacing={5} py={10} bg="blackAlpha.900" color="gray.100">
                <Box maxW="80vw" height="100%" margin="auto" pb={20}>
                     <Heading fontSize="3xl" mb={5}>
                          Gallery

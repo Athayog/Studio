@@ -28,7 +28,7 @@ function Hero({ heroImage }) {
                     direction="column"
                     textColor="white"
                     position="relative"
-                    background="linear-gradient(to bottom,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0.8))"
+                    background="linear-gradient(to bottom,rgba(0,0,0,0.6) 10%,rgba(0,0,0,0.6))"
                >
                     <Box zIndex={-1}>
                          <Image
