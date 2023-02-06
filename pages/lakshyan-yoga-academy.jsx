@@ -64,118 +64,125 @@ function YogaAcademy() {
                                    tomorrow&apos;s champions. They are located
                                    in Sarjapur, Bangalore.
                               </Text>
-                              <Text mt={12}>
-                                   Regular classes by AthaYog will take place at{' '}
+                              <Box mt={10}>
+                                   <Text>
+                                        Regular classes by AthaYog will take
+                                        place at{' '}
+                                        <List spacing={3} mt={3}>
+                                             <ListItem>
+                                                  <ListIcon
+                                                       as={TimeIcon}
+                                                       color="green.500"
+                                                  />
+                                                  7:00 AM
+                                             </ListItem>
+                                             <ListItem>
+                                                  {' '}
+                                                  <ListIcon
+                                                       as={TimeIcon}
+                                                       color="green.500"
+                                                  />
+                                                  8:00 AM
+                                             </ListItem>
+                                             <ListItem>
+                                                  {' '}
+                                                  <ListIcon
+                                                       as={TimeIcon}
+                                                       color="green.500"
+                                                  />
+                                                  9:00 AM
+                                             </ListItem>
+                                             <ListItem>
+                                                  {' '}
+                                                  <ListIcon
+                                                       as={TimeIcon}
+                                                       color="green.500"
+                                                  />
+                                                  5:00 PM
+                                             </ListItem>
+                                             <ListItem>
+                                                  {' '}
+                                                  <ListIcon
+                                                       as={TimeIcon}
+                                                       color="green.500"
+                                                  />
+                                                  6:00 PM
+                                             </ListItem>
+                                        </List>
+                                   </Text>
+                              </Box>
+
+                              <Box mt={10}>
+                                   {' '}
+                                   <Text>
+                                        These sessions are open to all with
+                                   </Text>
                                    <List spacing={3} mt={3}>
                                         <ListItem>
+                                             {' '}
                                              <ListIcon
-                                                  as={TimeIcon}
+                                                  as={MdCheckCircle}
                                                   color="green.500"
                                              />
-                                             7:00 AM
+                                             Flexible timings
                                         </ListItem>
                                         <ListItem>
                                              {' '}
                                              <ListIcon
-                                                  as={TimeIcon}
+                                                  as={MdCheckCircle}
                                                   color="green.500"
                                              />
-                                             8:00 AM
+                                             Skillful teachers
                                         </ListItem>
                                         <ListItem>
                                              {' '}
                                              <ListIcon
-                                                  as={TimeIcon}
+                                                  as={MdCheckCircle}
                                                   color="green.500"
                                              />
-                                             9:00 AM
+                                             Hygienic environment
                                         </ListItem>
                                         <ListItem>
                                              {' '}
                                              <ListIcon
-                                                  as={TimeIcon}
+                                                  as={MdCheckCircle}
                                                   color="green.500"
                                              />
-                                             5:00 PM
+                                             Best infrastructure
                                         </ListItem>
                                         <ListItem>
                                              {' '}
                                              <ListIcon
-                                                  as={TimeIcon}
+                                                  as={MdCheckCircle}
                                                   color="green.500"
                                              />
-                                             6:00 PM
+                                             Authentic yoga practices
+                                        </ListItem>
+                                        <ListItem>
+                                             {' '}
+                                             <ListIcon
+                                                  as={MdCheckCircle}
+                                                  color="green.500"
+                                             />
+                                             Best infrastructure
+                                        </ListItem>
+                                        <ListItem>
+                                             {' '}
+                                             <ListIcon
+                                                  as={MdCheckCircle}
+                                                  color="green.500"
+                                             />
+                                             Holistic yoga hall
+                                        </ListItem>
+                                        <ListItem>
+                                             <ListIcon
+                                                  as={MdCheckCircle}
+                                                  color="green.500"
+                                             />
+                                             Spacious parking facility
                                         </ListItem>
                                    </List>
-                              </Text>
-                              <Text mt={12}>
-                                   These sessions are open to all with
-                              </Text>
-                              <List spacing={3} mt={3}>
-                                   <ListItem>
-                                        {' '}
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Flexible timings
-                                   </ListItem>
-                                   <ListItem>
-                                        {' '}
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Skillful teachers
-                                   </ListItem>
-                                   <ListItem>
-                                        {' '}
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Hygienic environment
-                                   </ListItem>
-                                   <ListItem>
-                                        {' '}
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Best infrastructure
-                                   </ListItem>
-                                   <ListItem>
-                                        {' '}
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Authentic yoga practices
-                                   </ListItem>
-                                   <ListItem>
-                                        {' '}
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Best infrastructure
-                                   </ListItem>
-                                   <ListItem>
-                                        {' '}
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Holistic yoga hall
-                                   </ListItem>
-                                   <ListItem>
-                                        <ListIcon
-                                             as={MdCheckCircle}
-                                             color="green.500"
-                                        />
-                                        Spacious parking facility
-                                   </ListItem>
-                              </List>
+                              </Box>
                          </Box>
                     </Flex>
                </Box>
