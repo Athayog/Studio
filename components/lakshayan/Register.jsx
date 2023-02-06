@@ -303,7 +303,7 @@ function Register({ heroImage }) {
                                                   })}
                                                   name="course"
                                                   isReadOnly
-                                                  value={'Lakshayan'}
+                                                  value={'Lakshyan'}
                                                   disabled
                                              >
                                                   <option value="Space">
