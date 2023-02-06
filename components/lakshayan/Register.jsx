@@ -111,7 +111,7 @@ function Register({ heroImage }) {
                     textColor="gray.900"
                     position="relative"
                     py={10}
-                    bg="blackAlpha.`00"
+                    bg="blackAlpha.100"
                     color="gray.900"
                >
                     <Box
@@ -119,8 +119,7 @@ function Register({ heroImage }) {
                          position={{ base: 'relative' }}
                          textAlign="center"
                          p={{ base: '5', md: '10' }}
-                         bg="gray.700"
-                         color="gray.100"
+                         bg="white"
                          rounded="md"
                          shadow="base"
                     >
@@ -144,9 +143,9 @@ function Register({ heroImage }) {
                               mt={2}
                               rounded="sm"
                               p={2}
-                              borderColor="green.300"
+                              borderColor="green.600"
                               fontWeight="bold"
-                              color="green.300"
+                              color="green.600"
                          >
                               Get 2 FREE trial classes and sign up for our
                               monthly packages! Grab the Exclusive Launch Offer
