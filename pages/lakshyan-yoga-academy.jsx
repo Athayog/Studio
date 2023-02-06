@@ -158,14 +158,7 @@ function YogaAcademy() {
                                              />
                                              Authentic yoga practices
                                         </ListItem>
-                                        <ListItem>
-                                             {' '}
-                                             <ListIcon
-                                                  as={MdCheckCircle}
-                                                  color="green.500"
-                                             />
-                                             Best infrastructure
-                                        </ListItem>
+
                                         <ListItem>
                                              {' '}
                                              <ListIcon
