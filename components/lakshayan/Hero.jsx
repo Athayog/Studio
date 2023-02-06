@@ -91,7 +91,20 @@ function Hero({ heroImage }) {
                               126/5, Sulikunte Village, Varthur Hobli, Sarjapur
                               - Marathahalli Rd, Bengaluru, Karnataka 562125
                          </Flex>
-                         <Flex gap={5} justifyContent="center">
+                         <Flex
+                              gap={{
+                                   base: '3',
+                                   md: '3',
+                                   lg: '5'
+                              }}
+                              justifyContent="center"
+                              direction={{
+                                   base: 'column',
+                                   md: 'row',
+                                   lg: 'row'
+                              }}
+                              mt={10}
+                         >
                               <Link
                                    activeClass="active"
                                    to="main-section"
@@ -103,7 +116,6 @@ function Hero({ heroImage }) {
                                    <Button
                                         leftIcon={<ChevronDownIcon />}
                                         variant="solid"
-                                        mt={10}
                                         bg="white"
                                         color="black"
                                         rounded="none"
@@ -120,7 +132,6 @@ function Hero({ heroImage }) {
                                    <Button
                                         leftIcon={<LinkIcon />}
                                         variant="solid"
-                                        mt={10}
                                         bg="white"
                                         color="black"
                                         rounded="none"

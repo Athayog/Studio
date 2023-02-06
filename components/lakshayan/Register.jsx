@@ -352,6 +352,7 @@ function Register({ heroImage }) {
                                                        'Others'
                                                   ]}
                                                   name="conditions"
+                                                  width="fit-content"
                                              >
                                                   <Stack
                                                        direction={{
@@ -400,9 +401,12 @@ function Register({ heroImage }) {
                                         <SimpleGrid
                                              minChildWidth="400px"
                                              spacing="20px"
-                                             width="100%"
+                                             width="80%"
                                         >
-                                             <FormControl id="referral">
+                                             <FormControl
+                                                  id="referral"
+                                                  width="fit-content"
+                                             >
                                                   <FormLabel>
                                                        How did you hear about
                                                        us?
