@@ -64,7 +64,7 @@ function YogaAcademy() {
                                    tomorrow&apos;s champions. They are located
                                    in Sarjapur, Bangalore.
                               </Text>
-                              <Text mt={10}>
+                              <Text mt={12}>
                                    Regular classes by AthaYog will take place at{' '}
                                    <List spacing={3} mt={3}>
                                         <ListItem>
@@ -108,7 +108,7 @@ function YogaAcademy() {
                                         </ListItem>
                                    </List>
                               </Text>
-                              <Text mt={10}>
+                              <Text mt={12}>
                                    These sessions are open to all with
                               </Text>
                               <List spacing={3} mt={3}>
