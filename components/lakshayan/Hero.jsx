@@ -61,7 +61,7 @@ function Hero({ heroImage }) {
                                         fontWeight="bold"
                                         display="block"
                                    >
-                                        LAKSHAYAN
+                                        LAKSHYAN
                                    </chakra.span>
                                    <chakra.span
                                         fontSize="2xl"

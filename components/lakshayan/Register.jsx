@@ -69,28 +69,25 @@ function Register({ heroImage }) {
                          duration: 5000,
                          isClosable: true
                     });
-                    fetch(
-                         'https://formsubmit.co/ajax/harsimransinghbarki@gmail.com',
-                         {
-                              method: 'POST',
-                              headers: {
-                                   'Content-Type': 'application/json',
-                                   Accept: 'application/json'
-                              },
-                              body: JSON.stringify({
-                                   FormType: 'Lakshayan Form',
-                                   name,
-                                   email,
-                                   phone,
-                                   gender,
-                                   experience,
-                                   style,
-                                   referral,
-                                   conditions: conditions.toString(),
-                                   coursename
-                              })
-                         }
-                    );
+                    fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
+                         method: 'POST',
+                         headers: {
+                              'Content-Type': 'application/json',
+                              Accept: 'application/json'
+                         },
+                         body: JSON.stringify({
+                              FormType: 'Lakshayan Form',
+                              name,
+                              email,
+                              phone,
+                              gender,
+                              experience,
+                              style,
+                              referral,
+                              conditions: conditions.toString(),
+                              coursename
+                         })
+                    });
                })
                .catch((error) => {
                     toast({
@@ -114,8 +111,8 @@ function Register({ heroImage }) {
                     textColor="gray.900"
                     position="relative"
                     py={10}
-                    bg="blackAlpha.900"
-                    color="gray.100"
+                    bg="blackAlpha.`00"
+                    color="gray.900"
                >
                     <Box
                          width={{ base: '100%', lg: 'container.lg' }}

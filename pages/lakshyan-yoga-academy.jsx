@@ -35,7 +35,7 @@ function YogaAcademy() {
                <section>
                     <Hero heroImage={images[1]} />
                </section>{' '}
-               <Box bg="blackAlpha.900" color="gray.100" id="main-section">
+               <Box bg="white" color="gray.900" id="main-section">
                     <Flex
                          gap={10}
                          direction="column"
