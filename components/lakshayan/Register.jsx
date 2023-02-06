@@ -1,4 +1,4 @@
-import { regiterForLakshayan } from '@/lib/db/forms';
+import { regiterForLakshyan } from '@/lib/db/forms';
 import {
      Box,
      Button,
@@ -36,7 +36,7 @@ function Register({ heroImage }) {
           conditions
      }) => {
           setLoading(true);
-          let coursename = 'lakshayan';
+          let coursename = 'lakshyan';
           console.log(
                name,
                email,
@@ -49,7 +49,7 @@ function Register({ heroImage }) {
                coursename
           );
 
-          regiterForLakshayan(
+          regiterForLakshyan(
                name,
                email,
                phone,
@@ -330,8 +330,8 @@ function Register({ heroImage }) {
                                                   <option value="Trial">
                                                        Free Trial
                                                   </option>
-                                                  <option value="Lakshayan">
-                                                       Lakshayan
+                                                  <option value="Lakshyan">
+                                                       Lakshyan
                                                   </option>
                                              </Select>
                                              <FormErrorMessage>
