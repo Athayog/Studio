@@ -5,6 +5,7 @@ import HomeLayout from '@/components/layout/HomeLayout';
 import { TimeIcon } from '@chakra-ui/icons';
 import {
      Box,
+     Divider,
      Flex,
      Heading,
      List,
@@ -12,8 +13,18 @@ import {
      ListItem,
      OrderedList,
      Text,
-     UnorderedList
+     UnorderedList,
+     Table,
+     Thead,
+     Tbody,
+     Tfoot,
+     Tr,
+     Th,
+     Td,
+     TableCaption,
+     TableContainer
 } from '@chakra-ui/react';
+import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
@@ -64,62 +75,13 @@ function YogaAcademy() {
                                    tomorrow&apos;s champions. They are located
                                    in Sarjapur, Bangalore.
                               </Text>
-                              <Box mt={10}>
-                                   <Text>
-                                        Regular classes by AthaYog will take
-                                        place at{' '}
-                                        <List spacing={3} mt={3}>
-                                             <ListItem>
-                                                  <ListIcon
-                                                       as={TimeIcon}
-                                                       color="green.500"
-                                                  />
-                                                  7:00 AM
-                                             </ListItem>
-                                             <ListItem>
-                                                  {' '}
-                                                  <ListIcon
-                                                       as={TimeIcon}
-                                                       color="green.500"
-                                                  />
-                                                  8:00 AM
-                                             </ListItem>
-                                             <ListItem>
-                                                  {' '}
-                                                  <ListIcon
-                                                       as={TimeIcon}
-                                                       color="green.500"
-                                                  />
-                                                  9:00 AM
-                                             </ListItem>
-                                             <ListItem>
-                                                  {' '}
-                                                  <ListIcon
-                                                       as={TimeIcon}
-                                                       color="green.500"
-                                                  />
-                                                  5:00 PM
-                                             </ListItem>
-                                             <ListItem>
-                                                  {' '}
-                                                  <ListIcon
-                                                       as={TimeIcon}
-                                                       color="green.500"
-                                                  />
-                                                  6:00 PM
-                                             </ListItem>
-                                        </List>
-                                   </Text>
-                              </Box>
 
                               <Box mt={10}>
-                                   {' '}
                                    <Text>
                                         These sessions are open to all with
                                    </Text>
                                    <List spacing={3} mt={3}>
                                         <ListItem>
-                                             {' '}
                                              <ListIcon
                                                   as={MdCheckCircle}
                                                   color="green.500"
@@ -127,7 +89,6 @@ function YogaAcademy() {
                                              Flexible timings
                                         </ListItem>
                                         <ListItem>
-                                             {' '}
                                              <ListIcon
                                                   as={MdCheckCircle}
                                                   color="green.500"
@@ -135,7 +96,6 @@ function YogaAcademy() {
                                              Skillful teachers
                                         </ListItem>
                                         <ListItem>
-                                             {' '}
                                              <ListIcon
                                                   as={MdCheckCircle}
                                                   color="green.500"
@@ -143,7 +103,6 @@ function YogaAcademy() {
                                              Hygienic environment
                                         </ListItem>
                                         <ListItem>
-                                             {' '}
                                              <ListIcon
                                                   as={MdCheckCircle}
                                                   color="green.500"
@@ -151,7 +110,6 @@ function YogaAcademy() {
                                              Best infrastructure
                                         </ListItem>
                                         <ListItem>
-                                             {' '}
                                              <ListIcon
                                                   as={MdCheckCircle}
                                                   color="green.500"
@@ -160,7 +118,6 @@ function YogaAcademy() {
                                         </ListItem>
 
                                         <ListItem>
-                                             {' '}
                                              <ListIcon
                                                   as={MdCheckCircle}
                                                   color="green.500"
@@ -175,6 +132,120 @@ function YogaAcademy() {
                                              Spacious parking facility
                                         </ListItem>
                                    </List>
+                              </Box>
+
+                              <Box mt={10}>
+                                   <Text>Enrolment Fees:</Text>
+                                   <List spacing={3} mt={3}>
+                                        <ListItem>
+                                             <ListIcon
+                                                  as={BsArrowRightCircleFill}
+                                                  color="gray.500"
+                                             />
+                                             2-Days program: ₹3,333/- (₹9,999/-
+                                             Quarterly)
+                                        </ListItem>
+                                        <ListItem>
+                                             <ListIcon
+                                                  as={BsArrowRightCircleFill}
+                                                  color="gray.500"
+                                             />
+                                             3-Days program: ₹4,499/- (₹13,499/-
+                                             Quarterly)
+                                        </ListItem>
+                                        <ListItem>
+                                             <ListIcon
+                                                  as={BsArrowRightCircleFill}
+                                                  color="gray.500"
+                                             />
+                                             4-Days program: ₹4,999/- (₹14,999/-
+                                             Quarterly)
+                                        </ListItem>
+                                   </List>
+                              </Box>
+
+                              <Box mt={10}>
+                                   <Heading
+                                        fontSize="2xl"
+                                        fontWeight="bold"
+                                        textTransform="uppercase"
+                                   >
+                                        Batches Summary
+                                   </Heading>
+                                   <TableContainer
+                                        border="1px solid"
+                                        borderColor="gray.200"
+                                        maxW="fit-content"
+                                        mt={2}
+                                   >
+                                        <Table variant="striped" size="md">
+                                             <Thead>
+                                                  <Tr>
+                                                       <Th>Days</Th>
+                                                       <Th>Timings</Th>
+                                                  </Tr>
+                                             </Thead>
+                                             <Tbody>
+                                                  <Tr>
+                                                       <Td>
+                                                            Monday To Thursday
+                                                       </Td>
+                                                       <Td>
+                                                            {' '}
+                                                            6:30 AM to 7:30 AM
+                                                       </Td>
+                                                       <Td></Td>
+                                                  </Tr>
+                                                  <Tr>
+                                                       <Td></Td>
+                                                       <Td>
+                                                            {' '}
+                                                            8:00 AM to 9:00 AM
+                                                       </Td>
+                                                       <Td></Td>
+                                                  </Tr>
+                                                  <Tr>
+                                                       <Td></Td>
+                                                       <Td>
+                                                            {' '}
+                                                            9:30 AM to 10:30 AM
+                                                       </Td>
+                                                       <Td></Td>
+                                                  </Tr>
+                                                  <Tr>
+                                                       <Td></Td>
+                                                       <Td>
+                                                            4:30 PM to 05:30 PM
+                                                       </Td>
+                                                       <Td></Td>
+                                                  </Tr>
+                                                  <Tr>
+                                                       <Td>
+                                                            Saturday & Sunday
+                                                       </Td>
+                                                       <Td>
+                                                            8:00 AM to 9:00 AM
+                                                       </Td>
+
+                                                       <Td></Td>
+                                                  </Tr>
+                                                  <Tr>
+                                                       <Td></Td>
+                                                       <Td>
+                                                            9:30 AM to 10:30 AM
+                                                       </Td>
+                                                       <Td></Td>
+                                                  </Tr>
+                                                  <Tr>
+                                                       <Td></Td>
+                                                       <Td>
+                                                            4:30 PM to 05:30 PM
+                                                       </Td>
+                                                       <Td></Td>
+                                                  </Tr>
+                                             </Tbody>
+                                        </Table>
+                                   </TableContainer>
                               </Box>
                          </Box>
                     </Flex>
