@@ -24,6 +24,7 @@ import {
      TableCaption,
      TableContainer
 } from '@chakra-ui/react';
+import Head from 'next/head';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import { Link } from 'react-scroll';
@@ -43,6 +44,13 @@ function YogaAcademy() {
      ];
      return (
           <Box>
+               <Head>
+                    <title>Lakshyan Yoga Academy</title>
+                    <meta
+                         name="description"
+                         content="Lakshyan, yoga, academy, studio, skillfull teachers, teachers, Hygienic, Authentic, Spacious parking"
+                    />
+               </Head>
                <section>
                     <Hero heroImage={images[1]} />
                </section>{' '}
