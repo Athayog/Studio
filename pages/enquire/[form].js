@@ -32,7 +32,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { logo } from 'public/og.png';
 import HomeLayout from '@/components/layout/HomeLayout';
-import { informationForm } from '@/lib/db/forms';
+import { informationForm, informationFormEnquiry } from '@/lib/db/forms';
 import cookie from 'js-cookie';
 
 const Register = () => {
@@ -100,6 +100,71 @@ const Register = () => {
           setLoading(true);
 
           let form = course ? course : form;
+
+          if (course) {
+               await informationFormEnquiry(
+                    name,
+                    email,
+                    phone,
+                    gender,
+                    experience,
+                    style,
+                    capitalizeFirstLetter(form),
+                    referral,
+                    conditions,
+                    capitalizeFirstLetter(form)
+               )
+                    .then((response) => {
+                         reset();
+                         toast({
+                              title: 'Successfully Submitted.',
+                              description: 'We will reach back to you soon :)',
+                              status: 'success',
+                              duration: 5000,
+                              isClosable: true
+                         });
+                         try {
+                              let parsedCondition = conditions.toString();
+
+                              fetch(
+                                   'https://formsubmit.co/ajax/info@athayogliving.com',
+                                   {
+                                        method: 'POST',
+                                        headers: {
+                                             'Content-Type': 'application/json',
+                                             Accept: 'application/json'
+                                        },
+                                        body: JSON.stringify({
+                                             FormType: 'Enquiry Form',
+                                             name,
+                                             email,
+                                             phone,
+                                             gender,
+                                             experience,
+                                             style,
+                                             form,
+                                             referral,
+                                             conditions: parsedCondition
+                                        })
+                                   }
+                              );
+                         } catch (error) {}
+                         router.push('/');
+                    })
+                    .catch((error) => {
+                         setLoading(false);
+                         toast({
+                              title: 'An error occurred.',
+                              description: error.message,
+                              status: 'error',
+                              duration: 5000,
+                              isClosable: true
+                         });
+                         setLoading(false);
+                         reset();
+                    });
+               return;
+          }
           await informationForm(
                name,
                email,
