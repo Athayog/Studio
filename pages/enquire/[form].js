@@ -142,7 +142,7 @@ const Register = () => {
                                              gender,
                                              experience,
                                              style,
-                                             form,
+                                             workshop: form,
                                              referral,
                                              conditions: parsedCondition
                                         })
