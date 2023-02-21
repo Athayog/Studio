@@ -10,10 +10,10 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeOne from 'public/creative_one.png';
-import CreativeTwo from 'public/up_1.png';
-import CreativeThree from 'public/up_2.png';
-import CreativeFour from 'public/up_3.png';
+import CreativeOne from 'public/workshop_1.png';
+import CreativeTwo from 'public/workshop_2.png';
+import CreativeThree from 'public/workshop_3.png';
+import CreativeFour from 'public/workshop_4.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -24,47 +24,47 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: '/',
-               alt: 'RPYT Course (Pre and Post Natal)',
+               url: '/enquire/workshops',
+               alt: 'Breath Easy',
                img: CreativeOne,
-               title: 'RPYT Course (Pre and Post Natal)',
-               timings: 'Given Below',
-               type: 'Offline',
-               duration: [
-                    'Feb 9th to April 9th - (10:00am - 4:00pm)',
-                    'March 6th to March 31st - (11:00am - 3:00pm)',
-                    '85 Hours / Month'
-               ]
+               title: 'Breath Easy',
+               timings: '10:00 AM - 11:30 AM',
+               type: 'Offline (Indiranagar)',
+               duration: ['21st March - 31st March', 'Fee: ₹2000']
           },
           {
                id: '2',
-               url: '/',
-               alt: 'Therapy For Diabetes',
-               title: 'Therapy For Diabetes',
+               url: '/enquire/workshops',
+               alt: 'Connecting with self',
+               title: 'Connecting with self',
                img: CreativeTwo,
-               timings: '10:00am - 12:30pm (Indiranagar)',
+               timings: '10:00am - 12:00pm (KR Puram)',
                type: 'Offline',
-               duration: ['4th Feb 2023', 'Fee: ₹800']
+               duration: [
+                    '25th Feb (Saturday)',
+                    'Eligibility 7+ Years',
+                    'Fee: ₹700'
+               ]
           },
           {
                id: '3',
-               url: '/',
-               alt: 'Yoga Nidra - An Introduction',
-               title: 'Yoga Nidra - An Introduction',
+               url: '/enquire/workshops',
+               alt: "Women's Care",
+               title: "Women's Care",
                img: CreativeThree,
-               timings: '9:00am - 12:00pm (Indiranagar)',
+               timings: '10:00am - 12:00pm (Indiranagar)',
                type: 'Offline',
-               duration: ['19th Feb 2023', 'Fee: ₹800']
+               duration: ['4th March 2023', 'Fee: ₹800']
           },
           {
                id: '4',
-               url: '/',
-               alt: 'Sound Meditation Workshop',
-               title: 'Sound Meditation Workshop',
+               url: '/enquire/workshops',
+               alt: 'Yoga Nidra - Level 2',
+               title: 'Yoga Nidra - Level 2',
                img: CreativeFour,
-               timings: '5:00pm - 7:00pm (KR Puram)',
+               timings: '9:00AM - 11:00AM (Indiranagar)',
                type: 'Offline',
-               duration: ['25th Feb (Saturday)', 'Fee: ₹700']
+               duration: ['19th March 2023', 'Fee: ₹600']
           }
      ];
 
@@ -97,15 +97,11 @@ function UpcomingCourses() {
                          }) => {
                               return (
                                    <Link
-                                        href={url}
+                                        href={url + '?source=home'}
                                         key={id}
                                         passHref
-                                        target="_blank"
                                    >
-                                        <a
-                                             target="_blank"
-                                             rel="noopener noreferrer"
-                                        >
+                                        <a rel="noopener noreferrer">
                                              <Flex
                                                   border="1px solid"
                                                   cursor="pointer"

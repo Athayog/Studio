@@ -37,7 +37,8 @@ import cookie from 'js-cookie';
 
 const Register = () => {
      const router = useRouter();
-     const { form, price, duration, courseName, courseId } = router.query;
+     const { form, price, duration, courseName, courseId, source } =
+          router.query;
      const { user } = useAuth();
      const [loading, setLoading] = useState(false);
      const [paymentLoader, setPaymentLoader] = useState(true);
@@ -81,10 +82,24 @@ const Register = () => {
           experience,
           style,
           referral,
-          conditions
+          conditions,
+          course
      }) => {
+          console.log(
+               name,
+               email,
+               phone,
+               gender,
+               experience,
+               style,
+               referral,
+               conditions,
+               course
+          );
+
           setLoading(true);
 
+          let form = course ? course : form;
           await informationForm(
                name,
                email,
@@ -147,6 +162,7 @@ const Register = () => {
                });
      };
 
+     console.log(source);
      return (
           <>
                <motion.div
@@ -308,32 +324,72 @@ const Register = () => {
                                         width="100%"
                                    />
 
-                                   <FormControl id="course">
-                                        <FormLabel>Course Interested</FormLabel>
-                                        <Select
-                                             placeholder="Select a option"
-                                             ref={register({
-                                                  required:
-                                                       'Please select your course.'
-                                             })}
-                                             isReadOnly
-                                             name="course"
-                                             value={capitalizeFirstLetter(form)}
-                                             disabled
-                                        >
-                                             <option
+                                   {source === 'home' ? (
+                                        <FormControl id="course">
+                                             <FormLabel>
+                                                  Course Interested
+                                             </FormLabel>
+                                             <Select
+                                                  placeholder="Select a option"
+                                                  ref={register({
+                                                       required:
+                                                            'Please select your course.'
+                                                  })}
+                                                  name="course"
+                                             >
+                                                  <option value="Breath Easy">
+                                                       Breath Easy
+                                                  </option>
+                                                  <option value="Connecting with self">
+                                                       Connecting with self
+                                                  </option>
+                                                  <option value=" Women's Care">
+                                                       Women&apos;s Care
+                                                  </option>
+                                                  <option value="Yoga Nidra - Level 2">
+                                                       Yoga Nidra - Level 2
+                                                  </option>
+                                             </Select>
+                                             <FormErrorMessage>
+                                                  {errors.course &&
+                                                       errors.course.message}
+                                             </FormErrorMessage>
+                                        </FormControl>
+                                   ) : (
+                                        <FormControl id="course">
+                                             <FormLabel>
+                                                  Course Interested
+                                             </FormLabel>
+                                             <Select
+                                                  placeholder="Select a option"
+                                                  ref={register({
+                                                       required:
+                                                            'Please select your course.'
+                                                  })}
+                                                  isReadOnly
+                                                  name="course"
                                                   value={capitalizeFirstLetter(
                                                        form
                                                   )}
+                                                  disabled
                                              >
-                                                  {capitalizeFirstLetter(form)}
-                                             </option>
-                                        </Select>
-                                        <FormErrorMessage>
-                                             {errors.course &&
-                                                  errors.course.message}
-                                        </FormErrorMessage>
-                                   </FormControl>
+                                                  <option
+                                                       value={capitalizeFirstLetter(
+                                                            form
+                                                       )}
+                                                  >
+                                                       {capitalizeFirstLetter(
+                                                            form
+                                                       )}
+                                                  </option>
+                                             </Select>
+                                             <FormErrorMessage>
+                                                  {errors.course &&
+                                                       errors.course.message}
+                                             </FormErrorMessage>
+                                        </FormControl>
+                                   )}
+
                                    <FormControl id="conditions">
                                         <FormLabel>
                                              Health and medical conditions
