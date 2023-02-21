@@ -123,6 +123,7 @@ const Register = () => {
                     });
                     try {
                          let parsedCondition = conditions.toString();
+
                          fetch(
                               'https://formsubmit.co/ajax/info@athayogliving.com',
                               {
@@ -162,7 +163,6 @@ const Register = () => {
                });
      };
 
-     console.log(source);
      return (
           <>
                <motion.div
