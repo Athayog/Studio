@@ -129,10 +129,12 @@ const Register = () => {
                               fetch(
                                    'https://formsubmit.co/ajax/info@athayogliving.com',
                                    {
+                                        mode: 'cors',
                                         method: 'POST',
                                         headers: {
                                              'Content-Type': 'application/json',
-                                             Accept: 'application/json'
+                                             Accept: 'application/json',
+                                             'Access-Control-Allow-Origin': '*'
                                         },
                                         body: JSON.stringify({
                                              FormType: 'Enquiry Form',
@@ -413,6 +415,12 @@ const Register = () => {
                                                   </option>
                                                   <option value="Yoga Nidra - Level 2">
                                                        Yoga Nidra - Level 2
+                                                  </option>
+                                                  <option value="Traditional Hata Yoga">
+                                                       Traditional Hata Yoga
+                                                  </option>
+                                                  <option value="Athayog Shikshanapada">
+                                                       Athayog Shikshanapada
                                                   </option>
                                              </Select>
                                              <FormErrorMessage>
