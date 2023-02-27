@@ -34,30 +34,7 @@ function UpcomingCourses() {
                type: 'Offline (Indiranagar)',
                duration: ['21st March - 31st March', 'Fee: ₹2000']
           },
-          {
-               id: '2',
-               url: '/enquire/workshops',
-               alt: 'Connecting with self',
-               title: 'Connecting with self',
-               img: CreativeTwo,
-               timings: '10:00am - 12:00pm (KR Puram)',
-               type: 'Offline',
-               duration: [
-                    '25th Feb (Saturday)',
-                    'Eligibility 7+ Years',
-                    'Fee: ₹700'
-               ]
-          },
-          {
-               id: '3',
-               url: '/enquire/workshops',
-               alt: "Women's Care",
-               title: "Women's Care",
-               img: CreativeThree,
-               timings: '10:00am - 12:00pm (Indiranagar)',
-               type: 'Offline',
-               duration: ['4th March 2023', 'Fee: ₹800']
-          },
+
           {
                id: '4',
                url: '/enquire/workshops',

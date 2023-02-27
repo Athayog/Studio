@@ -407,12 +407,7 @@ const Register = () => {
                                                   <option value="Breath Easy">
                                                        Breath Easy
                                                   </option>
-                                                  <option value="Connecting with self">
-                                                       Connecting with self
-                                                  </option>
-                                                  <option value=" Women's Care">
-                                                       Women&apos;s Care
-                                                  </option>
+
                                                   <option value="Yoga Nidra - Level 2">
                                                        Yoga Nidra - Level 2
                                                   </option>
