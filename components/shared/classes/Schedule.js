@@ -514,7 +514,7 @@ function Schedule() {
                                         </Flex>
                                         <Flex direction="column" gap={1}>
                                              <Box>06:00 AM - 09:00 PM</Box>
-                                             <Box>07:00 AM - 08:00 PM</Box>
+                                             <Box>06:00 AM - 08:00 PM</Box>
                                         </Flex>
                                    </Flex>
                               </Box>
@@ -542,8 +542,7 @@ function Schedule() {
                                              as={BsFillArrowRightCircleFill}
                                              color="green.500"
                                         />
-                                        Athayog living will be closed on 2nd
-                                        Saturday of every Month.
+                                        22nd Ugadi
                                    </ListItem>
                               </List>
 
@@ -552,9 +551,8 @@ function Schedule() {
                                    fontWeight="medium"
                                    mt={3}
                               >
-                                   Note: 108 Surya Namaskara will be practiced
-                                   on 1st Saturday of every month, 7am - 9am
-                                   batch.{' '}
+                                   Note: 108 surya namaskar will happen all the
+                                   saturdays
                               </Badge>
                          </Box>
                     </Flex>
