@@ -4,6 +4,7 @@ import React from 'react';
 import useSWR from 'swr';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Navigation, Thumbs, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { v4 as uuidv4 } from 'uuid';
@@ -117,18 +118,40 @@ const Gallery = ({ images }) => {
                     >
                          Events & Studio
                     </Heading>
-                    <Swiper {...params} key={uuidv4()}>
+                    <Swiper
+                         slidesPerView={1}
+                         spaceBetween={10}
+                         pagination={{
+                              clickable: true
+                         }}
+                         breakpoints={{
+                              640: {
+                                   slidesPerView: 1,
+                                   spaceBetween: 20
+                              },
+                              768: {
+                                   slidesPerView: 4,
+                                   spaceBetween: 40
+                              },
+                              1024: {
+                                   slidesPerView: 4,
+                                   spaceBetween: 50
+                              }
+                         }}
+                         modules={[Pagination]}
+                         key={uuidv4()}
+                    >
                          {activeImage
                               .sort((a, b) => a.position - b.position)
                               .map((image) => {
                                    return (
                                         <SwiperSlide key={image.id}>
-                                             {' '}
                                              <Box
                                                   rounded="base"
                                                   overflow="hidden"
-                                                  height="150px"
-                                                  width="300px"
+                                                  height="100%"
+                                                  width="100%"
+                                                  key={image.id}
                                              >
                                                   <Image
                                                        layout="responsive"
@@ -160,7 +183,29 @@ const Gallery = ({ images }) => {
                     >
                          Sound Meditation
                     </Heading>
-                    <Swiper {...params} key={uuidv4()}>
+                    <Swiper
+                         slidesPerView={1}
+                         spaceBetween={10}
+                         pagination={{
+                              clickable: true
+                         }}
+                         breakpoints={{
+                              640: {
+                                   slidesPerView: 1,
+                                   spaceBetween: 20
+                              },
+                              768: {
+                                   slidesPerView: 4,
+                                   spaceBetween: 40
+                              },
+                              1024: {
+                                   slidesPerView: 4,
+                                   spaceBetween: 50
+                              }
+                         }}
+                         modules={[Pagination]}
+                         key={uuidv4()}
+                    >
                          {soundMediation
                               .sort((a, b) => a.position - b.position)
                               .map((image) => {
@@ -169,10 +214,11 @@ const Gallery = ({ images }) => {
                                              <Box
                                                   rounded="base"
                                                   overflow="hidden"
+                                                  height="100%"
+                                                  width="100%"
                                                   key={image.id}
-                                                  height="150px"
-                                                  width="300px"
                                              >
+                                                  {' '}
                                                   <Image
                                                        layout="responsive"
                                                        height="150px"
@@ -203,7 +249,29 @@ const Gallery = ({ images }) => {
                     >
                          Aroma Therapy
                     </Heading>
-                    <Swiper {...params} key={uuidv4()}>
+                    <Swiper
+                         slidesPerView={1}
+                         spaceBetween={10}
+                         pagination={{
+                              clickable: true
+                         }}
+                         breakpoints={{
+                              640: {
+                                   slidesPerView: 1,
+                                   spaceBetween: 10
+                              },
+                              768: {
+                                   slidesPerView: 4,
+                                   spaceBetween: 10
+                              },
+                              1024: {
+                                   slidesPerView: 4,
+                                   spaceBetween: 10
+                              }
+                         }}
+                         modules={[Pagination]}
+                         key={uuidv4()}
+                    >
                          {aromaTherapy
                               .sort((a, b) => a.position - b.position)
                               .map((image) => {
@@ -212,8 +280,8 @@ const Gallery = ({ images }) => {
                                              <Box
                                                   rounded="base"
                                                   overflow="hidden"
-                                                  height="150px"
-                                                  width="300px"
+                                                  height="100%"
+                                                  width="100%"
                                                   key={image.id}
                                              >
                                                   <Image
