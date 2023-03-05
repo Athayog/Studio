@@ -114,6 +114,7 @@ export default function EnquireModal({ product, colors }) {
                                                   <Select
                                                        placeholder="Select option"
                                                        id="variant"
+                                                       name="variant"
                                                        ref={register({
                                                             required:
                                                                  'This is required'
