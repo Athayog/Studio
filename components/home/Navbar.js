@@ -249,6 +249,33 @@ const Navbar = () => {
                                              Career
                                         </Button>
                                    </Link>
+                                   <Link href="/store" passHref>
+                                        <MotionButton
+                                             fontWeight="normal"
+                                             fontSize="md"
+                                             bg="transparent"
+                                             variant="ghost"
+                                             _hover={{
+                                                  bg: 'aygreen.100'
+                                             }}
+                                             _active={{
+                                                  bg: 'aygreen.100',
+
+                                                  borderColor: '#bec3c9'
+                                             }}
+                                             whileHover={{
+                                                  transition: { duration: 1 }
+                                             }}
+                                             whileTap={{ scale: 0.9 }}
+                                             isActive={
+                                                  router.pathname == '/store'
+                                                       ? true
+                                                       : ''
+                                             }
+                                        >
+                                             Store
+                                        </MotionButton>
+                                   </Link>
                               </HStack>
 
                               <HStack
@@ -425,6 +452,23 @@ const Navbar = () => {
                                                   justifyContent="left"
                                              >
                                                   Career
+                                             </Button>
+                                        </Link>
+                                        <Link passHref href="/store">
+                                             <Button
+                                                  isActive={
+                                                       router.pathname ==
+                                                       '/store'
+                                                            ? true
+                                                            : ''
+                                                  }
+                                                  onClick={onClose}
+                                                  rounded="md"
+                                                  variant="ghost"
+                                                  colorScheme="aygreen"
+                                                  justifyContent="left"
+                                             >
+                                                  Store
                                              </Button>
                                         </Link>
                                    </VStack>
