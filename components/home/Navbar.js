@@ -61,6 +61,7 @@ const Navbar = () => {
                     transition="linear"
                     transform="initial"
                     style={{ backdropFilter: 'blur(5px)' }}
+                    borderBottom="1px solid #efefef"
                     width="100%"
                     height={{ base: '4rem', md: '4rem', lg: '4rem' }}
                >

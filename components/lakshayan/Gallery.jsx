@@ -3,7 +3,7 @@ import { Box, Button, Flex, Heading, Skeleton, Text } from '@chakra-ui/react';
 import React from 'react';
 import useSWR from 'swr';
 import Image from 'next/image';
-import Swiper from 'react-id-swiper';
+
 import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';

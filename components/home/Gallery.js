@@ -3,13 +3,10 @@ import { Box, Flex, Heading, Skeleton } from '@chakra-ui/react';
 import React from 'react';
 import useSWR from 'swr';
 import Image from 'next/image';
-import Swiper from 'react-id-swiper';
-import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { v4 as uuidv4 } from 'uuid';
-
-SwiperCore.use([Navigation, Pagination, EffectFade]);
 
 const Gallery = ({ images }) => {
      const { data, error } = useSWR(`/api/images/gallery`, fetcher, {
@@ -58,7 +55,7 @@ const Gallery = ({ images }) => {
 
      const params = {
           slidesPerView: sliderPerView,
-          spaceBetween: 30,
+          spaceBetween: 10,
           pagination: {
                el: '.swiper-pagination',
                clickable: true
@@ -79,25 +76,7 @@ const Gallery = ({ images }) => {
                     className="swiper-button-next"
                     style={{ color: 'black' }}
                />
-          ),
-          breakpoints: {
-               1024: {
-                    slidesPerView: xl,
-                    spaceBetween: 30
-               },
-               768: {
-                    slidesPerView: md,
-                    spaceBetween: 30
-               },
-               640: {
-                    slidesPerView: sm,
-                    spaceBetween: 20
-               },
-               320: {
-                    slidesPerView: vs,
-                    spaceBetween: 10
-               }
-          }
+          )
      };
 
      const soundMediation = [
@@ -143,20 +122,24 @@ const Gallery = ({ images }) => {
                               .sort((a, b) => a.position - b.position)
                               .map((image) => {
                                    return (
-                                        <Box
-                                             rounded="base"
-                                             overflow="hidden"
-                                             key={image.id}
-                                        >
-                                             <Image
-                                                  layout="responsive"
+                                        <SwiperSlide key={image.id}>
+                                             {' '}
+                                             <Box
+                                                  rounded="base"
+                                                  overflow="hidden"
                                                   height="150px"
                                                   width="300px"
-                                                  objectFit="cover"
-                                                  alt={image.alt}
-                                                  src={image.imageUrl}
-                                             />
-                                        </Box>
+                                             >
+                                                  <Image
+                                                       layout="responsive"
+                                                       height="150px"
+                                                       width="300px"
+                                                       objectFit="cover"
+                                                       alt={image.alt}
+                                                       src={image.imageUrl}
+                                                  />
+                                             </Box>
+                                        </SwiperSlide>
                                    );
                               })}
                     </Swiper>
@@ -182,20 +165,24 @@ const Gallery = ({ images }) => {
                               .sort((a, b) => a.position - b.position)
                               .map((image) => {
                                    return (
-                                        <Box
-                                             rounded="base"
-                                             overflow="hidden"
-                                             key={image.id}
-                                        >
-                                             <Image
-                                                  layout="responsive"
+                                        <SwiperSlide key={image.id}>
+                                             <Box
+                                                  rounded="base"
+                                                  overflow="hidden"
+                                                  key={image.id}
                                                   height="150px"
                                                   width="300px"
-                                                  objectFit="cover"
-                                                  alt={image}
-                                                  src={image}
-                                             />
-                                        </Box>
+                                             >
+                                                  <Image
+                                                       layout="responsive"
+                                                       height="150px"
+                                                       width="300px"
+                                                       objectFit="cover"
+                                                       alt={image}
+                                                       src={image}
+                                                  />
+                                             </Box>
+                                        </SwiperSlide>
                                    );
                               })}
                     </Swiper>
@@ -221,20 +208,24 @@ const Gallery = ({ images }) => {
                               .sort((a, b) => a.position - b.position)
                               .map((image) => {
                                    return (
-                                        <Box
-                                             rounded="base"
-                                             overflow="hidden"
-                                             key={image.id}
-                                        >
-                                             <Image
-                                                  layout="responsive"
+                                        <SwiperSlide key={image.id}>
+                                             <Box
+                                                  rounded="base"
+                                                  overflow="hidden"
                                                   height="150px"
                                                   width="300px"
-                                                  objectFit="cover"
-                                                  alt={image}
-                                                  src={image}
-                                             />
-                                        </Box>
+                                                  key={image.id}
+                                             >
+                                                  <Image
+                                                       layout="responsive"
+                                                       height="150px"
+                                                       width="300px"
+                                                       objectFit="cover"
+                                                       alt={image}
+                                                       src={image}
+                                                  />
+                                             </Box>
+                                        </SwiperSlide>
                                    );
                               })}
                     </Swiper>

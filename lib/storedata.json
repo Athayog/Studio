@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "name": "Athayog Mat",
+    "price": "900",
+    "priceType": null,
+    "url": "athayog-mat",
+    "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F1.png?alt=media&token=55c56195-6ec1-4f79-9bb4-d226f574e52f",
+    "otherImages": [
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F1.png?alt=media&token=55c56195-6ec1-4f79-9bb4-d226f574e52f",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F2.png?alt=media&token=aecc2c33-c1a7-4853-89e9-9815aa30fe06",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F4.png?alt=media&token=77ec1f0d-a695-42ab-b462-cc198058a426",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F6.png?alt=media&token=0c85ee11-3107-4002-992a-97040be101b8",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F3.png?alt=media&token=9403153d-99d8-4f55-9f70-515487787a3d",
+
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F5.png?alt=media&token=88d75cf7-0606-4685-9f49-229067282148"
+    ],
+
+    "description": "<div class=\"css-0\"><p>Material: Cotton</p><p>Product<strong> </strong>Care: Handwash</p><p>Dimension: 2*6 feet</p><p></p><p><br></p><p></p><ul><li><p><strong>HANDLOOM COTTON</strong> : Yoga Mats are made of handloom Cotton which is a breathable material. It is more evolved, makes you feel secure, while also lending a soft touch to your skin</p></li><li><p><strong>SKIN FRIENDLY</strong> : Cotton yoga mat is safe to use for all. The cotton material makes it suitable for every skin type unlike PVC and rubber mats which may cause skin allergies. Cotton being the perfect sweat absorbent you do not have to worry about slipping, making it ideal for any type of yoga practice</p></li><li><p><strong>WASHABLE & COLOR FAST</strong> : The yoga mat is made of pure cotton which can be hand washed so you would never have to worry of sweaty and unclean yoga mats. Being colorfast, it won't wash away color after any number of washes, thus increasing the lifespan of the product</p></li><li><p><strong>100% BIODEGRADABLE</strong></p></li><li><p><strong>ANTI SKID COATING :</strong> Protective Organic rubber base – The mat is base treated with slip resistant organic rubber. This pure rubber coating keeps your yoga mat safe from slipping on any kind of surface.</p></li></ul></div>",
+    "attributes": {
+      "colors": [
+        {
+          "name": "Green",
+          "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F1.png?alt=media&token=55c56195-6ec1-4f79-9bb4-d226f574e52f",
+          "price": "900"
+        },
+        {
+          "name": "Violet",
+          "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F2.png?alt=media&token=aecc2c33-c1a7-4853-89e9-9815aa30fe06",
+          "price": "900"
+        },
+        {
+          "name": "Blue",
+          "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F4.png?alt=media&token=77ec1f0d-a695-42ab-b462-cc198058a426",
+          "price": "900"
+        },
+        {
+          "name": "Orange",
+          "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F5.png?alt=media&token=88d75cf7-0606-4685-9f49-229067282148",
+          "price": "900"
+        },
+        {
+          "name": "White",
+          "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F6.png?alt=media&token=0c85ee11-3107-4002-992a-97040be101b8",
+          "price": "900"
+        },
+        {
+          "name": "Brown",
+          "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fathayog-mat%2F3.png?alt=media&token=9403153d-99d8-4f55-9f70-515487787a3d",
+          "price": "900"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Yoga Chair",
+    "price": "1850",
+    "priceType": null,
+    "url": "yoga-chair",
+
+    "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-chair%2F2.png?alt=media&token=396cc00b-1cc8-49e8-8768-6d5f6f6dcaaa",
+    "otherImages": [
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-chair%2F2.png?alt=media&token=396cc00b-1cc8-49e8-8768-6d5f6f6dcaaa",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-chair%2F1.png?alt=media&token=33a7b11b-eb72-42d1-a5ba-f852db57e10b"
+    ],
+    "description": "<ul><li><strong>This Chair Can be Folded Easily</strong> - You can easily set up and take down these yoga chairs. That fold flat and compact for easy storage.</li><li><strong>Standard Size</strong> - The chair designed in standard size for every person. Any person of any size can use this chair for iyengar yoga practice.</li><li><strong>Design foldable yoga chairs</strong> - We do not compromise with any quality. We designed this chair lightweight with strong & durable metal. This chair capacity is carried with heavy weight.</li><li><strong>Effective Dimension for Yoga</strong> - Chair's Length is 52 cm (Side to Front), Breath 46 cm (Side to Side) and total Height is 79.5 cm (Floor to Top). Product seat dimension is 15.5X15.5 Inches.</li><li>Chair steel powder coated pipe is made of Mild steel tubes with rust-proof powder coated.-A Backless Chair with a flat seat rest is specially designed for yoga practice. Flat seat rest is perfect for the right alignment of your body.</li></ul>",
+    "attributes": null
+  },
+  {
+    "id": 3,
+    "name": "Yoga block",
+    "price": "499",
+    "priceType": [
+      { "id": 1, "type": "single", "text": "each", "price": "499" },
+      { "id": 2, "type": "pair", "text": "pair", "price": "999" }
+    ],
+    "url": "yoga-block",
+    "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-block%2F1.png?alt=media&token=1125fad5-9605-4f1f-b09d-d61086b4a04c",
+    "otherImages": [
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-block%2F1.png?alt=media&token=1125fad5-9605-4f1f-b09d-d61086b4a04c",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-block%2F2.png?alt=media&token=acce3076-9e06-41c4-9bf2-15bc74f9c321"
+    ],
+    "description": "<ul><li>Made of high-density and sturdy PV foam for long-lasting durability yoga block</li><li>Featuring beveled edges for soft, firm and easy griping, lightweight and non-slip even sweat</li><li>Make difficult yoga poses accessible to beginners and those with injuries or physical limitations</li><li>Moisture-proof to avoid growing bacteria. cleans easily with a little soap or detergent to wash away the odours</li><li>Eco friendly yoga block, Easy to travel, perfect for at home use and in the studio</li></ul>",
+    "attributes": null
+  },
+  {
+    "id": 3,
+    "name": "Yoga Bolster (with Cover)",
+    "price": "1050",
+
+    "url": "yoga-bolster",
+    "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-bolster%2F1.png?alt=media&token=0067581b-7eef-4e74-8b60-46bd043a557c",
+    "otherImages": [
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-bolster%2F1.png?alt=media&token=0067581b-7eef-4e74-8b60-46bd043a557c",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-bolster%2F2.png?alt=media&token=74239941-faa8-4352-8384-a6e90fb972aa"
+    ],
+    "description": "<ul><li>Bolsters are just the right amount of inner strength and stability with a comfy soft surface and are designed to last long.</li><li>The Round Bolster is a great size to place under the knees in savasana and across your lap in a seated forward bend.</li><li>It is very effective at alleviating pain in the lower back region and helps in relieving neck pain, headaches, and snoring.</li></ul>",
+    "attributes": null
+  },
+  {
+    "id": 3,
+    "name": "Yoga Belt",
+    "price": "385",
+    "priceType": null,
+    "url": "yoga-belt",
+    "image": "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-belt%2F1.png?alt=media&token=0da8d2e7-82d3-4182-ad7f-ec3def1d8e20",
+    "otherImages": [
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-belt%2F1.png?alt=media&token=0da8d2e7-82d3-4182-ad7f-ec3def1d8e20",
+      "https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/store%2Fyoga-belt%2F2.png?alt=media&token=f3e55b17-dd66-42ad-9fc1-0b3e4d155511"
+    ],
+    "description": "<ul><li><strong>High Quality</strong> - Made with soft and sturdy polyester cotton material, these yoga straps offer optimal resistance and great stability.</li><li>Boldfit yoga belt stretching is extremely durable and will not break or lose its own shape.</li><li>Besides, it is small and lightweight to carry around and store.</li><li><strong>Adjustable D-ring</strong> - Simple, non-elastic band that provides extra stability and flexibility for stretching, yoga, therapy, workout, and more.</li><li>The Metal D-ring buckles are solid and can be adjusted and tightly fixed for various poses, helping to Improve flexibility and range of motion.</li></ul>",
+    "attributes": null
+  }
+]

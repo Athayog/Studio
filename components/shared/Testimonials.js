@@ -4,7 +4,7 @@ import React from 'react';
 import { AiFillStar } from 'react-icons/ai';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import useSWR from 'swr';
-import Swiper from 'react-id-swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -88,48 +88,56 @@ const Testimonials = ({ testimonials }) => {
                               <Swiper {...params} key={uuidv4()}>
                                    {activeTestimonials.map((data) => {
                                         return (
-                                             <Box
-                                                  padding={{
-                                                       base: '0 1rem',
-                                                       md: '0 2rem',
-                                                       lg: '0 5rem'
-                                                  }}
-                                                  key={data.id}
-                                                  width="100%"
-                                             >
-                                                  <Flex justifyContent="center">
-                                                       {[
-                                                            ...Array(
-                                                                 Number(
-                                                                      data.stars
+                                             <SwiperSlide key={data.id}>
+                                                  <Box
+                                                       padding={{
+                                                            base: '0 1rem',
+                                                            md: '0 2rem',
+                                                            lg: '0 5rem'
+                                                       }}
+                                                       width="100%"
+                                                  >
+                                                       <Flex justifyContent="center">
+                                                            {[
+                                                                 ...Array(
+                                                                      Number(
+                                                                           data.stars
+                                                                      )
                                                                  )
-                                                            )
-                                                       ].map((el, index) => (
-                                                            <AiFillStar
-                                                                 fontSize="1.1rem"
-                                                                 key={index}
-                                                            />
-                                                       ))}
-                                                  </Flex>
+                                                            ].map(
+                                                                 (
+                                                                      el,
+                                                                      index
+                                                                 ) => (
+                                                                      <AiFillStar
+                                                                           fontSize="1.1rem"
+                                                                           key={
+                                                                                index
+                                                                           }
+                                                                      />
+                                                                 )
+                                                            )}
+                                                       </Flex>
 
-                                                  <Text
-                                                       mt={5}
-                                                       fontSize={{
-                                                            base: 'sm'
-                                                       }}
-                                                  >
-                                                       {data.review}
-                                                  </Text>
-                                                  <Text
-                                                       fontWeight="medium"
-                                                       mt={5}
-                                                       fontSize={{
-                                                            base: 'md'
-                                                       }}
-                                                  >
-                                                       {data.name}
-                                                  </Text>
-                                             </Box>
+                                                       <Text
+                                                            mt={5}
+                                                            fontSize={{
+                                                                 base: 'sm'
+                                                            }}
+                                                       >
+                                                            {data.review}
+                                                       </Text>
+                                                       <Text
+                                                            fontWeight="medium"
+                                                            mt={5}
+                                                            fontSize={{
+                                                                 base: 'md'
+                                                            }}
+                                                       >
+                                                            {data.name}
+                                                       </Text>
+                                                  </Box>
+                                             </SwiperSlide>
                                         );
                                    })}
                               </Swiper>
