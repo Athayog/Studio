@@ -61,9 +61,9 @@ function UpcomingCourses() {
                alt: 'Navaratri Sadhana',
                title: 'Navaratri Sadhana',
                img: CreativeSix,
-               timings: '6:00 - 7:00',
+               timings: '6:00 - 7:00PM',
                type: 'Offline',
-               duration: ['2nd March to 31st March', 'Fee: ₹900']
+               duration: ['22nd March to 31st March', 'Fee: ₹900']
           }
      ];
 
