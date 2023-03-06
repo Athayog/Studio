@@ -58,12 +58,12 @@ function UpcomingCourses() {
           {
                id: '6',
                url: '/enquire/workshops',
-               alt: 'Athayog Shikshanapada',
-               title: 'Athayog Shikshanapada',
+               alt: 'Navaratri Sadhana',
+               title: 'Navaratri Sadhana',
                img: CreativeSix,
-               timings: '1 Month',
+               timings: '6:00 - 7:00',
                type: 'Offline',
-               duration: ['1st to 31st March 2023']
+               duration: ['2nd March to 31st March', 'Fee: ₹900']
           }
      ];
 

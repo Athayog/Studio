@@ -414,8 +414,8 @@ const Register = () => {
                                                   <option value="Traditional Hata Yoga">
                                                        Traditional Hata Yoga
                                                   </option>
-                                                  <option value="Athayog Shikshanapada">
-                                                       Athayog Shikshanapada
+                                                  <option value="Navaratri Sadhana">
+                                                       Navaratri Sadhana
                                                   </option>
                                              </Select>
                                              <FormErrorMessage>
