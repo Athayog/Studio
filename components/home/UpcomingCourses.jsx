@@ -16,6 +16,7 @@ import CreativeThree from 'public/workshop_3.png';
 import CreativeFour from 'public/workshop_4.png';
 import CreativeFive from 'public/workshop_5.png';
 import CreativeSix from 'public/workshop_6.png';
+import CreativeSeven from 'public/workshop_7.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -64,6 +65,16 @@ function UpcomingCourses() {
                timings: '6:00 - 7:00PM',
                type: 'Offline',
                duration: ['22nd March to 31st March', 'Fee: ₹900']
+          },
+          {
+               id: '7',
+               url: '/enquire/workshops',
+               alt: 'Kids Yoga Camp',
+               title: 'Kids Yoga Camp',
+               img: CreativeSeven,
+               timings: '10:00AM - 12:00PM',
+               type: 'Offline (Indirangar/KR Puram)',
+               duration: ['10th to 21st April', 'Fee: ₹2000']
           }
      ];
 

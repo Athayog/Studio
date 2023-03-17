@@ -407,7 +407,6 @@ const Register = () => {
                                                   <option value="Breath Easy">
                                                        Breath Easy
                                                   </option>
-
                                                   <option value="Yoga Nidra - Level 2">
                                                        Yoga Nidra - Level 2
                                                   </option>
@@ -416,6 +415,9 @@ const Register = () => {
                                                   </option>
                                                   <option value="Navaratri Sadhana">
                                                        Navaratri Sadhana
+                                                  </option>
+                                                  <option value=" Kids Yoga Camp">
+                                                       Kids Yoga Camp
                                                   </option>
                                              </Select>
                                              <FormErrorMessage>

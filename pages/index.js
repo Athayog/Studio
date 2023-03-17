@@ -4,6 +4,7 @@ import Faq from '@/components/home/Faq';
 import Gallery from '@/components/home/Gallery';
 import GuideBook from '@/components/home/GuideBook';
 import HeroCarousel from '@/components/home/HeroCarousel';
+import Offer from '@/components/home/Offer';
 import Offerings from '@/components/home/Offerings';
 import RecentBlogs from '@/components/home/RecentBlogs';
 import UpcomingCourses from '@/components/home/UpcomingCourses';
@@ -37,6 +38,7 @@ export default function Home({ gallery, testimonials }) {
                duration="400"
           >
                <HeroCarousel />
+               <Offer />
                <Certificate />
                <Offerings />
                <UpcomingCourses />
