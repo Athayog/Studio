@@ -45,6 +45,16 @@ function UpcomingCourses() {
                timings: '10:00AM - 12:00PM',
                type: 'Offline (Indirangar/KR Puram)',
                duration: ['10th to 21st April', 'Fee: ₹2000']
+          },
+          {
+               id: '5',
+               url: '/enquire/workshops',
+               alt: 'Ashtanga Yoga',
+               title: 'Ashtanga Yoga',
+               img: CreativeThree,
+               timings: '6 - 7 AM',
+               type: 'Online',
+               duration: ['10th - 21st April', 'March 18th for Weekend']
           }
      ];
 

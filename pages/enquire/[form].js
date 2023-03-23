@@ -407,9 +407,11 @@ const Register = () => {
                                                   <option value="Traditional Hata Yoga">
                                                        Traditional Hata Yoga
                                                   </option>
-
                                                   <option value=" Kids Yoga Camp">
                                                        Kids Yoga Camp
+                                                  </option>
+                                                  <option value=" Ashtanga Yoga">
+                                                       Ashtanga Yoga
                                                   </option>
                                              </Select>
                                              <FormErrorMessage>
