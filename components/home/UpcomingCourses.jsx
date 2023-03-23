@@ -54,7 +54,7 @@ function UpcomingCourses() {
                img: CreativeThree,
                timings: '6:00 - 7:30 AM',
                type: 'Online',
-               duration: ['10th - 21st April', 'March 18th for Weekend']
+               duration: ['10th - 21st April']
           }
      ];
 
