@@ -26,27 +26,6 @@ SwiperCore.use([Navigation, Pagination]);
 function UpcomingCourses() {
      const upcomingData = [
           {
-               id: '1',
-               url: '/enquire/workshops',
-               alt: 'Breath Easy',
-               img: CreativeOne,
-               title: 'Breath Easy',
-               timings: '10:00 AM - 11:30 AM',
-               type: 'Offline (Indiranagar)',
-               duration: ['21st March - 31st March', 'Fee: ₹2000']
-          },
-
-          {
-               id: '4',
-               url: '/enquire/workshops',
-               alt: 'Yoga Nidra - Level 2',
-               title: 'Yoga Nidra - Level 2',
-               img: CreativeFour,
-               timings: '9:00AM - 11:00AM (Indiranagar)',
-               type: 'Offline',
-               duration: ['19th March 2023', 'Fee: ₹600']
-          },
-          {
                id: '5',
                url: '/enquire/workshops',
                alt: 'Traditional Hata Yoga',
@@ -56,16 +35,7 @@ function UpcomingCourses() {
                type: 'Offline/Online',
                duration: ['April 3rd for Weekday', 'March 18th for Weekend']
           },
-          {
-               id: '6',
-               url: '/enquire/workshops',
-               alt: 'Navaratri Sadhana',
-               title: 'Navaratri Sadhana',
-               img: CreativeSix,
-               timings: '6:00 - 7:00PM',
-               type: 'Offline',
-               duration: ['22nd March to 31st March', 'Fee: ₹900']
-          },
+
           {
                id: '7',
                url: '/enquire/workshops',

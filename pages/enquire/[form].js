@@ -404,18 +404,10 @@ const Register = () => {
                                                   })}
                                                   name="course"
                                              >
-                                                  <option value="Breath Easy">
-                                                       Breath Easy
-                                                  </option>
-                                                  <option value="Yoga Nidra - Level 2">
-                                                       Yoga Nidra - Level 2
-                                                  </option>
                                                   <option value="Traditional Hata Yoga">
                                                        Traditional Hata Yoga
                                                   </option>
-                                                  <option value="Navaratri Sadhana">
-                                                       Navaratri Sadhana
-                                                  </option>
+
                                                   <option value=" Kids Yoga Camp">
                                                        Kids Yoga Camp
                                                   </option>
