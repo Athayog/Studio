@@ -524,9 +524,7 @@ function Schedule() {
                                              as={BsFillArrowRightCircleFill}
                                              color="green.500"
                                         />
-                                        Note: 18th (Maha Shivaratari) classes
-                                        will be happening from 6 AM - 10 AM (No
-                                        evening classes)
+                                        Note: (No evening classes)
                                    </ListItem>
                                    <ListItem>
                                         <ListIcon
@@ -542,7 +540,7 @@ function Schedule() {
                                              as={BsFillArrowRightCircleFill}
                                              color="green.500"
                                         />
-                                        22nd Ugadi
+                                        22nd March Ugadi
                                    </ListItem>
                               </List>
 
