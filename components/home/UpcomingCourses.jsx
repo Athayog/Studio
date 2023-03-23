@@ -52,7 +52,7 @@ function UpcomingCourses() {
                alt: 'Ashtanga Yoga',
                title: 'Ashtanga Yoga',
                img: CreativeThree,
-               timings: '6 - 7 AM',
+               timings: '6:00 - 7:30 AM',
                type: 'Online',
                duration: ['10th - 21st April', 'March 18th for Weekend']
           }
