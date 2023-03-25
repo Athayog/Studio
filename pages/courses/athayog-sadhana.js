@@ -5,6 +5,15 @@ import CTA from '@/components/shared/CTA';
 import HeaderLayout from '@/components/shared/offerings/HeaderLayout';
 import ShikshanaCalendarTable from '@/components/shared/ShikshanaCalendarTable';
 import { Heading, Stack, Text } from '@chakra-ui/layout';
+import {
+     Table,
+     TableContainer,
+     Tbody,
+     Td,
+     Th,
+     Thead,
+     Tr
+} from '@chakra-ui/react';
 import Head from 'next/head';
 import React from 'react';
 
@@ -114,6 +123,66 @@ function AthayogSadhana() {
                               transformed from within.
                          </Text>
                     </Stack>
+                    <TableContainer mt={6}>
+                         <Table variant="striped" border="1px solid #ddd">
+                              <Thead>
+                                   <Tr>
+                                        <Th>Month</Th>
+                                        <Th>Dates</Th>
+                                        <Th>Course</Th>
+
+                                        <Th>Location</Th>
+                                        <Th>Time</Th>
+                                   </Tr>
+                              </Thead>
+                              <Tbody>
+                                   <Tr>
+                                        <Td>March</Td>
+                                        <Td>22nd - 31st</Td>
+                                        <Td>Chaitra Navaratri</Td>
+
+                                        <Td>Online</Td>
+                                        <Td>6:00 PM - 7:00 PM</Td>
+                                   </Tr>
+
+                                   <Tr>
+                                        <Td>June</Td>
+                                        <Td>1st - 20th</Td>
+                                        <Td>IDY Sadhana</Td>
+
+                                        <Td>All</Td>
+                                        <Td>All time</Td>
+                                   </Tr>
+
+                                   <Tr>
+                                        <Td>October </Td>
+                                        <Td>15th - 24th </Td>
+                                        <Td>Sharad Navaratri</Td>
+
+                                        <Td>Online</Td>
+                                        <Td>6:00 PM - 7:00 PM</Td>
+                                   </Tr>
+
+                                   <Tr>
+                                        <Td>November </Td>
+                                        <Td>15th - 1st January</Td>
+                                        <Td>Sankalpa Sadhana </Td>
+
+                                        <Td>KR Puram</Td>
+                                        <Td>6:00 PM - 7:00 PM (Sunday)</Td>
+                                   </Tr>
+
+                                   <Tr>
+                                        <Td>November </Td>
+                                        <Td>15th - 1st January</Td>
+                                        <Td>Sankalpa Sadhana</Td>
+
+                                        <Td>Indiranagar</Td>
+                                        <Td>6:00 PM - 7:00 PM ( Saturday)</Td>
+                                   </Tr>
+                              </Tbody>
+                         </Table>
+                    </TableContainer>
                     {/* <ShikshanaCalendarTable calendar={events} /> */}
                </CoursesLayout>
                <ContactMore registerTo="athayog-sadhana" />
