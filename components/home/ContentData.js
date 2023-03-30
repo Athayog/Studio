@@ -123,14 +123,6 @@ export const profileData = {
 export const EmployeeData = {
      employees: [
           {
-               name: 'Kavitha G',
-
-               info: `With a decade-long history of working in the Yoga industry, Kavitha has been determined to learn and educate herself in Yog and Ayurveda. She has always found herself to be driven towards the health industry. Having completed RYT200 and a course in Ayurveda therapy, she is well-versed with the various nuances in the world of Yog.\n \nShe maintains that one should include Yog practice into their routine and begin their Yogic journey at an early age.; by educating people on the importance of Yoga, this ancient knowledge can be preserved and passed on to the future generations. Her faith in the sanctity of Yog has stemmed from the inspiration that she draws from spiritual figures like the Buddha and Mother Teresa. Kavitha has a steadfast belief in the ability of Yoga to change one’s life and longs to guide people into welcoming these changes by espousing higher living.`,
-               image: kavitha,
-               visible: true,
-               designation: 'CEO'
-          },
-          {
                name: 'Anjali Prabhu',
                info: `Striving to revive Yog in the fabric of Indian culture today while guiding people on their path with utmost enthusiasm and clarity, Anjali continues to experience life in a new light through her Yogic practice.\n \nThe Yogic chapter in her life began when she was looking to pursue higher education. It is then that she came across a unique course, MSc in Yoga Therapy and decided to take it up.  Thus, started the transformation in her life. Bestowing her with a renewed sense of living and being, her Yog practice holds immense value in her books and has helped her reorganize internally. Moreover, it has given her the means to understand and progress on her journey of self-realization.\n \nShe believes that understanding and practicing Yog with its authentic roots is necessary to tap into its true essence. As a qualified yoga therapist with a long list of academic wins to her name, Anjali aspires to teach and spread the true essence of Yog throughout the world.`,
                image: anjali,
