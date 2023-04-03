@@ -4,7 +4,11 @@ import athayogPersonal from 'public/Personal_training_home.jpg';
 import athayogShikshana from 'public/Shikshanapada_home.jpg';
 import athayogWorkshop from 'public/Workshops_home.jpg';
 import anjali from 'public/anjali.jpg';
+import harsha from 'public/Harsha.jpg';
+import kavita from 'public/Kavita.jpg';
 import sharath from 'public/sharath.jpeg';
+import madhusudan from 'public/Madhusudhan.jpg';
+import gayatri from 'public/gayatri.jpg';
 
 export const offeringsData = {
      offering: [
@@ -122,6 +126,34 @@ export const EmployeeData = {
                name: 'Anjali Prabhu',
                info: `Striving to revive Yog in the fabric of Indian culture today while guiding people on their path with utmost enthusiasm and clarity, Anjali continues to experience life in a new light through her Yogic practice.\n \nThe Yogic chapter in her life began when she was looking to pursue higher education. It is then that she came across a unique course, MSc in Yoga Therapy and decided to take it up.  Thus, started the transformation in her life. Bestowing her with a renewed sense of living and being, her Yog practice holds immense value in her books and has helped her reorganize internally. Moreover, it has given her the means to understand and progress on her journey of self-realization.\n \nShe believes that understanding and practicing Yog with its authentic roots is necessary to tap into its true essence. As a qualified yoga therapist with a long list of academic wins to her name, Anjali aspires to teach and spread the true essence of Yog throughout the world.`,
                image: anjali,
+               visible: true,
+               designation: 'Teacher'
+          },
+          {
+               name: 'Kavita Chauhan',
+               info: `Kavita Chauhan is an advanced yoga teacher and wellness instructor who discovered yoga while working at a corporate company.\n \nAfter feeling burnt out and disillusioned, Kavita decided to quit her job and pursue a more peaceful and meaningful life. She came across the Sivananda Yoga Vedanta Centres & Ashram in Kerala, where she began the 200 hour Basic yoga course. This experience was not only beneficial for her body but also for her soul. Kavita became more drawn towards the self-journey and started falling in love with herself and the world a little more.\n \nKavita volunteered at an Ashram for months, teaching students, vacationers, and nursing students from nearby colleges as a selfless service in Karma Yoga. Later, she applied for the 300 hours of advanced yoga course and became titled as Yoga Acharya from Sivananda Vedanta Centre. She also received certification from the Yoga certification board as a Yoga Wellness Instructor. \n \nKavita's vision in her Yoga journey is to spread inner awareness and happiness at whatever level she can. She aims to make people less stressed and more clear on their daily or future goals. Kavita believes that the union we try to achieve in Yoga is ultimately the Union we need in Humanity.`,
+               image: kavita,
+               visible: true,
+               designation: 'Teacher'
+          },
+          {
+               name: 'Harsha V.U',
+               info: `Harsha V.U, hailing from Kerala, India, has completed her Teachers Training Course (TTC) from Sivananda Yoga Vedanta Ashram Trivandrum in November 2020. Furthermore, she completed the Advance Teachers Training Course (ATTC) from Sivananda Meenakshi Ashram Madurai in January 2023 and Registered Prenatal Yoga Course (RPYT) from Athayog Living Yoga Academy Bangalore in October 2022. \n \nAfter completing TTC, Harsha worked in Sivananda Meenakshi Ashram Madurai as a volunteer staff for one year, where she assisted over six TTC batches and kids camp. Harsha believes that the ashram is one of the best places to practice and learn yoga as it helped him gain a lot of learning and spiritual experience. She learned that yoga is not just an exercise but includes punctuality, discipline, dedication, and respect for oneself and others. \n \nIn December 2021, Harsha left the ashram but still follows the teachings she learned there. After leaving the ashram, Harsha started taking online and offline classes from her home as a freelancer. She also applied for jobs in Bangalore as a yoga teacher and received a call from Athayog Living Academy, where she started her journey on July 20, 2022. Harsha is pleased with the learnings and teachings she has received from Athayog, and the academy has also given her a chance to do RPYT course (prenatal and postnatal course), which has made her more comfortable with more knowledge and teachings.`,
+               image: harsha,
+               visible: true,
+               designation: 'Teacher'
+          },
+          {
+               name: 'Munjuluri Madhusudhan',
+               info: `Munjuluri Madhusudhan, Yoga Teacher at AthaYog Living, teaches practice sessions that aim to challenge the body and push past its physical limitations. \n \nStudents can expect classes that are both intense and enjoyable. According to Madhusudhan, yoga is not simply a physical fitness practice, but a lifestyle that promotes overall health and happiness. His ultimate goal is to create a drug-free society through the practice of yoga. \n \nMadhusudhan holds qualifications including YIC, BSc in Yoga Therapy, and MSc in Yoga Therapy. In addition to yoga, he has skills in cycling, skating, archery, and shooting. As a yoga teacher, Madhusudhan specializes in therapeutic, Vinyasa, and Power yoga. He also teaches advanced meditation techniques and kriya practices.`,
+               image: madhusudan,
+               visible: true,
+               designation: 'Teacher'
+          },
+          {
+               name: 'Gayatri Rai',
+               info: `Introducing Gayatri Rai, a resident of Bihar and a chemistry graduate with additional qualifications such as a B.Ed., PG Diploma in Human Resource Management, CIDTT from Cambridge University, and CTET. \n \nGayatri began her yoga journey with the aim of reducing weight after her second delivery, but her passion for learning more about yoga gradually grew. She was already a teacher, and teaching yoga became another passion of hers. \n \nGayatri has completed RYT 200 from 1000yoga, advanced yoga training (RYT 300) from Akshar Yoga, and Ashtanga yoga training from 1000yoga. As a professional yoga teacher, Gayatri believes in maintaining a strong work ethic and strives to create a healthy, positive, and conducive work environment.`,
+               image: gayatri,
                visible: true,
                designation: 'Teacher'
           }
