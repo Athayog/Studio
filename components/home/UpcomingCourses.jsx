@@ -10,12 +10,8 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeOne from 'public/workshop_1.png';
-import CreativeTwo from 'public/workshop_2.png';
 import CreativeThree from 'public/workshop_3.png';
-import CreativeFour from 'public/workshop_4.png';
 import CreativeFive from 'public/workshop_5.png';
-import CreativeSix from 'public/workshop_6.png';
 import CreativeSeven from 'public/workshop_7.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';

@@ -1,14 +1,10 @@
-import anjali from 'public/anjali.jpg';
+import athayogSpace from 'public/Athayog_space_home.jpg';
 import athayogOnline from 'public/Online_class_home.jpg';
 import athayogPersonal from 'public/Personal_training_home.jpg';
 import athayogShikshana from 'public/Shikshanapada_home.jpg';
-import athayogSpace from 'public/Athayog_space_home.jpg';
 import athayogWorkshop from 'public/Workshops_home.jpg';
-import deepak from 'public/deepak.jpg';
-import kavitha from 'public/kavitha.jpg';
-import prashant from 'public/prashant.jpg';
+import anjali from 'public/anjali.jpg';
 import sharath from 'public/sharath.jpeg';
-import spandhana from 'public/spandhana.jpg';
 
 export const offeringsData = {
      offering: [

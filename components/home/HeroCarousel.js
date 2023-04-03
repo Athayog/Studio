@@ -1,21 +1,16 @@
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import 'swiper/swiper.min.css';
-import { v4 as uuidv4 } from 'uuid';
-import kidsDesktop from 'public/kids-summer-desktop.png';
-import kidsMobile from 'public/kids-summer-mobile.png';
-import jayantiDesktop from 'public/jayanti_dekstop.png';
-import jayantiMobile from 'public/jayanti_mobile.png';
+import { useRouter } from 'next/router';
 import heroDesktop from 'public/hero_desk_1.jpg';
 import heroMobile from 'public/hero_mobile_1.jpg';
-import { useRouter } from 'next/router';
-SwiperCore.use([Navigation, Pagination]);
+import { useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.min.css';
+import { v4 as uuidv4 } from 'uuid';
 import NavbarHelper from '../shared/NavbarHelper';
+SwiperCore.use([Navigation, Pagination]);
 
 const HeroCarousel = () => {
      const router = useRouter();
