@@ -57,6 +57,7 @@ const Employee = ({ name, image, info, designation }) => {
                               <Text
                                    whiteSpace="pre-wrap"
                                    fontWeight="normal"
+                                   fontSize="lg"
                                    key={index}
                               >
                                    {i}

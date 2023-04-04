@@ -25,6 +25,7 @@ const SubEmployee = ({ name, image, visible, info, designation }) => {
                                    width="300px"
                                    objectFit="cover"
                                    layout="responsive"
+                                   objectPosition="center"
                                    alt={name}
                               />
                          ) : (
@@ -45,7 +46,7 @@ const SubEmployee = ({ name, image, visible, info, designation }) => {
                     </Box>
                </Box>
 
-               <Box>
+               <Box width="100%" position="relative">
                     <Text
                          color="aygreen.600"
                          fontWeight="bold"
@@ -65,6 +66,7 @@ const SubEmployee = ({ name, image, visible, info, designation }) => {
                               <Text
                                    whiteSpace="pre-wrap"
                                    fontWeight="normal"
+                                   fontSize="lg"
                                    key={index}
                               >
                                    {i}

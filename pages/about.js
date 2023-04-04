@@ -144,9 +144,9 @@ const About = () => {
                          lg: '5rem 10rem'
                     }}
                     gridTemplateColumns={{
-                         base: 'repeat(auto-fit, minmax(220px, 1fr))',
-                         md: 'repeat(auto-fit, minmax(300px, 1fr))',
-                         lg: 'repeat(auto-fit, minmax(500px, 1fr))'
+                         base: 'repeat(auto-fit, minmax(300px, 1fr))',
+                         md: 'repeat(auto-fit, minmax(800px, 1fr))',
+                         lg: 'repeat(auto-fit, minmax(800px, 1fr))'
                     }}
                     justifyContent="center"
                     gridGap="6rem"
