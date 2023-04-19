@@ -129,7 +129,21 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      let generalCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
-          // .filter((data) => data.sub_category == undefined)
+          .filter((data) => data.sub_category == undefined)
+          .filter((data) => !data.description.toLowerCase().includes('limited'))
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
+     let generalCoursesIndiranagr = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.sub_category == 'indiranagar')
+          .filter((data) => !data.description.toLowerCase().includes('limited'))
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
+     let generalCoursesKRPuram = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.sub_category == 'kr_Puram')
           .filter((data) => !data.description.toLowerCase().includes('limited'))
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
@@ -320,6 +334,24 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     />
                     <PriceBox
                          courses={generalCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={generalCoursesIndiranagr}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={generalCoursesKRPuram}
                          data={data}
                          user={user}
                          toRegister={toRegister}
