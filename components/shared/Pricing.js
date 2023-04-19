@@ -129,7 +129,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
      let generalCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
-          .filter((data) => data.sub_category == undefined)
+          // .filter((data) => data.sub_category == undefined)
           .filter((data) => !data.description.toLowerCase().includes('limited'))
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
