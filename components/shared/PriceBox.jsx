@@ -328,7 +328,11 @@ export default function PriceBox({
           if (subCategory === 'indiranagar') {
                return (
                     <>
-                         <Heading fontSize="3xl" mt={5}>
+                         <Heading
+                              fontSize="3xl"
+                              mt={5}
+                              display={courses.length === 0 ? 'none' : 'block'}
+                         >
                               Courses For Indirangar
                          </Heading>{' '}
                          <Grid
@@ -472,7 +476,11 @@ export default function PriceBox({
           } else if (subCategory === 'kr_puram') {
                return (
                     <>
-                         <Heading fontSize="3xl" mt={5}>
+                         <Heading
+                              fontSize="3xl"
+                              mt={5}
+                              display={courses.length === 0 ? 'none' : 'block'}
+                         >
                               Courses For KR Puram
                          </Heading>{' '}
                          <Grid
