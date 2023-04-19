@@ -147,6 +147,22 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => !data.description.toLowerCase().includes('limited'))
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
+
+     let group_class_walking_in = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.sub_category == 'group_class_indiranagar')
+          .filter((data) => !data.description.toLowerCase().includes('limited'))
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
+
+     let group_class_walking_kr = pricing
+          .filter((data) => data.isTrial == false)
+          .filter((data) => data.isGeneral == true)
+          .filter((data) => data.sub_category == 'group_class_kr_puram')
+          .filter((data) => !data.description.toLowerCase().includes('limited'))
+          .sort((a, b) => a.description.length - b.description.length)
+          .sort((a, b) => a.durationNum - b.durationNum);
      const personal_training = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
@@ -352,6 +368,24 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     />
                     <PriceBox
                          courses={generalCoursesKRPuram}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={group_class_walking_in}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={group_class_walking_kr}
                          data={data}
                          user={user}
                          toRegister={toRegister}
