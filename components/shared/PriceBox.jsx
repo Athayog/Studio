@@ -328,7 +328,9 @@ export default function PriceBox({
           if (subCategory === 'indiranagar') {
                return (
                     <>
-                         <Heading>Courses For Indirangar</Heading>{' '}
+                         <Heading fontSize="2xl" mt={5}>
+                              Courses For Indirangar
+                         </Heading>{' '}
                          <Grid
                               gridTemplateColumns={{
                                    sm: 'repeat(1,1fr)',
@@ -470,7 +472,9 @@ export default function PriceBox({
           } else if (subCategory === 'kr_puram') {
                return (
                     <>
-                         <Heading>Courses For KR Puram</Heading>{' '}
+                         <Heading fontSize="2xl" mt={5}>
+                              Courses For KR Puram
+                         </Heading>{' '}
                          <Grid
                               gridTemplateColumns={{
                                    sm: 'repeat(1,1fr)',
@@ -613,6 +617,9 @@ export default function PriceBox({
                return (
                     <>
                          {' '}
+                         <Heading fontSize="2xl" mt={5}>
+                              Other Courses
+                         </Heading>
                          <Grid
                               gridTemplateColumns={{
                                    sm: 'repeat(1,1fr)',
