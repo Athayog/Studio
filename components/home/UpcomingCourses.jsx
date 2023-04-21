@@ -10,9 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeThree from 'public/workshop_3.png';
-import CreativeFive from 'public/workshop_5.png';
-import CreativeSeven from 'public/workshop_7.png';
+import CreativeOne from 'public/creative-1.jpeg';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -22,35 +20,14 @@ SwiperCore.use([Navigation, Pagination]);
 function UpcomingCourses() {
      const upcomingData = [
           {
-               id: '5',
+               id: '1',
                url: '/enquire/workshops',
-               alt: 'Traditional Hata Yoga',
-               title: 'Traditional Hata Yoga',
-               img: CreativeFive,
-               timings: '2-3 Months',
-               type: 'Offline/Online',
-               duration: ['April 3rd for Weekday', 'March 18th for Weekend']
-          },
-
-          {
-               id: '7',
-               url: '/enquire/workshops',
-               alt: 'Kids Yoga Camp',
-               title: 'Kids Yoga Camp',
-               img: CreativeSeven,
-               timings: '10:00AM - 12:00PM',
-               type: 'Offline (Indirangar/KR Puram)',
-               duration: ['10th to 21st April', 'Fee: ₹2000']
-          },
-          {
-               id: '5',
-               url: '/enquire/workshops',
-               alt: 'Ashtanga Yoga',
-               title: 'Ashtanga Yoga',
-               img: CreativeThree,
-               timings: '6:00 - 7:30 AM',
-               type: 'Online',
-               duration: ['10th - 21st April']
+               alt: 'Alignment April',
+               title: 'Alignment April',
+               img: CreativeOne,
+               timings: '10:00 AM - 11:30 AM',
+               type: 'Offline (Indiranagar)',
+               duration: ['INR 600', '29th & 30th April (Weekend)']
           }
      ];
 
