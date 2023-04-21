@@ -405,7 +405,7 @@ const Register = () => {
                                                   name="course"
                                              >
                                                   <option value="Alignment April">
-                                                       Alignment Aprila
+                                                       Alignment April
                                                   </option>
                                              </Select>
                                              <FormErrorMessage>
