@@ -12,6 +12,8 @@ import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
 import ClassesLayout from '@/components/shared/ClassesLayout';
 import Head from 'next/head';
+import { Box, Flex, List, ListIcon, ListItem } from '@chakra-ui/react';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export async function getStaticProps(context) {
      const { offers } = await getOffer('personal');
@@ -77,6 +79,42 @@ const Personal = ({ offers, notFound }) => {
                     <InformationSplit pageData={pageData} />
                     <Schedule schedule="personal" />
                     <Pricing pricing={apiPricing} registerTo="personal" />
+                    <Flex
+                         margin="auto"
+                         padding={{
+                              base: '2rem 0',
+                              md: '3rem 0',
+                              lg: '5rem 0'
+                         }}
+                         justifyContent="center"
+                         alignItems="center"
+                         width="100vw"
+                         bg="primaryWhite"
+                         direction="column"
+                    >
+                         <Box
+                              mt={10}
+                              textAlign="left"
+                              boxShadow="base"
+                              bg="white"
+                              rounded="md"
+                              p={3}
+                              width={{ base: '95%', md: '90%', lg: '90%' }}
+                         >
+                              <List>
+                                   <ListItem>
+                                        <ListIcon
+                                             as={BsFillArrowRightCircleFill}
+                                             color="green.500"
+                                             display="inline-block"
+                                             flexDir="column"
+                                        />
+                                        Note: 1 free trial class - Will be
+                                        provided on request.
+                                   </ListItem>
+                              </List>
+                         </Box>
+                    </Flex>
                </ClassesLayout>
           </motion.div>
      );

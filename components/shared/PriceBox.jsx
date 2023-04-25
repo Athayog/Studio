@@ -333,7 +333,7 @@ export default function PriceBox({
                               mt={5}
                               display={courses.length === 0 ? 'none' : 'block'}
                          >
-                              Courses For Indirangar
+                              Subscription for Indiranagar
                          </Heading>{' '}
                          <Grid
                               gridTemplateColumns={{
@@ -481,7 +481,7 @@ export default function PriceBox({
                               mt={5}
                               display={courses.length === 0 ? 'none' : 'block'}
                          >
-                              Courses For KR Puram
+                              Subscription for KR Puram
                          </Heading>{' '}
                          <Grid
                               gridTemplateColumns={{
@@ -630,7 +630,7 @@ export default function PriceBox({
                               mt={5}
                               display={courses.length === 0 ? 'none' : 'block'}
                          >
-                              Other Courses
+                              Other Categories
                          </Heading>
                          <Grid
                               gridTemplateColumns={{
