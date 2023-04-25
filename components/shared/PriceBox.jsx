@@ -330,7 +330,7 @@ export default function PriceBox({
                     <>
                          <Heading
                               fontSize="3xl"
-                              mt={5}
+                              mt={10}
                               display={courses.length === 0 ? 'none' : 'block'}
                          >
                               Subscription for Indiranagar
@@ -478,7 +478,7 @@ export default function PriceBox({
                     <>
                          <Heading
                               fontSize="3xl"
-                              mt={5}
+                              mt={10}
                               display={courses.length === 0 ? 'none' : 'block'}
                          >
                               Subscription for KR Puram
@@ -625,17 +625,6 @@ export default function PriceBox({
                return (
                     <>
                          {' '}
-                         {window.location.href.includes('space') && (
-                              <Heading
-                                   fontSize="3xl"
-                                   mt={5}
-                                   display={
-                                        courses.length === 0 ? 'none' : 'block'
-                                   }
-                              >
-                                   Other Categories
-                              </Heading>
-                         )}
                          <Grid
                               gridTemplateColumns={{
                                    sm: 'repeat(1,1fr)',
