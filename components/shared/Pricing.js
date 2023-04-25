@@ -358,15 +358,6 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
-                         courses={generalCourses}
-                         data={data}
-                         user={user}
-                         toRegister={toRegister}
-                         coursePurchased={coursePurchased}
-                         buttonId={buttonId}
-                         handleUserPayment={handleUserPayment}
-                    />
-                    <PriceBox
                          courses={generalCoursesIndiranagr}
                          data={data}
                          user={user}
@@ -385,6 +376,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                          subCategory="kr_puram"
+                    />
+                    <PriceBox
+                         courses={generalCourses}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
                          courses={group_class_walking_in}
