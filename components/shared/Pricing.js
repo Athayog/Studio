@@ -224,6 +224,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                .sort(compare)
      );
 
+     const onsite_course = sortingGroup(
+          pricing
+               .filter((data) => data.isTrial == false)
+               .filter((data) => data.isGeneral == true)
+               .filter((data) => data.sub_category == 'onsite')
+               .sort((a, b) => a.courseName.length - b.courseName.length)
+               .sort(compare)
+     );
+
      const senior = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
@@ -388,6 +397,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                     />
                     <PriceBox
                          courses={group_class_walking_kr}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
+                    <PriceBox
+                         courses={onsite_course}
                          data={data}
                          user={user}
                          toRegister={toRegister}

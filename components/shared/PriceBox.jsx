@@ -625,13 +625,17 @@ export default function PriceBox({
                return (
                     <>
                          {' '}
-                         <Heading
-                              fontSize="3xl"
-                              mt={5}
-                              display={courses.length === 0 ? 'none' : 'block'}
-                         >
-                              Other Categories
-                         </Heading>
+                         {window.location.href.includes('space') && (
+                              <Heading
+                                   fontSize="3xl"
+                                   mt={5}
+                                   display={
+                                        courses.length === 0 ? 'none' : 'block'
+                                   }
+                              >
+                                   Other Categories
+                              </Heading>
+                         )}
                          <Grid
                               gridTemplateColumns={{
                                    sm: 'repeat(1,1fr)',
