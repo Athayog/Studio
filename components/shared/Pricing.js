@@ -381,6 +381,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          courses={generalCourses}
                          data={data}
                          user={user}
+                         title={true}
                          toRegister={toRegister}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}

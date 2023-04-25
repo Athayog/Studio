@@ -19,7 +19,8 @@ export default function PriceBox({
      courses,
      limited,
      unlimited,
-     subCategory
+     subCategory,
+     title
 }) {
      if (courses == undefined) {
           courses = [];
@@ -625,6 +626,17 @@ export default function PriceBox({
                return (
                     <>
                          {' '}
+                         {title && (
+                              <Heading
+                                   fontSize="3xl"
+                                   mt={10}
+                                   display={
+                                        courses.length === 0 ? 'none' : 'block'
+                                   }
+                              >
+                                   Other Categories
+                              </Heading>
+                         )}
                          <Grid
                               gridTemplateColumns={{
                                    sm: 'repeat(1,1fr)',
