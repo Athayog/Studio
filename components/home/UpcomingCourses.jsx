@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeOne from 'public/creative-1.jpeg';
+import CreativeOne from 'public/creative-1.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -21,13 +21,13 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: '/enquire/workshops',
-               alt: 'Alignment April',
-               title: 'Alignment April',
+               url: 'https://docs.google.com/forms/d/e/1FAIpQLSeWeD_DlmESXB4G3fe_Lv3_nyXKELowk-10hGQYai5RSQzkKA/viewform?usp=sf_link',
+               alt: 'Inverted Inversion',
+               title: 'Inverted Inversion',
                img: CreativeOne,
-               timings: '10:00 AM - 11:30 AM',
-               type: 'Offline (Indiranagar)',
-               duration: ['INR 600', '29th & 30th April (Weekend)']
+               timings: '7:00 AM - 8:00 AM',
+               type: 'Offline (KR Puram)',
+               duration: ['INR 999', '8th & 12th May']
           }
      ];
 
