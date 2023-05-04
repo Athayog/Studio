@@ -22,8 +22,8 @@ function UpcomingCourses() {
           {
                id: '1',
                url: 'https://docs.google.com/forms/d/e/1FAIpQLSeWeD_DlmESXB4G3fe_Lv3_nyXKELowk-10hGQYai5RSQzkKA/viewform?usp=sf_link',
-               alt: 'Inverted Inversion',
-               title: 'Inverted Inversion',
+               alt: 'Inverted Immersion',
+               title: 'Inverted Immersion',
                img: CreativeOne,
                timings: '7:00 AM - 8:00 AM',
                type: 'Offline (KR Puram)',
