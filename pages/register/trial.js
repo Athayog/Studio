@@ -719,9 +719,9 @@ function Trial() {
                                                             <option value="KR Puram">
                                                                  KR Puram
                                                             </option>
-                                                            <option value="Online">
+                                                            {/* <option value="Online">
                                                                  Online
-                                                            </option>
+                                                            </option> */}
                                                        </Select>
                                                   </FormControl>
                                                   <FormControl>
