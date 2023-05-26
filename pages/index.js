@@ -40,7 +40,7 @@ export default function Home({ gallery, testimonials }) {
 
                <Certificate />
                <Offerings />
-               {/* <UpcomingCourses /> */}
+               <UpcomingCourses />
                <Gallery images={gallery} />
                <VideoSection />
                <Testimonials testimonials={testimonials} />

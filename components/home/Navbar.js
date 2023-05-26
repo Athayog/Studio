@@ -15,6 +15,7 @@ import {
      DrawerOverlay,
      Flex,
      HStack,
+     IconButton,
      Menu,
      MenuButton,
      MenuItem,
@@ -37,11 +38,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
 import { MotionButton } from '../shared/MotionElements';
 import SwiperCore, { Autoplay } from 'swiper';
+import { CloseIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
      const { user, signout, loading } = useAuth();
      const router = useRouter();
      const { isOpen, onOpen, onClose } = useDisclosure();
+
      const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
      const [offer, showOffer] = useState(true);
@@ -56,6 +59,40 @@ const Navbar = () => {
 
      return (
           <Box zIndex={3} position="fixed" width="100%">
+               {offer && (
+                    <Box
+                         bg="rgb(58,60,59)"
+                         color="white"
+                         p={{ base: '5', sm: '5', md: '2' }}
+                         textAlign="center"
+                         fontWeight="medium"
+                         position="relative"
+                    >
+                         Sadhana practice for International Day of Yoga -
+                         Starting from June 1st 2023 to June 21st 2023 -{' '}
+                         <a
+                              href="https://forms.gle/QfG6JP6iccHCp1ez7"
+                              target="_blank"
+                              rel="noreferrer"
+                         >
+                              <strong>
+                                   <u>Register Now</u>
+                              </strong>
+                         </a>
+                         <IconButton
+                              icon={<CloseIcon />}
+                              cursor="pointer"
+                              position="absolute"
+                              top={{ base: '2px', sm: '2px', md: '8px' }}
+                              size="xs"
+                              right={{ base: '2px', sm: '2px', md: '20px' }}
+                              bg="transparent"
+                              colorScheme="green"
+                              onClick={() => showOffer(false)}
+                         ></IconButton>
+                    </Box>
+               )}
+
                <Center
                     bg="white"
                     transition="linear"

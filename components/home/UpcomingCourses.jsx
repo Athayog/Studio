@@ -21,13 +21,13 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: 'https://docs.google.com/forms/d/e/1FAIpQLSeWeD_DlmESXB4G3fe_Lv3_nyXKELowk-10hGQYai5RSQzkKA/viewform?usp=sf_link',
-               alt: 'Inverted Immersion',
-               title: 'Inverted Immersion',
+               url: 'https://forms.gle/QfG6JP6iccHCp1ez7',
+               alt: 'Yoga arambha sadhana',
+               title: 'Yoga arambha sadhana',
                img: CreativeOne,
-               timings: '7:00 AM - 8:00 AM',
-               type: 'Offline (KR Puram)',
-               duration: ['INR 999', '8th & 12th May']
+               timings: 'Morning (6,7,8 & 9 AM) | Evening (5,6,7 & 8 PM)',
+               type: 'Offline (Indiranagar)',
+               duration: ['21 Days Free Program', '1st to 21st June']
           }
      ];
 
