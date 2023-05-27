@@ -57,15 +57,16 @@ function RegisterButton() {
                     direction={['column', 'column']}
                     justifyContent="center"
                >
-                    <Button
-                         size={buttonSize}
-                         colorScheme="aygreen"
-                         rounded="none"
-                         maxW="max-content"
-                         disabled="disabled"
-                    >
-                         REGISTER NOW! - FREE AND OPEN TO ALL
-                    </Button>
+                    <Link href="/yoga-day/register/" passHref={true}>
+                         <Button
+                              size={buttonSize}
+                              colorScheme="aygreen"
+                              rounded="none"
+                              maxW="max-content"
+                         >
+                              REGISTER NOW! - FREE AND OPEN TO ALL
+                         </Button>
+                    </Link>
 
                     <Flex
                          alignItems="center"

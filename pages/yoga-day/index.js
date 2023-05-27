@@ -17,8 +17,8 @@ function YogaDay() {
                </Head>
                <Hero />
                <Welcome />
-               <Youtube />
-               <Banner />
+               {/* <Youtube /> */}
+               {/* <Banner /> */}
                <Quote />
                <Schedule />
                <RegisterButton />

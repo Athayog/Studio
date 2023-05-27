@@ -120,6 +120,7 @@ function EventRegister() {
                     }
                })
                .catch((error) => {
+                    console.log(error);
                     setLoading(false);
                     toast({
                          title: 'Error',
@@ -169,7 +170,8 @@ function EventRegister() {
                               member
                          };
                     });
-                    sendEmail(
+
+                    sendToAthayog(
                          name,
                          email,
                          phone,
@@ -266,12 +268,11 @@ function EventRegister() {
                     Accept: 'application/json'
                },
                body: JSON.stringify({
-                    FormType: 'Registration For Arambha',
+                    FormType: 'Registration For Arambha 2023',
                     name,
                     email,
                     phone,
                     age,
-
                     tshirt,
                     gender,
                     ticketID,
@@ -279,6 +280,8 @@ function EventRegister() {
                     member
                })
           });
+          setEvent(true);
+          setLoading(false);
      };
 
      const Ticket = () => {
@@ -331,14 +334,12 @@ function EventRegister() {
                                                   <Td>{user.ticketID}</Td>
                                                   <Td>{user.name}</Td>
                                                   <Td>
-                                                       Kittur Rani Chennamma{' '}
-                                                       <br />
-                                                       Stadium, Bengaluru
+                                                       Defense Colony Ground,
+                                                       Indiranagar, Bengaluru
                                                   </Td>
                                                   <Td>
-                                                       June 21st, 2022 Tuesday -{' '}
-                                                       <br />
-                                                       5:30AM - 8:45AM,
+                                                       June 18th, 2023 | Sunday
+                                                       5.30 AM - 9:00 AM
                                                   </Td>
                                              </Tr>
                                         </Tbody>
@@ -368,10 +369,10 @@ function EventRegister() {
                               PRINT TICKET
                          </Button>
                     </Flex>
-                    <Badge mt={5} width="max-content" whiteSpace="pre-wrap">
+                    {/* <Badge mt={5} width="max-content" whiteSpace="pre-wrap">
                          A copy of ticket has been sent to your email
-                    </Badge>
-                    <Text mt={5}>
+                    </Badge> */}
+                    {/* <Text mt={5}>
                          Didn&apos;t receive your mail?{' '}
                          <chakra.span
                               textDecor="underline"
@@ -390,7 +391,7 @@ function EventRegister() {
                          >
                               Click Here
                          </chakra.span>{' '}
-                    </Text>
+                    </Text> */}
                </Flex>
           );
      };

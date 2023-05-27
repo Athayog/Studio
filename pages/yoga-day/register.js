@@ -9,11 +9,11 @@ function Register() {
                <Head>
                     <title>Register | Yoga Arambha</title>
                </Head>
-               <Script
+               {/* <Script
                     src="https://www.googletagmanager.com/gtag/js?id=AW-616323515"
                     strategy="beforeInteractive"
-               ></Script>
-               <Script id="google-analytics" strategy="afterInteractive">
+               ></Script> */}
+               {/* <Script id="google-analytics" strategy="afterInteractive">
                     {`
            window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -29,7 +29,7 @@ function Register() {
     currency: '0',
   });
 }, false);`}
-               </Script>
+               </Script> */}
                <EventRegister />
           </div>
      );

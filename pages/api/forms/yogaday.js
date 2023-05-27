@@ -35,7 +35,7 @@ export default async function handler(req, res) {
                const latestDoc = req.query.latestDoc;
 
                const snapshot = await db
-                    .collection('arambhaForm')
+                    .collection('arambhaForm2023')
                     .orderBy('createdAt', 'desc')
                     .get();
                const submissions = [];

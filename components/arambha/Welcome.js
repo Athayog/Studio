@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import idy from 'public/idy.png';
+import idy from 'public/og.png';
 import azadi from 'public/amrit.png';
 import modi from 'public/modi.png';
 import tejasvi from 'public/tejasvi.jpg';
@@ -70,47 +70,15 @@ function Welcome() {
                     alignItems="center"
                     position="relative"
                >
-                    <Flex
-                         gap={5}
-                         spacing={10}
-                         position="absolute"
-                         top="5"
-                         left="10"
-                    >
+                    <Flex gap={5} spacing={10}>
                          <Box
                               overflow="hidden"
-                              height="4rem"
-                              width="4rem"
+                              height="8rem"
+                              width="8rem"
                               position="relative"
                          >
                               <Image
                                    src={idy}
-                                   alt="azadi logo"
-                                   objectFit="contain"
-                                   layout="fill"
-                              />
-                         </Box>
-                         <Box
-                              overflow="hidden"
-                              height="5rem"
-                              width="5rem"
-                              position="relative"
-                         >
-                              <Image
-                                   src={azadi}
-                                   alt="azadi logo"
-                                   objectFit="contain"
-                                   layout="fill"
-                              />
-                         </Box>
-                         <Box
-                              overflow="hidden"
-                              height="4rem"
-                              width="4rem"
-                              position="relative"
-                         >
-                              <Image
-                                   src={modi}
                                    alt="azadi logo"
                                    objectFit="contain"
                                    layout="fill"
@@ -128,43 +96,7 @@ function Welcome() {
                          <br />
                          Join us this International Day of Yoga!
                     </Heading>
-                    <Flex
-                         fontSize={{ base: 'xl', md: 'xl', lg: '2xl' }}
-                         gap={3}
-                         display={{ base: 'none', md: 'flex' }}
-                    >
-                         <Box
-                              rounded="full"
-                              overflow="hidden"
-                              height="4rem"
-                              width="4rem"
-                              position="relative"
-                         >
-                              <Image
-                                   src={tejasvi}
-                                   alt="azadi logo"
-                                   objectFit="cover"
-                                   layout="fill"
-                              />
-                         </Box>
-                         <Box>
-                              <Text
-                                   textColor="gray.600"
-                                   fontWeight="normal"
-                                   fontSize="xl"
-                              >
-                                   In association with Office of
-                              </Text>
 
-                              <Text
-                                   textTransform="uppercase"
-                                   fontWeight="bold"
-                                   fontSize="2xl"
-                              >
-                                   TEJASVI SURYA
-                              </Text>
-                         </Box>
-                    </Flex>
                     <Box
                          textAlign="center"
                          fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
@@ -176,50 +108,14 @@ function Welcome() {
                          <br />
                          Join us this International Day of Yoga!
                     </Box>
-                    <Flex
-                         fontSize={{ base: 'xl', md: 'xl', lg: '2xl' }}
-                         gap={3}
-                         display={{ base: 'flex', md: 'none' }}
-                    >
-                         <Box
-                              rounded="full"
-                              overflow="hidden"
-                              height="3.5rem"
-                              width="3.5rem"
-                              position="relative"
-                         >
-                              <Image
-                                   src={tejasvi}
-                                   alt="azadi logo"
-                                   objectFit="cover"
-                                   layout="fill"
-                              />
-                         </Box>
-                         <Box>
-                              <Text
-                                   textColor="gray.600"
-                                   fontWeight="normal"
-                                   fontSize="lg"
-                              >
-                                   In association with Office of
-                              </Text>
 
-                              <Text
-                                   textTransform="uppercase"
-                                   fontWeight="bold"
-                                   fontSize="xl"
-                              >
-                                   TEJASVI SURYA
-                              </Text>
-                         </Box>
-                    </Flex>
                     <Text
                          fontSize={{ base: 'xl', md: '3xl', lg: '3xl' }}
                          fontWeight="normal"
                     >
-                         June 21st, 2022, 5.30 AM onwards
+                         June 18th, 2023 | Sunday 5.30 AM - 9:00 AM
                          <br />
-                         Kittur Rani Chennamma Stadium, Bengaluru
+                         Defense Colony Ground, Indiranagar, Bengaluru
                     </Text>
 
                     <Flex
@@ -227,15 +123,33 @@ function Welcome() {
                          gap={5}
                          direction={['column', 'column']}
                     >
-                         <Button
-                              size={buttonSize}
-                              colorScheme="aygreen"
-                              rounded="none"
-                              maxW="max-content"
-                              disabled="disabled"
+                         <Link href="/yoga-day/register/" passHref={true}>
+                              <Button
+                                   size={buttonSize}
+                                   colorScheme="aygreen"
+                                   rounded="none"
+                                   maxW="max-content"
+                              >
+                                   REGISTER NOW! - FREE AND OPEN TO ALL
+                              </Button>
+                         </Link>
+                         <Flex
+                              justifyContent="center"
+                              alignItems="center"
+                              gap={5}
                          >
-                              REGISTER NOW! - FREE AND OPEN TO ALL
-                         </Button>
+                              {' '}
+                              <Link passHref href="/yoga-day/ticket">
+                                   <Button
+                                        variant="solid"
+                                        colorScheme="gray"
+                                        size="sm"
+                                   >
+                                        Already Registered? Download Your Ticket
+                                        Here
+                                   </Button>
+                              </Link>
+                         </Flex>
 
                          <Flex
                               alignItems="center"
@@ -267,7 +181,7 @@ function Welcome() {
                     textColor="black"
                >
                     <Text textAlign="left">
-                         We at AthaYog Living are celebrating Yoga with a grand
+                         AthaYog Living is celebrating Yoga with a grand
                          festival and we cordially invite each and every one of
                          you to celebrate the Yogic way of life.
                     </Text>
@@ -280,20 +194,36 @@ function Welcome() {
                          gap={10}
                     >
                          <Stack spacing={10}>
-                              <Text>
-                                   Last year, we celebrated International Day of
-                                   Yoga with a 12-hour Yogathon celebration and
-                                   our members joined the asana, pranayama,
-                                   meditation, lecture, chanting and satsang
-                                   session with great joy.
+                              <Text fontSize="2xl" fontWeight="bold">
+                                   Yoga as an ‘innercise’
                               </Text>
                               <Text>
-                                   This year we are taking it forward with a
-                                   grand initiative beyond our studio to an
-                                   outdoor space open to everyone in Bengaluru.
+                                   One of our main goals is to help individuals
+                                   cultivate and enrich their inner self as much
+                                   as they work on their external needs like
+                                   career, physical fitness, entertainment and
+                                   leisure. In this way, Yoga is not just an
+                                   exercise for the physical body but also a
+                                   means to build resilience for dealing with
+                                   life’s challenges.
                               </Text>
                               <Text>
-                                   {' '}
+                                   <strong>
+                                        Last year, we celebrated International
+                                        Day of Yoga{' '}
+                                   </strong>
+                                   at kittur rani chennamma stadium with{' '}
+                                   <strong>700+ practitioners</strong> enjoying
+                                   Multiple activities at the space including
+                                   the Special Yoga session, yoga challenge
+                                   competition, AR, VR, etc
+                              </Text>
+                              <Text>
+                                   Let&apos;s gather on our Second Event and be
+                                   a part of a conscious journey of YOGA
+                                   ARAMBHA, an effort to bring health first.
+                              </Text>
+                              <Text fontStyle="italic">
                                    Meet people from all walks of life united
                                    through Yoga.
                               </Text>
@@ -304,13 +234,15 @@ function Welcome() {
                               bg="aygray.100"
                          >
                               <Text fontWeight="medium">Who Can Join?</Text>
+                              <Text>YOGA IS FOR ALL. </Text>
                               <Text>
-                                   We value the importance of community and Yoga
-                                   helps rebuild this sense of community by
-                                   allowing people of different backgrounds,
-                                   ages, and interests to share the experience.
+                                   Athyayog values the importance of community
+                                   and Yoga helps rebuild this sense of
+                                   community by allowing people of different
+                                   backgrounds, ages, and interests to share the
+                                   experience.
                               </Text>
-                              <Text>
+                              <Text fontStyle="italic">
                                    Please note that it is open to all above 6
                                    years.
                               </Text>

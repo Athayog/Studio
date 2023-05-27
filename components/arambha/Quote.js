@@ -6,7 +6,7 @@ function Quote() {
           <Flex
                p={{ base: '10', md: '15', lg: '20' }}
                bg="gray.50"
-               textColor="aygray.300"
+               textColor="aygray.600"
                fontWeight="bold"
                justifyContent="center"
                alignItems="center"

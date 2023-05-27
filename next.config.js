@@ -8,11 +8,6 @@ const redirects = {
      async redirects() {
           return [
                {
-                    source: '/yoga-day/register',
-                    destination: '/',
-                    permanent: true
-               },
-               {
                     source: '/swami-vivekananda-jayanti/register',
                     destination: '/',
                     permanent: true

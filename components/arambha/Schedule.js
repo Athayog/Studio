@@ -23,10 +23,11 @@ function Schedule() {
                          Programme Schedule
                     </Heading>
                     <Box fontSize="xl">
-                         <Text>Date: Tuesday, June 21st, 2023 </Text>
-                         <Text>Time: 5.30 AM - 8.45 AM</Text>
+                         <Text>Date: June 18th, 2023 | Sunday</Text>
+                         <Text>Time: 5.30 AM - 9:00 AM</Text>
                          <Text>
-                              Location: Kittur Rani Chennamma Stadium, Bengaluru
+                              Location: Defense Colony Ground, Indiranagar,
+                              Bengaluru
                          </Text>
                     </Box>
                     <Box>
@@ -59,9 +60,8 @@ function Schedule() {
                                         <Tr>
                                              <Td>7:00 AM - 8:30 AM </Td>
                                              <Td>
-                                                  Special Yoga session by the
-                                                  Founder Sharath Basavaraju and
-                                                  the Team
+                                                  Special Yoga Session by
+                                                  Sharath Basavaraju & Team
                                              </Td>
                                         </Tr>
                                         <Tr>

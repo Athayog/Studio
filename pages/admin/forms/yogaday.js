@@ -11,7 +11,7 @@ const YogaDay = () => {
      const [latestDoc, setLatestDoc] = useState(0);
      const { data, error } =
           latestDoc != 0 && latestDoc != undefined
-               ? useSWR(`/api/forms/${latestDoc}?type=arambhaForm`, fetcher)
+               ? useSWR(`/api/forms/${latestDoc}?type=arambhaForm2023`, fetcher)
                : useSWR(`/api/forms/yogaday`, fetcher);
 
      const bg = useColorModeValue('white', 'gray.800');
