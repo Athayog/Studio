@@ -9,8 +9,9 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import HeroDesktop from 'public/career3.jpg';
-import { Link } from 'react-scroll';
+import { Link as ReactLink } from 'react-scroll';
 import NavbarHelper from '../shared/NavbarHelper';
+import Link from 'next/link';
 
 function Hero() {
      const buttonSize = useBreakpointValue(['md', 'lg']);
@@ -109,9 +110,14 @@ function Hero() {
                                              Register to attend
                                         </Button>
                                    </Link>
-                                   <Link
-                                        href="/yoga-day/register/"
-                                        passHref={true}
+
+                                   <ReactLink
+                                        activeClass="active"
+                                        to="shedule"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-100}
+                                        duration={500}
                                    >
                                         <Button
                                              variant="solid"
@@ -121,7 +127,7 @@ function Hero() {
                                         >
                                              See event schedule
                                         </Button>
-                                   </Link>
+                                   </ReactLink>
                               </Flex>
                               <Flex
                                    justifyContent="center"

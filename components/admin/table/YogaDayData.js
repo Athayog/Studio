@@ -137,14 +137,14 @@ const YogaDayData = ({ forms, latestDoc, setDocs }) => {
                     accessor: 'member',
                     Filter: ColumnFilter
                },
-               {
-                    Header: 'events',
-                    accessor: 'events',
-                    Cell: ({ cell: { value } }) => (
-                         <Events values={value} key={uuidv4()} />
-                    ),
-                    Filter: ColumnFilter
-               },
+               // {
+               //      Header: 'events',
+               //      accessor: 'events',
+               //      Cell: ({ cell: { value } }) => (
+               //           <Events values={value} key={uuidv4()} />
+               //      ),
+               //      Filter: ColumnFilter
+               // },
                {
                     Header: 'Submitted',
                     accessor: 'createdAt',

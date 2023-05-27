@@ -17,7 +17,7 @@ import React from 'react';
 
 function Schedule() {
      return (
-          <Container py={10} maxW="90vw">
+          <Container py={10} maxW="90vw" id="shedule">
                <Stack spacing={6}>
                     <Heading as="h4" fontSize="2xl" textDecor="underline">
                          Programme Schedule
