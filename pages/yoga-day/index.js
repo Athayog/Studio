@@ -1,5 +1,6 @@
 import Banner from '@/components/arambha/Banner';
 import Hero from '@/components/arambha/Hero';
+import ImageGallery from '@/components/arambha/ImageGallery';
 import Quote from '@/components/arambha/Quote';
 import RegisterButton from '@/components/arambha/RegisterButton';
 import Schedule from '@/components/arambha/Schedule';
@@ -21,6 +22,7 @@ function YogaDay() {
                {/* <Banner /> */}
                <Quote />
                <Schedule />
+               <ImageGallery />
                <RegisterButton />
           </div>
      );

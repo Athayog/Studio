@@ -7,18 +7,13 @@ import {
      Heading,
      Stack,
      Text,
-     useBreakpointValue,
      chakra,
-     useToast,
-     HStack
+     useBreakpointValue,
+     useToast
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import idy from 'public/og.png';
-import azadi from 'public/amrit.png';
-import modi from 'public/modi.png';
-import tejasvi from 'public/tejasvi.jpg';
-import React from 'react';
 
 function Welcome() {
      const buttonSize = useBreakpointValue(['sm', 'md']);
