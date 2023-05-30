@@ -118,12 +118,14 @@ function Hero() {
                                         smooth={true}
                                         offset={-100}
                                         duration={500}
+                                        width="100%"
                                    >
                                         <Button
                                              variant="solid"
                                              colorScheme="aygray"
                                              size={buttonSize}
                                              rounded="full"
+                                             width="full"
                                         >
                                              See event schedule
                                         </Button>

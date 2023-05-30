@@ -241,6 +241,15 @@ function Welcome() {
                                    Please note that it is open to all above 6
                                    years.
                               </Text>
+                              <Box rounded="md" overflow="hidden">
+                                   <Image
+                                        src="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/arambha%2FIDY_14.png?alt=media&token=08a7962a-5f38-47ee-98df-4b59bed16422"
+                                        layout="responsive"
+                                        objectFit="cover"
+                                        height={50}
+                                        width={100}
+                                   />
+                              </Box>
                          </Stack>
                     </Grid>
                     <Flex
