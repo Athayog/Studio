@@ -261,6 +261,8 @@ function EventRegister() {
      ) => {
           // Send Email
           console.log('Send To Athayog');
+          setEvent(true);
+          setLoading(false);
           await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
                method: 'POST',
                headers: {
@@ -280,8 +282,6 @@ function EventRegister() {
                     member
                })
           });
-          setEvent(true);
-          setLoading(false);
      };
 
      const Ticket = () => {
