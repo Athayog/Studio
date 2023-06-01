@@ -260,7 +260,7 @@ function EventRegister() {
           member
      ) => {
           // Send Email
-
+          console.log('Send To Athayog');
           await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
                method: 'POST',
                headers: {
