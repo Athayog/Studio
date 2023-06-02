@@ -101,7 +101,6 @@ function EventRegister() {
                               email,
                               phone,
                               age,
-
                               tshirt,
                               gender,
                               ticketID,
@@ -129,6 +128,7 @@ function EventRegister() {
                          duration: 9000,
                          isClosable: true
                     });
+                    sendErrorToMe(error);
                });
      };
 
@@ -149,7 +149,6 @@ function EventRegister() {
                email,
                phone,
                age,
-
                tshirt,
                gender,
                ticketID,
@@ -193,6 +192,7 @@ function EventRegister() {
                          duration: 9000,
                          isClosable: true
                     });
+                    sendErrorToMe(error);
                });
      };
 
@@ -282,6 +282,26 @@ function EventRegister() {
                     member
                })
           });
+     };
+
+     const sendErrorToMe = async (error) => {
+          // Send Email
+          // setEvent(true);
+          // setLoading(false);
+          await fetch(
+               'https://formsubmit.co/ajax/harsimransinghbarki@gmail.com',
+               {
+                    method: 'POST',
+                    headers: {
+                         'Content-Type': 'application/json',
+                         Accept: 'application/json'
+                    },
+                    body: JSON.stringify({
+                         FormType: 'Registration For Arambha 2023',
+                         error: JSON.stringify(error)
+                    })
+               }
+          );
      };
 
      const Ticket = () => {
