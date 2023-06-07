@@ -57,7 +57,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class May 2023 (Indiranagar)
+                              AthaYog Offline Class June 2023 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -301,7 +301,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class May 2023 (KR Puram)
+                              AthaYog Offline Class June 2023 (KR Puram)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -466,15 +466,6 @@ function Schedule() {
                                         happening on 3rd Saturday of the month
                                         (6:00 AM - 8:00 AM)
                                    </ListItem>
-                                   <ListItem>
-                                        <ListIcon
-                                             as={BsFillArrowRightCircleFill}
-                                             color="green.500"
-                                        />
-                                        On 1st May (Labour&apos;s day) classes
-                                        will be happening from 6 AM - 10 AM, (No
-                                        evening classes)
-                                   </ListItem>
                               </List>
 
                               <Badge
@@ -482,8 +473,9 @@ function Schedule() {
                                    fontWeight="medium"
                                    mt={3}
                               >
-                                   Note: 108 Surya namaskar will be happening on
-                                   1st Saturday of the month (7:00 AM - 9:00 AM)
+                                   Note: There will be no 108 Surya namaskar
+                                   practice and Ashtanga practice due to Yoga
+                                   Arambha sadhana
                               </Badge>
                          </Box>
                     </Flex>
