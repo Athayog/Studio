@@ -108,9 +108,9 @@ function Welcome() {
                          fontSize={{ base: 'xl', md: '3xl', lg: '3xl' }}
                          fontWeight="normal"
                     >
-                         June 18th, 2023 | Sunday 5.30 AM - 9:00 AM
+                         21 Jun 2023 | Wednesday 6.00am - 8.30am
                          <br />
-                         Defense Colony Ground, Indiranagar, Bengaluru
+                         Ramakrishna Math, Halasur
                     </Text>
 
                     <Flex

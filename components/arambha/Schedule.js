@@ -23,12 +23,9 @@ function Schedule() {
                          Programme Schedule
                     </Heading>
                     <Box fontSize="xl">
-                         <Text>Date: June 18th, 2023 | Sunday</Text>
-                         <Text>Time: 5.30 AM - 9:00 AM</Text>
-                         <Text>
-                              Location: Defense Colony Ground, Indiranagar,
-                              Bengaluru
-                         </Text>
+                         <Text>Date: 21 Jun 2023 | Wednesday</Text>
+                         <Text>Time: 6.00am - 8.30am</Text>
+                         <Text>Location: Ramakrishna Math, Halasur</Text>
                     </Box>
                     <Box>
                          <TableContainer
@@ -46,27 +43,24 @@ function Schedule() {
                                    </Thead>
                                    <Tbody>
                                         <Tr>
-                                             <Td>5:30 AM</Td>
+                                             <Td>5:45 AM</Td>
                                              <Td>Registrations Open </Td>
                                         </Tr>
                                         <Tr>
-                                             <Td>5:30 AM - 6:30 AM </Td>
-                                             <Td>Pooja & Rituals</Td>
-                                        </Tr>
-                                        <Tr>
-                                             <Td>6:30 AM - 6:45 AM</Td>
+                                             <Td>6:00 AM - 6:30 AM </Td>
                                              <Td>Opening Ceremony</Td>
                                         </Tr>
                                         <Tr>
-                                             <Td>7:00 AM - 8:30 AM </Td>
-                                             <Td>
-                                                  Special Yoga Session by
-                                                  Sharath Basavaraju & Team
-                                             </Td>
+                                             <Td>6:30 AM - 7:45 AM</Td>
+                                             <Td>Special Yoga Practice</Td>
                                         </Tr>
                                         <Tr>
-                                             <Td>8:30 AM - 8:45 AM </Td>
+                                             <Td>7:45 AM - 8:00 AM </Td>
                                              <Td>Closing Ceremony</Td>
+                                        </Tr>
+                                        <Tr>
+                                             <Td>8:00 AM - 8:30 AM </Td>
+                                             <Td>Breakfast</Td>
                                         </Tr>
                                    </Tbody>
                               </Table>

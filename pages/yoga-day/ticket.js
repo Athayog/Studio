@@ -159,22 +159,19 @@ function Ticket() {
                                                                            }
                                                                       </Td>
                                                                       <Td>
-                                                                           Defense
-                                                                           Colony
-                                                                           Ground,
-                                                                           Indiranagar,
-                                                                           Bengaluru
+                                                                           Ramakrishna
+                                                                           Math,
+                                                                           Halasur
                                                                       </Td>
                                                                       <Td>
-                                                                           June
-                                                                           18th,
+                                                                           21
+                                                                           Jun
                                                                            2023
                                                                            |
-                                                                           Sunday
-                                                                           5.30
-                                                                           AM -
-                                                                           9:00
-                                                                           AM
+                                                                           Wednesday
+                                                                           6.00am
+                                                                           -
+                                                                           7.30am
                                                                       </Td>
                                                                  </Tr>
                                                             </Tbody>
