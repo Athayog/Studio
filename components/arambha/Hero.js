@@ -54,7 +54,7 @@ function Hero() {
                                    lg: '2xl'
                               }}
                          >
-                              June 18th, 2023 | 5.30 AM Onwards
+                              June 21st, 2023 | 6.00 AM Onwards
                          </Text>
                          <Stack spacing={8}>
                               <Heading
