@@ -62,7 +62,7 @@ const HeroCarousel = () => {
      }, []);
 
      return (
-          <Box height="105vh" cursor="pointer">
+          <Box height="100%" cursor="pointer">
                <NavbarHelper />
                <Swiper
                     key={uuidv4()}
@@ -78,12 +78,12 @@ const HeroCarousel = () => {
                                    key={image.id}
                                    onClick={() => pushToLink(image.url)}
                               >
-                                   <Box height="100vh" width="100%">
+                                   <Box height="100%" width="100%">
                                         <Image
-                                             layout="fill"
+                                             layout="responsive"
                                              alt={image.alt}
                                              objectFit="cover"
-                                             objectPosition="top"
+                                             objectPosition="center"
                                              src={image.imageUrl}
                                              placeholder="blur"
                                         />
