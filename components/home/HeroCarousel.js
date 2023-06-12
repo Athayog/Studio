@@ -1,8 +1,8 @@
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import heroDesktop from 'public/hero_desk_1.jpg';
-import heroMobile from 'public/hero_mobile_1.jpg';
+import heroDesktop from 'public/desktop_yoga.png';
+import heroMobile from 'public/mobile_yoga.png';
 import { useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -25,7 +25,7 @@ const HeroCarousel = () => {
                id: 0,
                alt: 'Athayog Living',
                imageUrl: heroDesktop,
-               url: null
+               url: '/yoga-day'
           }
 
           // {
@@ -41,7 +41,7 @@ const HeroCarousel = () => {
                id: 0,
                alt: 'Athayog Living',
                imageUrl: heroMobile,
-               url: null
+               url: 'yoga-day'
           }
 
           // {
@@ -62,7 +62,7 @@ const HeroCarousel = () => {
      }, []);
 
      return (
-          <Box height="105vh">
+          <Box height="105vh" cursor="pointer">
                <NavbarHelper />
                <Swiper
                     key={uuidv4()}
@@ -78,11 +78,12 @@ const HeroCarousel = () => {
                                    key={image.id}
                                    onClick={() => pushToLink(image.url)}
                               >
-                                   <Box height="100vh">
+                                   <Box height="100vh" width="100%">
                                         <Image
                                              layout="fill"
                                              alt={image.alt}
                                              objectFit="cover"
+                                             objectPosition="top"
                                              src={image.imageUrl}
                                              placeholder="blur"
                                         />

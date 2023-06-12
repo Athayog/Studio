@@ -63,7 +63,7 @@ const Navbar = () => {
                     <Box
                          bg="rgb(58,60,59)"
                          color="white"
-                         p={{ base: '5', sm: '5', md: '2' }}
+                         p={{ base: '2', sm: '2', md: '2' }}
                          textAlign="center"
                          fontWeight="medium"
                          position="relative"
@@ -263,7 +263,7 @@ const Navbar = () => {
                                              Courses
                                         </Button>
                                    </Link>
-                                   <Link href="/career" passHref>
+                                   {/* <Link href="/career" passHref>
                                         <Button
                                              fontWeight="normal"
                                              fontSize="md"
@@ -284,6 +284,28 @@ const Navbar = () => {
                                              }
                                         >
                                              Career
+                                        </Button>
+                                   </Link> */}
+                                   <Link href="/yoga-day" passHref>
+                                        <Button
+                                             fontWeight="normal"
+                                             fontSize="md"
+                                             variant="ghost"
+                                             _hover={{
+                                                  bg: 'aygreen.100'
+                                             }}
+                                             _active={{
+                                                  bg: 'aygreen.100',
+                                                  transform: 'scale(0.98)',
+                                                  borderColor: '#bec3c9'
+                                             }}
+                                             isActive={
+                                                  router.pathname == '/yoga-day'
+                                                       ? true
+                                                       : ''
+                                             }
+                                        >
+                                             Yoga Day 2023
                                         </Button>
                                    </Link>
                                    <Link href="/store" passHref>
@@ -474,7 +496,7 @@ const Navbar = () => {
                                                   Athayog Courses
                                              </Button>
                                         </Link>
-                                        <Link passHref href="/career">
+                                        {/* <Link passHref href="/career">
                                              <Button
                                                   onClick={onClose}
                                                   isActive={
@@ -489,6 +511,23 @@ const Navbar = () => {
                                                   justifyContent="left"
                                              >
                                                   Career
+                                             </Button>
+                                        </Link> */}
+                                        <Link passHref href="/yoga-day">
+                                             <Button
+                                                  onClick={onClose}
+                                                  isActive={
+                                                       router.pathname ==
+                                                       '/yoga-day'
+                                                            ? true
+                                                            : ''
+                                                  }
+                                                  rounded="md"
+                                                  variant="ghost"
+                                                  colorScheme="aygreen"
+                                                  justifyContent="left"
+                                             >
+                                                  Yoga Day 2023
                                              </Button>
                                         </Link>
                                         <Link passHref href="/store">
