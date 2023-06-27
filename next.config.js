@@ -16,6 +16,11 @@ const redirects = {
                     source: '/yoga-day',
                     destination: '/',
                     permanent: true
+               },
+               {
+                    source: '/yoga-day/register',
+                    destination: '/',
+                    permanent: true
                }
           ];
      }
