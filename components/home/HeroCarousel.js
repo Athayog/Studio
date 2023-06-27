@@ -1,8 +1,8 @@
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import heroDesktop from 'public/desktop_yoga.png';
-import heroMobile from 'public/mobile_yoga.png';
+import heroDesktop from 'public/hero_desk_1.jpg';
+import heroMobile from 'public/hero_mobile_1.jpg';
 import { useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import SwiperCore, { Navigation, Pagination } from 'swiper';

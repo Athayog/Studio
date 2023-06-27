@@ -11,6 +11,11 @@ const redirects = {
                     source: '/swami-vivekananda-jayanti/register',
                     destination: '/',
                     permanent: true
+               },
+               {
+                    source: '/yoga-day',
+                    destination: '/',
+                    permanent: true
                }
           ];
      }

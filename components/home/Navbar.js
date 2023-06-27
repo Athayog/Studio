@@ -59,45 +59,6 @@ const Navbar = () => {
 
      return (
           <>
-               <Box position="sticky" top="0" zIndex={3}>
-                    {offer && (
-                         <Box
-                              bg="rgb(58,60,59)"
-                              color="white"
-                              p={{ base: '2', sm: '2', md: '2' }}
-                              textAlign="center"
-                              fontWeight="medium"
-                              position="relative"
-                         >
-                              Sadhana practice for International Day of Yoga -
-                              Starting from June 1st 2023 to June 21st 2023 -{' '}
-                              <a
-                                   href="https://forms.gle/QfG6JP6iccHCp1ez7"
-                                   target="_blank"
-                                   rel="noreferrer"
-                              >
-                                   <strong>
-                                        <u>Register Now</u>
-                                   </strong>
-                              </a>
-                              <IconButton
-                                   icon={<CloseIcon />}
-                                   cursor="pointer"
-                                   position="absolute"
-                                   top={{ base: '2px', sm: '2px', md: '8px' }}
-                                   size="xs"
-                                   right={{
-                                        base: '2px',
-                                        sm: '2px',
-                                        md: '20px'
-                                   }}
-                                   bg="transparent"
-                                   colorScheme="green"
-                                   onClick={() => showOffer(false)}
-                              ></IconButton>
-                         </Box>
-                    )}
-               </Box>
                <Box zIndex={3} position="fixed" width="100%">
                     <Center
                          bg="white"
@@ -304,7 +265,7 @@ const Navbar = () => {
                                              Career
                                         </Button>
                                    </Link> */}
-                                        <Link href="/yoga-day" passHref>
+                                        <Link href="/career" passHref>
                                              <Button
                                                   fontWeight="normal"
                                                   fontSize="md"
@@ -319,12 +280,12 @@ const Navbar = () => {
                                                   }}
                                                   isActive={
                                                        router.pathname ==
-                                                       '/yoga-day'
+                                                       '/career'
                                                             ? true
                                                             : ''
                                                   }
                                              >
-                                                  Yoga Day 2023
+                                                  Career
                                              </Button>
                                         </Link>
                                         <Link href="/store" passHref>
@@ -548,12 +509,12 @@ const Navbar = () => {
                                                   Career
                                              </Button>
                                         </Link> */}
-                                             <Link passHref href="/yoga-day">
+                                             <Link passHref href="/career">
                                                   <Button
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                            '/yoga-day'
+                                                            '/career'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -562,7 +523,7 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Yoga Day 2023
+                                                       Career
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/store">

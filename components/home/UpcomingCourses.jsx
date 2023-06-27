@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeOne from 'public/creative-1.png';
+import CreativeOne from 'public/event_1.jpeg';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -21,13 +21,13 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: 'https://forms.gle/QfG6JP6iccHCp1ez7',
-               alt: 'Yoga arambha sadhana',
-               title: 'Yoga arambha sadhana',
+               url: 'https://forms.gle/SLSgseDt4Y3cBri78',
+               alt: 'Introduction to Pranayam Part 1',
+               title: 'Introduction to Pranayam Part 1',
                img: CreativeOne,
-               timings: 'Morning (6,7,8 & 9 AM) | Evening (5,6,7 & 8 PM)',
+               timings: '10:00 AM to 12:00 PM',
                type: 'Offline (Indiranagar)',
-               duration: ['21 Days Free Program', '1st to 21st June']
+               duration: ['1st and 2nd July 2023', 'INR 720']
           }
      ];
 
@@ -63,8 +63,12 @@ function UpcomingCourses() {
                                         href={url + '?source=home'}
                                         key={id}
                                         passHref
+                                        target="_blank"
                                    >
-                                        <a rel="noopener noreferrer">
+                                        <a
+                                             rel="noopener noreferrer"
+                                             target="_blank"
+                                        >
                                              <Flex
                                                   border="1px solid"
                                                   cursor="pointer"
