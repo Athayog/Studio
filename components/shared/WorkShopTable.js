@@ -116,8 +116,8 @@ const WorkShopTable = () => {
                               <Td>20,21st May</Td>
                               <Td>Madhumeham</Td>
 
-                              <Td>KR Puram</Td>
-                              <Td>10:00 AM - 11:30 AM</Td>
+                              <Td></Td>
+                              <Td></Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, May 13, 2023</Td>
@@ -131,16 +131,16 @@ const WorkShopTable = () => {
                               <Td>4th, 5th june</Td>
                               <Td>Nāda Yoga</Td>
 
-                              <Td>KR Puram</Td>
-                              <Td>10:00 AM - 11:00 AM</Td>
+                              <Td></Td>
+                              <Td></Td>
                          </Tr>
 
                          <Tr>
                               <Td>1st &amp; 2nd July</Td>
                               <Td>Chakra dhāra</Td>
 
-                              <Td>KR Puram</Td>
-                              <Td>10:00 AM - 11:00 AM</Td>
+                              <Td></Td>
+                              <Td></Td>
                          </Tr>
                          <Tr>
                               <Td>15th , 16th July</Td>
@@ -176,8 +176,8 @@ const WorkShopTable = () => {
                               <Td>Sat, Sep 16, 2023</Td>
                               <Td>Om meditation</Td>
 
-                              <Td>KR Puram</Td>
-                              <Td>4:00 PM - 5:00 PM</Td>
+                              <Td></Td>
+                              <Td></Td>
                          </Tr>
                          <Tr>
                               <Td>Sat, Sep 23, 2023</Td>
@@ -214,8 +214,8 @@ const WorkShopTable = () => {
                               <Td>Sun, Nov 12, 2023</Td>
                               <Td>palm/arm balance </Td>
 
-                              <Td>KR Puram</Td>
-                              <Td>10:00 AM - 11:00 AM</Td>
+                              <Td></Td>
+                              <Td></Td>
                          </Tr>
                          <Tr>
                               <Td>4, 5 November 2023</Td>
@@ -229,8 +229,8 @@ const WorkShopTable = () => {
                               <Td>Sun, Dec 10, 2023</Td>
                               <Td>Shīrshābhyasä</Td>
 
-                              <Td>KR Puram</Td>
-                              <Td>9:00 AM - 10:00 AM</Td>
+                              <Td></Td>
+                              <Td></Td>
                          </Tr>
                          <Tr>
                               <Td>March 22nd - 31st</Td>

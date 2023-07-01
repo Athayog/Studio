@@ -1,23 +1,21 @@
 import { EmailIcon, PhoneIcon } from '@chakra-ui/icons';
 import {
      Box,
+     Link as ChakraLink,
      Flex,
+     Grid,
      HStack,
+     Heading,
      Stack,
      Text,
-     Link as ChakraLink,
-     Grid,
-     chakra,
-     Heading
+     chakra
 } from '@chakra-ui/react';
+import Link from 'next/link';
 import {
      AiOutlineFacebook,
      AiOutlineInstagram,
      AiOutlineYoutube
 } from 'react-icons/ai';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
-import React from 'react';
-import Link from 'next/link';
 
 const Footer = () => {
      return (
@@ -147,16 +145,7 @@ const Footer = () => {
                                         <AiOutlineYoutube size="1.5rem" />
                                    </ChakraLink>
                               </HStack>
-                              <Text>
-                                   <chakra.span textDecoration="underline">
-                                        Head Branch
-                                   </chakra.span>{' '}
-                                   <br />
-                                   307, Athayog living, Sun Rise Arcade,
-                                   Devasandra Main Road, Kodigehalli,
-                                   Krishnarajapura, Bengaluru, Karnataka -
-                                   560036
-                              </Text>
+
                               <Text>
                                    <chakra.span textDecoration="underline">
                                         Indiranagar Branch
@@ -167,27 +156,6 @@ const Footer = () => {
                               </Text>
                          </Stack>
                          <Stack color="white" spacing={5}>
-                              <Box>
-                                   <chakra.span textDecoration="underline">
-                                        Head Branch
-                                   </chakra.span>
-
-                                   <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4847988052406!2d77.71351501529448!3d13.004770190834247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11291dc28c27%3A0xd39ba6332f2b865c!2sAthaYog%20Living!5e0!3m2!1sen!2sin!4v1615373298875!5m2!1sen!2sin"
-                                        width="600"
-                                        height="450"
-                                        title="Athayog Google Map"
-                                        frameBorder={0}
-                                        style={{
-                                             border: 0,
-                                             height: '100%',
-                                             width: '100%',
-                                             borderRadius: '5px'
-                                        }}
-                                        allowFullScreen={false}
-                                        tabIndex={0}
-                                   ></iframe>
-                              </Box>
                               <Box>
                                    <chakra.span textDecoration="underline">
                                         Indiranagar Branch

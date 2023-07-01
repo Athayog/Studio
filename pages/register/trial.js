@@ -147,55 +147,8 @@ function Trial() {
                          sunday: 'No Class'
                     }
                ]
-          },
-          {
-               id: 2,
-               name: 'space',
-               location: 'KR Puram',
-               times: [
-                    {
-                         time: '7:00 AM - 8:00 AM',
-                         monday: 'Transcending Transitions',
-                         tuesday: 'Rhythm Of Being',
-                         wednesday: 'Universal Harmony',
-                         thursday: 'Rhythm Of Being ',
-                         friday: 'Transcending Transitions',
-                         saturday: 'Universal Harmony',
-                         sunday: 'Rhythm Of Being '
-                    },
-                    {
-                         time: '8:00 AM - 9:00 AM',
-                         monday: ' Universal Harmony',
-                         tuesday: 'Ashtanga / Transcending Transitions',
-                         wednesday: 'Rhythm Of Being ',
-                         thursday: 'Universal Harmony',
-                         friday: 'Transcending Transitions',
-                         saturday: 'Rhythm Of Being',
-                         sunday: 'Transcending Transitions'
-                    },
-
-                    {
-                         time: '5:00 PM - 6:00 PM',
-                         monday: 'Transcending Transitions',
-                         tuesday: 'Universal Harmony',
-                         wednesday: 'Rhythm Of Being',
-                         thursday: 'Transcending Transitions',
-                         friday: 'Universal Harmony',
-                         saturday: 'Rhythm Of Being',
-                         sunday: 'Universal Harmony'
-                    },
-                    {
-                         time: '6:00 PM - 7:00 PM',
-                         monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transitions',
-                         wednesday: 'Universal Harmony',
-                         thursday: 'Transcending Transitions',
-                         friday: 'Rhythm Of Being',
-                         saturday: 'Sivanandha / Universal Harmony',
-                         sunday: 'Rhythm Of Being'
-                    }
-               ]
           }
+
           // {
           //      id: 3,
           //      name: 'online',
@@ -666,9 +619,7 @@ function Trial() {
                                                             <option value="Indiranagar">
                                                                  Indiranagar
                                                             </option>
-                                                            <option value="KR Puram">
-                                                                 KR Puram
-                                                            </option>
+
                                                             {/* <option value="Online">
                                                                  Online
                                                             </option> */}

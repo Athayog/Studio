@@ -84,12 +84,12 @@ function ShortCourses() {
                                         <Td>10:00 AM - 12:00 PM</Td>
                                    </Tr>
                                    <Tr>
-                                        <Td>April</Td>
-                                        <Td>10th - 21st</Td>
-                                        <Td>Kids camp</Td>
+                                        <Td></Td>
+                                        <Td></Td>
+                                        <Td></Td>
 
-                                        <Td>KR Puram</Td>
-                                        <Td>10:00 AM - 12:00 PM</Td>
+                                        <Td></Td>
+                                        <Td></Td>
                                    </Tr>
 
                                    <Tr>
