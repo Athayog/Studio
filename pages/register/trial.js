@@ -48,80 +48,80 @@ function Trial() {
                times: [
                     {
                          time: '6:00 AM - 7:00 AM',
-                         monday: 'Universal Harmony',
+                         monday: 'Rhythm Of Being',
                          tuesday: 'Transcending Transitions',
                          wednesday: 'Rhythm Of Being ',
-                         thursday: 'Transcending Transitions',
-                         friday: 'Universal Harmony',
-                         saturday: 'Rhythm Of Being ',
+                         thursday: 'Ashtanga Yoga',
+                         friday: 'Rhythm Of Being',
+                         saturday: 'Deep Space',
                          sunday: 'Universal Harmony'
                     },
                     {
                          time: '7:00 AM - 8:00 AM',
-                         monday: 'Ashtanga / Transcending Transition',
+                         monday: 'Transcending Transition',
                          tuesday: 'Rhythm of Being',
-                         wednesday: 'Universal Harmony',
+                         wednesday: 'Ashtanga Yoga',
                          thursday: 'Rhythm Of Being',
-                         friday: 'Ashtanga / Transcending Transitions',
+                         friday: 'Transcending Transitions',
+                         saturday: 'Sivananda Yogay',
+                         sunday: 'Deep Space'
+                    },
+                    {
+                         time: '8:00 AM - 9:00 AM',
+                         monday: 'Deep Space',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Universal Harmony',
+                         friday: 'Ashtanga Yoga',
                          saturday: 'Universal Harmony',
                          sunday: 'Rhythm Of Being'
                     },
                     {
-                         time: '8:00 AM - 9:00 AM',
-                         monday: 'Universal Harmony',
+                         time: '9:00 AM - 10:00 AM',
+                         monday: 'Special Yoga for Women',
                          tuesday: 'Transcending Transitions',
                          wednesday: 'Rhythm Of Being',
-                         thursday: 'Universal Harmony',
-                         friday: 'Ashtanga / Transcending Transitions',
+                         thursday: 'Transcending Transitions',
+                         friday: 'Universal Harmony',
                          saturday: 'Rhythm Of Being',
-                         sunday: 'Transcending Transitions'
+                         sunday: 'Sivananda Yoga'
                     },
                     {
-                         time: "9:00 AM - 10:00 AM (Women's Batch)",
-                         monday: 'Rhythm Of Being',
-                         tuesday: 'Universal Harmony ',
-                         wednesday: 'Transcending Transitions',
-                         thursday: 'Universal Harmony',
-                         friday: 'Rhythm Of Being',
-                         saturday: 'Ashtanga / Transcending Transitions',
+                         time: '10:00 AM - 11:00 AM',
+                         monday: 'Prenatal Yoga - Week 4 - 15',
+                         tuesday: 'Prenatal Yoga - Week 4 - 15',
+                         wednesday: 'Prenatal Yoga - Week 4 - 15',
+                         thursday: 'Prenatal Yoga - Week 4 - 15',
+                         friday: 'Prenatal Yoga - Week 4 - 15',
+                         saturday: 'No Class',
                          sunday: 'No Class'
                     },
                     {
-                         time: '11:00 AM - 4:00 PM',
-                         monday: 'Shikshanapada',
-                         tuesday: 'Shikshanapada',
-                         wednesday: 'Shikshanapada',
-                         thursday: 'Shikshanapada',
-                         friday: 'Shikshanapada',
-                         saturday: 'Shikshanapada',
-                         sunday: 'Shikshanapada'
-                    },
-                    {
                          time: '4:00 PM - 5:00 PM',
-                         monday: 'Kids Yoga',
-                         tuesday: 'Kids Yoga',
-                         wednesday: 'Kids Yoga',
-                         thursday: 'Kids Yoga',
-                         friday: 'Kids Yoga',
+                         monday: 'Prenatal Yoga - Week 16 - 30',
+                         tuesday: 'Prenatal Yoga - Week 16 - 30',
+                         wednesday: 'Prenatal Yoga - Week 16 - 30',
+                         thursday: 'Prenatal Yoga - Week 16 - 30',
+                         friday: 'Prenatal Yoga - Week 16 - 30',
                          saturday: 'No Class',
                          sunday: 'No Class'
                     },
                     {
                          time: '5:00 PM - 6:00 PM',
-                         monday: 'Transcending Transitions',
-                         tuesday: 'Universal Harmony',
+                         monday: 'Deep Space',
+                         tuesday: 'Transcending Transitions',
                          wednesday: 'Rhythm Of Being',
-                         thursday: 'Transcending Transitions',
+                         thursday: 'Inner World',
                          friday: 'Universal Harmony',
                          saturday: 'Rhythm Of Being',
-                         sunday: 'Sivanandha / Universal Harmony'
+                         sunday: 'Sivananda Yoga'
                     },
                     {
                          time: '6:00 PM - 7:00 PM',
-                         monday: 'Universal Harmony',
-                         tuesday: 'Transcending Transitions',
-                         wednesday: 'Universal Harmony',
-                         thursday: 'Transcending Transitions',
+                         monday: 'Rhythm Of Being',
+                         tuesday: 'Inner World',
+                         wednesday: 'Transcending Transitions',
+                         thursday: 'Universal Harmony',
                          friday: 'Rhythm Of Being',
                          saturday: 'Universal Harmony',
                          sunday: 'Rhythm Of Being'
@@ -130,74 +130,64 @@ function Trial() {
                          time: '7:00 PM - 8:00 PM',
                          monday: 'Inner World',
                          tuesday: 'Rhythm Of Being',
-                         wednesday: 'Transcending Transitions',
+                         wednesday: 'Universal Harmony',
                          thursday: 'Deep Space',
-                         friday: 'Universal Harmony',
-                         saturday: 'No Class',
-                         sunday: 'No Class'
+                         friday: 'Transcending Transitions',
+                         saturday: 'Cyclic Meditation',
+                         sunday: 'Universal Harmony'
                     },
                     {
                          time: '8:00 PM - 9:00 PM',
                          monday: 'Transcending Transitions',
                          tuesday: 'Deep Space',
                          wednesday: 'Rhythm Of Being',
-                         thursday: 'Universal Harmony',
+                         thursday: 'Transcending Transitions',
                          friday: 'Inner World',
-                         saturday: 'No Class',
-                         sunday: 'No Class'
+                         saturday: 'Transcending Transitions',
+                         sunday: 'Cyclic Meditation'
+                    }
+               ]
+          },
+
+          {
+               id: 2,
+               name: 'Online',
+               location: 'Online',
+               times: [
+                    {
+                         time: '6:00 AM - 7:00 AM',
+                         monday: 'Rhythm Of Being',
+                         tuesday: 'Transcending Transitions',
+                         wednesday: 'Universal Harmony',
+                         thursday: 'Rhythm Of Being',
+                         friday: 'Transcending Transitions',
+                         saturday: 'Universal Harmony',
+                         sunday: 'Universal Harmony'
+                    },
+
+                    {
+                         time: '9:00 AM - 10:00 AM',
+                         monday: 'Universal Harmony',
+                         tuesday: 'Rhythm Of Being',
+                         wednesday: ' Transcending Transitions',
+                         thursday: 'Universal Harmony',
+                         friday: 'Rhythm Of Being ',
+                         saturday: 'Transcending Transitions',
+                         sunday: 'Rhythm Of Being'
+                    },
+
+                    {
+                         time: '5:00 PM - 6:00 PM',
+                         monday: ' Transcending Transitions',
+                         tuesday: 'Universal Harmony',
+                         wednesday: 'Rhythm Of Being',
+                         thursday: 'Transcending Transitions',
+                         friday: 'Universal Harmony',
+                         saturday: 'Rhythm Of Being',
+                         sunday: ' Transcending Transitions'
                     }
                ]
           }
-
-          // {
-          //      id: 3,
-          //      name: 'online',
-          //      location: 'Online',
-          //      times: [
-          //           {
-          //                time: '6:00 AM - 7:00 AM',
-          //                monday: 'Rhythm Of Being',
-          //                tuesday: 'Universal Harmony',
-          //                wednesday: 'Transcending Transitions',
-          //                thursday: 'Rhythm Of Being',
-          //                friday: 'Sivananda',
-          //                saturday: 'No Class',
-          //                sunday: 'No Class'
-          //           },
-
-          //           {
-          //                time: '8:00 AM - 9:00 AM',
-          //                monday: 'Universal Harmony',
-          //                tuesday: 'Rhythm Of Being',
-          //                wednesday: 'Universal Harmony',
-          //                thursday: 'Transcending Transitions',
-          //                friday: 'Rhythm Of Being',
-          //                saturday: 'Rhythm Of Being',
-          //                sunday: 'Universal Harmony'
-          //           },
-
-          //           {
-          //                time: '4:00 PM - 5:00 PM',
-          //                monday: 'Kids Yoga',
-          //                tuesday: 'Kids Yoga',
-          //                wednesday: 'Kids Yoga',
-          //                thursday: 'Kids Yoga',
-          //                friday: 'Kids Yoga',
-          //                saturday: 'No Class',
-          //                sunday: 'No Class'
-          //           },
-          //           {
-          //                time: '5:00 PM - 6:00 PM',
-          //                monday: 'Transcending Transitions',
-          //                tuesday: 'Universal Harmony',
-          //                wednesday: 'Rhythm Of Being',
-          //                thursday: 'Universal Harmony / Sivanandha',
-          //                friday: 'Transcending Transitions',
-          //                saturday: 'Universal Harmony',
-          //                sunday: 'Rhythm Of Being'
-          //           }
-          //      ]
-          // }
      ]);
      const [customer, setCustomer] = useState({});
      const toast = useToast();
@@ -620,9 +610,9 @@ function Trial() {
                                                                  Indiranagar
                                                             </option>
 
-                                                            {/* <option value="Online">
+                                                            <option value="Online">
                                                                  Online
-                                                            </option> */}
+                                                            </option>
                                                        </Select>
                                                   </FormControl>
                                                   <FormControl>

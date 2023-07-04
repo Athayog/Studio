@@ -183,7 +183,136 @@ const Online = () => {
                          bg="primaryWhite"
                          direction="column"
                     >
-                         <Box
+                         <Flex
+                              justifyContent="center"
+                              direction="column"
+                              alignItems="center"
+                              width={{ base: '95%', md: '90%', lg: '90%' }}
+                         >
+                              <Heading
+                                   fontWeight="normal"
+                                   fontSize={{ base: '2xl', md: '3xl' }}
+                              >
+                                   AthaYog Offline Class July 2023 (Indiranagar)
+                              </Heading>
+                              <Box
+                                   overflowX="auto"
+                                   width="100%"
+                                   boxShadow="base"
+                                   rounded="lg"
+                                   mt={10}
+                              >
+                                   <Table
+                                        variant="simple"
+                                        size="sm"
+                                        bg="white"
+                                        colorScheme="aygreen"
+                                        className="scheduleTable"
+                                   >
+                                        <Thead>
+                                             <Tr>
+                                                  <Th bg="aygreen.200">Time</Th>
+                                                  <Th bg="aygreen.200">
+                                                       Monday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Tuesday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Wednesday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Thursday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Friday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Saturday
+                                                  </Th>
+                                                  <Th bg="aygreen.200">
+                                                       Sunday
+                                                  </Th>
+                                             </Tr>
+                                        </Thead>
+                                        <Tbody>
+                                             <Tr>
+                                                  <Td
+                                                       bg="aygreen.100"
+                                                       borderBottom="1px"
+                                                       borderColor="aygreen.200"
+                                                       padding="0px"
+                                                       paddingLeft="10px"
+                                                  >
+                                                       <Text width="150px">
+                                                            6.00 AM - 7.00 AM
+                                                       </Text>
+                                                  </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>Universal Harmony</Td>
+                                             </Tr>
+                                             <Tr>
+                                                  <Td
+                                                       bg="aygreen.100"
+                                                       borderBottom="1px"
+                                                       borderColor="aygreen.200"
+                                                       padding="0px"
+                                                       paddingLeft="10px"
+                                                  >
+                                                       9.00 AM - 10.00 AM
+                                                  </Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Universal Harmony</Td>
+                                                  <Td>Rhythm Of Being </Td>
+
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                             </Tr>
+
+                                             <Tr>
+                                                  <Td
+                                                       bg="aygreen.100"
+                                                       borderBottom="1px"
+                                                       borderColor="aygreen.200"
+                                                       padding="0px"
+                                                       paddingLeft="10px"
+                                                  >
+                                                       5:00 PM - 6:00 PM
+                                                  </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Universal Harmony </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                                  <Td>Universal Harmony </Td>
+                                                  <Td>Rhythm Of Being </Td>
+                                                  <Td>
+                                                       Transcending Transitions
+                                                  </Td>
+                                             </Tr>
+                                        </Tbody>
+                                   </Table>
+                              </Box>
+                         </Flex>
+                         {/* <Box
                               mt={10}
                               textAlign="left"
                               boxShadow="base"
@@ -204,7 +333,7 @@ const Online = () => {
                                         available. To know more Enquire Below
                                    </ListItem>
                               </List>
-                         </Box>
+                         </Box> */}
                     </Flex>
                     <Enquiry />
                     {/* <Box height="sm" width="100%">

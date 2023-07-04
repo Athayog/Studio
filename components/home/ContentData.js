@@ -126,20 +126,6 @@ export const profileData = {
 export const EmployeeData = {
      employees: [
           {
-               name: 'Anjali Prabhu',
-               info: `Striving to revive Yog in the fabric of Indian culture today while guiding people on their path with utmost enthusiasm and clarity, Anjali continues to experience life in a new light through her Yogic practice.\n \nThe Yogic chapter in her life began when she was looking to pursue higher education. It is then that she came across a unique course, MSc in Yoga Therapy and decided to take it up.  Thus, started the transformation in her life. Bestowing her with a renewed sense of living and being, her Yog practice holds immense value in her books and has helped her reorganize internally. Moreover, it has given her the means to understand and progress on her journey of self-realization.\n \nShe believes that understanding and practicing Yog with its authentic roots is necessary to tap into its true essence. As a qualified yoga therapist with a long list of academic wins to her name, Anjali aspires to teach and spread the true essence of Yog throughout the world.`,
-               image: anjali,
-               visible: true,
-               designation: 'Teacher'
-          },
-          {
-               name: 'Kavita Chauhan',
-               info: `Kavita Chauhan is an advanced yoga teacher and wellness instructor who discovered yoga while working at a corporate company.\n \nAfter feeling burnt out and disillusioned, Kavita decided to quit her job and pursue a more peaceful and meaningful life. She came across the Sivananda Yoga Vedanta Centres & Ashram in Kerala, where she began the 200 hour Basic yoga course. This experience was not only beneficial for her body but also for her soul. Kavita became more drawn towards the self-journey and started falling in love with herself and the world a little more.\n \nKavita volunteered at an Ashram for months, teaching students, vacationers, and nursing students from nearby colleges as a selfless service in Karma Yoga. Later, she applied for the 300 hours of advanced yoga course and became titled as Yoga Acharya from Sivananda Vedanta Centre. She also received certification from the Yoga certification board as a Yoga Wellness Instructor. \n \nKavita's vision in her Yoga journey is to spread inner awareness and happiness at whatever level she can. She aims to make people less stressed and more clear on their daily or future goals. Kavita believes that the union we try to achieve in Yoga is ultimately the Union we need in Humanity.`,
-               image: kavita,
-               visible: true,
-               designation: 'Teacher'
-          },
-          {
                name: 'Harsha V.U',
                info: `Harsha V.U, hailing from Kerala, India, has completed her Teachers Training Course (TTC) from Sivananda Yoga Vedanta Ashram Trivandrum in November 2020. Furthermore, she completed the Advance Teachers Training Course (ATTC) from Sivananda Meenakshi Ashram Madurai in January 2023 and Registered Prenatal Yoga Course (RPYT) from Athayog Living Yoga Academy Bangalore in October 2022. \n \nAfter completing TTC, Harsha worked in Sivananda Meenakshi Ashram Madurai as a volunteer staff for one year, where she assisted over six TTC batches and kids camp. Harsha believes that the ashram is one of the best places to practice and learn yoga as it helped him gain a lot of learning and spiritual experience. She learned that yoga is not just an exercise but includes punctuality, discipline, dedication, and respect for oneself and others. \n \nIn December 2021, Harsha left the ashram but still follows the teachings she learned there. After leaving the ashram, Harsha started taking online and offline classes from her home as a freelancer. She also applied for jobs in Bangalore as a yoga teacher and received a call from Athayog Living Academy, where she started her journey on July 20, 2022. Harsha is pleased with the learnings and teachings she has received from Athayog, and the academy has also given her a chance to do RPYT course (prenatal and postnatal course), which has made her more comfortable with more knowledge and teachings.`,
                image: harsha,
@@ -164,20 +150,6 @@ export const EmployeeData = {
                name: 'Shreeram Kasturi',
                info: `Meet a skilled practitioner who hails from the esteemed Gurukula system lineage. Shreeram Kasturi has had the privilege of studying the rich heritage of Yoga, Veda, and Samskrita in the midst of a breathtaking forest, on the scenic bank of the river Tunga. \n \nThis cultured individual not only imbibes but also preaches the teachings of these practices. Despite completing a post-graduate degree in finance and accounting and working for three years in the corporate sector, he felt an inner calling to deepen his knowledge and further his sadhana. Specializing in Hatha, Vinyasa, Nāda, and therapeutic practices, he invites you to join him and gain an authentic experience of Yoga, philosophy, and psychology.`,
                image: shreeram,
-               visible: true,
-               designation: 'Teacher'
-          },
-          {
-               name: 'Deepali Sharma',
-               info: `Deepali Sharma started practicing Yoga in 2015 to recover from a knee injury. After experiencing the positive physical and mental impact of Yoga, she fell in love with the practice and has been learning and teaching ever since. \n \nDeepali has even had the opportunity to teach Yoga internationally and treasures the chance to connect with different people, energies, and experiences through teaching. \n \nDeepali has completed RYT200hr and RYT300hr from RISHIKESH YOG PEETH, as well as a Bachelor's in Yoga and Naturopathy (3 years) in Haridwar, Uttarakhand, and a 6-month (180 days) Foundation Course in Yogic Science. She has been teaching Yoga since 2017 and has taught full-time in Shanghai, Bali, Indonesia, and Malaysia. Deepali's classes are designed for all levels of practitioners and she focuses on helping her students understand the relationship between the mind and body.`,
-               image: deepali,
-               visible: true,
-               designation: 'Teacher'
-          },
-          {
-               name: 'Namrata Chawla',
-               info: `Namrata Chawla hails from Delhi and holds a BA Philosophy honours degree from Gargi College, DU. She embarked on her yoga journey in February 2020 when she was uncertain about her career and life. \n \nHer mother, who is a certified yoga teacher, introduced her to the path of harmony and she enrolled in the foundation course at The Morarji Desai Institute of Yoga. From there on, Namrata continued her journey and completed the 200 RYT course from Kaivalyadham, Lonavla, 900 ATTC from the Yoga Institute of Mumbai, and also cleared the Level 3 of the yoga teacher and evaluator by Ministry of Ayush. \n \nFitness has always been a part of Namrata's life since her teenage years, and it has played a crucial role in her physical and mental well-being. She enjoys working out in the gym during her free time and finds satisfaction in progressing and bettering herself every day. \n \nThrough yoga, Namrata has transformed both physically and mentally. It has helped her with anxiety and led her to a calmer and more composed way of living. As a yoga instructor, Namrata takes pride in motivating and encouraging others towards yoga and fitness, helping them lead healthy and stress-free lives.`,
-               image: namrata,
                visible: true,
                designation: 'Teacher'
           }
