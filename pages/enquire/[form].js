@@ -133,8 +133,7 @@ const Register = () => {
                                         method: 'POST',
                                         headers: {
                                              'Content-Type': 'application/json',
-                                             Accept: 'application/json',
-                                             'Access-Control-Allow-Origin': '*'
+                                             Accept: 'application/json'
                                         },
                                         body: JSON.stringify({
                                              FormType: 'Enquiry Form',
@@ -151,7 +150,10 @@ const Register = () => {
                                    }
                               );
                          } catch (error) {}
-                         router.push('/');
+                         setTimeout(() => {
+                              setLoading(false);
+                              router.push('/');
+                         }, 1500);
                     })
                     .catch((error) => {
                          setLoading(false);
