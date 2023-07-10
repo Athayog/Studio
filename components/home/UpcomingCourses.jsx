@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CreativeOne from 'public/event_1.jpeg';
+import CreativeOne from 'public/creative-1.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -22,12 +22,12 @@ function UpcomingCourses() {
           {
                id: '1',
                url: 'https://forms.gle/SLSgseDt4Y3cBri78',
-               alt: 'Introduction to Pranayam Part 1',
-               title: 'Introduction to Pranayam Part 1',
+               alt: 'Prenatal Yoga Practice',
+               title: 'Prenatal Yoga Practice',
                img: CreativeOne,
-               timings: '10:00 AM to 12:00 PM',
+               timings: '4th - 15th Week Pregnancy 10am - 11am || 16th to 30th Week Pregnancy 4pm - 5pm',
                type: 'Offline (Indiranagar)',
-               duration: ['1st and 2nd July 2023', 'INR 720']
+               duration: ['17th July 2023']
           }
      ];
 
