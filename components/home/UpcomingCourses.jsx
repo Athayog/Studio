@@ -21,7 +21,7 @@ function UpcomingCourses() {
      const upcomingData = [
           {
                id: '1',
-               url: 'https://forms.gle/SLSgseDt4Y3cBri78',
+               url: '/enquire/workshops',
                alt: 'Prenatal Yoga Practice',
                title: 'Prenatal Yoga Practice',
                img: CreativeOne,

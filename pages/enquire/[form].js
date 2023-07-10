@@ -404,8 +404,8 @@ const Register = () => {
                                                   })}
                                                   name="course"
                                              >
-                                                  <option value="Alignment April">
-                                                       Alignment April
+                                                  <option value="Prenatal Yoga Practice">
+                                                       Prenatal Yoga Practice
                                                   </option>
                                              </Select>
                                              <FormErrorMessage>
