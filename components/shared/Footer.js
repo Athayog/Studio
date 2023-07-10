@@ -148,8 +148,8 @@ const Footer = () => {
 
                               <Text>
                                    <chakra.span textDecoration="underline">
-                                        Indiranagar Branch
-                                   </chakra.span>{' '}
+                                        Indiranagar
+                                   </chakra.span>
                                    <br />
                                    No.3293, 1st floor, 12th main, HAL 2nd stage,
                                    Indiranagar, Bengaluru, Karnataka - 560038
@@ -158,7 +158,7 @@ const Footer = () => {
                          <Stack color="white" spacing={5}>
                               <Box>
                                    <chakra.span textDecoration="underline">
-                                        Indiranagar Branch
+                                        Indiranagar
                                    </chakra.span>
                                    <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0327167179826!2d77.63410251527463!3d12.969758318426862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17beabf7494b%3A0x43f0a854e3d6096f!2sAthaYog%20Living!5e0!3m2!1sen!2sin!4v1636645641301!5m2!1sen!2sin"
