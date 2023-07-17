@@ -11,6 +11,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import CreativeOne from 'public/creative-1.png';
+import CreativeTwo from 'public/creative-2.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { MdCheckCircle } from 'react-icons/md';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -28,6 +29,22 @@ function UpcomingCourses() {
                timings: '4th - 15th Week Pregnancy 10am - 11am || 16th to 30th Week Pregnancy 4pm - 5pm',
                type: 'Offline (Indiranagar)',
                duration: ['17th July 2023']
+          },
+          {
+               id: '2',
+               url: 'https://forms.gle/pHs75gncjKHKEXWu8',
+               alt: 'One Day Yoga Excursion',
+               title: 'One Day Yoga Excursion',
+               img: CreativeTwo,
+               timings: '6am to 6pm',
+               type: 'Skandagiri Hills',
+               duration: [
+                    '29th July 2023',
+                    'Limited spots only, ages 8+',
+                    'Open to all',
+                    'Inclusive of food, travel & entry fee',
+                    'Price ₹1999'
+               ]
           }
      ];
 
