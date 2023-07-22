@@ -127,7 +127,7 @@ For the first time in Bangalore Athayog brings to you Group Prenatal Yoga classe
                                    as="h3"
                                    fontSize="xl"
                               >
-                                   Affordable Monthly Package
+                                   Monthly Package
                               </Heading>
                               <Text fontWeight="normal" mt={2} fontSize="lg">
                                    Enjoy our expert-guided prenatal yoga
