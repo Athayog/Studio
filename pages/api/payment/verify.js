@@ -16,6 +16,7 @@ export default async function handler(req, res) {
      await cors(req, res);
 
      if (req.method === 'POST') {
+          console.log('CAME TO HOOK');
           try {
                const crypto = require('crypto');
                const secret = process.env.RAZORPAY_WEBHOOK_SECRET;

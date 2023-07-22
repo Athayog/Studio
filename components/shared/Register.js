@@ -5,12 +5,29 @@ import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import cookie from 'js-cookie';
 
+function getCookie(cname) {
+     let name = cname + '=';
+     let decodedCookie = decodeURIComponent(document.cookie);
+     let ca = decodedCookie.split(';');
+     for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+               c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+               return c.substring(name.length, c.length);
+          }
+     }
+     return null;
+}
+
 const Register = ({ registerTo }) => {
      const { user, signout, loading } = useAuth();
      const router = useRouter();
      const toast = useToast();
      const handleRegister = () => {
-          if (!user) {
+          let cookie = getCookie('athayog-auth');
+          if (!cookie) {
                toast({
                     title: 'Login First',
                     description:

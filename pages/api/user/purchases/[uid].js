@@ -5,6 +5,7 @@ export default async (req, res) => {
 
      try {
           if (token) {
+               console.log(token);
                const uid = req.query.uid;
                await auth
                     .verifyIdToken(token)
@@ -22,6 +23,7 @@ export default async (req, res) => {
                snapshot.forEach((doc) => {
                     purchases.push({ id: doc.id, ...doc.data() });
                });
+               console.log('UID', uid);
                return res.status(200).json({ purchases });
           } else {
                return res.status(401).json({ message: 'Unauthorized Access' });

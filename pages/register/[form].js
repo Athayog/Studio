@@ -36,6 +36,22 @@ import { registerForm, registerFormFree } from '@/lib/db/forms';
 import cookie from 'js-cookie';
 import Head from 'next/head';
 
+function getCookie(cname) {
+     let name = cname + '=';
+     let decodedCookie = decodeURIComponent(document.cookie);
+     let ca = decodedCookie.split(';');
+     for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+               c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+               return c.substring(name.length, c.length);
+          }
+     }
+     return null;
+}
+
 const Register = () => {
      const router = useRouter();
      const { form, price, duration, courseName, courseId } = router.query;
@@ -54,7 +70,8 @@ const Register = () => {
           );
      }
 
-     if (!user) {
+     let authCookie = getCookie('athayog-auth');
+     if (!authCookie) {
           toast({
                title: 'Login First',
                description: 'Create or Login to your account to register',
@@ -69,6 +86,14 @@ const Register = () => {
 
           router.push('/account/login');
 
+          return (
+               <Grid height="100vh" placeItems="center ">
+                    <Spinner />
+               </Grid>
+          );
+     }
+
+     if (!user) {
           return (
                <Grid height="100vh" placeItems="center ">
                     <Spinner />
@@ -582,6 +607,9 @@ const Register = () => {
                                              </option>
                                              <option value="Onsite">
                                                   AthaYog Onsite
+                                             </option>
+                                             <option value="Prenatal">
+                                                  AthaYog Prenatal
                                              </option>
                                              <option value="Trial">
                                                   Free Trial

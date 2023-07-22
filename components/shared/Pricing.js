@@ -10,6 +10,22 @@ import ContactMore from './ContactMore';
 import CTA from './CTA';
 import PriceBox from './PriceBox';
 
+function getCookie(cname) {
+     let name = cname + '=';
+     let decodedCookie = decodeURIComponent(document.cookie);
+     let ca = decodedCookie.split(';');
+     for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+               c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+               return c.substring(name.length, c.length);
+          }
+     }
+     return null;
+}
+
 const Pricing = ({ pricing, registerTo, toRegister }) => {
      const { user, signout, loading } = useAuth();
      const [buttonId, setButtonId] = useState('');
@@ -42,7 +58,9 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           isTrial
      ) => {
           setButtonId(courseId);
-          if (!user) {
+
+          let authCookie = getCookie('athayog-auth');
+          if (!authCookie) {
                toast({
                     title: 'Login First',
                     description:
