@@ -57,7 +57,7 @@ const Onsite = ({ offers, notFound }) => {
           }
      });
      const d = new Date();
-     console.log('AIR', apiPricing);
+
      return (
           <motion.div
                exit={{ opacity: 0 }}

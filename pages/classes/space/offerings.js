@@ -22,7 +22,6 @@ export async function getStaticProps(context) {
 }
 
 function Offerings({ offers }) {
-     console.log(offers);
      const apiPricing = [];
      offers.map((data) => {
           if (data.isActive) {

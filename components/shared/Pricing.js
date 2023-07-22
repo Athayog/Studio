@@ -133,6 +133,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           .filter((data) => !data.description.toLowerCase().includes('limited'))
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
+
      let generalCoursesIndiranagr = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
@@ -233,6 +234,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                .sort(compare)
      );
 
+     const prenatal = sortingGroup(
+          pricing
+               .filter((data) => data.isTrial == false)
+               .filter((data) => data.isGeneral == true)
+               .filter((data) => data.sub_category == 'prenatal')
+               .sort((a, b) => a.courseName.length - b.courseName.length)
+               .sort(compare)
+     );
+
      const senior = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
@@ -280,7 +290,6 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
           generalCourses = [...space, ...onsite, ...online];
      }
 
-     console.log(limitCourses);
      return (
           <Flex
                margin="auto"
@@ -460,6 +469,15 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                               handleUserPayment={handleUserPayment}
                          />
                     )}
+                    <PriceBox
+                         courses={prenatal}
+                         data={data}
+                         user={user}
+                         toRegister={toRegister}
+                         coursePurchased={coursePurchased}
+                         buttonId={buttonId}
+                         handleUserPayment={handleUserPayment}
+                    />
                     <Text textAlign="left" mt={8} width="100%">
                          *Terms and conditions apply
                     </Text>

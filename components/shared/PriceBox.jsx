@@ -26,7 +26,6 @@ export default function PriceBox({
           courses = [];
      }
      if (limited && unlimited) {
-          console.log(limited);
           return (
                <Grid
                     gridTemplateColumns={{

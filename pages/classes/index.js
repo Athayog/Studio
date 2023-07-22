@@ -23,6 +23,11 @@ function Classes() {
                url: '/classes/onsite'
           },
           {
+               name: 'AthaYog Prenatal',
+               desc: `Embark on a safe prenatal journey with Athayog's Group Prenatal Yoga in Bangalore. Grow together with expert guidance for a blissful childbirth.`,
+               url: '/classes/prenatal'
+          },
+          {
                name: 'AthaYog Personal Class',
                desc: `Eliminate the distractions and keep your focus intact on your Yogic practice as you welcome change and break the patterns.`,
                url: '/classes/personal'

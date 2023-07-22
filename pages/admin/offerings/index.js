@@ -26,7 +26,8 @@ const offerings = () => {
           'personal',
           'workshops',
           'chikitsa',
-          'onsite'
+          'onsite',
+          'prenatal'
      ];
 
      return (

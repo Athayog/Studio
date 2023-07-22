@@ -37,17 +37,6 @@ function Register({ heroImage }) {
      }) => {
           setLoading(true);
           let coursename = 'lakshyan';
-          console.log(
-               name,
-               email,
-               phone,
-               gender,
-               experience,
-               style,
-               referral,
-               conditions,
-               coursename
-          );
 
           regiterForLakshyan(
                name,
