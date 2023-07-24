@@ -7,6 +7,7 @@ export default async (req, res) => {
           if (token) {
                console.log(token);
                const uid = req.query.uid;
+               const orderId = req.query.orderId;
                await auth
                     .verifyIdToken(token)
                     .then((decodedToken) => {})
@@ -15,11 +16,14 @@ export default async (req, res) => {
                     });
 
                const purchases = [];
+               console.log(orderId);
                const snapshot = await db
                     .collection('users')
                     .doc(uid)
                     .collection('payments')
+                    .where('orderId', '=', orderId)
                     .get();
+
                snapshot.forEach((doc) => {
                     purchases.push({ id: doc.id, ...doc.data() });
                });
