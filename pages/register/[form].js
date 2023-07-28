@@ -757,6 +757,7 @@ const Register = () => {
                          height="100vh"
                          width="100wv"
                          zIndex="20"
+                         display="none"
                     >
                          <Grid
                               placeItems="center"
