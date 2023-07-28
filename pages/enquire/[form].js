@@ -586,6 +586,7 @@ const Register = () => {
                          position="fixed"
                          height="100vh"
                          width="100wv"
+                         display="none"
                          zIndex="20"
                     >
                          <Grid
