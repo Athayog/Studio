@@ -21,7 +21,6 @@ import {
      Text,
      UnorderedList
 } from '@chakra-ui/react';
-import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export async function getStaticProps(context) {
      const { offers } = await getOffer('prenatal');
