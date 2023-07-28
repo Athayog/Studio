@@ -5,7 +5,6 @@ export default async (req, res) => {
 
      try {
           if (token) {
-               console.log(token);
                const uid = req.query.uid;
                const orderId = req.query.orderId;
                await auth
@@ -16,7 +15,7 @@ export default async (req, res) => {
                     });
 
                const purchases = [];
-               console.log(orderId);
+
                const snapshot = await db
                     .collection('users')
                     .doc(uid)

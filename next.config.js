@@ -21,11 +21,6 @@ const redirects = {
                     source: '/yoga-day/register',
                     destination: '/',
                     permanent: true
-               },
-               {
-                    source: '/classes/prenatal',
-                    destination: '/',
-                    permanent: true
                }
           ];
      }

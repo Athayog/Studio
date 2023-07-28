@@ -5,7 +5,6 @@ export default async (req, res) => {
 
      try {
           if (token) {
-               console.log(token);
                const uid = req.query.uid;
                await auth
                     .verifyIdToken(token)

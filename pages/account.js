@@ -22,7 +22,7 @@ const Account = () => {
           user ? [`/api/user/purchases/${user.uid}`, user.token] : null,
           fetcher
      );
-     console.log(data);
+
      if (error) {
           return (
                <>

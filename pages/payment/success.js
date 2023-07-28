@@ -52,7 +52,7 @@ const success = () => {
                </Grid>
           );
      }
-     console.log(data);
+
      if (!data) {
           return (
                <Grid height="100vh" placeItems="center">
