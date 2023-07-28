@@ -12,7 +12,7 @@ import BreadCrumb from '@/components/shared/offerings/BreadCrumb';
 import CTA from '@/components/shared/CTA';
 import ClassesLayout from '@/components/shared/ClassesLayout';
 import Head from 'next/head';
-import { Box, Flex, List, ListIcon, ListItem } from '@chakra-ui/react';
+import { Box, Flex, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export async function getStaticProps(context) {
@@ -78,7 +78,7 @@ const Personal = ({ offers, notFound }) => {
                     <BreadCrumb subLinks="classes" currentPage="Personal" />
                     <InformationSplit pageData={pageData} />
                     <Schedule schedule="personal" />
-                    <Pricing pricing={apiPricing} registerTo="personal" />
+                    {/* <Pricing pricing={apiPricing} registerTo="personal" />
                     <Flex
                          margin="auto"
                          padding={{
@@ -114,7 +114,38 @@ const Personal = ({ offers, notFound }) => {
                                    </ListItem>
                               </List>
                          </Box>
-                    </Flex>
+                    </Flex> */}
+
+                    <>
+                         <Flex
+                              margin="auto"
+                              padding={{
+                                   base: '2rem 0',
+                                   md: '3rem 0',
+                                   lg: '5rem 0'
+                              }}
+                              justifyContent="center"
+                              alignItems="center"
+                              width="100vw"
+                              bg="gray.50"
+                         >
+                              <Flex
+                                   justifyContent="center"
+                                   direction="column"
+                                   alignItems="center"
+                                   width={{ base: '90%', md: '85%', lg: '80%' }}
+                              >
+                                   <Text
+                                        mb={3}
+                                        fontSize="xl"
+                                        fontWeight="semibold"
+                                   >
+                                        To know more please enquire or call us.
+                                   </Text>
+                                   <CTA registerTo="personal" />
+                              </Flex>
+                         </Flex>
+                    </>
                </ClassesLayout>
           </motion.div>
      );
