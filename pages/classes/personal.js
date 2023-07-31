@@ -78,7 +78,11 @@ const Personal = ({ offers, notFound }) => {
                     <BreadCrumb subLinks="classes" currentPage="Personal" />
                     <InformationSplit pageData={pageData} />
                     <Schedule schedule="personal" />
-                    {/* <Pricing pricing={apiPricing} registerTo="personal" />
+                    <Pricing
+                         pricing={apiPricing}
+                         registerTo="personal"
+                         hidePrice={true}
+                    />
                     <Flex
                          margin="auto"
                          padding={{
@@ -114,38 +118,7 @@ const Personal = ({ offers, notFound }) => {
                                    </ListItem>
                               </List>
                          </Box>
-                    </Flex> */}
-
-                    <>
-                         <Flex
-                              margin="auto"
-                              padding={{
-                                   base: '2rem 0',
-                                   md: '3rem 0',
-                                   lg: '5rem 0'
-                              }}
-                              justifyContent="center"
-                              alignItems="center"
-                              width="100vw"
-                              bg="gray.50"
-                         >
-                              <Flex
-                                   justifyContent="center"
-                                   direction="column"
-                                   alignItems="center"
-                                   width={{ base: '90%', md: '85%', lg: '80%' }}
-                              >
-                                   <Text
-                                        mb={3}
-                                        fontSize="xl"
-                                        fontWeight="semibold"
-                                   >
-                                        To know more please enquire or call us.
-                                   </Text>
-                                   <CTA registerTo="personal" />
-                              </Flex>
-                         </Flex>
-                    </>
+                    </Flex>
                </ClassesLayout>
           </motion.div>
      );

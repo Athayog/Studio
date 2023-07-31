@@ -20,7 +20,8 @@ export default function PriceBox({
      limited,
      unlimited,
      subCategory,
-     title
+     title,
+     hidePrice
 }) {
      if (courses == undefined) {
           courses = [];
@@ -123,22 +124,25 @@ export default function PriceBox({
                                                        {data.duration}
                                                   </Text>
                                                   <Flex>
-                                                       <Text
-                                                            fontSize={{
-                                                                 base: 'xl',
-                                                                 md: '2xl',
-                                                                 lg: '3xl'
-                                                            }}
-                                                       >
-                                                            {toRegister !==
-                                                            false
-                                                                 ? '₹'
-                                                                 : null}{' '}
-                                                            {data.price}
-                                                       </Text>
+                                                       {!hidePrice && (
+                                                            <Text
+                                                                 fontSize={{
+                                                                      base: 'xl',
+                                                                      md: '2xl',
+                                                                      lg: '3xl'
+                                                                 }}
+                                                            >
+                                                                 {toRegister !==
+                                                                 false
+                                                                      ? '₹'
+                                                                      : null}{' '}
+                                                                 {data.price}
+                                                            </Text>
+                                                       )}
                                                   </Flex>
                                              </Flex>
-                                             {toRegister !== false ? (
+                                             {toRegister !== false &&
+                                             !hidePrice ? (
                                                   <Button
                                                        colorScheme="aygreen"
                                                        width="8rem"

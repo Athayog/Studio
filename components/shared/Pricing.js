@@ -26,7 +26,7 @@ function getCookie(cname) {
      return null;
 }
 
-const Pricing = ({ pricing, registerTo, toRegister }) => {
+const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
      const { user, signout, loading } = useAuth();
      const [buttonId, setButtonId] = useState('');
      const [loadingPayment, setLoading] = useState(['', false]);
@@ -337,6 +337,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          toRegister={toRegister}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
+                         hidePrice={hidePrice}
                          handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
@@ -346,6 +347,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          toRegister={toRegister}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
+                         hidePrice={hidePrice}
                          handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
@@ -353,6 +355,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          data={data}
                          user={user}
                          toRegister={toRegister}
+                         hidePrice={hidePrice}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
@@ -363,6 +366,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          user={user}
                          toRegister={toRegister}
                          coursePurchased={coursePurchased}
+                         hidePrice={hidePrice}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                     />
@@ -373,6 +377,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          toRegister={toRegister}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
+                         hidePrice={hidePrice}
                          handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
@@ -380,6 +385,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          data={data}
                          user={user}
                          toRegister={toRegister}
+                         hidePrice={hidePrice}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
@@ -389,6 +395,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          data={data}
                          user={user}
                          toRegister={toRegister}
+                         hidePrice={hidePrice}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
@@ -400,6 +407,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          user={user}
                          toRegister={toRegister}
                          coursePurchased={coursePurchased}
+                         hidePrice={hidePrice}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                          subCategory="kr_puram"
@@ -412,6 +420,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          toRegister={toRegister}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
+                         hidePrice={hidePrice}
                          handleUserPayment={handleUserPayment}
                     />
                     <PriceBox
@@ -422,6 +431,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
+                         hidePrice={hidePrice}
                     />
                     <PriceBox
                          courses={group_class_walking_kr}
@@ -431,6 +441,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
+                         hidePrice={hidePrice}
                     />
                     <PriceBox
                          courses={onsite_course}
@@ -440,6 +451,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
+                         hidePrice={hidePrice}
                     />
                     {(couple_package.length !== 0 ||
                          group_studio_class.length !== 0 ||
@@ -458,6 +470,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                               toRegister={toRegister}
                               coursePurchased={coursePurchased}
                               buttonId={buttonId}
+                              hidePrice={hidePrice}
                               handleUserPayment={handleUserPayment}
                          />
                     )}
@@ -472,6 +485,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                               coursePurchased={coursePurchased}
                               buttonId={buttonId}
                               handleUserPayment={handleUserPayment}
+                              hidePrice={hidePrice}
                          />
                     )}
                     {group_studio_class && (
@@ -485,6 +499,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                               coursePurchased={coursePurchased}
                               buttonId={buttonId}
                               handleUserPayment={handleUserPayment}
+                              hidePrice={hidePrice}
                          />
                     )}
                     <PriceBox
@@ -495,6 +510,7 @@ const Pricing = ({ pricing, registerTo, toRegister }) => {
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
+                         hidePrice={hidePrice}
                     />
                     <Text textAlign="left" mt={8} width="100%">
                          *Terms and conditions apply
