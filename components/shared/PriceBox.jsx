@@ -269,22 +269,25 @@ export default function PriceBox({
                                                        {data.duration}
                                                   </Text>
                                                   <Flex>
-                                                       <Text
-                                                            fontSize={{
-                                                                 base: 'xl',
-                                                                 md: '2xl',
-                                                                 lg: '3xl'
-                                                            }}
-                                                       >
-                                                            {toRegister !==
-                                                            false
-                                                                 ? '₹'
-                                                                 : null}{' '}
-                                                            {data.price}
-                                                       </Text>
+                                                       {hidePrice !== true && (
+                                                            <Text
+                                                                 fontSize={{
+                                                                      base: 'xl',
+                                                                      md: '2xl',
+                                                                      lg: '3xl'
+                                                                 }}
+                                                            >
+                                                                 {toRegister !==
+                                                                 false
+                                                                      ? '₹'
+                                                                      : null}{' '}
+                                                                 {data.price}
+                                                            </Text>
+                                                       )}
                                                   </Flex>
                                              </Flex>
-                                             {toRegister !== false ? (
+                                             {toRegister !== false &&
+                                             hidePrice !== true ? (
                                                   <Button
                                                        colorScheme="aygreen"
                                                        width="8rem"
@@ -414,22 +417,28 @@ export default function PriceBox({
                                                             {data.duration}
                                                        </Text>
                                                        <Flex>
-                                                            <Text
-                                                                 fontSize={{
-                                                                      base: 'xl',
-                                                                      md: '2xl',
-                                                                      lg: '3xl'
-                                                                 }}
-                                                            >
-                                                                 {toRegister !==
-                                                                 false
-                                                                      ? '₹'
-                                                                      : null}{' '}
-                                                                 {data.price}
-                                                            </Text>
+                                                            {hidePrice !==
+                                                                 true && (
+                                                                 <Text
+                                                                      fontSize={{
+                                                                           base: 'xl',
+                                                                           md: '2xl',
+                                                                           lg: '3xl'
+                                                                      }}
+                                                                 >
+                                                                      {toRegister !==
+                                                                      false
+                                                                           ? '₹'
+                                                                           : null}{' '}
+                                                                      {
+                                                                           data.price
+                                                                      }
+                                                                 </Text>
+                                                            )}
                                                        </Flex>
                                                   </Flex>
-                                                  {toRegister !== false ? (
+                                                  {toRegister !== false &&
+                                                  hidePrice !== true ? (
                                                        <Button
                                                             colorScheme="aygreen"
                                                             width="8rem"
@@ -562,22 +571,28 @@ export default function PriceBox({
                                                             {data.duration}
                                                        </Text>
                                                        <Flex>
-                                                            <Text
-                                                                 fontSize={{
-                                                                      base: 'xl',
-                                                                      md: '2xl',
-                                                                      lg: '3xl'
-                                                                 }}
-                                                            >
-                                                                 {toRegister !==
-                                                                 false
-                                                                      ? '₹'
-                                                                      : null}{' '}
-                                                                 {data.price}
-                                                            </Text>
+                                                            {hidePrice !==
+                                                                 true && (
+                                                                 <Text
+                                                                      fontSize={{
+                                                                           base: 'xl',
+                                                                           md: '2xl',
+                                                                           lg: '3xl'
+                                                                      }}
+                                                                 >
+                                                                      {toRegister !==
+                                                                      false
+                                                                           ? '₹'
+                                                                           : null}{' '}
+                                                                      {
+                                                                           data.price
+                                                                      }
+                                                                 </Text>
+                                                            )}
                                                        </Flex>
                                                   </Flex>
-                                                  {toRegister !== false ? (
+                                                  {toRegister !== false &&
+                                                  hidePrice !== true ? (
                                                        <Button
                                                             colorScheme="aygreen"
                                                             width="8rem"
@@ -715,22 +730,28 @@ export default function PriceBox({
                                                             {data.duration}
                                                        </Text>
                                                        <Flex>
-                                                            <Text
-                                                                 fontSize={{
-                                                                      base: 'xl',
-                                                                      md: '2xl',
-                                                                      lg: '3xl'
-                                                                 }}
-                                                            >
-                                                                 {toRegister !==
-                                                                 false
-                                                                      ? '₹'
-                                                                      : null}{' '}
-                                                                 {data.price}
-                                                            </Text>
+                                                            {hidePrice !==
+                                                                 true && (
+                                                                 <Text
+                                                                      fontSize={{
+                                                                           base: 'xl',
+                                                                           md: '2xl',
+                                                                           lg: '3xl'
+                                                                      }}
+                                                                 >
+                                                                      {toRegister !==
+                                                                      false
+                                                                           ? '₹'
+                                                                           : null}{' '}
+                                                                      {
+                                                                           data.price
+                                                                      }
+                                                                 </Text>
+                                                            )}
                                                        </Flex>
                                                   </Flex>
-                                                  {toRegister !== false ? (
+                                                  {toRegister !== false &&
+                                                  hidePrice !== true ? (
                                                        <Button
                                                             colorScheme="aygreen"
                                                             width="8rem"
