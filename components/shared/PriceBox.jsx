@@ -124,7 +124,7 @@ export default function PriceBox({
                                                        {data.duration}
                                                   </Text>
                                                   <Flex>
-                                                       {!hidePrice && (
+                                                       {hidePrice !== true && (
                                                             <Text
                                                                  fontSize={{
                                                                       base: 'xl',
@@ -142,7 +142,7 @@ export default function PriceBox({
                                                   </Flex>
                                              </Flex>
                                              {toRegister !== false &&
-                                             !hidePrice ? (
+                                             hidePrice !== true ? (
                                                   <Button
                                                        colorScheme="aygreen"
                                                        width="8rem"
