@@ -211,12 +211,10 @@ const Register = () => {
           }
 
           // GST Calculate
-          ogData.price = parseInt(
-               Number(ogData.price) + Number(ogData.price) * 0.18
-          );
+          ogData.price = Number(ogData.price) + Number(ogData.price) * 0.18;
 
           const result = await axios.post('/api/payment/orders', {
-               amount: ogData.price * 100,
+               amount: parseInt(ogData.price * 100),
                receipt: ogData.id
           });
 
@@ -236,7 +234,7 @@ const Register = () => {
 
           const options = {
                key: process.env.RAZORPAY_KEY_ID,
-               amount: ogData.price * 100,
+               amount: parseInt(ogData.price * 100),
                currency: 'INR',
                name: ogData.name,
                description: ogData.days,
@@ -296,7 +294,7 @@ const Register = () => {
                     courseId: ogData.id,
                     courseName: ogData.name,
                     duration: ogData.days,
-                    price: ogData.price,
+                    price: parseInt(ogData.price),
                     address: '307, Athayog living, Sun Rise Arcade, Devasandra Main Rd, Kodigehalli, Krishnarajapura, Bengaluru, Karnataka 560036'
                },
                theme: {
