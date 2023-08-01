@@ -210,6 +210,9 @@ const Register = () => {
                return;
           }
 
+          // GST Calculate
+          ogData.price = ogData.price + ogData.price * 0.18;
+
           const result = await axios.post('/api/payment/orders', {
                amount: ogData.price * 100,
                receipt: ogData.id

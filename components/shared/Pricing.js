@@ -1,6 +1,6 @@
 import { useAuth } from '@/lib/auth';
 import fetcher from '@/utils/fetcher';
-import { Flex, Heading, Text, useToast } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, useToast } from '@chakra-ui/react';
 import cookie from 'js-cookie';
 import _ from 'lodash';
 import { useRouter } from 'next/router';
@@ -512,12 +512,23 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
                          handleUserPayment={handleUserPayment}
                          hidePrice={hidePrice}
                     />
-                    <Text textAlign="left" mt={8} width="100%">
-                         *Terms and conditions apply
-                    </Text>
-                    <Text width="100%" textAlign="left">
-                         *All price inclusive of 18% GST
-                    </Text>
+                    <Box
+                         bg="white"
+                         mt={8}
+                         width="100%"
+                         shadow="base"
+                         rounded="base"
+                         padding="2"
+                         fontSize="lg"
+                         mb={8}
+                    >
+                         <Text textAlign="left" width="100%">
+                              *Terms and conditions apply
+                         </Text>
+                         <Text width="100%" textAlign="left">
+                              *The prices do not include 18% GST
+                         </Text>
+                    </Box>
                     {!toRegister && (
                          <>
                               <Text mb={3} fontSize="xl" fontWeight="semibold">
