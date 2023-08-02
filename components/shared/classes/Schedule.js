@@ -60,7 +60,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class July 2023 (Indiranagar)
+                              AthaYog Offline Class August 2023 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -101,13 +101,13 @@ function Schedule() {
                                                        6.00 AM - 7.00 AM
                                                   </Text>
                                              </Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Rhythm Of Being </Td>
                                              <Td>Ashtanga Yoga</Td>
-                                             <Td>Rhythm Of Being </Td>
-                                             <Td>Deep Space</Td>
                                              <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Sivananda Yoga </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -122,10 +122,13 @@ function Schedule() {
                                              <Td>Transcending Transitions</Td>
                                              <Td>Rhythm Of Being </Td>
                                              <Td>Ashtanga Yoga</Td>
-                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Ashtanga Yoga</Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>Sivananda Yoga</Td>
-                                             <Td>Deep Space</Td>
+                                             <Td>
+                                                  Deep Space (Pranayama
+                                                  intensive)
+                                             </Td>
                                         </Tr>
 
                                         <Tr>
@@ -138,12 +141,15 @@ function Schedule() {
                                              >
                                                   8:00 AM - 9:00 AM
                                              </Td>
-                                             <Td>Deep Space </Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>
+                                                  Deep Space (Pranayama
+                                                  intensive)
+                                             </Td>
                                              <Td>Ashtanga Yoga</Td>
                                              <Td>Universal Harmony </Td>
+                                             <Td>Rhythm Of Being </Td>
+                                             <Td>Transcending Transitions</Td>
+                                             <Td>Ashtanga Yoga</Td>
                                              <Td>Rhythm Of Being </Td>
                                         </Tr>
                                         <Tr>
@@ -166,7 +172,8 @@ function Schedule() {
                                                   Rhythm Of Being{' '}
                                              </Td>
                                              <Td bg="pink.100">
-                                                  Transcending Transitions
+                                                  Deep Space (Pranayama
+                                                  intensive)
                                              </Td>
                                              <Td bg="pink.100">
                                                   Universal Harmony
@@ -248,10 +255,13 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Deep Space</Td>
-                                             <Td>Transcending Transitions</Td>
+                                             <Td>
+                                                  Deep Space (Pranayama
+                                                  intensive)
+                                             </Td>
                                              <Td>Rhythm Of Being</Td>
-                                             <Td>Inner World</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Sivananda Yoga</Td>
@@ -266,13 +276,19 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Rhythm Of Being</Td>
-                                             <Td>Inner World</Td>
                                              <Td>Transcending Transitions</Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td>
+                                                  Deep Space (Pranayama
+                                                  intensive)
+                                             </Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm Of Being</Td>
+                                             <Td>Sivananda Yoga</Td>
+                                             <Td>
+                                                  Deep Space (Pranayama
+                                                  intensive)
+                                             </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -285,12 +301,15 @@ function Schedule() {
                                                   7:00 PM - 8:00 PM
                                              </Td>
                                              <Td>Inner World</Td>
-                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Transcending Transitions</Td>
                                              <Td>Universal Harmony</Td>
-                                             <Td>Deep Space</Td>
+                                             <Td>
+                                                  Deep Space (Pranayama
+                                                  intensive)
+                                             </Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Cyclic Meditation</Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transitions</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -302,13 +321,13 @@ function Schedule() {
                                              >
                                                   8:00 PM - 9:00 PM
                                              </Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Deep Space</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Cyclic Meditation</Td>
                                              <Td>Rhythm Of Being</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Inner World</Td>
-                                             <Td>Transcending Transitions</Td>
-                                             <Td>Cyclic Meditation</Td>
+                                             <Td>Rhythm Of Being</Td>
+                                             <Td>OM Meditation</Td>
                                         </Tr>
                                    </Tbody>
                               </Table>
