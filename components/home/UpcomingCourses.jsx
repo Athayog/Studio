@@ -29,22 +29,6 @@ function UpcomingCourses() {
                timings: '4th - 15th Week Pregnancy 10am - 11am || 16th to 30th Week Pregnancy 4pm - 5pm',
                type: 'Offline (Indiranagar)',
                duration: ['17th July 2023']
-          },
-          {
-               id: '2',
-               url: 'https://forms.gle/pHs75gncjKHKEXWu8',
-               alt: 'One Day Yoga Excursion',
-               title: 'One Day Yoga Excursion',
-               img: CreativeTwo,
-               timings: '6am to 6pm',
-               type: 'Skandagiri Hills',
-               duration: [
-                    '29th July 2023',
-                    'Limited spots only, ages 8+',
-                    'Open to all',
-                    'Inclusive of food, travel & entry fee',
-                    'Price ₹1999'
-               ]
           }
      ];
 
