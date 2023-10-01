@@ -60,7 +60,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class September 2023 (Indiranagar)
+                              AthaYog Offline Class October 2023 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -101,13 +101,13 @@ function Schedule() {
                                                        6.00 AM - 7.00 AM
                                                   </Text>
                                              </Td>
-                                             <Td>Rhythm of Being</Td>
                                              <Td>Transcending Transition</Td>
-                                             <Td>Advance Hata Yoga</Td>
-                                             <Td>Power Vinyasa</Td>
-                                             <Td>Transcending Transition </Td>
-                                             <Td>Rhythm of Being</Td>
+                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>Universal Harmony</Td>
+                                             <Td>Rhythm of Being</Td>
+                                             <Td>Transcending Transition </Td>
+                                             <Td>Ashtanga Yoga</Td>
+                                             <Td>Power Vinyasa</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -119,14 +119,13 @@ function Schedule() {
                                              >
                                                   7.00 AM - 8.00 AM
                                              </Td>
-                                             <Td>Advance Hata Yoga</Td>
+                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>Rhythm of Being</Td>
-                                             <Td>Power Vinyasa</Td>
-                                             <Td>Transcending Transition</Td>
                                              <Td>Universal Harmony</Td>
+                                             <Td>Transcending Transition</Td>
+                                             <Td>Ashtanga Yoga</Td>
                                              <Td>
-                                                  Iyengar Yoga - Asana with
-                                                  props
+                                                  Iyengar Yoga (Yoga with props)
                                              </Td>
                                              <Td>Rhythm of Being</Td>
                                         </Tr>
@@ -142,12 +141,12 @@ function Schedule() {
                                                   8:00 AM - 9:00 AM
                                              </Td>
                                              <Td>Universal Harmony</Td>
-                                             <Td>Advance Hata Yoga</Td>
-                                             <Td>Universal Harmony </Td>
-                                             <Td>Rhythm of Being </Td>
-                                             <Td>Power Vinyasa</Td>
-                                             <Td>Ashtanga Yoga</Td>
+                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>Transcending Transition</Td>
+                                             <Td>Power Vinyasa</Td>
+                                             <Td>Rhythm of Being </Td>
+                                             <Td>Ashtanga Yoga</Td>
+                                             <Td>Universal Harmony </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -166,8 +165,7 @@ function Schedule() {
                                                   Power Vinyasa
                                              </Td>
                                              <Td bg="pink.100">
-                                                  Iyengar Yoga - Asana with
-                                                  props
+                                                  Rhythm of Being
                                              </Td>
                                              <Td bg="pink.100">
                                                   Advance Hata Yoga
@@ -175,9 +173,11 @@ function Schedule() {
                                              <Td bg="pink.100">
                                                   Universal Harmony
                                              </Td>
-                                             <Td>Rhythm of Being</Td>
+                                             <Td bg="pink.100">
+                                                  Iyengar Yoga (Yoga with props)
+                                             </Td>
+
                                              <Td>
-                                                  {' '}
                                                   Deep Space (Pranayama
                                                   intensive)
                                              </Td>
@@ -214,38 +214,7 @@ function Schedule() {
                                              <Td></Td>
                                              <Td></Td>
                                         </Tr>
-                                        <Tr>
-                                             <Td
-                                                  bg="aygreen.100"
-                                                  borderBottom="1px"
-                                                  borderColor="aygreen.200"
-                                                  padding="0px"
-                                                  paddingLeft="10px"
-                                             >
-                                                  11:00 AM - 12:00 PM
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  POSTNATAL YOGA - ONLINE
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  POSTNATAL YOGA - ONLINE
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  POSTNATAL YOGA - ONLINE
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  POSTNATAL YOGA - ONLINE
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  POSTNATAL YOGA - ONLINE
-                                             </Td>
-                                             <Td></Td>
-                                             <Td></Td>
-                                        </Tr>
+
                                         <Tr>
                                              <Td
                                                   bg="aygreen.100"
@@ -288,16 +257,19 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Power Vinyasa</Td>
+                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>
-                                                  Iyengar Yoga - Asana with
-                                                  props
+                                                  Iyengar Yoga (Yoga with props)
                                              </Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Rhythm of Being</Td>
-                                             <Td>Ashtanga Yoga</Td>
-                                             <Td>Advance Hata Yoga</Td>
-                                             <Td>Universal Harmony</Td>
+
+                                             <Td>Transcending Transition</Td>
+                                             <Td>Power Vinyasa</Td>
+                                             <Td>
+                                                  Deep Space (Pranayama
+                                                  intensive)
+                                             </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -309,16 +281,16 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Rhythm of Being</Td>
-                                             <Td>Transcending Transition</Td>
-                                             <Td>Advance Hata Yoga</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>
-                                                  Iyengar Yoga - Asana with
-                                                  props
-                                             </Td>
                                              <Td>Ashtanga Yoga</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Transcending Transition</Td>
                                              <Td>Power Vinyasa</Td>
+                                             <Td>Ashtanga Yoga</Td>
+
+                                             <Td>
+                                                  Iyengar Yoga (Yoga with props)
+                                             </Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -331,15 +303,12 @@ function Schedule() {
                                                   7:00 PM - 8:00 PM
                                              </Td>
                                              <Td>Universal Harmony</Td>
+                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>Rhythm of Being</Td>
+                                             <Td>Deep Space</Td>
                                              <Td>Transcending Transition</Td>
-                                             <Td>
-                                                  Iyengar Yoga - Asana with
-                                                  props
-                                             </Td>
-                                             <Td>Advance Hata Yoga</Td>
                                              <Td>Inner World</Td>
-                                             <Td>Rhythm of Being</Td>
+                                             <Td>Universal Harmony</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -353,13 +322,12 @@ function Schedule() {
                                              </Td>
                                              <Td>Rhythm of Being</Td>
                                              <Td>
-                                                  Iyengar Yoga - Asana with
-                                                  props
+                                                  Iyengar Yoga (Yoga With Props)
                                              </Td>
-                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Inner World</Td>
-                                             <Td>Rhythm Of Being</Td>
+                                             <Td>Power Of Vinyasa</Td>
                                              <Td>Cyclic Meditation</Td>
                                         </Tr>
                                    </Tbody>
