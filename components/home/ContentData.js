@@ -145,13 +145,6 @@ export const EmployeeData = {
                image: gayatri,
                visible: true,
                designation: 'Teacher'
-          },
-          {
-               name: 'Shreeram Kasturi',
-               info: `Meet a skilled practitioner who hails from the esteemed Gurukula system lineage. Shreeram Kasturi has had the privilege of studying the rich heritage of Yoga, Veda, and Samskrita in the midst of a breathtaking forest, on the scenic bank of the river Tunga. \n \nThis cultured individual not only imbibes but also preaches the teachings of these practices. Despite completing a post-graduate degree in finance and accounting and working for three years in the corporate sector, he felt an inner calling to deepen his knowledge and further his sadhana. Specializing in Hatha, Vinyasa, Nāda, and therapeutic practices, he invites you to join him and gain an authentic experience of Yoga, philosophy, and psychology.`,
-               image: shreeram,
-               visible: true,
-               designation: 'Teacher'
           }
      ]
 };
