@@ -60,7 +60,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class October 2023 (Indiranagar)
+                              AthaYog Offline Class November 2023 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -98,16 +98,18 @@ function Schedule() {
                                                   paddingLeft="10px"
                                              >
                                                   <Text width="150px">
-                                                       6.00 AM - 7.00 AM
+                                                       5.00 AM - 6.00 AM
                                                   </Text>
                                              </Td>
-                                             <Td>Transcending Transition</Td>
-                                             <Td>Advance Hatha Yoga</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm of Being</Td>
-                                             <Td>Transcending Transition </Td>
-                                             <Td>Ashtanga Yoga</Td>
-                                             <Td>Power Vinyasa</Td>
+                                             <Td bg="yellow.100">
+                                                  NEW BATCH COMING SOON
+                                             </Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -117,17 +119,15 @@ function Schedule() {
                                                   padding="0px"
                                                   paddingLeft="10px"
                                              >
-                                                  7.00 AM - 8.00 AM
+                                                  6.00 AM - 7.00 AM
                                              </Td>
+                                             <Td>Rhythm of Being</Td>
+                                             <Td>Transcending Transition</Td>
                                              <Td>Advance Hatha Yoga</Td>
+                                             <Td>Power Vinyasa</Td>
+                                             <Td>Transcending Transition</Td>
                                              <Td>Rhythm of Being</Td>
                                              <Td>Universal Harmony</Td>
-                                             <Td>Transcending Transition</Td>
-                                             <Td>Ashtanga Yoga</Td>
-                                             <Td>
-                                                  Iyengar Yoga (Yoga with props)
-                                             </Td>
-                                             <Td>Rhythm of Being</Td>
                                         </Tr>
 
                                         <Tr>
@@ -138,15 +138,33 @@ function Schedule() {
                                                   padding="0px"
                                                   paddingLeft="10px"
                                              >
+                                                  7:00 AM - 8:00 AM
+                                             </Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Rhythm of Being </Td>
+                                             <Td>Power Vinyasa</Td>
+                                             <Td>Transcending Transition</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Rhythm of Being </Td>
+                                        </Tr>
+                                        <Tr>
+                                             <Td
+                                                  borderBottom="1px"
+                                                  borderColor="aygreen.200"
+                                                  padding="0px"
+                                                  paddingLeft="10px"
+                                                  bg="aygreen.100"
+                                             >
                                                   8:00 AM - 9:00 AM
                                              </Td>
                                              <Td>Universal Harmony</Td>
                                              <Td>Advance Hatha Yoga</Td>
-                                             <Td>Transcending Transition</Td>
-                                             <Td>Power Vinyasa</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Rhythm of Being </Td>
+                                             <Td>Power Vinyasa</Td>
                                              <Td>Ashtanga Yoga</Td>
-                                             <Td>Universal Harmony </Td>
+                                             <Td>Transcending Transition</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -158,29 +176,23 @@ function Schedule() {
                                              >
                                                   9:00 AM - 10:00 AM
                                              </Td>
-                                             <Td bg="pink.100">
-                                                  Special Yoga for Women{' '}
+                                             <Td bg="gray.300">
+                                                  Special Yoga for Women
                                              </Td>
-                                             <Td bg="pink.100">
+                                             <Td bg="gray.300">
                                                   Power Vinyasa
                                              </Td>
-                                             <Td bg="pink.100">
-                                                  Rhythm of Being
+                                             <Td bg="gray.300">
+                                                  Hatha Pradipika
                                              </Td>
-                                             <Td bg="pink.100">
-                                                  Advance Hata Yoga
+                                             <Td bg="gray.300">
+                                                  Advance Hatha Yoga
                                              </Td>
-                                             <Td bg="pink.100">
+                                             <Td bg="gray.300">
                                                   Universal Harmony
                                              </Td>
-                                             <Td bg="pink.100">
-                                                  Iyengar Yoga (Yoga with props)
-                                             </Td>
-
-                                             <Td>
-                                                  Deep Space (Pranayama
-                                                  intensive)
-                                             </Td>
+                                             <Td>Rhythm of Being </Td>
+                                             <Td>Hatha Pradipika</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -190,29 +202,19 @@ function Schedule() {
                                                   padding="0px"
                                                   paddingLeft="10px"
                                              >
-                                                  10:00 AM - 11:00 AM
+                                                  <Text width="150px">
+                                                       10.00 PM - 11.00 PM
+                                                  </Text>
                                              </Td>
                                              <Td bg="yellow.100">
-                                                  PRENATAL YOGA - Week 4 - 15
+                                                  NEW BATCH COMING SOON
                                              </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 4 - 15
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 4 - 15
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 4 - 15
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 4 - 15
-                                             </Td>
-                                             <Td></Td>
-                                             <Td></Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
                                         </Tr>
 
                                         <Tr>
@@ -223,30 +225,21 @@ function Schedule() {
                                                   padding="0px"
                                                   paddingLeft="10px"
                                              >
-                                                  4:00 PM - 5:00 PM
+                                                  <Text width="150px">
+                                                       4.00 PM - 5.00 PM
+                                                  </Text>
                                              </Td>
                                              <Td bg="yellow.100">
-                                                  PRENATAL YOGA - Week 16 - 30
+                                                  NEW BATCH COMING SOON
                                              </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 16 - 30
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 16 - 30
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 16 - 30
-                                             </Td>
-                                             <Td bg="yellow.100">
-                                                  {' '}
-                                                  PRENATAL YOGA - Week 16 - 30
-                                             </Td>
-                                             <Td></Td>
-                                             <Td></Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">-</Td>
                                         </Tr>
+
                                         <Tr>
                                              <Td
                                                   bg="aygreen.100"
@@ -257,19 +250,13 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Advance Hatha Yoga</Td>
-                                             <Td>
-                                                  Iyengar Yoga (Yoga with props)
-                                             </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm of Being</Td>
-
-                                             <Td>Transcending Transition</Td>
                                              <Td>Power Vinyasa</Td>
-                                             <Td>
-                                                  Deep Space (Pranayama
-                                                  intensive)
-                                             </Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Rhythm of Being </Td>
+                                             <Td>Ashtanga Yoga</Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Universal Harmony</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -281,16 +268,13 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Ashtanga Yoga</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Rhythm of Being </Td>
                                              <Td>Transcending Transition</Td>
-                                             <Td>Power Vinyasa</Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Universal Harmony</Td>
+                                             <Td>Hatha Pradipika</Td>
                                              <Td>Ashtanga Yoga</Td>
-
-                                             <Td>
-                                                  Iyengar Yoga (Yoga with props)
-                                             </Td>
+                                             <Td>Power Vinyasa</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -303,12 +287,12 @@ function Schedule() {
                                                   7:00 PM - 8:00 PM
                                              </Td>
                                              <Td>Universal Harmony</Td>
-                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>Rhythm of Being</Td>
-                                             <Td>Deep Space</Td>
                                              <Td>Transcending Transition</Td>
-                                             <Td>Inner World</Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Rhythm of Being</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -321,14 +305,12 @@ function Schedule() {
                                                   8:00 PM - 9:00 PM
                                              </Td>
                                              <Td>Rhythm of Being</Td>
-                                             <Td>
-                                                  Iyengar Yoga (Yoga With Props)
-                                             </Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Rhythm of Being</Td>
                                              <Td>Transcending Transitions</Td>
                                              <Td>Inner World</Td>
-                                             <Td>Power Of Vinyasa</Td>
-                                             <Td>Cyclic Meditation</Td>
+                                             <Td>Rhythm of Being</Td>
+                                             <Td>Hatha Pradipika</Td>
                                         </Tr>
                                    </Tbody>
                               </Table>
@@ -343,26 +325,18 @@ function Schedule() {
                          width={{ base: '95%', md: '90%', lg: '90%' }}
                     >
                          <List>
-                              <ListItem bg="pink.100" p={2}>
+                              <ListItem bg="gray.300" p={2}>
                                    <ListIcon
                                         as={BiRightArrow}
-                                        color="green.500"
+                                        color="gray.500"
                                    />
                                    Indicates only WOMENS BATCH ( Monday to
                                    Friday )
                               </ListItem>
-                              <ListItem bg="yellow.100" p={2}>
+                              <ListItem bg="gray.100" p={2}>
                                    <ListIcon
                                         as={BiRightArrow}
-                                        color="green.500"
-                                   />
-                                   Indicated Prenatal and Postnatal Batch (
-                                   Monday to Friday )
-                              </ListItem>
-                              <ListItem p={2}>
-                                   <ListIcon
-                                        as={BiRightArrow}
-                                        color="green.500"
+                                        color="gray.500"
                                    />
                                    Indicates Group Classes Open to all above age
                                    of 14
@@ -372,8 +346,25 @@ function Schedule() {
                                         as={BiRightArrow}
                                         color="green.500"
                                    />
+                                   Late comers will not be allowed beyond 5th
+                                   minute after the class start time
+                              </ListItem>
+                              <ListItem p={2} bg="blue.200">
+                                   <ListIcon
+                                        as={BiRightArrow}
+                                        color="green.500"
+                                   />
+                                   Satsung & Lecture by Principal Teacher
+                                   SHARATH.B on Yoga Sutras & Yoga Philosophy
+                                   every Saturday 10.00am to 11.30am
+                              </ListItem>
+                              <ListItem p={2}>
+                                   <ListIcon
+                                        as={BiRightArrow}
+                                        color="green.500"
+                                   />
                                    Special Yoga Session on 1st Saturday of the
-                                   month - 108 Surya Namaskara ( 7AM to 9AM )
+                                   month - 108 Surya Namaskara ( 7AM to 9AM )*
                               </ListItem>
                          </List>
                     </Box>
