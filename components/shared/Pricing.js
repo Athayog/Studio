@@ -401,7 +401,7 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
                          handleUserPayment={handleUserPayment}
                          subCategory="indiranagar"
                     />
-                    <PriceBox
+                    {/* <PriceBox
                          courses={generalCoursesKRPuram}
                          data={data}
                          user={user}
@@ -411,7 +411,7 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
                          buttonId={buttonId}
                          handleUserPayment={handleUserPayment}
                          subCategory="kr_puram"
-                    />
+                    /> */}
                     <PriceBox
                          courses={generalCourses}
                          data={data}
