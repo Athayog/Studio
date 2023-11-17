@@ -486,7 +486,7 @@ export default function PriceBox({
                          </Grid>
                     </>
                );
-          } else if (subCategory === 'kr_puram') {
+          } else if (subCategory === 'kr_puram_denied') {
                return (
                     <>
                          <Heading
