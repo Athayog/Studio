@@ -20,16 +20,16 @@ SwiperCore.use([Navigation, Pagination]);
 
 function UpcomingCourses() {
      const upcomingData = [
-          {
-               id: '1',
-               url: '/enquire/workshops',
-               alt: 'Prenatal Yoga Practice',
-               title: 'Prenatal Yoga Practice',
-               img: CreativeOne,
-               timings: '4th - 15th Week Pregnancy 10am - 11am || 16th to 30th Week Pregnancy 4pm - 5pm',
-               type: 'Offline (Indiranagar)',
-               duration: ['17th July 2023']
-          }
+          // {
+          //      id: '1',
+          //      url: '/enquire/workshops',
+          //      alt: 'Prenatal Yoga Practice',
+          //      title: 'Prenatal Yoga Practice',
+          //      img: CreativeOne,
+          //      timings: '4th - 15th Week Pregnancy 10am - 11am || 16th to 30th Week Pregnancy 4pm - 5pm',
+          //      type: 'Offline (Indiranagar)',
+          //      duration: ['17th July 2023']
+          // }
      ];
 
      return (
