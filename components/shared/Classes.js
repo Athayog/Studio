@@ -121,36 +121,7 @@ const Classes = ({ classes }) => {
                                                   })}
                                         </Box>
 
-                                        {data.structure && (
-                                             <Box>
-                                                  <Text
-                                                       textAlign=" left"
-                                                       mt={5}
-                                                       textTransform="uppercase"
-                                                  >
-                                                       Class structure
-                                                  </Text>
-                                                  <UnorderedList
-                                                       textAlign="left"
-                                                       mt={2}
-                                                  >
-                                                       {data.structure?.map(
-                                                            (i, idx) => {
-                                                                 return (
-                                                                      <ListItem
-                                                                           fontWeight="light"
-                                                                           key={
-                                                                                idx
-                                                                           }
-                                                                      >
-                                                                           {i}
-                                                                      </ListItem>
-                                                                 );
-                                                            }
-                                                       )}
-                                                  </UnorderedList>
-                                             </Box>
-                                        )}
+                                     
                                    </Flex>
                               );
                          })}

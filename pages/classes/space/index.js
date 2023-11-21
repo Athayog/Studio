@@ -26,8 +26,8 @@ const Space = ({ notFound }) => {
           whatis: `Elevate your Yogic practice at the AthaYog Space - a peaceful and hygienic environment to practice. Here you can begin or advance in your yoga journey by instilling transformation with a strong hold on your lifestyle.`,
           classes: [
                {
-                    className: 'Universal Harmony',
-                    classInfo: `Find the harmony between your BODY, BREATH & MIND. Restore the balance and explore your inner universe in this hour-long journey!`,
+                    className: 'Inner World',
+                    classInfo: `Explore the subtler levels of your mind through the systemic practice of Yoga Nidra. A practice that comes traditionally from Bihar School of Yoga which helps in deep physical and mental relaxation and takes you closer to a meditative state of mind. `,
                     structure: [
                          'Grounding',
                          '35 minutes of Asana Practice',
@@ -36,8 +36,8 @@ const Space = ({ notFound }) => {
                     ]
                },
                {
-                    className: 'Transcending Transitions ',
-                    classInfo: `Find your flow in a class combining Hatha Yoga with Vinyasa flow that lasts 60 minutes. Transcend the body and mind as you transition from one pose to another with ease.`,
+                    className: 'Universal Harmony',
+                    classInfo: `A practice that involves body, breath & mind practices.  Asanas for body, Pramana maya for breath & meditation for mind.                    `,
                     structure: [
                          'Grounding',
                          '45 minutes of Hatha Vinyasa Flow',
@@ -46,7 +46,7 @@ const Space = ({ notFound }) => {
                },
                {
                     className: 'Rhythm of Being',
-                    classInfo: `Move to the rhythm of your breath for 60 minutes. Reconnect with your body with a dynamic Hatha yoga practice.`,
+                    classInfo: `Perfect alignment of the body & skilful breathing is the goal of this practice. Involve in a session of chosen asanas to help build body & breath connect.`,
                     structure: [
                          'Grounding',
                          '45 minutes of Asana Practice',
@@ -54,16 +54,16 @@ const Space = ({ notFound }) => {
                     ]
                },
                {
-                    className: 'Inner World',
-                    classInfo: `Slow down the inner chaos of your restless mind in the span of 60 minutes. Unwind and effortlessly rest your body and mind with the relaxation technique of Yoga Nidra or “Yogic Sleep”.`,
+                    className: 'Hatha Pradipika',
+                    classInfo: `Learn the intricate details of asanas practice as mentioned in the Hatha Yoga Pradipika scripture written by Swatmarama which helps you develop mental and spiritual awareness.                    `,
                     structure: [
                          'Grounding',
                          'Yoga Nidra - 45 minutes of Guided Relaxation'
                     ]
                },
                {
-                    className: 'Deep Space',
-                    classInfo: `Delve deeper into the space beyond your body and mind with this hour-long guided meditation class. Reconnect with your true self in the deep state of conscious relaxation.`,
+                    className: 'Ashtanga Yoga',
+                    classInfo: `A traditional yoga sequence designed by great masters T Krishnamacharya and Pattabi Jois with a fixed sequence of asana practice along with the other limbs of yoga stitched together into one piece of practice.`,
                     structure: [
                          'Grounding',
                          '15 minutes of Warm-Up & Surya Namaskar',
@@ -72,8 +72,8 @@ const Space = ({ notFound }) => {
                     ]
                },
                {
-                    className: 'Kids Yoga',
-                    classInfo: `Let the little ones start their Yoga practice when the mind is still fresh and young with this fun-filled and interactive 60 minutes class.`,
+                    className: 'Transcending Transitions',
+                    classInfo: `Flow into your body using your breath. Enhance your asana practice thought combination of posture sequenced together with conscious breathing.                    `,
                     structure: [
                          'Grounding',
                          'Warm Up - Engaging & Interactive Activities',
@@ -82,8 +82,8 @@ const Space = ({ notFound }) => {
                     ]
                },
                {
-                    className: 'Ashtanga',
-                    classInfo: `This rigorous hour-long practice synchronizes breath with movement. Immerse and feel the body heat up with dynamic movement.`,
+                    className: 'Adv. Hatha Yoga:',
+                    classInfo: `Fine tuning the Hatha Yoga Practices of Asanas, Pranayama and Meditation, adhering to critical alignments proper breathing technique and mind control while practicing on the mat.                    `,
                     structure: [
                          'Grounding',
                          'Ashtanga Surya Namaskar',
@@ -92,8 +92,20 @@ const Space = ({ notFound }) => {
                     ]
                },
                {
-                    className: 'Sivananda',
-                    classInfo: `In the span of 60 minutes, find a relaxed and meditative state of mind as you practise Hatha yoga in Sivananda style. Founded by Vishnudevananda, this deep Yogic breathing and relaxation-focused practice is fit for all levels.`,
+                    className: 'Power Vinyasa',
+                    classInfo: `Combining the concepts of exercise by the east & the west and unifying into one practice. Using methods developed in the modern science and traditional wisdom of yoga through practice of asanas and movements.`,
+                    structure: [
+                         'Grounding',
+                         '15 minutes of Warm-Up',
+                         'Breathing (Pranayama)',
+                         'Surya Namaskar',
+                         'Asana Practice',
+                         'Guided Relaxation'
+                    ]
+               },
+               {
+                    className: 'Special Ladies Batch',
+                    classInfo: `An exclusive hour only for women with yoga practices especially curated for the betterment of womens’ physical, mental & emotional wellbeing. This is an all exclusive session open only to women.`,
                     structure: [
                          'Grounding',
                          '15 minutes of Warm-Up',
