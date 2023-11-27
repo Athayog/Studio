@@ -215,7 +215,7 @@ const Navbar = () => {
                                                             : ''
                                                   }
                                              >
-                                                  Yoga Classes
+                                                 Group Class
                                              </Button>
                                         </Link>
                                         <Link href="/classes/personal" passHref>
@@ -264,24 +264,26 @@ const Navbar = () => {
                                                             : ''
                                                   }
                                              >
-                                                  Yoga Courses
+                                                  Yoga Academy
                                              </Button>
                                         </Link>
 
                                         <Menu>
                                              <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-                                                  Explore
+                                                  Others
                                              </MenuButton>
                                              <MenuList>
-                                                  <Link href="/courses/chikitsa" passHref>
-                                                       <MenuItem>Yoga Therapy</MenuItem>
-                                                  </Link>
-                                                  <Link href="/career" passHref>
+                                             <Link href="/career" passHref>
                                                        <MenuItem>Career</MenuItem>
                                                   </Link>
                                                   <Link href="/store" passHref>
                                                        <MenuItem>Store</MenuItem>
                                                   </Link>
+                                                  <Link href="/courses/chikitsa" passHref>
+                                                       <MenuItem>Yoga Therapy</MenuItem>
+                                                  </Link>
+                                                
+                                                 
 
                                              </MenuList>
                                         </Menu>

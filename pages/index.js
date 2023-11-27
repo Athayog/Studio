@@ -36,6 +36,7 @@ export default function Home({ gallery, testimonials }) {
                animate={{ opacity: 1 }}
                duration="400"
           >
+               
                <HeroCarousel />
 
                <Certificate />

@@ -49,7 +49,7 @@ const Classes = ({ classes }) => {
                                    lg: '4xl'
                               }}
                          >
-                              Classes
+                              Class Formats
                          </MotionText>
                     </motion.h1>
 

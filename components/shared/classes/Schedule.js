@@ -16,12 +16,15 @@ import {
      ListIcon,
      ListItem,
      List,
-     UnorderedList
+     UnorderedList,
+     Button
 } from '@chakra-ui/react';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import React from 'react';
 import { MdCheckCircle } from 'react-icons/md';
+import ScheduleImage from 'public/schedule.jpg'
 import { BiRightArrow } from 'react-icons/bi';
+
 function Schedule() {
      const d = new Date();
 
@@ -316,6 +319,29 @@ function Schedule() {
                               </Table>
                          </Box>
                     </Flex>
+                    <Flex
+
+                         mt={5}
+                         overflow="hidden"
+
+
+                         rounded="md"
+                         width={{ base: '95%', md: '90%', lg: '90%' }}
+                         justifyContent='flex-start'
+
+
+                    >
+                         <a
+                              href="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/schedule.jpg?alt=media&token=b7a78cfd-1bb8-4694-9d67-36c71ec2333c"
+                              downlaod="true"
+                              target="_blank"
+                            
+                              >
+                              <Button colorScheme='blue' shadow='md' > Download Schedule</Button>
+                         </a>
+
+                    </Flex>
+
                     <Box
                          bg="white"
                          mt={5}

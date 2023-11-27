@@ -25,15 +25,9 @@ const HeroCarousel = () => {
                id: 0,
                alt: 'Athayog Living',
                imageUrl: heroDesktop,
-               url: '/yoga-day'
+               url: null
           }
 
-          // {
-          //      id: 3,
-          //      alt: 'Yoga retreat',
-          //      imageUrl: jayantiDesktop,
-          //      url: '/yoga-retreat'
-          // }
      ];
 
      const imagesMobile = [
@@ -41,15 +35,10 @@ const HeroCarousel = () => {
                id: 0,
                alt: 'Athayog Living',
                imageUrl: heroMobile,
-               url: 'yoga-day'
+               url:null
           }
 
-          // {
-          //      id: 4,
-          //      alt: 'Yoga retreat',
-          //      imageUrl: jayantiMobile,
-          //      url: '/yoga-retreat'
-          // }
+          
      ];
 
      useEffect(() => {
@@ -78,12 +67,12 @@ const HeroCarousel = () => {
                                    key={image.id}
                                    onClick={() => pushToLink(image.url)}
                               >
-                                   <Box height="100%" width="100%">
+                                   <Box height="80vh" width="100%">
                                         <Image
                                              layout="responsive"
                                              alt={image.alt}
                                              objectFit="cover"
-                                             objectPosition="center"
+                                             objectPosition="bottom"
                                              src={image.imageUrl}
                                              placeholder="blur"
                                         />

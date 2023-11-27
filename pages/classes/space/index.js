@@ -18,10 +18,15 @@ import { Box, Button, Flex, Grid, Heading, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import CTAImage from 'public/athayogWorkshop.jpg';
 import Link from 'next/link';
+import HeroSpace from '@/components/space/hero';
+import HeroImage from 'public/Clipped.png'
+import NavbarHelper from '@/components/shared/NavbarHelper';
+
+
 
 const Space = ({ notFound }) => {
      const pageData = {
-          name: 'Space',
+          name: 'Group Class',
           heroImage: athayogSpace,
           whatis: `Elevate your Yogic practice at the AthaYog Space - a peaceful and hygienic environment to practice. Here you can begin or advance in your yoga journey by instilling transformation with a strong hold on your lifestyle.`,
           classes: [
@@ -141,14 +146,15 @@ const Space = ({ notFound }) => {
                animate={{ opacity: 1 }}
           >
                <Head>
-                    <title>Space - AthayogLiving</title>
+                    <title>Group Class - AthayogLiving</title>
 
                     <meta
                          name="keywords"
                          content="yoga classes near me, nearest yoga class to me, yoga class near me, yoga classes, yoga class, yoga classes online, when yoga day, yoga classes near me only for ladies, yoga classes near me with fees, yoga course, yoga courses, nearest yoga studio to me, near yoga classes, yoga teacher training course, yoga course certificate, near yoga classes, yoga class nearby, yoga classes online free, nearby yoga classes, yoga class near, nearby yoga class, near yoga class, near yoga centre, near yoga center, yoga classes in bangalore, bangalore yoga classes, yoga classes bangalore"
                     ></meta>
                </Head>
-               <Hero pageData={pageData} />
+              <NavbarHelper/>
+              <HeroSpace imageUrl={HeroImage}/>
                <ClassesLayout>
                     <BreadCrumb subLinks="classes" currentPage="Space" />
                     <Classes classes={pageData.classes} />
@@ -203,10 +209,10 @@ const Space = ({ notFound }) => {
                                              passHref={true}
                                         >
                                              <Button
-                                                  colorScheme="aygreen"
+                                                  colorScheme="blue"
                                                   size="lg"
                                              >
-                                                  Check Now
+                                                 Buy Now
                                              </Button>
                                         </Link>
                                    </Flex>
