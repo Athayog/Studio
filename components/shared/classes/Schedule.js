@@ -60,7 +60,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Offline Class November 2023 (Indiranagar)
+                              AthaYog Group Class December 2023 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"
@@ -121,13 +121,13 @@ function Schedule() {
                                              >
                                                   6.00 AM - 7.00 AM
                                              </Td>
-                                             <Td>Rhythm of Being</Td>
-                                             <Td>Transcending Transition</Td>
-                                             <Td>Advance Hatha Yoga</Td>
-                                             <Td>Power Vinyasa</Td>
-                                             <Td>Transcending Transition</Td>
-                                             <Td>Rhythm of Being</Td>
                                              <Td>Universal Harmony</Td>
+                                             <Td>Deep Space</Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Power Vinyasa</Td>
+                                             <Td>Rhythm of Being</Td>
+                                             <Td>Transcending Transition</Td>
                                         </Tr>
 
                                         <Tr>
@@ -140,13 +140,13 @@ function Schedule() {
                                              >
                                                   7:00 AM - 8:00 AM
                                              </Td>
-                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>Rhythm of Being </Td>
-                                             <Td>Power Vinyasa</Td>
-                                             <Td>Transcending Transition</Td>
                                              <Td>Universal Harmony</Td>
+                                             <Td>Power Vinyasa</Td>
+                                             <Td>Deep Space </Td>
+                                             <Td>Transcending Transition</Td>
                                              <Td>Hatha Pradipika</Td>
-                                             <Td>Rhythm of Being </Td>
+                                             <Td>Advance Hatha Yoga</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -159,12 +159,12 @@ function Schedule() {
                                                   8:00 AM - 9:00 AM
                                              </Td>
                                              <Td>Universal Harmony</Td>
-                                             <Td>Advance Hatha Yoga</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm of Being </Td>
-                                             <Td>Power Vinyasa</Td>
-                                             <Td>Ashtanga Yoga</Td>
                                              <Td>Transcending Transition</Td>
+                                             <Td>Rhythm of Being </Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Ashtanga Yoga</Td>
+                                             <Td>Deep Space</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -176,22 +176,25 @@ function Schedule() {
                                              >
                                                   9:00 AM - 10:00 AM
                                              </Td>
-                                             <Td bg="gray.300">
+                                             <Td bg="orange.100">
                                                   Special Yoga for Women
                                              </Td>
-                                             <Td bg="gray.300">
-                                                  Power Vinyasa
-                                             </Td>
-                                             <Td bg="gray.300">
-                                                  Hatha Pradipika
-                                             </Td>
-                                             <Td bg="gray.300">
-                                                  Advance Hatha Yoga
-                                             </Td>
-                                             <Td bg="gray.300">
+                                             <Td bg="orange.100">
                                                   Universal Harmony
                                              </Td>
-                                             <Td>Rhythm of Being </Td>
+                                             <Td bg="orange.100">Rhythm of Being </Td>
+                                             <Td bg="orange.100">
+                                                  Advance Hatha Yoga
+                                             </Td>
+                                             <Td bg="orange.100">
+                                                 Transcending Transition
+                                             </Td>
+                                             <Td >
+                                                  Deep Space
+                                             </Td>
+                                            
+                                            
+                                            
                                              <Td>Hatha Pradipika</Td>
                                         </Tr>
                                         <Tr>
@@ -207,14 +210,14 @@ function Schedule() {
                                                   </Text>
                                              </Td>
                                              <Td bg="yellow.100">
-                                                  NEW BATCH COMING SOON
+                                                 Universal Harmony
                                              </Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">Hatha Pradipika</Td>
+                                             <Td bg="yellow.100">Transcending Transcending</Td>
+                                             <Td bg="yellow.100">Rhythm Og Being</Td>
+                                             <Td bg="yellow.100">Deep Space</Td>
+                                             <Td bg="yellow.100">Inner World</Td>
+                                             <Td bg="yellow.100">Ashtanga Yoga</Td>
                                         </Tr>
 
                                         <Tr>
@@ -230,14 +233,14 @@ function Schedule() {
                                                   </Text>
                                              </Td>
                                              <Td bg="yellow.100">
-                                                  NEW BATCH COMING SOON
+                                               Advance Hatha Yoga
                                              </Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
-                                             <Td bg="yellow.100">-</Td>
+                                             <Td bg="yellow.100">Deep Space</Td>
+                                             <Td bg="yellow.100">Ashtanga Yoga</Td>
+                                             <Td bg="yellow.100">Inner World</Td>
+                                             <Td bg="yellow.100">Universal Harmony</Td>
+                                             <Td bg="yellow.100">Power Vinyasa</Td>
+                                             <Td bg="yellow.100">Hatha Pradipika</Td>
                                         </Tr>
 
                                         <Tr>
@@ -250,13 +253,13 @@ function Schedule() {
                                              >
                                                   5:00 PM - 6:00 PM
                                              </Td>
-                                             <Td>Power Vinyasa</Td>
-                                             <Td>Hatha Pradipika</Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm of Being </Td>
                                              <Td>Ashtanga Yoga</Td>
+                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Rhythm of Being </Td>
+                                             <Td>Power Vinyasa</Td>
+                                             <Td>Inner World</Td>
                                              <Td>Advance Hatha Yoga</Td>
-                                             <Td>Universal Harmony</Td>
+                                             <Td>Deep Space</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -268,12 +271,12 @@ function Schedule() {
                                              >
                                                   6:00 PM - 7:00 PM
                                              </Td>
-                                             <Td>Rhythm of Being </Td>
-                                             <Td>Transcending Transition</Td>
-                                             <Td>Advance Hatha Yoga</Td>
-                                             <Td>Universal Harmony</Td>
                                              <Td>Hatha Pradipika</Td>
+                                             <Td>Rhythm of Being </Td>
                                              <Td>Ashtanga Yoga</Td>
+                                             <Td>Deep Space</Td>
+                                             <Td>Advance Hatha Yoga</Td>
+                                             <Td>Inner World</Td>
                                              <Td>Power Vinyasa</Td>
                                         </Tr>
                                         <Tr>
@@ -286,13 +289,13 @@ function Schedule() {
                                              >
                                                   7:00 PM - 8:00 PM
                                              </Td>
-                                             <Td>Universal Harmony</Td>
-                                             <Td>Rhythm of Being</Td>
                                              <Td>Transcending Transition</Td>
-                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Universal Harmony</Td>
                                              <Td>Advance Hatha Yoga</Td>
                                              <Td>Hatha Pradipika</Td>
+                                             <Td>Deep Space</Td>
                                              <Td>Rhythm of Being</Td>
+                                             <Td>Inner World</Td>
                                         </Tr>
                                         <Tr>
                                              <Td
@@ -305,12 +308,12 @@ function Schedule() {
                                                   8:00 PM - 9:00 PM
                                              </Td>
                                              <Td>Rhythm of Being</Td>
+                                             <Td>Advance Hatha Yoga</Td>
                                              <Td>Hatha Pradipika</Td>
-                                             <Td>Rhythm of Being</Td>
-                                             <Td>Transcending Transitions</Td>
+                                             <Td>Deep Space</Td>
+                                             <Td>Transcending Transition</Td>
                                              <Td>Inner World</Td>
-                                             <Td>Rhythm of Being</Td>
-                                             <Td>Hatha Pradipika</Td>
+                                             <Td>Power Of Vinyasa</Td>
                                         </Tr>
                                    </Tbody>
                               </Table>
@@ -325,7 +328,7 @@ function Schedule() {
                          width={{ base: '95%', md: '90%', lg: '90%' }}
                     >
                          <List>
-                              <ListItem bg="gray.300" p={2}>
+                              <ListItem bg="orange.100" p={2}>
                                    <ListIcon
                                         as={BiRightArrow}
                                         color="gray.500"
@@ -333,13 +336,12 @@ function Schedule() {
                                    Indicates only WOMENS BATCH ( Monday to
                                    Friday )
                               </ListItem>
-                              <ListItem bg="gray.100" p={2}>
+                              <ListItem bg="yellow.100" p={2}>
                                    <ListIcon
                                         as={BiRightArrow}
                                         color="gray.500"
                                    />
-                                   Indicates Group Classes Open to all above age
-                                   of 14
+                                   10 AM and 4 PM will be new batches effective from December 1st 2023
                               </ListItem>
                               <ListItem p={2}>
                                    <ListIcon
