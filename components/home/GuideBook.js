@@ -36,7 +36,7 @@ function GuideBook() {
                          <Button
                               size="md"
                               fontSize={{ sm: 'sm', lg: 'md' }}
-                              rightIcon={<BsDownload />}
+                              
                               mt={10}
                               colorScheme="aygreen"
                               fontWeight="medium"

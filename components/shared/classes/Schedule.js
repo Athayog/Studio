@@ -16,9 +16,10 @@ import {
      ListIcon,
      ListItem,
      List,
-     UnorderedList
+     UnorderedList,
+     Button
 } from '@chakra-ui/react';
-import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { BsDownload, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import React from 'react';
 import { MdCheckCircle } from 'react-icons/md';
 import { BiRightArrow } from 'react-icons/bi';
@@ -187,14 +188,14 @@ function Schedule() {
                                                   Advance Hatha Yoga
                                              </Td>
                                              <Td bg="orange.100">
-                                                 Transcending Transition
+                                                  Transcending Transition
                                              </Td>
                                              <Td >
                                                   Deep Space
                                              </Td>
-                                            
-                                            
-                                            
+
+
+
                                              <Td>Hatha Pradipika</Td>
                                         </Tr>
                                         <Tr>
@@ -210,7 +211,7 @@ function Schedule() {
                                                   </Text>
                                              </Td>
                                              <Td bg="yellow.100">
-                                                 Universal Harmony
+                                                  Universal Harmony
                                              </Td>
                                              <Td bg="yellow.100">Hatha Pradipika</Td>
                                              <Td bg="yellow.100">Transcending Transcending</Td>
@@ -233,7 +234,7 @@ function Schedule() {
                                                   </Text>
                                              </Td>
                                              <Td bg="yellow.100">
-                                               Advance Hatha Yoga
+                                                  Advance Hatha Yoga
                                              </Td>
                                              <Td bg="yellow.100">Deep Space</Td>
                                              <Td bg="yellow.100">Ashtanga Yoga</Td>
@@ -317,8 +318,20 @@ function Schedule() {
                                         </Tr>
                                    </Tbody>
                               </Table>
+                              <Box width="100%">
+                              <a
+                         href="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/december_schedule.jpg?alt=media&token=cc6e2064-b57c-4490-9495-50eb0f6001cf"
+                         downlaod="true"
+                         target="_blank"
+                    >
+
+                                   <Button borderTopLeftRadius={0} borderTopRightRadius={0} width="100%" colorScheme='blue'>Download Schedule</Button>
+                            </a>
+                              </Box>
                          </Box>
+
                     </Flex>
+
                     <Box
                          bg="white"
                          mt={5}
