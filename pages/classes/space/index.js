@@ -21,8 +21,15 @@ import Link from 'next/link';
 import HeroSpace from '@/components/space/hero';
 import HeroImage from 'public/Clipped.png'
 import NavbarHelper from '@/components/shared/NavbarHelper';
-
-
+import class1 from 'public/class_1-min.jpg'
+import class2 from 'public/class_2-min.jpg'
+import class3 from 'public/class_3-min.jpg'
+import class4 from 'public/class_4-min.jpg'
+import class5 from 'public/class_5-min.jpg'
+import class6 from 'public/class_6-min.jpg'
+import class7 from 'public/class_7-min.jpg'
+import class8 from 'public/class_8-min.jpg'
+import class9 from 'public/class_9-min.jpg'
 
 const Space = ({ notFound }) => {
      const pageData = {
@@ -38,7 +45,8 @@ const Space = ({ notFound }) => {
                          '35 minutes of Asana Practice',
                          'Relaxation',
                          'Breathing (Pranayama) & Meditation'
-                    ]
+                    ],
+                    imageUrl:class1
                },
                {
                     className: 'Universal Harmony',
@@ -47,7 +55,8 @@ const Space = ({ notFound }) => {
                          'Grounding',
                          '45 minutes of Hatha Vinyasa Flow',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl:class2
                },
                {
                     className: 'Rhythm of Being',
@@ -56,7 +65,8 @@ const Space = ({ notFound }) => {
                          'Grounding',
                          '45 minutes of Asana Practice',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl:class3
                },
                {
                     className: 'Hatha Pradipika',
@@ -64,7 +74,8 @@ const Space = ({ notFound }) => {
                     structure: [
                          'Grounding',
                          'Yoga Nidra - 45 minutes of Guided Relaxation'
-                    ]
+                    ],
+                    imageUrl:class4
                },
                {
                     className: 'Ashtanga Yoga',
@@ -74,7 +85,8 @@ const Space = ({ notFound }) => {
                          '15 minutes of Warm-Up & Surya Namaskar',
                          'Guided Relaxation',
                          'Breathing (Pranayama) & Meditation'
-                    ]
+                    ],
+                    imageUrl:class5
                },
                {
                     className: 'Transcending Transitions',
@@ -84,7 +96,8 @@ const Space = ({ notFound }) => {
                          'Warm Up - Engaging & Interactive Activities',
                          'Asana Practice',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl: class6
                },
                {
                     className: 'Adv. Hatha Yoga:',
@@ -94,7 +107,8 @@ const Space = ({ notFound }) => {
                          'Ashtanga Surya Namaskar',
                          'Ashtanga Primary Series Asanas',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl: class7
                },
                {
                     className: 'Power Vinyasa',
@@ -106,7 +120,8 @@ const Space = ({ notFound }) => {
                          'Surya Namaskar',
                          'Asana Practice',
                          'Guided Relaxation'
-                    ]
+                    ],
+                    imageUrl: class8
                },
                {
                     className: 'Special Ladies Batch',
@@ -118,7 +133,8 @@ const Space = ({ notFound }) => {
                          'Surya Namaskar',
                          'Asana Practice',
                          'Guided Relaxation'
-                    ]
+                    ],
+                    imageUrl: class9
                }
           ],
           prosAndCons: [
