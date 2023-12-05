@@ -156,7 +156,7 @@ const Space = ({ notFound }) => {
               <NavbarHelper/>
               <HeroSpace imageUrl={HeroImage}/>
                <ClassesLayout>
-                    <BreadCrumb subLinks="classes" currentPage="Space" />
+                  
                     <Classes classes={pageData.classes} />
                     <IntensityTable />
                     {/* <Schedule schedule="general" /> */}
