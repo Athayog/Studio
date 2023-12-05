@@ -22,11 +22,14 @@ import firebase from '@/lib/firebase';
 import { AnimatePresence } from 'framer-motion';
 import cookie from 'js-cookie';
 import { MotionStack } from '../shared/MotionElements';
+import { FaGoogle } from 'react-icons/fa';
+import { PhoneIcon } from '@chakra-ui/icons';
 
 const Login = () => {
      const { handleSubmit, register, errors, reset, getValues } = useForm();
      const { signinWithEmail } = useAuth();
-     const auth = firebase.auth();
+     const {signinWithGoogle} = useAuth();
+      const auth = firebase.auth();
      const [loading, setLoading] = useState(false);
      const toast = useToast();
      const router = useRouter();
@@ -95,6 +98,10 @@ const Login = () => {
           }
      };
 
+     const handleGoogleLogin = () => {
+          signinWithGoogle('/')
+     }
+
      return (
           <>
                <Heading
@@ -106,76 +113,42 @@ const Login = () => {
                     Log In
                </Heading>
 
-               <MotionStack
-                    spacing={{ base: 5, md: 8, lg: 8 }}
-                    mt={5}
-                    width={{ base: '100%', md: 'sm', lg: 'sm' }}
-                    as="form"
-                    exit={{ y: -1000 }}
-                    onSubmit={handleSubmit((data) => onUserLogin(data))}
-               >
-                    <FormControl isRequired>
-                         <FormLabel>Email address</FormLabel>
-                         <Input
-                              type="email"
-                              aria-label="email"
-                              name="email"
-                              id="email"
-                              placeholder="xyz@abc.com"
-                              ref={register({
-                                   required: 'Please enter a email.'
-                              })}
-                         />
-                         <FormErrorMessage>
-                              {errors.email && errors.email.message}
-                         </FormErrorMessage>
-                    </FormControl>
-                    <FormControl isRequired>
-                         <FormLabel>Password</FormLabel>
-                         <Input
-                              type="password"
-                              aria-label="password"
-                              name="password"
-                              id="password"
-                              ref={register({
-                                   required: 'Please enter a password.'
-                              })}
-                         />
-                         <FormErrorMessage>
-                              {errors.password && errors.password.message}
-                         </FormErrorMessage>
-
-                         <Text
-                              cursor="pointer"
-                              mt={2}
-                              color="aygreen.500"
-                              onClick={() => forgotPassword()}
-                         >
-                              Forgot your password?
-                         </Text>
-                    </FormControl>
-
-                    <Button
-                         type="submit"
-                         colorScheme="aygreen"
-                         isLoading={loading}
-                         _active={{
-                              transform: 'scale(0.95)'
-                         }}
-                    >
-                         Login
-                    </Button>
-               </MotionStack>
-
+              
                <Stack
                     spacing={{ base: 5, md: 8, lg: 8 }}
                     mt={5}
                     width={{ base: '100%', md: 'sm', lg: 'sm' }}
                >
                     <Divider color="black" />
+                 
+                    <Button
+                              type="submit"
+                              onClick={() => handleGoogleLogin()}
+                              colorScheme="none"
+                              color="black"
+                              isLoading={loading}
+                              _active={{
+                                   transform: 'scale(0.95)'
+                              }}
+                              
+                              bg="gray.100"
+                             className="login-with-google-btn"
+                             leftIcon={<FaGoogle/>}
+                         >
+                              Log in with Google
+                         </Button>
+               </Stack>
+
+               <Stack
+                    spacing={{ base: 5, md: 8, lg: 8 }}
+                    mt={1}
+                    width={{ base: '100%', md: 'sm', lg: 'sm' }}
+               >
+                    <Divider color="black" />
                     <Button
                          type="submit"
                          colorScheme="aygray"
+                         leftIcon={<PhoneIcon/>}
                          id="sign-in-button"
                          width="100%"
                          onClick={(e) => router.push('/account/otp')}
@@ -185,11 +158,7 @@ const Login = () => {
                     >
                          Login Via Phone
                     </Button>
-                    <Link href="signup">
-                         <Text textAlign="center" cursor="pointer">
-                              Sign up instead?
-                         </Text>
-                    </Link>
+                   
                </Stack>
           </>
      );
