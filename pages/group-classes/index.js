@@ -19,17 +19,17 @@ import Image from 'next/image';
 import CTAImage from 'public/athayogWorkshop.jpg';
 import Link from 'next/link';
 import HeroSpace from '@/components/space/hero';
-import HeroImage from 'public/Clipped.png'
+import HeroImage from 'public/class_2-min-min.jpg'
 import NavbarHelper from '@/components/shared/NavbarHelper';
-import class1 from 'public/class_1-min.jpg'
-import class2 from 'public/class_2-min.jpg'
-import class3 from 'public/class_3-min.jpg'
-import class4 from 'public/class_4-min.jpg'
-import class5 from 'public/class_5-min.jpg'
-import class6 from 'public/class_6-min.jpg'
-import class7 from 'public/class_7-min.jpg'
-import class8 from 'public/class_8-min.jpg'
-import class9 from 'public/class_9-min.jpg'
+import class1 from 'public/class_1-min-min.jpg'
+import class2 from 'public/class_2-min-min.jpg'
+import class3 from 'public/class_3-min-min.jpg'
+import class4 from 'public/class_4-min-min.jpg'
+import class5 from 'public/class_5-min-min.jpg'
+import class6 from 'public/class_6-min-min.jpg'
+import class7 from 'public/class_7-min-min.jpg'
+import class8 from 'public/class_8-min-min.jpg'
+import class9 from 'public/class_9-min-min.jpg'
 
 const Space = ({ notFound }) => {
      const pageData = {
@@ -171,7 +171,7 @@ const Space = ({ notFound }) => {
                </Head>
               <NavbarHelper/>
               <HeroSpace imageUrl={HeroImage}/>
-              
+               
                   
                     <Classes classes={pageData.classes} />
                     <IntensityTable />
@@ -244,7 +244,7 @@ const Space = ({ notFound }) => {
                     </Box>
 
                     <ProsAndCons data={pageData.prosAndCons} name="Space" />
-              
+               
           </motion.div>
      );
 };

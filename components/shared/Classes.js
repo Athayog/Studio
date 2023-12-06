@@ -45,13 +45,15 @@ const Classes = ({ classes }) => {
                     >
                          <MotionText
                               cursor="pointer"
-                              fontWeight="normal"
+                              textTransform='uppercase'
+                              fontWeight="bold"
                               fontSize={{
                                    base: '3xl',
                                    md: '4xl',
                                    lg: '4xl'
                               }}
-                              mb={5}
+                              borderBottom="3px solid green"
+                              mb={10}
                          >
 
                               Class Formats
@@ -66,8 +68,8 @@ const Classes = ({ classes }) => {
                                    justifyContent="flex-start"
                                    bg={
                                         index % 2 == 0
-                                             ? 'aygreen.100'
-                                             : 'aygreen.200'
+                                             ? 'green.100'
+                                             : 'blue.100'
                                    }
                                    height="25rem"
                                    rounded="lg"
@@ -86,10 +88,10 @@ const Classes = ({ classes }) => {
                                                   src={data.imageUrl}
                                                   alt={"Sd"}
                                                   layout="fill"
-                                                  objectPosition="center top"
+                                                  objectPosition="center center"
                                                   className="class-image"
                                                   objectFit="cover"
-                                               
+                                                  placeholder='blur'
                                                   maxH="100%"
                                                   maxW="100%"
                                              />
@@ -98,17 +100,17 @@ const Classes = ({ classes }) => {
                                         flex="1"
                                         padding={{
                                              base: '6',
-                                             md: '8',
-                                             lg: '10'
+                                             md: '10',
+                                             lg: '20'
                                         }}>
                                              {' '}
                                              <Text
                                                   fontSize={{
                                                        base: 'xl',
                                                        md: '2xl',
-                                                       lg: '2xl'
+                                                       lg: '3xl'
                                                   }}
-                                                  fontWeight="normal"
+                                                  fontWeight="bold"
                                              >
                                                   {capitalizeFirstLetter(
                                                        data.className
@@ -139,11 +141,12 @@ const Classes = ({ classes }) => {
                                              <>
                                              <Box 
                                         flex="1"
+                                       
                                         order={[1, null, 0]}
                                         padding={{
                                              base: '6',
-                                             md: '8',
-                                             lg: '10'
+                                             md: '10',
+                                             lg: '20'
                                         }}>
                                              
                                              {' '}
@@ -151,9 +154,9 @@ const Classes = ({ classes }) => {
                                                   fontSize={{
                                                        base: 'xl',
                                                        md: '2xl',
-                                                       lg: '2xl'
+                                                       lg: '3xl'
                                                   }}
-                                                  fontWeight="normal"
+                                                  fontWeight="bold"
                                              >
                                                   {capitalizeFirstLetter(
                                                        data.className
@@ -187,9 +190,9 @@ const Classes = ({ classes }) => {
                                                   src={data.imageUrl}
                                                   alt={data.className}
                                                   objectFit="cover"
-                                                  
+                                                  placeholder='blur'
                                                   layout="fill"
-                                                  objectPosition="center bottom"
+                                                  objectPosition="center center"
                                                   maxH="100%"
                                                   maxW="100%"
                                              />
