@@ -221,7 +221,7 @@ const Space = ({ notFound }) => {
                                         </Heading>
 
                                         <Link
-                                             href="/classes/space/offerings"
+                                             href="/group-classes/offerings"
                                              passHref={true}
                                         >
                                              <Button

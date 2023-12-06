@@ -10,7 +10,7 @@ function Classes() {
           {
                name: 'Athayog Space',
                desc: `Elevate your Yogic practice at the AthaYog Space - a peaceful and hygienic environment to practice.`,
-               url: '/classes/space'
+               url: '/group-classes'
           },
           {
                name: 'AthaYog Online',

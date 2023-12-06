@@ -10,7 +10,7 @@ const HeroSpace = ({ imageUrl }) => {
       direction={{ base: 'column', md: 'row' }}
       align="center"
       justify="center"
-      height='50vh'
+      height={['90vh','50vh']}
       bg='aygreen.100'
      width='100%'
     >

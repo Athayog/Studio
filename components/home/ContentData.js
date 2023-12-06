@@ -19,7 +19,7 @@ export const offeringsData = {
                name: 'Group Class',
                information:
                     'Elevate your Yogic practice by instilling transformation with a strong hold on your lifestyle.',
-               link: '/classes/space',
+               link: '/group-classes',
                image: athayogSpace,
                simple: 'Studio Classes'
           },

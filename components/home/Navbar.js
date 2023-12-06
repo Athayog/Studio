@@ -194,7 +194,7 @@ const Navbar = () => {
                                                   About Us
                                              </Button>
                                         </Link>
-                                        <Link href="/classes/space" passHref>
+                                        <Link href="/group-classes" passHref>
                                              <Button
                                                   fontWeight="normal"
                                                   fontSize="md"
@@ -210,7 +210,7 @@ const Navbar = () => {
                                                   }}
                                                   isActive={
                                                        router.pathname ==
-                                                            '/classes/space'
+                                                            '/group-classes'
                                                             ? true
                                                             : ''
                                                   }
