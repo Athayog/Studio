@@ -10,31 +10,29 @@ const HeroSpace = ({ imageUrl }) => {
       direction={{ base: 'column', md: 'row' }}
       align="center"
       justify="center"
-      
+      height='50vh'
       bg='aygreen.100'
-     
+     width='100%'
     >
       <Box
         flex="1"
-        maxW={{ base: '100%', md: '50%' }}
-        alignSelf={{ base: 'center', md: 'flex-start' }}
         position='relative'
         overflow='hidden'
+        height='100%'
+        width='100%'
       >
         <Image
           src={imageUrl}
           alt="Hero Image"
           layout="fill"
-          objectPosition="center center"
           className="class-image"
           objectFit="cover"
           placeholder='blur'
-          maxH="100%"
-          maxW="100%"
+        
         />
       </Box>
 
-      <Box flex="1" textAlign={{ base: 'center', md: 'left' }} ml={{ base: 0, md: 8 }}>
+      <Box flex="1" textAlign={{ base: 'center', md: 'left' }} ml={{ base: 0, md: 8 }} p={5}>
         <Heading as="h1" size="2xl" mb={4} color="black">
           Athayog Group Classes
         </Heading>
