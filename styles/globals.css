@@ -190,3 +190,14 @@ body {
    .class-image{
      object-position: center
    }
+
+   .squiggly-underline {
+     position: relative;
+   }
+   
+   .squiggly-underline h1 {
+     text-decoration: black wavy underline;
+     text-decoration-skip-ink: none;
+     height: 1em;
+   }
+   
