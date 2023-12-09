@@ -243,7 +243,7 @@ const Navbar = () => {
                                              </Button>
                                         </Link>
 
-                                        <Link href="/courses" passHref>
+                                        <Link href="/yoga-academy" passHref>
                                              <Button
                                                   fontWeight="normal"
                                                   fontSize="md"
@@ -259,7 +259,7 @@ const Navbar = () => {
                                                   }}
                                                   isActive={
                                                        router.pathname ==
-                                                            '/courses'
+                                                            '/yoga-academy'
                                                             ? true
                                                             : ''
                                                   }
