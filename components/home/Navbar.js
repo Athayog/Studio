@@ -60,10 +60,14 @@ const Navbar = () => {
      return (
           <>
                <Box zIndex={3} position="fixed" width="100%">
-                    <Center
+                    <Box
                          bg="white"
                          transition="linear"
                          transform="initial"
+                         display='flex'
+                         alignItems='center'
+                         justifyContent='space-around'
+                         
                          style={{ backdropFilter: 'blur(5px)' }}
                          borderBottom="1px solid #efefef"
                          width="100%"
@@ -110,8 +114,9 @@ const Navbar = () => {
                                                   color="#46563E"
                                                   fontSize={{
                                                        base: 'xl',
-                                                       md: '2xl',
-                                                       lg: '3xl'
+                                                       md: 'xl',
+                                                       lg: 'xl',
+                                                       xl:'2xl'
                                                   }}
                                                   ml={2}
                                                   fontWeight="normal"
@@ -125,12 +130,13 @@ const Navbar = () => {
 
                                    <HStack
                                         ml={{
-                                             base: '3rem',
-                                             md: '3rem',
-                                             lg: '5rem'
+                                             base: '2rem',
+                                             md: '2rem',
+                                             lg: '2rem',
+                                             xl:"3rem"
                                         }}
                                         variant="ghost"
-                                        spacing="6"
+                                        spacing={{base:'2',md:"3",lg:"3", xl:"6"}}
                                         size="sm"
                                         color="primaryBlack"
                                         display={{
@@ -269,7 +275,7 @@ const Navbar = () => {
                                         </Link>
 
                                         <Menu>
-                                             <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                                             <MenuButton background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
                                                   Others
                                              </MenuButton>
                                              <MenuList>
@@ -291,14 +297,7 @@ const Navbar = () => {
 
                                    </HStack>
 
-                                   <HStack
-                                        variant="ghost"
-                                        spacing="6"
-                                        size="sm"
-                                        ml={2}
-                                        color="primaryBlack"
-                                        mr="1rem"
-                                   ></HStack>
+                                  
                               </Flex>
 
                               <Flex
@@ -318,7 +317,7 @@ const Navbar = () => {
                                              size="sm"
                                              fontSize="md"
                                              color="gray.700"
-                                             mr={10}
+                                             mr={{sm:'3',md:'3',lg:'3',xl:"5"}}
                                              boxShadow="base"
                                              rounded="md"
                                              px={8}
@@ -384,7 +383,7 @@ const Navbar = () => {
                                    )}
                               </Flex>
                          </Flex>
-                    </Center>
+                    </Box>
 
                     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
                          <DrawerOverlay zIndex="12000">
