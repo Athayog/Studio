@@ -67,7 +67,7 @@ const Navbar = () => {
                          display='flex'
                          alignItems='center'
                          justifyContent='space-around'
-                         
+
                          style={{ backdropFilter: 'blur(5px)' }}
                          borderBottom="1px solid #efefef"
                          width="100%"
@@ -122,6 +122,7 @@ const Navbar = () => {
                                                   fontWeight="normal"
                                                   cursor="pointer"
                                                   letterSpacing="-2.5px"
+                                                 
                                              >
                                                   Atha Yog
                                              </Text>
@@ -136,7 +137,7 @@ const Navbar = () => {
                                              xl:"3rem"
                                         }}
                                         variant="ghost"
-                                        spacing={{base:'2',md:"3",lg:"3", xl:"6"}}
+                                        spacing={{base:'2',md:"2",lg:"2", xl:"6"}}
                                         size="sm"
                                         color="primaryBlack"
                                         display={{
@@ -171,6 +172,7 @@ const Navbar = () => {
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
                                                   Home
                                              </MotionButton>
@@ -179,7 +181,7 @@ const Navbar = () => {
                                         <Link href="/about" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -196,6 +198,7 @@ const Navbar = () => {
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
                                                   About Us
                                              </Button>
@@ -203,7 +206,7 @@ const Navbar = () => {
                                         <Link href="/group-classes" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -220,6 +223,7 @@ const Navbar = () => {
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
                                                  Group Class
                                              </Button>
@@ -227,7 +231,7 @@ const Navbar = () => {
                                         <Link href="/classes/personal" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -244,6 +248,7 @@ const Navbar = () => {
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
                                                   Personal Training
                                              </Button>
@@ -252,7 +257,7 @@ const Navbar = () => {
                                         <Link href="/yoga-academy" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -269,16 +274,17 @@ const Navbar = () => {
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
                                                   Yoga Academy
                                              </Button>
                                         </Link>
 
-                                        <Menu>
-                                             <MenuButton background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
+                                        <Menu  >
+                                             <MenuButton fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}  size='sm'  background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
                                                   Others
-                                             </MenuButton>
-                                             <MenuList>
+                                             </MenuButton >
+                                             <MenuList fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}>
                                              <Link href="/career" passHref>
                                                        <MenuItem>Career</MenuItem>
                                                   </Link>
@@ -315,12 +321,12 @@ const Navbar = () => {
                                              }}
                                              variant="solid"
                                              size="sm"
-                                             fontSize="md"
+                                             fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                              color="gray.700"
                                              mr={{sm:'3',md:'3',lg:'3',xl:"5"}}
                                              boxShadow="base"
                                              rounded="md"
-                                             px={8}
+                                             px={{base:"6",md:"6",lg:"8",xl:"8"}}
                                              py={4}
                                         >
                                              Free Trial
@@ -372,9 +378,9 @@ const Navbar = () => {
                                                   color="primaryDarkGray"
                                                   variant="solid"
                                                   size="sm"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   rounded="md"
-                                                  px={8}
+                                                  px={{base:"6",md:"6",lg:"8",xl:"8"}}
                                                   py={4}
                                              >
                                                   Join Us
