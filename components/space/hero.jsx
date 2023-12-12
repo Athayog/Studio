@@ -44,7 +44,7 @@ const HeroSpace = ({ imageUrl }) => {
           passHref={true}
         >
 
-          <Button backgroundColor="#F0E87B" _hover={{backgroundColor:"yellow.200"}} size="lg"  shadow='base' >Buy Now</Button>
+          <Button color='white' backgroundColor="#e76024" _hover={{backgroundColor:"#c26034"}} size="lg"  shadow='base' >Buy Now</Button>
         </Link>
       </Box>
     </Flex>

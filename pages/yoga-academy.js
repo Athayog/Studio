@@ -143,7 +143,8 @@ function yogaAcademy() {
                     >
                         <Button
                             rounded="none"
-                            colorScheme="blue"
+                            backgroundColor="#e76024"
+                            color="white"
                             href="#apply"
                         >
                             Learn More
@@ -190,7 +191,7 @@ function yogaAcademy() {
                     <Box flex="1" mt={10} position='relative' width='100%' overflow='hidden'>
                         <Flowers />
                         <Box bg='ayorange.100' p={5} display="flex" alignItems='center' fontSize='lg' borderBottom='1px solid #999'>
-                              <span>Main Upon Completion: Become a Holistic Yoga Teacher</span>
+                            <span>Main Upon Completion: Become a Holistic Yoga Teacher</span>
                         </Box>
 
                         <Box p={5} bg='aygreen.100'>
@@ -281,8 +282,8 @@ function yogaAcademy() {
                     <Flex mt={10} textAlign='center' fontSize='lg' boxShadow='base' bg='green.800' color="aygreen.50" gap={5} padding={{ base: '5', md: "6", lg: "10" }} justifyContent='center' alignItems='center' direction='column'>
                         <Text fontSize={{ base: "2xl", md: "3xl", lg: '4xl' }} >Limited Slots: Act now for a transformative journey with AthaYog Living.</Text>
                         <Text color='aygreen.200' fontWeight='light'>Important Note: Yoga is a Spiritual Science - Genuine Enlightenment Matters</Text>
-                       
-                        <EnquiryModal buttonText="Buy Now" colorType="blue" titleModal="Your Details"/>
+
+                        <EnquiryModal buttonText="Buy Now" colorType="blue" backColor="#e76024" titleModal="Your Details" />
                     </Flex>
 
 
@@ -413,7 +414,7 @@ function yogaAcademy() {
 
                     <Text fontSize='3xl' fontWeight='bold'>
                         Limited Slots - Begin Your Transformative Journey Today!</Text>
-                        <EnquiryModal buttonText="Enroll Now" colorType="blue" titleModal="Your Details" />
+                    <EnquiryModal buttonText="Enroll Now" backColor="#e76024" colorType="blue" titleModal="Your Details" />
                     <Text> Contact Us for Further Details</Text>
                     <Text>
                         AthaYog Living - Nurturing Wellness, Empowering Lives. Transform with Authentic Yoga
