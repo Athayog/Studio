@@ -45,7 +45,7 @@ export default function Home({ gallery, testimonials }) {
                <Gallery images={gallery} />
                <VideoSection />
                <Testimonials testimonials={testimonials} />
-               <GuideBook />
+               {/* <GuideBook /> */}
                <RecentBlogs />
                <Faq />
                <Enquiry />

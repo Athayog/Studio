@@ -10,8 +10,8 @@ const HeroSpace = ({ imageUrl }) => {
       direction={{ base: 'column', md: 'row' }}
       align="center"
       justify="center"
-      height={['90vh','50vh']}
-      bg='aygreen.100'
+      height={['90vh','70vh']}
+      bg='aygreen.200'
      width='100%'
     >
       <Box
@@ -44,7 +44,7 @@ const HeroSpace = ({ imageUrl }) => {
           passHref={true}
         >
 
-          <Button colorScheme='blue' size="lg" borderBottom='5px solid #84986D' shadow='xl' >Buy Now</Button>
+          <Button backgroundColor="#F0E87B" _hover={{backgroundColor:"yellow.200"}} size="lg"  shadow='base' >Buy Now</Button>
         </Link>
       </Box>
     </Flex>

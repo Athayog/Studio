@@ -69,12 +69,15 @@ const HeroCarousel = () => {
                               >
                                    <Box height="80vh" width="100%">
                                         <Image
-                                             layout="responsive"
+                                             
                                              alt={image.alt}
+                                             layout="fill"
+                                             objectPosition="center center"
+                                             className="class-image"
                                              objectFit="cover"
-                                             objectPosition="bottom"
+                                             placeholder='blur'
                                              src={image.imageUrl}
-                                             placeholder="blur"
+                                             
                                         />
                                    </Box>
                               </SwiperSlide>

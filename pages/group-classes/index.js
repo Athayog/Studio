@@ -225,8 +225,9 @@ const Space = ({ notFound }) => {
                                              passHref={true}
                                         >
                                              <Button
-                                                  colorScheme="blue"
+                                                 backgroundColor="#F0E87B" _hover={{backgroundColor:"yellow.200"}} 
                                                   size="lg"
+                                                  color="black"
                                              >
                                                  Buy Now
                                              </Button>
