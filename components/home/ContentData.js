@@ -27,7 +27,7 @@ export const offeringsData = {
                name: 'Yoga Academy',
                information:
                     'Upskill yourself with certificate programs and teachers’ training courses.',
-               link: '/courses/shikshana',
+               link: '/yoga-academy',
                image: athayogShikshana,
                simple: 'Teacher Training Course'
           },

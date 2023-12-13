@@ -434,12 +434,12 @@ const Navbar = () => {
                                                   </Button>
                                              </Link>
 
-                                             <Link passHref href="/classes">
+                                             <Link passHref href="/group-classes">
                                                   <Button
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                                 '/classes'
+                                                                 '/group-classes'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -448,15 +448,15 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Athayog Classes
+                                                       Group Classes
                                                   </Button>
                                              </Link>
-                                             <Link passHref href="/courses">
+                                             <Link passHref href="/classes/personal">
                                                   <Button
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                                 '/courses'
+                                                                 '/classes/personal'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -465,32 +465,16 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Athayog Courses
+                                                       Personal Training
                                                   </Button>
                                              </Link>
-                                             {/* <Link passHref href="/career">
-                                             <Button
-                                                  onClick={onClose}
-                                                  isActive={
-                                                       router.pathname ==
-                                                       '/career'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                                  rounded="md"
-                                                  variant="ghost"
-                                                  colorScheme="aygreen"
-                                                  justifyContent="left"
-                                             >
-                                                  Career
-                                             </Button>
-                                        </Link> */}
-                                             <Link passHref href="/career">
+                                            
+                                             <Link passHref href="/yoga-academy">
                                                   <Button
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                                 '/career'
+                                                                 '/yoga-academy'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -499,7 +483,7 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Career
+                                                       Yoga Academy
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/store">
@@ -517,6 +501,40 @@ const Navbar = () => {
                                                        justifyContent="left"
                                                   >
                                                        Store
+                                                  </Button>
+                                             </Link>
+                                             <Link passHref href="/career">
+                                                  <Button
+                                                       isActive={
+                                                            router.pathname ==
+                                                                 '/career'
+                                                                 ? true
+                                                                 : ''
+                                                       }
+                                                       onClick={onClose}
+                                                       rounded="md"
+                                                       variant="ghost"
+                                                       colorScheme="aygreen"
+                                                       justifyContent="left"
+                                                  >
+                                                       Career
+                                                  </Button>
+                                             </Link>
+                                             <Link passHref href="/courses/chikitsa">
+                                                  <Button
+                                                       isActive={
+                                                            router.pathname ==
+                                                                 '/courses/chikitsa'
+                                                                 ? true
+                                                                 : ''
+                                                       }
+                                                       onClick={onClose}
+                                                       rounded="md"
+                                                       variant="ghost"
+                                                       colorScheme="aygreen"
+                                                       justifyContent="left"
+                                                  >
+                                                       Yoga Therapy
                                                   </Button>
                                              </Link>
                                         </VStack>

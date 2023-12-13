@@ -227,7 +227,7 @@ const Space = ({ notFound }) => {
                                              <Button
                                                  backgroundColor="#e76024" _hover={{backgroundColor:"yellow.200"}} 
                                                   size="lg"
-                                                  color="black"
+                                                  color="white"
                                              >
                                                  Buy Now
                                              </Button>
