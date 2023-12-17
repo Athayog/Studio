@@ -66,13 +66,15 @@
           "react-whatsapp-widget": "^1.2.1",
           "react-youtube": "^9.0.2",
           "sass": "^1.32.7",
+          "shopify-buy": "^2.21.1",
           "slick-carousel": "^1.8.1",
           "styled-components": "^5.2.1",
           "swiper": "^8.4.6",
           "swr": "^0.4.0",
           "use-ssr": "^1.0.24",
           "uuid": "^8.3.2",
-          "yet-another-react-lightbox": "^2.2.7"
+          "yet-another-react-lightbox": "^2.2.7",
+          "zustand": "^4.4.7"
      },
      "devDependencies": {
           "autoprefixer": "^10.4.16",
