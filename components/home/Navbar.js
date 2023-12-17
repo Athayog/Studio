@@ -38,7 +38,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
 import { MotionButton } from '../shared/MotionElements';
 import SwiperCore, { Autoplay } from 'swiper';
-import { CloseIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
      const { user, signout, loading } = useAuth();
@@ -60,10 +60,14 @@ const Navbar = () => {
      return (
           <>
                <Box zIndex={3} position="fixed" width="100%">
-                    <Center
+                    <Box
                          bg="white"
                          transition="linear"
                          transform="initial"
+                         display='flex'
+                         alignItems='center'
+                         justifyContent='space-around'
+
                          style={{ backdropFilter: 'blur(5px)' }}
                          borderBottom="1px solid #efefef"
                          width="100%"
@@ -110,13 +114,15 @@ const Navbar = () => {
                                                   color="#46563E"
                                                   fontSize={{
                                                        base: 'xl',
-                                                       md: '2xl',
-                                                       lg: '3xl'
+                                                       md: 'xl',
+                                                       lg: 'xl',
+                                                       xl:'2xl'
                                                   }}
                                                   ml={2}
                                                   fontWeight="normal"
                                                   cursor="pointer"
                                                   letterSpacing="-2.5px"
+                                                 
                                              >
                                                   Atha Yog
                                              </Text>
@@ -125,12 +131,13 @@ const Navbar = () => {
 
                                    <HStack
                                         ml={{
-                                             base: '3rem',
-                                             md: '3rem',
-                                             lg: '5rem'
+                                             base: '2rem',
+                                             md: '2rem',
+                                             lg: '2rem',
+                                             xl:"3rem"
                                         }}
                                         variant="ghost"
-                                        spacing="6"
+                                        spacing={{base:'2',md:"2",lg:"2", xl:"6"}}
                                         size="sm"
                                         color="primaryBlack"
                                         display={{
@@ -165,6 +172,7 @@ const Navbar = () => {
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
                                                   Home
                                              </MotionButton>
@@ -173,7 +181,7 @@ const Navbar = () => {
                                         <Link href="/about" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -186,18 +194,19 @@ const Navbar = () => {
                                                   }}
                                                   isActive={
                                                        router.pathname ==
-                                                       '/about'
+                                                            '/about'
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
-                                                  About
+                                                  About Us
                                              </Button>
                                         </Link>
-                                        <Link href="/classes" passHref>
+                                        <Link href="/group-classes" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -210,18 +219,19 @@ const Navbar = () => {
                                                   }}
                                                   isActive={
                                                        router.pathname ==
-                                                       '/classes'
+                                                            '/group-classes'
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
-                                                  Classes
+                                                 Group Class
                                              </Button>
                                         </Link>
-                                        <Link href="/courses" passHref>
+                                        <Link href="/classes/personal" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -234,100 +244,66 @@ const Navbar = () => {
                                                   }}
                                                   isActive={
                                                        router.pathname ==
-                                                       '/courses'
+                                                            '/classes/personal'
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
-                                                  Courses
+                                                  Personal Training
                                              </Button>
                                         </Link>
-                                        {/* <Link href="/career" passHref>
-                                        <Button
-                                             fontWeight="normal"
-                                             fontSize="md"
-                                             variant="ghost"
-                                             bg="transparent"
-                                             _hover={{
-                                                  bg: 'aygreen.100'
-                                             }}
-                                             _active={{
-                                                  bg: 'aygreen.100',
-                                                  transform: 'scale(0.98)',
-                                                  borderColor: '#bec3c9'
-                                             }}
-                                             isActive={
-                                                  router.pathname == '/career'
-                                                       ? true
-                                                       : ''
-                                             }
-                                        >
-                                             Career
-                                        </Button>
-                                   </Link> */}
-                                        <Link href="/career" passHref>
-                                             <Button
-                                                  fontWeight="normal"
-                                                  fontSize="md"
-                                                  variant="ghost"
-                                                  _hover={{
-                                                       bg: 'aygreen.100'
-                                                  }}
-                                                  _active={{
-                                                       bg: 'aygreen.100',
-                                                       transform: 'scale(0.98)',
-                                                       borderColor: '#bec3c9'
-                                                  }}
-                                                  isActive={
-                                                       router.pathname ==
-                                                       '/career'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                             >
-                                                  Career
-                                             </Button>
-                                        </Link>
-                                        <Link href="/store" passHref>
-                                             <MotionButton
-                                                  fontWeight="normal"
-                                                  fontSize="md"
-                                                  bg="transparent"
-                                                  variant="ghost"
-                                                  _hover={{
-                                                       bg: 'aygreen.100'
-                                                  }}
-                                                  _active={{
-                                                       bg: 'aygreen.100',
 
+                                        <Link href="/yoga-academy" passHref>
+                                             <Button
+                                                  fontWeight="normal"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
+                                                  variant="ghost"
+                                                  bg="transparent"
+                                                  _hover={{
+                                                       bg: 'aygreen.100'
+                                                  }}
+                                                  _active={{
+                                                       bg: 'aygreen.100',
+                                                       transform: 'scale(0.98)',
                                                        borderColor: '#bec3c9'
                                                   }}
-                                                  whileHover={{
-                                                       transition: {
-                                                            duration: 1
-                                                       }
-                                                  }}
-                                                  whileTap={{ scale: 0.9 }}
                                                   isActive={
                                                        router.pathname ==
-                                                       '/store'
+                                                            '/yoga-academy'
                                                             ? true
                                                             : ''
                                                   }
+                                                  size='sm'
                                              >
-                                                  Store
-                                             </MotionButton>
+                                                  Yoga Academy
+                                             </Button>
                                         </Link>
+
+                                        <Menu  >
+                                             <MenuButton fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}  size='sm'  background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
+                                                  Others
+                                             </MenuButton >
+                                             <MenuList fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}>
+                                             <Link href="/career" passHref>
+                                                       <MenuItem>Career</MenuItem>
+                                                  </Link>
+                                                  <Link href="/store" passHref>
+                                                       <MenuItem>Store</MenuItem>
+                                                  </Link>
+                                                  <Link href="/courses/chikitsa" passHref>
+                                                       <MenuItem>Yoga Therapy</MenuItem>
+                                                  </Link>
+                                                
+                                                 
+
+                                             </MenuList>
+                                        </Menu>
+
+
                                    </HStack>
 
-                                   <HStack
-                                        variant="ghost"
-                                        spacing="6"
-                                        size="sm"
-                                        ml={2}
-                                        color="primaryBlack"
-                                        mr="1rem"
-                                   ></HStack>
+                                  
                               </Flex>
 
                               <Flex
@@ -345,12 +321,12 @@ const Navbar = () => {
                                              }}
                                              variant="solid"
                                              size="sm"
-                                             fontSize="md"
+                                             fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                              color="gray.700"
-                                             mr={10}
+                                             mr={{sm:'3',md:'3',lg:'3',xl:"5"}}
                                              boxShadow="base"
                                              rounded="md"
-                                             px={8}
+                                             px={{base:"6",md:"6",lg:"8",xl:"8"}}
                                              py={4}
                                         >
                                              Free Trial
@@ -402,9 +378,9 @@ const Navbar = () => {
                                                   color="primaryDarkGray"
                                                   variant="solid"
                                                   size="sm"
-                                                  fontSize="md"
+                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
                                                   rounded="md"
-                                                  px={8}
+                                                  px={{base:"6",md:"6",lg:"8",xl:"8"}}
                                                   py={4}
                                              >
                                                   Join Us
@@ -413,7 +389,7 @@ const Navbar = () => {
                                    )}
                               </Flex>
                          </Flex>
-                    </Center>
+                    </Box>
 
                     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
                          <DrawerOverlay zIndex="12000">
@@ -427,7 +403,7 @@ const Navbar = () => {
                                                   <Button
                                                        isActive={
                                                             router.pathname ==
-                                                            '/'
+                                                                 '/'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -445,7 +421,7 @@ const Navbar = () => {
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                            '/about'
+                                                                 '/about'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -458,12 +434,12 @@ const Navbar = () => {
                                                   </Button>
                                              </Link>
 
-                                             <Link passHref href="/classes">
+                                             <Link passHref href="/group-classes">
                                                   <Button
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                            '/classes'
+                                                                 '/group-classes'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -472,15 +448,15 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Athayog Classes
+                                                       Group Classes
                                                   </Button>
                                              </Link>
-                                             <Link passHref href="/courses">
+                                             <Link passHref href="/classes/personal">
                                                   <Button
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                            '/courses'
+                                                                 '/classes/personal'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -489,32 +465,16 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Athayog Courses
+                                                       Personal Training
                                                   </Button>
                                              </Link>
-                                             {/* <Link passHref href="/career">
-                                             <Button
-                                                  onClick={onClose}
-                                                  isActive={
-                                                       router.pathname ==
-                                                       '/career'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                                  rounded="md"
-                                                  variant="ghost"
-                                                  colorScheme="aygreen"
-                                                  justifyContent="left"
-                                             >
-                                                  Career
-                                             </Button>
-                                        </Link> */}
-                                             <Link passHref href="/career">
+                                            
+                                             <Link passHref href="/yoga-academy">
                                                   <Button
                                                        onClick={onClose}
                                                        isActive={
                                                             router.pathname ==
-                                                            '/career'
+                                                                 '/yoga-academy'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -523,14 +483,14 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Career
+                                                       Yoga Academy
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/store">
                                                   <Button
                                                        isActive={
                                                             router.pathname ==
-                                                            '/store'
+                                                                 '/store'
                                                                  ? true
                                                                  : ''
                                                        }
@@ -541,6 +501,40 @@ const Navbar = () => {
                                                        justifyContent="left"
                                                   >
                                                        Store
+                                                  </Button>
+                                             </Link>
+                                             <Link passHref href="/career">
+                                                  <Button
+                                                       isActive={
+                                                            router.pathname ==
+                                                                 '/career'
+                                                                 ? true
+                                                                 : ''
+                                                       }
+                                                       onClick={onClose}
+                                                       rounded="md"
+                                                       variant="ghost"
+                                                       colorScheme="aygreen"
+                                                       justifyContent="left"
+                                                  >
+                                                       Career
+                                                  </Button>
+                                             </Link>
+                                             <Link passHref href="/courses/chikitsa">
+                                                  <Button
+                                                       isActive={
+                                                            router.pathname ==
+                                                                 '/courses/chikitsa'
+                                                                 ? true
+                                                                 : ''
+                                                       }
+                                                       onClick={onClose}
+                                                       rounded="md"
+                                                       variant="ghost"
+                                                       colorScheme="aygreen"
+                                                       justifyContent="left"
+                                                  >
+                                                       Yoga Therapy
                                                   </Button>
                                              </Link>
                                         </VStack>

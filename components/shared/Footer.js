@@ -85,7 +85,7 @@ const Footer = () => {
                                         AthaYog Shikshana Pada
                                    </Text>
                               </Link>
-                              <Link href="/classes/space" passHref>
+                              <Link href="/group-classes" passHref>
                                    <Text cursor="pointer">AthaYog Space </Text>
                               </Link>
                               <Link href="/classes/online" passHref>

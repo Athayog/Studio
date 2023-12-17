@@ -18,10 +18,22 @@ import { Box, Button, Flex, Grid, Heading, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import CTAImage from 'public/athayogWorkshop.jpg';
 import Link from 'next/link';
+import HeroSpace from '@/components/space/hero';
+import HeroImage from 'public/class_2-min-min.jpg'
+import NavbarHelper from '@/components/shared/NavbarHelper';
+import class1 from 'public/class_1-min-min.jpg'
+import class2 from 'public/class_2-min-min.jpg'
+import class3 from 'public/class_3-min-min.jpg'
+import class4 from 'public/class_4-min-min.jpg'
+import class5 from 'public/class_5-min-min.jpg'
+import class6 from 'public/class_6-min-min.jpg'
+import class7 from 'public/class_7-min-min.jpg'
+import class8 from 'public/class_8-min-min.jpg'
+import class9 from 'public/class_9-min-min.jpg'
 
 const Space = ({ notFound }) => {
      const pageData = {
-          name: 'Space',
+          name: 'Group Class',
           heroImage: athayogSpace,
           whatis: `Elevate your Yogic practice at the AthaYog Space - a peaceful and hygienic environment to practice. Here you can begin or advance in your yoga journey by instilling transformation with a strong hold on your lifestyle.`,
           classes: [
@@ -33,7 +45,8 @@ const Space = ({ notFound }) => {
                          '35 minutes of Asana Practice',
                          'Relaxation',
                          'Breathing (Pranayama) & Meditation'
-                    ]
+                    ],
+                    imageUrl:class1
                },
                {
                     className: 'Universal Harmony',
@@ -42,7 +55,8 @@ const Space = ({ notFound }) => {
                          'Grounding',
                          '45 minutes of Hatha Vinyasa Flow',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl:class2
                },
                {
                     className: 'Rhythm of Being',
@@ -51,7 +65,8 @@ const Space = ({ notFound }) => {
                          'Grounding',
                          '45 minutes of Asana Practice',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl:class3
                },
                {
                     className: 'Hatha Pradipika',
@@ -59,7 +74,8 @@ const Space = ({ notFound }) => {
                     structure: [
                          'Grounding',
                          'Yoga Nidra - 45 minutes of Guided Relaxation'
-                    ]
+                    ],
+                    imageUrl:class4
                },
                {
                     className: 'Ashtanga Yoga',
@@ -69,7 +85,8 @@ const Space = ({ notFound }) => {
                          '15 minutes of Warm-Up & Surya Namaskar',
                          'Guided Relaxation',
                          'Breathing (Pranayama) & Meditation'
-                    ]
+                    ],
+                    imageUrl:class5
                },
                {
                     className: 'Transcending Transitions',
@@ -79,7 +96,8 @@ const Space = ({ notFound }) => {
                          'Warm Up - Engaging & Interactive Activities',
                          'Asana Practice',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl: class6
                },
                {
                     className: 'Adv. Hatha Yoga:',
@@ -89,7 +107,8 @@ const Space = ({ notFound }) => {
                          'Ashtanga Surya Namaskar',
                          'Ashtanga Primary Series Asanas',
                          'Relaxation'
-                    ]
+                    ],
+                    imageUrl: class7
                },
                {
                     className: 'Power Vinyasa',
@@ -101,7 +120,8 @@ const Space = ({ notFound }) => {
                          'Surya Namaskar',
                          'Asana Practice',
                          'Guided Relaxation'
-                    ]
+                    ],
+                    imageUrl: class8
                },
                {
                     className: 'Special Ladies Batch',
@@ -113,7 +133,8 @@ const Space = ({ notFound }) => {
                          'Surya Namaskar',
                          'Asana Practice',
                          'Guided Relaxation'
-                    ]
+                    ],
+                    imageUrl: class9
                }
           ],
           prosAndCons: [
@@ -141,16 +162,17 @@ const Space = ({ notFound }) => {
                animate={{ opacity: 1 }}
           >
                <Head>
-                    <title>Space - AthayogLiving</title>
+                    <title>Group Class - AthayogLiving</title>
 
                     <meta
                          name="keywords"
                          content="yoga classes near me, nearest yoga class to me, yoga class near me, yoga classes, yoga class, yoga classes online, when yoga day, yoga classes near me only for ladies, yoga classes near me with fees, yoga course, yoga courses, nearest yoga studio to me, near yoga classes, yoga teacher training course, yoga course certificate, near yoga classes, yoga class nearby, yoga classes online free, nearby yoga classes, yoga class near, nearby yoga class, near yoga class, near yoga centre, near yoga center, yoga classes in bangalore, bangalore yoga classes, yoga classes bangalore"
                     ></meta>
                </Head>
-               <Hero pageData={pageData} />
-               <ClassesLayout>
-                    <BreadCrumb subLinks="classes" currentPage="Space" />
+              <NavbarHelper/>
+              <HeroSpace imageUrl={HeroImage}/>
+               
+                  
                     <Classes classes={pageData.classes} />
                     <IntensityTable />
                     {/* <Schedule schedule="general" /> */}
@@ -199,14 +221,15 @@ const Space = ({ notFound }) => {
                                         </Heading>
 
                                         <Link
-                                             href="/classes/space/offerings"
+                                             href="/group-classes/offerings"
                                              passHref={true}
                                         >
                                              <Button
-                                                  colorScheme="aygreen"
+                                                 backgroundColor="#e76024" _hover={{backgroundColor:"yellow.200"}} 
                                                   size="lg"
+                                                  color="white"
                                              >
-                                                  Check Now
+                                                 Buy Now
                                              </Button>
                                         </Link>
                                    </Flex>
@@ -222,7 +245,7 @@ const Space = ({ notFound }) => {
                     </Box>
 
                     <ProsAndCons data={pageData.prosAndCons} name="Space" />
-               </ClassesLayout>
+               
           </motion.div>
      );
 };

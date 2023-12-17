@@ -31,7 +31,7 @@ export async function getStaticProps(context) {
 const Chikitsa = ({ offers }) => {
      const router = useRouter();
      const pageData = {
-          name: 'Chikitsa',
+          name: 'Yoga Therapy',
           heroImage: athayogChikitsa,
           whatis: `If you’re seeking wellness and better health, AthaYog Chikitsa is designed to help you adapt into Yogic living as a medium of alternative healing and wellness, enriched by the power of Ayurveda.`,
           secondBlock: `What you get`,
@@ -64,7 +64,7 @@ const Chikitsa = ({ offers }) => {
                animate={{ opacity: 1 }}
           >
                <Head>
-                    <title>Chikitsa - AthayogLiving</title>
+                    <title>Yoga Therapy - AthayogLiving</title>
                </Head>
                <Hero pageData={pageData} />
                <Box

@@ -21,6 +21,7 @@ import firebase from '@/lib/firebase';
 import { MotionStack } from '../shared/MotionElements';
 import { CountryCode } from './ContentData';
 import useSSR from 'use-ssr';
+import { FaGoogle } from 'react-icons/fa';
 
 const Signup = () => {
      const { handleSubmit, register, errors, reset } = useForm();
@@ -183,6 +184,10 @@ const Signup = () => {
           } catch (error) {}
      };
 
+     const handleGoogleLogin = () => {
+          signinWithGoogle('/')
+     }
+
      return (
           <>
                <Heading
@@ -232,132 +237,34 @@ const Signup = () => {
                          mt={5}
                          width={{ base: '100%', md: 'sm', lg: 'sm' }}
                          as="form"
-                         onSubmit={handleSubmit((data) => onUserCreation(data))}
+                        
                     >
-                         <FormControl
-                              isRequired
-                              isRequired={true}
-                              isInvalid={errors.name && errors.name.message}
-                         >
-                              <FormLabel>Name</FormLabel>
-                              <Input
-                                   type="text"
-                                   aria-label="name"
-                                   name="displayName"
-                                   id="name"
-                                   placeholder="Your name"
-                                   ref={register({
-                                        required: 'Please enter your name.'
-                                   })}
-                              />
-                              <FormErrorMessage>
-                                   {errors.name && errors.name.message}
-                              </FormErrorMessage>
-                         </FormControl>
-                         <FormControl isRequired>
-                              <FormLabel>Phone</FormLabel>
-                              <HStack>
-                                   <Select
-                                        width="xsm"
-                                        name="countryCode"
-                                        ref={register({
-                                             required:
-                                                  'Please select your countryCode.'
-                                        })}
-                                   >
-                                        {Object.keys(CountryCode).map(function (
-                                             keyName,
-                                             keyIndex
-                                        ) {
-                                             return (
-                                                  <option
-                                                       val={keyIndex}
-                                                       key={
-                                                            CountryCode[keyName]
-                                                       }
-                                                  >
-                                                       {keyName +
-                                                            ' ' +
-                                                            CountryCode[
-                                                                 keyName
-                                                            ]}
-                                                  </option>
-                                             );
-                                        })}
-                                   </Select>
-                                   <Input
-                                        type="phone"
-                                        aria-label="phone"
-                                        name="phone"
-                                        id="phone"
-                                        placeholder="1234567890"
-                                        ref={register({
-                                             required:
-                                                  'Please enter your phone.'
-                                        })}
-                                   />
-                              </HStack>
-                         </FormControl>
-                         <FormControl isRequired>
-                              <FormLabel>Email address</FormLabel>
-                              <Input
-                                   type="email"
-                                   aria-label="email"
-                                   name="email"
-                                   id="email"
-                                   placeholder="xyz@abc.com"
-                                   ref={register({
-                                        required: 'Please enter a password.'
-                                   })}
-                              />
-                         </FormControl>
-
-                         <FormControl isRequired>
-                              <FormLabel>Password</FormLabel>
-                              <Input
-                                   type="password"
-                                   aria-label="password"
-                                   name="password"
-                                   id="password"
-                                   ref={register({
-                                        required: 'Please enter a password.'
-                                   })}
-                              />
-                         </FormControl>
-                         <Text textAlign="center" textColor="aygreen.800">
-                              By submitting this form you agree to our{' '}
-                              <Link href=" /privacy" target="_blank">
-                                   <a
-                                        target="_blank"
-                                        style={{
-                                             textDecoration: 'underline',
-                                             color: '#029dd6'
-                                        }}
-                                   >
-                                        {' '}
-                                        privacy policy
-                                   </a>
-                              </Link>
-                         </Text>
 
                          <Button
                               type="submit"
-                              colorScheme="aygreen"
+                              colorScheme="none"
+                              color="black"
                               isLoading={loading}
                               _active={{
                                    transform: 'scale(0.95)'
                               }}
+                              
+                              bg="gray.100"
+                              onClick={() =>handleGoogleLogin()}
+                             className="login-with-google-btn"
+                             leftIcon={<FaGoogle/>}
                          >
-                              Create
+                              Sign in with Google
                          </Button>
 
-                         <Link href="login">
+                            
+                         <Link href="/account/otp"  passHref>
                               <Text
                                    textAlign="center"
                                    textColor="aygreen.800"
                                    cursor="pointer"
                               >
-                                   Log in instead?
+                                 Already have an account with phone?
                               </Text>
                          </Link>
                     </Stack>

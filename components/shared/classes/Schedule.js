@@ -22,7 +22,9 @@ import {
 import { BsDownload, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import React from 'react';
 import { MdCheckCircle } from 'react-icons/md';
+import ScheduleImage from 'public/schedule.jpg'
 import { BiRightArrow } from 'react-icons/bi';
+
 function Schedule() {
      const d = new Date();
 
