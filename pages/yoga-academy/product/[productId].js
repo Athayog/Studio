@@ -7,11 +7,14 @@ import CartComponent from '@/components/shopify/CartComponent';
 import HomeLayout from '@/components/layout/HomeLayout';
 import NavbarHelper from '@/components/shared/NavbarHelper';
 import { Box } from '@chakra-ui/react';
+import useShopifyStore from '@/lib/useShopifyStore';
 
 function ProductPage({ product, loading, error }) {
   const [quantity, setQuantity] = useState(1);
   const [checkoutId, setCheckoutId] = useState(null);
   const router = useRouter();
+
+  const {setCartItems} = useShopifyStore()
 
   useEffect(() => {
     // Fetch or create a checkout when the component mounts
@@ -42,7 +45,7 @@ function ProductPage({ product, loading, error }) {
 
       // Handle the result, e.g., show a success message or redirect to the cart page
       console.log('Product added to cart:', result);
-
+      setCartItems(result)
       // Redirect to the cart page
       // router.push('/cart');
     } catch (error) {

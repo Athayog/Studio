@@ -1,12 +1,14 @@
 import { fetchCartItems } from '@/lib/shopifyClient';
 import { useEffect, useState } from 'react';
-import { Box, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, IconButton } from '@chakra-ui/react';
+import { Box, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, IconButton, Button } from '@chakra-ui/react';
 import { FaShoppingCart } from 'react-icons/fa';
-
+import useShopifyStore from '@/lib/useShopifyStore';
+import {removeProductFromCart} from '@/lib/shopifyClient'
 const CartComponent = ({ checkoutId }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [cartItems, setCartItems] = useState(null);
+  const [currentCartItems, setCartItems] = useState(null);
 
+  const {cartItems} = useShopifyStore();
   console.log(checkoutId)
 
   useEffect(() => {
@@ -21,13 +23,20 @@ const CartComponent = ({ checkoutId }) => {
     };
 
     fetchAndSetCartItems();
-  }, [checkoutId]);
+  }, [checkoutId,cartItems]);
 
-  if (!cartItems) {
+  const removeFromCartAction =  async(checkoutId, id) => {
+   
+    const items = await  removeProductFromCart(checkoutId, id)
+    setCartItems(items);
+  }
+
+
+  if (!currentCartItems) {
     return <p>Loading...</p>;
   }
 
-  console.log(cartItems)
+console.log(currentCartItems)
   return (
     <div>
 
@@ -42,10 +51,12 @@ const CartComponent = ({ checkoutId }) => {
 
           <DrawerBody>
             <Box>
-              {cartItems.map((item) => (
+              {currentCartItems.map((item) => (
+                
                 <li key={item.node.id}>
-                  {item.node.title} - {item.node.quantity} x{' '}
+                  {item.node.title} - {item.node.quantity} {item.node.id}
                   {item.node.variant.priceV2.amount} {item.node.variant.priceV2.currencyCode}
+                  <Button onClick={() => removeFromCartAction(checkoutId, item.node.id)} >Remove</Button>
                 </li>
               ))}
             </Box>
