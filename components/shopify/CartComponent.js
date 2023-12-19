@@ -1,14 +1,15 @@
 import { fetchCartItems } from '@/lib/shopifyClient';
 import { useEffect, useState } from 'react';
-import { Box, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, IconButton, Button } from '@chakra-ui/react';
+import { Box,Flex, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, IconButton, Button } from '@chakra-ui/react';
 import { FaShoppingCart } from 'react-icons/fa';
 import useShopifyStore from '@/lib/useShopifyStore';
-import {removeProductFromCart} from '@/lib/shopifyClient'
+import { MdDelete } from "react-icons/md";
+import { removeProductFromCart } from '@/lib/shopifyClient'
 const CartComponent = ({ checkoutId }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [currentCartItems, setCartItems] = useState(null);
 
-  const {cartItems} = useShopifyStore();
+  const { cartItems } = useShopifyStore();
   console.log(checkoutId)
 
   useEffect(() => {
@@ -23,11 +24,11 @@ const CartComponent = ({ checkoutId }) => {
     };
 
     fetchAndSetCartItems();
-  }, [checkoutId,cartItems]);
+  }, [checkoutId, cartItems]);
 
-  const removeFromCartAction =  async(checkoutId, id) => {
-   
-    const items = await  removeProductFromCart(checkoutId, id)
+  const removeFromCartAction = async (checkoutId, id) => {
+
+    const items = await removeProductFromCart(checkoutId, id)
     setCartItems(items);
   }
 
@@ -36,12 +37,36 @@ const CartComponent = ({ checkoutId }) => {
     return <p>Loading...</p>;
   }
 
-console.log(currentCartItems)
+  console.log(currentCartItems)
   return (
     <div>
 
 
-      <IconButton icon={<FaShoppingCart />} aria-label="Open Cart" onClick={onOpen} />
+
+
+      <Box position="relative" width='fit-content' onClick={onOpen}>
+        <Button
+          leftIcon={<FaShoppingCart />}
+          colorScheme="teal"
+          variant="outline"
+        >
+          Cart
+        </Button>
+        {currentCartItems.length > 0 && (
+          <Box
+            position="absolute"
+            top="-1"
+            right="-1"
+            bg="red.500"
+            color="white"
+            borderRadius="50%"
+            padding="0.2rem 0.5rem"
+            fontSize="sm"
+          >
+            {currentCartItems.length}
+          </Box>
+        )}
+      </Box>
 
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
@@ -52,12 +77,12 @@ console.log(currentCartItems)
           <DrawerBody>
             <Box>
               {currentCartItems.map((item) => (
-                
-                <li key={item.node.id}>
-                  {item.node.title} - {item.node.quantity} {item.node.id}
+
+                <Flex key={item.node.id} justifyContent="space-between" alignItems='center'>
+                  {item.node.title} - {item.node.quantity}
                   {item.node.variant.priceV2.amount} {item.node.variant.priceV2.currencyCode}
-                  <Button onClick={() => removeFromCartAction(checkoutId, item.node.id)} >Remove</Button>
-                </li>
+                  <IconButton icon={<MdDelete/>} onClick={() => removeFromCartAction(checkoutId, item.node.id)} >Remove</IconButton>
+                </Flex>
               ))}
             </Box>
           </DrawerBody>
