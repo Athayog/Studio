@@ -1,15 +1,25 @@
-import { Box, Button, Flex, Heading,Text,chakra } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Text, chakra } from '@chakra-ui/react'
 import React from 'react'
+import FeesBg from 'public/FeedBG.jpg'
+import Link from 'next/link'
 
 function Fees() {
     return (
-        <Box p={10}>
-            <Flex  alignItems="center" direction='column'  gap={6} py={10} maxW='container.xl' margin='0 auto'>
-                <Heading>Fees: <chakra.span> ₹59,599 + 18% GST</chakra.span></Heading>
-                <Text>Elevate Life in 2024: Transform your well-being with yoga, your key to a healthier, happier, and more fulfilling life in the upcoming years.</Text>
-                <Button>Buy Now</Button>
-            </Flex>
+        <Box position='relative' >
+            <Box  height="xs"  zIndex={-1} position='relative' bg={`url(${FeesBg.src})`} backgroundSize='cover' filter='blur(25px)'> </Box>
+            <Box p={10} position='absolute'top='0' width='100%' height='100%'>
+                <Flex  width='100%' height='100%'  justifyContent='center' zIndex={2} alignItems="center" direction='column' gap={6} py={10} maxW='container.xl' margin='0 auto'>
+                    <Heading fontWeight='normal'>Fees: <chakra.span color="#6A9340"> ₹45,999 + 18% GST</chakra.span></Heading>
+                    <Text>Empower Your Career in 2024: Transform your professional journey
+                        with yoga, unlocking opportunities for a healthier, happier and more
+                        fulfilling career in the upcoming year!</Text>
+                    <Link href={'/yoga-academy/product/yoga-academy-course  '} passHref>
+                        <Button rounded='full' padding="20px 80px" color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Buy Now</Button>
+                    </Link>
+                </Flex>
+            </Box>
         </Box>
+
     )
 }
 

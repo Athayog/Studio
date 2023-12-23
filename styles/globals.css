@@ -2,6 +2,7 @@ html {
      overflow-y: scroll;
      overflow-x: hidden;
 }
+
 html,
 body {
      font-family: 'Josefin Sans', sans-serif;
@@ -13,6 +14,7 @@ body {
      -ms-user-select: none;
      min-height: 100vh;
 }
+
 .scheduleTable td:first-child {
      position: -webkit-sticky;
      position: sticky;
@@ -21,6 +23,7 @@ body {
      z-index: 2;
      min-width: max-content;
 }
+
 .scheduleTable th:first-child {
      position: -webkit-sticky;
      position: sticky;
@@ -29,6 +32,7 @@ body {
      z-index: 2;
      min-width: max-content;
 }
+
 .scheduleTable th {
      border-bottom: none;
 }
@@ -36,6 +40,7 @@ body {
 .szh-menu {
      background-color: #d7e0ce !important;
 }
+
 .yic_table td {
      width: max-content !important;
 }
@@ -57,12 +62,15 @@ body {
      z-index: 2;
      min-width: max-content;
 }
+
 .swiper-button-prev {
      color: #ddd !important;
 }
+
 .swiper-button-next {
      color: #ddd !important;
 }
+
 .video-container {
      overflow: hidden;
      position: relative;
@@ -85,10 +93,8 @@ body {
 
 .stress-background {
      background-color: #faf6f4;
-     -webkit-mask: url(https://images.ctfassets.net/v3n26e09qg2r/42NtuXi6cVo8v9ALYfrsgY/9236e29d7e4eab94a089e7beab57b56e/hero_bg-wave.svg)
-          no-repeat bottom;
-     mask: url(https://images.ctfassets.net/v3n26e09qg2r/42NtuXi6cVo8v9ALYfrsgY/9236e29d7e4eab94a089e7beab57b56e/hero_bg-wave.svg)
-          no-repeat bottom;
+     -webkit-mask: url(https://images.ctfassets.net/v3n26e09qg2r/42NtuXi6cVo8v9ALYfrsgY/9236e29d7e4eab94a089e7beab57b56e/hero_bg-wave.svg) no-repeat bottom;
+     mask: url(https://images.ctfassets.net/v3n26e09qg2r/42NtuXi6cVo8v9ALYfrsgY/9236e29d7e4eab94a089e7beab57b56e/hero_bg-wave.svg) no-repeat bottom;
      -webkit-mask-size: cover;
      mask-size: cover;
      width: 100%;
@@ -102,11 +108,13 @@ body {
      height: 800px;
      padding: 5rem 0;
 }
+
 @media only screen and (max-width: 1200px) {
      .stress-grid {
           grid-template-columns: 1fr 40%;
      }
 }
+
 @media only screen and (max-width: 1000px) {
      .stress-grid {
           grid-template-columns: 1fr;
@@ -120,85 +128,148 @@ body {
           height: 1050px;
      }
 }
+
 .swiper-thumbs .swiper-slide {
      border: 1px solid #ddd;
      border-radius: 0.25rem;
      overflow: hidden;
      cursor: pointer;
 }
+
 .swiper-thumbs .swiper-slide-thumb-active {
      border: 1px solid green;
      border-radius: 0.25rem;
      overflow: hidden;
 }
+
 .swiper-slide {
      display: flex !important;
      justify-content: center !important;
 }
+
 .login-with-google-btn {
      transition: background-color .3s, box-shadow .3s;
-       
+
      padding: 12px 16px 12px 42px;
      border: none;
      border-radius: 3px;
      box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
-     
+
      color: #757575;
      font-size: 14px;
      font-weight: 500;
-    
-     
+
+
      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
      background-color: white;
      background-repeat: no-repeat;
      background-position: 12px 11px;
-     
-     &:hover {
-       box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
-     }
-     
-     &:active {
-       background-color: #ddd;
-     }
-     
-     &:focus {
-       outline: none;
-       box-shadow: 
-         0 -1px 0 rgba(0, 0, 0, .04),
-         0 2px 4px rgba(0, 0, 0, .25),
-         0 0 0 3px #c8dafc;
-     }
-     
-     &:disabled {
-       filter: grayscale(100%);
-       background-color: #ebebeb;
-       box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
-       cursor: not-allowed;
-     }
-   }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   .class-image{
-     object-position: center
-   }
 
-   .squiggly-underline {
+     &:hover {
+          box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+     }
+
+     &:active {
+          background-color: #ddd;
+     }
+
+     &:focus {
+          outline: none;
+          box-shadow:
+               0 -1px 0 rgba(0, 0, 0, .04),
+               0 2px 4px rgba(0, 0, 0, .25),
+               0 0 0 3px #c8dafc;
+     }
+
+     &:disabled {
+          filter: grayscale(100%);
+          background-color: #ebebeb;
+          box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+          cursor: not-allowed;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.class-image {
+     object-position: center
+}
+
+.squiggly-underline {
      position: relative;
-   }
-   
-   .squiggly-underline h1 {
+}
+
+.squiggly-underline h1 {
      text-decoration: black wavy underline;
      text-decoration-skip-ink: none;
 
      height: 1em;
+}
+
+.eligible-image {
+     border-radius: 300px 300px 0px 0px;
+     border-top: 3px solid #C9EEC0;
+     border-right: 3px solid #C9EEC0;
+     border-left: 3px solid #C9EEC0;
+     background: #824141;
+}
+
+.footer-svg-1{
+     position: absolute;
+     top:10%;
+     left:15%;
+}
+
+.footer-svg-2{
+     position: absolute;
+     top:10%;
+     right:15%;
+}
+
+.footer-svg-3{
+     position: absolute;
+     bottom:10%;
+     left:15%;
+}
+
+.footer-svg-4{
+     position: absolute;
+     bottom:10%;
+     right:15%;
+}
+
+.footer-image-box-1{
+     position: absolute;
+     top:10%;
+     left:10%;
+}
+
+.gradient-button {
+     background: linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%) !important  ;
+     cursor: pointer;
+     transition: background-position 0.5s ease-in-out !important; /* Transition on background position */
    }
    
+   .gradient-button:hover {
+     animation: moveGradient 2s infinite !important    ; /* Animation name, duration, and iteration count */
+   }
+   
+   @keyframes moveGradient {
+     0% {
+       background-position: 0% 50%;
+     }
+     50% {
+       background-position: 100% 50%;
+     }
+     100% {
+       background-position: 0% 50%;
+     }
+   }

@@ -1,19 +1,24 @@
 import Eligible from '@/components/academy/Eligible';
 import Enrollment from '@/components/academy/Enrollment';
 import Fees from '@/components/academy/Fees';
+import Footer from '@/components/academy/Footer';
 import Gurus from '@/components/academy/Gurus';
 import Hero from '@/components/academy/Hero';
 import LimitedSlots from '@/components/academy/LimitedSlots';
+import LimitedSlotsBottom from '@/components/academy/LimitedSlotsBottom';
 import WhatWillYouLearn from '@/components/academy/WhatWillYouLearn';
 import WhyYouShould from '@/components/academy/WhyYouShould';
 import HomeLayout from '@/components/layout/HomeLayout';
 import NavbarHelper from '@/components/shared/NavbarHelper';
+import { fetchSingleProduct } from '@/lib/shopifyClient';
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 
-function yogaAcademy() {
+function yogaAcademy({ product, loading, error }) {
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
     return (
-        <Box width={"full"}>
+        <Box width={"full"} >
             <Head>
                 <title>Athayog Yoga Academy</title>
                 <meta name="description" content="Welcome to Athayog Yoga Academy! We offer a wide range of yoga classes and workshops to help you find balance and harmony in your life." />
@@ -27,12 +32,25 @@ function yogaAcademy() {
             <Enrollment />
             <WhyYouShould />
             <LimitedSlots />
-            <Eligible/>
-            <Fees/>
-            <Gurus/>
+            <Eligible />
+            <Fees />
+            <Gurus />
+            <LimitedSlotsBottom />
+            <Footer />
         </Box>
     )
 }
+
+yogaAcademy.getInitialProps = async () => {
+    try {
+        const productId = 'yoga-academy-course';
+        const product = await fetchSingleProduct(productId);
+        return { product, loading: false, error: null };
+    } catch (error) {
+        return { product: null, loading: false, error };
+    }
+};
+
 
 export default yogaAcademy
 yogaAcademy.Layout = HomeLayout;
