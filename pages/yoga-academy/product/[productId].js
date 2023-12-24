@@ -51,7 +51,7 @@ function ProductPage({ product, loading, error }) {
 			</Flex>
 			<Box minH="100vh" maxW='container.xl' margin='0 auto' py={10} width='100%'>
 				<Flex gap={20} mt={10}>
-					<Image alt="product" src={product.featuredImage.src} width={500} height={500} />
+					<Image alt="product" src={product.featuredImage.src} objectFit='contain' width={500} height={500} />
 					<Flex mt={10} direction='column' gap={6}>
 						<Text fontSize='3xl'>
 							{product.title}

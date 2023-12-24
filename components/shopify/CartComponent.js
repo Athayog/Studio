@@ -11,7 +11,6 @@ const CartComponent = ({ checkoutId }) => {
 	const [checkoutWebUrl, setCheckoutWebUrl] = useState(null)
 
 	const { cartItems } = useShopifyStore();
-	console.log(checkoutId)
 
 	useEffect(() => {
 		const fetchAndSetCartItems = async () => {
@@ -28,9 +27,18 @@ const CartComponent = ({ checkoutId }) => {
 		fetchAndSetCartItems();
 	}, [checkoutId, cartItems]);
 
+	useEffect(() => {
+		if (!checkoutId) {
+			setCartItems(null)
+		}
+	}, [checkoutId])
+
+
 	const removeFromCartAction = async (checkoutId, id) => {
 
 		const items = await removeProductFromCart(checkoutId, id)
+
+
 		setCartItems(items);
 	}
 
