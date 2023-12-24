@@ -273,3 +273,7 @@ body {
        background-position: 0% 50%;
      }
    }
+
+   .rounded-image{
+     border-radius: 1rem;
+   }

@@ -16,7 +16,7 @@ import OG from 'public/og.png'
 function WhyYouShould() {
 	return (
 		<Box p={{ base: '5', md: '10' }}>
-			<Flex alignItems="center" direction='column' gap={{ base: "5", md: "10" }} py={10} maxW='container.md' margin='0 auto'>
+			<Flex alignItems="center" direction='column' gap={{ base: "10", md: "10" }} py={10} maxW='container.md' margin='0 auto'>
 				<Box textAlign='center' >
 
 					<Image src={OG} height="100%" width="100%" objectFit='cover' />
@@ -25,8 +25,8 @@ function WhyYouShould() {
 					<Text color="#617E43" fontSize='4xl' fontWeight='bold'>AthaYog Living?</Text>
 
 				</Box>
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }}  >
-					<Box flex={1} overflow='hidden' rounded='lg'>
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }}  >
+					<Box width={{base:400,md:"100%"}} height={{base:200,md:"100%"}}  flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Global Accredition</Heading>
 						<Text>
 							Yoga Alliance USA & Vivekananda
@@ -41,7 +41,7 @@ function WhyYouShould() {
 					</Box>
 				</Flex>
 
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Lifetime Validity</Heading>
 						<Text>Internationally recognized
@@ -55,7 +55,7 @@ function WhyYouShould() {
 					</Box>
 				</Flex>
 
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Post-Course Support</Heading>
 						<Text>Ongoing mentorship for
@@ -69,7 +69,7 @@ function WhyYouShould() {
 					</Box>
 				</Flex>
 
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Expert Faculty</Heading>
 						<Text>Learn from qualified
@@ -83,7 +83,7 @@ function WhyYouShould() {
 					</Box>
 				</Flex>
 
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Accessible Eligibility</Heading>
 						<Text>Open to individuals 16+, 10th-grade
@@ -98,7 +98,7 @@ function WhyYouShould() {
 					</Box>
 				</Flex>
 
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Stay Option (Accommodation)</Heading>
 						<Text>
@@ -114,7 +114,7 @@ function WhyYouShould() {
 
 					</Box>
 				</Flex>
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Convenient Payment Choices</Heading>
 						<Text>
@@ -130,7 +130,7 @@ function WhyYouShould() {
 
 					</Box>
 				</Flex>
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Master Yoga Nutrition</Heading>
 						<Text>
@@ -145,8 +145,8 @@ function WhyYouShould() {
 
 					</Box>
 				</Flex>
-				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box flex={1} overflow='hidden' rounded='lg'>
+				<Flex justifyContent='space-between' alignItems={{ base: 'center', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
+					<Box  width={400} height={200} flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Strategic Career Branding</Heading>
 						<Text>We strategically guide
 							personal branding, placements
