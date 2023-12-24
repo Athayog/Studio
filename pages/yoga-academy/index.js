@@ -14,9 +14,8 @@ import { fetchSingleProduct } from '@/lib/shopifyClient';
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 
-function yogaAcademy({ product, loading, error }) {
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error.message}</p>;
+function yogaAcademy() {
+ 
     return (
         <Box width={"full"} >
             <Head>
@@ -41,15 +40,6 @@ function yogaAcademy({ product, loading, error }) {
     )
 }
 
-yogaAcademy.getInitialProps = async () => {
-    try {
-        const productId = 'yoga-academy-course';
-        const product = await fetchSingleProduct(productId);
-        return { product, loading: false, error: null };
-    } catch (error) {
-        return { product: null, loading: false, error };
-    }
-};
 
 
 export default yogaAcademy

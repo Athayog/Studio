@@ -75,13 +75,13 @@ function ProductPage({ product, loading, error }) {
 	);
 }
 
-ProductPage.getInitialProps = async ({ query }) => {
+export const getServerSideProps = async ({ query }) => {
 	try {
 		const productId = query.productId;
 		const product = await fetchSingleProduct(productId);
-		return { product, loading: false, error: null };
+		return { props: { product, loading: false, error: null } }
 	} catch (error) {
-		return { product: null, loading: false, error };
+		return { props: { product: null, loading: false, error } };
 	}
 };
 
