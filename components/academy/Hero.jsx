@@ -5,6 +5,7 @@ import HeroBg from 'public/HeroBG.svg'
 import HeroGirl from 'public/HeroGirl.png'
 import HeroArtwork from 'public/HeroArtwork.svg'
 import Link from 'next/link';
+import CallSvg from 'public/call.svg'
 
 function Hero() {
     console.log(HeroBg)
@@ -25,14 +26,22 @@ function Hero() {
                         brand as a Yoga Coach.
                     </Text>
                     <Link target="_blank" href={'https://store.athayogliving.com/cart/42707418448056:1'} passHref>
-                    <Button color='white' backgroundColor="#F54900" _hover={{ backgroundColor: "#e76099" }} width='max-content' rounded='full' size='lg' >Join now</Button>
+                        <Button color='white' backgroundColor="#F54900" _hover={{ backgroundColor: "#e76099" }} width='max-content' rounded='full' size='lg' >Join now</Button>
                     </Link>
                 </Flex>
-               
-                    <Box flex={4} bg={`url(${HeroArtwork.src})`} backgroundSize='contain'>
-                        <Image alt="Home" src={HeroGirl} height="400" width="400" />
-                    </Box>
-               
+
+                <Box flex={4} bg={`url(${HeroArtwork.src})`} backgroundSize='contain' position='relative'>
+                    <Image alt="Home" src={HeroGirl} height="400" width="400" />
+                    <a href="tel:+919611771434" style={{position:'relative'}}>
+                        <Box position='absolute' background="#F54900" height={55} width={55} border="4px solid #FFF" padding={3} borderRadius='50%' right="10" bottom="0">
+                       
+                            <Image src={CallSvg} objectFit='contain' height={25} width={25} />
+                          
+                        </Box>
+                        </a>
+                  
+                </Box>
+
             </Flex></Box>
 
     )
