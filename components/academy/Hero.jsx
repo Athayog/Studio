@@ -24,7 +24,7 @@ function Hero() {
                         Program accredited by <chakra.span color='aygreen.400'>Yoga Alliance USA</chakra.span>. Elevate your career and establish your personal
                         brand as a Yoga Coach.
                     </Text>
-                    <Link href={'/yoga-academy/product/yoga-academy-course  '} passHref>
+                    <Link target="_blank" href={'https://store.athayogliving.com/cart/42707418448056:1'} passHref>
                     <Button color='white' backgroundColor="#F54900" _hover={{ backgroundColor: "#e76099" }} width='max-content' rounded='full' size='lg' >Join now</Button>
                     </Link>
                 </Flex>

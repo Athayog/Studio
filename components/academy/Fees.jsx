@@ -13,7 +13,7 @@ function Fees() {
                     <Text>Empower Your Career in 2024: Transform your professional journey
                         with yoga, unlocking opportunities for a healthier, happier and more
                         fulfilling career in the upcoming year!</Text>
-                    <Link href={'/yoga-academy/product/yoga-academy-course  '} passHref>
+                    <Link target="_blank" href={'https://store.athayogliving.com/cart/42707418448056:1'} passHref>
                         <Button rounded='full' padding="20px 80px" color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Buy Now</Button>
                     </Link>
                 </Flex>
