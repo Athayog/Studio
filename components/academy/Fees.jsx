@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 function Fees() {
     return (
-        <Box position='relative' >
-            <Box  height="xs"  zIndex={-1} position='relative' bg={`url(${FeesBg.src})`} backgroundSize='cover' filter='blur(25px)'> </Box>
+        <Box position='relative' mt={20} >
+            <Box  height="xs"  zIndex={-1} position='relative' bg={`url(${FeesBg.src})`} backgroundSize='cover' filter='blur(100px)'> </Box>
             <Box p={10} position='absolute'top='0' width='100%' height='100%'>
                 <Flex  width='100%' height='100%'  justifyContent='center' zIndex={2} alignItems="center" direction='column' gap={6} py={10} maxW='container.xl' margin='0 auto'>
                     <Heading fontWeight='normal'>Fees: <chakra.span color="#6A9340"> ₹45,999 + 18% GST</chakra.span></Heading>
