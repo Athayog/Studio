@@ -322,7 +322,7 @@ function Schedule() {
                               </Table>
                               <Box width="100%">
                               <a
-                         href="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/december_schedule.jpg?alt=media&token=cc6e2064-b57c-4490-9495-50eb0f6001cf"
+                         href="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/AYL%20January%20schedule.jpg?alt=media&token=33ad567f-5452-4b2b-b053-eb781b8ba63a"
                          downlaod="true"
                          target="_blank"
                     >
