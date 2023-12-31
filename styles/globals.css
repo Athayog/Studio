@@ -29,6 +29,9 @@ body {
      z-index: 2;
      min-width: max-content;
 }
+.scheduleTable.seperation{
+     padding: 12px;
+}
 .scheduleTable th {
      border-bottom: none;
 }
