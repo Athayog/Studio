@@ -1,0 +1,39 @@
+47997a0 Updated Jan schedule
+f577539 added january schedule
+7351db0 fixed navbar
+cfe0650 final changes
+41e066e adjusted size
+ca934c4 adjusted more
+e8bd513 changes according to Athayog
+efa77e3 updated final changes
+53fad03 only responsive left
+d71ec80 added eligibility
+6eb8d3f base structure
+a00ebba changed node version
+25f2cc2 removed old space
+57800ff updated node
+04b3bec changed class url
+102dbe7 fixed images
+8ea82fb classes image changes
+af22267 changes done except new landing page
+c1b00b2 conflict resolved
+3ed7c58 merge conflict
+ec17964 added google login
+c63d402 errro log
+d5fe5c3 deploy debug
+07b749a added book
+399e618 new course
+3bd6f5b Base changes
+22e51a8 Merge branch 'master' into changes_nov
+2e2f8d8 added new classes
+807e1bb added nav changes
+1d9c235 removed krpuram completely
+06971e7 debug course
+c2f11a1 removed upcoming course
+eaa5770 removed pricing completely
+c147d5b Remove KR Puram price
+0a99102 package fix
+99a277c schedule novemeber
+ae108f8 added aarthi
+941883e remvoed shreeram
+c333df3 Updated ocotober schedule
