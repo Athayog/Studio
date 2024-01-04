@@ -1,17 +1,15 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image'
-import PlaceHolder from 'public/career2.jpg'
+import AccomImage from 'public/accom.png'
 import AllianceImage from 'public/alliance.jpg'
-import LifeTimeImage from 'public/lifetime.jpg'
-import PostCourseImage from 'public/postCourse.jpg'
-import ExpertImage from 'public/expert.jpg'
+import CareerImage from 'public/careerAt.png'
 import EligibilityImage from 'public/eligibility.jpg'
-import AccomImage from 'public/accom.jpg'
 import EmiImage from 'public/emi.jpg'
-import CareerImage from 'public/careerAt.jpg'
+import ExpertImage from 'public/expert.jpg'
+import LifeTimeImage from 'public/lifetime.jpg'
 import NutiImage from 'public/nuti.jpg'
-import React from 'react'
 import OG from 'public/og.png'
+import PostCourseImage from 'public/postCourse.jpg'
 
 function WhyYouShould() {
 	return (
@@ -34,11 +32,9 @@ function WhyYouShould() {
 							validation</Text>
 					</Box>
 					<Box flex={1} overflow='hidden' rounded='lg'>
-						<Image placeholder='blur' src={AllianceImage} objectPosition="center" width={'400px'} height={200} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' src={AllianceImage} objectPosition="center" width={'400px'} height={200} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
@@ -48,11 +44,9 @@ function WhyYouShould() {
 							certificate for a lifetime</Text>
 					</Box>
 					<Box flex={1} overflow='hidden' rounded='lg' >
-						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={LifeTimeImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={LifeTimeImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
@@ -62,11 +56,9 @@ function WhyYouShould() {
 							your teaching journey.</Text>
 					</Box>
 					<Box flex={1} overflow='hidden' rounded='lg' >
-						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={PostCourseImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={PostCourseImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
@@ -76,11 +68,9 @@ function WhyYouShould() {
 							Ph.D.s and MSc’s in Yoga.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={ExpertImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={ExpertImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
@@ -91,11 +81,9 @@ function WhyYouShould() {
 							practice.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EligibilityImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EligibilityImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
@@ -108,11 +96,9 @@ function WhyYouShould() {
 							an additional fee.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image placeholder='blur' width={'400px'} height={200} objectPosition="bottom" src={AccomImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' width={'400px'} height={200} objectPosition="bottom" src={AccomImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
@@ -124,11 +110,9 @@ function WhyYouShould() {
 							convenient for all..</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
-						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EmiImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EmiImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
@@ -139,25 +123,21 @@ function WhyYouShould() {
 							with yoga journey.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={NutiImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={NutiImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box  width={'400px'} height={200} flex={1} overflow='hidden' rounded='lg'>
+					<Box  maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Strategic Career Branding</Heading>
 						<Text>We strategically guide
 							personal branding, placements
 							and career paths for your success.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={CareerImage} objectFit='cover' />
+						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={CareerImage} objectFit='cover' />
 					</Box>
-					<Box>
-
-					</Box>
+					
 				</Flex>
 			</Flex>
 		</Box>

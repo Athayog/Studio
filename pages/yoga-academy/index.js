@@ -10,7 +10,6 @@ import WhatWillYouLearn from '@/components/academy/WhatWillYouLearn';
 import WhyYouShould from '@/components/academy/WhyYouShould';
 import HomeLayout from '@/components/layout/HomeLayout';
 import NavbarHelper from '@/components/shared/NavbarHelper';
-import { fetchSingleProduct } from '@/lib/shopifyClient';
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 
