@@ -19,7 +19,7 @@ function WhyYouShould() {
 			<Flex alignItems="center" direction='column' gap={{ base: "10", md: "10" }} py={10} maxW='container.md' margin='0 auto'>
 				<Box textAlign='center' >
 
-					<Image src={OG} height="100%" width="100%" objectFit='cover' />
+					<Image placeholder='blur' src={OG} height="100%" width="100%" objectFit='cover' />
 
 					<Heading>Why you should choose</Heading>
 					<Text color="#617E43" fontSize={{base:'2xl',md:'4xl'}} fontWeight='bold'>AthaYog Living?</Text>
@@ -34,7 +34,7 @@ function WhyYouShould() {
 							validation</Text>
 					</Box>
 					<Box flex={1} overflow='hidden' rounded='lg'>
-						<Image src={AllianceImage} objectPosition="center" width={'400px'} height={200} objectFit='cover' />
+						<Image placeholder='blur' src={AllianceImage} objectPosition="center" width={'400px'} height={200} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -48,7 +48,7 @@ function WhyYouShould() {
 							certificate for a lifetime</Text>
 					</Box>
 					<Box flex={1} overflow='hidden' rounded='lg' >
-						<Image objectPosition="center" width={'400px'} height={200} src={LifeTimeImage} objectFit='cover' />
+						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={LifeTimeImage} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -62,7 +62,7 @@ function WhyYouShould() {
 							your teaching journey.</Text>
 					</Box>
 					<Box flex={1} overflow='hidden' rounded='lg' >
-						<Image objectPosition="center" width={'400px'} height={200} src={PostCourseImage} objectFit='cover' />
+						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={PostCourseImage} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -76,7 +76,7 @@ function WhyYouShould() {
 							Ph.D.s and MSc’s in Yoga.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image objectPosition="center" width={'400px'} height={200} src={ExpertImage} objectFit='cover' />
+						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={ExpertImage} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -91,7 +91,7 @@ function WhyYouShould() {
 							practice.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image objectPosition="center" width={'400px'} height={200} src={EligibilityImage} objectFit='cover' />
+						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EligibilityImage} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -108,7 +108,7 @@ function WhyYouShould() {
 							an additional fee.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image width={'400px'} height={200} objectPosition="bottom" src={AccomImage} objectFit='cover' />
+						<Image placeholder='blur' width={'400px'} height={200} objectPosition="bottom" src={AccomImage} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -124,7 +124,7 @@ function WhyYouShould() {
 							convenient for all..</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
-						<Image objectPosition="center" width={'400px'} height={200} src={EmiImage} objectFit='cover' />
+						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EmiImage} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -139,7 +139,7 @@ function WhyYouShould() {
 							with yoga journey.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image objectPosition="center" width={'400px'} height={200} src={NutiImage} objectFit='cover' />
+						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={NutiImage} objectFit='cover' />
 					</Box>
 					<Box>
 
@@ -153,7 +153,7 @@ function WhyYouShould() {
 							and career paths for your success.</Text>
 					</Box>
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image objectPosition="center" width={'400px'} height={200} src={CareerImage} objectFit='cover' />
+						<Image placeholder='blur' objectPosition="center" width={'400px'} height={200} src={CareerImage} objectFit='cover' />
 					</Box>
 					<Box>
 

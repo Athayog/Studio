@@ -27,6 +27,7 @@ function Gurus() {
                                     <Image
                                         src={image}
                                         alt={name}
+                                        placeholder='blur'
                                         height="250px"
                                         width="250px"
                                         objectFit="cover"
@@ -55,6 +56,7 @@ function Gurus() {
                                     <Image
                                         src={image}
                                         alt={name}
+                                        placeholder='blur'
                                         height="250px"
                                         width="250px"
                                         objectFit="cover"

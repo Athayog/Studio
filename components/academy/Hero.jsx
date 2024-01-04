@@ -35,7 +35,7 @@ function Hero() {
                     <a href="tel:+919611771434" style={{position:'relative'}}>
                         <Box position='absolute' background="#F54900" height={55} width={55} border="4px solid #FFF" padding={3} borderRadius='50%' right="10" bottom="0">
                        
-                            <Image src={CallSvg} objectFit='contain' height={25} width={25} />
+                            <Image placeholder='blur' src={CallSvg} objectFit='contain' height={25} width={25} />
                           
                         </Box>
                         </a>

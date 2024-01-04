@@ -107,7 +107,7 @@ function Eligible() {
                 </Flex>
                 <Box flex={1}  >
                     <Box overflow='hidden' className='eligible-image'>
-                        <Image src={PlaceHolder} objectPosition='bottom' objectFit='cover' height={380} width={300} />
+                        <Image placeholder='blur' src={PlaceHolder} objectPosition='bottom' objectFit='cover' height={380} width={300} />
                     </Box>
 
                 </Box>

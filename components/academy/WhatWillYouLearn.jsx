@@ -44,19 +44,19 @@ function WhatWillYouLearn() {
 							</Flex>
 
 							<Box flex={4} display={{ base: 'block', md: "none" }}>
-								<Image layout='responsive' objectFit='cover' src={w1} width={500} height={300} />
+								<Image placeholder='blur' layout='responsive' objectFit='cover' src={w1} width={500} height={300} />
 							</Box>
 							<Text fontWeight='semibold' maxW='sm' maxW='sm'>Master Breathing Techniques, Asanas, Sat Kriyas, Pranayama, and Meditation. Immerse in the spiritual teachings of Yoga Sutras, Bhagavad Gita, Hatha Yoga Pradipika,
 								and Modern Science.</Text>
 						</Flex>
 						<Box flex={4} display={{ base: 'none', md: "block" }}>
-							<Image layout='responsive' objectFit='cover' src={w1} width={500} height={300} />
+							<Image placeholder='blur' layout='responsive' objectFit='cover' src={w1} width={500} height={300} />
 						</Box>
 					</Flex>
 
 					<Flex gap={5} mt={10} justifyContent='space-between' >
 						<Box flex={4} >
-							<Image layout='responsive' objectFit='cover' src={w2} width={500} height={300} />
+							<Image placeholder='blur' layout='responsive' objectFit='cover' src={w2} width={500} height={300} />
 						</Box>
 						<Flex flex={6} direction='column' justifyContent='center' alignItems={{ base: "flex-start", md: 'flex-end' }} textAlign={{ base: "left", md: "right" }}>
 							<Flex flex={6} direction={{ base: "row", md: 'column' }} justifyContent='center' textAlign='left'>
@@ -154,13 +154,13 @@ function WhatWillYouLearn() {
 								practise.</Text>
 						</Flex>
 						<Box flex={4}>
-							<Image layout='responsive' objectFit='cover' src={w3} width={500} height={300} />
+							<Image placeholder='blur' layout='responsive' objectFit='cover' src={w3} width={500} height={300} />
 						</Box>
 					</Flex>
 
 					<Flex gap={5} mt={10} justifyContent='space-between'>
 						<Box flex={4}>
-							<Image layout='responsive' objectFit='cover' src={w4} width={500} height={300} />
+							<Image placeholder='blur' layout='responsive' objectFit='cover' src={w4} width={500} height={300} />
 						</Box>
 						<Flex flex={6} direction='column' justifyContent='center' alignItems={{ base: "flex-start", md: 'flex-end' }} textAlign={{ base: "left", md: "right" }}>
 							<Flex flex={6} direction={{ base: "row", md: 'column' }} justifyContent='center' textAlign='left'>
@@ -220,12 +220,12 @@ function WhatWillYouLearn() {
 					<Flex gap={5} mt={{ base: "6", md: "20" }} justifyContent='space-between' >
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} justifyContent='flex-start' textAlign='left' alignItems='center'>
-								<Image src={f1} width={40} height={40} />
+								<Image placeholder='blur' src={f1} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} textAlign='left' mb={0}>Practical Learning</Heading>
 							</Flex>
 
 							<Box  >
-								<Image className='rounded-image'  layout='responsive' objectFit='cover' src={w1} width={200} height={100} />
+								<Image placeholder='blur' className='rounded-image'  layout='responsive' objectFit='cover' src={w1} width={200} height={100} />
 							</Box>
 							<Text fontWeight='semibold' >Master Breathing Techniques, Asanas, Sat Kriyas, Pranayama, and Meditation. Immerse in the spiritual teachings of Yoga Sutras, Bhagavad Gita, Hatha Yoga Pradipika,
 								and Modern Science.</Text>
@@ -236,12 +236,12 @@ function WhatWillYouLearn() {
 					<Flex mt={6} gap={5} justifyContent='space-between' >
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} justifyContent='flex-start' textAlign='left'  alignItems='center'>
-								<Image src={f2} width={40} height={40} />
+								<Image placeholder='blur' src={f2} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} mb={0}>Theoretical Learning</Heading>
 							</Flex>
 
 							<Box  >
-								<Image className='rounded-image' layout='responsive' objectFit='cover' src={w2} width={200} height={100} />
+								<Image placeholder='blur' className='rounded-image' layout='responsive' objectFit='cover' src={w2} width={200} height={100} />
 							</Box>
 							<Text fontWeight='semibold' >Dive into the depths of Anatomy, Physiology, Psychology, Teaching Methodology, and the
 								Business of Yoga.   </Text>
@@ -253,11 +253,11 @@ function WhatWillYouLearn() {
 					<Flex mt={6} gap={5} mt={10} justifyContent='space-between'>
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} flex={6} justifyContent='flex-start' textAlign='left'  alignItems='center'>
-								<Image src={f3} width={40} height={40} />
+								<Image placeholder='blur' src={f3} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} mb={0}>Personal Branding</Heading>
 							</Flex>
 							<Box flex={4}>
-								<Image className='rounded-image' layout='responsive' objectFit='cover' src={w3} width={200} height={100} />
+								<Image placeholder='blur' className='rounded-image' layout='responsive' objectFit='cover' src={w3} width={200} height={100} />
 							</Box>
 
 							<Text fontWeight='semibold'> Learn basics of personal branding and packaging basic yoga. You will be able to sell yoga
@@ -270,11 +270,11 @@ function WhatWillYouLearn() {
 					<Flex mt={6} gap={5} mt={10} justifyContent='space-between'>
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} flex={6} justifyContent='flex-start' textAlign='left  ' alignItems='center'>
-								<Image src={f4} width={40} height={40} />
+								<Image placeholder='blur' src={f4} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} textAlign={{ base: "left", md: "right" }} mb={0}>Nutrition</Heading>
 							</Flex>
 							<Box flex={4}>
-								<Image className='rounded-image' layout='responsive' objectFit='cover' src={w4} width={200} height={100} />
+								<Image placeholder='blur' className='rounded-image' layout='responsive' objectFit='cover' src={w4} width={200} height={100} />
 							</Box>
 							<Text fontWeight='semibold' >We unravel yogic nutrition, guiding you to
 								craft personalised plans that harmosize
