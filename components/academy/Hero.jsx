@@ -6,6 +6,7 @@ import HeroGirl from 'public/HeroGirl.png'
 import HeroArtwork from 'public/HeroArtwork.svg'
 import Link from 'next/link';
 import CallSvg from 'public/call.svg'
+import EnquiryModal from '../home/Enquiry/EnquiryModal';
 
 function Hero() {
     console.log(HeroBg)
@@ -25,9 +26,9 @@ function Hero() {
                         Program accredited by <chakra.span color='aygreen.400'>Yoga Alliance USA</chakra.span>. Elevate your career and establish your personal
                         brand as a Yoga Coach.
                     </Text>
-                    <a target="_blank" rel="noreferrer" href='https://rzp.io/l/AefUZIuY2W'>
-                        <Button color='white' backgroundColor="#F54900" _hover={{ backgroundColor: "#e76099" }} width='max-content' rounded='full' size='lg' >Join now</Button>
-                    </a>
+                  
+                    <EnquiryModal buttonText="Join Now" backColor="#F54900"/>
+
                 </Flex>
 
                 <Box flex={4} bg={`url(${HeroArtwork.src})`} backgroundSize='contain' position='relative'>
