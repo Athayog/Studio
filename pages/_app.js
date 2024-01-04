@@ -20,6 +20,8 @@ import * as gtag from '@/lib/gtag';
 import { useRouter } from 'next/router';
 import Leads from '@/components/seo/Leads';
 import { Analytics } from '@vercel/analytics/react';
+import { ApolloClient, ApolloProvider } from '@apollo/client';
+import client from '@/lib/apollo';
 
 NProgress.configure({
      showSpinner: true,
@@ -112,14 +114,20 @@ function App({ Component, pageProps }) {
                theme={theme}
           >
                <AuthProvider>
+
                     <DefaultSeo {...SEO} />
                     <GlobalStyle />
                     {excludePath.includes(router.pathname) ? null : <Leads />}
-                    <AnimatePresence exitBeforeEnter>
-                         <Layout>
-                              <Component {...pageProps} />
-                         </Layout>
-                    </AnimatePresence>
+                    <ApolloProvider client={client}>
+                        
+                              <AnimatePresence exitBeforeEnter>
+                                   <Layout>
+                                        <Component {...pageProps} />
+                                   </Layout>
+                              </AnimatePresence>
+                        
+                    </ApolloProvider>
+
                </AuthProvider>
                <Analytics />
           </ChakraProvider>

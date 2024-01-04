@@ -49,7 +49,8 @@ module.exports = withPlugins(
           images: {
                domains: [
                     'firebasestorage.googleapis.com',
-                    'images.unsplash.com'
+                    'images.unsplash.com',
+                    'cdn.shopify.com'
                ]
           }
      },
@@ -58,7 +59,8 @@ module.exports = withPlugins(
           images: {
                domains: [
                     'firebasestorage.googleapis.com',
-                    'images.unsplash.com'
+                    'images.unsplash.com',
+                    'cdn.shopify.com'
                ]
           },
           swcMinify: true
