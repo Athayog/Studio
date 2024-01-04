@@ -220,7 +220,7 @@ function WhatWillYouLearn() {
 					<Flex gap={5} mt={{ base: "6", md: "20" }} justifyContent='space-between' >
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} justifyContent='flex-start' textAlign='left' alignItems='center'>
-								<Image placeholder='blur' src={f1} width={40} height={40} />
+								<Image src={f1} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} textAlign='left' mb={0}>Practical Learning</Heading>
 							</Flex>
 
@@ -236,7 +236,7 @@ function WhatWillYouLearn() {
 					<Flex mt={6} gap={5} justifyContent='space-between' >
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} justifyContent='flex-start' textAlign='left'  alignItems='center'>
-								<Image placeholder='blur' src={f2} width={40} height={40} />
+								<Image  src={f2} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} mb={0}>Theoretical Learning</Heading>
 							</Flex>
 
@@ -253,7 +253,7 @@ function WhatWillYouLearn() {
 					<Flex mt={6} gap={5} mt={10} justifyContent='space-between'>
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} flex={6} justifyContent='flex-start' textAlign='left'  alignItems='center'>
-								<Image placeholder='blur' src={f3} width={40} height={40} />
+								<Image  src={f3} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} mb={0}>Personal Branding</Heading>
 							</Flex>
 							<Box flex={4}>
@@ -270,7 +270,7 @@ function WhatWillYouLearn() {
 					<Flex mt={6} gap={5} mt={10} justifyContent='space-between'>
 						<Flex gap={5} flex={6} direction='column' justifyContent='center' textAlign='left'>
 							<Flex gap={5} flex={6} justifyContent='flex-start' textAlign='left  ' alignItems='center'>
-								<Image placeholder='blur' src={f4} width={40} height={40} />
+								<Image src={f4} width={40} height={40} />
 								<Heading textAlign='left' fontSize={{ base: "2xl", md: "4xl" }} textAlign={{ base: "left", md: "right" }} mb={0}>Nutrition</Heading>
 							</Flex>
 							<Box flex={4}>

@@ -26,8 +26,8 @@ function Hero() {
                         Program accredited by <chakra.span color='aygreen.400'>Yoga Alliance USA</chakra.span>. Elevate your career and establish your personal
                         brand as a Yoga Coach.
                     </Text>
-                  
-                    <EnquiryModal buttonText="Join Now" backColor="#F54900"/>
+               
+                    <EnquiryModal buttonText="Join Now" backColor="#F54900" size='lg'/>
 
                 </Flex>
 
@@ -36,7 +36,7 @@ function Hero() {
                     <a href="tel:+919611771434" style={{position:'relative'}}>
                         <Box position='absolute' background="#F54900" height={55} width={55} border="4px solid #FFF" padding={3} borderRadius='50%' right="10" bottom="0">
                        
-                            <Image placeholder='blur' src={CallSvg} objectFit='contain' height={25} width={25} />
+                            <Image  src={CallSvg} objectFit='contain' height={25} width={25} />
                           
                         </Box>
                         </a>

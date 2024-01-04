@@ -118,7 +118,7 @@ const EnquiryModal = ({ size, buttonText="Enquiry Now", colorType="aygreen",titl
                     padding="20px 80px"
                     variant="solid"
                     rounded="full"
-                   
+                    width="40px"
                     whileTap={{ scale: 0.9 }}
                >
                     {buttonText}
