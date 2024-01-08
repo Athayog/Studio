@@ -1,10 +1,11 @@
-import { Box, Flex, Heading, Text, chakra } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Text, chakra } from '@chakra-ui/react';
 import Image from 'next/image';
 import HeroArtwork from 'public/HeroArtwork.svg';
 import HeroBg from 'public/HeroBG.png';
 import HeroGirl from 'public/HeroGirl.png';
-import CallSvg from 'public/call.svg';
+
 import EnquiryModal from '../home/Enquiry/EnquiryModal';
+import Link from 'next/link';
 
 function Hero() {
     return (
@@ -33,23 +34,22 @@ function Hero() {
                         brand as a Yoga Coach.
                     </Text>
                
-                    <EnquiryModal buttonText="Join Now" backColor="#F54900" size='lg'/>
-
+                    
+                    <Link href="/yoga-academy/register" passHref>
+                    <Button rounded='full' padding="10px 80px" width="40px" color="#fff"  background="#F54900" size='md'>Join Now</Button>
+                </Link>
                 </Flex>
 
                 <Box flex={4} bg={`url(${HeroArtwork.src})`} backgroundSize='contain' position='relative'>
                     <Image alt="Home" src={HeroGirl} height="400" width="400" />
-                    <a href="tel:+919611771434" style={{position:'relative'}}>
-                        <Box position='absolute' background="#F54900" height={55} width={55} border="4px solid #FFF" padding={3} borderRadius='50%' right="10" bottom="0">
-                       
-                            <Image  src={CallSvg} objectFit='contain' height={25} width={25} />
-                          
-                        </Box>
-                        </a>
+                  
+                  
                   
                 </Box>
 
-            </Flex></Box>
+            </Flex>
+          
+            </Box>
 
     )
 }

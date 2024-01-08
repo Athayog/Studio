@@ -11,7 +11,9 @@ import WhyYouShould from '@/components/academy/WhyYouShould';
 import HomeLayout from '@/components/layout/HomeLayout';
 import NavbarHelper from '@/components/shared/NavbarHelper';
 import { Box } from '@chakra-ui/react';
+import CallSvg from 'public/call.svg';
 import Head from 'next/head';
+import Image from 'next/image';
 
 function yogaAcademy() {
  
@@ -35,6 +37,15 @@ function yogaAcademy() {
             <Gurus />
             <LimitedSlotsBottom />
             <Footer />
+            <Box position='fixed' bottom={{base:10,md:20}} right={{base:5,md:10}}>
+                    <a href="tel:+919611771434" style={{position:'relative'}}>
+                        <Box position='absolute' background="#F54900" height={55} width={55} border="4px solid #FFF" padding={3} borderRadius='50%' right="10" bottom="0">
+                       
+                            <Image  src={CallSvg} objectFit='contain' height={25} width={25} />
+                          
+                        </Box>
+                        </a>
+                    </Box>
         </Box>
     )
 }

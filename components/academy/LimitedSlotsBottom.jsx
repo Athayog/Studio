@@ -9,8 +9,9 @@ function LimitedSlotsBottom() {
       <Flex alignItems="center" direction='column' gap={5} py={10} maxW='container.xl' margin='0 auto'>
         <Heading maxW='2xl' textAlign='center' fontSize='3xl' color="#B43636">Limited Slots! </Heading>
         <Text fontSize='2xl' fontWeight='bold' textAlign='center'>Start Your Career Transformation Today!</Text>
-        <EnquiryModal buttonText="Enroll Now" backColor="linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)"/>
- 
+        <Link href="/yoga-academy/register" passHref>
+                    <Button rounded='full' padding="20px 80px" color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Enroll Now</Button>
+                </Link>
         <Text>Contact Us for Further Details</Text>
       </Flex>
     </Box>
