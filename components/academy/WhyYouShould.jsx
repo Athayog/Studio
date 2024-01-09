@@ -24,70 +24,70 @@ function WhyYouShould() {
 
 				</Box>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }}  >
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}}  flex={1} overflow='hidden' rounded='lg'>
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}}  flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Global Accredition</Heading>
 						<Text>
 							Yoga Alliance USA & Vivekananda
 							Yoga Anusandhana Samsthana
 							validation</Text>
 					</Box>
-					<Box flex={1} overflow='hidden' rounded='lg'>
-						<Image class='academy_image' placeholder='blur' src={AllianceImage} objectPosition="center" width={'400px'} height={200} objectFit='cover' />
+					<Box flex={1} overflow='hidden' rounded='lg' width="100%">
+						<Image class='academy_image' layout='responsive' placeholder='blur' src={AllianceImage} objectPosition="center" width={400} height={200} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Lifetime Validity</Heading>
 						<Text>Internationally recognized
 							certificate for a lifetime</Text>
 					</Box>
-					<Box flex={1} overflow='hidden' rounded='lg' >
-						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={LifeTimeImage} objectFit='cover' />
+					<Box flex={1} overflow='hidden' rounded='lg' width="100%" >
+						<Image class='academy_image' layout='responsive' placeholder='blur' objectPosition="center" width={400} height={200} src={LifeTimeImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Post-Course Support</Heading>
 						<Text>Ongoing mentorship for
 							your teaching journey.</Text>
 					</Box>
-					<Box flex={1} overflow='hidden' rounded='lg' >
-						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={PostCourseImage} objectFit='cover' />
+					<Box flex={1} overflow='hidden' rounded='lg' width="100%" >
+						<Image class='academy_image' layout='responsive' placeholder='blur' objectPosition="center" width={400} height={200} src={PostCourseImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box  width={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box  width={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Expert Faculty</Heading>
 						<Text>Learn from qualified
 							Ph.D.s and MSc’s in Yoga.</Text>
 					</Box>
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={ExpertImage} objectFit='cover' />
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%" >
+						<Image class='academy_image' layout='responsive' placeholder='blur' objectPosition="center" width={400} height={200} src={ExpertImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Accessible Eligibility</Heading>
 						<Text>Open to individuals 16+, 10th-grade
 							education, 1 month of recent yoga
 							practice.</Text>
 					</Box>
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EligibilityImage} objectFit='cover' />
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%" >
+						<Image class='academy_image' layout='responsive' placeholder='blur' objectPosition="center" width={400} height={200} src={EligibilityImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Stay Option (Accommodation)</Heading>
 						<Text>
 
@@ -95,13 +95,13 @@ function WhyYouShould() {
 							we offer accommodation for
 							an additional fee.</Text>
 					</Box>
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image class='academy_image' placeholder='blur' width={'400px'} height={200} objectPosition="bottom" src={AccomImage} objectFit='cover' />
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%" >
+						<Image class='academy_image' layout='responsive' placeholder='blur' width={400} height={200} objectPosition="bottom" src={AccomImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Convenient Payment Choices</Heading>
 						<Text>
 							We offer EMI and various payment
@@ -109,33 +109,33 @@ function WhyYouShould() {
 							making purchases affordable and
 							convenient for all..</Text>
 					</Box>
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
-						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={EmiImage} objectFit='cover' />
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
+						<Image class='academy_image' layout='responsive' placeholder='blur' objectPosition="center" width={400} height={200} src={EmiImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Master Yoga Nutrition</Heading>
 						<Text>
 
 							We guide you in crafting personalised nutrition plans, harmonising wellness
 							with yoga journey.</Text>
 					</Box>
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={NutiImage} objectFit='cover' />
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%" >
+						<Image class='academy_image' layout='responsive' placeholder='blur' objectPosition="center" width={400} height={200} src={NutiImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
-					<Box  maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg'>
+					<Box  maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
 						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Strategic Career Branding</Heading>
 						<Text>We strategically guide
 							personal branding, placements
 							and career paths for your success.</Text>
 					</Box>
-					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' >
-						<Image class='academy_image' placeholder='blur' objectPosition="center" width={'400px'} height={200} src={CareerImage} objectFit='cover' />
+					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%" >
+						<Image class='academy_image' layout='responsive' placeholder='blur' objectPosition="center" width={400} height={200} src={CareerImage} objectFit='cover' />
 					</Box>
 					
 				</Flex>

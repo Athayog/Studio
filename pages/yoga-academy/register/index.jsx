@@ -67,7 +67,7 @@ function RegisterYoga() {
                 <ChakraProvider>
                     <Box p={10}>
                         <Box mb={6}>
-                            <Badge p={2} colorScheme='green'>Weekend Batch Starting: April 17th - June 30th, 11:00 am - 4:00 pm</Badge>
+                            <Text p={2} fontSize='12px' bg='green.100' color="green.800" textTransform='uppercase' fontWeight='bold'>Weekend Batch Starting: April 17th - June 30th, 11:00 am - 4:00 pm</Text>
                         
                         </Box>
                         <form onSubmit={handleSubmit(onSubmit)}>

@@ -1,9 +1,7 @@
 import { Box, Button, Flex, Heading, Text, chakra } from '@chakra-ui/react'
-import React from 'react'
 
-import EnrollmentBG from 'public/EnrollmentBG.jpg'
 import Link from 'next/link'
-import EnquiryModal from '../home/Enquiry/EnquiryModal'
+import EnrollmentBG from 'public/EnrollmentBG.jpg'
 function Enrollment() {
     return (
         <Box bg={`url(${EnrollmentBG.src})`} my={10} backgroundSize='cover' p={10} >
