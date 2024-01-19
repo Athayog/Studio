@@ -10,7 +10,7 @@ function LimitedSlotsBottom() {
         <Heading maxW='2xl' textAlign='center' fontSize='3xl' color="#B43636">Limited Slots! </Heading>
         <Text fontSize='2xl' fontWeight='bold' textAlign='center'>Start Your Career Transformation Today!</Text>
         <Link href="/yoga-academy/register" passHref>
-                    <Button rounded='full' padding="20px 80px" color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Enroll Now</Button>
+                    <Button rounded='full'padding={{base:"25px 80px",md:"20px 80px"}} color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Enroll Now</Button>
                 </Link>
         <Text>Contact Us for Further Details</Text>
       </Flex>

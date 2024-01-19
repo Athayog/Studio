@@ -13,7 +13,7 @@ import PostCourseImage from 'public/postCourse.jpg'
 
 function WhyYouShould() {
 	return (
-		<Box p={{ base: '5', md: '10' }}>
+		<Box p={{ base: '5', md: '10' }} fontSize="lg">
 			<Flex alignItems="center" direction='column' gap={{ base: "10", md: "10" }} py={10} maxW='container.md' margin='0 auto'>
 				<Box textAlign='center' >
 
@@ -25,7 +25,7 @@ function WhyYouShould() {
 				</Box>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }}  >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}}  flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Global Accredition</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Global Accredition</Heading>
 						<Text>
 							Yoga Alliance USA & Vivekananda
 							Yoga Anusandhana Samsthana
@@ -39,7 +39,7 @@ function WhyYouShould() {
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Lifetime Validity</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Lifetime Validity</Heading>
 						<Text>Internationally recognized
 							certificate for a lifetime</Text>
 					</Box>
@@ -51,7 +51,7 @@ function WhyYouShould() {
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Post-Course Support</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Post-Course Support</Heading>
 						<Text>Ongoing mentorship for
 							your teaching journey.</Text>
 					</Box>
@@ -63,7 +63,7 @@ function WhyYouShould() {
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box  width={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Expert Faculty</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Expert Faculty</Heading>
 						<Text>Learn from qualified
 							Ph.D.s and MSc’s in Yoga.</Text>
 					</Box>
@@ -75,7 +75,7 @@ function WhyYouShould() {
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Accessible Eligibility</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Accessible Eligibility</Heading>
 						<Text>Open to individuals 16+, 10th-grade
 							education, 1 month of recent yoga
 							practice.</Text>
@@ -88,7 +88,7 @@ function WhyYouShould() {
 
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Stay Option (Accommodation)</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Stay Option (Accommodation)</Heading>
 						<Text>
 
 							If you're from out of town,
@@ -102,7 +102,7 @@ function WhyYouShould() {
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Convenient Payment Choices</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Convenient Payment Choices</Heading>
 						<Text>
 							We offer EMI and various payment
 							options to ease financial burden,
@@ -116,7 +116,7 @@ function WhyYouShould() {
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Master Yoga Nutrition</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Master Yoga Nutrition</Heading>
 						<Text>
 
 							We guide you in crafting personalised nutrition plans, harmonising wellness
@@ -129,7 +129,7 @@ function WhyYouShould() {
 				</Flex>
 				<Flex justifyContent='space-between' alignItems={{ base: 'baseline', md: "center" }} direction={{ base: "column-reverse", md: "row" }} width='100%' gap={{ base: '1', md: '10' }} >
 					<Box  maxW={{base:'400px',md:"100%"}} height={{base:200,md:"100%"}} flex={1} overflow='hidden' rounded='lg' width="100%">
-						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '1', md: "6" }} textAlign='left'>Strategic Career Branding</Heading>
+						<Heading color='aygreen.600' fontSize='xl' mb={{ base: '3', md: "6" }} mt={{base:"3",md:"0"}} textAlign='left'>Strategic Career Branding</Heading>
 						<Text>We strategically guide
 							personal branding, placements
 							and career paths for your success.</Text>

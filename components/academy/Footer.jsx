@@ -5,10 +5,16 @@ import Image from 'next/image'
 
 function Footer() {
     return (
-        <Box p={10} maxW='container.lg' margin='0 auto' overflow='hidden'>
-            <Heading fontSize='3xl' zIndex={2}>Arise, awake and stop not until the goal is achieved.</Heading>
-            <Text textAlign='right'>-Swami Vivekananda.</Text>
-
+        <Box p={{base:5,md:10}} maxW='container.lg' margin='0 auto' overflow='hidden'>
+            <Box display={{base:"none",md:"block"}}>
+            <Heading fontSize='3xl'  zIndex={2}>Arise, awake and stop not until the goal is achieved.</Heading>
+            <Text textAlign='right' fontSize='xl'>-Swami Vivekananda.</Text>
+            </Box>
+          
+            <Box display={{base:"block",md:"none"}}>
+            <Heading fontSize='xl' textAlign='center'  zIndex={2}>Arise, awake and stop not until the goal is achieved.</Heading>
+            <Text textAlign='center' fontSize='lg'>-Swami Vivekananda.</Text>
+            </Box>
 
             <Box position='relative' zIndex={-1}  >
                 <svg className='footer-svg-1' width="100" height="100" viewBox="0 0 339 339" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -7,20 +7,20 @@ function Gurus() {
     const { profiles } = profileData;
     const { employees } = EmployeeData;
     return (
-        <Box p={10}>
+        <Box p={{base:3,md:10}}>
             <Flex alignItems="center" direction='column' gap={6} py={10} maxW='container.md' margin='0 auto'>
                 <Heading>The Gurus</Heading>
-                <Flex gap={10} mt={10} flexWrap='wrap' textAlign='center' justifyContent='center'>
+                <Flex gap={{base:5,md:10}} mt={10} flexWrap='wrap' textAlign='center' justifyContent='center'>
 
                 
                 {profiles.map(({ name, info, image, designation }, index) => {
                     return (
-                        <Box key={index}>
+                        <Box key={index} fontSize={{base:'14px',md:'16px'}}>
                             <Box mb={6}>
                                 <Box
                                     rounded="full"
-                                    height={{ base: '250px', md: '250px', lg: '250px' }}
-                                    width={{ base: '250px', md: '250px', lg: '250px' }}
+                                    height={{ base: '150px', md: '250px', lg: '250px' }}
+                                    width={{ base: '150px', md: '250px', lg: '250px' }}
                                     overflow="hidden"
                                     mr={{ base: '0', md: '10', lg: '10' }}
                                 >
@@ -44,12 +44,12 @@ function Gurus() {
                 })}
                 {employees.filter((teacher) => teacher.name != "Arathi").map(({ name, info, image, designation }, index) => {
                     return (
-                        <Box key={index}>
+                        <Box key={index} fontSize={{base:'14px',md:'16px'}}>
                             <Box mb={6}>
                                 <Box
                                     rounded="full"
-                                    height={{ base: '250px', md: '250px', lg: '250px' }}
-                                    width={{ base: '250px', md: '250px', lg: '250px' }}
+                                    height={{ base: '150px', md: '250px', lg: '250px' }}
+                                    width={{ base: '150px', md: '250px', lg: '250px' }}
                                     overflow="hidden"
                                     mr={{ base: '0', md: '10', lg: '10' }}
                                 >
