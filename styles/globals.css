@@ -32,9 +32,11 @@ body {
      z-index: 2;
      min-width: max-content;
 }
-.scheduleTable.seperation{
+
+.scheduleTable.seperation {
      padding: 12px;
 }
+
 .scheduleTable th {
      border-bottom: none;
 }
@@ -224,63 +226,114 @@ body {
      background: #824141;
 }
 
-.footer-svg-1{
+.footer-svg-1 {
      position: absolute;
-     top:10%;
-     left:15%;
+     top: 10%;
+     left: 15%;
 }
 
-.footer-svg-2{
+.footer-svg-2 {
      position: absolute;
-     top:10%;
-     right:15%;
+     top: 10%;
+     right: 15%;
 }
 
-.footer-svg-3{
+.footer-svg-3 {
      position: absolute;
-     bottom:10%;
-     left:15%;
+     bottom: 10%;
+     left: 15%;
 }
 
-.footer-svg-4{
+.footer-svg-4 {
      position: absolute;
-     bottom:10%;
-     right:15%;
+     bottom: 10%;
+     right: 15%;
 }
 
-.footer-image-box-1{
+.footer-image-box-1 {
      position: absolute;
-     top:10%;
-     left:10%;
+     top: 10%;
+     left: 10%;
 }
 
 .gradient-button {
-     background: linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%) !important  ;
+     background: linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%) !important;
      cursor: pointer;
-     transition: background-position 0.5s ease-in-out !important; /* Transition on background position */
-   }
-   
-   .gradient-button:hover {
-     animation: moveGradient 2s infinite !important    ; /* Animation name, duration, and iteration count */
-   }
-   
-   @keyframes moveGradient {
+     transition: background-position 0.5s ease-in-out !important;
+     /* Transition on background position */
+}
+
+.gradient-button:hover {
+     animation: moveGradient 2s infinite !important;
+     /* Animation name, duration, and iteration count */
+}
+
+@keyframes moveGradient {
      0% {
-       background-position: 0% 50%;
+          background-position: 0% 50%;
      }
+
      50% {
-       background-position: 100% 50%;
+          background-position: 100% 50%;
      }
+
      100% {
-       background-position: 0% 50%;
+          background-position: 0% 50%;
      }
-   }
+}
 
-   .rounded-image{
+.rounded-image {
      border-radius: 1rem;
-   }
+}
 
-   .academy_image{
+.academy_image {
      border-radius: 0.5rem;
      border: 1px solid #efefef !important
-   }
+}
+
+.rounded-corners-gradient-borders {
+     border: double 1px transparent;
+     background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgba(207, 203, 27, 1), rgba(66, 114, 7, 1));
+     background-origin: border-box;
+     background-clip: padding-box, border-box;
+}
+
+.circle-green {
+     width: 30px;
+     /* Adjust as needed */
+     height: 30px;
+     /* Should be the same as the width */
+     border-radius: 50%;
+     background-color: #4E8C0D;
+     /* Adjust as needed */
+     position: relative;
+     padding: 14px;
+     font-size: 14px;
+     /* Adjust as needed */
+     font-weight: bold;
+     color: #fff;
+     margin-right: 10px;
+
+}
+
+.circle-green span {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.register-work {
+     display: flex !important;
+     width: 200 !important;
+     height: 50px !important;
+     padding: 32px 100px !important;
+     justify-content: center !important;
+     align-items: center !important;
+     color:#fff;
+     font-size: 20px !important;
+     gap: 10px !important;
+     flex-shrink: 0 !important;
+     border-radius: 120px !important;
+     background: #F54900 !important;
+}
