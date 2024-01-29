@@ -2,20 +2,66 @@ import HomeLayout from '@/components/layout/HomeLayout'
 import NavbarHelper from '@/components/shared/NavbarHelper'
 import { Box, Button, Flex, Grid, Heading, Text, chakra } from '@chakra-ui/react'
 import Image from 'next/image'
-import HeroImage from 'public/class_2-min-min.jpg'
-import React from 'react'
+import HeroImage from 'public/work-academy.png'
+import React, { useEffect, useState } from 'react'
 import BG from 'public/bgwork.png'
 
 function Workshop() {
+   
 
+    const currentTime = new Date();
+    const midnight = new Date(currentTime);
+    midnight.setHours(24, 0, 0, 0); // Set to midnight
+
+    // Difference between current time and midnight
+    const timeUntilMidnight = Math.floor((midnight - currentTime) / 1000);
+
+    const [countdownTime, setCountdownTime] = useState(timeUntilMidnight);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            // Update the countdown
+            setCountdownTime(prevTime => prevTime - 1);
+        }, 1000);
+
+        // Clean up the interval on component unmount
+        return () => clearInterval(interval);
+    }, []);
+
+    // Function to format time
+    const formatTime = (time) => {
+        const hours = Math.floor(time / 3600);
+        const minutes = Math.floor((time % 3600) / 60);
+        const seconds = time % 60;
+        return `${hours}:${minutes}:${seconds}`;
+    }; 
     return (
         <div>
             <NavbarHelper />
             {/* Hero */}
 
-            <Flex  bg={`url(${BG.src}),  lightgray 50% / cover no-repeat`}  overflow='hidden'  rounded='xl' p={{base:5,md:10}} bgSize='cover' boxShadow='lg' overflow='hidden' justifyContent='center' margin="20px auto" maxW='1300px' direction='column' gap="32px"  >
-               
-                <Box fontSize='4xl' fontWeight='700'>
+            <Box zIndex='2' gap={2} boxShadow='sm' position='fixed' bottom="0" right="0" display={{ base: "flex", md: "none" }} justifyContent='space-between' bg='white' width="100%" p={5} >
+                <Box flex={6}>
+                    <Box fontSize='3xl' display='flex' alignItems='center' gap={2}>
+                        <Text >
+                            ₹99
+                        </Text>
+                        <Text fontSize='2xl' textDecoration='line-through'>
+                            ₹999
+                        </Text>
+                    </Box>
+                    <Box>
+                        Offer ends in  <Text display='inline' fontWeight='bold'>{formatTime(countdownTime)}</Text>
+                    </Box>
+                </Box>
+
+                <Button  width='max-content' rounded='md' background='#F54900' color='white' fontSize='xl' flex={4} height='100%' padding={{ base: "20px 80px", md: "30px 120px" }}>Register Now</Button>
+            </Box>
+
+
+            <Flex bg={`url(${BG.src}),  lightgray 50% / cover no-repeat`} overflow='hidden' rounded={{ base: "none", md: 'xl' }} p={{ base: 5, md: 10 }} bgSize='cover' boxShadow={{ base: "none", md: 'lg' }} overflow='hidden' justifyContent='center' margin={{ base: "0px auto", md: "20px auto" }} maxW='1300px' direction='column' gap="32px"  >
+
+                <Box fontSize={{ base: "3xl", md: "4xl" }} fontWeight='700'>
 
 
                     <Text color="#3A6D05" >Earn ₹20k - ₹50k a Month as a Yoga Teacher</Text>
@@ -23,20 +69,20 @@ function Workshop() {
 
 
                 </Box>
-                <Flex gap={10}>
+                <Flex gap={10} direction={{ base: "column-reverse", md: "row" }} >
                     <Flex flex="7" direction='column' gap='52px' maxW='md'>
-                        <Text fontSize={{base:"xl",md:"2xl"}}>  Unleash Your Inner Yogi: Unlock a
+                        <Text fontSize={{ base: "2xl", md: "2xl" }}>  Unleash Your Inner Yogi: Unlock a
                             Fulfilling Career with <strong> Mr. Sharath,
-                            Principal AthaYog Academy</strong></Text>
+                                Principal AthaYog Academy</strong></Text>
 
-                        <Button width='max-content' rounded='full' background='#F54900' color='white'  fontSize='xl' display={{base:"none",md:"flex"}} padding={{base:"20px 80px",md:"30px 120px"}}>Register Now</Button>
+                        <Button width='max-content' rounded='full' background='#F54900' color='white' fontSize='xl' display={{ base: "none", md: "flex" }} padding={{ base: "20px 80px", md: "30px 120px" }}>Register Now</Button>
                     </Flex>
                     <Box
                         flex="3"
                         position='relative'
                         overflow='hidden'
                         height='300px'
-                        width='300px'
+                        width='100%'
                         rounded='xl'
                     >
                         <Image
@@ -52,13 +98,13 @@ function Workshop() {
                 </Flex>
             </Flex>
 
-            <Box fontFamily='Inter' py={10} display='flex' flexDir='column' justifyContent='center' w='full'>
-                <Heading textAlign='center'  fontFamily='Inter' fontSize={{base:"2xl",md:'4xl'}}>Who Would Thrive in This<chakra.span color="#517D24"> Yoga Career</chakra.span> Workshop?</Heading>
+            <Box fontFamily='Inter' py={10} display='flex' flexDir='column' justifyContent='center' w='full' px={6} py={6}>
+                <Heading textAlign={{ base: 'left', md: 'center' }} fontFamily='Inter' fontSize={{ base: "3xl", md: '4xl' }}>Who Would Thrive in This<chakra.span color="#517D24"> Yoga Career</chakra.span> Workshop?</Heading>
 
-                <Grid maxWidth='1300px' margin='0 auto' mt={16} gridTemplateColumns={{base:'repeat(1,1fr)',md:'repeat(2,1fr)'}} gap={10} justifyContent='space-between' >
+                <Grid maxWidth='1300px' margin='0 auto' mt={{ base: "6", md: '16' }} gridTemplateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }} gap={{ base: '6', md: '10' }} justifyContent='space-between' >
 
 
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>1</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Lost in your job jungle?
@@ -68,7 +114,7 @@ function Workshop() {
                         <Box mt={5} fontWeight='400' color="#000">This workshop helps you discover if yoga's
                             your path to <strong>purpose</strong> and <strong>prosperity</strong>.</Box>
                     </Box>
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>2</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Longing for a job that fuels your passion?
@@ -77,7 +123,7 @@ function Workshop() {
                         </Flex>
                         <Box mt={5} fontWeight='400' color="#000">Explore <strong>teaching, therapy, entrepreneurship,</strong> and more all powered by your love for yoga.</Box>
                     </Box>
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>3</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Craving flexibility and work-life balance? ‍
@@ -87,7 +133,7 @@ function Workshop() {
                         <Box mt={5} fontWeight='400' color="#000">Learn how yoga careers offer <strong>adaptability</strong> and <strong>freedom</strong> to design your ideal schedule.
                         </Box>
                     </Box>
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>4</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>
@@ -100,7 +146,7 @@ function Workshop() {
                             family life and skills.
                         </Box>
                     </Box>
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>5</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Curious about yoga's potential?
@@ -110,17 +156,16 @@ function Workshop() {
                             Learn the basics while exploring exciting
                             <strong>career possibilities  </strong>within the yoga world.</Box>
                     </Box>
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>6</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Dream of a job that sparks joy and income?
 
                             </Box>
                         </Flex>
-                        <Box mt={5} fontWeight='400' color="#000">This workshop opens doors to a  <strong>side hustle</strong>
-                            you'll truly love.</Box>
+                        <Box mt={5} fontWeight='400' color="#000">This workshop opens doors to a <strong>side hustle</strong> you'll truly love.</Box>
                     </Box>
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>7</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Retired but yearning for new
@@ -132,8 +177,8 @@ function Workshop() {
                             <strong> stimulation</strong> and   <strong>opportunities</strong> to connect
                             with others.</Box>
                     </Box>
-                    <Box maxW='md' borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
-                        <Flex alignItems='center' gap={5}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                        <Flex alignItems='center' >
                             <Box className='circle-green'><span>8</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Intrigued by yoga's benefits but
                                 unsure where to begin? ️
@@ -145,10 +190,11 @@ function Workshop() {
                 </Grid>
             </Box>
 
-            <Box maxW='1300px' margin='0 auto' mt={10}>
+            <Box maxW='1300px' margin='0 auto' mt={10} px={{ base: '6', md: "6", lg: "6" }}>
                 <Box borderRadius='26px' className='rounded-corners-gradient-borders ' p={5} mb={6}>
                     <Box display="flex" alignItems='flex-end' gap={3} >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 139 94" fill="none">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" className='work-svg-1' width="80" height="80" viewBox="0 0 139 94" fill="none">
                             <path d="M138.454 64.561C135.711 69.3512 132.449 73.734 128.365 77.4681C119.178 85.8626 108.397 90.9303 96.1605 92.9487C88.3355 94.2391 80.5826 93.9111 72.9198 91.8278C70.4292 91.1502 67.9314 91.2223 65.4624 91.9071C44.0022 97.8506 18.0943 88.6019 4.78348 71.2939C3.30931 69.3764 2.05139 67.2823 0.789878 65.2098C-0.14004 63.6852 0.278063 62.4525 1.94687 61.9046C4.37258 61.1045 6.83795 60.4196 9.31412 59.7781C10.5937 59.4465 11.675 60.1637 11.902 61.2991C12.1183 62.3804 11.4623 63.3788 10.244 63.7068C8.68697 64.1249 7.11548 64.4889 5.2989 64.9359C9.09065 71.1209 14.0214 75.9363 19.882 79.7965C30.9365 87.0701 43.0615 90.3933 56.6354 89.4778C56.2173 89.2219 56.0803 89.1209 55.9253 89.0524C55.7631 88.9803 55.5829 88.9443 55.4135 88.883C31.7511 80.2543 15.9569 64.0492 8.65093 39.8137C7.65973 36.5265 7.36057 33.0195 6.86678 29.599C6.57483 27.5662 7.56242 26.7408 9.6313 26.8921C17.0274 27.4328 24.0126 29.462 30.6878 32.6338C31.005 32.7852 31.3402 32.9042 31.834 33.1096C31.834 32.3563 31.8556 31.7111 31.834 31.0696C31.6033 25.3207 32.1079 19.6474 33.5388 14.0643C34.1191 11.7936 35.1175 11.3178 37.2873 12.2586C43.4976 14.951 48.9942 18.7211 53.9574 23.3022C54.3755 23.6879 54.7936 24.0772 55.2225 24.4736C56.3867 21.5325 57.4175 18.6562 58.6538 15.8737C60.8993 10.8312 63.8116 6.18885 67.4412 2.01864C68.8505 0.400292 69.9282 0.38229 71.3195 1.99343C76.6286 8.13521 80.3519 15.1672 82.893 22.8553C83.0624 23.3635 83.2354 23.8681 83.4552 24.5133C84.6339 23.468 85.7115 22.4876 86.8181 21.5361C91.2802 17.6975 96.1821 14.5617 101.581 12.2153C103.636 11.3214 104.663 11.8332 105.229 14.0391C106.656 19.6222 107.165 25.2954 106.941 31.0443C106.916 31.6715 106.941 32.2986 106.941 33.1168C107.41 32.9186 107.802 32.7672 108.188 32.587C114.791 29.4836 121.683 27.4508 128.989 26.9138C131.364 26.7408 132.128 27.5517 131.905 29.9955C130.661 43.436 125.273 55.1285 116.846 65.4801C107.831 76.5562 96.6471 84.5831 82.9939 88.9948C82.792 89.0597 82.6046 89.157 82.3163 89.2759C98.3015 92.9307 126.635 79.4361 133.343 64.9251C131.811 64.5358 130.312 64.1501 128.809 63.7717C127.363 63.4076 126.65 62.5102 126.877 61.3279C127.107 60.1205 128.264 59.4609 129.724 59.8393C131.937 60.4124 134.154 60.9999 136.316 61.7352C137.106 62.0019 137.751 62.7084 138.461 63.213V64.5646L138.454 64.561ZM69.3443 77.1906C70.4256 74.3828 71.3303 71.6688 72.5017 69.0736C78.7516 55.2186 88.4472 44.3768 101.293 36.3391C102.158 35.7984 102.702 35.2578 102.71 34.1585C102.72 32.2698 102.926 30.3811 102.933 28.4925C102.947 24.5385 102.619 20.6134 101.668 16.7315C101.452 16.7856 101.311 16.7928 101.196 16.8505C95.1441 19.7916 89.8601 23.7816 85.2069 28.6186C84.9042 28.9322 84.778 29.5882 84.8393 30.0495C85.2826 33.3006 85.8161 36.5409 86.2774 39.7884C86.5117 41.4392 85.8413 42.4953 84.5726 42.6575C83.2894 42.8197 82.4316 41.9691 82.2802 40.2895C81.4404 30.9542 79.1517 22.0335 74.5525 13.812C73.0531 11.134 71.2762 8.61097 69.629 6.01585C69.4344 6.01946 69.2397 6.02666 69.0487 6.03026C67.2466 8.96779 65.2642 11.808 63.6747 14.8537C57.5725 26.5425 55.5721 39.0676 56.5237 52.1297C56.5741 52.8361 56.931 53.6111 57.3671 54.1805C62.478 60.845 66.4464 68.1005 68.937 76.1453C69.0343 76.4661 69.1785 76.7689 69.3443 77.1942V77.1906ZM67.0591 87.207C64.3451 59.6591 37.6081 33.6214 11.2352 31.1993C13.0698 56.1737 38.4119 84.2299 67.0591 87.207ZM127.54 31.2065C99.4513 33.8485 73.4929 62.074 71.8204 87.1962C100.223 84.2983 125.673 56.2855 127.54 31.2065ZM52.13 47.7901C52.1516 47.7252 52.2057 47.6423 52.2057 47.5594C52.1841 41.605 52.6887 35.7047 53.9538 29.8729C54.0439 29.462 53.7663 28.8133 53.442 28.4997C51.7299 26.8453 50.0106 25.1873 48.1832 23.6699C44.8276 20.8801 41.1836 18.5229 37.1071 16.6486C35.7627 22.5057 35.6113 28.3087 36.0547 34.1621C36.1376 35.2398 36.6025 35.7984 37.4784 36.3355C39.2769 37.4384 41.0719 38.5738 42.7119 39.893C45.8909 42.4412 48.9618 45.1228 52.13 47.7937V47.7901Z" fill="url(#paint0_linear_187_875)" />
                             <defs>
                                 <linearGradient id="paint0_linear_187_875" x1="69.3828" y1="0.794922" x2="69.3828" y2="93.7119" gradientUnits="userSpaceOnUse">
@@ -157,9 +203,12 @@ function Workshop() {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <Text fontSize='3xl' fontWeight='700' color="#585700">Deepen your understanding</Text>
+
+
+
+                        <Text fontSize={{ base: 'xl', md: '3xl' }} width="100%" fontWeight='700' color="#585700">Deepen your understanding</Text>
                     </Box>
-                    <Box mt={3} fontSize='2xl' color="#202020">
+                    <Box mt={3} fontSize={{ base: 'lg', md: '2xl' }} color="#202020">
                         Understand directly from Mr. Sharath, a renowned yoga master and the
                         visionary behind AthaYog Academy. His extensive experience and
                         insights will guide you through the intricacies of building a successful yoga
@@ -168,8 +217,8 @@ function Workshop() {
                 </Box>
                 <Box borderRadius='26px' className='rounded-corners-gradient-borders ' p={5} mb={6}>
                     <Box display="flex" alignItems='flex-end' gap={2} justifyContent='flex-end'>
-                        <Text fontSize='3xl' fontWeight='700' color="#585700">Gain firsthand wisdom</Text>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 152 152" fill="none">
+                        <Text fontSize={{ base: 'xl', md: '3xl' }} fontWeight='700' color="#585700">Gain firsthand wisdom</Text>
+                        <svg className='work-svg-2' xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 152 152" fill="none">
                             <path d="M57.9083 104.258C54.6866 102.989 51.5733 102.011 48.6833 100.58C36.5074 94.5428 30.054 84.5158 28.6327 71.0945C28.565 70.4651 28.5277 69.8289 28.4702 69.1995C28.2773 67.0472 28.5413 66.5734 30.5887 65.7511C35.0116 63.9711 39.6241 63.3958 44.3584 63.6361C44.8593 63.6631 45.3601 63.6936 45.9456 63.7274C45.2586 61.4736 44.5107 59.3349 43.9523 57.1488C42.1926 50.2521 42.0945 43.3553 44.2129 36.4992C44.7578 34.7361 45.2755 34.3198 47.1334 34.3537C54.9032 34.489 61.7255 37.1151 67.5766 42.2487C67.827 42.4687 68.0808 42.6785 68.4463 42.9865C68.7373 41.1827 68.9336 39.4805 69.2923 37.8156C70.9945 29.8732 74.9944 23.149 80.3379 17.1592C81.3227 16.056 82.3649 15.0036 83.4106 13.9579C84.7812 12.5839 85.7118 12.5636 87.0722 13.9511C92.348 19.325 96.0704 25.6634 98.2532 32.8512C99.2041 35.9848 99.7354 39.2437 100.473 42.5161C100.656 42.3739 100.937 42.1709 101.201 41.9475C107.573 36.5161 115.008 34.1777 123.292 34.3266C124.994 34.3571 125.502 34.7868 126.009 36.418C128.717 45.1455 127.813 53.7004 124.771 62.1504C124.602 62.6208 124.439 63.0946 124.219 63.724C126.564 63.724 128.788 63.6191 131.001 63.7477C134.219 63.9372 137.329 64.7054 140.293 66.0049C141.332 66.4584 141.908 67.1859 141.843 68.3568C141.4 76.4278 139.329 83.9439 134.273 90.4142C128.974 97.1993 121.942 101.301 113.756 103.585C113.39 103.687 113.025 103.788 112.659 103.896C112.625 103.907 112.598 103.944 112.517 104.011V109.937C112.781 110.022 113.011 110.113 113.251 110.167C118.652 111.341 121.681 115.791 121.113 121.724C120.612 126.952 116.568 130.729 111.262 130.739C93.8268 130.773 76.3921 130.773 58.9573 130.739C53.9015 130.729 49.7053 126.837 49.1774 121.866C48.5682 116.147 51.6816 111.368 56.8423 110.231C57.6917 110.045 57.9421 109.731 57.9184 108.908C57.8643 107.267 57.9015 105.622 57.9015 104.258H57.9083ZM108.422 109.862C108.422 109.338 108.422 108.959 108.422 108.583C108.422 101.94 108.432 95.2974 108.422 88.6545C108.405 79.839 101.942 73.3957 93.1128 73.3822C87.9182 73.3754 82.727 73.3822 77.5325 73.3822C68.3278 73.3822 61.9827 79.7002 61.9658 88.888C61.9522 95.4057 61.9658 101.92 61.9658 108.438C61.9658 108.888 61.9658 109.341 61.9658 109.856H67.5529C67.5529 109.311 67.5529 108.813 67.5529 108.316C67.5529 102.732 67.5529 97.1451 67.5529 91.5614C67.5529 91.0978 67.5529 90.6274 67.6002 90.1672C67.7153 89.0572 68.4395 88.5428 69.4649 88.4379C70.4869 88.333 71.343 89.0335 71.5258 90.086C71.6036 90.5394 71.6036 91.0132 71.6036 91.4768C71.607 97.1045 71.6036 102.732 71.6104 108.36C71.6104 108.847 71.6544 109.338 71.6781 109.852H98.8725C98.8725 109.331 98.8725 108.878 98.8725 108.424C98.8725 102.712 98.8657 96.9996 98.8826 91.2873C98.8826 90.7459 98.9097 90.1706 99.089 89.6697C99.4105 88.7797 100.148 88.333 101.079 88.421C102.05 88.5158 102.717 89.0775 102.879 90.0893C102.943 90.5022 102.927 90.932 102.927 91.355C102.927 97.0673 102.927 102.78 102.927 108.492V109.862H108.429H108.422ZM122.348 38.3435C114.642 38.4687 107.945 40.9019 102.422 46.357C101.092 47.6734 100.324 49.0676 100.131 51.0473C99.7794 54.6513 98.93 58.2012 98.3885 61.7883C98.0197 64.235 97.1432 66.4212 95.6441 68.3738C95.4275 68.6546 95.2278 68.9457 94.93 69.3585C101.796 70.0929 106.825 73.4431 110.253 79.2434C117.322 71.4363 122.784 58.851 123.563 48.5566C123.823 45.1184 123.505 41.7242 122.348 38.3469V38.3435ZM75.5494 69.3382C73.5664 67.1623 72.4835 64.8205 72.0131 62.1809C71.8743 61.4026 71.6916 60.6276 71.4784 59.8628C70.6222 56.8239 69.7627 53.7884 68.8693 50.7631C68.6493 50.0152 68.47 49.1692 67.9996 48.5939C63.0317 42.5634 56.6798 39.1218 48.8593 38.4586C48.0437 38.3909 47.7662 38.6515 47.5598 39.3993C46.4735 43.3452 46.3753 47.3384 46.9912 51.3485C48.4904 61.1454 52.6663 69.7714 58.602 77.6055C59.0453 78.1909 59.5428 78.7358 60.0673 79.3618C63.5698 73.3923 68.5985 70.103 75.546 69.3348L75.5494 69.3382ZM57.932 99.7576C57.932 99.0538 57.9184 98.4717 57.932 97.893C58.0572 93.3347 58.1993 88.7729 58.2974 84.2146C58.3042 83.8491 58.1181 83.4024 57.8744 83.1182C54.135 78.7223 50.9709 73.9473 48.3347 68.8137C48.1689 68.4922 47.7899 68.1166 47.4616 68.0658C42.6799 67.3348 37.9558 67.5616 33.3399 69.0912C33.0218 69.1961 32.6428 69.7951 32.6665 70.1402C32.7646 71.5683 32.9406 72.9998 33.2045 74.4109C35.9389 89.0775 46.5378 97.0538 57.9286 99.761L57.932 99.7576ZM85.2245 18.0222C75.7931 25.3927 69.5596 44.3502 73.6036 53.3586C78.3041 45.758 89.2854 44.1201 95.8945 52.0185C97.7896 40.3706 93.326 26.3977 85.2211 18.0255L85.2245 18.0222ZM137.647 69.3044C132.73 67.5785 127.735 67.3078 122.659 68.0793C122.375 68.1233 122.067 68.5159 121.915 68.8171C119.309 73.9135 116.165 78.6512 112.47 83.02C112.223 83.3111 112.013 83.7544 112.023 84.1165C112.145 88.1232 112.328 92.1266 112.466 96.1299C112.507 97.3008 112.473 98.4751 112.473 99.673C125.197 96.7526 136.737 86.6884 137.647 69.301V69.3044ZM94.1584 113.984C92.4326 118.685 90.3311 120.952 86.5104 121.944C85.15 122.299 83.6847 122.312 82.26 122.363C79.5392 122.461 76.8523 124.472 76.6526 126.698H77.2855C88.5443 126.698 99.8065 126.708 111.065 126.691C114.608 126.688 117.211 124.049 117.221 120.519C117.231 116.573 114.713 113.95 110.937 113.964C108.575 113.974 106.213 113.981 103.854 113.981C100.612 113.981 97.3699 113.981 94.1618 113.981L94.1584 113.984ZM89.6272 114.079C89.5121 114.049 89.3971 113.994 89.282 113.994C79.1095 113.988 68.937 113.944 58.7644 114.001C55.6951 114.018 53.2822 116.668 53.1875 119.801C53.069 123.619 55.1299 126.492 58.4632 126.624C63.0114 126.8 67.5698 126.668 72.1654 126.668C72.788 123.971 74.1653 121.805 76.4158 120.241C78.5782 118.739 80.9809 118.181 83.6001 118.282C86.48 118.39 89.0789 116.522 89.6306 114.076L89.6272 114.079ZM85.2583 50.9965C79.8878 50.9627 75.9657 54.8476 75.942 60.2215C75.9183 65.1758 80.0299 69.2875 85.0519 69.345C90.1991 69.4025 94.4799 65.2638 94.463 60.2418C94.4495 54.9661 90.5307 51.0304 85.255 50.9999L85.2583 50.9965Z" fill="url(#paint0_linear_187_824)" />
                             <defs>
                                 <linearGradient id="paint0_linear_187_824" x1="85.1331" y1="12.9189" x2="85.1331" y2="130.764" gradientUnits="userSpaceOnUse">
@@ -180,7 +229,7 @@ function Workshop() {
                         </svg>
 
                     </Box>
-                    <Box mt={3} fontSize='2xl' color="#202020">
+                    <Box mt={3} fontSize={{ base: 'lg', md: '2xl' }} color="#202020">
                         Mr. Sharath's personal journey from passionate practitioner to esteemed
                         academy leader is an inspiring testament to the financial potential of a
                         yoga career. Hear his valuable lessons and insider tips for attracting
@@ -189,7 +238,7 @@ function Workshop() {
                 </Box>
                 <Box borderRadius='26px' className='rounded-corners-gradient-borders ' p={5} mb={6}>
                     <Box display="flex" alignItems='flex-end' gap={2}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 98 120" fill="none">
+                        <svg className='work-svg-3' xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 98 120" fill="none">
                             <path d="M45.3155 96.2904C40.3436 95.5872 35.3753 94.884 30.4034 94.1843C28.7496 93.9511 27.9439 93.0818 28.1206 91.7143C28.2902 90.3962 29.3574 89.746 31.0218 89.9828C38.8277 91.0818 46.6336 92.2055 54.4465 93.2762C55.1603 93.3751 55.9483 93.3115 56.6445 93.1136C60.2842 92.0712 63.8991 90.944 67.5317 89.8803C69.1431 89.4103 70.5672 90.3962 70.4682 91.8945C70.3905 93.0606 69.652 93.6508 68.5671 93.9759C62.7895 95.7003 57.0226 97.4601 51.2486 99.2057C47.1636 100.442 43.0645 101.637 38.9938 102.927C36.1739 103.817 34.5802 106.266 34.7569 109.213C34.9159 111.909 36.8877 114.252 39.6581 114.697C40.7853 114.878 42.0363 114.704 43.1564 114.411C49.881 112.644 56.588 110.793 63.2984 108.976C64.9875 108.52 66.1466 109.036 66.4787 110.365C66.7861 111.598 66.0264 112.598 64.3974 113.044C57.8601 114.832 51.2486 116.397 44.7961 118.45C38.1881 120.553 31.6084 116.856 30.4917 109.828C27.0676 109.471 23.6152 109.111 20.1592 108.754C17.3994 108.467 14.629 108.248 11.8763 107.895C6.24714 107.171 3.50501 101.817 5.91498 96.1703C6.48744 94.8239 7.44154 93.6437 8.19775 92.4281C7.4274 92.2161 6.51217 92.0571 5.67116 91.7143C-0.304295 89.2796 -1.59054 81.4737 3.34247 77.2474C6.28956 74.7244 9.36033 72.3427 12.424 69.9574C13.8905 68.8125 14.7916 67.4344 15.1061 65.5757C15.6821 62.1833 16.2051 58.7698 17.0567 55.4446C19.5091 45.8613 27.8909 38.9494 37.7322 38.2533C39.4425 38.1331 41.167 38.1685 42.8808 38.225C44.2377 38.2709 45.1106 39.1932 45.0788 40.3735C45.047 41.5467 44.1211 42.3488 42.7783 42.4583C39.8948 42.6916 36.8806 42.5078 34.1526 43.2994C26.2725 45.5963 21.9049 51.183 20.5268 59.2151C20.085 61.7805 19.6363 64.346 19.1522 66.9043C18.6998 69.2931 17.5408 71.2684 15.6291 72.7915C12.5936 75.212 9.56528 77.6432 6.54045 80.0744C4.39197 81.7988 3.95026 84.4067 5.45561 86.3678C7.02809 88.4138 9.62183 88.6471 11.894 86.905C15.8835 83.8448 19.8518 80.7528 23.8414 77.6962C25.1523 76.6926 26.0004 75.4417 26.4209 73.8198C27.8415 68.3107 29.3185 62.8159 30.7815 57.3175C31.1879 55.7874 32.0359 55.07 33.2091 55.2185C34.3611 55.3633 34.9795 56.169 35.0961 57.6991C35.6827 65.3601 36.2728 73.0247 36.8594 80.6857C37.075 83.5162 36.2022 84.9544 33.5802 86.0357C26.8238 88.8202 20.0638 91.5942 13.3039 94.3752C10.9081 95.3611 9.66422 97.241 9.34619 99.7322C9.0635 101.966 10.2225 103.446 12.4382 103.686C18.3076 104.33 24.1841 104.909 30.0535 105.545C30.7567 105.623 31.0465 105.383 31.3115 104.761C32.6508 101.58 35.0573 99.6192 38.3506 98.6721C40.7076 97.9937 43.0469 97.2516 45.3968 96.5413C45.3756 96.46 45.3544 96.3823 45.3332 96.301L45.3155 96.2904ZM17.9366 87.587C17.9896 87.6576 18.0426 87.7283 18.0956 87.799C22.7282 85.8979 27.3609 84.0073 31.9829 82.078C32.2621 81.9613 32.6049 81.5196 32.5872 81.2511C32.3681 77.8022 32.0854 74.3604 31.8204 70.9151C31.3433 71.848 31.0571 72.8021 30.8274 73.7703C30.05 77.0637 28.4846 79.7599 25.5905 81.7246C22.9367 83.5268 20.4844 85.6187 17.9401 87.5834L17.9366 87.587Z" fill="url(#paint0_linear_187_843)" />
                             <path d="M90.4137 92.8875C92.4809 95.6296 93.0392 98.6438 91.9014 101.874C90.9967 104.436 89.2794 106.248 86.6044 106.994C82.2792 108.199 77.9504 109.383 73.6146 110.545C72.0456 110.966 70.9042 110.351 70.6039 109.026C70.3318 107.821 71.0774 106.831 72.6251 106.411C76.6147 105.322 80.6148 104.266 84.6043 103.167C86.9931 102.51 88.0921 101.266 88.2157 99.1951C88.3465 96.9618 87.1733 95.0289 85.0849 94.1596C78.0564 91.2337 71.0244 88.3043 63.9782 85.4243C61.8368 84.548 60.8085 83.0391 60.8156 80.7387C60.8297 73.0529 60.8191 65.3636 60.8191 57.6779C60.8191 57.5895 60.8191 57.5012 60.8191 57.4128C60.8827 55.9746 61.5788 55.0842 62.7344 54.9569C63.8192 54.8368 64.6956 55.4976 65.0913 56.8369C66.6426 62.0808 68.1621 67.3319 69.7099 72.5759C71.6004 78.9895 70.7947 77.841 76.2118 81.5868C79.1483 83.6186 82.0954 85.6363 85.046 87.647C87.5055 89.322 90.3359 88.9792 92.0109 86.8237C93.6435 84.7211 93.3184 81.9154 91.1628 79.9507C88.0991 77.1555 85.0177 74.378 81.9152 71.6253C80.3215 70.2083 79.2225 68.5192 78.6253 66.4591C77.5546 62.777 76.5051 59.0843 75.286 55.4481C72.6675 47.6458 65.6779 42.5926 57.4763 42.4583C55.5822 42.4265 53.6846 42.4689 51.7906 42.4442C50.2711 42.423 49.3099 41.536 49.3488 40.2568C49.3841 39.0165 50.2958 38.2038 51.7799 38.2179C55.515 38.2568 59.2855 37.8928 62.9535 38.9211C71.5368 41.3205 77.0952 46.8471 79.7314 55.3492C80.7243 58.5507 81.5512 61.8052 82.6643 64.9608C83.1272 66.2718 83.94 67.5934 84.9329 68.5581C87.7811 71.3214 90.7282 73.9964 93.7707 76.5407C99.8981 81.668 97.5093 90.6824 90.7847 92.633C90.6716 92.6648 90.5798 92.7744 90.4172 92.8945L90.4137 92.8875ZM71.8901 84.0603C67.3317 81.6362 66.6002 76.94 65.1655 72.6713C65.0489 75.2862 65.0277 77.8411 65.0737 80.3959C65.0807 80.7528 65.3316 81.2934 65.6178 81.4242C67.6886 82.3535 69.7947 83.1946 71.8901 84.0639V84.0603Z" fill="url(#paint1_linear_187_843)" />
                             <path d="M48.2856 35.3696C38.727 35.3378 30.8363 27.5072 30.8398 18.0546C30.8434 8.06137 38.5468 0.315548 48.4093 0.386222C58.3425 0.456896 65.8339 8.05784 65.8268 18.0476C65.8197 27.592 57.9078 35.4015 48.2821 35.3696H48.2856ZM61.5899 17.8921C61.7207 10.7576 55.8088 4.68318 48.6213 4.56303C41.3419 4.43935 35.2499 10.2487 35.0838 17.4786C34.9106 24.9665 40.561 30.9031 48.0135 31.0515C55.6851 31.207 61.4521 25.6167 61.5934 17.8921H61.5899Z" fill="url(#paint2_linear_187_843)" />
@@ -208,9 +257,9 @@ function Workshop() {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <Text fontSize='3xl' fontWeight='700' color="#585700">Get personalised mentorship</Text>
+                        <Text fontSize={{ base: 'xl', md: '3xl' }} width="100%" fontWeight='700' color="#585700">Get personalised mentorship</Text>
                     </Box>
-                    <Box mt={3} fontSize='2xl' color="#202020">
+                    <Box mt={3} fontSize={{ base: 'lg', md: '2xl' }} color="#202020">
                         This exclusive workshop offers a rare opportunity to interact with
                         Mr. Sharath. Ask your questions, receive personalised guidance and
                         tap into his proven strategies for achieving financial success in
@@ -225,7 +274,7 @@ function Workshop() {
 
 
                 </Box>
-                <Box maxW='2xl' margin='0 auto' textAlign='center' mt={10} fontSize='2xl'>
+                <Box maxW='2xl' margin='0 auto' textAlign='center' mt={10} fontSize={{ base: 'xl', md: '2xl' }}>
                     Learn from the best! Don't miss this chance to gain invaluable
                     insights from Mr. Sharath and unlock your income potential
                     in the rewarding world of yoga.
@@ -236,30 +285,30 @@ function Workshop() {
 
                 </Box>
 
-                <Flex justifyContent='space-evenly' alignItems='center'  flexWrap='wrap' mt={10}>
-                    <Flex alignItems='center' gap={3}  fontSize='2xl'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 68 69" fill="none">
+                <Flex justifyContent='space-evenly' alignItems='center' flexWrap='wrap' mt={10}>
+                    <Flex alignItems='center' gap={3} fontSize={{ base: 'xl', md: '2xl' }}>
+                        <svg className='work-svg' xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 68 69" fill="none">
                             <path d="M53.8333 17.5249H14.1667C11.0371 17.5249 8.5 20.062 8.5 23.1916V54.3582C8.5 57.4879 11.0371 60.0249 14.1667 60.0249H53.8333C56.9629 60.0249 59.5 57.4879 59.5 54.3582V23.1916C59.5 20.062 56.9629 17.5249 53.8333 17.5249Z" stroke="#548423" stroke-width="2.23096" />
                             <path d="M8.5 28.8582C8.5 23.5146 8.5 20.8456 10.1603 19.1852C11.8207 17.5249 14.4897 17.5249 19.8333 17.5249H48.1667C53.5103 17.5249 56.1793 17.5249 57.8397 19.1852C59.5 20.8456 59.5 23.5146 59.5 28.8582H8.5Z" fill="#548423" />
                             <path d="M19.832 9.0249V17.5249M48.1654 9.0249V17.5249" stroke="#548423" stroke-width="2.23096" stroke-linecap="round" />
                         </svg>
                         05/01/24
                     </Flex>
-                    <Flex alignItems='center' gap={3}  fontSize='2xl'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 66 66" fill="none">
+                    <Flex alignItems='center' gap={3} fontSize={{ base: 'xl', md: '2xl' }}>
+                        <svg className='work-svg' xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 66 66" fill="none">
                             <path d="M33 8.1499C19.543 8.1499 8.625 19.0679 8.625 32.5249C8.625 45.9819 19.543 56.8999 33 56.8999C46.457 56.8999 57.375 45.9819 57.375 32.5249C57.375 19.0679 46.457 8.1499 33 8.1499Z" stroke="#548423" stroke-width="4.0625" stroke-miterlimit="10" />
                             <path d="M33 16.2749V34.5562H45.1875" stroke="#548423" stroke-width="4.0625" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         7:00 pm
                     </Flex>
-                    <Flex alignItems='center' gap={3}  fontSize='2xl'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 70 71" fill="none">
+                    <Flex alignItems='center' gap={3} fontSize={{ base: 'xl', md: '2xl' }}>
+                        <svg className='work-svg' xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 70 71" fill="none">
                             <path d="M34.9975 11.4624L34.3128 12.0749L9.36 37.3033L7.85938 38.8083L9.36219 40.3833L30.1434 61.1646L31.7184 62.6674L33.2278 61.1646L58.4497 36.2118L59.06 35.5249V11.4624H34.9975ZM36.8438 15.8374H54.685V33.6787L31.7163 56.5118L14.0106 38.8062L36.8438 15.8374ZM48.1225 20.2124C47.5423 20.2124 46.9859 20.4429 46.5757 20.8531C46.1655 21.2633 45.935 21.8197 45.935 22.3999C45.935 22.9801 46.1655 23.5365 46.5757 23.9467C46.9859 24.3569 47.5423 24.5874 48.1225 24.5874C48.7027 24.5874 49.2591 24.3569 49.6693 23.9467C50.0795 23.5365 50.31 22.9801 50.31 22.3999C50.31 21.8197 50.0795 21.2633 49.6693 20.8531C49.2591 20.4429 48.7027 20.2124 48.1225 20.2124Z" fill="#548423" />
                         </svg>
                         ₹199
                     </Flex>
-                    <Flex alignItems='center' gap={3}  fontSize='2xl'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 65 66" fill="none">
+                    <Flex alignItems='center' gap={3} fontSize={{ base: 'xl', md: '2xl' }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 65 66" fill="none" className='work-svg'>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.875 33.0249C4.875 36.6527 5.58954 40.2449 6.97783 43.5965C8.36611 46.9482 10.401 49.9935 12.9662 52.5587C15.5314 55.1239 18.5768 57.1588 21.9284 58.5471C25.28 59.9354 28.8722 60.6499 32.5 60.6499C36.1278 60.6499 39.72 59.9354 43.0716 58.5471C46.4233 57.1588 49.4686 55.1239 52.0338 52.5587C54.599 49.9935 56.6339 46.9482 58.0222 43.5965C59.4105 40.2449 60.125 36.6527 60.125 33.0249C60.125 25.6983 57.2145 18.6718 52.0338 13.4911C46.8531 8.31039 39.8266 5.3999 32.5 5.3999C25.1734 5.3999 18.1469 8.31039 12.9662 13.4911C7.78548 18.6718 4.875 25.6983 4.875 33.0249ZM56.875 33.0249C56.875 39.4896 54.3069 45.6894 49.7357 50.2606C45.1645 54.8318 38.9647 57.3999 32.5 57.3999C26.0353 57.3999 19.8355 54.8318 15.2643 50.2606C10.6931 45.6894 8.125 39.4896 8.125 33.0249C8.125 26.5603 10.6931 20.3604 15.2643 15.7892C19.8355 11.218 26.0353 8.6499 32.5 8.6499C38.9647 8.6499 45.1645 11.218 49.7357 15.7892C54.3069 20.3604 56.875 26.5603 56.875 33.0249Z" fill="#548423" />
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M21.125 33.0249C21.125 47.3119 25.8115 59.0249 32.5 59.0249C39.1885 59.0249 43.875 47.3119 43.875 33.0249C43.875 18.7379 39.1885 7.0249 32.5 7.0249C25.8115 7.0249 21.125 18.7379 21.125 33.0249ZM40.625 33.0249C40.625 45.6642 36.5787 55.7749 32.5 55.7749C28.4212 55.7749 24.375 45.6642 24.375 33.0249C24.375 20.3857 28.4212 10.2749 32.5 10.2749C36.5787 10.2749 40.625 20.3857 40.625 33.0249Z" fill="#548423" />
                             <path d="M12.1387 17.7885L14.3163 15.377C14.664 15.689 15.0345 15.9945 15.431 16.2902C19.7145 19.5012 26.4745 21.4577 33.8423 21.4577C40.1245 21.4577 45.9875 20.0375 50.271 17.5902C51.2579 17.0318 52.1904 16.3822 53.0563 15.65L55.1688 18.12C54.2003 18.9487 53.1017 19.7125 51.8862 20.408C47.086 23.1542 40.6673 24.7077 33.8423 24.7077C25.8148 24.7077 18.3657 22.553 13.481 18.8902C13.0169 18.5427 12.569 18.1772 12.1387 17.7885ZM12.1387 48.2994L14.3163 50.7044C14.664 50.3924 15.0345 50.087 15.431 49.7945C19.7145 46.5835 26.4745 44.627 33.8423 44.627C40.1245 44.627 45.9875 46.044 50.271 48.4945C51.3143 49.0925 52.247 49.7425 53.0563 50.4314L55.1688 47.9614C54.1485 47.0979 53.0495 46.3319 51.8862 45.6735C47.086 42.9305 40.6673 41.377 33.8423 41.377C25.8148 41.377 18.3657 43.5317 13.481 47.1912C13.0065 47.5487 12.558 47.9192 12.1387 48.2994ZM6.5 34.6495V31.3995H58.5V34.6495H6.5Z" fill="#548423" />

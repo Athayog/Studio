@@ -337,3 +337,26 @@ body {
      border-radius: 120px !important;
      background: #F54900 !important;
 }
+
+.work-svg{
+     width:50px;
+}
+
+@media only screen and (max-width: 600px) {
+     .work-svg{
+          width:20px;
+     }
+     .work-svg-1{
+          width: 60px;
+          height: 30px;
+     }
+     .work-svg-2{
+          width: 60px;
+          height: 60px;
+     }
+     .work-svg-3{
+          width: 60px;
+          height: 50px;
+     }
+    
+   }
