@@ -5,9 +5,10 @@ import Image from 'next/image'
 import HeroImage from 'public/work-academy.png'
 import React, { useEffect, useState } from 'react'
 import BG from 'public/bgwork.png'
+import Link from 'next/link'
 
 function Workshop() {
-   
+
 
     const currentTime = new Date();
     const midnight = new Date(currentTime);
@@ -34,7 +35,7 @@ function Workshop() {
         const minutes = Math.floor((time % 3600) / 60);
         const seconds = time % 60;
         return `${hours}:${minutes}:${seconds}`;
-    }; 
+    };
     return (
         <div>
             <NavbarHelper />
@@ -55,7 +56,10 @@ function Workshop() {
                     </Box>
                 </Box>
 
-                <Button  width='max-content' rounded='md' background='#F54900' color='white' fontSize='xl' flex={4} height='100%' padding={{ base: "20px 80px", md: "30px 120px" }}>Register Now</Button>
+                <Link href="/yoga-academy/workshop/register" passHref={true}>
+                    <Button colorScheme='orange' width='max-content' rounded='md' background='#F54900' color='white' fontSize='xl' flex={4} height='100%' padding={{ base: "20px 80px", md: "30px 120px" }}>Register Now</Button>
+
+                </Link>
             </Box>
 
 
@@ -69,20 +73,21 @@ function Workshop() {
 
 
                 </Box>
-                <Flex gap={10} direction={{ base: "column-reverse", md: "row" }} >
-                    <Flex flex="7" direction='column' gap='52px' maxW='md'>
+                <Flex gap={10} direction={{ base: "column-reverse", md: "row" }} justifyContent='space-between'>
+                    <Flex  direction='column' gap='52px' maxW='md'>
                         <Text fontSize={{ base: "2xl", md: "2xl" }}>  Unleash Your Inner Yogi: Unlock a
                             Fulfilling Career with <strong> Mr. Sharath,
                                 Principal AthaYog Academy</strong></Text>
-
-                        <Button width='max-content' rounded='full' background='#F54900' color='white' fontSize='xl' display={{ base: "none", md: "flex" }} padding={{ base: "20px 80px", md: "30px 120px" }}>Register Now</Button>
+                        <Link href="/yoga-academy/workshop/register" passHref={true}>
+                            <Button colorScheme='orange'   width='max-content' rounded='full' background='#F54900' padding={{base:"25px 80px",md:"25px 60px"}}  color='white' fontSize='xl' display={{ base: "none", md: "flex" }}>Register Now</Button>
+                        </Link>
                     </Flex>
                     <Box
-                        flex="3"
+                       
                         position='relative'
                         overflow='hidden'
-                        height='300px'
-                        width='100%'
+                        height='100%'
+                        width='400px'
                         rounded='xl'
                     >
                         <Image
@@ -98,13 +103,13 @@ function Workshop() {
                 </Flex>
             </Flex>
 
-            <Box fontFamily='Inter' py={10} display='flex' flexDir='column' justifyContent='center' w='full' px={6} py={6}>
+            <Box mt={15} fontFamily='Inter' py={10} display='flex' flexDir='column' justifyContent='center' w='full' px={6} py={6}>
                 <Heading textAlign={{ base: 'left', md: 'center' }} fontFamily='Inter' fontSize={{ base: "3xl", md: '4xl' }}>Who Would Thrive in This<chakra.span color="#517D24"> Yoga Career</chakra.span> Workshop?</Heading>
 
                 <Grid maxWidth='1300px' margin='0 auto' mt={{ base: "6", md: '16' }} gridTemplateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }} gap={{ base: '6', md: '10' }} justifyContent='space-between' >
 
 
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>1</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Lost in your job jungle?
@@ -114,7 +119,7 @@ function Workshop() {
                         <Box mt={5} fontWeight='400' color="#000">This workshop helps you discover if yoga's
                             your path to <strong>purpose</strong> and <strong>prosperity</strong>.</Box>
                     </Box>
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>2</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Longing for a job that fuels your passion?
@@ -123,7 +128,7 @@ function Workshop() {
                         </Flex>
                         <Box mt={5} fontWeight='400' color="#000">Explore <strong>teaching, therapy, entrepreneurship,</strong> and more all powered by your love for yoga.</Box>
                     </Box>
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>3</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Craving flexibility and work-life balance? ‍
@@ -133,7 +138,7 @@ function Workshop() {
                         <Box mt={5} fontWeight='400' color="#000">Learn how yoga careers offer <strong>adaptability</strong> and <strong>freedom</strong> to design your ideal schedule.
                         </Box>
                     </Box>
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>4</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>
@@ -146,7 +151,7 @@ function Workshop() {
                             family life and skills.
                         </Box>
                     </Box>
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>5</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Curious about yoga's potential?
@@ -156,7 +161,7 @@ function Workshop() {
                             Learn the basics while exploring exciting
                             <strong>career possibilities  </strong>within the yoga world.</Box>
                     </Box>
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>6</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Dream of a job that sparks joy and income?
@@ -165,7 +170,7 @@ function Workshop() {
                         </Flex>
                         <Box mt={5} fontWeight='400' color="#000">This workshop opens doors to a <strong>side hustle</strong> you'll truly love.</Box>
                     </Box>
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center'>
                             <Box className='circle-green'><span>7</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Retired but yearning for new
@@ -177,7 +182,7 @@ function Workshop() {
                             <strong> stimulation</strong> and   <strong>opportunities</strong> to connect
                             with others.</Box>
                     </Box>
-                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" padding={2}>
+                    <Box maxW={{ base: '100%', md: "100%" }} borderRadius="15.068px" display='flex' flexDirection='column' alignItems='flex-start' flexShrink='0' border=" 1.507px solid rgba(78, 140, 13, 0.20)" bg="rgba(253, 255, 235, 0.20);" boxShadow=" 0px 2.26px 3.767px 0px #E4F7D0;" px={2} py={4}>
                         <Flex alignItems='center' >
                             <Box className='circle-green'><span>8</span></Box>
                             <Box color="#2F5B00" fontSize='lg' fontWeight='700'>Intrigued by yoga's benefits but
@@ -316,10 +321,12 @@ function Workshop() {
                         Online
                     </Flex>
                 </Flex>
+                <Link href="/yoga-academy/workshop/register" passHref={true}>
+                    <Button colorScheme='orange'  margin='60px auto' className='register-work'>
 
-                <Button margin='60px auto' className='register-work'>
-                    Register Now
-                </Button>
+                        Register Now
+                    </Button>
+                </Link>
             </Box>
         </div>
     )

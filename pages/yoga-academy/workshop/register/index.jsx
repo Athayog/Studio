@@ -24,7 +24,7 @@ function RegisterYoga() {
                 setLoading(false)
                 reset()
                 setTimeout(() => {
-                    window.location.href = 'https://rzp.io/l/AefUZIuY2W'
+                    window.location.href = 'https://rzp.io/l/uMmxQ2fB'
                 }, 1000);
                 
             })
@@ -42,10 +42,10 @@ function RegisterYoga() {
     async function registerAndSend(data) {
         try {
             // Call the first function
-            const result1 = await registerForAcademy(data,'academy');
+            const result1 = await registerForAcademy(data,'workshop');
 
             // Assuming registerForAcademy resolves with some result needed for sendToAthayog
-            const result2 = await sendToAthayog(data,'academy');
+            const result2 = await sendToAthayog(data,'workshop');
 
             // You can return the final result if needed
             return result2;
@@ -69,10 +69,7 @@ function RegisterYoga() {
                
                 <ChakraProvider>
                     <Box p={10}>
-                        <Box mb={6}>
-                            <Text p={2} fontSize='12px' bg='green.100' color="green.800" textTransform='uppercase' fontWeight='bold'>Weekend Batch Starting: Feb 17th - May 27th, 11:00 am - 4:00 pm</Text>
-                        
-                        </Box>
+                       
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <Flex gap={{ base: '2', md: "10" }} direction={{ base: 'column', md: 'row' }}>
                                 <FormControl mb={4} isInvalid={errors.name}>
