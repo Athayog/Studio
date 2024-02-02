@@ -10,7 +10,7 @@ function Gurus() {
         <Box p={{base:3,md:10}}>
             <Flex alignItems="center" direction='column' gap={6} py={10} maxW='container.md' margin='0 auto'>
                 <Heading>The Gurus</Heading>
-                <Flex gap={{base:5,md:10}} mt={10} flexWrap='wrap' textAlign='center' justifyContent='center'>
+                <Flex gap={{base:5,md:10}} mt={{base:0,md:10}} flexWrap='wrap' textAlign='center' justifyContent='center'>
 
                 
                 {profiles.map(({ name, info, image, designation }, index) => {

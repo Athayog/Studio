@@ -6,7 +6,7 @@ import Link from 'next/link'
 function Fees() {
     return (
         <Box position='relative' mt={{base:'10',md:'20'}} >
-            <Box height="xs" zIndex={-1} position='relative' bg={`url(${FeesBg.src})`} backgroundSize='cover' filter='blur(100px)'> </Box>
+            <Box height="12rem" zIndex={-1} position='relative' bg={`url(${FeesBg.src})`} backgroundSize='cover' filter='blur(100px)'> </Box>
             <Box p={10} position='absolute' top='0' width='100%' height='100%'>
                 <Flex width='100%' height='100%' justifyContent='center' zIndex={2} alignItems="center" direction='column' gap={6} py={10} maxW='lg' textAlign='center' margin='0 auto'>
                     <Heading fontWeight='normal'>Fees: <chakra.span color="#6A9340"> ₹45,999</chakra.span></Heading>
@@ -14,7 +14,7 @@ function Fees() {
                         with yoga, unlocking opportunities for a healthier, happier and more
                         fulfilling career in the upcoming year!</Text>
                     <a target="_blank" rel="noreferrer" href='https://rzp.io/l/AefUZIuY2W'>
-                        <Button rounded='full'padding={{base:"25px 80px",md:"20px 80px"}}color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Buy Now</Button>
+                        <Button fontWeight='semibold' rounded='full'padding={{base:"25px 80px",md:"20px 80px"}}color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Buy Now</Button>
                     </a>
                 </Flex>
             </Box>
