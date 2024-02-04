@@ -1,6 +1,6 @@
 import HomeLayout from '@/components/layout/HomeLayout'
 import NavbarHelper from '@/components/shared/NavbarHelper'
-import { Box, Button, Flex, Grid, Heading, Text, chakra } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, Heading, Text, chakra, useBreakpointValue } from '@chakra-ui/react'
 import Image from 'next/image'
 import HeroImage from 'public/work-academy.png'
 import React, { useEffect, useState } from 'react'
@@ -29,6 +29,7 @@ function Workshop() {
         return () => clearInterval(interval);
     }, []);
 
+    const buttonSize = useBreakpointValue(['xs', 'md'])
     // Function to format time
     const formatTime = (time) => {
         const hours = Math.floor(time / 3600);
@@ -41,25 +42,27 @@ function Workshop() {
             <NavbarHelper />
             {/* Hero */}
 
-            <Box zIndex='2' gap={2} boxShadow='sm' position='fixed' bottom="0" right="0" display={{ base: "flex", md: "none" }} justifyContent='space-between' bg='white' width="100%" p={5} >
-                <Box flex={6}>
-                    <Box fontSize='3xl' display='flex' alignItems='center' gap={2}>
-                        <Text >
+            <Box zIndex='2' alignItems='stretch' flex="2 1 auto" gap={1} boxShadow='sm' position='fixed' bottom="0" right="0" display={{ base: "flex", md: "none" }} justifyContent='space-between' bg='white' width="100%" py="4" px='2' >
+                <Box >
+                    <Box fontSize='4xl' display='flex' alignItems='center' gap={2}>
+                        <Text  margin='0'>
                             ₹99
                         </Text>
-                        <Text fontSize='2xl' textDecoration='line-through'>
+                        <Text  margin='0'  textDecoration='line-through' color='red'>
+                        <Text  margin='0' fontSize='2xl' color='black'>
                             ₹999
                         </Text>
+                        </Text>
+                        
                     </Box>
                     <Box>
                         Offer ends in  <Text display='inline' fontWeight='bold'>{formatTime(countdownTime)}</Text>
                     </Box>
                 </Box>
-
-                <Link href="/yoga-academy/workshop/register" passHref={true}>
-                    <Button colorScheme='orange' width='max-content' rounded='md' background='#F54900' color='white' fontSize='xl' flex={4} height='100%' padding={{ base: "20px 80px", md: "30px 120px" }}>Register Now</Button>
-
+                <Link href="/yoga-academy/workshop/register" passHref={true} >
+                    <Button flexGrow='1' colorScheme='orange' maxWidth="200px" rounded='xl' background='#F54900' color='white' fontSize='xl' flex={4} padding={{ base: "20px 80px", md: "30px 120px" }} className="work-reg-hero">Register Now</Button>
                 </Link>
+
             </Box>
 
 
@@ -74,20 +77,20 @@ function Workshop() {
 
                 </Box>
                 <Flex gap={10} direction={{ base: "column-reverse", md: "row" }} justifyContent='space-between'>
-                    <Flex  direction='column' gap='52px' maxW='md'>
-                        <Text fontSize={{ base: "2xl", md: "2xl" }}>  Unleash Your Inner Yogi: Unlock a
+                    <Flex direction='column' gap='52px' maxW='md'>
+                        <Text fontSize={{ base: "xl", md: "2xl" }}>  Unleash Your Inner Yogi: Unlock a
                             Fulfilling Career with <strong> Mr. Sharath,
                                 Principal AthaYog Academy</strong></Text>
                         <Link href="/yoga-academy/workshop/register" passHref={true}>
-                            <Button colorScheme='orange'   width='max-content' rounded='full' background='#F54900' padding={{base:"25px 80px",md:"25px 60px"}}  color='white' fontSize='xl' display={{ base: "none", md: "flex" }}>Register Now</Button>
+                            <Button fontWeight='semibold' colorScheme='orange' width='max-content' rounded='full' background='#F54900' padding={{ base: "25px 80px", md: "25px 60px" }} color='white' fontSize='xl' display={{ base: "none", md: "flex" }}>Register Now</Button>
                         </Link>
                     </Flex>
                     <Box
-                       
+
                         position='relative'
                         overflow='hidden'
                         height='100%'
-                        width='400px'
+                        width={{ base: '100%', md: "400px" }}
                         rounded='xl'
                     >
                         <Image
@@ -234,7 +237,7 @@ function Workshop() {
                         </svg>
 
                     </Box>
-                    <Box mt={3} fontSize={{ base: 'lg', md: '2xl' }} color="#202020">
+                    <Box mt={3} fontSize={{ base: 'lg', md: '2xl' }} color="#202020" textAlign='right'>
                         Mr. Sharath's personal journey from passionate practitioner to esteemed
                         academy leader is an inspiring testament to the financial potential of a
                         yoga career. Hear his valuable lessons and insider tips for attracting
@@ -271,7 +274,7 @@ function Workshop() {
                         the yoga world.
                     </Box>
                 </Box>
-                <Box maxW='2xl' fontWeight='500' margin='0 auto' textAlign='center' mt={10} fontSize='xl'>
+                <Box maxW='4xl' fontWeight='500' margin='0 auto' textAlign='center' mt={10} fontSize='2xl' color="#202020">
                     Remember, your unique experiences and passions are valuable
                     assets in the world of yoga. Don't let age, background, or lack of
                     experience hold you back. This workshop is designed to ignite your
@@ -279,7 +282,7 @@ function Workshop() {
 
 
                 </Box>
-                <Box maxW='2xl' margin='0 auto' textAlign='center' mt={10} fontSize={{ base: 'xl', md: '2xl' }}>
+                <Box maxW='4xl' margin='0 auto' color="#000" textAlign='center' mt={10} fontSize={{ base: 'xl', md: '2xl' }} letterSpacing='normal'>
                     Learn from the best! Don't miss this chance to gain invaluable
                     insights from Mr. Sharath and unlock your income potential
                     in the rewarding world of yoga.
@@ -322,7 +325,7 @@ function Workshop() {
                     </Flex>
                 </Flex>
                 <Link href="/yoga-academy/workshop/register" passHref={true}>
-                    <Button colorScheme='orange'  margin='60px auto' className='register-work'>
+                    <Button size={buttonSize} colorScheme='orange' margin='60px auto' fontWeight='semibold' className='register-work' >
 
                         Register Now
                     </Button>

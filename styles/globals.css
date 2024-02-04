@@ -336,7 +336,18 @@ body {
      flex-shrink: 0 !important;
      border-radius: 120px !important;
      background: #F54900 !important;
+
 }
+
+@media only screen and (max-width: 600px) {
+     .register-work {
+          width: 100 !important;
+          height: 20px !important;
+          padding: 32px 60px !important;
+     }
+    
+   }
+
 
 .work-svg{
      width:50px;
@@ -359,4 +370,10 @@ body {
           height: 50px;
      }
     
+   }
+
+
+   .work-reg-hero{
+     height: auto !important;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 8px 0px inset;
    }
