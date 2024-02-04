@@ -274,7 +274,7 @@ function Workshop() {
                         the yoga world.
                     </Box>
                 </Box>
-                <Box maxW='4xl' fontWeight='500' margin='0 auto' textAlign='center' mt={10} fontSize='2xl' color="#202020">
+                <Box maxW='4xl' fontWeight='500' margin='0 auto' textAlign='center' mt={10} fontSize={{ base: 'xl', md: '2xl' }} color="#202020">
                     Remember, your unique experiences and passions are valuable
                     assets in the world of yoga. Don't let age, background, or lack of
                     experience hold you back. This workshop is designed to ignite your
