@@ -66,9 +66,9 @@ function Workshop() {
             </Box>
 
 
-            <Flex bg={`url(${BG.src}),  lightgray 50% / cover no-repeat`} overflow='hidden' rounded={{ base: "none", md: 'xl' }} p={{ base: 5, md: 10 }} bgSize='cover' boxShadow={{ base: "none", md: 'lg' }} overflow='hidden' justifyContent='center' margin={{ base: "0px auto", md: "20px auto" }} maxW='1300px' direction='column' gap="32px"  >
+            <Flex height='auto' bg={`url(${BG.src})`} overflow='hidden' rounded={{ base: "none", md: 'xl' }} p={{ base: 5, md: 10 }} bgSize='cover' boxShadow={{ base: "none", md: 'lg' }} overflow='hidden' justifyContent='center' margin={{ base: "0px auto", md: "20px auto" }} maxW='1300px' direction='column' gap="32px"  >
 
-                <Box fontSize={{ base: "3xl", md: "4xl" }} fontWeight='700'>
+                <Box fontSize={{ base: "3xl", md: "36px" }} fontWeight='700'>
 
 
                     <Text color="#3A6D05" >Earn ₹20k - ₹50k a Month as a Yoga Teacher</Text>
@@ -78,7 +78,7 @@ function Workshop() {
                 </Box>
                 <Flex gap={10} direction={{ base: "column-reverse", md: "row" }} justifyContent='space-between'>
                     <Flex direction='column' gap='52px' maxW='md'>
-                        <Text fontSize={{ base: "xl", md: "2xl" }}>  Unleash Your Inner Yogi: Unlock a
+                        <Text fontSize={{ base: "xl", md: "24px" }}>  Unleash Your Inner Yogi: Unlock a
                             Fulfilling Career with <strong> Mr. Sharath,
                                 Principal AthaYog Academy</strong></Text>
                         <Link href="/yoga-academy/workshop/register" passHref={true}>
