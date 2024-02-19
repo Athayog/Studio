@@ -69,7 +69,7 @@ function RegisterYoga() {
                         <Box mb={6}>
                             <Text p={2} fontSize='12px' bg='green.100' color="green.800" textTransform='uppercase' fontWeight='bold'>   WEEKEND :- Batch 01 = Feb 17th TO May 19th 2024</Text>
                             <Text p={2} fontSize='12px' bg='green.100' color="green.800" textTransform='uppercase' fontWeight='bold'>   
-                            WEEKDAY : - March 11th to May 10th               
+                            WEEKDAY : - March 9th to June 7th              
     </Text>                    
                         </Box>
                         <form onSubmit={handleSubmit(onSubmit)}>
