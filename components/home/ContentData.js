@@ -125,22 +125,7 @@ export const EmployeeData = {
                visible: true,
                designation: 'Teacher'
           },
-          {
-               name: 'Gayatri Rai',
-               info: `Introducing Gayatri Rai, a resident of Bihar and a chemistry graduate with additional qualifications such as a B.Ed., PG Diploma in Human Resource Management, CIDTT from Cambridge University, and CTET. \n \nGayatri began her yoga journey with the aim of reducing weight after her second delivery, but her passion for learning more about yoga gradually grew. She was already a teacher, and teaching yoga became another passion of hers. \n \nGayatri has completed RYT 200 from 1000yoga, advanced yoga training (RYT 300) from Akshar Yoga, and Ashtanga yoga training from 1000yoga. As a professional yoga teacher, Gayatri believes in maintaining a strong work ethic and strives to create a healthy, positive, and conducive work environment.`,
-               image: gayatri,
-               visible: true,
-               designation: 'Teacher'
-          },
-          {
-               name: 'Arathi',
-               info: `Hi, I am Arathi, a passionate Yoga Enthusiast. Completed my advanced yoga training in Ashtanga Vinyasa Yoga (300 hours) and basic level in Power Yoga (200 hours). Previously, worked full-time as a Program Manager and Analyst for 8+ years at Amazon, T-Mobile, Ather, upGrad. I started my yoga journey in 2017, when I moved back to India from the US after 10 years. I was working at start-ups figuring out my niche, while practicing, getting my yoga, and meditation certifications & volunteering at a non-profit school, Parikrama. Recently, I made the big switch from completely moving out of corporate to teaching. Along with yoga, I do enjoy playing football with my ex-colleagues, painting & am raising a doggo who migrated with me from the US. 
- \nCurrently, working with Atha Yog Living aspiring to reach people on a larger scale  by inspiring people to achieve their physical & mental epitome through Yoga.
-`,
-               image: aarti,
-               visible: true,
-               designation: 'Teacher'
-          }
+         
      ]
 };
 
