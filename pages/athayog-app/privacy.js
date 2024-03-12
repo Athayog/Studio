@@ -14,6 +14,7 @@ function Privacy(props) {
 
                <VStack spacing={10} mt={5}>
                     <Box width="100%" fontWeight="light" fontSize="lg">
+
                          <Heading
                               _after={{
                                    content: "''",
@@ -28,18 +29,12 @@ function Privacy(props) {
                          >
                               WHAT DO WE DO WITH YOUR INFORMATION?
                          </Heading>
+                         <Text mb={5} fontSize="xl">This Privacy Policy outlines how  <strong style={{ fontWeight: '500' }}>Athayog Living</strong>{' '} collect, use, and disclose your information when you use our mobile application (&#34;app&#34;).</Text>
                          <Text mb={5} fontSize="xl">
-                              When you purchase sevice from our firm, as part of
-                              the buying and selling process, we collect the
-                              personal information you give us such as your
-                              name, address and email address.
+                              When you purchase a service from our firm through the app, <strong style={{ fontWeight: '500' }}>Athayog Living</strong> collect personal information such as your name, address, and email address.
                          </Text>
                          <Text mb={5} fontSize="xl">
-                              When you browse our website, we also automatically
-                              receive your computer’s internet protocol (IP)
-                              address in order to provide us with information
-                              that helps us learn about your browser and
-                              operating system.
+                              When you use our app, <strong style={{ fontWeight: '500' }}>Athayog Living</strong> may automatically receive your device's internet protocol (IP) address to understand your device, browser, and operating system for better service.
                          </Text>
                          <Text mb={5} fontSize="xl">
                               Email marketing (if applicable): With your
@@ -62,6 +57,9 @@ function Privacy(props) {
                          >
                               CONSENT
                          </Heading>
+                         <Text mb={5}  fontSize="xl">
+                               By using our app and providing personal information, you consent to our collection and use of that information for the purposes outlined in this Privacy Policy.
+                         </Text>
                          <Text mb={5} fontWeight="medium" fontSize="xl">
                               How do you get my consent?
                          </Text>
@@ -86,9 +84,9 @@ function Privacy(props) {
                               If after you opt-in, you change your mind, you may
                               withdraw your consent for us to contact you, for
                               the continued collection, use or disclosure of
-                              your information, at anytime, by contacting us at
+                              your information, at anytime, by contacting us at{' '}
                               <strong style={{ fontWeight: '500' }}>
-                                   info@athayogliving.com
+                                    info@athayogliving.com
                               </strong>{' '}
                               or mailing us at:{' '}
                               <strong style={{ fontWeight: '500' }}>
@@ -222,7 +220,7 @@ function Privacy(props) {
                               service provider or its facilities are located.
                          </Text>
                          <Text mb={5} fontSize="xl">
-                              Once you leave our store’s website or are
+                              Once you leave our app or are
                               redirected to a third-party website or
                               application, you are no longer governed by this
                               Privacy Policy or our website’s Terms of Service.
@@ -232,7 +230,7 @@ function Privacy(props) {
                          </Text>
                          <Text mb={5} fontSize="xl">
                               When you click on links on our store, they may
-                              direct you away from our site. We are not
+                              direct you away from our app. We are not
                               responsible for the privacy practices of other
                               sites and encourage you to read their privacy
                               statements.
@@ -277,9 +275,7 @@ function Privacy(props) {
                               COOKIES
                          </Heading>
                          <Text mb={5} fontSize="xl">
-                              We use cookies to maintain the session of your
-                              user. It is not used to personally identify you on
-                              other websites.
+                         We may use cookies to maintain your session within the app, but these are not used to personally identify you on other websites.
                          </Text>
                     </Box>
                     <Box width="100%" fontWeight="light" fontSize="lg">
@@ -298,7 +294,7 @@ function Privacy(props) {
                               AGE OF CONSENT
                          </Heading>
                          <Text mb={5} fontSize="xl">
-                              By using this site, you represent that you are at
+                              By using our app, you represent that you are at
                               least the age of majority in your state or
                               province of residence, or that you are the age of
                               majority in your state or province of residence
@@ -323,9 +319,9 @@ function Privacy(props) {
                          </Heading>
                          <Text mb={5} fontSize="xl">
                               We reserve the right to modify this privacy policy
-                              at any time, so please review it frequently.
+                              at any time , so please review it frequently.
                               Changes and clarifications will take effect
-                              immediately upon their posting on the website. If
+                              immediately upon posting on the app. If
                               we make material changes to this policy, we will
                               notify you here that it has been updated, so that
                               you are aware of what information we collect, how
@@ -366,8 +362,7 @@ function Privacy(props) {
                               {'  '}
                               or by mail at{' '}
                               <strong style={{ fontWeight: '500' }}>
-                                   {' '}
-                                   No.3293, 1st floor, 12th main, HAL 2nd stage,
+                              No.3293, 1st floor, 12th main, HAL 2nd stage,
                                    Indiranagar, Bengaluru, Karnataka - 560038
                               </strong>
                          </Text>

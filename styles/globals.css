@@ -8,10 +8,10 @@ body {
      font-family: 'Josefin Sans', sans-serif;
      display: flex;
      flex-direction: column;
-     user-select: none;
+     /* user-select: none;
      -moz-user-select: none;
      -webkit-user-select: none;
-     -ms-user-select: none;
+     -ms-user-select: none; */
      min-height: 100vh;
 }
 
