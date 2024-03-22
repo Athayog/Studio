@@ -64,10 +64,10 @@ function DeleteRequest() {
   };
 
   return (
-    <Box minH='60vh' maxW="container.xl" margin='0 auto' my={10}>
+    <Box minH='60vh' px={5} maxW="container.xl" margin='0 auto' my={10}>
 
       <NavbarHelper />
-      <Heading fontSize='3xl'>Account Delete Request Form</Heading>
+      <Heading fontSize='3xl'>Account Deletion Request</Heading>
       <Box maxW="container.xl" mx="auto" mt={8} p={4} borderWidth="1px" borderRadius="lg">
         <Toaster />
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -110,11 +110,11 @@ function DeleteRequest() {
 
             <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={setCaptcha} />
           </Box>
-          <Button type="submit" size='lg' colorScheme="red" mt={4} loadingText='submitting...' isLoading={loading}>Submit Request</Button>
+          <Button type="submit" size='lg' width={{base:'full',md:'auto'}} colorScheme="red" mt={4} loadingText='submitting...' isLoading={loading}>Submit Request</Button>
 
 
 
-          <Text mt={4} fontSize="normal" color="gray.500">
+          <Text mt={4} fontSize="normal" color="gray.700" bg='red.50' p={5}>
             By submitting this form, you acknowledge that your account will be permanently deleted. All associated data, including your personal information and any content, will be irreversibly removed from our system. This action cannot be undone, so please proceed with caution.
           </Text>
 
