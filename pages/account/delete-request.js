@@ -15,10 +15,7 @@ function DeleteRequest() {
   const [loading, setLoading] = useState(false);
 
   const onSubmit = async (data) => {
-    if (!captcha) {
-      toast.error('Please Verify Captcha')
-      return
-    }
+   
     try {
       setLoading(true);
       // Send data to backend (Firebase Firestore)
@@ -108,7 +105,7 @@ function DeleteRequest() {
           {errors.reason && <span>{errors.reason.message}</span>}
           <Box mt={5}>
 
-            <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={setCaptcha} />
+            {/* <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={setCaptcha} /> */}
           </Box>
           <Button type="submit" size='lg' width={{base:'full',md:'auto'}} colorScheme="red" mt={4} loadingText='submitting...' isLoading={loading}>Submit Request</Button>
 
