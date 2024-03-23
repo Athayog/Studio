@@ -63,7 +63,7 @@
           "react-hot-toast": "^2.3.0",
           "react-html-parser": "^2.0.2",
           "react-icons": "^4.12.0",
-          "react-photo-album": "^2.0.1",
+          "react-photo-album": "^2.3.1",
           "react-responsive": "^8.2.0",
           "react-scroll": "^1.8.7",
           "react-select": "^5.7.0",
@@ -80,7 +80,7 @@
           "swr": "^0.4.0",
           "use-ssr": "^1.0.24",
           "uuid": "^8.3.2",
-          "yet-another-react-lightbox": "^2.2.7",
+          "yet-another-react-lightbox": "^2.6.2",
           "zustand": "^4.4.7"
      },
      "devDependencies": {
