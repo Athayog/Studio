@@ -3,7 +3,7 @@ import Enrollment from '@/components/residential/Enrollment';
 import Footer from '@/components/academy/Footer';
 import Gurus from '@/components/academy/Gurus';
 import WhatWillYouLearn from '@/components/academy/WhatWillYouLearn';
-import WhyYouShould from '@/components/academy/WhyYouShould';
+import WhyYouShould from '@/components/residential/WhyYouShould';
 import HomeLayout from '@/components/layout/HomeLayout';
 import Accomodation from '@/components/residential/Accomodation';
 import Hero from '@/components/residential/Hero';
