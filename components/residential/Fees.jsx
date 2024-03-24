@@ -13,7 +13,7 @@ function Fees() {
                     <Text>Empower Your Career in 2024: Transform your professional journey
                         with yoga, unlocking opportunities for a healthier, happier and more
                         fulfilling career in the upcoming year!</Text>
-                    <a target="_blank" rel="noreferrer" href='https://rzp.io/l/AefUZIuY2W'>
+                    <a target="_blank" rel="noreferrer" href='https://rzp.io/l/C4sU10c'>
                         <Button fontWeight='semibold' rounded='full'padding={{base:"25px 80px",md:"20px 80px"}}color="#fff" background="#F64A01">BUY NOW</Button>
                     </a>
                 </Flex>

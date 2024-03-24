@@ -9,7 +9,7 @@ function Enrollment() {
                 <Heading fontSize={{base:'3xl',md:'4xl'}} textAlign='center'>Awaken in 2024: <chakra.span color="#5B7F38">Yoga Enrollment Open</chakra.span></Heading>
                 <Text fontSize={{base:'lg',md:'xl'}}  fontWeight='semibold' textAlign='center'>Transform in 2024 through our Yoga course. Enroll now and become part of a
  community dedicated to your growth, wellbeing and the pursuit of inner harmony.</Text>
-                <Link href="/yoga-academy/register" passHref>
+                <Link href="/residential-program/register" passHref>
                     <Button fontWeight='semibold' rounded='full'padding={{base:"25px 80px",md:"20px 80px"}}  color="#fff" background=" linear-gradient(101deg, #F54900 48.85%, #FDC685 90.46%)">Enroll Now</Button>
                 </Link>
                 

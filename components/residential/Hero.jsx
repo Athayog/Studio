@@ -34,7 +34,7 @@ function Hero() {
 
                     </Text>
 
-                    <Link  href="/yoga-academy/register" passHref>
+                    <Link  href="/residential-program/register" passHref>
                         <Button mt={6} fontWeight='semibold' rounded='full' padding={{ base: "25px 80px", md: "20px 80px" }} width="40px" color="#fff" background="#F54900" size='md'>Join Now</Button>
                     </Link>
                 </Flex>
