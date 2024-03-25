@@ -25,7 +25,7 @@ function Hero() {
                         <Heading fontSize='5xl' color="#202020">Become a Globally Certified Yoga Teacher in Just 30 Days with  <chakra.span color='#478605'>AthaYog Living</chakra.span></Heading>
                     </Box>
                     <Box display={{ base: "block", md: "none" }}>
-                        <Heading color="#202020" >Unlock Your Yoga Journey with<br /> <chakra.span color='#478605'>AthaYog Living</chakra.span></Heading>
+                        <Heading color="#202020" >Become a Globally Certified Yoga Teacher in Just 30 Days with<br /> <chakra.span color='#478605'>AthaYog Living</chakra.span></Heading>
                     </Box>
                     <Text >
                         <chakra.span bg='white' rounded='full' fontSize={{ base: "xl", md: "2xl" }} width='max-content' p={3} fontWeight='bold'>
