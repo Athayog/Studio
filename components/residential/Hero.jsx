@@ -29,7 +29,7 @@ function Hero() {
                     </Box>
                     <Text >
                         <chakra.span bg='white' rounded='full' fontSize={{ base: "xl", md: "2xl" }} width='max-content' p={3} fontWeight='bold'>
-                            Athayog residential program
+                            AthaYog residential program
                         </chakra.span>
 
                     </Text>
