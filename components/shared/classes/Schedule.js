@@ -211,14 +211,12 @@ function Schedule() {
                                              <Td bg="#a9d58b">
                                                   Rhythm of Being
                                              </Td>
-                                             <Td >Deep Space</Td>
+                                            
 
 
 
                                              <Td>Power Vinyasa</Td>
-
-
-
+                                             <Td >Deep Space</Td>
 
 
 
