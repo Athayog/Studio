@@ -19,7 +19,6 @@ import { BiRightArrow } from 'react-icons/bi';
 
 function Schedule() {
      const d = new Date();
-
      const monthNames = [
           'January',
           'February',
