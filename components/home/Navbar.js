@@ -254,31 +254,19 @@ const Navbar = () => {
                                              </Button>
                                         </Link>
 
-                                        <Link href="/yoga-academy" passHref>
-                                             <Button
-                                                  fontWeight="normal"
-                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
-                                                  variant="ghost"
-                                                  bg="transparent"
-                                                  _hover={{
-                                                       bg: 'aygreen.100'
-                                                  }}
-                                                  _active={{
-                                                       bg: 'aygreen.100',
-                                                       transform: 'scale(0.98)',
-                                                       borderColor: '#bec3c9'
-                                                  }}
-                                                  isActive={
-                                                       router.pathname ==
-                                                            '/yoga-academy'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                                  size='sm'
-                                             >
-                                                  Yoga Academy
-                                             </Button>
-                                        </Link>
+                                        <Menu  >
+                                             <MenuButton fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}  size='sm'  background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
+                                             Yoga Academy
+                                             </MenuButton >
+                                             <MenuList fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}>
+                                             <Link href="/residential-program" passHref>
+                                                       <MenuItem>Residential</MenuItem>
+                                                  </Link>
+                                                  <Link href="/yoga-academy" passHref>
+                                                       <MenuItem>Non residential</MenuItem>
+                                                  </Link>
+                                             </MenuList>
+                                        </Menu>
 
                                         <Menu  >
                                              <MenuButton fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}  size='sm'  background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
@@ -468,7 +456,23 @@ const Navbar = () => {
                                                        Personal Training
                                                   </Button>
                                              </Link>
-                                            
+                                             <Link passHref href="/residential-program">
+                                                  <Button
+                                                       onClick={onClose}
+                                                       isActive={
+                                                            router.pathname ==
+                                                                 '/residential-program'
+                                                                 ? true
+                                                                 : ''
+                                                       }
+                                                       rounded="md"
+                                                       variant="ghost"
+                                                       colorScheme="aygreen"
+                                                       justifyContent="left"
+                                                  >
+                                                       Yoga Academy (Residential)
+                                                  </Button>
+                                             </Link>
                                              <Link passHref href="/yoga-academy">
                                                   <Button
                                                        onClick={onClose}
@@ -483,7 +487,7 @@ const Navbar = () => {
                                                        colorScheme="aygreen"
                                                        justifyContent="left"
                                                   >
-                                                       Yoga Academy
+                                                       Yoga Academy (Non residential)
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/store">
