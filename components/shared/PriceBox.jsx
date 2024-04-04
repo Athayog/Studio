@@ -589,7 +589,7 @@ export default function PriceBox({
                                                                       {toRegister !==
                                                                       false
                                                                            ? '₹'
-                                                                           : null}{' '}
+                                                                           : "₹"}{' '}
                                                                       {
                                                                            data.price
                                                                       }

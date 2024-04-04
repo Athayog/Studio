@@ -183,11 +183,7 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
      const personal_training = pricing
-          .filter((data) => data.isTrial == false)
-          .filter((data) => data.isGeneral == true)
-          .filter((data) => data.sub_category == 'personal_training')
-          .sort((a, b) => a.description.length - b.description.length)
-          .sort((a, b) => a.durationNum - b.durationNum);
+         
 
      const kids = pricing
           .filter((data) => data.isTrial == false)
@@ -354,7 +350,7 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
                          courses={personal_training}
                          data={data}
                          user={user}
-                         toRegister={toRegister}
+                         toRegister={false}
                          hidePrice={hidePrice}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
