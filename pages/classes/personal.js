@@ -190,6 +190,7 @@ const Personal = ({ offers, notFound }) => {
                     <Pricing
                          pricing={apiPricing}
                          registerTo="personal"
+                         toRegister={false}
                          hidePrice={false}
                     />
                     <Flex

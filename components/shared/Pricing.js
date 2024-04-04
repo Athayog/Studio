@@ -350,7 +350,7 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
                          courses={personal_training}
                          data={data}
                          user={user}
-                         toRegister={false}
+                         toRegister={toRegister}
                          hidePrice={hidePrice}
                          coursePurchased={coursePurchased}
                          buttonId={buttonId}
