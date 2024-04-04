@@ -26,8 +26,9 @@ export default function PriceBox({
      if (courses == undefined) {
           courses = [];
      }
-     console.log({limited: limited, unlimited: unlimited})
+    
      if (limited && unlimited) {
+          
           return (
                <Grid
                     gridTemplateColumns={{
@@ -332,7 +333,8 @@ export default function PriceBox({
                     </Grid>
                </Grid>
           );
-     } else if (courses) {
+     } 
+     if (courses) {
           if (subCategory === 'indiranagar') {
                return (
                     <>

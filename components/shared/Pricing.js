@@ -189,7 +189,7 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
           .filter((data) => !data.description.toLowerCase().includes('limited'))
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
-     let personal_training = pricing
+     let personal_training = pricing.filter((data) => data.sub_category == 'personal_training')
          
 
      let kids = pricing
