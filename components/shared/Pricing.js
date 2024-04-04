@@ -130,18 +130,25 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
           });
      }
 
-     const limitCourses = pricing
+     let limitCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.description.includes('Limited'))
           .filter((data) => data.sub_category == 'general')
           .sort((a, b) => a.durationNum - b.durationNum);
-     const unlimitCourses = pricing
+          if (limitCourses !== undefined && limitCourses.length == 0){
+               limitCourses = undefined
+          }
+     let unlimitCourses = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.description.includes('Unlimited'))
           .filter((data) => data.sub_category == 'general')
           .sort((a, b) => a.durationNum - b.durationNum);
 
-     const trialCourses = pricing
+          if (unlimitCourses !== undefined && unlimitCourses.length == 0){
+               unlimitCourses = undefined
+          }
+
+     let trialCourses = pricing
           .filter((data) => data.isTrial == true)
           .sort((a, b) => a.durationNum - b.durationNum);
      let generalCourses = pricing
@@ -182,30 +189,30 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
           .filter((data) => !data.description.toLowerCase().includes('limited'))
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
-     const personal_training = pricing
+     let personal_training = pricing
          
 
-     const kids = pricing
+     let kids = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'kids')
           .sort((a, b) => a.description.length - b.description.length)
           .sort((a, b) => a.durationNum - b.durationNum);
 
-     const couple_package = pricing
+     let couple_package = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'couple_package')
           .sort(compare);
 
-     const couple_package_limited = pricing
+     let couple_package_limited = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Limited'))
           .filter((data) => data.sub_category == 'couple_package')
           .sort((a, b) => a.description.length - b.description.length)
           .sort(compare);
-     const couple_package_unlimited = pricing
+     let couple_package_unlimited = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.description.includes('Unlimited'))
@@ -213,13 +220,13 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
           .sort((a, b) => a.description.length - b.description.length)
           .sort(compare);
 
-     const group_studio_class = pricing
+     let group_studio_class = pricing
           .filter((data) => data.isTrial == false)
           .filter((data) => data.isGeneral == true)
           .filter((data) => data.sub_category == 'group_studio_class')
           .sort(compare);
 
-     const group_studio_class_limited = sortingGroup(
+     let group_studio_class_limited = sortingGroup(
           pricing
                .filter((data) => data.isTrial == false)
                .filter((data) => data.isGeneral == true)
@@ -229,7 +236,7 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
                .sort(compare)
      );
 
-     const group_studio_class_unlimited = sortingGroup(
+     let group_studio_class_unlimited = sortingGroup(
           pricing
                .filter((data) => data.isTrial == false)
                .filter((data) => data.isGeneral == true)
