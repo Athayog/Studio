@@ -26,7 +26,17 @@ export default function PriceBox({
      if (courses == undefined) {
           courses = [];
      }
-    
+     console.log({   user,
+          toRegister,
+          coursePurchased,
+          buttonId,
+          handleUserPayment,
+          courses,
+          limited,
+          unlimited,
+          subCategory,
+          title,
+          hidePrice})
      if (limited && unlimited) {
           return (
                <Grid
