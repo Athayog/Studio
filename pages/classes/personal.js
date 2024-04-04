@@ -41,7 +41,116 @@ const Personal = ({ offers, notFound }) => {
      };
 
      const apiPricing = [];
-     offers.map((data) => {
+
+     let data= [{
+          id:'1',
+          name: "PT Session 12 Studio",
+          description:"At Studio",
+          duration: "12 Days",
+          days: 12,
+          isTrial: false,
+          isGeneral: true,
+          price: 11999,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'2',
+          name: "PT Session 24 Studio",
+          description:"At Studio",
+          duration: "24 Days",
+          days: 24,
+          isTrial: false,
+          isGeneral: true,
+          price: 21599,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'3',
+          name: "PT Session 12 Online",
+          description:"At Online",
+          duration: "12 Days",
+          days: 12,
+          isTrial: false,
+          isGeneral: true,
+          price: 9599,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'4',
+          name: "PT Session 24 Online",
+          description:"At Online",
+          duration: "24 Days",
+          days: 12,
+          isTrial: false,
+          isGeneral: true,
+          price: 16999,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'5',
+          name: "PT Session 12 Onsite",
+          description:"At Onsite",
+          duration: "12 Days",
+          days: 12,
+          isTrial: false,
+          isGeneral: true,
+          price: 17999,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'6',
+          name: "PT Session 24 Onsite",
+          description:"At Studio",
+          duration: "24 Days",
+          days: 24,
+          isTrial: false,
+          isGeneral: true,
+          price: 26999,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'7',
+          name: "Couple PT Session 12 Studio",
+          description:"At Studio",
+          duration: "12 Days",
+          days: 12,
+          isTrial: false,
+          isGeneral: true,
+          price: 21599,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'8',
+          name: "Couple PT Session 12 Online",
+          description:"At Online",
+          duration: "12 Days",
+          days: 12,
+          isTrial: false,
+          isGeneral: true,
+          price: 16999,
+          sub_category:"personal_training"
+
+     },
+     {
+          id:'7',
+          name: "Couple PT Session 12 Onsite",
+          description:"At Onsite",
+          duration: "12 Days",
+          days: 12,
+          isTrial: false,
+          isGeneral: true,
+          price: 26999,
+          sub_category:"personal_training"
+
+     }]
+     data.map((data) => {
           apiPricing.push({
                id: data.id,
                courseName: data.name,
@@ -81,7 +190,7 @@ const Personal = ({ offers, notFound }) => {
                     <Pricing
                          pricing={apiPricing}
                          registerTo="personal"
-                         hidePrice={true}
+                         hidePrice={false}
                     />
                     <Flex
                          margin="auto"
