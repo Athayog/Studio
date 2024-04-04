@@ -311,7 +311,6 @@ const Pricing = ({ pricing, registerTo, toRegister, hidePrice }) => {
           generalCourses = [...space, ...onsite, ...online];
      }
 
-     console.log(pricing)
      
 
 
