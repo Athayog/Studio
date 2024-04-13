@@ -50,7 +50,7 @@ const Space = ({ notFound }) => {
                },
                {
                     className: 'Universal Harmony',
-                    classInfo: `A practice that involves body, breath & mind practices.  Asanas for body, Pranayama  for breath & meditation for mind.                    `,
+                    classInfo: `A practice that involves body, breath & mind practices. Asanas for body, Pranayama for breath & meditation for mind.`,
                     structure: [
                          'Grounding',
                          '45 minutes of Hatha Vinyasa Flow',
