@@ -47,7 +47,7 @@ function UpcomingWorkshops() {
             <WorkshopTable heading="July Workshop" data={JulyData} />
             <Box shadow="md" p={5} fontSize='lg' border='1px solid purple'>
                 <Flex gap={1} flexDirection='column' flexWrap='wrap'>
-                    <Text pr={10} >Workshop - <chakra.span fontWeight='bold' color='purple.700'>₹999</chakra.span></Text>
+                    <Text pr={10} >1 Workshop - <chakra.span fontWeight='bold' color='purple.700'>₹999</chakra.span></Text>
                     <Text pr={10}>3 Workshops - <chakra.span fontWeight='bold' color='purple.700'>₹2699</chakra.span></Text>
                     <Text pr={10}>6 Workshops - <chakra.span fontWeight='bold' color='purple.700'>₹5399</chakra.span></Text>
                     <Text >All Workshops - <chakra.span fontWeight='bold' color='purple.700'>₹9999</chakra.span> </Text></Flex>
