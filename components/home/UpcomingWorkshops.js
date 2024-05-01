@@ -50,7 +50,7 @@ function UpcomingWorkshops() {
                     <Text pr={10} >Workshop - <chakra.span fontWeight='bold' color='purple.700'>₹999</chakra.span></Text>
                     <Text pr={10}>3 Workshop - <chakra.span fontWeight='bold' color='purple.700'>₹2699</chakra.span></Text>
                     <Text pr={10}>6 Workshop - <chakra.span fontWeight='bold' color='purple.700'>₹5399</chakra.span></Text>
-                    <Text >All Workshop -<chakra.span fontWeight='bold' color='purple.700'>₹9999</chakra.span> </Text></Flex>
+                    <Text >All Workshop - <chakra.span fontWeight='bold' color='purple.700'>₹9999</chakra.span> </Text></Flex>
 
                 <EnquireWorkshop />
             </Box>
