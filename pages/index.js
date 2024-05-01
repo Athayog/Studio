@@ -14,6 +14,7 @@ import { motion } from 'framer-motion';
 import WhatsAppWidget from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
 import VideoSection from './VideoSection';
+import UpcomingWorkshops from '@/components/home/UpcomingWorkshops';
 
 export async function getStaticProps() {
      // const reqCarousel = await getImages('carousel');
@@ -40,7 +41,9 @@ export default function Home({ gallery, testimonials }) {
                <HeroCarousel />
 
                <Certificate />
+
                <Offerings />
+               <UpcomingWorkshops/>
                {/* <UpcomingCourses /> */}
                <Gallery images={gallery} />
                <VideoSection />

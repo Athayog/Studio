@@ -99,7 +99,7 @@ function Schedule() {
                                                   paddingLeft="10px"
                                              >
 
-                                                  Evening Batches
+                                                  Morning Batches
 
                                              </Td>
 
