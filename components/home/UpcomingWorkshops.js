@@ -25,7 +25,7 @@ function UpcomingWorkshops() {
     const JulyData = [
         { date: '6th', time: '11:00 AM', topic: 'Mantra Chanting', teacher: 'Ankush / Harsha ' },
         { date: '14th', time: '11:00 AM', topic: 'Art Therapy', teacher: 'Purvi' },
-        { date: '20th', time: '11:00 AM', topic: 'Yoga Philosophies (Patanjalu & Bhagvad Gita', teacher: 'Sharath' },
+        { date: '20th', time: '11:00 AM', topic: 'Yoga Philosophies (Patanjalu & Bhagvad Gita)', teacher: 'Sharath' },
         { date: '27th', time: '7:00 AM', topic: 'Shat Karma Level 02', teacher: 'Ankush' },
         // Add more data rows as needed
     ];
