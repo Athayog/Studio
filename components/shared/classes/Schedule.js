@@ -56,7 +56,7 @@ function Schedule() {
                               fontWeight="normal"
                               fontSize={{ base: '2xl', md: '3xl' }}
                          >
-                              AthaYog Group Class May 2024 (Indiranagar)
+                              AthaYog Group Class May - June 2024 (Indiranagar)
                          </Heading>
                          <Box
                               overflowX="auto"

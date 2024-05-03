@@ -1,17 +1,11 @@
 import athayogSpace from 'public/Athayog_space_home.jpg';
-import athayogOnline from 'public/Online_class_home.jpg';
+import harsha from 'public/Harsha.jpg';
+import madhusudan from 'public/Madhusudhan.jpg';
 import athayogPersonal from 'public/Personal_training_home.jpg';
 import athayogShikshana from 'public/Shikshanapada_home.jpg';
-import athayogWorkshop from 'public/Workshops_home.jpg';
-import anjali from 'public/anjali.jpg';
-import harsha from 'public/Harsha.jpg';
-import kavita from 'public/Kavita.jpg';
 import sharath from 'public/sharath.jpeg';
-import madhusudan from 'public/Madhusudhan.jpg';
-import gayatri from 'public/gayatri.jpg';
-import shreeram from 'public/shreeram.jpg';
-import deepali from 'public/deepali.jpg';
-import aarti from 'public/aarthi.jpeg';
+import purvi from 'public/Purvi.jpg';
+import sushma from 'public/Sushma.jpg';
 
 export const offeringsData = {
      offering: [
@@ -122,6 +116,20 @@ export const EmployeeData = {
                name: 'Munjuluri Madhusudhan',
                info: `Munjuluri Madhusudhan, Yoga Teacher at AthaYog Living, teaches practice sessions that aim to challenge the body and push past its physical limitations. \n \nStudents can expect classes that are both intense and enjoyable. According to Madhusudhan, yoga is not simply a physical fitness practice, but a lifestyle that promotes overall health and happiness. His ultimate goal is to create a drug-free society through the practice of yoga. \n \nMadhusudhan holds qualifications including YIC, BSc in Yoga Therapy, and MSc in Yoga Therapy. In addition to yoga, he has skills in cycling, skating, archery, and shooting. As a yoga teacher, Madhusudhan specializes in therapeutic, Vinyasa, and Power yoga. He also teaches advanced meditation techniques and kriya practices.`,
                image: madhusudan,
+               visible: true,
+               designation: 'Teacher'
+          },
+          {
+               name: 'Purvi vijjan',
+               info: `Purvi Vijjan, the youngest Yog Teacher at AthaYog Living, has represented and brought laurels to our country, India, on the global stage in the field of Yogasana Sports. Her participation in both the World Championship and Asian Championship of Yog Sports has not only honed her skills but also deepened her understanding of the transformative power of yoga beyond its physical aspects. \n \nCommencing her journey in yog through asana competitions, instilled a drive in her to continually learn and explore the vastness of yog beyond the confines of mere physical postures which led her to receive a formal Yogic education from Swami Vivekananda Yoga Anusandhana Samsthana (S-VYASA) \n \nWith a passion for yog that has been nurtured from a young age, coupled with a strong foundation in traditional practices. She is committed to sharing this holistic approach to yog with others, empowering them to cultivate not only physical strength and flexibility but also mental clarity, emotional balance, and spiritual well-being.`,
+               image: purvi,
+               visible: true,
+               designation: 'Teacher'
+          },
+          {
+               name: 'Sushma Somvanshi',
+               info: `Sushma Somvanshi, yoga teacher at athayog living is pursuing her Msc from SVYASA. She started her career in IT after completing B.Pharma and meanwhile kept educating herself with yogic education as well and completed diploma course in yoga, Level 2 (YCB, Ministry of AYUSH), YIC (SVYASA). . \n \nYoga has been a part of her life since she was a child. Her goal is to keep learning and teaching the pious knowledge of yoga to help people live healthier and joyful life. Her goal is to extend the idea of yoga beyond just asanas and dive deeper into more subtle aspects of this ancient tradition-yoga.`,
+               image: sushma,
                visible: true,
                designation: 'Teacher'
           },
