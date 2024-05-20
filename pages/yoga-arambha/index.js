@@ -1,9 +1,11 @@
 import HomeLayout from '@/components/layout/HomeLayout';
 import NavbarHelper from '@/components/shared/NavbarHelper';
-import { Box, Button, Flex, Heading, Text, chakra } from '@chakra-ui/react';
+import { Box, Button, Center, Divider, Flex, Heading, Text, chakra } from '@chakra-ui/react';
 import Image from 'next/image';
 import ar1 from 'public/ar_1.png';
 import ar2 from 'public/ar_2.png';
+import calendar from 'public/calendar.svg';
+import location from 'public/map-pin.svg';
 
 const YogArambha = () => {
      return (
@@ -53,6 +55,34 @@ const YogArambha = () => {
                               community, we&apos;ll explore practices that empower us on all levels.
                          </Text>
                     </Box>
+
+                    <Flex maxW='830px'  margin='0 auto' mt="54px" justfyContent="space-between" width="100%" alignItems="center" flexDirection="row">
+                         <Box flex="1" display="flex" flexDir="column" alignItems="center">
+                              <Flex flexDir="column" alignItems="baseline">
+                                   <Text fontFamily="Montserrat" fontSize="37px">
+                                        {' '}
+                                        <Image src={calendar} /> Date
+                                   </Text>
+                                   <Text fontWeight="bold" fontSize="42px">
+                                        June 21, 2024
+                                   </Text>
+                              </Flex>
+                         </Box>
+                         <Center height="142.96px" width="3px" background="#C47E77">
+                              <Divider orientation="vertical" />
+                         </Center>
+                         <Box flex="1" display="flex" flexDir="column" alignItems="center">
+                              <Flex flexDir="column" alignItems="baseline">
+                                   <Text fontFamily="Montserrat" fontSize="37px">
+                                        {' '}
+                                        <Image src={location} /> Location
+                                   </Text>
+                                   <Text fontWeight="bold" fontSize="42px">
+                                        Indiranagar club
+                                   </Text>
+                              </Flex>
+                         </Box>
+                    </Flex>
                </Flex>
           </div>
      );
