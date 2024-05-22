@@ -205,7 +205,8 @@ export default async function handler(req, res) {
           try {
                const response = await resend.emails.send({
                     from: 'Athayog Living <info@athayogliving.com>',
-                    to: 'admin@athayogliving.com',
+                    to: email,
+                    cc: "admin@athayogliving.com",
                     subject: 'Registration Confirmation',
                     html: emailTemplate(name, ticketID)
                });
