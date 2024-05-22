@@ -19,6 +19,7 @@ class RootDocument extends Document {
                          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;700&family=Josefin+Sans:wght@100;300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap"
                          data-noprefix
                     />
+                    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
 
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta
