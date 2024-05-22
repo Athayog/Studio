@@ -13,7 +13,7 @@ import { Button } from '@chakra-ui/button';
 
 const PinkButton = ({ children, ...props }) => {
      return (
-          <Button p="44px 70px" backgroundColor="#EA3B4A" color="white" rounded="full" {...props}>
+          <Button p={{ base: '32px 33px', md: '34px 60px', lg: '44px 70px' }} backgroundColor="#EA3B4A" color="white" rounded="full" {...props}>
                {children}
           </Button>
      );
@@ -22,39 +22,80 @@ const PinkButton = ({ children, ...props }) => {
 function YogaArambha() {
      return (
           <Box name="parent">
-              <NavbarHelper />
-               {' '}
-               <Box position="absolute" top="100" left="0">
+               <NavbarHelper />{' '}
+               <Box
+                    width={{
+                         base: '100px',
+                         md: '300px',
+                         lg: 'auto'
+                    }}
+                    pos
+                    position="absolute"
+                    top="100"
+                    left="0"
+               >
                     <Image src={HeroFlower1} />
                </Box>
-               <Box position="absolute"  top="100"  right="0">
+               <Box 
+                name='flowerRight'
+                    width={{
+                          base: '100px',
+                         md: '300px',
+                         xl: 'auto'
+                    }}
+                    position="absolute"
+                    top="100"
+                    right="0"
+               >
                     <Image src={HeroFlower2} />
                </Box>
-                  <Box position="absolute" top="100" right="10">
-                              <Image src={ArambhaLogo} />
-                         </Box>
-               <Box maxW="1440px" width="100%" margin="0 auto" marginTop="40px" p={10}>
-                  
-
+               <Box position="absolute" top="100" right="10" display={{ base: 'none', lg: 'block' }}>
+                    <Image src={ArambhaLogo} />
+               </Box>
+               <Box maxW="1440px" width="100%" margin="0 auto" marginTop={{ base: '0px', lg: '40px' }} p={10}>
                     {/* Hero Section */}
                     <Box as="section" position="relative" width="100%">
                          {/* Absolute Background */}
 
-                      
-
-                         <Box position="absolute" top="160" left="0">
+                         <Box
+                              width={{
+                                   base: '0px',
+                                   sm: '0px',
+                                   md: '0px',
+                                   lg: '0px',
+                                   xl: '350px'
+                              }}
+                              position="absolute"
+                              top="160"
+                              left="0"
+                         >
                               <Image src={HeroGirlLeft} />
                          </Box>
 
-                         <Box position="absolute" top="160" right="0">
+                         <Box
+                              width={{
+                                   base: '0px',
+                                   sm: '0px',
+                                   md: '0px',
+                                   lg: '0px',
+                                   xl: '450px'
+                              }}
+                              position="absolute"
+                              top="160"
+                              right="0"
+                         >
                               <Image src={HeroGirlRight} />
                          </Box>
 
                          <Box name="content" textAlign="center">
+                              <Box display={{ base: 'block', lg: 'none' }}>
+                                   <Image src={ArambhaLogo} />
+                              </Box>
                               <Heading
                                    color="#71312A"
                                    fontSize={{
-                                        sm: '26px',
+                                        base: '32px',
+                                        sm: '32px',
                                         md: '36px',
                                         lg: '56px',
                                         xl: '64px'
@@ -64,7 +105,8 @@ function YogaArambha() {
                               </Heading>
                               <Text
                                    fontSize={{
-                                        sm: '22px',
+                                        base: '18px',
+                                        sm: '18px',
                                         md: '22px',
                                         lg: '22px',
                                         xl: '32px'
@@ -77,7 +119,8 @@ function YogaArambha() {
                               </Text>
                               <Text
                                    fontSize={{
-                                        sm: '22px',
+                                        base: '15px',
+                                        sm: '15px',
                                         md: '22px',
                                         lg: '22px',
                                         xl: '30px'
@@ -85,14 +128,20 @@ function YogaArambha() {
                                    color="#AA645B"
                                    fontWeight="semibold"
                                    style={{ fontFamily: 'Montserrat' }}
-                                   marginTop="18px"
+                                   marginTop={{
+                                        base: '12px',
+                                        sm: '12px',
+                                        md: '18px',
+                                        lg: '18px',
+                                        xl: '18px'
+                                   }}
                               >
                                    Empower Your Mind, Body & Spirit with Yoga
                               </Text>
-                              <PinkButton margin="0 auto" marginTop="60px" display="flex" flexDirection="column" justfifyContent="center" alignItems="center">
+                              <PinkButton margin="0 auto" marginTop={{ base: '30px', md: '50px', lg: '60px' }} display="flex" gap="2px" flexDirection="column" justfifyContent="center" alignItems="center">
                                    <chakra.span
                                         fontSize={{
-                                             sm: '22px',
+                                             base: '16px',
                                              md: '22px',
                                              lg: '22px',
                                              xl: '26px'
@@ -105,7 +154,7 @@ function YogaArambha() {
                                    <chakra.span
                                         fontWeight="semibold"
                                         fontSize={{
-                                             sm: '22px',
+                                             base: '14px',
                                              md: '22px',
                                              lg: '22px',
                                              xl: '26px'
@@ -115,12 +164,22 @@ function YogaArambha() {
                                    </chakra.span>
                               </PinkButton>
 
-                              <Box name="about" marginTop="120px">
+                              <Box
+                                   name="about"
+                                   marginTop={{
+                                        base: '32px',
+                                        sm: '32px',
+                                        md: '60px',
+                                        lg: '100px',
+                                        xl: '120px'
+                                   }}
+                              >
                                    <Heading
                                         as="h3"
                                         fontWeight="semibold"
                                         fontSize={{
-                                             sm: '34px',
+                                             base: '32px',
+                                             sm: '32px',
                                              md: '44px',
                                              lg: '54px',
                                              xl: '64px'
@@ -130,13 +189,14 @@ function YogaArambha() {
                                    </Heading>
                                    <Text
                                         maxWidth="1054px"
-                                        lineHeight="44px"
+                                        lineHeight={{ base: '24px', sm: '24px', md: '32px', lg: '32px', xl: '44px' }}
                                         margin="0 auto"
-                                        marginTop="12px"
+                                        marginTop="20px"
                                         fontWeight="semibold"
                                         color="#003744"
                                         fontSize={{
-                                             sm: '22px',
+                                             base: '14px',
+                                             sm: '14px',
                                              md: '22px',
                                              lg: '22px',
                                              xl: '30px'
