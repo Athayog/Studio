@@ -1,6 +1,6 @@
 import HomeLayout from '@/components/layout/HomeLayout';
 import NavbarHelper from '@/components/shared/NavbarHelper';
-import { Box, Heading, Text } from '@chakra-ui/layout';
+import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/layout';
 import Image from 'next/image';
 import React from 'react';
 import { chakra } from '@chakra-ui/react';
@@ -9,6 +9,8 @@ import HeroFlower2 from 'public/A24-Flower-2.svg';
 import ArambhaLogo from 'public/ar24_logo.png';
 import HeroGirlLeft from 'public/24_Girl_Left.png';
 import HeroGirlRight from 'public/24_Girl_Right.png';
+import DateCalendar from 'public/24calendar.svg';
+import DateMap from 'public/24Map.svg';
 import { Button } from '@chakra-ui/button';
 
 const PinkButton = ({ children, ...props }) => {
@@ -36,10 +38,10 @@ function YogaArambha() {
                >
                     <Image src={HeroFlower1} />
                </Box>
-               <Box 
-                name='flowerRight'
+               <Box
+                    name="flowerRight"
                     width={{
-                          base: '100px',
+                         base: '100px',
                          md: '300px',
                          xl: 'auto'
                     }}
@@ -206,6 +208,24 @@ function YogaArambha() {
                                    </Text>
                               </Box>
                          </Box>
+                    </Box>
+
+                    <Box  name="calendar" display="flex" width="100%" justifyContent="center" alignItems="center" marginTop='52px'>
+                         <Flex flexDirection="column" width="100%" gap='10px' justifyContent="center" alignItems="center">
+                              <Flex alignItems='center' gap="15px">
+                                   <Box><Image src={DateCalendar}/></Box>
+                                   <Box style={{fontFamily:"Montserrat"}} fontSize='37px'>Date</Box>
+                              </Flex>
+                              <Text fontWeight='bold' fontSize='42px'>June 21, 2024</Text>
+                         </Flex>
+                         <Divider orientation="vertical" bg="#C47E77" height='150px' width='2px'/>
+                      <Flex flexDirection="column" width="100%" gap='10px' justifyContent="center" alignItems="center">
+                             <Flex alignItems='center' gap="15px">
+                                   <Box><Image src={DateMap}/> </Box>
+                                   <Box style={{fontFamily:"Montserrat"}} fontSize='37px'>Location</Box>
+                              </Flex>
+                                <Text fontWeight='bold' fontSize='42px'>Indiranagar club</Text>
+                         </Flex>
                     </Box>
                </Box>
           </Box>
