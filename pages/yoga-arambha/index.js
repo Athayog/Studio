@@ -71,7 +71,7 @@ function YogaArambha() {
                     top="100"
                     left="0"
                >
-                    <Image placeholder='blur' src={HeroFlower1} />
+                    <Image src={HeroFlower1} />
                </Box>
                <Box
                     name="flowerRight"
@@ -84,7 +84,7 @@ function YogaArambha() {
                     top="100"
                     right="0"
                >
-                    <Image placeholder='blur' src={HeroFlower2} />
+                    <Image  src={HeroFlower2} />
                </Box>
                <Box
                     name="flowerRight"
@@ -97,7 +97,7 @@ function YogaArambha() {
                     top="800"
                     left="0"
                >
-                    <Image placeholder='blur' src={HeroFlower5} />
+                    <Image src={HeroFlower5} />
                </Box>
                <Box
                     name="flowerRight"
@@ -110,7 +110,7 @@ function YogaArambha() {
                     top="800"
                     right="0"
                >
-                    <Image placeholder='blur' src={HeroFlower4} />
+                    <Image src={HeroFlower4} />
                </Box>
                <Box
                     name="flowerRight"
@@ -123,7 +123,7 @@ function YogaArambha() {
                     top="1500"
                     right="0"
                >
-                    <Image placeholder='blur' src={HeroFlower6} />
+                    <Image src={HeroFlower6} />
                </Box>
                <Box position="absolute" top="100" right="10" display={{ base: 'none', lg: 'block' }}>
                     <Image placeholder='blur' src={ArambhaLogo} />
@@ -288,7 +288,7 @@ function YogaArambha() {
                          <Flex flexDirection="column" width="100%" gap="10px" justifyContent="center" alignItems="center">
                               <Flex alignItems="center" gap="15px">
                                    <Box width={{ base: '30px', md: '30px', lg: '40px', xl: '100%' }}>
-                                        <Image placeholder='blur' src={DateCalendar} />
+                                        <Image  src={DateCalendar} />
                                    </Box>
                                    <Box style={{ fontFamily: 'Montserrat' }} fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '37px' }}>
                                         Date
@@ -302,7 +302,7 @@ function YogaArambha() {
                          <Flex flexDirection="column" width="100%" gap="10px" justifyContent="center" alignItems="center">
                               <Flex alignItems="center" gap="15px">
                                    <Box width={{ base: '30px', md: '30px', lg: '40px', xl: '100%' }}>
-                                        <Image placeholder='blur' src={DateMap} />{' '}
+                                        <Image  src={DateMap} />{' '}
                                    </Box>
                                    <Box style={{ fontFamily: 'Montserrat' }} fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '37px' }}>
                                         Location
@@ -319,7 +319,7 @@ function YogaArambha() {
                               <Flex class="schedule-time" flexDirection="column" gap="20px" flexDirection={{ base: 'row', lg: 'column' }} justifyContent="center" alignItems="center">
                                    <Box width={{ base: '40px', md: '30px', lg: '40px', xl: '100%' }}>
                                         {' '}
-                                        <Image placeholder='blur' src={Clock} />
+                                        <Image  src={Clock} />
                                    </Box>
 
                                    <Text fontFamily="Montserrat" fontSize={{ base: '18px', sm: '18pxpx', md: '28px', lg: '38px', xl: '48px' }} fontWeight="medium">
