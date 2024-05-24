@@ -6,6 +6,7 @@ import HeroFlower2 from 'public/A24-Flower-2.svg';
 import HeroFlower1 from 'public/A24-Flower.svg';
 import toast, { Toaster } from 'react-hot-toast';
 import Image from 'next/image';
+import { RecaptchaComponent, RecaptchaProvider } from '@/components/RecaptchaComponent';
 
 const Register = () => {
      const {
@@ -20,6 +21,8 @@ const Register = () => {
      const [showMembershipNumber, setShowMembershipNumber] = useState(false);
 
      const [isLoading, setIsLoading] = useState(false);
+
+      const [recaptchaToken, setRecaptchaToken] = useState(null);
 
      const allFields = watch();
 
@@ -70,7 +73,7 @@ const Register = () => {
      };
 
      return (
-          <Box>
+          <RecaptchaProvider>
                <Box
                     width={{
                          base: '200px',
@@ -118,6 +121,7 @@ const Register = () => {
                               Registration Form
                          </Heading>
                          <form onSubmit={handleSubmit(onSubmit)}>
+                              <RecaptchaComponent onVerify={setRecaptchaToken} />
                               <VStack spacing={4} align="stretch">
                                    <FormControl isInvalid={errors.name}>
                                         <FormLabel htmlFor="name">Name</FormLabel>
@@ -195,7 +199,7 @@ const Register = () => {
                          </form>
                     </Box>
                </Flex>
-          </Box>
+          </RecaptchaProvider>
      );
 };
 
