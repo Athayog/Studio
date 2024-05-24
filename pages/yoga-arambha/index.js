@@ -6,9 +6,9 @@ import { chakra } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import GovLogo1 from 'public/24Ayush.jpg';
-import GovLogo2 from 'public/24Gov1.png';
 import GalleryDesktop from 'public/24Gallery.png';
 import GalleryMobile from 'public/24GalleryMobile.png';
+import GovLogo2 from 'public/24Gov1.png';
 import Guest from 'public/24Guest.png';
 import DateMap from 'public/24Map.svg';
 import MapLeft from 'public/24MapLeft.jpg';
@@ -44,24 +44,10 @@ const PinkButton = ({ children, ...props }) => {
      );
 };
 
-function YogaArambha() {
-     const schedule = [
-          { time: '5:30 AM', event: '- Registrations open' },
-          { time: '6:00 AM - 6:15 AM', event: '- Opening Ceremony' },
-          { time: '6:15 AM - 7:15 AM', event: '- Special Yoga Session by Principal Teacher Sharath Basavaraju C' },
-          { time: '7:15 AM - 7:30 AM', event: '- Chief Guest Speech' },
-          { time: '7:30 AM - 7:45 AM', event: '- Yoga Talent Showcase' },
-          { time: '7:45 AM - 8:00 AM', event: '- Closing Ceremony' },
-          { time: '8:00 onwards', event: '- Breakfast' }
-     ];
-
-     const isMobile = useMediaQuery({ query: '(max-width: 390px)' });
-     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 700px)' });
-
+const LogosAndFlowers = () => {
      return (
-          <Box name="parent">
-               <NavbarHelper />{' '}
-               <Flex position="absolute" alignItems='baseline' top="100" left={{base:5,lg:5}}>
+          <>
+               <Flex position="absolute" alignItems="baseline" top="100" left={{ base: 5, lg: 5 }}>
                     <Box
                          width={{
                               base: '100px',
@@ -149,13 +135,40 @@ function YogaArambha() {
                >
                     <Image src={HeroFlower6} />
                </Box>
-               <Box position="absolute" top="100" right="10" display={{ base: 'none', lg: 'block' }}  width={{
-                              base: '50px',
-                              lg: '100px',
-                              xl: 'auto'
-                         }}>
+               <Box
+                    position="absolute"
+                    top="100"
+                    right="10"
+                    display={{ base: 'none', lg: 'block' }}
+                    width={{
+                         base: '50px',
+                         lg: '100px',
+                         xl: 'auto'
+                    }}
+               >
                     <Image placeholder="blur" src={ArambhaLogo} />
                </Box>
+          </>
+     );
+};
+function YogaArambha() {
+     const schedule = [
+          { time: '5:30 AM', event: '- Registrations open' },
+          { time: '6:00 AM - 6:15 AM', event: '- Opening Ceremony' },
+          { time: '6:15 AM - 7:15 AM', event: '- Special Yoga Session by Principal Teacher Sharath Basavaraju C' },
+          { time: '7:15 AM - 7:30 AM', event: '- Chief Guest Speech' },
+          { time: '7:30 AM - 7:45 AM', event: '- Yoga Talent Showcase' },
+          { time: '7:45 AM - 8:00 AM', event: '- Closing Ceremony' },
+          { time: '8:00 onwards', event: '- Breakfast' }
+     ];
+
+     const isMobile = useMediaQuery({ query: '(max-width: 390px)' });
+     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 700px)' });
+
+     return (
+          <Box name="parent">
+               <NavbarHelper />{' '}
+               <LogosAndFlowers />
                <Box position="relative" maxW="1440px" width="100%" margin="0 auto" marginTop={{ base: '0px', lg: '40px' }} p={{ base: 0, md: 10 }}>
                     {/* Hero Section */}
                     <Box as="section" position="relative" width="100%" p={{ base: 10, md: 0 }}>
