@@ -74,7 +74,7 @@ const Register = () => {
           }
      };
 
-     const sendOneToAthayog = ( ticketID, name, phone, email, gender, age, tshirt, category, membershipNumber) => {
+     const sendOneToAthayog = await ( ticketID, name, phone, email, gender, age, tshirt, category, membershipNumber) => {
            await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
                method: 'POST',
                headers: {
