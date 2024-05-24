@@ -4,11 +4,15 @@ import { Button } from '@chakra-ui/button';
 import { Box, Divider, Flex, Grid, Heading, Text } from '@chakra-ui/layout';
 import { chakra } from '@chakra-ui/react';
 import Image from 'next/image';
+import Link from 'next/link';
+import GovLogo1 from 'public/24Ayush.jpg';
+import GovLogo2 from 'public/24Gov1.png';
 import GalleryDesktop from 'public/24Gallery.png';
 import GalleryMobile from 'public/24GalleryMobile.png';
 import Guest from 'public/24Guest.png';
 import DateMap from 'public/24Map.svg';
 import MapLeft from 'public/24MapLeft.jpg';
+import MapMobile from 'public/24MapMobile.png';
 import MapRight from 'public/24MapRight.png';
 import What1 from 'public/24What1.png';
 import What2 from 'public/24What2.png';
@@ -22,16 +26,13 @@ import HeroGirlRight from 'public/24_Girl_Right.png';
 import DateCalendar from 'public/24calendar.svg';
 import Clock from 'public/24clock.png';
 import HeroFlower2 from 'public/A24-Flower-2.svg';
-import HeroFlower1 from 'public/A24-Flower.svg';
-import HeroFlower3 from 'public/A24-Flower-3.svg';
 import HeroFlower4 from 'public/A24-Flower-4.svg';
 import HeroFlower5 from 'public/A24-Flower-5.svg';
 import HeroFlower6 from 'public/A24-Flower-6.svg';
+import HeroFlower1 from 'public/A24-Flower.svg';
 import Club from 'public/Club24.png';
 import ArambhaLogo from 'public/ar24_logo.png';
-import MapMobile from 'public/24MapMobile.png';
 import { useMediaQuery } from 'react-responsive';
-import Link from 'next/link';
 
 const PinkButton = ({ children, ...props }) => {
      return (
@@ -60,13 +61,36 @@ function YogaArambha() {
      return (
           <Box name="parent">
                <NavbarHelper />{' '}
+               <Flex position="absolute" alignItems='baseline' top="100" left={{base:5,lg:5}}>
+                    <Box
+                         width={{
+                              base: '100px',
+                              lg: '150px',
+                              xl: '200px'
+                         }}
+                         zIndex={10}
+                         display={{ base: 'none', lg: 'block' }}
+                    >
+                         <Image src={GovLogo1} />
+                    </Box>
+                    <Box
+                         width={{
+                              base: '50px',
+                              lg: '50px',
+                              xl: '80px'
+                         }}
+                         zIndex={10}
+                         display={{ base: 'none', lg: 'block' }}
+                    >
+                         <Image src={GovLogo2} />
+                    </Box>
+               </Flex>
                <Box
                     width={{
                          base: '100px',
                          md: '300px',
                          lg: 'auto'
                     }}
-                    pos
                     position="absolute"
                     top="100"
                     left="0"
@@ -84,7 +108,7 @@ function YogaArambha() {
                     top="100"
                     right="0"
                >
-                    <Image  src={HeroFlower2} />
+                    <Image src={HeroFlower2} />
                </Box>
                <Box
                     name="flowerRight"
@@ -125,10 +149,14 @@ function YogaArambha() {
                >
                     <Image src={HeroFlower6} />
                </Box>
-               <Box position="absolute" top="100" right="10" display={{ base: 'none', lg: 'block' }}>
-                    <Image placeholder='blur' src={ArambhaLogo} />
+               <Box position="absolute" top="100" right="10" display={{ base: 'none', lg: 'block' }}  width={{
+                              base: '50px',
+                              lg: '100px',
+                              xl: 'auto'
+                         }}>
+                    <Image placeholder="blur" src={ArambhaLogo} />
                </Box>
-               <Box maxW="1440px" width="100%" margin="0 auto" marginTop={{ base: '0px', lg: '40px' }} p={{ base: 0, md: 10 }}>
+               <Box position="relative" maxW="1440px" width="100%" margin="0 auto" marginTop={{ base: '0px', lg: '40px' }} p={{ base: 0, md: 10 }}>
                     {/* Hero Section */}
                     <Box as="section" position="relative" width="100%" p={{ base: 10, md: 0 }}>
                          {/* Absolute Background */}
@@ -145,7 +173,7 @@ function YogaArambha() {
                               top="160"
                               left="0"
                          >
-                              <Image placeholder='blur' src={HeroGirlLeft} />
+                              <Image placeholder="blur" src={HeroGirlLeft} />
                          </Box>
 
                          <Box
@@ -160,13 +188,38 @@ function YogaArambha() {
                               top="160"
                               right="0"
                          >
-                              <Image placeholder='blur' src={HeroGirlRight} />
+                              <Image placeholder="blur" src={HeroGirlRight} />
                          </Box>
 
                          <Box name="content" textAlign="center">
                               <Box display={{ base: 'block', lg: 'none' }}>
-                                   <Image placeholder='blur' src={ArambhaLogo} />
+                                   <Image placeholder="blur" src={ArambhaLogo} />
                               </Box>
+                              <Flex mt={-10} mb={5} gap={10} justifyContent="center" alignItems="center">
+                                   {' '}
+                                   <Box
+                                        width={{
+                                             base: '100px',
+                                             md: '150px',
+                                             lg: '150px'
+                                        }}
+                                        zIndex={10}
+                                        display={{ base: 'block', lg: 'none' }}
+                                   >
+                                        <Image src={GovLogo1} />
+                                   </Box>
+                                   <Box
+                                        width={{
+                                             base: '50px',
+                                             md: '50px',
+                                             lg: '150px'
+                                        }}
+                                        display={{ base: 'block', lg: 'none' }}
+                                   >
+                                        <Image src={GovLogo2} />
+                                   </Box>
+                              </Flex>
+
                               <Heading
                                    color="#71312A"
                                    fontSize={{
@@ -288,7 +341,7 @@ function YogaArambha() {
                          <Flex flexDirection="column" width="100%" gap="10px" justifyContent="center" alignItems="center">
                               <Flex alignItems="center" gap="15px">
                                    <Box width={{ base: '30px', md: '30px', lg: '40px', xl: '100%' }}>
-                                        <Image  src={DateCalendar} />
+                                        <Image src={DateCalendar} />
                                    </Box>
                                    <Box style={{ fontFamily: 'Montserrat' }} fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '37px' }}>
                                         Date
@@ -302,7 +355,7 @@ function YogaArambha() {
                          <Flex flexDirection="column" width="100%" gap="10px" justifyContent="center" alignItems="center">
                               <Flex alignItems="center" gap="15px">
                                    <Box width={{ base: '30px', md: '30px', lg: '40px', xl: '100%' }}>
-                                        <Image  src={DateMap} />{' '}
+                                        <Image src={DateMap} />{' '}
                                    </Box>
                                    <Box style={{ fontFamily: 'Montserrat' }} fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '37px' }}>
                                         Location
@@ -319,7 +372,7 @@ function YogaArambha() {
                               <Flex class="schedule-time" flexDirection="column" gap="20px" flexDirection={{ base: 'row', lg: 'column' }} justifyContent="center" alignItems="center">
                                    <Box width={{ base: '40px', md: '30px', lg: '40px', xl: '100%' }}>
                                         {' '}
-                                        <Image  src={Clock} />
+                                        <Image src={Clock} />
                                    </Box>
 
                                    <Text fontFamily="Montserrat" fontSize={{ base: '18px', sm: '18pxpx', md: '28px', lg: '38px', xl: '48px' }} fontWeight="medium">
@@ -390,7 +443,7 @@ function YogaArambha() {
                          <Flex width="100%" justifyContent="space-between" alignItems="center" flexDirection={{ base: 'column', md: 'row' }} gap={{ base: '15px', md: '0px' }}>
                               <Box width={{ base: '200px', md: '300px', lg: '300px', xl: '300px' }}>
                                    {' '}
-                                   <Image placeholder='blur' src={Guest} />
+                                   <Image placeholder="blur" src={Guest} />
                               </Box>
 
                               <Text textAlign={{ base: 'center', md: 'left' }} marginLeft={{ base: '0px', md: '70px' }} marginRight={{ base: '0', md: '40px' }} fontSize={{ base: '26px', sm: '26px', md: '25px', lg: '25px', xl: '36px' }} fontWeight="bold">
@@ -398,7 +451,7 @@ function YogaArambha() {
                               </Text>
                               <Box width={{ base: '200px', md: '300px', lg: '300px', xl: '300px' }}>
                                    {' '}
-                                   <Image placeholder='blur' src={Club} />
+                                   <Image placeholder="blur" src={Club} />
                               </Box>
                          </Flex>
                     </Flex>
@@ -472,7 +525,7 @@ function YogaArambha() {
                          </Text>
                          <Flex p={{ base: 10, md: 0 }} justifyContent="center" alignItems="baseline" marginTop={{ base: '27px', md: '47px' }} gap="37px" flexWrap="wrap">
                               <Flex rounded="md" overflow="hidden" maxW="400px" flexDirection="column" gap={{ base: '15px', md: '15px' }} justifyContent="center" alignItems="center">
-                                   <Image placeholder='blur' src={Why1} />
+                                   <Image placeholder="blur" src={Why1} />
                                    <Text
                                         fontSize={{
                                              base: '23px',
@@ -499,7 +552,7 @@ function YogaArambha() {
                                    </Text>
                               </Flex>
                               <Flex rounded="md" overflow="hidden" maxW="400px" flexDirection="column" gap={{ base: '15px', md: '15px' }} justifyContent="center" alignItems="center">
-                                   <Image placeholder='blur' src={Why2} />
+                                   <Image placeholder="blur" src={Why2} />
                                    <Text
                                         fontSize={{
                                              base: '23px',
@@ -526,7 +579,7 @@ function YogaArambha() {
                                    </Text>
                               </Flex>
                               <Flex rounded="md" overflow="hidden" maxW="400px" flexDirection="column" gap={{ base: '15px', md: '15px' }} justifyContent="center" alignItems="center">
-                                   <Image placeholder='blur' src={Why3} />
+                                   <Image placeholder="blur" src={Why3} />
                                    <Text
                                         fontSize={{
                                              base: '23px',
@@ -573,7 +626,7 @@ function YogaArambha() {
                          <Grid p={{ base: 10, md: 0 }} gridTemplateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }} justifyItems="center" alignItems="center" marginTop={{ base: '27px', md: '47px' }} gap="52px">
                               <Flex justifySelf={{ base: 'auto', lg: 'flex-end' }} alignSelf="baseline" rounded="md" overflow="hidden" maxW="500px" flexDirection="column" gap="15px" justifyContent="center" alignItems="center">
                                    <Box rounded="md" overflow="hidden">
-                                        <Image placeholder='blur' alt="What" src={What1} />
+                                        <Image placeholder="blur" alt="What" src={What1} />
                                    </Box>
                                    <Text
                                         fontSize={{
@@ -603,7 +656,7 @@ function YogaArambha() {
                               </Flex>
                               <Flex justifySelf={{ base: 'auto', lg: 'flex-start' }} alignSelf="baseline" rounded="md" overflow="hidden" maxW="500px" flexDirection="column" gap="15px" justifyContent="center" alignItems="center">
                                    <Box rounded="md" overflow="hidden">
-                                        <Image placeholder='blur' alt="What" src={What2} />
+                                        <Image placeholder="blur" alt="What" src={What2} />
                                    </Box>
                                    <Text
                                         textAlign="center"
@@ -634,7 +687,7 @@ function YogaArambha() {
                               </Flex>
                               <Flex justifySelf={{ base: 'auto', lg: 'flex-end' }} alignSelf="baseline" rounded="md" overflow="hidden" maxW="500px" flexDirection="column" gap="15px" justifyContent="center" alignItems="center">
                                    <Box rounded="md" overflow="hidden">
-                                        <Image placeholder='blur' alt="What" src={What3} />
+                                        <Image placeholder="blur" alt="What" src={What3} />
                                    </Box>
                                    <Text
                                         textAlign="center"
@@ -665,7 +718,7 @@ function YogaArambha() {
                               </Flex>
                               <Flex justifySelf={{ base: 'auto', lg: 'flex-start' }} alignSelf="baseline" rounded="md" overflow="hidden" maxW="500px" flexDirection="column" gap="15px" justifyContent="center" alignItems="center">
                                    <Box rounded="md" overflow="hidden">
-                                        <Image placeholder='blur' alt="What" src={What4} />
+                                        <Image placeholder="blur" alt="What" src={What4} />
                                    </Box>
                                    <Text
                                         textAlign="center"
@@ -716,11 +769,11 @@ function YogaArambha() {
                                    Map View
                               </Text>
                               {isMobile ? (
-                                   <Image placeholder='blur' src={MapMobile} />
+                                   <Image placeholder="blur" src={MapMobile} />
                               ) : (
                                    <Flex>
-                                        <Image placeholder='blur' src={MapLeft} />
-                                        <Image placeholder='blur' src={MapRight} />
+                                        <Image placeholder="blur" src={MapLeft} />
+                                        <Image placeholder="blur" src={MapRight} />
                                    </Flex>
                               )}
                          </Box>
@@ -740,7 +793,7 @@ function YogaArambha() {
                               Register Now
                          </PinkButton>
 
-                         <Box marginTop={{ base: '21px', md: '135px' }}>{isMobile ? <Image placeholder='blur' src={GalleryMobile} /> : <Image placeholder='blur' src={GalleryDesktop} />}</Box>
+                         <Box marginTop={{ base: '21px', md: '135px' }}>{isMobile ? <Image placeholder="blur" src={GalleryMobile} /> : <Image placeholder="blur" src={GalleryDesktop} />}</Box>
                     </Flex>
                </Box>
           </Box>
