@@ -61,6 +61,7 @@ const Register = () => {
 
                if (response.ok) {
                     toast.success('Registration successful and email sent!');
+                    sendOneToAthayog(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
                } else {
                     toast.error('Failed to send email.');
                }
@@ -69,8 +70,24 @@ const Register = () => {
                toast.error('An error occurred during registration.');
           } finally {
                setIsLoading(false);
+               reset()
           }
      };
+
+     const sendOneToAthayog = ( ticketID, name, phone, email, gender, age, tshirt, category, membershipNumber) => {
+           await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
+               method: 'POST',
+               headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+               },
+               body: JSON.stringify({
+                    FormType: 'Registration For Arambha 2023',
+                    ticketID, name, phone, email, gender, age, tshirt, category, membershipNumber
+               })
+          });
+             
+     }
 
      return (
           <RecaptchaProvider>
