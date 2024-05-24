@@ -743,7 +743,8 @@ function YogaArambha() {
                                         }}
                                         fontWeight="bold"
                                    >
-                                        Community Connection
+                                       Activities 
+
                                    </Text>
                                    <Text
                                         textAlign="center"
@@ -757,7 +758,9 @@ function YogaArambha() {
                                         maxWidth="500px"
                                         style={{ fontFamily: 'Montserrat' }}
                                    >
-                                        Opportunities to connect with other women in a supportive and uplifting environment.
+                                       Discover the holistic benefits of yoga
+through our enriching extracurricular
+activities.
                                    </Text>
                               </Flex>
                          </Grid>
