@@ -806,7 +806,7 @@ function YogaArambha() {
                               Register Now
                          </PinkButton>
 
-                         <Box marginTop={{ base: '21px', md: '135px' }}>{isMobile ? <Image placeholder="blur" src={GalleryMobile} /> : <Image placeholder="blur" src={GalleryDesktop} />}</Box>
+                         <Box marginTop={{ base: '21px', md: '135px' }} margin='0 auto'>{isMobile ? <Image placeholder="blur" src={GalleryMobile} /> : <Image placeholder="blur" src={GalleryDesktop} />}</Box>
                     </Flex>
                </Box>
           </Box>
