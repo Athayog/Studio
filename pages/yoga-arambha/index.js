@@ -167,8 +167,7 @@ function YogaArambha() {
 
      return (
           <Box name="parent">
-               <NavbarHelper />{' '}
-               <LogosAndFlowers />
+               <NavbarHelper /> <LogosAndFlowers />
                <Box position="relative" maxW="1440px" width="100%" margin="0 auto" marginTop={{ base: '0px', lg: '40px' }} p={{ base: 0, md: 10 }}>
                     {/* Hero Section */}
                     <Box as="section" position="relative" width="100%" p={{ base: 10, md: 0 }}>
@@ -743,8 +742,7 @@ function YogaArambha() {
                                         }}
                                         fontWeight="bold"
                                    >
-                                       Activities 
-
+                                        Activities
                                    </Text>
                                    <Text
                                         textAlign="center"
@@ -758,9 +756,7 @@ function YogaArambha() {
                                         maxWidth="500px"
                                         style={{ fontFamily: 'Montserrat' }}
                                    >
-                                       Discover the holistic benefits of yoga
-through our enriching extracurricular
-activities.
+                                        Discover the holistic benefits of yoga through our enriching extracurricular activities.
                                    </Text>
                               </Flex>
                          </Grid>
@@ -809,7 +805,9 @@ activities.
                               Register Now
                          </PinkButton>
 
-                         <Box marginTop={{ base: '21px', md: '135px' }} margin='0 auto'>{isMobile ? <Image placeholder="blur" src={GalleryMobile} /> : <Image placeholder="blur" src={GalleryDesktop} />}</Box>
+                         <Box marginTop={{ base: '21px', md: '135px' }} margin="0 auto">
+                              {isMobile ? <Image placeholder="blur" src={GalleryMobile} /> : <Image placeholder="blur" src={GalleryDesktop} />}
+                         </Box>
                     </Flex>
                </Box>
           </Box>
