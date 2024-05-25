@@ -38,7 +38,7 @@ import { useMediaQuery } from 'react-responsive';
 const PinkButton = ({ children, ...props }) => {
      return (
           <Link href="/yoga-arambha/register" passHref>
-               <Button p={{ base: '32px 33px', md: '34px 60px', lg: '44px 70px' }} _hover={{ backgroundColor: '#BF1D2C' }} backgroundColor="#EA3B4A" color="white" rounded="full" {...props}>
+               <Button p={{ base: '32px 33px', md: '34px 50px', lg: '44px 50px' }} _hover={{ backgroundColor: '#BF1D2C' }} backgroundColor="#EA3B4A" color="white" rounded="full" {...props}>
                     {children}
                </Button>
           </Link>
