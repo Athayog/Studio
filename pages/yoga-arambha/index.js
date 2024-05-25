@@ -27,9 +27,10 @@ import DateCalendar from 'public/24calendar.svg';
 import Clock from 'public/24clock.png';
 import HeroFlower2 from 'public/A24-Flower-2.svg';
 import HeroFlower4 from 'public/A24-Flower-4.svg';
-import HeroFlower5 from 'public/A24-Flower-5.svg';
+import HeroFlower5 from 'public/A24-Flower-5.png';
 import HeroFlower6 from 'public/A24-Flower-6.svg';
 import HeroFlower1 from 'public/A24-Flower.svg';
+import AboutImageMobile from 'public/24About.png'
 import Club from 'public/Club24.png';
 import ArambhaLogo from 'public/ar24_logo.png';
 import { useMediaQuery } from 'react-responsive';
@@ -88,11 +89,15 @@ const LogosAndFlowers = () => {
                     width={{
                          base: '100px',
                          md: '300px',
-                         xl: 'auto'
+                         xl: '400px'
                     }}
                     position="absolute"
                     top="100"
                     right="0"
+                    style={{
+                         maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.5))',
+                         WebkitMaskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.5))',
+                    }}
                >
                     <Image src={HeroFlower2} />
                </Box>
@@ -153,13 +158,13 @@ const LogosAndFlowers = () => {
 };
 function YogaArambha() {
      const schedule = [
-          { time: '5:30 AM', event: '- Registrations open' },
-          { time: '6:00 AM - 6:15 AM', event: '- Opening Ceremony' },
-          { time: '6:15 AM - 7:15 AM', event: '- Special Yoga Session by Principal Teacher Sharath Basavaraju C' },
-          { time: '7:15 AM - 7:30 AM', event: '- Chief Guest Speech' },
-          { time: '7:30 AM - 7:45 AM', event: '- Yoga Talent Showcase' },
-          { time: '7:45 AM - 8:00 AM', event: '- Closing Ceremony' },
-          { time: '8:00 onwards', event: '- Breakfast' }
+          { time: '5:30 AM', event: ' Registrations open' },
+          { time: '6:00 AM - 6:15 AM', event: ' Opening Ceremony' },
+          { time: '6:15 AM - 7:15 AM', event: ' Special Yoga Session by Principal Teacher Sharath Basavaraju C' },
+          { time: '7:15 AM - 7:30 AM', event: ' Chief Guest Speech' },
+          { time: '7:30 AM - 7:45 AM', event: ' Yoga Talent Showcase' },
+          { time: '7:45 AM - 8:00 AM', event: ' Closing Ceremony' },
+          { time: '8:00 onwards', event: ' Breakfast' }
      ];
 
      const isMobile = useMediaQuery({ query: '(max-width: 390px)' });
@@ -252,7 +257,7 @@ function YogaArambha() {
                                         lg: '22px',
                                         xl: '32px'
                                    }}
-                                   fontWeight="bold"
+                                   fontWeight="700"
                                    style={{ fontFamily: 'Montserrat' }}
                                    marginTop="34px"
                               >
@@ -267,7 +272,7 @@ function YogaArambha() {
                                         xl: '30px'
                                    }}
                                    color="#AA645B"
-                                   fontWeight="semibold"
+                                   fontWeight="500"
                                    style={{ fontFamily: 'Montserrat' }}
                                    marginTop={{
                                         base: '12px',
@@ -287,13 +292,13 @@ function YogaArambha() {
                                              lg: '22px',
                                              xl: '26px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Register Now
                                    </chakra.span>
 
                                    <chakra.span
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                         fontSize={{
                                              base: '14px',
                                              md: '22px',
@@ -317,7 +322,7 @@ function YogaArambha() {
                               >
                                    <Heading
                                         as="h3"
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                         fontSize={{
                                              base: '32px',
                                              sm: '32px',
@@ -333,7 +338,7 @@ function YogaArambha() {
                                         lineHeight={{ base: '24px', sm: '24px', md: '32px', lg: '32px', xl: '44px' }}
                                         margin="0 auto"
                                         marginTop="20px"
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                         color="#003744"
                                         fontSize={{
                                              base: '14px',
@@ -346,6 +351,15 @@ function YogaArambha() {
                                         AthaYog invites you to a special International Day of Yoga event dedicated to celebrating the strength, resilience and power of women. Through yoga, breath work and community, we'll explore practices that empower us on all levels.
                                    </Text>
                               </Box>
+
+                         </Box>
+                    </Box>
+
+                    <Box mt="28px" width="100%" maxWidth="100%" margin="0 auto" display={{md:"none"}}>
+                         <Box position="relative" width="100%" height="266px" paddingTop="10px">
+                              <Image src={AboutImageMobile} layout="fill"
+                                   objectFit="cover"
+                                   style={{ width: '100%', height: '100%' }} />
                          </Box>
                     </Box>
 
@@ -359,7 +373,7 @@ function YogaArambha() {
                                         Date
                                    </Box>
                               </Flex>
-                              <Text fontWeight="bold" fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '42px' }}>
+                              <Text fontWeight="700" fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '42px' }}>
                                    June 21, 2024
                               </Text>
                          </Flex>
@@ -373,7 +387,7 @@ function YogaArambha() {
                                         Location
                                    </Box>
                               </Flex>
-                              <Text fontWeight="bold" fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '42px' }}>
+                              <Text fontWeight="700" fontSize={{ base: '20px', sm: '20px', md: '32px', lg: '32px', xl: '42px' }}>
                                    Indiranagar club
                               </Text>
                          </Flex>
@@ -409,9 +423,10 @@ function YogaArambha() {
                                    ></Box>
                                    <Flex direction="column" padding="4" overflowX="auto">
                                         {schedule.map((item, index) => (
-                                             <Flex fontWeight="bold" fontSize={{ base: '15px', sm: '15px', md: '20px', lg: '25px', xl: '28px' }} key={index} color={index % 2 === 0 ? '#B80000' : 'black'} padding="2">
-                                                  <Box flex="1">{item.time}</Box>
-                                                  <Box flex="3">{item.event}</Box>
+                                             <Flex fontWeight="700" fontSize={{ base: '15px', sm: '15px', md: '20px', lg: '25px', xl: '28px' }} key={index} color={index % 2 === 0 ? '#B80000' : 'black'} padding="2">
+                                                  <Box width={{ base: '150px', md: "200px", lg: '280px' }}>{item.time}</Box>
+                                                  <Box flex="0">-</Box>
+                                                  <Box flex="3" marginLeft={1}>{' '}{item.event}</Box>
                                              </Flex>
                                         ))}
                                    </Flex>
@@ -423,8 +438,8 @@ function YogaArambha() {
                          <PinkButton
                               margin="0 auto"
                               marginTop={{ base: '20px', sm: '20px', md: '50px', lg: '60px', xl: '100px' }}
-                              fontWeigh="bold"
-                              p={{ base: '20px 33px', md: '20px 60px', lg: '30px 70px' }}
+                              fontWeight="700"
+                              p={{ base: '24px 33px', md: '20px 60px', lg: '30px 70px' }}
                               fontSize={{
                                    base: '16px',
                                    md: '22px',
@@ -458,10 +473,10 @@ function YogaArambha() {
                                    <Image placeholder="blur" src={Guest} />
                               </Box>
 
-                              <Text textAlign={{ base: 'center', md: 'left' }} marginLeft={{ base: '0px', md: '70px' }} marginRight={{ base: '0', md: '40px' }} fontSize={{ base: '26px', sm: '26px', md: '25px', lg: '25px', xl: '36px' }} fontWeight="bold">
+                              <Text textAlign={{ base: 'center', md: 'left' }} marginLeft={{ base: '0px', md: '70px' }} marginRight={{ base: '0', md: '40px' }} fontSize={{ base: '20px', sm: '20px', md: '25px', lg: '25px', xl: '36px' }} fontWeight="700">
                                    Proudly supported by <chakra.span color="#992C2C">B N S Reddy.</chakra.span> <br /> Inspector general of Police IPS(R). President of Indiranagar Club
                               </Text>
-                              <Box width={{ base: '200px', md: '300px', lg: '300px', xl: '300px' }}>
+                              <Box width={{ base: '150px', md: '300px', lg: '300px', xl: '300px' }}>
                                    {' '}
                                    <Image placeholder="blur" src={Club} />
                               </Box>
@@ -477,7 +492,7 @@ function YogaArambha() {
                                    lg: '54px',
                                    xl: '64px'
                               }}
-                              fontWeight="bold"
+                              fontWeight="700"
                          >
                               About AthaYog
                          </Text>
@@ -502,7 +517,7 @@ function YogaArambha() {
                                    lg: '54px',
                                    xl: '64px'
                               }}
-                              fontWeight="bold"
+                              fontWeight="700"
                          >
                               What We Do
                          </Text>
@@ -531,11 +546,11 @@ function YogaArambha() {
                                    lg: '54px',
                                    xl: '64px'
                               }}
-                              fontWeight="bold"
+                              fontWeight="700"
                          >
                               Why Yoga Arambha?
                          </Text>
-                         <Flex p={{ base: 10, md: 0 }} justifyContent="center" alignItems="baseline" marginTop={{ base: '27px', md: '47px' }} gap="37px" flexWrap="wrap">
+                         <Flex px={{ base: 10, md: 0 }} justifyContent="center" alignItems="baseline" marginTop={{ base: '20px', md: '47px' }} gap="37px" flexWrap="wrap">
                               <Flex rounded="md" overflow="hidden" maxW="400px" flexDirection="column" gap={{ base: '15px', md: '15px' }} justifyContent="center" alignItems="center">
                                    <Image placeholder="blur" src={Why1} />
                                    <Text
@@ -545,7 +560,7 @@ function YogaArambha() {
                                              lg: '32px',
                                              xl: '32px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Yoga as Innerness
                                    </Text>
@@ -558,7 +573,7 @@ function YogaArambha() {
                                              xl: '22px'
                                         }}
                                         textAlign="center"
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                    >
                                         Yoga integrates mind and body through breath control, meditation and movement which cultivates inner strength, resilience and well-being, not just physical fitness.
                                    </Text>
@@ -572,7 +587,7 @@ function YogaArambha() {
                                              lg: '32px',
                                              xl: '32px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Yoga for All
                                    </Text>
@@ -585,7 +600,7 @@ function YogaArambha() {
                                              xl: '22px'
                                         }}
                                         textAlign="center"
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                    >
                                         Yoga welcomes all women, regardless of background or experience, to discover strength, peace and joy.
                                    </Text>
@@ -599,7 +614,7 @@ function YogaArambha() {
                                              lg: '32px',
                                              xl: '32px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Women's Empowerment
                                    </Text>
@@ -612,7 +627,7 @@ function YogaArambha() {
                                              xl: '22px'
                                         }}
                                         textAlign="center"
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                    >
                                         Yoga nurtures a woman's holistic well being, strengthening her body, calming her mind and uplifting her spirit.
                                    </Text>
@@ -631,11 +646,11 @@ function YogaArambha() {
                                    lg: '54px',
                                    xl: '64px'
                               }}
-                              fontWeight="bold"
+                              fontWeight="700"
                          >
                               What to Expect
                          </Text>
-                         <Grid p={{ base: 10, md: 0 }} gridTemplateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }} justifyItems="center" alignItems="center" marginTop={{ base: '27px', md: '47px' }} gap="52px">
+                         <Grid px={{ base: 10, md: 0 }} gridTemplateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }} justifyItems="center" alignItems="center" marginTop={{ base: '20px', md: '47px' }} gap="52px">
                               <Flex justifySelf={{ base: 'auto', lg: 'flex-end' }} alignSelf="baseline" rounded="md" overflow="hidden" maxW="500px" flexDirection="column" gap="15px" justifyContent="center" alignItems="center">
                                    <Box rounded="md" overflow="hidden">
                                         <Image placeholder="blur" alt="What" src={What1} />
@@ -647,7 +662,7 @@ function YogaArambha() {
                                              lg: '32px',
                                              xl: '32px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Yoga Practice
                                    </Text>
@@ -660,7 +675,7 @@ function YogaArambha() {
                                              xl: '28px'
                                         }}
                                         style={{ fontFamily: 'Montserrat' }}
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                         maxWidth="500px"
                                    >
                                         Tailored to all levels, focusing on postures and flows that promote strength, flexibility and energy.
@@ -678,7 +693,7 @@ function YogaArambha() {
                                              lg: '32px',
                                              xl: '32px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Breath Work
                                    </Text>
@@ -690,7 +705,7 @@ function YogaArambha() {
                                              lg: '28px',
                                              xl: '28px'
                                         }}
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                         maxWidth="500px"
                                         style={{ fontFamily: 'Montserrat' }}
                                    >
@@ -709,7 +724,7 @@ function YogaArambha() {
                                              lg: '32px',
                                              xl: '32px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Community Connection
                                    </Text>
@@ -721,7 +736,7 @@ function YogaArambha() {
                                              lg: '28px',
                                              xl: '28px'
                                         }}
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                         maxWidth="500px"
                                         style={{ fontFamily: 'Montserrat' }}
                                    >
@@ -740,7 +755,7 @@ function YogaArambha() {
                                              lg: '32px',
                                              xl: '32px'
                                         }}
-                                        fontWeight="bold"
+                                        fontWeight="700"
                                    >
                                         Activities
                                    </Text>
@@ -752,7 +767,7 @@ function YogaArambha() {
                                              lg: '28px',
                                              xl: '28px'
                                         }}
-                                        fontWeight="semibold"
+                                        fontWeight="500"
                                         maxWidth="500px"
                                         style={{ fontFamily: 'Montserrat' }}
                                    >
@@ -764,7 +779,7 @@ function YogaArambha() {
                               <PinkButton
                                    margin="0 auto"
                                    marginTop={{ base: '21px', md: '100px' }}
-                                   fontWeigh="bold"
+                                   fontWeight="700"
                                    p={{ base: '20px 33px', md: '20px 60px', lg: '30px 70px' }}
                                    fontSize={{
                                         base: '16px',
@@ -777,7 +792,7 @@ function YogaArambha() {
                               </PinkButton>
                          </Flex>
                          <Box bg="#CBCBCB" padding="40px" marginTop={{ base: '45px', lg: '62px' }}>
-                              <Text fontSize={{ base: '26px', md: '36px', lg: '46px' }} fontWeight="bold" textAlign="center">
+                              <Text fontSize={{ base: '26px', md: '36px', lg: '46px' }} fontWeight="700" textAlign="center">
                                    Map View
                               </Text>
                               {isMobile ? (
@@ -793,7 +808,7 @@ function YogaArambha() {
                          <PinkButton
                               margin="0 auto"
                               marginTop={{ base: '21px', md: '100px' }}
-                              fontWeigh="bold"
+                              fontWeigh="700"
                               p={{ base: '20px 33px', md: '20px 60px', lg: '30px 70px' }}
                               fontSize={{
                                    base: '16px',
@@ -805,7 +820,7 @@ function YogaArambha() {
                               Register Now
                          </PinkButton>
 
-                         <Box marginTop={{ base: '21px', md: '135px' }} margin="0 auto">
+                         <Box marginTop={{ base: '21px', md: '135px' }} marginLeft='auto' marginRight='auto'>
                               {isMobile ? <Image placeholder="blur" src={GalleryMobile} /> : <Image placeholder="blur" src={GalleryDesktop} />}
                          </Box>
                     </Flex>
