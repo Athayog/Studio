@@ -167,7 +167,7 @@ function YogaArambha() {
           { time: '8:00 onwards', event: ' Breakfast' }
      ];
 
-     const isMobile = useMediaQuery({ query: '(max-width: 390px)' });
+     const isMobile = useMediaQuery({ query: '(max-width: 490px)' });
      const isTabletOrMobile = useMediaQuery({ query: '(max-width: 700px)' });
 
      return (
@@ -483,7 +483,7 @@ function YogaArambha() {
                          </Flex>
                     </Flex>
 
-                    <Flex name="about" p={{ base: 5, md: 0 }} flexDirection="column" justfifyContent="center" gap={{ base: '10px', md: '20px' }} alignItems="center" width="100%" marginTop="95px">
+                    <Flex name="about" p={{ base: 5, md: 0 }} flexDirection="column" justfifyContent="center" gap={{ base: '10px', md: '20px' }} alignItems="center" width="100%" marginTop={{base:"10px",md:"30px",lg:"95px"}}>
                          <Text
                               fontSize={{
                                    base: '32px',
@@ -791,8 +791,8 @@ function YogaArambha() {
                                    Register Now Free & For Everyone
                               </PinkButton>
                          </Flex>
-                         <Box bg="#CBCBCB" padding="40px" marginTop={{ base: '45px', lg: '62px' }}>
-                              <Text fontSize={{ base: '26px', md: '36px', lg: '46px' }} fontWeight="700" textAlign="center">
+                         <Flex flexDirection='column' bg="#CBCBCB" padding={{sm:"40px",md:"40px"}} marginTop={{ base: '45px', lg: '62px' }}>
+                              <Text pt={{base:'20px',md:0}} fontSize={{ base: '26px', md: '36px', lg: '46px' }} fontWeight="700" textAlign="center">
                                    Map View
                               </Text>
                               {isMobile ? (
@@ -803,7 +803,7 @@ function YogaArambha() {
                                         <Image placeholder="blur" src={MapRight} />
                                    </Flex>
                               )}
-                         </Box>
+                         </Flex>
 
                          <PinkButton
                               margin="0 auto"
