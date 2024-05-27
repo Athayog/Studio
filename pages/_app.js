@@ -100,7 +100,9 @@ function App({ Component, pageProps }) {
           '/swami-vivekananda-jayanti/register',
           '/swami-vivekananda-jayanti/ticket',
           '/akshyan-yoga-academy',
-          '/account/delete-request'
+          '/account/delete-request',
+          '/yoga-arambha',
+          '/yoga-arambha/register'
      ];
 
      useEffect(() => {

@@ -115,7 +115,7 @@ const emailTemplate = (name, ticketid) => {
                           <tbody>
                             <tr>
                               <td style="width:100px;">
-                                <img height="auto" src="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/Yoga%20arambha%20_masthead%20black.png?alt=media&token=d44aff87-abeb-41a0-945a-a50efd346212" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100" />
+                                <img height="auto" src="https://firebasestorage.googleapis.com/v0/b/authentication-test-7c342.appspot.com/o/ar24_logo.png?alt=media&token=a3971691-5c65-4467-92ab-42580d3ed5cd" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100" />
                               </td>
                             </tr>
                           </tbody>
@@ -206,8 +206,8 @@ export default async function handler(req, res) {
                const response = await resend.emails.send({
                     from: 'Athayog Living <info@athayogliving.com>',
                     to: email,
-                    cc: "admin@athayogliving.com",
-                    subject: 'Registration Confirmation',
+                    cc: "info@athayogliving.com",
+                    subject: 'Yoga Arambha 2024 Registration Confirmation',
                     html: emailTemplate(name, ticketID)
                });
 

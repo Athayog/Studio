@@ -32,12 +32,15 @@ const Register = () => {
           } else {
                setShowMembershipNumber(false);
                setValue('membershipNumber', '');
-               clearErrors('membershipNumber');
+               // clearErrors('membershipNumber');
           }
      };
 
      const onSubmit = async (data) => {
           setIsLoading(true);
+          if (recaptchaToken === null) {
+               return  toast.error('reCAPTCHA verification failed. Please refresh page and try again!');
+          }
           try {
                const emailCheckResponse = await checkForArambha2024(data.email);
 
@@ -70,9 +73,12 @@ const Register = () => {
                toast.error('An error occurred during registration.');
           } finally {
                setIsLoading(false);
-               reset()
+               
           }
      };
+
+     
+     
 
      const sendOneToAthayog = async ( ticketID, name, phone, email, gender, age, tshirt, category, membershipNumber) => {
            await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
@@ -120,7 +126,7 @@ const Register = () => {
                </Box>
                <Toaster />
                <Flex p={2} justify={{ base: 'flex-start', lg: 'center' }} flexDirection="column" align="center" minHeight="100vh" bg="white">
-                    <Heading
+                    {/* <Heading
                          textAlign="center"
                          color="#71312A"
                          fontSize={{
@@ -132,7 +138,9 @@ const Register = () => {
                          }}
                     >
                          Yoga Arambha 2024 <br /> Empower Your Inner Goddess
-                    </Heading>
+                    </Heading> */}
+
+                    console.log(errors)
                     <Box zIndex={10} mt={{ base: 5, md: 5 }} width="full" maxW="5xl" mx="auto" p={8} borderWidth={{ base: 0, lg: 1 }} borderRadius="lg" bg="white" boxShadow={{ base: 'none', lg: 'base' }}>
                          <Heading as="h1" mb={6} textAlign="center">
                               Registration Form
@@ -171,8 +179,8 @@ const Register = () => {
 
                                    <FormControl isInvalid={errors.age}>
                                         <FormLabel htmlFor="age">Age</FormLabel>
-                                        <Input id="age" name="age" type="number" ref={register({ required: true, min: 18, max: 99 })} />
-                                        <FormErrorMessage>{errors.age && 'Age is required and must be between 18 and 99'}</FormErrorMessage>
+                                        <Input id="age" name="age" type="number" ref={register({ required: true, min: 6, max: 99 })} />
+                                        <FormErrorMessage>{errors.age && 'Age is required and must be between 6 and 99'}</FormErrorMessage>
                                    </FormControl>
 
                                    <FormControl isInvalid={errors.tshirt}>

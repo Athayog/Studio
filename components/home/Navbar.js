@@ -1,29 +1,5 @@
 import { useAuth } from '@/lib/auth';
-import {
-     Avatar,
-     Box,
-     Button,
-     Center,
-     chakra,
-     CloseButton,
-     Drawer,
-     DrawerBody,
-     DrawerCloseButton,
-     DrawerContent,
-     DrawerFooter,
-     DrawerHeader,
-     DrawerOverlay,
-     Flex,
-     HStack,
-     IconButton,
-     Menu,
-     MenuButton,
-     MenuItem,
-     MenuList,
-     Text,
-     useDisclosure,
-     VStack
-} from '@chakra-ui/react';
+import { Avatar, Box, Button, Center, chakra, CloseButton, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure, VStack } from '@chakra-ui/react';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 import { motion } from 'framer-motion';
@@ -55,29 +31,14 @@ const Navbar = () => {
      SwiperCore.use([Autoplay]);
      const announcements = null;
 
-     const announcementsURLS = ['/kids-yoga-camp', '/yoga-retreat'];
+     const announcementsURLS = ['/yoga-arambha', '/yoga-arambha/register'];
 
      return (
           <>
                <Box zIndex={3} position="fixed" width="100%">
-                    <Box
-                         bg="white"
-                         transition="linear"
-                         transform="initial"
-                         display='flex'
-                         alignItems='center'
-                         justifyContent='space-around'
-
-                         style={{ backdropFilter: 'blur(5px)' }}
-                         borderBottom="1px solid #efefef"
-                         width="100%"
-                         height={{ base: '4rem', md: '4rem', lg: '4rem' }}
-                    >
-                         <Flex
-                              alignItems="center"
-                              justifyContent="space-between"
-                              minWidth="80%"
-                         >
+                    {!announcementsURLS.includes(router.pathname) && <Link href='/yoga-arambha' passHref><Box textAlign='center' cursor='pointer' textDecoration='underline' py={1} color='white' bg="red.600">Yoga Arambha 2024 Registration is Live! Click Here to Join!</Box></Link>}
+                    <Box bg="white" transition="linear" transform="initial" display="flex" alignItems="center" justifyContent="space-around" style={{ backdropFilter: 'blur(5px)' }} borderBottom="1px solid #efefef" width="100%" height={{ base: '4rem', md: '4rem', lg: '4rem' }}>
+                         <Flex alignItems="center" justifyContent="space-between" minWidth="80%">
                               <Flex
                                    display={{
                                         base: 'flex',
@@ -89,25 +50,9 @@ const Navbar = () => {
                               </Flex>
                               <Flex alignItems="center">
                                    <Link passHref href="/">
-                                        <Flex
-                                             alignItems="center"
-                                             cursor="pointer"
-                                        >
+                                        <Flex alignItems="center" cursor="pointer">
                                              <Box>
-                                                  <Image
-                                                       src={Logo}
-                                                       alt="logo"
-                                                       height={
-                                                            isTabletOrMobile
-                                                                 ? 25
-                                                                 : 35
-                                                       }
-                                                       width={
-                                                            isTabletOrMobile
-                                                                 ? 25
-                                                                 : 35
-                                                       }
-                                                  />
+                                                  <Image src={Logo} alt="logo" height={isTabletOrMobile ? 25 : 35} width={isTabletOrMobile ? 25 : 35} />
                                              </Box>
 
                                              <Text
@@ -116,13 +61,12 @@ const Navbar = () => {
                                                        base: 'xl',
                                                        md: 'xl',
                                                        lg: 'xl',
-                                                       xl:'2xl'
+                                                       xl: '2xl'
                                                   }}
                                                   ml={2}
                                                   fontWeight="normal"
                                                   cursor="pointer"
                                                   letterSpacing="-2.5px"
-                                                 
                                              >
                                                   Atha Yog
                                              </Text>
@@ -134,10 +78,10 @@ const Navbar = () => {
                                              base: '2rem',
                                              md: '2rem',
                                              lg: '2rem',
-                                             xl:"3rem"
+                                             xl: '3rem'
                                         }}
                                         variant="ghost"
-                                        spacing={{base:'2',md:"2",lg:"2", xl:"6"}}
+                                        spacing={{ base: '2', md: '2', lg: '2', xl: '6' }}
                                         size="sm"
                                         color="primaryBlack"
                                         display={{
@@ -167,12 +111,8 @@ const Navbar = () => {
                                                        }
                                                   }}
                                                   whileTap={{ scale: 0.9 }}
-                                                  isActive={
-                                                       router.pathname == '/'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                                  size='sm'
+                                                  isActive={router.pathname == '/' ? true : ''}
+                                                  size="sm"
                                              >
                                                   Home
                                              </MotionButton>
@@ -181,7 +121,7 @@ const Navbar = () => {
                                         <Link href="/about" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
+                                                  fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -192,13 +132,8 @@ const Navbar = () => {
                                                        transform: 'scale(0.98)',
                                                        borderColor: '#bec3c9'
                                                   }}
-                                                  isActive={
-                                                       router.pathname ==
-                                                            '/about'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                                  size='sm'
+                                                  isActive={router.pathname == '/about' ? true : ''}
+                                                  size="sm"
                                              >
                                                   About Us
                                              </Button>
@@ -206,7 +141,7 @@ const Navbar = () => {
                                         <Link href="/group-classes" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
+                                                  fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -217,21 +152,16 @@ const Navbar = () => {
                                                        transform: 'scale(0.98)',
                                                        borderColor: '#bec3c9'
                                                   }}
-                                                  isActive={
-                                                       router.pathname ==
-                                                            '/group-classes'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                                  size='sm'
+                                                  isActive={router.pathname == '/group-classes' ? true : ''}
+                                                  size="sm"
                                              >
-                                                 Group Class
+                                                  Group Class
                                              </Button>
                                         </Link>
                                         <Link href="/classes/personal" passHref>
                                              <Button
                                                   fontWeight="normal"
-                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
+                                                  fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}
                                                   variant="ghost"
                                                   bg="transparent"
                                                   _hover={{
@@ -242,24 +172,19 @@ const Navbar = () => {
                                                        transform: 'scale(0.98)',
                                                        borderColor: '#bec3c9'
                                                   }}
-                                                  isActive={
-                                                       router.pathname ==
-                                                            '/classes/personal'
-                                                            ? true
-                                                            : ''
-                                                  }
-                                                  size='sm'
+                                                  isActive={router.pathname == '/classes/personal' ? true : ''}
+                                                  size="sm"
                                              >
                                                   Personal Training
                                              </Button>
                                         </Link>
 
-                                        <Menu  >
-                                             <MenuButton fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}  size='sm'  background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
-                                             Yoga Academy
-                                             </MenuButton >
-                                             <MenuList fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}>
-                                             <Link href="/residential-program" passHref>
+                                        <Menu>
+                                             <MenuButton fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }} size="sm" background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
+                                                  Yoga Academy
+                                             </MenuButton>
+                                             <MenuList fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}>
+                                                  <Link href="/residential-program" passHref>
                                                        <MenuItem>Residential</MenuItem>
                                                   </Link>
                                                   <Link href="/yoga-academy" passHref>
@@ -268,12 +193,12 @@ const Navbar = () => {
                                              </MenuList>
                                         </Menu>
 
-                                        <Menu  >
-                                             <MenuButton fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}  size='sm'  background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
+                                        <Menu>
+                                             <MenuButton fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }} size="sm" background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
                                                   Others
-                                             </MenuButton >
-                                             <MenuList fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}>
-                                             <Link href="/career" passHref>
+                                             </MenuButton>
+                                             <MenuList fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}>
+                                                  <Link href="/career" passHref>
                                                        <MenuItem>Career</MenuItem>
                                                   </Link>
                                                   <Link href="/store" passHref>
@@ -282,16 +207,9 @@ const Navbar = () => {
                                                   <Link href="/courses/chikitsa" passHref>
                                                        <MenuItem>Yoga Therapy</MenuItem>
                                                   </Link>
-                                                
-                                                 
-
                                              </MenuList>
                                         </Menu>
-
-
                                    </HStack>
-
-                                  
                               </Flex>
 
                               <Flex
@@ -309,12 +227,12 @@ const Navbar = () => {
                                              }}
                                              variant="solid"
                                              size="sm"
-                                             fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
+                                             fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}
                                              color="gray.700"
-                                             mr={{sm:'3',md:'3',lg:'3',xl:"5"}}
+                                             mr={{ sm: '3', md: '3', lg: '3', xl: '5' }}
                                              boxShadow="base"
                                              rounded="md"
-                                             px={{base:"6",md:"6",lg:"8",xl:"8"}}
+                                             px={{ base: '6', md: '6', lg: '8', xl: '8' }}
                                              py={4}
                                         >
                                              Free Trial
@@ -323,54 +241,20 @@ const Navbar = () => {
 
                                    {user ? (
                                         <Menu>
-                                             <MenuButton
-                                                  size="sm"
-                                                  boxShadow="none"
-                                             >
-                                                  <Avatar
-                                                       name={user?.name}
-                                                       size="sm"
-                                                  />
+                                             <MenuButton size="sm" boxShadow="none">
+                                                  <Avatar name={user?.name} size="sm" />
                                              </MenuButton>
-                                             <MenuList
-                                                  fontSize="md"
-                                                  bg="aygreen.100"
-                                             >
-                                                  <Link
-                                                       passHref
-                                                       href="/account"
-                                                  >
-                                                       <MenuItem>
-                                                            My Account
-                                                       </MenuItem>
+                                             <MenuList fontSize="md" bg="aygreen.100">
+                                                  <Link passHref href="/account">
+                                                       <MenuItem>My Account</MenuItem>
                                                   </Link>
 
-                                                  <MenuItem
-                                                       onClick={() =>
-                                                            signOut('/')
-                                                       }
-                                                  >
-                                                       Logout
-                                                  </MenuItem>
+                                                  <MenuItem onClick={() => signOut('/')}>Logout</MenuItem>
                                              </MenuList>
                                         </Menu>
                                    ) : (
-                                        <Link
-                                             passHref
-                                             href="/account/[signup]"
-                                             as="/account/signup"
-                                        >
-                                             <Button
-                                                  bg="aygray.100"
-                                                  boxShadow="base"
-                                                  color="primaryDarkGray"
-                                                  variant="solid"
-                                                  size="sm"
-                                                  fontSize={{base:"sm",md:"sm",lg:"sm",xl:"md"}}
-                                                  rounded="md"
-                                                  px={{base:"6",md:"6",lg:"8",xl:"8"}}
-                                                  py={4}
-                                             >
+                                        <Link passHref href="/account/[signup]" as="/account/signup">
+                                             <Button bg="aygray.100" boxShadow="base" color="primaryDarkGray" variant="solid" size="sm" fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }} rounded="md" px={{ base: '6', md: '6', lg: '8', xl: '8' }} py={4}>
                                                   Join Us
                                              </Button>
                                         </Link>
@@ -388,156 +272,48 @@ const Navbar = () => {
                                    <DrawerBody>
                                         <VStack spacing={5} align="stretch">
                                              <Link passHref href="/">
-                                                  <Button
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       onClick={onClose}
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button isActive={router.pathname == '/' ? true : ''} onClick={onClose} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Home
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/about">
-                                                  <Button
-                                                       onClick={onClose}
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/about'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button onClick={onClose} isActive={router.pathname == '/about' ? true : ''} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        About Us
                                                   </Button>
                                              </Link>
 
                                              <Link passHref href="/group-classes">
-                                                  <Button
-                                                       onClick={onClose}
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/group-classes'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button onClick={onClose} isActive={router.pathname == '/group-classes' ? true : ''} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Group Classes
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/classes/personal">
-                                                  <Button
-                                                       onClick={onClose}
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/classes/personal'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button onClick={onClose} isActive={router.pathname == '/classes/personal' ? true : ''} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Personal Training
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/residential-program">
-                                                  <Button
-                                                       onClick={onClose}
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/residential-program'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button onClick={onClose} isActive={router.pathname == '/residential-program' ? true : ''} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Yoga Academy (Residential)
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/yoga-academy">
-                                                  <Button
-                                                       onClick={onClose}
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/yoga-academy'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button onClick={onClose} isActive={router.pathname == '/yoga-academy' ? true : ''} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Yoga Academy (Non residential)
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/store">
-                                                  <Button
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/store'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       onClick={onClose}
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button isActive={router.pathname == '/store' ? true : ''} onClick={onClose} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Store
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/career">
-                                                  <Button
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/career'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       onClick={onClose}
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button isActive={router.pathname == '/career' ? true : ''} onClick={onClose} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Career
                                                   </Button>
                                              </Link>
                                              <Link passHref href="/courses/chikitsa">
-                                                  <Button
-                                                       isActive={
-                                                            router.pathname ==
-                                                                 '/courses/chikitsa'
-                                                                 ? true
-                                                                 : ''
-                                                       }
-                                                       onClick={onClose}
-                                                       rounded="md"
-                                                       variant="ghost"
-                                                       colorScheme="aygreen"
-                                                       justifyContent="left"
-                                                  >
+                                                  <Button isActive={router.pathname == '/courses/chikitsa' ? true : ''} onClick={onClose} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Yoga Therapy
                                                   </Button>
                                              </Link>
@@ -548,49 +324,19 @@ const Navbar = () => {
                                         {user ? (
                                              <Menu>
                                                   <MenuButton size="sm">
-                                                       <Avatar
-                                                            name={user?.name}
-                                                            size="sm"
-                                                       />
+                                                       <Avatar name={user?.name} size="sm" />
                                                   </MenuButton>
-                                                  <MenuList
-                                                       fontSize="md"
-                                                       bg="aygreen.100"
-                                                  >
-                                                       <Link
-                                                            passHref
-                                                            href="/account"
-                                                       >
-                                                            <MenuItem
-                                                                 onClick={
-                                                                      onClose
-                                                                 }
-                                                            >
-                                                                 Account
-                                                            </MenuItem>
+                                                  <MenuList fontSize="md" bg="aygreen.100">
+                                                       <Link passHref href="/account">
+                                                            <MenuItem onClick={onClose}>Account</MenuItem>
                                                        </Link>
 
-                                                       <MenuItem
-                                                            onClick={() =>
-                                                                 signOut('/')
-                                                            }
-                                                       >
-                                                            Logout
-                                                       </MenuItem>
+                                                       <MenuItem onClick={() => signOut('/')}>Logout</MenuItem>
                                                   </MenuList>
                                              </Menu>
                                         ) : (
-                                             <Link
-                                                  passHref
-                                                  href="/account/[signup]"
-                                                  as="/account/signup"
-                                             >
-                                                  <Button
-                                                       colorScheme="aygreen"
-                                                       fontSize="md"
-                                                       rounded="md"
-                                                       onClick={onClose}
-                                                  >
+                                             <Link passHref href="/account/[signup]" as="/account/signup">
+                                                  <Button colorScheme="aygreen" fontSize="md" rounded="md" onClick={onClose}>
                                                        Join Us
                                                   </Button>
                                              </Link>
