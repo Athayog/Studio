@@ -16,7 +16,7 @@ const RecaptchaComponent = ({ onVerify }) => {
                onVerify(token);
           };
           window.onload = handleReCaptchaVerify;
-          handleReCaptchaVerify();
+         // handleReCaptchaVerify();
      }, [executeRecaptcha, onVerify]);
 
      return null;
