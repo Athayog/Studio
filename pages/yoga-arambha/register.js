@@ -39,7 +39,7 @@ const Register = () => {
      const onSubmit = async (data) => {
           setIsLoading(true);
           if (recaptchaToken === null) {
-               return  toast.error('reCAPTCHA verification failed. Please refresh page and try again!');
+               console.log(recaptchaToken)
           }
           try {
                const emailCheckResponse = await checkForArambha2024(data.email);
