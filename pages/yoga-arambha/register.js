@@ -89,18 +89,18 @@ const Register = () => {
                      await registerForIDY2024(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
                      sendOneToAthayog(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
                } else {
-                    //await registerForIDY2024(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
-                    toast.error('Something happened. Please try again');
+                    await registerForIDY2024(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
+                    toast.success('Registration successful. Email ticket sending issue. Expect shortly or contact us');
                }
+                setTimeout(() => {
+                    router.push('/')
+               },2000)
           } catch (error) {
                console.error('Error:', error);
                toast.error('An error occurred during registration.');
           } finally {
                setIsLoading(false);
-               reset()
-               setTimeout(() => {
-                    router.push('/')
-               },2000)
+               reset() 
           }
      };
 
