@@ -105,7 +105,13 @@ const Register = () => {
      };
 
      
-     
+     useEffect(() => {
+          if (recaptchaToken) {
+               console.log(recaptchaToken,'token loaded')
+          }else {
+               console.log('token waiting')
+          }
+     },[recaptchaToken])
 
      const sendOneToAthayog = async ( ticketID, name, phone, email, gender, age, tshirt, category, membershipNumber) => {
            await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
