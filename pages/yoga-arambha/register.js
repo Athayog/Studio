@@ -140,7 +140,7 @@ const Register = () => {
                          Yoga Arambha 2024 <br /> Empower Your Inner Goddess
                     </Heading> */}
 
-                    console.log(errors)
+                   
                     <Box zIndex={10} mt={{ base: 5, md: 5 }} width="full" maxW="5xl" mx="auto" p={8} borderWidth={{ base: 0, lg: 1 }} borderRadius="lg" bg="white" boxShadow={{ base: 'none', lg: 'base' }}>
                          <Heading as="h1" mb={6} textAlign="center">
                               Registration Form
