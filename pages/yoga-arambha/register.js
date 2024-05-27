@@ -6,9 +6,11 @@ import HeroFlower2 from 'public/A24-Flower-2.svg';
 import HeroFlower1 from 'public/A24-Flower.svg';
 import toast, { Toaster } from 'react-hot-toast';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { RecaptchaComponent, RecaptchaProvider } from '@/components/RecaptchaComponent';
 
 const Register = () => {
+     const router = useRouter()
      const {
           register,
           handleSubmit,
@@ -73,8 +75,7 @@ const Register = () => {
                const ticketID = generateUniqueTicketID();
                console.log(ticketID);
                data.ticketID = ticketID;
-               await registerForIDY2024(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
-
+              
                const response = await fetch('/api/email/send', {
                     method: 'POST',
                     headers: {
@@ -84,17 +85,22 @@ const Register = () => {
                });
 
                if (response.ok) {
-                    toast.success('Registration successful and email sent!');
-                    sendOneToAthayog(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
+                     toast.success('Registration successful and email sent!');
+                     await registerForIDY2024(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
+                     sendOneToAthayog(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
                } else {
-                    toast.error('Failed to send email.');
+                    //await registerForIDY2024(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
+                    toast.error('Something happened. Please try again');
                }
           } catch (error) {
                console.error('Error:', error);
                toast.error('An error occurred during registration.');
           } finally {
                setIsLoading(false);
-               
+               reset()
+               setTimeout(() => {
+                    router.push('/')
+               },2000)
           }
      };
 
