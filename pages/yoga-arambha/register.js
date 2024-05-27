@@ -36,10 +36,29 @@ const Register = () => {
           }
      };
 
+     const generateUniqueTicketID = () => {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+
+    const generateID = () => {
+        let id = '';
+        for (let i = 0; i < 6; i++) {
+            id += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        const timestamp = new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 2);
+        return `ATHAYOG24-${id.toUpperCase()}${timestamp}`;
+    };
+
+    return generateID();
+};
+
+
+
+
      const onSubmit = async (data) => {
           setIsLoading(true);
           if (recaptchaToken === null) {
-               console.log(recaptchaToken)
+               return  toast.error('reCAPTCHA verification failed. Please refresh page and try again!');
           }
           try {
                const emailCheckResponse = await checkForArambha2024(data.email);
@@ -50,7 +69,9 @@ const Register = () => {
                     return;
                }
 
-               const ticketID = `ATHAYOG2024-${Date.now()}`;
+          
+               const ticketID = generateUniqueTicketID();
+               console.log(ticketID);
                data.ticketID = ticketID;
                await registerForIDY2024(ticketID, data.name, data.phone, data.email, data.gender, data.age, data.tshirt, data.category, data.membershipNumber ? data.membershipNumber : null);
 
