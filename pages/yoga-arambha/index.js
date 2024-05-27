@@ -32,7 +32,7 @@ import HeroFlower6 from 'public/A24-Flower-6.svg';
 import HeroFlower1 from 'public/A24-Flower.svg';
 import AboutImageMobile from 'public/24About.png'
 import Club from 'public/Club24.png';
-import ArambhaLogo from 'public/ar24_logo.png';
+import ArambhaLogo from 'public/ar24_logo.svg';
 import { useMediaQuery } from 'react-responsive';
 
 const PinkButton = ({ children, ...props }) => {
@@ -151,7 +151,7 @@ const LogosAndFlowers = () => {
                          xl: 'auto'
                     }}
                >
-                    <Image placeholder="blur" src={ArambhaLogo} />
+                    <Image  src={ArambhaLogo} />
                </Box>
           </>
      );
@@ -210,7 +210,7 @@ function YogaArambha() {
 
                          <Box name="content" textAlign="center">
                               <Box display={{ base: 'block', lg: 'none' }}>
-                                   <Image placeholder="blur" src={ArambhaLogo} />
+                                   <Image src={ArambhaLogo} />
                               </Box>
                               <Flex mt={-10} mb={5} gap={10} justifyContent="center" alignItems="center">
                                    {' '}
