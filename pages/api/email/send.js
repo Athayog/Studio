@@ -100,7 +100,7 @@ const emailTemplate = (name, ticketid) => {
 <body style="word-spacing:normal;">
   <div style="">
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:600px;">
+    <div style="margin:0px auto;max-width:800px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
@@ -158,12 +158,15 @@ const emailTemplate = (name, ticketid) => {
                             <th style="padding: 0 15px;">Name</th>
                             <th style="padding: 0 0 0 15px;">Location</th>
                             <th style="padding: 0 0 0 15px;">Date & Time</th>
+                            <th style="padding: 0 0 0 15px;">Category</th>
                           </tr>
                           <tr>
                             <td style="padding: 0 15px 0 0;">${ticketid}</td>
                             <td style="padding: 0 15px;">${name}</td>
                             <td style="padding: 0 0 0 15px;">Indiranagar club</td>
                             <td style="padding: 0 0 0 15px;">June 21, 2024</td>
+                            <td style="padding: 0 0 0 15px;">${categoryType}</td>
+                            
                           </tr>
                         </table>
                       </td>
@@ -199,16 +202,22 @@ export default async function handler(req, res) {
                ticketID,
                name,
                email,
-
+               category
           } = req.body;
 
+          let categoryType = 'General'
+          if (category == "indiranagar_club_member"){
+            categoryType = "Indiranagar Club Member"
+          }else if (category =="athayog_member"){
+            categoryType = "Athayog Member"
+          }
           try {
                const response = await resend.emails.send({
                     from: 'Athayog Living <info@athayogliving.com>',
                     to: email,
                     cc: "info@athayogliving.com",
                     subject: 'Yoga Arambha 2024 Registration Confirmation',
-                    html: emailTemplate(name, ticketID)
+                    html: emailTemplate(name, ticketID,categoryType)
                });
 
                res.status(200).json({
