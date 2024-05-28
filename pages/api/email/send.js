@@ -147,7 +147,7 @@ const emailTemplate = (name, ticketid) => {
                     </tr>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Your Event Ticket is ready: Note: In the below box also you can mention one more column mentioning which category pass. .</div>
+                        <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Your Event Ticket is ready .</div>
                       </td>
                     </tr>
                     <tr>
