@@ -98,6 +98,7 @@ const Register = () => {
           } catch (error) {
                console.error('Error:', error);
                toast.error('An error occurred during registration.');
+               sendFailure(error)
           } finally {
                setIsLoading(false);
                reset() 
@@ -127,6 +128,21 @@ const Register = () => {
           });
              
      }
+
+     const sendFailure = async (error) => {
+          await fetch('https://formsubmit.co/ajax/harsimransinghbarki@gmail.com', {
+              method: 'POST',
+              headers: {
+                   'Content-Type': 'application/json',
+                   Accept: 'application/json'
+              },
+              body: JSON.stringify({
+                   FormType: 'Error Yoga Arambha',
+                   error
+              })
+         });
+            
+    }
 
      return (
           <RecaptchaProvider>
