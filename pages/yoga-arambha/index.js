@@ -151,7 +151,7 @@ const LogosAndFlowers = () => {
                          xl: 'auto'
                     }}
                >
-                    <Image  src={ArambhaLogo} />
+                    <Image src={ArambhaLogo} />
                </Box>
           </>
      );
@@ -355,7 +355,7 @@ function YogaArambha() {
                          </Box>
                     </Box>
 
-                    <Box mt="28px" width="100%" maxWidth="100%" margin="0 auto" display={{md:"none"}}>
+                    <Box mt="28px" width="100%" maxWidth="100%" margin="0 auto" display={{ md: "none" }}>
                          <Box position="relative" width="100%" height="266px" paddingTop="10px">
                               <Image src={AboutImageMobile} layout="fill"
                                    objectFit="cover"
@@ -395,7 +395,7 @@ function YogaArambha() {
 
                     <Box name="schedule" margin="o auto">
                          <Box display="flex" flexDirection={{ base: 'column', lg: 'row' }} name="schedules-container" justifyContent="flex-start" alignItems="center" marginTop={{ base: '26px', sm: '20px', md: '38px', lg: '68px', xl: '70px' }} gap={{ base: '20px', sm: '20px', md: '38px', lg: '68px', xl: '70px' }}>
-                              <Flex class="schedule-time" flexDirection="column" gap="20px" flexDirection={{ base: 'row', lg: 'column' }} justifyContent="center" alignItems="center">
+                              <Flex class="schedule-time" gap="20px" flexDirection={{ base: 'row', lg: 'column' }} justifyContent="center" alignItems="center">
                                    <Box width={{ base: '40px', md: '30px', lg: '40px', xl: '100%' }}>
                                         {' '}
                                         <Image src={Clock} />
@@ -483,7 +483,7 @@ function YogaArambha() {
                          </Flex>
                     </Flex>
 
-                    <Flex name="about" p={{ base: 5, md: 0 }} flexDirection="column" justfifyContent="center" gap={{ base: '10px', md: '20px' }} alignItems="center" width="100%" marginTop={{base:"10px",md:"30px",lg:"95px"}}>
+                    <Flex name="about" p={{ base: 5, md: 0 }} flexDirection="column" justfifyContent="center" gap={{ base: '10px', md: '20px' }} alignItems="center" width="100%" marginTop={{ base: "10px", md: "30px", lg: "95px" }}>
                          <Text
                               fontSize={{
                                    base: '32px',
@@ -791,8 +791,8 @@ function YogaArambha() {
                                    Register Now Free & For Everyone
                               </PinkButton>
                          </Flex>
-                         <Flex flexDirection='column' bg="#CBCBCB" padding={{sm:"40px",md:"40px"}} marginTop={{ base: '45px', lg: '62px' }}>
-                              <Text pt={{base:'20px',md:0}} fontSize={{ base: '26px', md: '36px', lg: '46px' }} fontWeight="700" textAlign="center">
+                         <Flex flexDirection='column' bg="#CBCBCB" padding={{ sm: "40px", md: "40px" }} marginTop={{ base: '45px', lg: '62px' }}>
+                              <Text pt={{ base: '20px', md: 0 }} fontSize={{ base: '26px', md: '36px', lg: '46px' }} fontWeight="700" textAlign="center">
                                    Map View
                               </Text>
                               {isMobile ? (
@@ -820,9 +820,9 @@ function YogaArambha() {
                               Register Now
                          </PinkButton>
 
-                         <Box marginTop={{ base: '21px', md: '135px' }} marginLeft='auto' marginRight='auto'>
-                              {isMobile ? <Image placeholder="blur" src={GalleryMobile} /> : <Image placeholder="blur" src={GalleryDesktop} />}
-                         </Box>
+                         <Flex justifyContent='center' position='relative' height='100%' width='100%' marginTop={{ base: '21px', md: '135px' }} marginBottom={{ base: '21px', md: '21px' }} >
+                              <img loading="lazy"  src={isMobile ? GalleryMobile.src : GalleryDesktop.src} />
+                         </Flex>
                     </Flex>
                </Box>
           </Box>
