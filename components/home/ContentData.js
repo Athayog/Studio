@@ -5,36 +5,33 @@ import athayogPersonal from 'public/Personal_training_home.jpg';
 import athayogShikshana from 'public/Shikshanapada_home.jpg';
 import sharath from 'public/sharath.jpeg';
 import purvi from 'public/Purvi.jpg';
+import ankush from 'public/Ankush.jpg';
 import sushma from 'public/Sushma.jpg';
 
 export const offeringsData = {
      offering: [
           {
                name: 'Group Class',
-               information:
-                    'Elevate your Yogic practice by instilling transformation with a strong hold on your lifestyle.',
+               information: 'Elevate your Yogic practice by instilling transformation with a strong hold on your lifestyle.',
                link: '/group-classes',
                image: athayogSpace,
                simple: 'Studio Classes'
           },
           {
                name: 'Yoga Academy',
-               information:
-                    'Upskill yourself with certificate programs and teachers’ training courses.',
+               information: 'Upskill yourself with certificate programs and teachers’ training courses.',
                link: '/yoga-academy',
                image: athayogShikshana,
                simple: 'Teacher Training Course'
           },
-         
+
           {
                name: ' Personal Training',
-               information:
-                    'Engage in one-on-one, personalized Yoga sessions without any distractions.',
+               information: 'Engage in one-on-one, personalized Yoga sessions without any distractions.',
                link: '/classes/personal',
                image: athayogPersonal,
                simple: 'Personal Training'
-          },
-         
+          }
      ]
 };
 
@@ -133,7 +130,18 @@ export const EmployeeData = {
                visible: true,
                designation: 'Teacher'
           },
-         
+          {
+               name: 'Ankush Kumar',
+               info: `Ankush Kumar believes Yoga aims to cultivate harmony, balance, and awareness, both on and off the mat.
+He started his yoga journey from Bihar School of Yoga which is the oldest yoga school in the world, learning the  traditional approach to yoga, emphasizing not just the physical practice but also the spiritual and philosophical dimensions. He was also exposed to various ancient yogic texts and had the opportunity to immerse himself in the ashram lifestyle, integrating yoga into every aspect of daily life.
+\n \n\He has completed YIC and MSC in Yoga Therapy from S-VYASA University.
+He has represented his university at National Level in Himalyan Yoga Olympiad where he secured Gold medal for his university.
+\n \nHis specialisations are Power Vinyasa, Advance yoga, Meditation, Pranayama and Shatkarma.
+Apart from yoga he has explored the field of  calisthenics and gymnastics also`,
+               image: ankush,
+               visible: true,
+               designation: 'Teacher'
+          }
      ]
 };
 
