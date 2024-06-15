@@ -67,10 +67,9 @@ function RegisterYoga() {
                 <ChakraProvider>
                     <Box p={10}>
                         <Box mb={6}>
-                            <Text p={2} fontSize='12px' bg='green.100' color="green.800" textTransform='uppercase' fontWeight='bold'>   WEEKEND :- Batch 01 = Feb 17th TO May 19th 2024</Text>
+                            <Text p={2} fontSize='12px' bg='green.100' color="green.800" textTransform='uppercase' fontWeight='bold'>   WEEKEND Batch - June 22nd - Sept 15th</Text>
                             <Text p={2} fontSize='12px' bg='green.100' color="green.800" textTransform='uppercase' fontWeight='bold'>   
-                            WEEKDAY : - March 9th to June 7th              
-    </Text>                    
+                            WEEKDAY Batch - June 24th - August 26th   </Text>                    
                         </Box>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <Flex gap={{ base: '2', md: "10" }} direction={{ base: 'column', md: 'row' }}>
