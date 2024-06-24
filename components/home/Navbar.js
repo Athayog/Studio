@@ -36,7 +36,7 @@ const Navbar = () => {
      return (
           <>
                <Box zIndex={3} position="fixed" width="100%">
-                    {!announcementsURLS.includes(router.pathname) && <Link href='/yoga-arambha' passHref><Box textAlign='center' cursor='pointer' textDecoration='underline' py={1} color='white' bg="red.600">Yoga Arambha 2024 Registration is Live! Click Here to Join!</Box></Link>}
+                    {/* {!announcementsURLS.includes(router.pathname) && <Link href='/yoga-arambha' passHref><Box textAlign='center' cursor='pointer' textDecoration='underline' py={1} color='white' bg="red.600">Yoga Arambha 2024 Registration is Live! Click Here to Join!</Box></Link>} */}
                     <Box bg="white" transition="linear" transform="initial" display="flex" alignItems="center" justifyContent="space-around" style={{ backdropFilter: 'blur(5px)' }} borderBottom="1px solid #efefef" width="100%" height={{ base: '4rem', md: '4rem', lg: '4rem' }}>
                          <Flex alignItems="center" justifyContent="space-between" minWidth="80%">
                               <Flex

@@ -21,7 +21,18 @@ const redirects = {
                     source: '/yoga-day/register',
                     destination: '/',
                     permanent: true
-               }
+               },
+               {
+                    source: '/yoga-arambha',
+                    destination: '/',
+                    permanent: true
+               },
+               {
+                    source: '/yoga-arambha/register',
+                    destination: '/',
+                    permanent: true
+               },
+             
           ];
      }
 };
