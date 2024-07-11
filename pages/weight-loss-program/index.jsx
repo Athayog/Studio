@@ -31,14 +31,14 @@ function WeightLossProgram() {
 
                {/* Home */}
                <Box className={styles.backgroundContainer} position="relative">
-                    <Box display="flex" maxW="1440px" margin="0 auto" flexDirection={{ base: 'column', md: 'column', lg: 'row' }}>
+                    <Box  display="flex" position='relative' maxW="1440px" margin="0 auto" flexDirection={{ base: 'column', md: 'column', lg: 'row' }}>
                          <Box
                               p={{
                                    base: '20px 20px',
                                    sm: '20px 20px',
                                    md: '100px 10px 100px 50px',
                                    lg: ' 100px 10px 100px 50px',
-                                   xl: '100px 100px 100px 100px'
+                                   xl: '100px 50px'
                               }}
                               width="100%"
                          >
@@ -56,7 +56,7 @@ function WeightLossProgram() {
                                    >
                                         3 Months Yoga <br /> Weight Loss Program
                                    </Heading>
-                                   <Box display={{ base: 'block', md: 'none' }}>
+                                   <Box display={{ base: 'block', md: 'none' }} width='400px'>
                                         <Image src={HomeWoman} style={{ position: 'absolute', bottom: '0', right: '0' }} />
                                    </Box>
                                    <Box
@@ -64,8 +64,8 @@ function WeightLossProgram() {
                                              base: '100%',
                                              sm: '100%',
                                              md: '60%',
-                                             lg: '60%',
-                                             xl: '68%'
+                                             lg: '55%',
+                                             xl: '65%'
                                         }}
                                         display="flex"
                                         flexDirection={{ base: 'column', md: 'column' }}
@@ -100,7 +100,7 @@ function WeightLossProgram() {
                                         >
                                              Starting from <span style={{ fontWeight: 'bold' }}>29th July</span>
                                         </Text>
-                                        <Link href="/yoga-arambha/register" passHref>
+                                        <Link href="#" passHref>
                                              <Button
                                                   zIndex="2"
                                                   width="max-content"
@@ -123,9 +123,7 @@ function WeightLossProgram() {
                                         </Link>
                                    </Box>
                               </Box>
-                              <Box zIndex="-2">
-                                   <Image src={HomeWall} layout="fill" objectFit="cover" className={styles.backgroundImage} styles={{ zIndex: '-2' }} />
-                              </Box>
+                            
                          </Box>
                          <Box
                               display={{ base: 'none', md: 'block' }}
@@ -135,7 +133,7 @@ function WeightLossProgram() {
                               width={{
                                    base: '0px',
                                    sm: '300px',
-                                   md: '320px',
+                                   md: '400px',
                                    lg: '450px',
                                    xl: '600px'
                               }}
@@ -159,6 +157,9 @@ function WeightLossProgram() {
                               <Image src={Flower} />
                          </Box>
                     </Box>
+                      <Box zIndex="-2">
+                                   <Image src={HomeWall} layout="fill" objectFit="cover" className={styles.backgroundImage} styles={{ zIndex: '-2' }} />
+                              </Box>
                </Box>
                <Container
                     display="flex"
@@ -259,9 +260,9 @@ function WeightLossProgram() {
                     >
                          Personalised Support
                     </Heading>
-                    <Grid gridTemplateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(1,1fr)', lg: 'repeat(2,1fr)' }} gap={{ base: '40px', md: '40px', lg: '50px' }}>
-                         <Box>
-                              <Box>
+                    <Grid gridTemplateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(1,1fr)', lg: 'repeat(2,1fr)' }} justifyContent='center' alignItems='center' gap={{ base: '40px', md: '40px', lg: '50px' }}>
+                         <Box margin='0 auto'>
+                              <Box >
                                    <Image src={Support1} />
                                    <Text
                                         fontWeight="bold"
@@ -279,7 +280,7 @@ function WeightLossProgram() {
                                    </Text>
                               </Box>
                          </Box>
-                         <Box>
+                         <Box margin='0 auto'>
                               <Box>
                                    <Image src={Support2} />
                                    <Text
@@ -298,7 +299,7 @@ function WeightLossProgram() {
                                    </Text>
                               </Box>
                          </Box>
-                         <Box>
+                         <Box margin='0 auto'>
                               <Box>
                                    <Image src={Support3} />
                                    <Text
@@ -317,7 +318,7 @@ function WeightLossProgram() {
                                    </Text>
                               </Box>
                          </Box>
-                         <Box>
+                         <Box margin='0 auto'>
                               <Box>
                                    <Image src={Support4} />
                                    <Text
@@ -385,7 +386,7 @@ function WeightLossProgram() {
                     >
                          Transform Your Body & Mind: Start Your 3-Month Trim Transformation Today!
                     </Heading>
-                    <Link href="/yoga-arambha/register" passHref>
+                    <Link href="#" passHref>
                          <Button
                               p={{ base: '30px 50px', md: '30px 50px', lg: '40px 80px' }}
                               fontSize={{
