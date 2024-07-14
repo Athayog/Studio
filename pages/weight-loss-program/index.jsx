@@ -100,7 +100,7 @@ function WeightLossProgram() {
                                         >
                                              Starting from <span style={{ fontWeight: 'bold' }}>29th July</span>
                                         </Text>
-                                        <Link href="#" passHref>
+                                        <Link href="/weight-loss-program/register" passHref>
                                              <Button
                                                   zIndex="2"
                                                   width="max-content"
@@ -386,7 +386,7 @@ function WeightLossProgram() {
                     >
                          Transform Your Body & Mind: Start Your 3-Month Trim Transformation Today!
                     </Heading>
-                    <Link href="#" passHref>
+                    <Link href="/weight-loss-program/register" passHref>
                          <Button
                               p={{ base: '30px 50px', md: '30px 50px', lg: '40px 80px' }}
                               fontSize={{
