@@ -20,7 +20,7 @@ function RegisterYoga() {
                     setLoading(false);
                     reset();
                     setTimeout(() => {
-                         window.location.href = 'https://rzp.io/l/MrHe4ZK0tD';
+                         window.location.href = 'https://rzp.io/l/3Udj4d9b';
                     }, 1000);
                })
                .catch((error) => {
