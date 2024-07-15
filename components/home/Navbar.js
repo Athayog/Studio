@@ -138,26 +138,20 @@ const Navbar = () => {
                                                   About Us
                                              </Button>
                                         </Link>
-                                        <Link href="/group-classes" passHref>
-                                             <Button
-                                                  fontWeight="normal"
-                                                  fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}
-                                                  variant="ghost"
-                                                  bg="transparent"
-                                                  _hover={{
-                                                       bg: 'aygreen.100'
-                                                  }}
-                                                  _active={{
-                                                       bg: 'aygreen.100',
-                                                       transform: 'scale(0.98)',
-                                                       borderColor: '#bec3c9'
-                                                  }}
-                                                  isActive={router.pathname == '/group-classes' ? true : ''}
-                                                  size="sm"
-                                             >
+
+                                        <Menu>
+                                             <MenuButton fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }} size="sm" background="transparent" as={Button} rightIcon={<ChevronDownIcon />}>
                                                   Group Class
-                                             </Button>
-                                        </Link>
+                                             </MenuButton>
+                                             <MenuList fontSize={{ base: 'sm', md: 'sm', lg: 'sm', xl: 'md' }}>
+                                                  <Link href="/group-classes" passHref>
+                                                       <MenuItem>Group Class</MenuItem>
+                                                  </Link>
+                                                  <Link href="/weight-loss-program" passHref>
+                                                       <MenuItem>Weight Loss Program</MenuItem>
+                                                  </Link>
+                                             </MenuList>
+                                        </Menu>
                                         <Link href="/classes/personal" passHref>
                                              <Button
                                                   fontWeight="normal"
@@ -287,6 +281,12 @@ const Navbar = () => {
                                                        Group Classes
                                                   </Button>
                                              </Link>
+                                             <Link passHref href="  /weight-loss-program">
+                                                  <Button onClick={onClose} isActive={router.pathname == '/group-classes' ? true : ''} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
+                                                       Weight Loss Program
+                                                  </Button>
+                                             </Link>
+
                                              <Link passHref href="/classes/personal">
                                                   <Button onClick={onClose} isActive={router.pathname == '/classes/personal' ? true : ''} rounded="md" variant="ghost" colorScheme="aygreen" justifyContent="left">
                                                        Personal Training
