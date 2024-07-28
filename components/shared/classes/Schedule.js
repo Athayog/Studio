@@ -203,7 +203,7 @@ function Schedule() {
                                    <ListIcon as={BiRightArrow} color="green.500" />
                                    Late comers will not be allowed beyond 5th minute after the class start time
                               </ListItem>
-                              <ListItem bg="yellow.100" p={2}>
+                              <ListItem p={2}>
                                    <ListIcon as={BiRightArrow} color="green.500" />
                                   Bhakti yoga and satsang every friday 6:00 pm - 7:00 pm
                               </ListItem>
