@@ -205,7 +205,7 @@ function Schedule() {
                               </ListItem>
                               <ListItem bg="yellow.100" p={2}>
                                    <ListIcon as={BiRightArrow} color="green.500" />
-                                   5AM Group class will be effective from April 1st. Any of live subscription members can access this batch <Badge bg="green.200">New Batch</Badge>
+                                  Bhakti yoga and satsang every friday 6:00 pm - 7:00 pm
                               </ListItem>
 
                               <ListItem p={2}>
