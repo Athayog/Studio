@@ -7,7 +7,7 @@ import EnquiryModal from './Enquiry/EnquiryModal';
 import EnquireWorkshop from './enquireWorkshop';
 function UpcomingWorkshops() {
      const AugustData = [
-          { date: '10th & 11th', time: '11:00 AM', topic: 'Yoga Nidra', teacher: 'Shobith' },
+          { date: '10th & 11th', time: '11:00 AM', topic: 'Ayurveda Workshop', teacher: 'Shobith' },
           { date: '17th', time: '11:00 AM', topic: 'Prenatal & Postnatal Workshop', teacher: 'Harsha' },
           { date: '21st', time: '11:00 AM', topic: 'Yoga For PCOS', teacher: 'Purvi' },
           { date: '31st', time: '11:00 AM', topic: 'Guided Meditation For Stress Relief', teacher: 'Sushma' }
