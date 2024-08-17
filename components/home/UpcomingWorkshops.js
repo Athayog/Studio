@@ -50,6 +50,7 @@ function UpcomingWorkshops() {
                               <chakra.span fontWeight="bold" color="purple.700">
                                   Single Session -  ₹1200
                               </chakra.span>
+                              <br/>
                               <chakra.span fontWeight="bold" color="purple.700">
                                   Both Session -  ₹1800
                               </chakra.span>
