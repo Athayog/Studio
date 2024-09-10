@@ -1,17 +1,4 @@
-import {
-     Button,
-     FormControl,
-     FormErrorMessage,
-     FormLabel,
-     Heading,
-     HStack,
-     Input,
-     Select,
-     Stack,
-     Text,
-     toast,
-     useToast
-} from '@chakra-ui/react';
+import { Button, FormControl, FormErrorMessage, FormLabel, Heading, HStack, Input, Select, Stack, Text, toast, useToast } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Link from 'next/link';
@@ -31,6 +18,7 @@ const Signup = () => {
      const [phone, setPhone] = useState('');
      const [name, setName] = useState('');
      const [useOtp, setUseOtp] = useState(false);
+     const { signinWithGoogle } = useAuth();
      const [loading, setLoading] = useState(false);
      const [loadingOtp, setLoadingOtp] = useState(false);
      const toast = useToast();
@@ -40,16 +28,13 @@ const Signup = () => {
 
      //
      const initiateRecaptha = () => {
-          window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
-               'recapctha-box',
-               {
-                    size: 'invisible',
-                    callback: (response) => {
-                         // reCAPTCHA solved, allow signInWithPhoneNumber.
-                         onPhoneSignInSubmit();
-                    }
+          window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recapctha-box', {
+               size: 'invisible',
+               callback: (response) => {
+                    // reCAPTCHA solved, allow signInWithPhoneNumber.
+                    onPhoneSignInSubmit();
                }
-          );
+          });
      };
 
      const onPhoneSignInSubmit = (phone, countryCode) => {
@@ -94,11 +79,7 @@ const Signup = () => {
                .then((result) => {
                     // User signed in successfully.
                     const user = result.user;
-                    const credential =
-                         firebase.auth.EmailAuthProvider.credential(
-                              email,
-                              password
-                         );
+                    const credential = firebase.auth.EmailAuthProvider.credential(email, password);
                     auth.currentUser
                          .linkWithCredential(credential)
                          .then((usercred) => {
@@ -141,13 +122,7 @@ const Signup = () => {
                });
      };
      //
-     const onUserCreation = async ({
-          displayName,
-          email,
-          password,
-          phone,
-          countryCode
-     }) => {
+     const onUserCreation = async ({ displayName, email, password, phone, countryCode }) => {
           if (email.match(/^[a-zA-Z0-9+_.-]+@athayogliving.com/)) {
                toast({
                     title: `Can't use administrator account`,
@@ -165,49 +140,34 @@ const Signup = () => {
           setPhone(phone);
           onPhoneSignInSubmit(phone, countryCode);
           try {
-               await fetch(
-                    'https://formsubmit.co/ajax/info@athayogliving.com',
-                    {
-                         method: 'POST',
-                         headers: {
-                              'Content-Type': 'application/json',
-                              Accept: 'application/json'
-                         },
-                         body: JSON.stringify({
-                              FormType: 'Signup Form',
-                              fullname: displayName,
-                              email: email,
-                              phone: phone
-                         })
-                    }
-               );
+               await fetch('https://formsubmit.co/ajax/info@athayogliving.com', {
+                    method: 'POST',
+                    headers: {
+                         'Content-Type': 'application/json',
+                         Accept: 'application/json'
+                    },
+                    body: JSON.stringify({
+                         FormType: 'Signup Form',
+                         fullname: displayName,
+                         email: email,
+                         phone: phone
+                    })
+               });
           } catch (error) {}
      };
 
      const handleGoogleLogin = () => {
-          signinWithGoogle('/')
-     }
+          signinWithGoogle('/');
+     };
 
      return (
           <>
-               <Heading
-                    textAlign="center"
-                    fontWeight="normal"
-                    fontSize={['2xl', '2xl', '4xl']}
-                    color="primaryDarkGray"
-               >
+               <Heading textAlign="center" fontWeight="normal" fontSize={['2xl', '2xl', '4xl']} color="primaryDarkGray">
                     {useOtp ? 'Enter OTP' : 'Join Us'}
                </Heading>
 
                {useOtp ? (
-                    <MotionStack
-                         spacing={8}
-                         mt={5}
-                         width="sm"
-                         exit={{ y: -1000, opacity: 1 }}
-                         as="form"
-                         onSubmit={handleSubmit((data) => onOTPSubmit(data))}
-                    >
+                    <MotionStack spacing={8} mt={5} width="sm" exit={{ y: -1000, opacity: 1 }} as="form" onSubmit={handleSubmit((data) => onOTPSubmit(data))}>
                          <FormControl isRequired>
                               <FormLabel>OTP</FormLabel>
                               <Input
@@ -232,14 +192,7 @@ const Signup = () => {
                          </Button>
                     </MotionStack>
                ) : (
-                    <Stack
-                         spacing={{ base: 5, md: 8, lg: 8 }}
-                         mt={5}
-                         width={{ base: '100%', md: 'sm', lg: 'sm' }}
-                         as="form"
-                        
-                    >
-
+                    <Stack spacing={{ base: 5, md: 8, lg: 8 }} mt={5} width={{ base: '100%', md: 'sm', lg: 'sm' }} as="form">
                          <Button
                               type="submit"
                               colorScheme="none"
@@ -248,23 +201,17 @@ const Signup = () => {
                               _active={{
                                    transform: 'scale(0.95)'
                               }}
-                              
                               bg="gray.100"
-                              onClick={() =>handleGoogleLogin()}
-                             className="login-with-google-btn"
-                             leftIcon={<FaGoogle/>}
+                              onClick={() => handleGoogleLogin()}
+                              className="login-with-google-btn"
+                              leftIcon={<FaGoogle />}
                          >
                               Sign in with Google
                          </Button>
 
-                            
-                         <Link href="/account/otp"  passHref>
-                              <Text
-                                   textAlign="center"
-                                   textColor="aygreen.800"
-                                   cursor="pointer"
-                              >
-                                 Already have an account with phone?
+                         <Link href="/account/otp" passHref>
+                              <Text textAlign="center" textColor="aygreen.800" cursor="pointer">
+                                   Already have an account with phone?
                               </Text>
                          </Link>
                     </Stack>

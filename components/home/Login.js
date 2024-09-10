@@ -1,17 +1,4 @@
-import {
-     Button,
-     Divider,
-     FormControl,
-     FormErrorMessage,
-     FormLabel,
-     Heading,
-     Input,
-     Stack,
-     Text,
-     toast,
-     useDisclosure,
-     useToast
-} from '@chakra-ui/react';
+import { Button, Divider, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text, toast, useDisclosure, useToast } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Link from 'next/link';
@@ -28,16 +15,15 @@ import { PhoneIcon } from '@chakra-ui/icons';
 const Login = () => {
      const { handleSubmit, register, errors, reset, getValues } = useForm();
      const { signinWithEmail } = useAuth();
-     const {signinWithGoogle} = useAuth();
-      const auth = firebase.auth();
+     const { signinWithGoogle } = useAuth();
+     const auth = firebase.auth();
      const [loading, setLoading] = useState(false);
      const toast = useToast();
      const router = useRouter();
      const routeCookie = cookie.get('routeTo');
      const [email, setEmail] = useState('');
 
-     const isRoute =
-          routeCookie == '' || routeCookie == undefined ? '/' : routeCookie;
+     const isRoute = routeCookie == '' || routeCookie == undefined ? '/' : routeCookie;
 
      const onUserLogin = async ({ email, password }) => {
           if (email.match(/^[a-zA-Z0-9+_.-]+@athayogliving.com/)) {
@@ -99,56 +85,41 @@ const Login = () => {
      };
 
      const handleGoogleLogin = () => {
-          signinWithGoogle('/')
-     }
+          signinWithGoogle('/');
+     };
 
      return (
           <>
-               <Heading
-                    textAlign="center"
-                    fontWeight="normal"
-                    fontSize={['2xl', '2xl', '4xl']}
-                    color="primaryDarkGray"
-               >
+               <Heading textAlign="center" fontWeight="normal" fontSize={['2xl', '2xl', '4xl']} color="primaryDarkGray">
                     Log In
                </Heading>
 
-              
-               <Stack
-                    spacing={{ base: 5, md: 8, lg: 8 }}
-                    mt={5}
-                    width={{ base: '100%', md: 'sm', lg: 'sm' }}
-               >
+               <Stack spacing={{ base: 5, md: 8, lg: 8 }} mt={5} width={{ base: '100%', md: 'sm', lg: 'sm' }}>
                     <Divider color="black" />
-                 
+
                     <Button
-                              type="submit"
-                              onClick={() => handleGoogleLogin()}
-                              colorScheme="none"
-                              color="black"
-                              isLoading={loading}
-                              _active={{
-                                   transform: 'scale(0.95)'
-                              }}
-                              
-                              bg="gray.100"
-                             className="login-with-google-btn"
-                             leftIcon={<FaGoogle/>}
-                         >
-                              Log in with Google
-                         </Button>
+                         type="submit"
+                         onClick={() => handleGoogleLogin()}
+                         colorScheme="none"
+                         color="black"
+                         isLoading={loading}
+                         _active={{
+                              transform: 'scale(0.95)'
+                         }}
+                         bg="gray.100"
+                         className="login-with-google-btn"
+                         leftIcon={<FaGoogle />}
+                    >
+                         Log in with Google
+                    </Button>
                </Stack>
 
-               <Stack
-                    spacing={{ base: 5, md: 8, lg: 8 }}
-                    mt={1}
-                    width={{ base: '100%', md: 'sm', lg: 'sm' }}
-               >
+               <Stack spacing={{ base: 5, md: 8, lg: 8 }} mt={1} width={{ base: '100%', md: 'sm', lg: 'sm' }}>
                     <Divider color="black" />
                     <Button
                          type="submit"
                          colorScheme="aygray"
-                         leftIcon={<PhoneIcon/>}
+                         leftIcon={<PhoneIcon />}
                          id="sign-in-button"
                          width="100%"
                          onClick={(e) => router.push('/account/otp')}
@@ -158,7 +129,6 @@ const Login = () => {
                     >
                          Login Via Phone
                     </Button>
-                   
                </Stack>
           </>
      );
