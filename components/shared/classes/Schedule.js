@@ -180,7 +180,7 @@ function Schedule() {
                                    </Tbody>
                               </Table>
                               <Box width="100%">
-                                   <a href="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/A3%20-Group%20class%20schedule%202024_page-0001.jpg?alt=media&token=7f38af57-04a2-4750-b239-aab0c929f4e0" downlaod="true" target="_blank" rel="noreferrer">
+                                   <a href="https://firebasestorage.googleapis.com/v0/b/athayog-e4ff7.appspot.com/o/Schedule.pdf?alt=media&token=0cb928fa-e87a-4ad7-a350-97710282861c" downlaod="true" target="_blank" rel="noreferrer">
                                         <Button borderTopLeftRadius={0} borderTopRightRadius={0} width="100%" colorScheme="blue">
                                              Download Schedule
                                         </Button>
