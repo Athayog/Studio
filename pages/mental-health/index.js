@@ -16,6 +16,8 @@ import HeroGirl1 from 'public/mental-health/girl_hero_1.png';
 import HeroGirl2 from 'public/mental-health/girl_hero_2.png';
 import { useMediaQuery } from 'react-responsive';
 import styles from './styles.module.scss';
+import Script from 'next/script';
+import Head from 'next/head';
 
 const whoShouldAttend = {
      title: 'Who Should Attend',
@@ -109,6 +111,32 @@ function MentalHealth() {
 
      return (
           <div>
+               <Head>
+                    <title>Yoga For Mental Health | Athayog</title>
+               </Head>
+               <Script
+                    id="fb-pixel"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                         __html: `
+   !function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1011750923226651');
+fbq('track', 'PageView');
+  `
+                    }}
+               />
+
+               <noscript>
+                    <img height="1" width="1" style={{ display: 'none' }} src="https://www.facebook.com/tr?id=1011750923226651&ev=PageView&noscript=1" />
+               </noscript>
+
                <NavbarHelper />
                <Box position="relative" minH={{ base: '65vh', lg: '80vh' }}>
                     <Box zIndex="2" position="relative" display="flex" flexDir="column" justifyContent="center" alignItems={{ base: 'baseline', lg: 'center' }} minH={{ base: '65vh', lg: '80vh' }} padding={{ base: '20px', md: '50px' }}>
@@ -143,10 +171,10 @@ function MentalHealth() {
                     </Box>
                     <Box zIndex="2" position="relative">
                          <Box position="absolute" bottom="0px" left="0px" display={{ base: 'none', lg: 'block' }} width={{ base: '150px', md: '300px', lg: '350px' }} height="auto">
-                              <Image src={HeroGirl1} alt="HeroArtwork" layout="responsive" />
+                              <Image src={HeroGirl1} alt="HeroArtwork" layout="responsive" placeholder="blur" />
                          </Box>
                          <Box position="absolute" right="0px" bottom="0px" width={{ base: '250px', md: '250px', lg: '300px' }} height="auto">
-                              <Image src={HeroGirl2} alt="HeroArtwork" layout="responsive" />
+                              <Image src={HeroGirl2} alt="HeroArtwork" layout="responsive" placeholder="blur" />
                          </Box>
                     </Box>
 
