@@ -31,7 +31,7 @@ const experience = {
           },
           {
                title: 'Mindfulness Practices',
-               subtext: ': Learn meditation and visualisation techniques to cultivate a calm and focused mind.'
+               subtext: 'Learn meditation and visualisation techniques to cultivate a calm and focused mind.'
           },
           {
                title: 'Mental Health Talk',
@@ -203,7 +203,7 @@ function MentalHealth() {
                                         {experience.list.map((item, index) => (
                                              <ListItem fontWeight="medium" key={index} marginBottom="10px">
                                                   <chakra.span color="#000" fontWeight="bold">
-                                                       {item.title}
+                                                       {item.title}:{' '}
                                                   </chakra.span>
                                                   <chakra.span>{item.subtext}</chakra.span>
                                              </ListItem>
@@ -223,7 +223,7 @@ function MentalHealth() {
                                         {workshop.list.map((item, index) => (
                                              <ListItem fontWeight="medium" key={index} marginBottom="10px">
                                                   <chakra.span color="#000" fontWeight="bold">
-                                                       {item.title}
+                                                       {item.title}:{' '}
                                                   </chakra.span>
                                                   <chakra.span>{item.subtext}</chakra.span>
                                              </ListItem>
