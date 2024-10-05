@@ -57,7 +57,7 @@ const workshop = {
           },
           {
                title: 'Exclusive Offer',
-               subtext: 'Get access to our next online 7-Day Mind Cleansing and Relaxation Workshop for just ₹999! Dive deeper into relaxation and mindfulness techniques.'
+               subtext: 'Get access to our next online 7-Day Mind Cleansing and Relaxation Workshop for just ₹99! Dive deeper into relaxation and mindfulness techniques.'
           }
      ]
 };
