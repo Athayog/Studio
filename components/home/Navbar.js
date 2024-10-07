@@ -32,7 +32,7 @@ const Navbar = () => {
      const announcements = null;
 
      const announcementsURLS = ['/yoga-arambha', '/yoga-arambha/register'];
-
+     console.log(router.pathname);
      return (
           <>
                <Box zIndex={3} position="fixed" width="100%">
@@ -46,8 +46,9 @@ const Navbar = () => {
                                         lg: 'none'
                                    }}
                               >
-                                   <HiMenu fontSize="1.2rem" onClick={onOpen} />
+                                   {router.pathname !== '/mental-health' && <HiMenu fontSize="1.2rem" onClick={onOpen} />}
                               </Flex>
+
                               <Flex alignItems="center">
                                    <Link passHref href="/">
                                         <Flex alignItems="center" cursor="pointer">
