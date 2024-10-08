@@ -117,28 +117,9 @@ export const EmployeeData = {
                designation: 'Teacher'
           },
           {
-               name: 'Purvi vijjan',
-               info: `Purvi Vijjan, the youngest Yog Teacher at AthaYog Living, has represented and brought laurels to our country, India, on the global stage in the field of Yogasana Sports. Her participation in both the World Championship and Asian Championship of Yog Sports has not only honed her skills but also deepened her understanding of the transformative power of yoga beyond its physical aspects. \n \nCommencing her journey in yog through asana competitions, instilled a drive in her to continually learn and explore the vastness of yog beyond the confines of mere physical postures which led her to receive a formal Yogic education from Swami Vivekananda Yoga Anusandhana Samsthana (S-VYASA) \n \nWith a passion for yog that has been nurtured from a young age, coupled with a strong foundation in traditional practices. She is committed to sharing this holistic approach to yog with others, empowering them to cultivate not only physical strength and flexibility but also mental clarity, emotional balance, and spiritual well-being.`,
-               image: purvi,
-               visible: true,
-               designation: 'Teacher'
-          },
-          {
                name: 'Sushma Somvanshi',
                info: `Sushma Somvanshi, yoga teacher at athayog living is pursuing her Msc from SVYASA. She started her career in IT after completing B.Pharma and meanwhile kept educating herself with yogic education as well and completed diploma course in yoga, Level 2 (YCB, Ministry of AYUSH), YIC (SVYASA). . \n \nYoga has been a part of her life since she was a child. Her goal is to keep learning and teaching the pious knowledge of yoga to help people live healthier and joyful life. Her goal is to extend the idea of yoga beyond just asanas and dive deeper into more subtle aspects of this ancient tradition-yoga.`,
                image: sushma,
-               visible: true,
-               designation: 'Teacher'
-          },
-          {
-               name: 'Ankush Kumar',
-               info: `Ankush Kumar believes Yoga aims to cultivate harmony, balance, and awareness, both on and off the mat.
-He started his yoga journey from Bihar School of Yoga which is the oldest yoga school in the world, learning the  traditional approach to yoga, emphasizing not just the physical practice but also the spiritual and philosophical dimensions. He was also exposed to various ancient yogic texts and had the opportunity to immerse himself in the ashram lifestyle, integrating yoga into every aspect of daily life.
-\n \n\He has completed YIC and MSC in Yoga Therapy from S-VYASA University.
-He has represented his university at National Level in Himalyan Yoga Olympiad where he secured Gold medal for his university.
-\n \nHis specialisations are Power Vinyasa, Advance yoga, Meditation, Pranayama and Shatkarma.
-Apart from yoga he has explored the field of  calisthenics and gymnastics also`,
-               image: ankush,
                visible: true,
                designation: 'Teacher'
           }
