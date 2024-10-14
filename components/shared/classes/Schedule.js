@@ -10,7 +10,7 @@ function Schedule() {
                <Flex margin="auto" padding={{ base: '2rem 0', md: '3rem 0', lg: '5rem 0' }} justifyContent="center" alignItems="center" flexDirection="column" width="100vw" bg="primaryWhite">
                     <Flex justifyContent="center" direction="column" alignItems="center" width={{ base: '95%', md: '90%', lg: '90%' }}>
                          <Heading fontWeight="normal" fontSize={{ base: '2xl', md: '3xl' }}>
-                              AthaYog Group Class August 2024 (Indiranagar)
+                              AthaYog Group Class October 2024 (Indiranagar)
                          </Heading>
                          <Box overflowX="auto" width="100%" boxShadow="base" rounded="lg" mt={10}>
                               <Table variant="simple" size="sm" bg="white" colorScheme="aygreen" className="scheduleTable">
